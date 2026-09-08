@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 
 const seed = JSON.parse(await readFile(new URL("../data/seed.json", import.meta.url), "utf8"));
+const registry = JSON.parse(await readFile(new URL("../data/universities.json", import.meta.url), "utf8"));
 const ids = new Set();
 const sourceKeys = new Set(seed.sources.map((source) => source.key));
 const allowedRules = new Set([
@@ -44,8 +45,29 @@ for (const [university, expected] of Object.entries(expectedEssayTotals)) {
   }
 }
 
+const universityIds = new Set();
+for (const item of registry.universities) {
+  if (universityIds.has(item.id)) throw new Error(`Duplicate university id: ${item.id}`);
+  universityIds.add(item.id);
+  if (!item.name || !item.campus || !item.region || !item.officialInfoUrl) {
+    throw new Error(`Incomplete university registry record: ${item.id}`);
+  }
+  if (!["일반대학", "전문대학"].includes(item.institutionType)) {
+    throw new Error(`Unknown institution type: ${item.id}`);
+  }
+}
+
+const generalCount = registry.universities.filter((item) => item.institutionType === "일반대학").length;
+const collegeCount = registry.universities.filter((item) => item.institutionType === "전문대학").length;
+if (generalCount !== 220 || collegeCount !== 132) {
+  throw new Error(`University registry count mismatch: general=${generalCount}, college=${collegeCount}`);
+}
+
 console.log(JSON.stringify({
   academicYear: seed.metadata.academicYear,
+  universities: registry.universities.length,
+  generalUniversities: generalCount,
+  colleges: collegeCount,
   sources: seed.sources.length,
   programs: seed.programs.length,
   calculationReady: seed.programs.filter((item) => item.calculationReady).length,

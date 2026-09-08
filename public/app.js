@@ -7,6 +7,7 @@ const compareKey = "jobnkill-susi-compare-v1";
 let catalog = null;
 let evaluations = [];
 let compareIds = JSON.parse(localStorage.getItem(compareKey) || "[]");
+let visibleUniversityCount = 36;
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char]));
@@ -173,6 +174,68 @@ function renderSources() {
   }).join("");
 }
 
+function registryMatches() {
+  const keyword = byId("registry-keyword").value.trim().toLowerCase();
+  const type = byId("registry-type").value;
+  const region = byId("registry-region").value;
+  const status = byId("registry-status").value;
+  return catalog.universities.filter((item) => {
+    const haystack = `${item.name} ${item.campus} ${item.region} ${item.institutionType}`.toLowerCase();
+    return (!keyword || haystack.includes(keyword))
+      && (type === "전체" || item.institutionType === type)
+      && (region === "전체" || item.region === region)
+      && (status === "전체" || item.detailStatus === status);
+  });
+}
+
+function compactNumber(value, suffix = "") {
+  return value === null || value === undefined ? "미공개" : `${Number(value).toLocaleString("ko-KR")}${suffix}`;
+}
+
+function renderUniversities() {
+  const matches = registryMatches();
+  const visible = matches.slice(0, visibleUniversityCount);
+  const verified = matches.filter((item) => item.detailStatus === "verified_detail").length;
+  byId("registry-summary").textContent = `검색 ${matches.length.toLocaleString("ko-KR")}개 · 상세 전형 공개 ${verified}개`;
+
+  if (!matches.length) {
+    byId("university-list").innerHTML = '<div class="empty-state"><div><b>조건에 맞는 대학이 없습니다</b><span>대학명 또는 필터를 바꿔보세요.</span></div></div>';
+  } else {
+    byId("university-list").innerHTML = visible.map((item) => {
+      const verifiedDetail = item.detailStatus === "verified_detail";
+      return `<article class="university-card">
+        <div class="university-card-head">
+          <div><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.campus)} · ${escapeHtml(item.region)} · ${escapeHtml(item.institutionType)}</p></div>
+          <span class="detail-status ${verifiedDetail ? "is-verified" : ""}">${verifiedDetail ? "상세 전형 공개" : "목록 등록"}</span>
+        </div>
+        <dl class="university-facts">
+          <div><dt>입학정원</dt><dd>${compactNumber(item.admissionCapacity, "명")}</dd></div>
+          <div><dt>설치학과</dt><dd>${compactNumber(item.departmentCount, "개")}</dd></div>
+          <div><dt>전형정보</dt><dd>${compactNumber(item.admissionTrackCount, "개")}</dd></div>
+          <div><dt>수시 경쟁률</dt><dd>${compactNumber(item.earlyCompetitionRate, ":1")}</dd></div>
+        </dl>
+        <div class="university-actions">
+          <a href="${escapeHtml(item.officialInfoUrl)}" target="_blank" rel="noopener">어디가 공식정보</a>
+          ${verifiedDetail ? `<button type="button" data-open-university="${escapeHtml(item.name)}">검수 전형 보기</button>` : ""}
+        </div>
+      </article>`;
+    }).join("");
+  }
+
+  const moreButton = byId("load-more-universities");
+  moreButton.hidden = visible.length >= matches.length;
+  moreButton.textContent = `더 보기 (${(matches.length - visible.length).toLocaleString("ko-KR")}개 남음)`;
+  document.querySelectorAll("[data-open-university]").forEach((button) => {
+    button.addEventListener("click", () => {
+      byId("university-filter").value = button.dataset.openUniversity;
+      byId("keyword").value = "";
+      switchView("diagnosis");
+      renderResults();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+}
+
 function switchView(view) {
   document.querySelectorAll(".tab-button").forEach((button) => {
     const active = button.dataset.view === view;
@@ -181,6 +244,7 @@ function switchView(view) {
   });
   document.querySelectorAll(".view-panel").forEach((panel) => panel.classList.toggle("is-active", panel.id === `${view}-view`));
   if (view === "compare") renderComparison();
+  if (view === "universities") renderUniversities();
 }
 
 function reportRows() {
@@ -217,6 +281,11 @@ async function init() {
   restoreForm();
   compareIds = compareIds.filter((id) => catalog.programs.some((item) => item.id === id)).slice(0, 3);
 
+  const regions = [...new Set(catalog.universities.map((item) => item.region))].sort((a, b) => a.localeCompare(b, "ko"));
+  byId("registry-region").innerHTML = '<option value="전체">전체 지역</option>' + regions.map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`).join("");
+  byId("university-count").textContent = catalog.universities.length.toLocaleString("ko-KR");
+  byId("general-count").textContent = catalog.universities.filter((item) => item.institutionType === "일반대학").length;
+  byId("college-count").textContent = catalog.universities.filter((item) => item.institutionType === "전문대학").length;
   byId("source-count").textContent = catalog.sources.length;
   byId("program-count").textContent = catalog.programs.length;
   byId("rule-count").textContent = catalog.programs.filter((item) => item.calculationReady).length;
@@ -224,12 +293,33 @@ async function init() {
   byId("verified-date").textContent = `공식 문서 최종 검수 ${catalog.metadata.verifiedAt}`;
   updateCompareCount();
   renderSources();
+  renderUniversities();
   renderResults();
 
   for (const id of formIds) {
     byId(id)?.addEventListener(id === "keyword" ? "input" : "change", () => { saveForm(); renderResults(); renderComparison(); });
   }
   document.querySelectorAll(".tab-button").forEach((button) => button.addEventListener("click", () => switchView(button.dataset.view)));
+  ["registry-type", "registry-region", "registry-status"].forEach((id) => byId(id).addEventListener("change", () => {
+    visibleUniversityCount = 36;
+    renderUniversities();
+  }));
+  byId("registry-keyword").addEventListener("input", () => {
+    visibleUniversityCount = 36;
+    renderUniversities();
+  });
+  byId("reset-registry").addEventListener("click", () => {
+    byId("registry-keyword").value = "";
+    byId("registry-type").value = "전체";
+    byId("registry-region").value = "전체";
+    byId("registry-status").value = "전체";
+    visibleUniversityCount = 36;
+    renderUniversities();
+  });
+  byId("load-more-universities").addEventListener("click", () => {
+    visibleUniversityCount += 36;
+    renderUniversities();
+  });
   byId("fill-example").addEventListener("click", () => {
     const example = { "score-k": "3", "score-m": "4", "score-e": "2", "score-h": "3", "score-t1": "2", "score-t2": "4", "type-t1": "social", "type-t2": "social" };
     Object.entries(example).forEach(([id, value]) => byId(id).value = value);

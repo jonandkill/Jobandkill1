@@ -7,6 +7,7 @@ import path from "node:path";
 const { Pool } = pg;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const seed = JSON.parse(await readFile(path.join(__dirname, "data", "seed.json"), "utf8"));
+const universityRegistry = JSON.parse(await readFile(path.join(__dirname, "data", "universities.json"), "utf8"));
 const app = express();
 const port = Number(process.env.PORT || 3000);
 
@@ -40,6 +41,26 @@ async function initializeDatabase() {
   const client = await pool.connect();
   try {
     await client.query("BEGIN");
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS universities (
+        id TEXT PRIMARY KEY,
+        name TEXT NOT NULL,
+        campus TEXT NOT NULL,
+        display_name TEXT NOT NULL,
+        institution_type TEXT NOT NULL CHECK (institution_type IN ('일반대학', '전문대학')),
+        region TEXT NOT NULL,
+        admission_capacity INTEGER,
+        department_count INTEGER,
+        admission_track_count INTEGER,
+        early_competition_rate NUMERIC,
+        regular_competition_rate NUMERIC,
+        academic_year INTEGER NOT NULL,
+        registry_status TEXT NOT NULL,
+        detail_status TEXT NOT NULL CHECK (detail_status IN ('verified_detail', 'registry_only')),
+        official_info_url TEXT NOT NULL,
+        updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+      )
+    `);
     await client.query(`
       CREATE TABLE IF NOT EXISTS admissions_sources (
         source_key TEXT PRIMARY KEY,
@@ -83,6 +104,32 @@ async function initializeDatabase() {
     `);
     await client.query("CREATE INDEX IF NOT EXISTS idx_programs_year_track ON admissions_programs(academic_year, track)");
     await client.query("CREATE INDEX IF NOT EXISTS idx_programs_university ON admissions_programs(university)");
+    await client.query("CREATE INDEX IF NOT EXISTS idx_universities_name ON universities(name)");
+    await client.query("CREATE INDEX IF NOT EXISTS idx_universities_type_region ON universities(institution_type, region)");
+
+    for (const item of universityRegistry.universities) {
+      await client.query(
+        `INSERT INTO universities
+          (id, name, campus, display_name, institution_type, region, admission_capacity,
+           department_count, admission_track_count, early_competition_rate, regular_competition_rate,
+           academic_year, registry_status, detail_status, official_info_url)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)
+         ON CONFLICT (id) DO UPDATE SET
+          name=EXCLUDED.name, campus=EXCLUDED.campus, display_name=EXCLUDED.display_name,
+          institution_type=EXCLUDED.institution_type, region=EXCLUDED.region,
+          admission_capacity=EXCLUDED.admission_capacity, department_count=EXCLUDED.department_count,
+          admission_track_count=EXCLUDED.admission_track_count,
+          early_competition_rate=EXCLUDED.early_competition_rate,
+          regular_competition_rate=EXCLUDED.regular_competition_rate,
+          academic_year=EXCLUDED.academic_year, registry_status=EXCLUDED.registry_status,
+          detail_status=EXCLUDED.detail_status, official_info_url=EXCLUDED.official_info_url,
+          updated_at=NOW()`,
+        [item.id, item.name, item.campus, item.displayName, item.institutionType, item.region,
+          nullable(item.admissionCapacity), nullable(item.departmentCount), nullable(item.admissionTrackCount),
+          nullable(item.earlyCompetitionRate), nullable(item.regularCompetitionRate), item.academicYear,
+          item.registryStatus, item.detailStatus, item.officialInfoUrl]
+      );
+    }
 
     for (const source of seed.sources) {
       await client.query(
@@ -149,6 +196,26 @@ function mapSource(row) {
   };
 }
 
+function mapUniversity(row) {
+  return {
+    id: row.id,
+    name: row.name,
+    campus: row.campus,
+    displayName: row.display_name,
+    institutionType: row.institution_type,
+    region: row.region,
+    admissionCapacity: row.admission_capacity,
+    departmentCount: row.department_count,
+    admissionTrackCount: row.admission_track_count,
+    earlyCompetitionRate: row.early_competition_rate === null ? null : Number(row.early_competition_rate),
+    regularCompetitionRate: row.regular_competition_rate === null ? null : Number(row.regular_competition_rate),
+    academicYear: row.academic_year,
+    registryStatus: row.registry_status,
+    detailStatus: row.detail_status,
+    officialInfoUrl: row.official_info_url
+  };
+}
+
 function mapProgram(row) {
   return {
     id: row.id,
@@ -181,6 +248,12 @@ async function getSources() {
   return result.rows.map(mapSource);
 }
 
+async function getUniversities() {
+  if (!pool || storageMode !== "postgresql") return universityRegistry.universities;
+  const result = await pool.query("SELECT * FROM universities ORDER BY name, campus");
+  return result.rows.map(mapUniversity);
+}
+
 async function getPrograms() {
   if (!pool || storageMode !== "postgresql") return seed.programs;
   const result = await pool.query("SELECT * FROM admissions_programs ORDER BY sort_order, university, group_name");
@@ -189,11 +262,14 @@ async function getPrograms() {
 
 app.get("/api/health", async (_request, response) => {
   try {
-    const programs = await getPrograms();
+    const [programs, universities] = await Promise.all([getPrograms(), getUniversities()]);
     response.json({
       ok: true,
       storage: storageMode,
       academicYear: seed.metadata.academicYear,
+      universities: universities.length,
+      generalUniversities: universities.filter((item) => item.institutionType === "일반대학").length,
+      colleges: universities.filter((item) => item.institutionType === "전문대학").length,
       sources: seed.sources.length,
       programs: programs.length,
       calculationReady: programs.filter((item) => item.calculationReady).length,
@@ -207,9 +283,9 @@ app.get("/api/health", async (_request, response) => {
 
 app.get("/api/catalog", async (_request, response) => {
   try {
-    const [sources, programs] = await Promise.all([getSources(), getPrograms()]);
+    const [sources, programs, universities] = await Promise.all([getSources(), getPrograms(), getUniversities()]);
     response.set("Cache-Control", "public, max-age=300");
-    response.json({ metadata: seed.metadata, sources, programs, storage: storageMode });
+    response.json({ metadata: { ...seed.metadata, registry: universityRegistry.metadata }, sources, programs, universities, storage: storageMode });
   } catch (error) {
     response.status(500).json({ error: "catalog_unavailable" });
   }

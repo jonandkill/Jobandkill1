@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
+    "import:universities": "node scripts/import-adiga-universities.mjs",
     "check:data": "node scripts/check-data.mjs",
     "test": "node --test tests/*.test.mjs"
   },
