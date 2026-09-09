@@ -59,6 +59,7 @@ const path=require('path');
  assert(!(await mobile.locator('.left').isVisible()),'390px에서 데스크톱 추천 패널이 숨겨지지 않음');
  await mobile.locator('#mobileRecipes').click();
  assert(await mobile.locator('#mobileRecipeSheet').isVisible(),'모바일 레시피 선택창이 열리지 않음');
+ assert(await mobile.locator('#mobileRecipeSheet .recipe').count()<=48,'모바일 직접 선택을 한 번에 과도하게 렌더링함');
  await mobile.locator('[data-sheet-mode="recommend"]').click();
  assert(await mobile.locator('#mobileRecipeSheet .recipe').count()===12,'모바일 맞춤 추천 12개가 표시되지 않음');
  await mobile.locator('#closeMobileRecipes').click();
