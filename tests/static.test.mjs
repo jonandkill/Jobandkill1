@@ -23,6 +23,17 @@ test("static JavaScript id selectors resolve to document elements", () => {
   assert.deepEqual(missing, []);
 });
 
+test("keyword generation is the default form action", () => {
+  assert.match(html, /name="compositionMode" value="generate" checked/gu);
+  assert.match(html, /id="compose-label">키워드로 본문 생성/gu);
+  assert.match(html, /id="form-error"[^>]*role="alert"/gu);
+  assert.match(html, /name="primaryKeyword" required/gu);
+  assert.equal(/name="topic"[^>]*required/gu.test(html), false);
+  assert.equal(/name="draft"[^>]*required/gu.test(html), false);
+  assert.match(app, /createKeywordDraft\(rawInput\)/gu);
+  assert.match(app, /resultState\.scrollIntoView/gu);
+});
+
 test("every explicit label target exists", () => {
   const targets = [...html.matchAll(/<label\s+for="([^"]+)"/gu)].map((match) => match[1]);
   const ids = new Set([...html.matchAll(/\sid="([^"]+)"/gu)].map((match) => match[1]));

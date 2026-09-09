@@ -4,12 +4,14 @@ import {
   articleToMarkdown,
   auditArticle,
   buildArticle,
+  createKeywordDraft,
   createCopyBlocks,
   createImagePlan,
   createPublishPackage,
   createQueueRecord,
   createTableOfContents,
   generateTitleCandidates,
+  inferBlogCategory,
 } from "./core.mjs";
 
 const FORM_STORAGE_KEY = "jobandkill.naver-blog-studio.v2";
@@ -42,6 +44,14 @@ const queueSchedule = document.querySelector("#queue-schedule");
 const queueCount = document.querySelector("#queue-count");
 const queueEmpty = document.querySelector("#queue-empty");
 const postQueue = document.querySelector("#post-queue");
+const primaryKeywordInput = form.elements.namedItem("primaryKeyword");
+const topicInput = form.elements.namedItem("topic");
+const draftInput = form.elements.namedItem("draft");
+const compositionModeInputs = [...form.querySelectorAll('[name="compositionMode"]')];
+const composeLabel = document.querySelector("#compose-label");
+const composeHint = document.querySelector("#compose-hint");
+const draftHelp = document.querySelector("#draft-help");
+const formError = document.querySelector("#form-error");
 
 let article = null;
 let audit = null;
@@ -55,10 +65,54 @@ let reviewPosition = 0;
 let reviewPaused = true;
 let saveTimer = null;
 let toastTimer = null;
+let activeInput = null;
 
 function announce(message, tone = "info") {
   status.textContent = message;
   status.dataset.tone = tone;
+}
+
+function compositionMode() {
+  return form.elements.namedItem("compositionMode")?.value === "restructure" ? "restructure" : "generate";
+}
+
+function clearFormError() {
+  formError.hidden = true;
+  formError.textContent = "";
+  form.querySelectorAll('[aria-invalid="true"]').forEach((control) => control.removeAttribute("aria-invalid"));
+}
+
+function showFormError(message, control) {
+  clearFormError();
+  formError.textContent = message;
+  formError.hidden = false;
+  control?.setAttribute("aria-invalid", "true");
+  control?.focus();
+  formError.scrollIntoView({
+    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+    block: "center",
+  });
+  announce(message, "error");
+}
+
+function updateCompositionModeUi() {
+  const mode = compositionMode();
+  const generating = mode === "generate";
+  composeLabel.textContent = generating ? "키워드로 본문 생성" : "기존 원고 재구성";
+  composeHint.textContent = generating ? "대표 키워드 하나만 필수" : "대표 키워드와 기존 원고 필요";
+  draftHelp.textContent = generating
+    ? "비워도 됩니다. 메모·초안·검증 자료를 넣으면 생성 본문에 우선 반영합니다."
+    : "입력한 원고를 보존하면서 제목·목차·문단·이미지 계획으로 재구성합니다.";
+  draftInput.setAttribute("aria-required", String(!generating));
+  form.dataset.mode = mode;
+  clearFormError();
+}
+
+function applyGeneratedDefaults(input) {
+  for (const name of ["topic", "category", "audience", "cta"]) {
+    const control = form.elements.namedItem(name);
+    if (control && !control.value.trim() && input[name]) control.value = input[name];
+  }
 }
 
 function showToast(message) {
@@ -264,6 +318,7 @@ function updateFinalGate() {
 
 function refreshArticle(input, { resetChecks = true } = {}) {
   stopReview();
+  activeInput = { ...input };
   article = buildArticle(input);
   audit = auditArticle(article, { targetLength: input.targetLength });
   currentSectionIndex = 0;
@@ -276,18 +331,42 @@ function refreshArticle(input, { resetChecks = true } = {}) {
 }
 
 function compose() {
-  const input = serializeForm();
-  const firstInvalid = [...form.querySelectorAll("[required]")].find((control) => !control.value.trim());
-  if (firstInvalid) {
-    firstInvalid.focus();
-    announce(`${firstInvalid.labels?.[0]?.textContent || "필수 항목"}을 입력해 주세요.`, "error");
+  clearFormError();
+  const rawInput = serializeForm();
+  const mode = compositionMode();
+  if (!rawInput.primaryKeyword?.trim()) {
+    showFormError("대표 키워드를 입력하면 바로 본문을 만들 수 있습니다.", primaryKeywordInput);
+    return;
+  }
+  if (mode === "restructure" && !rawInput.draft?.trim()) {
+    showFormError("기존 원고 재구성 방식에서는 원고를 입력해 주세요.", draftInput);
     return;
   }
 
+  const input = mode === "generate"
+    ? createKeywordDraft(rawInput)
+    : {
+        ...rawInput,
+        compositionMode: "restructure",
+        topic: rawInput.topic?.trim() || rawInput.primaryKeyword.trim(),
+        category: rawInput.category || inferBlogCategory(rawInput),
+      };
+
+  if (!input.draft?.trim()) {
+    showFormError("본문을 만들지 못했습니다. 대표 키워드를 다시 확인해 주세요.", primaryKeywordInput);
+    return;
+  }
+
+  if (mode === "generate") applyGeneratedDefaults(input);
+  persistDraft();
   refreshArticle(input);
   emptyState.hidden = true;
   resultState.hidden = false;
-  announce(`게시 준비 묶음을 구성했습니다. 내부 품질 점수는 ${audit.score}점입니다.`, audit.score >= 75 ? "success" : "info");
+  const message = mode === "generate"
+    ? `대표 키워드로 본문 ${audit.metrics.textLength.toLocaleString("ko-KR")}자를 생성했습니다. 내용을 확인해 주세요.`
+    : `기존 원고를 게시 준비 묶음으로 재구성했습니다. 내부 품질 점수는 ${audit.score}점입니다.`;
+  announce(message, "success");
+  showToast(mode === "generate" ? "본문 생성 완료" : "원고 재구성 완료");
   resultState.scrollIntoView({
     behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
     block: "start",
@@ -568,12 +647,16 @@ function exportQueue() {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  persistDraft();
   compose();
 });
 
-form.addEventListener("input", scheduleSave);
+form.addEventListener("input", (event) => {
+  event.target.removeAttribute?.("aria-invalid");
+  clearFormError();
+  scheduleSave();
+});
 form.addEventListener("change", scheduleSave);
+compositionModeInputs.forEach((control) => control.addEventListener("change", updateCompositionModeUi));
 
 titleCandidates.addEventListener("click", (event) => {
   const button = event.target.closest("[data-title-index]");
@@ -582,7 +665,7 @@ titleCandidates.addEventListener("click", (event) => {
   if (!selected) return;
   form.elements.namedItem("title").value = selected;
   persistDraft();
-  refreshArticle(serializeForm());
+  refreshArticle({ ...(activeInput || serializeForm()), title: selected });
   announce("선택한 제목을 적용하고 게시 준비 묶음을 갱신했습니다.", "success");
 });
 
@@ -622,7 +705,7 @@ document.querySelector("#review-toggle").addEventListener("click", toggleReview)
 document.querySelector("#review-stop").addEventListener("click", stopReview);
 document.querySelector("#edit-source").addEventListener("click", () => {
   form.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-  form.elements.namedItem("draft").focus();
+  (compositionMode() === "generate" ? primaryKeywordInput : draftInput).focus();
 });
 document.querySelector("#import-trigger").addEventListener("click", () => importInput.click());
 importInput.addEventListener("change", () => {
@@ -645,6 +728,7 @@ document.querySelector("#clear-draft").addEventListener("click", () => {
   copyBlocks = [];
   imagePlans = [];
   titleCandidateValues = [];
+  activeInput = null;
   stopReview();
   resetFinalChecks();
   resultState.hidden = true;
@@ -652,7 +736,8 @@ document.querySelector("#clear-draft").addEventListener("click", () => {
   saveState.textContent = "새 초안";
   saveState.dataset.state = "";
   announce("새 초안을 시작합니다.");
-  form.elements.namedItem("topic").focus();
+  updateCompositionModeUi();
+  primaryKeywordInput.focus();
 });
 
 document.addEventListener("keydown", (event) => {
@@ -701,7 +786,8 @@ restoreQueue();
 resetFinalChecks();
 updateSpeed();
 stopReview();
-announce("대본을 입력하면 게시 직전 묶음을 이 브라우저 안에서 구성합니다.");
+updateCompositionModeUi();
+announce("대표 키워드 하나를 입력하고 ‘키워드로 본문 생성’을 누르세요.");
 
 if (SAFETY_BOUNDARY.automaticPublishing || SAFETY_BOUNDARY.botDetectionEvasion) {
   throw new Error("Invalid content safety boundary");

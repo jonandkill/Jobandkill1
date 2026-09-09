@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
-    <meta name="description" content="대본을 네이버 블로그 게시 직전 상태까지 자동 정리하고 사람이 최종 확인·발행하는 작성 도구">
+    <meta name="description" content="대표 키워드로 네이버 블로그 본문 초안을 만들고 제목·목차·이미지 계획까지 자동 구성하는 작성 도구">
     <title>Job&Kill 네이버 블로그 스튜디오</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -26,14 +26,14 @@
       <section class="hero" aria-labelledby="hero-title">
         <div>
           <p class="eyebrow">PUBLISH-READY WORKFLOW</p>
-          <h1 id="hero-title">대본에서 게시 직전까지,<br><em>한 번에 준비합니다.</em></h1>
-          <p>제목 후보·목차·본문 서식·이미지 배치·대체텍스트·품질 점검·게시 대기열을 자동 구성하고, 네이버의 최종 확인과 발행만 사람이 수행합니다.</p>
+          <h1 id="hero-title">키워드에서 본문까지,<br><em>한 번에 만듭니다.</em></h1>
+          <p>대표 키워드 하나로 제목·도입부·소제목·본문 초안을 만들고, 이미지 배치·대체텍스트·품질 점검·게시 대기열까지 자동 구성합니다.</p>
         </div>
         <div class="boundary-card" aria-label="작동 범위">
           <span class="boundary-dot" aria-hidden="true"></span>
           <div>
-            <strong>최종 발행 전까지 자동 준비</strong>
-            <p>네이버 로그인·편집기 조작 없이 게시 묶음을 완성합니다.</p>
+            <strong>외부 AI 비용 없이 즉시 생성</strong>
+            <p>입력 메모를 우선 반영하며 확인되지 않은 수치·일정·후기는 만들지 않습니다.</p>
           </div>
         </div>
       </section>
@@ -43,18 +43,33 @@
       <section class="workspace" aria-label="블로그 초안 작업 공간">
         <form id="draft-form" class="composer" novalidate>
           <div class="panel-heading">
-            <div><span>01</span><h2>자료와 기준</h2></div>
+            <div><span>01</span><h2>키워드로 글 만들기</h2></div>
             <button id="clear-draft" class="text-button" type="button">새로 시작</button>
           </div>
 
+          <fieldset class="mode-picker">
+            <legend>작성 방식</legend>
+            <div class="mode-options">
+              <label class="mode-card">
+                <input type="radio" name="compositionMode" value="generate" checked>
+                <span><strong>키워드로 새 글 만들기</strong><small>대표 키워드만 넣어도 본문을 생성합니다.</small></span>
+                <b>기본</b>
+              </label>
+              <label class="mode-card">
+                <input type="radio" name="compositionMode" value="restructure">
+                <span><strong>기존 원고 다듬기</strong><small>입력 원고를 보존해 게시용 구조로 바꿉니다.</small></span>
+              </label>
+            </div>
+          </fieldset>
+
           <div class="field-grid two">
             <label class="field">
-              <span>글 주제 <b aria-hidden="true">*</b></span>
-              <input name="topic" required placeholder="예: 상동역 롯데캐슬 계약 전 확인사항">
+              <span>대표 키워드 <b aria-hidden="true">*</b></span>
+              <input name="primaryKeyword" required placeholder="예: 울산면접학원">
             </label>
             <label class="field">
-              <span>대표 키워드 <b aria-hidden="true">*</b></span>
-              <input name="primaryKeyword" required placeholder="예: 상동역 롯데캐슬">
+              <span>글 주제 <small>선택</small></span>
+              <input name="topic" placeholder="비워두면 대표 키워드로 자동 작성합니다">
             </label>
           </div>
 
@@ -74,6 +89,7 @@
                 <option>부동산·분양</option>
                 <option>교육·강의</option>
                 <option>연구·논문</option>
+                <option>일반 정보</option>
               </select>
             </label>
             <label class="field">
@@ -81,12 +97,12 @@
               <input name="audience" placeholder="예: 분양권 계약을 검토하는 실수요자">
             </label>
             <label class="field">
-              <span>목표 분량</span>
+              <span>글 구성</span>
               <select name="targetLength">
-                <option value="1200">간결 · 1,200자</option>
-                <option value="1800" selected>표준 · 1,800자</option>
-                <option value="2600">상세 · 2,600자</option>
-                <option value="3500">심층 · 3,500자</option>
+                <option value="1200">간결 · 핵심 4개</option>
+                <option value="1800" selected>표준 · 핵심 6개</option>
+                <option value="2600">상세 · 핵심 7개</option>
+                <option value="3500">심층 · 핵심 8개</option>
               </select>
             </label>
           </div>
@@ -97,9 +113,9 @@
           </label>
 
           <label class="field field-grow">
-            <span>대본·메모·검증된 자료 <b aria-hidden="true">*</b></span>
-            <textarea name="draft" required rows="15" placeholder="완성 대본이나 조사 자료를 붙여 넣으세요.&#10;&#10;# 소제목&#10;문단 내용&#10;&#10;소제목이 없으면 문단을 보존한 채 ‘핵심 내용 1, 2…’로만 나눕니다."></textarea>
-            <small>입력한 원문을 추출·배치하며 새로운 사실을 덧붙이지 않습니다.</small>
+            <span>핵심 메모·기존 초안·검증된 자료 <small>선택</small></span>
+            <textarea name="draft" rows="12" placeholder="비워도 본문이 생성됩니다.&#10;&#10;반영할 메모나 기존 원고가 있다면 여기에 붙여 넣으세요.&#10;입력한 내용은 생성 본문에 우선 반영합니다."></textarea>
+            <small id="draft-help">비워도 됩니다. 메모·초안·검증 자료를 넣으면 생성 본문에 우선 반영합니다.</small>
           </label>
 
           <label class="field">
@@ -127,18 +143,21 @@
             </label>
           </div>
 
-          <button class="button primary wide" type="submit">
-            <span>초안 구성</span><span aria-hidden="true">→</span>
+          <div id="form-error" class="form-error" role="alert" hidden></div>
+
+          <button id="compose-button" class="button primary wide compose-button" type="submit">
+            <span class="compose-copy"><strong id="compose-label">키워드로 본문 생성</strong><small id="compose-hint">대표 키워드 하나만 필수</small></span>
+            <span class="compose-arrow" aria-hidden="true">→</span>
           </button>
         </form>
 
         <aside class="guide-panel" aria-labelledby="guide-title">
           <div class="panel-heading"><div><span>02</span><h2 id="guide-title">검수 기준</h2></div></div>
           <ol class="guide-list">
-            <li><span>1</span><div><strong>원문 보존</strong><p>대본에 없는 통계·후기·순위를 추가하지 않습니다.</p></div></li>
-            <li><span>2</span><div><strong>게시 묶음 자동 구성</strong><p>제목, 목차, 본문, 이미지 계획, 출처, 태그를 한 번에 만듭니다.</p></div></li>
-            <li><span>3</span><div><strong>한 번 붙여넣기</strong><p>서식 포함 복사로 네이버에서 다시 편집할 일을 줄입니다.</p></div></li>
-            <li><span>4</span><div><strong>사람이 발행</strong><p>네이버 화면에서 내용과 공개 범위를 직접 확인합니다.</p></div></li>
+            <li><span>1</span><div><strong>키워드 분석</strong><p>카테고리와 독자 관점을 자동으로 선택합니다.</p></div></li>
+            <li><span>2</span><div><strong>본문 생성</strong><p>도입부·소제목·실무 내용·마무리를 한 번에 만듭니다.</p></div></li>
+            <li><span>3</span><div><strong>사실 보호</strong><p>입력하지 않은 날짜·수치·후기·성과를 꾸미지 않습니다.</p></div></li>
+            <li><span>4</span><div><strong>직접 검수·발행</strong><p>생성 결과와 공개 범위를 네이버에서 최종 확인합니다.</p></div></li>
           </ol>
           <div class="shortcut-note">
             <strong>앱 내부 단축키</strong>
@@ -156,14 +175,14 @@
 
       <section id="empty-state" class="empty-state" aria-labelledby="empty-title">
         <div class="empty-number">03</div>
-        <div><h2 id="empty-title">아직 구성된 초안이 없습니다.</h2><p>왼쪽에 대본을 입력하면 미리보기, 구역별 복사, 품질 점검이 이곳에 나타납니다.</p></div>
+        <div><h2 id="empty-title">대표 키워드로 본문을 만들어 보세요.</h2><p>대표 키워드 하나만 입력해도 제목, 도입부, 소제목, 본문, 이미지 계획과 품질 점검이 이곳에 나타납니다.</p></div>
       </section>
 
-      <section id="result-state" class="results" hidden aria-label="구성된 블로그 초안">
+      <section id="result-state" class="results" hidden tabindex="-1" aria-label="생성된 블로그 본문">
         <div class="result-toolbar">
-          <div><span class="eyebrow">READY TO REVIEW</span><h2>초안 검수와 내보내기</h2></div>
+          <div><span class="eyebrow">GENERATED ARTICLE</span><h2>생성된 본문 확인하기</h2></div>
           <div class="toolbar-actions">
-            <button id="edit-source" class="button ghost" type="button">원문 수정</button>
+            <button id="edit-source" class="button ghost" type="button">입력 수정</button>
             <button id="export-json" class="button ghost" type="button">JSON 저장</button>
             <button id="export-md" class="button ghost" type="button">문서 저장</button>
             <button id="copy-all" class="button ghost" type="button">일반 복사</button>
@@ -172,9 +191,9 @@
         </div>
 
         <ol id="pipeline-stages" class="pipeline-stages" aria-label="자동 구성 완료 단계">
-          <li><span>1</span><strong>원문 분석</strong><small>완료</small></li>
+          <li><span>1</span><strong>키워드·자료 분석</strong><small>완료</small></li>
           <li><span>2</span><strong>제목·목차</strong><small>완료</small></li>
-          <li><span>3</span><strong>본문 서식</strong><small>완료</small></li>
+          <li><span>3</span><strong>본문 생성</strong><small>완료</small></li>
           <li><span>4</span><strong>이미지 계획</strong><small>완료</small></li>
           <li><span>5</span><strong>품질 검사</strong><small>완료</small></li>
         </ol>
@@ -259,7 +278,7 @@
     </main>
 
     <footer>
-      <p>Job&Kill · 대본 기반 반자동 작성 도구</p>
+      <p>Job&Kill · 키워드·자료 기반 작성 도구</p>
       <p>키워드 반복이나 기계적 발행으로 검색 노출을 보장하지 않습니다.</p>
     </footer>
     <div id="toast" class="toast" role="status" hidden></div>

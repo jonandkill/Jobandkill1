@@ -7,12 +7,14 @@ import {
   articleToRichHtml,
   auditArticle,
   buildArticle,
+  createKeywordDraft,
   createCopyBlocks,
   createImagePlan,
   createPublishPackage,
   createQueueRecord,
   createTableOfContents,
   generateTitleCandidates,
+  inferBlogCategory,
   parseKeywords,
   parseSources,
   segmentDraft,
@@ -149,4 +151,50 @@ test("queue records start in review unless an allowed status is supplied", () =>
   assert.equal(POST_STATUSES[record.status], "검수 대기");
   assert.equal(record.scheduledAt, "2026-09-05T09:00");
   assert.equal(record.package.images.length, 2);
+});
+
+test("keyword-only input generates a complete employment article", () => {
+  const generated = createKeywordDraft({
+    primaryKeyword: "울산면접학원",
+    targetLength: "1800",
+  });
+  const article = buildArticle(generated);
+
+  assert.equal(generated.generatedFromKeyword, true);
+  assert.equal(generated.category, "취업·면접");
+  assert.match(generated.topic, /울산면접학원/u);
+  assert.ok(article.body.length >= 1400);
+  assert.ok(article.sections.length >= 6);
+  assert.equal(article.generationMode, "keyword");
+  assert.match(article.fullText, /근거와 출처를 관리한다/u);
+  assert.match(article.fullText, /게시 전 마지막으로 확인한다/u);
+  assert.equal(/100% 합격|업계 1위|무조건 합격/u.test(article.fullText), false);
+});
+
+test("keyword generation preserves supplied notes and verified source labels", () => {
+  const note = "현대자동차 면접을 준비하는 취업준비생에게 실전 답변 구성법을 안내한다.";
+  const generated = createKeywordDraft({
+    primaryKeyword: "현대자동차 면접",
+    draft: note,
+    sources: "현대자동차 채용공고 https://talent.hyundai.com",
+    targetLength: "1800",
+  });
+  const article = buildArticle(generated);
+
+  assert.match(article.fullText, new RegExp(note, "u"));
+  assert.match(article.fullText, /입력 자료에서 확인한 핵심/u);
+  assert.match(article.fullText, /현대자동차 채용공고/u);
+});
+
+test("category inference covers specialist and general keywords", () => {
+  assert.equal(inferBlogCategory({ primaryKeyword: "신축 아파트 청약" }), "부동산·분양");
+  assert.equal(inferBlogCategory({ primaryKeyword: "학술 논문 분석" }), "연구·논문");
+  assert.equal(inferBlogCategory({ primaryKeyword: "여행 준비물" }), "일반 정보");
+  assert.equal(inferBlogCategory({ primaryKeyword: "논문", category: "교육·강의" }), "교육·강의");
+});
+
+test("empty keyword does not fabricate a draft", () => {
+  const generated = createKeywordDraft({ primaryKeyword: "   " });
+  assert.equal(generated.generatedFromKeyword, false);
+  assert.equal(generated.draft, "");
 });

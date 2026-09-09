@@ -374,6 +374,78 @@ footer {
   text-underline-offset: 4px;
 }
 
+.mode-picker {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.mode-picker legend {
+  margin-bottom: 9px;
+  color: var(--navy-800);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.mode-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.mode-card {
+  display: grid;
+  min-height: 86px;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  gap: 11px;
+  align-items: start;
+  padding: 16px;
+  border: 1px solid #cfd6df;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+.mode-card:has(input:checked) {
+  border-color: var(--gold-600);
+  background: #fffaf0;
+  box-shadow: 0 0 0 3px rgb(166 119 30 / 10%);
+}
+
+.mode-card input {
+  width: 19px;
+  height: 19px;
+  margin: 1px 0 0;
+  accent-color: var(--gold-600);
+}
+
+.mode-card > span {
+  display: grid;
+  gap: 5px;
+}
+
+.mode-card strong {
+  color: var(--navy-900);
+  font-size: 14px;
+}
+
+.mode-card small {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.mode-card b {
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: var(--gold-100);
+  color: var(--gold-700);
+  font-size: 10px;
+}
+
 .field-grid {
   display: grid;
   gap: 18px;
@@ -398,6 +470,13 @@ footer {
   color: var(--navy-800);
   font-size: 14px;
   font-weight: 750;
+}
+
+.field > span small {
+  margin-left: 5px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .field b {
@@ -446,6 +525,11 @@ footer {
   outline: 0;
   box-shadow: 0 0 0 4px rgb(41 71 102 / 11%);
   background: #fffefa;
+}
+
+.field [aria-invalid="true"] {
+  border-color: var(--error);
+  box-shadow: 0 0 0 4px rgb(170 52 52 / 10%);
 }
 
 .field ::placeholder {
@@ -567,6 +651,42 @@ footer {
 
 .button.primary:hover {
   background: #8f651a;
+}
+
+.form-error {
+  padding: 13px 15px;
+  border: 1px solid #e4bcbc;
+  border-radius: 10px;
+  background: #fff3f3;
+  color: #8d2e2e;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.compose-button {
+  min-height: 68px;
+}
+
+.compose-copy {
+  display: grid;
+  gap: 3px;
+  text-align: left;
+}
+
+.compose-copy strong {
+  font-size: 16px;
+}
+
+.compose-copy small {
+  color: rgb(255 255 255 / 78%);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.compose-arrow {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .button.ghost {
@@ -1666,6 +1786,7 @@ footer p {
 
   .field-grid.two,
   .field-grid.three,
+  .mode-options,
   .result-sidebar,
   .review-controls,
   .publish-gate {
