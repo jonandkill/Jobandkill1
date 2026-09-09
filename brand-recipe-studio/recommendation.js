@@ -1,7 +1,7 @@
 const industryProfiles={
 '농업·임업·어업':{icons:['leaf','seed','pine','tree','water','fish','sun','flower'],layouts:['stacked','badge','horizontal'],palettes:['forest-white','green-fill','olive-ivory']},
 '광업':{icons:['mountain','helmet','truck','gear','hammer','frame','steps','road'],layouts:['badge','horizontal','monogram'],palettes:['charcoal-silver','gold-navy','brick-sand']},
-'제조업':{icons:['factory','gear','wrench','bolt','truck','chip','frame','steps'],layouts:['horizontal','monogram','stacked'],palettes:['deep-trust','graphite-lime','royal-orange']},
+'제조업':{icons:['factory','conveyor','gear','robot','helmet','wrench','barrel','turbine'],layouts:['horizontal','monogram','stacked'],palettes:['deep-trust','graphite-lime','royal-orange']},
 '전기·가스·에너지':{icons:['bolt','sun','water','wave','factory','spark','gear','cloud'],layouts:['monogram','horizontal','badge'],palettes:['royal-orange','gold-navy','graphite-lime']},
 '수도·환경':{icons:['water','wave','leaf','tree','cloud','fish','seed','sun'],layouts:['stacked','horizontal','badge'],palettes:['slate-cyan','emerald-mint','air-blue']},
 '건설업':{icons:['crane','helmet','hammer','building','bridge','road','gear','frame'],layouts:['horizontal','badge','monogram'],palettes:['charcoal-silver','deep-trust','brick-sand']},
