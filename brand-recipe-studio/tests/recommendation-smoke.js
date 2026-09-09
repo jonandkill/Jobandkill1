@@ -18,8 +18,13 @@ const context={
 vm.createContext(context);
 for(const file of ['cards.js','app.js','projects.js','recommendation.js']){
   let source=fs.readFileSync(path.join(root,'dist',file),'utf8');
-  if(file==='app.js')source=source.replace(/render\(\);\s*$/,'');
+  if(file==='app.js'||file==='recommendation.js')source=source.replace(/render\(\);\s*$/,'');
   vm.runInContext(source,context,{filename:file});
+}
+
+if(!fs.readFileSync(path.join(root,'dist','recommendation.js'),'utf8').trim().endsWith('render();')){
+ console.error('추천 모듈 로드 직후 초기 화면을 다시 그리지 않음');
+ process.exit(1);
 }
 
 const report=vm.runInContext(`(()=>{
