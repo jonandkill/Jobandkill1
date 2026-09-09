@@ -12,7 +12,11 @@
 <body>
   <main class="device">
     <div class="label">QA · 390 × 844 CSS px</div>
-    <iframe src="./" title="모바일 반응형 검수 화면"></iframe>
+    <iframe id="qaFrame" src="./" title="모바일 반응형 검수 화면"></iframe>
   </main>
+  <script>
+    const page=new URLSearchParams(location.search).get('page');
+    if(page&&/^[a-z0-9-]+\.html$/i.test(page))document.querySelector('#qaFrame').src=`./${page}`;
+  </script>
 </body>
 </html>
