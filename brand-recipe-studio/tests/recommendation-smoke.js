@@ -16,7 +16,7 @@ const context={
   SVGElement:function(){},Image:function(){}
 };
 vm.createContext(context);
-for(const file of ['cards.js','app.js','projects.js','recommendation.js']){
+for(const file of ['cards.js','app.js','motifs.js','projects.js','recommendation.js']){
   let source=fs.readFileSync(path.join(root,'dist',file),'utf8');
   if(file==='app.js'||file==='recommendation.js')source=source.replace(/render\(\);\s*$/,'');
   vm.runInContext(source,context,{filename:file});
@@ -29,7 +29,12 @@ if(!fs.readFileSync(path.join(root,'dist','recommendation.js'),'utf8').trim().en
 
 const report=vm.runInContext(`(()=>{
  const styles=Object.keys(styleProfiles),failures=[],rows=[];
- for(const industry of industries)for(const style of styles){
+ const required=['water','car','wrench','road','mountain','bird','lion','elephant','dog','cat','pine','oak','orchid','cactus'];
+ if(symbols.length<70||recipes.length<1000)failures.push({name:'motifLibraryTooSmall',symbols:symbols.length,recipes:recipes.length});
+ for(const motif of required)if(!symbols.some(x=>x[0]===motif))failures.push({name:'missingMotif',motif});
+ for(const industry of industries){
+  const styleIcons=[];
+  for(const style of styles){
   state.industry=industry;state.style=style;state.recommendMode=true;state.palette=recommendedPalette();
   const top=sorted().slice(0,12),top6=top.slice(0,6),top3=top.slice(0,3);
   const unique=a=>new Set(a).size;
@@ -38,6 +43,9 @@ const report=vm.runInContext(`(()=>{
   const cards=sortedCards().slice(0,12);
   if(unique(cards.slice(0,6).map(x=>x.front))!==6)failures.push({industry,style,name:'cardFronts6'});
   rows.push({industry,style,first:top[0].id,icon:top[0].icon,layout:top[0].layout,tone:top[0].tone,palette:state.palette,card:cards[0].id});
+  styleIcons.push(top[0].icon);
+  }
+  if(new Set(styleIcons).size!==5)failures.push({industry,name:'fiveStylesReuseTopMotif',styleIcons});
  }
  state.recommendMode=false;
  if(new Set(sorted().slice(0,10).map(x=>x.icon)).size!==10)failures.push({name:'directLogoOrderNotDiverse'});
@@ -45,7 +53,7 @@ const report=vm.runInContext(`(()=>{
  if(new Set(sortedCards().map(x=>x.id)).size!==289)failures.push({name:'directCardOrderLostRecipes'});
  const chosen=recipes[47].id;state.recipe=chosen;render=()=>{};toast=()=>{};applyRecommendationChange('style','bold');
  if(state.recipe!==chosen)failures.push({name:'directSelectionWasOverwritten'});
- return {combinations:rows.length,failures,rows};
+ return {combinations:rows.length,failures,rows,symbolCount:symbols.length,recipeCount:recipes.length};
 })()`,context);
 
 if(report.failures.length){
@@ -53,5 +61,7 @@ if(report.failures.length){
   process.exit(1);
 }
 console.log(`PASS ${report.combinations}/105 industry-style recommendation combinations`);
+console.log(`PASS ${report.symbolCount} motif families and ${report.recipeCount} recipes, including required life/animal/transport/tool motifs`);
+console.log('PASS five style buttons select five distinct lead motifs in every industry');
 console.log('PASS logo top-12 diversity, top-6 icon diversity, layout/tone diversity, SVG uniqueness');
 console.log('PASS card top-6 front-layout diversity, direct-list diversity, and direct-selection preservation');
