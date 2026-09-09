@@ -2,6 +2,30 @@ import { readFile } from "node:fs/promises";
 
 const seed = JSON.parse(await readFile(new URL("../data/seed.json", import.meta.url), "utf8"));
 const registry = JSON.parse(await readFile(new URL("../data/universities.json", import.meta.url), "utf8"));
+const details = JSON.parse(await readFile(new URL("../data/details.json", import.meta.url), "utf8"));
+const exams = JSON.parse(await readFile(new URL("../data/exams.json", import.meta.url), "utf8"));
+const coverage = JSON.parse(await readFile(new URL("../data/coverage.json", import.meta.url), "utf8"));
+const examIds = new Set();
+for (const exam of exams) {
+  if (examIds.has(exam.id)) throw new Error(`Duplicate exam: ${exam.id}`);
+  examIds.add(exam.id);
+  if (!registry.universities.some(u => u.id === exam.universityId)) throw new Error(`Unknown exam university: ${exam.universityId}`);
+  if (!(Number.isInteger(exam.academicYear) || (exam.academicYear === null && exam.resourceType === 'archive')) || !exam.title || !/^https:\/\//.test(exam.sourceUrl)) throw new Error(`Invalid exam metadata: ${exam.id}`);
+  if (exam.documentUrl && !/^https:\/\//.test(exam.documentUrl)) throw new Error(`Invalid exam document: ${exam.id}`);
+}
+if (coverage.universities.length !== registry.universities.length) throw new Error('Coverage must account for every registry university');
+const coverageIds = new Set(coverage.universities.map(u => u.universityId));
+if (coverageIds.size !== registry.universities.length || registry.universities.some(u => !coverageIds.has(u.id))) throw new Error('Coverage university mismatch');
+const detailIds = new Set();
+for (const detail of details) {
+  if (detailIds.has(detail.universityId)) throw new Error(`Duplicate detail: ${detail.universityId}`);
+  detailIds.add(detail.universityId);
+  if (!registry.universities.some(item => item.id === detail.universityId)) throw new Error(`Unknown detail university: ${detail.universityId}`);
+  if (!detail.overview || !detail.admissions?.length || !detail.sources?.length) throw new Error(`Incomplete detail: ${detail.universityId}`);
+  for (const source of detail.sources) {
+    if (!/^https?:\/\//.test(source.url)) throw new Error(`Invalid detail source: ${source.url}`);
+  }
+}
 const ids = new Set();
 const sourceKeys = new Set(seed.sources.map((source) => source.key));
 const allowedRules = new Set([

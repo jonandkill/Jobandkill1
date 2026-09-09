@@ -1,356 +1,69 @@
-import { evaluateProgram } from "./rules.js";
-
-const byId = (id) => document.getElementById(id);
-const formIds = ["current-grade", "track-filter", "keyword", "university-filter", "qualification", "score-k", "score-m", "score-e", "score-h", "score-t1", "score-t2", "type-t1", "type-t2"];
-const storageKey = "jobnkill-susi-intake-v1";
-const compareKey = "jobnkill-susi-compare-v1";
-let catalog = null;
-let evaluations = [];
-let compareIds = JSON.parse(localStorage.getItem(compareKey) || "[]");
-let visibleUniversityCount = 36;
-
-function escapeHtml(value) {
-  return String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char]));
+import {evaluateProgram} from './rules.js';
+import {renderHistory} from './history-view.js';
+import {renderEssayArchive} from './essay-view.js';
+import {detailFacts} from './detail-facts.js';
+import {renderMajors} from './major-view.js';
+const $=id=>document.getElementById(id), esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const read=(k,d)=>{try{const v=JSON.parse(localStorage.getItem('jk-v2-'+k));return v&&typeof v===typeof d&&Array.isArray(v)===Array.isArray(d)?v:d}catch{return d}};
+const state={profile:read('profile',{year:'2027',scale:'9',basis:'all',average:'',grade:'고3'}),saved:read('saved',[]),checks:read('checks',{}),drafts:read('drafts',{}),csat:read('csat',{}),q:'',region:'',type:'',limit:18};let catalog;
+const inactiveUniversities={'0000431':'서해대학은 2021년 2월 28일 폐교되었습니다.','0002659':'한국복지대학교는 2023년 3월 1일 한경국립대학교로 통합되었습니다.','0000548':'강원관광대학교는 교육부가 자진 폐교를 인가한 대학입니다.'};
+const activeUniversity=u=>!inactiveUniversities[u.id];
+function toast(t){$('toast').textContent=t;setTimeout(()=>$('toast').textContent='',3000)}
+const persist=k=>{try{localStorage.setItem('jk-v2-'+k,JSON.stringify(state[k]));return true}catch{toast('이 브라우저에서는 저장할 수 없어요.');return false}};
+const safeUrl=u=>/^https?:\/\//i.test(u||'')?esc(u):'#';
+const select=(id,label,items,v)=>`<div><label for="${id}">${label}</label><select id="${id}">${items.map(([a,b])=>`<option value="${esc(a)}" ${String(a)===String(v)?'selected':''}>${esc(b)}</option>`).join('')}</select></div>`;
+const detail=u=>Array.isArray(catalog.details)?catalog.details.find(d=>d.universityId===u.id):catalog.details?.[u.id];
+const programs=u=>catalog.programs.filter(p=>p.university===u.name&&(u.campus==='본교'||p.campus===u.campus||u.displayName.includes(p.campus)));
+const fact=(n,v)=>`<div><dt>${n}</dt><dd>${v==null?'미수집':esc(v)}</dd></div>`;
+function fields(){const p=state.profile;return `<div class="fields">${select('year','지원 학년도',[['2027','2027학년도'],['2028','2028학년도'],['2029','2029학년도']],p.year)}${select('scale','내신 등급 체계',[['9','9등급제'],['5','5등급제']],p.scale)}<div class="full"><label for="average">전체 평균 내신</label><input id="average" type="number" inputmode="decimal" min="1" max="${esc(p.scale||9)}" step="0.01" placeholder="예: 3.25" value="${esc(p.average)}"><p class="hint">모르면 비워 두고 대학부터 찾아도 좋아요.</p></div>${select('basis','어떤 과목 평균인가요?',[['all','전체 과목'],['humanities','국영수사'],['science','국영수과'],['unknown','잘 모르겠어요']],p.basis)}${select('grade','현재 학년',[['고1','고1'],['고2','고2'],['고3','고3'],['졸업','졸업생']],p.grade)}</div><p class="error" id="error" role="alert"></p>`}
+function saveProfile(){for(const k of ['year','scale','basis','average','grade'])state.profile[k]=$(k).value;const n=Number(state.profile.average);if($('average').validity.badInput||state.profile.average!==''&&(!Number.isFinite(n)||n<1||n>Number(state.profile.scale))){$('error').textContent=`평균 내신은 1부터 ${state.profile.scale} 사이로 입력해 주세요.`;$('average').focus();return false}if(!persist('profile')){$('error').textContent='저장할 수 없어요. 이 화면에서는 입력값을 유지합니다.';return false}return true}
+function card(u){const ps=programs(u),d=detail(u);return `<article class="card"><span class="tag">${ps.length?'전형 상세 제공':d?'대학 안내 제공':'기본정보'}</span><h3>${esc(u.name)}</h3><p class="muted">${esc(u.region)} · ${esc(u.institutionType)} · ${esc(u.campus)}</p><dl class="facts">${fact('입학정원',u.admissionCapacity==null?null:u.admissionCapacity.toLocaleString()+'명')}${fact('등록 학과 수',u.departmentCount==null?null:u.departmentCount+'개')}</dl><p>${ps.length?ps.length+'개 전형 묶음의 지원조건과 평가방법을 확인하세요.':d?esc(d.overview).slice(0,100):'기본정보와 지원 준비 항목을 확인하세요. 상세 전형은 수집 중입니다.'}</p><div class="actions"><button class="primary" data-detail="${u.id}">대학 알아보기</button><button data-save="${u.id}" aria-pressed="${state.saved.includes(u.id)}">${state.saved.includes(u.id)?'✓ 저장됨':'+ 후보'}</button></div></article>`}
+function bindCards(){document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=()=>location.hash='university/'+b.dataset.detail);document.querySelectorAll('[data-save]').forEach(b=>b.onclick=()=>{const id=b.dataset.save;if(inactiveUniversities[id]){toast(inactiveUniversities[id]+' 현재 지원 후보에 저장할 수 없습니다.');return;}state.saved=state.saved.includes(id)?state.saved.filter(x=>x!==id):[...state.saved,id];const stored=persist('saved');b.textContent=state.saved.includes(id)?'✓ 저장됨':'+ 후보';b.setAttribute('aria-pressed',state.saved.includes(id));toast(stored?(state.saved.includes(id)?'내 후보에 저장했어요.':'후보에서 제외했어요.'):'현재 화면에만 반영됐어요. 새로 열면 유지되지 않습니다.');if(location.hash==='#saved')saved()})}
+function reset(){state.q=state.region=state.type='';state.limit=18;find();$('results').scrollIntoView()}
+function results(){const us=catalog.universities.filter(u=>activeUniversity(u)&&(!state.q||[u.name,u.campus,u.region].some(v=>v.includes(state.q)))&&(!state.region||u.region===state.region)&&(!state.type||u.institutionType===state.type));$('results').innerHTML=`<div class="section-head"><h2>대학 탐색 ${us.length}개</h2><button class="text" id="reset">조건 초기화</button></div><p class="hint">선택한 지역·학교 유형 기준입니다. 내신에 따른 합격 추천 순위가 아닙니다.</p><div class="cards">${us.slice(0,state.limit).map(card).join('')}</div>${!us.length?'<div class="empty"><h3>검색 조건에 맞는 대학이 없어요</h3><p>지원 가능한 대학이 없다는 뜻은 아닙니다. 대학명을 줄이거나 조건을 바꿔 보세요.</p><button id="empty-reset">전체 대학 보기</button></div>':''}${us.length>state.limit?'<button class="more" id="more">대학 더 보기</button>':''}`;$('reset').onclick=reset;if($('empty-reset'))$('empty-reset').onclick=reset;if($('more'))$('more').onclick=()=>{state.limit+=18;results()};bindCards()}
+function captureWizard(){for(const k of ['intent','year','grade','scale','average','basis','preferredRegion','preferredType'])if($(k))state.profile[k]=$(k).value;}
+function wizard(step=0,moveFocus=false){
+  step=Math.max(0,Math.min(3,Number(step)||0));const p=state.profile;p.wizardStep=step;
+  const inputs=step===0?select('year','지원 학년도',[['2027','2027학년도'],['2028','2028학년도'],['2029','2029학년도']],p.year)+select('grade','현재 학년',[['고1','고1'],['고2','고2'],['고3','고3'],['졸업','졸업생']],p.grade)
+    :step===1?select('scale','내신 등급 체계',[['9','9등급제'],['5','5등급제']],p.scale)+`<div><label for="average">전체 평균 내신 <span class="hint">선택</span></label><input id="average" aria-describedby="average-help error" type="number" inputmode="decimal" min="1" max="${esc(p.scale||9)}" step="0.01" placeholder="예: 3.25" value="${esc(p.average)}"><p class="hint" id="average-help">모르면 비워 두셔도 됩니다. 세부 과목은 지금 입력하지 않아도 돼요.</p></div>`+select('basis','어떤 과목 평균인가요?',[['all','전체 과목'],['humanities','국영수사'],['science','국영수과'],['unknown','잘 모르겠어요']],p.basis)
+    :step===2?select('preferredRegion','희망 지역 · 선택',[['','전국 · 아직 정하지 않았어요'],...[...new Set(catalog.universities.map(u=>u.region))].sort().map(x=>[x,x])],p.preferredRegion||'')+select('preferredType','학교 유형 · 선택',[['','전체 · 아직 정하지 않았어요'],['일반대학','일반대학'],['전문대학','전문대학']],p.preferredType||''):`<dl class="review-list"><div><dt>지원 계획</dt><dd>${esc(p.year)}학년도 · ${esc(p.grade)}</dd></div><div><dt>평균 내신</dt><dd>${p.average?esc(p.average)+'등급':'입력하지 않음'} · ${esc(p.scale)}등급제</dd></div><div><dt>희망 조건</dt><dd>${esc(p.preferredRegion||'전국')} · ${esc(p.preferredType||'전체 대학')}</dd></div></dl><p class="notice">공식 입결을 연도별로 비교할 수 있습니다. 전체 평균 내신과 대학별 반영 성적은 다를 수 있어 개인 합격확률은 계산하지 않습니다.</p>`;
+  $('app').innerHTML=`<section class="intake-shell"><p class="eyebrow">나의 진학 설계</p><div class="wizard-progress"><span id="step-label">총 4단계 중 ${step+1}단계</span><span>${step===3?'마지막 확인만 남았어요':step===2?'이제 확인 단계만 남았어요':'한 단계씩 입력하면 돼요'}</span></div><progress max="4" value="${step+1}" aria-labelledby="step-label"></progress><ol class="wizard-steps" aria-label="입력 순서">${['지원 계획','평균 내신','희망 조건','최종 확인'].map((x,i)=>`<li ${i===step?'aria-current="step"':''}>${i<step?'✓':i+1} ${x}</li>`).join('')}</ol><form id="wizard-form" class="panel accent" novalidate><h1 id="wizard-heading" tabindex="-1">${['지원 계획을 알려주세요','평균 내신부터 입력해요','원하는 대학의 조건이 있나요?','입력한 내용을 확인해요'][step]}</h1><p class="muted">${['학년도에 따라 전형과 성적 체계가 달라요.','평균 등급 하나로 시작하세요. 5등급제와 9등급제는 서로 환산하지 않습니다.','두 항목 모두 선택 사항입니다. 나중에 바꿀 수 있어요.','입력 완료 후 대학 탐색 결과를 보여드릴게요.'][step]}</p><div class="wizard-fields">${inputs}</div><p class="error" id="error" role="alert"></p><div class="wizard-actions">${step?'<button type="button" id="wizard-back">이전</button>':''}<button class="primary" type="submit">${step===3?'입력 완료 · 대학 탐색 결과 보기':step===2?'입력 내용 확인':'다음'}</button></div>${step===1?'<button type="button" id="skip-average" class="text">평균 내신은 나중에 입력할게요</button>':''}<p class="hint wizard-save">입력 내용은 이 브라우저에 저장됩니다. 이전 단계로 돌아가도 유지돼요.</p></form><button id="browse-first" class="text">성적 입력 없이 대학부터 둘러보기 →</button></section>`;
+  const form=$('wizard-form');
+  form.oninput=()=>{captureWizard();if($('average'))$('average').max=p.scale;persist('profile');};
+  form.onchange=form.oninput;
+  form.onsubmit=e=>{e.preventDefault();captureWizard();if(step===1&&($('average').validity.badInput||(p.average!==''&&(!Number.isFinite(Number(p.average))||Number(p.average)<1||Number(p.average)>Number(p.scale))))){$('error').textContent=`평균 내신은 1부터 ${p.scale} 사이로 입력해 주세요.`;$('average').setAttribute('aria-invalid','true');$('average').focus();return;}if(step<3){p.wizardStep=step+1;persist('profile');wizard(step+1,true);}else{p.intakeComplete=true;persist('profile');state.region=p.preferredRegion||'';state.type=p.preferredType||'';state.q='';state.limit=18;find();$('exploration-heading').focus();}};
+  if($('wizard-back'))$('wizard-back').onclick=()=>{captureWizard();p.wizardStep=step-1;persist('profile');wizard(step-1,true);};
+  if($('skip-average'))$('skip-average').onclick=()=>{p.average='';p.wizardStep=2;persist('profile');wizard(2,true);};
+  if(step===2){const skip=document.createElement('button');skip.type='button';skip.className='text';skip.textContent='희망 조건은 나중에 정할게요';skip.onclick=()=>{p.preferredRegion='';p.preferredType='';p.wizardStep=3;persist('profile');wizard(3,true);};form.append(skip);}
+  $('browse-first').onclick=()=>{captureWizard();persist('profile');state.browseOnly=true;find();$('exploration-heading').focus();};
+  if(moveFocus)$('wizard-heading').focus();
 }
-
-function setScoreOptions() {
-  document.querySelectorAll("select.score").forEach((select) => {
-    select.innerHTML = '<option value="">미입력</option>' + Array.from({ length: 9 }, (_, index) => `<option value="${index + 1}">${index + 1}등급</option>`).join("");
-  });
+function startWizard(){state.profile.intakeComplete=false;state.browseOnly=false;state.profile.wizardStep=0;persist('profile');if(location.hash==='#find')wizard(0,true);else location.hash='find';}
+function find(){
+  if(!state.profile.intakeComplete&&!state.browseOnly){wizard(state.profile.wizardStep);return;}
+  const p=state.profile;
+  $('app').innerHTML=`<section class="exploration-intro"><p class="eyebrow">${p.intakeComplete?'입력 완료 · 대학 탐색':'대학 탐색'}</p><h1 id="exploration-heading" tabindex="-1">나에게 맞는 선택을 찾아가요</h1><p class="muted">대학의 조건을 확인하고 후보에 담아 비교하세요.</p><button id="edit-intake">내 조건 ${p.intakeComplete?'수정':'입력'}하기</button></section><a class="button primary" href="#history">실제 연도별 입결 비교하기 →</a><a class="button" href="#majors">전국 학과 찾아보기 →</a><div id="profile-notice" class="notice">${esc(p.year)}학년도 · ${esc(p.scale)}등급제${p.average?' · 평균 '+esc(p.average)+'등급':''}. 전형 안내는 2027학년도 기준이며 입결은 각 결과연도를 표시합니다. 공식 입결 비교와 전형 조건 점검을 이용하세요. 개인 합격확률은 지원자별 합격·불합격 자료가 확보되어야 검증할 수 있습니다.</div><section><div class="filters"><div><label for="query">대학명 검색</label><input id="query" type="search" placeholder="예: 울산, 한양대학교" value="${esc(state.q)}"></div>${select('region','희망 지역',[['','전국'],...[...new Set(catalog.universities.map(u=>u.region))].sort().map(x=>[x,x])],state.region)}${select('type','학교 유형',[['','전체'],['일반대학','일반대학'],['전문대학','전문대학']],state.type)}</div><div id="results" aria-live="polite"></div></section><p class="hint" style="margin-top:30px">원본 목록 ${catalog.universities.length}개 캠퍼스(폐교·통합 과거 항목 포함) · 현재 탐색은 확인된 폐교·통합 대학 제외 · 전형 상세 ${new Set(catalog.programs.map(p=>p.university)).size}개교. 대학명 등록과 상세 전형 제공 범위는 다릅니다.</p>`;
+  $('edit-intake').onclick=startWizard;
+  for(const id of ['query','region','type'])$(id).oninput=()=>{state[id==='query'?'q':id]=$(id).value.trim();state.limit=18;results();};
+  results();
 }
-
-function restoreForm() {
-  const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
-  for (const id of formIds) {
-    if (saved[id] !== undefined && byId(id)) byId(id).value = saved[id];
-  }
+const sourceLinks=ss=>ss.map(s=>`<a href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a>`).join('');
+function program(p){return `<article class="program"><span class="tag">${esc(p.academicYear)} · ${esc(p.track)}</span><h3>${esc(p.variant)} · ${esc(p.groupName)}</h3><dl><dt>모집인원</dt><dd>${p.seats==null?'미수집':esc(p.seats)+'명'} ${esc(p.seatsNote||'')}</dd><dt>지원자격</dt><dd>${esc(p.eligibility)}</dd><dt>평가방법</dt><dd>${esc(p.selectionMethod)}</dd><dt>수능최저</dt><dd>${esc(p.csatRule)}</dd><dt>고사 일정</dt><dd>${esc(p.examDate||'아직 수집하지 못함')}</dd></dl><p class="hint">${esc(p.notes||'')} 근거: 모집요강 ${esc(p.sourcePages||'원문 참조')}</p></article>`}
+const check=(k,t)=>`<label><input type="checkbox" data-check="${k}" ${state.checks[k]?'checked':''}><span>${t}</span></label>`;
+function bindChecks(){document.querySelectorAll('[data-check]').forEach(x=>x.onchange=()=>{state.checks[x.dataset.check]=x.checked;persist('checks')})}
+function coverageSummary(id){
+  const c=catalog.coverage?.universities?.find(x=>x.universityId===id);if(!c)return '';
+  const names=new Map((catalog.coverage.requiredDetailFields||[]).map(x=>[x.id,x.label]));
+  return `<section class="panel"><h2>이 대학의 자료 확인 현황</h2><p>학과 ${c.departmentCountCollected||0}개 · 연도별 입결 ${c.outcomeRecordCount||0}건 · 논술 자료 ${c.examRecordCount||0}건</p><p class="hint">전체 검수가 끝난 상세 항목 ${c.verifiedDetailFields.length}개. 부분 수집 항목은 추가 확인이 필요합니다.</p><p class="hint">추가 확인할 내용: ${c.missingDetailFields.map(x=>esc(names.get(x)||x)).join(', ')||'필수 항목 확인 완료'}</p><p class="hint">일부 안내가 있더라도 모든 모집단위의 전형을 확인했다는 뜻은 아닙니다.</p></section>`;
 }
-
-function saveForm() {
-  const state = {};
-  for (const id of formIds) if (byId(id)) state[id] = byId(id).value;
-  localStorage.setItem(storageKey, JSON.stringify(state));
-}
-
-function getInput() {
-  return {
-    k: byId("score-k").value,
-    m: byId("score-m").value,
-    e: byId("score-e").value,
-    h: byId("score-h").value,
-    t1: byId("score-t1").value,
-    t2: byId("score-t2").value,
-    t1Type: byId("type-t1").value,
-    t2Type: byId("type-t2").value
-  };
-}
-
-function typeLabel(value) {
-  return ({ social: "사회", science: "과학", vocational: "직업" })[value] || "";
-}
-
-function scoreText(value) {
-  return value ? `${value}등급` : "미입력";
-}
-
-function verdictRank(status) {
-  return ({ "no-min": 0, pass: 1, missing: 2, fail: 3, reference: 4 })[status] ?? 9;
-}
-
-function currentPrograms() {
-  const track = byId("track-filter").value;
-  const university = byId("university-filter").value;
-  const keyword = byId("keyword").value.trim().toLowerCase();
-  return catalog.programs.filter((item) => {
-    const trackOk = track === "전체" || item.track === track;
-    const universityOk = university === "전체" || item.university === university;
-    const haystack = `${item.university} ${item.campus} ${item.track} ${item.variant} ${item.groupName}`.toLowerCase();
-    return trackOk && universityOk && (!keyword || haystack.includes(keyword));
-  });
-}
-
-function sourceFor(item) {
-  return catalog.sources.find((source) => source.key === item.sourceKey);
-}
-
-function renderResults() {
-  const input = getInput();
-  evaluations = currentPrograms().map((program) => ({ program, evaluation: evaluateProgram(program, input) }))
-    .sort((a, b) => verdictRank(a.evaluation.status) - verdictRank(b.evaluation.status) || a.program.sortOrder - b.program.sortOrder);
-
-  const counts = evaluations.reduce((acc, item) => {
-    acc[item.evaluation.status] = (acc[item.evaluation.status] || 0) + 1;
-    return acc;
-  }, {});
-  const readyText = byId("track-filter").value === "논술"
-    ? `입력 기준 충족 ${counts.pass || 0}개 · 수능최저 없음 ${counts["no-min"] || 0}개 · 추가 입력 ${counts.missing || 0}개`
-    : `검색 결과 ${evaluations.length}개 · 자동판정 ${evaluations.filter((item) => item.program.calculationReady).length}개`;
-  byId("result-summary").textContent = readyText;
-
-  if (!evaluations.length) {
-    byId("results").innerHTML = '<div class="empty-state"><div><b>조건에 맞는 자료가 없습니다</b><span>검색어나 대학 선택을 바꿔보세요.</span></div></div>';
-    return;
-  }
-
-  byId("results").innerHTML = evaluations.map(({ program, evaluation }) => {
-    const source = sourceFor(program);
-    const isAdded = compareIds.includes(program.id);
-    const seat = program.seats ? `${program.seats.toLocaleString("ko-KR")}명` : "세부 모집단위 확인";
-    return `<article class="result-card" data-program-id="${escapeHtml(program.id)}">
-      <div class="result-card-top">
-        <div class="result-card-title">
-          <div class="university-line"><h3>${escapeHtml(program.university)}</h3><span class="campus-tag">${escapeHtml(program.campus)}</span><span class="track-tag">${escapeHtml(program.track)}</span></div>
-          <p>${escapeHtml(program.variant)} · ${escapeHtml(program.groupName)}</p>
-        </div>
-        <span class="verdict ${evaluation.status}">${escapeHtml(evaluation.label)}</span>
-      </div>
-      <div class="result-core">
-        <div class="fact-block"><span>선발 방식 · 인원</span><b>${escapeHtml(program.selectionMethod)} · ${seat}</b></div>
-        <div class="fact-block"><span>수능최저</span><b>${escapeHtml(program.csatRule)}</b></div>
-      </div>
-      <p class="calculation">${escapeHtml(evaluation.calculation)}</p>
-      <div class="result-actions">
-        <a class="source-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener">공식 모집요강 ${escapeHtml(program.sourcePages || "")}</a>
-        <button class="compare-button ${isAdded ? "is-added" : ""}" data-compare-id="${escapeHtml(program.id)}" type="button">${isAdded ? "비교에서 빼기" : "비교 담기"}</button>
-      </div>
-    </article>`;
-  }).join("");
-
-  document.querySelectorAll("[data-compare-id]").forEach((button) => {
-    button.addEventListener("click", () => toggleCompare(button.dataset.compareId));
-  });
-}
-
-function toggleCompare(id) {
-  if (compareIds.includes(id)) compareIds = compareIds.filter((item) => item !== id);
-  else if (compareIds.length < 3) compareIds = [...compareIds, id];
-  else {
-    alert("비교는 최대 3개까지 담을 수 있습니다.");
-    return;
-  }
-  localStorage.setItem(compareKey, JSON.stringify(compareIds));
-  updateCompareCount();
-  renderResults();
-  renderComparison();
-}
-
-function updateCompareCount() {
-  byId("compare-count").textContent = String(compareIds.length);
-}
-
-function renderComparison() {
-  const selected = compareIds.map((id) => catalog.programs.find((item) => item.id === id)).filter(Boolean);
-  if (!selected.length) {
-    byId("comparison").innerHTML = '<div class="empty-state"><div><b>비교할 전형을 담아주세요</b><span>조건 판정 화면에서 최대 3개를 선택할 수 있습니다.</span></div></div>';
-    return;
-  }
-  byId("comparison").innerHTML = selected.map((program) => {
-    const evaluation = evaluateProgram(program, getInput());
-    return `<article class="compare-card">
-      <header><b>${escapeHtml(program.university)}</b><span>${escapeHtml(program.variant)} · ${escapeHtml(program.groupName)}</span></header>
-      <dl>
-        <div><dt>현재 판정</dt><dd>${escapeHtml(evaluation.label)}<br>${escapeHtml(evaluation.calculation)}</dd></div>
-        <div><dt>모집인원</dt><dd>${program.seats ? `${program.seats.toLocaleString("ko-KR")}명` : "세부 모집단위 확인"}<br>${escapeHtml(program.seatsNote || "")}</dd></div>
-        <div><dt>전형방법</dt><dd>${escapeHtml(program.selectionMethod)}</dd></div>
-        <div><dt>지원자격</dt><dd>${escapeHtml(program.eligibility)}</dd></div>
-        <div><dt>수능최저</dt><dd>${escapeHtml(program.csatRule)}</dd></div>
-        <div><dt>고사일·시간</dt><dd>${escapeHtml(program.examDate || "모집단위별 확인")}${program.examMinutes ? ` · ${program.examMinutes}분` : ""}</dd></div>
-        <div><dt>확인사항</dt><dd>${escapeHtml(program.notes || "최종 모집요강 확인")}</dd></div>
-      </dl>
-      <button class="remove-button" data-remove-id="${escapeHtml(program.id)}">비교에서 빼기</button>
-    </article>`;
-  }).join("");
-  document.querySelectorAll("[data-remove-id]").forEach((button) => button.addEventListener("click", () => toggleCompare(button.dataset.removeId)));
-}
-
-function renderSources() {
-  byId("source-list").innerHTML = catalog.sources.map((source) => {
-    const programs = catalog.programs.filter((program) => program.sourceKey === source.key);
-    const ready = programs.filter((program) => program.calculationReady).length;
-    return `<article class="source-item">
-      <div><h3>${escapeHtml(source.university)} ${escapeHtml(source.campus)}</h3><p>${escapeHtml(source.title)}<br>${escapeHtml(source.pages)} · 검수 ${escapeHtml(String(source.verifiedAt).slice(0, 10))} · 전형 묶음 ${programs.length}개 · 자동판정 ${ready}개</p></div>
-      <a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">원문 열기</a>
-    </article>`;
-  }).join("");
-}
-
-function registryMatches() {
-  const keyword = byId("registry-keyword").value.trim().toLowerCase();
-  const type = byId("registry-type").value;
-  const region = byId("registry-region").value;
-  const status = byId("registry-status").value;
-  return catalog.universities.filter((item) => {
-    const haystack = `${item.name} ${item.campus} ${item.region} ${item.institutionType}`.toLowerCase();
-    return (!keyword || haystack.includes(keyword))
-      && (type === "전체" || item.institutionType === type)
-      && (region === "전체" || item.region === region)
-      && (status === "전체" || item.detailStatus === status);
-  });
-}
-
-function compactNumber(value, suffix = "") {
-  return value === null || value === undefined ? "미공개" : `${Number(value).toLocaleString("ko-KR")}${suffix}`;
-}
-
-function renderUniversities() {
-  const matches = registryMatches();
-  const visible = matches.slice(0, visibleUniversityCount);
-  const verified = matches.filter((item) => item.detailStatus === "verified_detail").length;
-  byId("registry-summary").textContent = `검색 ${matches.length.toLocaleString("ko-KR")}개 · 상세 전형 공개 ${verified}개`;
-
-  if (!matches.length) {
-    byId("university-list").innerHTML = '<div class="empty-state"><div><b>조건에 맞는 대학이 없습니다</b><span>대학명 또는 필터를 바꿔보세요.</span></div></div>';
-  } else {
-    byId("university-list").innerHTML = visible.map((item) => {
-      const verifiedDetail = item.detailStatus === "verified_detail";
-      return `<article class="university-card">
-        <div class="university-card-head">
-          <div><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.campus)} · ${escapeHtml(item.region)} · ${escapeHtml(item.institutionType)}</p></div>
-          <span class="detail-status ${verifiedDetail ? "is-verified" : ""}">${verifiedDetail ? "상세 전형 공개" : "목록 등록"}</span>
-        </div>
-        <dl class="university-facts">
-          <div><dt>입학정원</dt><dd>${compactNumber(item.admissionCapacity, "명")}</dd></div>
-          <div><dt>설치학과</dt><dd>${compactNumber(item.departmentCount, "개")}</dd></div>
-          <div><dt>전형정보</dt><dd>${compactNumber(item.admissionTrackCount, "개")}</dd></div>
-          <div><dt>수시 경쟁률</dt><dd>${compactNumber(item.earlyCompetitionRate, ":1")}</dd></div>
-        </dl>
-        <div class="university-actions">
-          <a href="${escapeHtml(item.officialInfoUrl)}" target="_blank" rel="noopener">어디가 공식정보</a>
-          ${verifiedDetail ? `<button type="button" data-open-university="${escapeHtml(item.name)}">검수 전형 보기</button>` : ""}
-        </div>
-      </article>`;
-    }).join("");
-  }
-
-  const moreButton = byId("load-more-universities");
-  moreButton.hidden = visible.length >= matches.length;
-  moreButton.textContent = `더 보기 (${(matches.length - visible.length).toLocaleString("ko-KR")}개 남음)`;
-  document.querySelectorAll("[data-open-university]").forEach((button) => {
-    button.addEventListener("click", () => {
-      byId("university-filter").value = button.dataset.openUniversity;
-      byId("keyword").value = "";
-      switchView("diagnosis");
-      renderResults();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  });
-}
-
-function switchView(view) {
-  document.querySelectorAll(".tab-button").forEach((button) => {
-    const active = button.dataset.view === view;
-    button.classList.toggle("is-active", active);
-    button.setAttribute("aria-selected", String(active));
-  });
-  document.querySelectorAll(".view-panel").forEach((panel) => panel.classList.toggle("is-active", panel.id === `${view}-view`));
-  if (view === "compare") renderComparison();
-  if (view === "universities") renderUniversities();
-}
-
-function reportRows() {
-  return evaluations.slice(0, 8).map(({ program, evaluation }) => `<tr><td>${escapeHtml(program.university)}<br>${escapeHtml(program.variant)}</td><td>${escapeHtml(program.groupName)}</td><td>${escapeHtml(evaluation.label)}<br>${escapeHtml(evaluation.calculation)}</td><td>${escapeHtml(program.sourcePages || "")}</td></tr>`).join("");
-}
-
-function openReport() {
-  const input = getInput();
-  const passCount = evaluations.filter((item) => ["pass", "no-min"].includes(item.evaluation.status)).length;
-  byId("report-content").innerHTML = `
-    <p class="eyebrow">JOB&KILL 수시설계 · 2027학년도</p>
-    <h2>수시 조건 점검 기본 보고서</h2>
-    <p>생성일 ${new Date().toLocaleDateString("ko-KR")} · 공식 문서 검수일 ${escapeHtml(catalog.metadata.verifiedAt)}</p>
-    <h3>1. 입력 조건</h3>
-    <p>${escapeHtml(byId("current-grade").value)} · ${escapeHtml(byId("qualification").selectedOptions[0].textContent)} · 국어 ${scoreText(input.k)}, 수학 ${scoreText(input.m)}, 영어 ${scoreText(input.e)}, 한국사 ${scoreText(input.h)}, 탐구1 ${typeLabel(input.t1Type)} ${scoreText(input.t1)}, 탐구2 ${typeLabel(input.t2Type)} ${scoreText(input.t2)}</p>
-    <h3>2. 확인 결과</h3>
-    <p>현재 검색된 ${evaluations.length}개 전형 묶음 중 입력 기준 충족 또는 수능최저 미적용 항목은 ${passCount}개입니다. 이 수치는 합격 가능성이 아니라 공식 조건과 입력값의 일치 여부입니다.</p>
-    <table class="report-table"><thead><tr><th>대학·전형</th><th>모집단위 묶음</th><th>판정 근거</th><th>요강 위치</th></tr></thead><tbody>${reportRows()}</tbody></table>
-    <h3>3. 다음 확인</h3>
-    <ul><li>정확한 모집단위가 현재 전형 묶음에 포함되는지 확인합니다.</li><li>원서접수 전 대학 입학처의 수정 공지와 최종 모집요강을 다시 확인합니다.</li><li>논술·면접·학생부 정성평가는 자동판정 결과와 분리해 준비 수준을 점검합니다.</li></ul>
-    <h3>4. 유의사항</h3>
-    <p>${escapeHtml(catalog.metadata.notice)} 본 보고서는 지원 자격의 최종 확인서나 합격 예측 자료가 아닙니다.</p>`;
-  byId("report-dialog").showModal();
-}
-
-async function init() {
-  setScoreOptions();
-  const response = await fetch("/api/catalog", { headers: { Accept: "application/json" } });
-  if (!response.ok) throw new Error("catalog unavailable");
-  catalog = await response.json();
-
-  const universities = [...new Set(catalog.programs.map((item) => item.university))].sort((a, b) => a.localeCompare(b, "ko"));
-  byId("university-filter").innerHTML = '<option value="전체">전체 대학</option>' + universities.map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`).join("");
-  restoreForm();
-  compareIds = compareIds.filter((id) => catalog.programs.some((item) => item.id === id)).slice(0, 3);
-
-  const regions = [...new Set(catalog.universities.map((item) => item.region))].sort((a, b) => a.localeCompare(b, "ko"));
-  byId("registry-region").innerHTML = '<option value="전체">전체 지역</option>' + regions.map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`).join("");
-  byId("university-count").textContent = catalog.universities.length.toLocaleString("ko-KR");
-  byId("general-count").textContent = catalog.universities.filter((item) => item.institutionType === "일반대학").length;
-  byId("college-count").textContent = catalog.universities.filter((item) => item.institutionType === "전문대학").length;
-  byId("source-count").textContent = catalog.sources.length;
-  byId("program-count").textContent = catalog.programs.length;
-  byId("rule-count").textContent = catalog.programs.filter((item) => item.calculationReady).length;
-  byId("storage-badge").textContent = catalog.storage === "postgresql" ? "Postgre" : "검수 파일";
-  byId("verified-date").textContent = `공식 문서 최종 검수 ${catalog.metadata.verifiedAt}`;
-  updateCompareCount();
-  renderSources();
-  renderUniversities();
-  renderResults();
-
-  for (const id of formIds) {
-    byId(id)?.addEventListener(id === "keyword" ? "input" : "change", () => { saveForm(); renderResults(); renderComparison(); });
-  }
-  document.querySelectorAll(".tab-button").forEach((button) => button.addEventListener("click", () => switchView(button.dataset.view)));
-  ["registry-type", "registry-region", "registry-status"].forEach((id) => byId(id).addEventListener("change", () => {
-    visibleUniversityCount = 36;
-    renderUniversities();
-  }));
-  byId("registry-keyword").addEventListener("input", () => {
-    visibleUniversityCount = 36;
-    renderUniversities();
-  });
-  byId("reset-registry").addEventListener("click", () => {
-    byId("registry-keyword").value = "";
-    byId("registry-type").value = "전체";
-    byId("registry-region").value = "전체";
-    byId("registry-status").value = "전체";
-    visibleUniversityCount = 36;
-    renderUniversities();
-  });
-  byId("load-more-universities").addEventListener("click", () => {
-    visibleUniversityCount += 36;
-    renderUniversities();
-  });
-  byId("fill-example").addEventListener("click", () => {
-    const example = { "score-k": "3", "score-m": "4", "score-e": "2", "score-h": "3", "score-t1": "2", "score-t2": "4", "type-t1": "social", "type-t2": "social" };
-    Object.entries(example).forEach(([id, value]) => byId(id).value = value);
-    saveForm(); renderResults(); renderComparison();
-  });
-  byId("reset-form").addEventListener("click", () => {
-    localStorage.removeItem(storageKey);
-    byId("current-grade").value = "고3";
-    byId("track-filter").value = "논술";
-    byId("keyword").value = "";
-    byId("university-filter").value = "전체";
-    byId("qualification").value = "domestic";
-    ["score-k", "score-m", "score-e", "score-h", "score-t1", "score-t2"].forEach((id) => byId(id).value = "");
-    byId("type-t1").value = "social";
-    byId("type-t2").value = "social";
-    renderResults(); renderComparison();
-  });
-  byId("clear-compare").addEventListener("click", () => {
-    compareIds = [];
-    localStorage.setItem(compareKey, "[]");
-    updateCompareCount(); renderResults(); renderComparison();
-  });
-  byId("open-report").addEventListener("click", openReport);
-  byId("close-report").addEventListener("click", () => byId("report-dialog").close());
-  byId("print-report").addEventListener("click", () => window.print());
-  byId("report-dialog").addEventListener("click", (event) => {
-    if (event.target === byId("report-dialog")) byId("report-dialog").close();
-  });
-}
-
-init().catch(() => {
-  byId("result-summary").textContent = "공식 자료를 불러오지 못했습니다.";
-  byId("results").innerHTML = '<div class="empty-state"><div><b>자료 연결을 확인하고 있습니다</b><span>잠시 후 다시 열어주세요.</span></div></div>';
-});
+function university(id){const u=catalog.universities.find(x=>x.id===id);if(!u){$('app').innerHTML='<h1>대학 정보를 찾지 못했어요</h1><a href="#find">대학 찾기로 돌아가기</a>';return}if(inactiveUniversities[id]){$('app').innerHTML='<h1>'+esc(u.name)+'</h1><p class="notice">'+esc(inactiveUniversities[id])+' 현재 지원 대학 탐색과 후보 저장에서 제외됩니다.</p><a class="button" href="#history/'+esc(id)+'">과거 입결 보기</a><a class="button" href="#find">현재 대학 찾아보기</a>';return;}const ps=programs(u),d=detail(u);$('app').innerHTML=`<a class="button text" href="#find">← 대학 목록으로</a><div class="section-head"><div><p class="eyebrow">UNIVERSITY GUIDE</p><h1>${esc(u.name)}</h1><p class="muted">${esc(u.campus)} · ${esc(u.region)} · ${esc(u.institutionType)}</p></div><button data-save="${u.id}">${state.saved.includes(u.id)?'✓ 저장됨':'+ 후보 저장'}</button></div><a class="button primary" href="#history/${u.id}">이 대학의 연도별 입결 보기 →</a><a class="button" href="#majors/${u.id}">이 대학 학과 보기 →</a><div class="split"><div><section class="panel"><h2>이 대학을 알아보세요</h2><p>${esc(d?.overview||'기본 현황과 공개된 전형 정보를 확인하고, 관심 학과의 구체적인 조건을 비교해 보세요.')}</p><dl class="facts">${fact('입학정원',u.admissionCapacity==null?null:u.admissionCapacity.toLocaleString()+'명')}${fact('등록 학과 수',u.departmentCount==null?null:u.departmentCount+'개')}</dl><p class="hint">어디가 ${esc(u.academicYear)}학년도 목록 기준. 입학정원은 수시 모집인원과 다릅니다.</p>${(d?.admissions||[]).map(a=>`<div class="program"><h3>${esc(a.title)}</h3><p>${esc(a.text)}</p></div>`).join('')}</section><section class="panel"><h2>지원 전에 알아야 할 전형정보</h2>${ps.length?ps.map(program).join(''):'<div class="notice warn">이 대학의 모집단위별 전체 전형과 자동계산 규칙은 아직 수집하지 못했습니다. 위 공식 확인 내용 외의 조건을 임의로 판단하지 않습니다.</div>'}</section>${detailFacts(d)}${ps.length?csatForm():''}</div><aside>${coverageSummary(u.id)}<section class="panel"><h2>다음에 할 일</h2><div class="checks">${['관심 학과의 교육과정 확인','지원자격과 제출서류 확인','원서접수·고사 일정 기록','내신 반영교과와 입결 기준 확인'].map((x,i)=>check('u-'+u.id+'-'+i,x)).join('')}</div><a class="button text" href="#prepare">준비 계획 만들기 →</a></section><section class="panel sources"><h2>공식 출처</h2>${sourceLinks([...(d?.sources||[]),...catalog.sources.filter(s=>ps.some(p=>p.sourceKey===s.key)),{title:'어디가 대학정보',url:u.officialInfoUrl}])}<p class="hint">최종 지원 시 해당 연도 모집요강과 수정 공지를 확인하세요.</p></section><section class="panel"><label for="reason">이 대학을 선택한 이유</label><textarea id="reason" placeholder="관심 학과, 교육과정, 지역 등">${esc(state.drafts['reason-'+id]||'')}</textarea><p class="hint">이 브라우저에만 저장됩니다.</p></section></aside></div>`;bindCards();bindChecks();$('reason').oninput=()=>{state.drafts['reason-'+id]=$('reason').value;persist('drafts')};if(ps.length)bindCsat(ps)}
+function csatForm(){return `<section class="panel"><h2>수능최저를 더 자세히 점검</h2><p class="muted">선택 입력입니다. 내신과 별개로 모의고사·수능 예상등급을 입력하세요.</p><form id="csat"><div class="fields">${[['k','국어'],['m','수학'],['e','영어'],['h','한국사'],['t1','탐구 1'],['t2','탐구 2']].map(([k,n])=>select('csat-'+k,n,[['','미입력'],...Array.from({length:9},(_,i)=>[i+1,(i+1)+'등급'])],state.csat[k])).join('')}${['t1','t2'].map((k,i)=>select('csat-'+k+'Type','탐구 '+(i+1)+' 유형',[['','선택'],['social','사회'],['science','과학'],['vocational','직업']],state.csat[k+'Type'])).join('')}</div><button class="primary">최저 조건 확인</button></form><div id="csat-results" aria-live="polite"></div></section>`}
+function bindCsat(ps){$('csat').onsubmit=e=>{e.preventDefault();for(const k of ['k','m','e','h','t1','t2','t1Type','t2Type'])state.csat[k]=$('csat-'+k).value;persist('csat');if(state.profile.year!=='2027'){$('csat-results').innerHTML='<p class="notice warn">규칙은 2027학년도 자료입니다. 내 현황에서 지원 학년도를 확인해 주세요.</p>';return}if(ps.some(p=>p.calculationReady&&p.ruleCode!=='NO_CSAT_MIN')&&(!state.csat.t1Type||!state.csat.t2Type)){$('csat-results').innerHTML='<p class="notice warn">탐구 유형을 선택해 주세요.</p>';return}$('csat-results').innerHTML='<p class="hint">수능최저 조건만 점검합니다. 합격 가능성이나 전체 지원자격 판정이 아닙니다.</p>'+ps.map(p=>{const r=evaluateProgram(p,state.csat);return `<div class="rule"><h3>${esc(p.variant)} · ${esc(p.groupName)}</h3><strong>${esc(r.label)}</strong><p>${esc(r.calculation)}</p></div>`}).join('')}}
+function saved(){const us=catalog.universities.filter(u=>activeUniversity(u)&&state.saved.includes(u.id));$('app').innerHTML=`<p class="eyebrow">MY SHORTLIST</p><h1>내가 선택한 대학</h1><p class="muted">조건과 준비할 일을 나란히 놓고 비교해 보세요.</p><p class="hint">후보와 메모는 이 브라우저에만 저장됩니다.</p>${us.length?`<button class="primary" id="print" style="margin-bottom:20px">후보 비교표 인쇄·PDF 저장</button><div class="panel compare"><table><thead><tr><th>비교 항목</th>${us.map(u=>`<th>${esc(u.name)}</th>`).join('')}</tr></thead><tbody>${[['지역·유형',u=>esc(u.region+' · '+u.institutionType)],['제공 전형',u=>programs(u).map(p=>esc(p.variant+' · '+p.groupName)).join('<br>')||'상세 전형 미수집'],['고사 일정',u=>programs(u).map(p=>esc(p.examDate||'일정 미수집')).join('<br>')||'일정 미수집'],['평가방법',u=>programs(u).map(p=>esc(p.selectionMethod)).join('<br>')||'미수집'],['내 선택 이유',u=>esc(state.drafts['reason-'+u.id]||'대학 상세에서 기록해 주세요')]].map(([n,fn])=>`<tr><th>${n}</th>${us.map(u=>`<td>${fn(u)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="notice">일정이 미수집된 전형이 있어 일정 충돌 여부를 확정할 수 없습니다. 이 표는 후보 비교 자료이며 성적 매칭 보고서가 아닙니다.</p><div class="cards">${us.map(card).join('')}</div>`:'<div class="empty"><h2>관심 대학부터 담아볼까요?</h2><p>대학 카드의 + 후보 버튼을 누르면 모아 비교할 수 있어요.</p><a class="button text" href="#find">대학 찾기 →</a></div>'}`;if($('print'))$('print').onclick=()=>window.print();bindCards()}
+function exams(){ renderEssayArchive($('app'), catalog); }
+const tasks=['관심 대학 3곳 저장하기','희망 학과 교육과정 읽기','모집요강에서 지원자격 확인하기','원서접수·면접·논술 일정 기록하기','이번 주 연습 1회 완료하기'];
+function prepare(tab='plan'){if(tab==='exams'){exams();return;}if(!['plan','essay','interview','career'].includes(tab))tab='plan';$('app').innerHTML=`<p class="eyebrow">PREPARE YOUR NEXT STEP</p><h1>선택을 준비로 연결해요</h1><p class="muted">작은 과제부터 하나씩. 기록과 자기점검으로 준비를 이어가세요.</p><div class="tabs">${[['plan','이번 주 계획'],['exams','논술 기출'],['essay','논술 연습'],['interview','면접 연습'],['career','학과·진로']].map(([k,n])=>`<a class="${tab===k?'active':''}" href="#prepare/${k}">${n}</a>`).join('')}</div><section class="panel"><h2>${{plan:'이번 주 할 일',essay:'글의 구조부터 점검해요',interview:'내 경험을 나의 말로 설명해요',career:'학과 이름보다 배우는 내용을 살펴보세요'}[tab]}</h2>${tab==='plan'?`<div class="checks">${tasks.map((x,i)=>check('task-'+i,x)).join('')}</div><label for="hours" style="margin-top:20px">주당 준비 가능 시간</label><input id="hours" type="number" min="0" max="168" value="${esc(state.drafts.hours||'')}" placeholder="예: 5">`:`<p class="notice">${tab==='essay'?'자체 연습 양식입니다. 공개 기출의 요구사항을 읽고 주장·근거·결론을 정리하세요. 대학별 유형과 채점 기준은 다릅니다.':tab==='interview'?'자체 연습 질문: 왜 이 학과를 선택했나요? 어떤 실제 경험이 영향을 주었나요? 그 과정에서 배운 점은 무엇인가요?':'대학의 학과 교육과정을 읽고 배우고 싶은 과목·관련 직업·필요 역량을 정리하세요. 특정 학과의 취업 성과를 보장하지 않습니다.'}</p>`}<label for="draft" style="margin-top:18px">나의 ${tab==='plan'?'계획':'연습 기록'}</label><textarea id="draft" placeholder="${tab==='essay'?'문제의 요구 → 주장 → 근거와 반론 → 결론':tab==='interview'?'상황 → 내가 한 행동 → 결과 → 배운 점 → 학과와 연결':tab==='career'?'관심 학과 / 배우고 싶은 과목 / 관련 직업 / 필요한 역량':'언제, 무엇을, 얼마나 준비할지 적어 주세요'}">${esc(state.drafts[tab]||'')}</textarea><p id="char-count" class="hint"></p>${['essay','interview'].includes(tab)?`<div class="checks">${(tab==='essay'?['문제에서 요구한 내용을 다뤘나요?','주장과 근거가 연결되나요?','대학이 제시한 분량과 시간을 확인했나요?']:['실제 경험만 담았나요?','내가 한 행동을 구체적으로 설명했나요?','추가 질문에 답할 근거가 있나요?']).map((x,i)=>check(tab+'-'+i,x)).join('')}</div>`:''}<p class="hint">이 브라우저에 자동 저장됩니다. 자동 채점 또는 AI 피드백은 제공하지 않습니다.</p></section>`;bindChecks();$('draft').oninput=()=>{state.drafts[tab]=$('draft').value;persist('drafts');$('char-count').textContent=$('draft').value.length+'자 · 공백 포함'};$('char-count').textContent=$('draft').value.length+'자 · 공백 포함';if($('hours'))$('hours').oninput=()=>{state.drafts.hours=$('hours').value;persist('drafts')}}
+function profile(){const done=tasks.filter((_,i)=>state.checks['task-'+i]).length;$('app').innerHTML=`<p class="eyebrow">MY PROGRESS</p><h1>내 준비 현황</h1><div class="split"><section class="panel"><h2>기본 성적과 학년도</h2><p>${esc(state.profile.year)}학년도 · ${esc(state.profile.grade)}</p><p>${state.profile.average?esc(state.profile.average)+"등급 · ":"평균 내신 미입력 · "}${esc(state.profile.scale)}등급제</p><button id="profile-edit" class="primary">한 단계씩 내 정보 수정</button><p class="hint">이전에 입력한 값이 유지됩니다.</p></section><div><section class="panel"><h2>이번 주 준비 기록</h2><p><strong>${done} / ${tasks.length}</strong>개 과제 완료</p><progress value="${done}" max="${tasks.length}"></progress><p class="hint">과제 수행 기록이며 합격 준비도 점수가 아닙니다.</p><a class="button text" href="#prepare">할 일 확인 →</a></section>${[['concern','상담 전 정리','지원 후보, 성적, 준비 방향 등'],['voc','정보 오류 메모','대학명 / 문제가 생긴 화면 / 실제 내용']].map(([k,t,p])=>`<section class="panel"><h2>${t}</h2><label for="${k}">${k==='concern'?'가장 고민되는 부분':'오류 상황'}</label><textarea id="${k}" placeholder="${p}">${esc(state.drafts[k]||'')}</textarea><p class="hint">이 브라우저에만 저장됩니다. 담당자 전송·접수는 아직 연결되지 않았습니다.</p></section>`).join('')}</div></div>`;$('profile-edit').onclick=startWizard;for(const k of ['concern','voc'])$(k).oninput=()=>{state.drafts[k]=$(k).value;persist('drafts')}}
+function render(){if(!catalog)return;const [page,id]=(location.hash.slice(1)||'find').split('/');({find,saved,prepare,profile,university,majors:()=>renderMajors($('app'),id),history:()=>renderHistory($('app'),catalog.outcomeSchools||[],catalog.universities,id)}[page]||find)(id);document.querySelectorAll('nav a').forEach(a=>a.setAttribute('aria-current',a.hash==='#'+page?'page':'false'));window.scrollTo(0,0)}
+async function load(){try{const r=await fetch('/api/catalog');if(!r.ok)throw Error();catalog=await r.json();if(!Array.isArray(catalog.universities)||!Array.isArray(catalog.programs))throw Error();state.saved=state.saved.filter(id=>typeof id==='string'&&catalog.universities.some(u=>u.id===id));render()}catch{$('app').innerHTML='<section class="empty"><h1>대학 정보를 불러오지 못했어요</h1><p>입력한 정보는 보존돼 있어요. 연결 상태를 확인하고 다시 시도해 주세요.</p><button id="retry" class="primary">다시 불러오기</button></section>';$('retry').onclick=load}}
+window.addEventListener('hashchange',render);load();

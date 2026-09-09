@@ -3,18 +3,36 @@ import pg from "pg";
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { gunzipSync } from "node:zlib";
 
 const { Pool } = pg;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const seed = JSON.parse(await readFile(path.join(__dirname, "data", "seed.json"), "utf8"));
 const universityRegistry = JSON.parse(await readFile(path.join(__dirname, "data", "universities.json"), "utf8"));
+const details = JSON.parse(await readFile(path.join(__dirname, "data", "details.json"), "utf8"));
+const exams = JSON.parse(await readFile(path.join(__dirname, "data", "exams.json"), "utf8"));
+const coverage = JSON.parse(await readFile(path.join(__dirname, "data", "coverage.json"), "utf8"));
+let outcomes;
+try { outcomes = JSON.parse(await readFile(path.join(__dirname, "data", "outcomes.json"), "utf8")); }
+catch (error) {
+  if (error.code !== "ENOENT") throw error;
+  outcomes = JSON.parse(gunzipSync(await readFile(path.join(__dirname, "data", "outcomes.json.gz"))).toString("utf8"));
+}
+const essayUniversities = JSON.parse(await readFile(path.join(__dirname, "data", "essay-universities.json"), "utf8"));
+let extraDetails = {universities: []};
+try { extraDetails = JSON.parse(await readFile(path.join(__dirname, "data", "extra-details.json"), "utf8")); }
+catch(error) { if(error.code !== "ENOENT") throw error; }
+const outcomeSchools = [...new Set(outcomes.map(row => row.universityId))].map(id => {
+  const rows = outcomes.filter(row => row.universityId === id);
+  return { universityId: id, universityName: rows[0].universityName, count: rows.length, years: [...new Set(rows.map(row => row.academicYear))].sort() };
+});
 const app = express();
 const port = Number(process.env.PORT || 3000);
 
 app.disable("x-powered-by");
 app.use(express.json({ limit: "250kb" }));
 app.use(express.static(path.join(__dirname, "public"), {
-  maxAge: process.env.NODE_ENV === "production" ? "1h" : 0,
+  maxAge: 0,
   etag: true
 }));
 
@@ -270,6 +288,12 @@ app.get("/api/health", async (_request, response) => {
       universities: universities.length,
       generalUniversities: universities.filter((item) => item.institutionType === "일반대학").length,
       colleges: universities.filter((item) => item.institutionType === "전문대학").length,
+      detailUniversities: details.length,
+      outcomeRecords: outcomes.length,
+      outcomeUniversities: outcomeSchools.length,
+      essayUniversities: essayUniversities.universities.length,
+      examResources: exams.length,
+      release: process.env.RENDER_GIT_COMMIT || "local",
       sources: seed.sources.length,
       programs: programs.length,
       calculationReady: programs.filter((item) => item.calculationReady).length,
@@ -285,7 +309,7 @@ app.get("/api/catalog", async (_request, response) => {
   try {
     const [sources, programs, universities] = await Promise.all([getSources(), getPrograms(), getUniversities()]);
     response.set("Cache-Control", "public, max-age=300");
-    response.json({ metadata: { ...seed.metadata, registry: universityRegistry.metadata }, sources, programs, universities, storage: storageMode });
+    response.json({ metadata: { ...seed.metadata, registry: universityRegistry.metadata }, sources, programs, universities, details, exams, coverage, outcomeSchools, essayUniversities, storage: storageMode });
   } catch (error) {
     response.status(500).json({ error: "catalog_unavailable" });
   }
@@ -293,6 +317,34 @@ app.get("/api/catalog", async (_request, response) => {
 
 app.get("/api/report", async (_request, response) => {
   response.status(405).json({ error: "client_generated_report_only" });
+});
+
+app.get("/api/outcomes", (request, response) => {
+  const id = String(request.query.universityId || "");
+  if (!/^\d{7}$/.test(id)) return response.status(400).json({ error: "university_id_required" });
+  response.set("Cache-Control", "public, max-age=300");
+  response.json(outcomes.filter(row => row.universityId === id));
+});
+
+app.get("/api/departments", (request, response) => {
+  const universityId = String(request.query.universityId || "");
+  if (universityId) {
+    if (!/^\d{7}$/.test(universityId)) return response.status(400).json({error:"university_id_invalid"});
+    return response.json(extraDetails.universities.find(u=>u.universityId===universityId)||null);
+  }
+  const query = String(request.query.query||"").trim().slice(0,100);
+  const offset = Math.max(0,parseInt(request.query.offset,10)||0);
+  const matches=[];
+  for (const university of extraDetails.universities) {
+    if (["0000431", "0002659", "0000548"].includes(university.universityId)) continue;
+    const school=universityRegistry.universities.find(u=>u.id===university.universityId);
+    for (const department of university.departmentCatalog?.items||[]) {
+      if (!query || [department.name,department.category,school?.name].some(v=>String(v||"").includes(query))) {
+        matches.push({...department,universityId:university.universityId,universityName:school?.displayName||school?.name,academicYear:university.departmentCatalog.academicYear,sourceUrl:department.officialInfoUrl||university.departmentCatalog.sourceUrl});
+      }
+    }
+  }
+  response.json({total:matches.length,offset,items:matches.slice(offset,offset+50),nextOffset:offset+50<matches.length?offset+50:null});
 });
 
 app.get("*splat", (_request, response) => {

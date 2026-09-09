@@ -1,0 +1,1271 @@
+{
+  "metadata": {
+    "academicYear": 2027,
+    "collectedAt": "2026-09-09",
+    "isFinalGuidelinesFullyVerified": false,
+    "notice": "44개교는 전국 조사 범위다. 전체 대학의 2027 최종 모집요강·기출 본문이 검증 완료되었다는 뜻이 아니다. 학교별 검증 상태와 원문 확보 상태를 따로 표시한다.",
+    "official2027NoticeCount": 44,
+    "rosterStatus": "cross_checked_research_roster",
+    "scope": "논술전형 조사 대상 44개교. 캠퍼스별 중복집계를 피하고 별도모집 고려대 세종·연세대 미래는 분리.",
+    "sources": [
+      {
+        "scope": "기존 실시 대학 명단 교차확인;2027 조건 확정 근거로 사용하지 않음",
+        "title": "EBSi 논술전형 실시 대학 목록 (페이지 내 2026학년도 표)",
+        "url": "https://www.ebsi.co.kr/ebs/pot/potg/retrieveSeriesSubjectList.ebs?seriesGrpId=PKG_0289&seriesId=PRO_1908"
+      },
+      {
+        "scope": "2027 전국 실시 범위 교차확인",
+        "title": "진학사 2027학년도 논술 일정 총정리 44개 대학",
+        "url": "https://www.jinhak.com/jh/high3/univ-entrance-info/ipsi-analysis/ipsi-strategy/100000606"
+      }
+    ]
+  },
+  "universities": [
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document",
+      "archiveUrl": "https://admission.gachon.ac.kr/upload/BBS0024/202507151748295SGWU8.PDF",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000063",
+      "name": "가천대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.gachon.ac.kr/upload/BBS0021/20260522154511HBZYTW.PDF",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.gachon.ac.kr/upload/BBS0024/202507151748295SGWU8.PDF"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://admission.gachon.ac.kr/upload/BBS0021/20260522154511HBZYTW.PDF"
+        }
+      ],
+      "universityId": "0000063",
+      "universityIds": [
+        "0000063"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://ipsi.catholic.ac.kr/submenu.do?menuurl=5M7GPMZ4Fe9h2Uf15L%2B7XQ%3D%3D",
+      "campusScope": "성심·성의: 모집단위별 확인",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000046",
+      "name": "가톨릭대학교",
+      "notes": "",
+      "rosterSourceUrl": "http://ipsi.catholic.ac.kr/detail.do?menuurl=n5%2FP1yX8Zyh%2Fvtvla1KeyA%3D%3D&board_seq=37920&pageNo=1&categoryid=1&userpwd=",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.catholic.ac.kr/submenu.do?menuurl=5M7GPMZ4Fe9h2Uf15L%2B7XQ%3D%3D"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "http://ipsi.catholic.ac.kr/detail.do?menuurl=n5%2FP1yX8Zyh%2Fvtvla1KeyA%3D%3D&board_seq=37920&pageNo=1&categoryid=1&userpwd="
+        }
+      ],
+      "universityId": "0000046",
+      "universityIds": [
+        "0000046",
+        "0000048",
+        "0000049"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document_page",
+      "archiveUrl": "https://admission.kangnam.ac.kr/doumi/notice.htm?bbsid=notice&bltn_seq=39528&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000051",
+      "name": "강남대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=notice&file_seq=4156",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document_page",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.kangnam.ac.kr/doumi/notice.htm?bbsid=notice&bltn_seq=39528&ctg_cd=&keyword=&mode=view&page=1&skey="
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=notice&file_seq=4156"
+        }
+      ],
+      "universityId": "0000051",
+      "universityIds": [
+        "0000051"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://admission.konkuk.ac.kr/admission/37862/subview.do",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000052",
+      "name": "건국대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.konkuk.ac.kr/admission/37981/subview.do",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.konkuk.ac.kr/admission/37862/subview.do"
+        },
+        {
+          "title": "2027학년도 대학 공식 공지·전형안내",
+          "url": "https://www.konkuk.ac.kr/admission/37981/subview.do",
+          "kind": "current_year_evidence"
+        }
+      ],
+      "universityId": "0000052",
+      "universityIds": [
+        "0000052"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://enter.kyonggi.ac.kr/cms/FR_CON/index.do?MENU_ID=290",
+      "campusScope": "수원·서울",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000056",
+      "name": "경기대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://enter.kyonggi.ac.kr/cms/FR_CON/index.do?MENU_ID=590",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://enter.kyonggi.ac.kr/cms/FR_CON/index.do?MENU_ID=290"
+        },
+        {
+          "title": "2027학년도 대학 공식 공지·전형안내",
+          "url": "https://enter.kyonggi.ac.kr/cms/FR_CON/index.do?MENU_ID=590",
+          "kind": "current_year_evidence"
+        }
+      ],
+      "universityId": "0000056",
+      "universityIds": [
+        "0000056",
+        "0000058"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "viewer_unverified",
+      "archiveUrl": "https://ipsi1.knu.ac.kr/_common/pdf_viewer.php?e_no=6&m_type=enterinfo",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000005",
+      "name": "경북대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=28&btin.appl_no=000000&btin.bbs_cde=28&btin.doc_no=1337786&btin.note_div=row&btin.page=1&btin.search_text=&btin.search_type=&menu_idx=214&popupDeco=",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "viewer_unverified",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi1.knu.ac.kr/_common/pdf_viewer.php?e_no=6&m_type=enterinfo"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=28&btin.appl_no=000000&btin.bbs_cde=28&btin.doc_no=1337786&btin.note_div=row&btin.page=1&btin.search_text=&btin.search_type=&menu_idx=214&popupDeco="
+        }
+      ],
+      "universityId": "0000005",
+      "universityIds": [
+        "0000005"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://iphak.khu.ac.kr/submenu.do?menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D",
+      "campusScope": "서울·국제",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000066",
+      "name": "경희대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://iphak.khu.ac.kr/submenu.do?menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://iphak.khu.ac.kr/submenu.do?menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D"
+        }
+      ],
+      "universityId": "0000066",
+      "universityIds": [
+        "0000066"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://oku.korea.ac.kr/oku/cms/FR_CON/index.do?MENU_ID=720",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000069",
+      "name": "고려대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://oku.korea.ac.kr/attach/202609/1788832925216_0.pdf",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://oku.korea.ac.kr/oku/cms/FR_CON/index.do?MENU_ID=720"
+        },
+        {
+          "title": "2027학년도 수시모집요강 PDF 논술전형 확인",
+          "url": "https://oku.korea.ac.kr/attach/202609/1788832925216_0.pdf",
+          "kind": "current_year_guideline",
+          "downloadVerified": true
+        }
+      ],
+      "universityId": "0000069",
+      "universityIds": [
+        "0000069"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://oku.korea.ac.kr/sejong/cms/FR_CON/index.do?MENU_ID=510",
+      "campusScope": "분교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000070",
+      "name": "고려대학교(세종)",
+      "notes": "",
+      "rosterSourceUrl": "https://oku.korea.ac.kr/sejong/cms/FR_CON/index.do?MENU_ID=510",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://oku.korea.ac.kr/sejong/cms/FR_CON/index.do?MENU_ID=510"
+        }
+      ],
+      "universityId": "0000070",
+      "universityIds": [
+        "0000070"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://iphak.kw.ac.kr/pds/pds_list.php?m_type=SUSI",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000074",
+      "name": "광운대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://iphak.kw.ac.kr/pds/pds_view.php?bn=44694&m_type=SUSI&nPage=1&f=&s=",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://iphak.kw.ac.kr/pds/pds_list.php?m_type=SUSI"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://iphak.kw.ac.kr/pds/pds_view.php?bn=44694&m_type=SUSI&nPage=1&f=&s="
+        }
+      ],
+      "universityId": "0000074",
+      "universityIds": [
+        "0000074"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document_page",
+      "archiveUrl": "https://admission.kookmin.ac.kr/helper/notice.php?ctype=view&no=1065&page=&s_key=&s_word=",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000078",
+      "name": "국민대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.kookmin.ac.kr/common/file_download.php?id=notice&no=2172",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document_page",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.kookmin.ac.kr/helper/notice.php?ctype=view&no=1065&page=&s_key=&s_word="
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://admission.kookmin.ac.kr/common/file_download.php?id=notice&no=2172"
+        }
+      ],
+      "universityId": "0000078",
+      "universityIds": [
+        "0000078"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://ipsi.dankook.ac.kr/jukjeon/doumi/nonsul_list.html",
+      "campusScope": "죽전 (천안 제외)",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000082",
+      "name": "단국대학교",
+      "notes": "2027학년도 죽전 논술 자료를 수록하며 천안의 이전 기출과 구분한다.",
+      "rosterSourceUrl": "https://ipsi.dankook.ac.kr/jukjeon/doumi/nonsul_list.html?bbsid=juk_pds09&camp_type=&ctg_cd=&page=1&skey=&keyword=&mode=view&bltn_seq=51777",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.dankook.ac.kr/jukjeon/doumi/nonsul_list.html"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://ipsi.dankook.ac.kr/jukjeon/doumi/nonsul_list.html?bbsid=juk_pds09&camp_type=&ctg_cd=&page=1&skey=&keyword=&mode=view&bltn_seq=51777"
+        }
+      ],
+      "universityId": "0000082",
+      "universityIds": [
+        "0000082"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://enter.duksung.ac.kr/data/?m_type=SUSI",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000099",
+      "name": "덕성여자대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://enter.duksung.ac.kr/guide/?m_type=ESSAY",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://enter.duksung.ac.kr/data/?m_type=SUSI"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://enter.duksung.ac.kr/guide/?m_type=ESSAY"
+        }
+      ],
+      "universityId": "0000099",
+      "universityIds": [
+        "0000099"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://ipsi.dongguk.edu/admission/html/rolling/data.asp",
+      "campusScope": "서울 (WISE 제외)",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000100",
+      "name": "동국대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://ipsi.dongguk.edu/admission/html/rolling/guide.asp",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.dongguk.edu/admission/html/rolling/data.asp"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://ipsi.dongguk.edu/admission/html/rolling/guide.asp"
+        }
+      ],
+      "universityId": "0000100",
+      "universityIds": [
+        "0000100"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document_page",
+      "archiveUrl": "https://ipsi.dongduk.ac.kr/ipsi/contents/nontime-doc.do?etc1=78&id=91947&page=1&schBdcode=_ipsi_admdoc01&schGroupCode=&schM=view&viewCount=10",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000102",
+      "name": "동덕여자대학교",
+      "notes": "2027학년도 약술형 논술로 변경. 이전 기출과 새 모의문항을 구분한다.",
+      "rosterSourceUrl": "https://ipsi.dongduk.ac.kr/ipsi/contents/nontime-doc.do?schM=view&page=1&viewCount=10&id=91947&schBdcode=_ipsi_admdoc01&schGroupCode=&etc1=78",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document_page",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.dongduk.ac.kr/ipsi/contents/nontime-doc.do?etc1=78&id=91947&page=1&schBdcode=_ipsi_admdoc01&schGroupCode=&schM=view&viewCount=10"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://ipsi.dongduk.ac.kr/ipsi/contents/nontime-doc.do?schM=view&page=1&viewCount=10&id=91947&schBdcode=_ipsi_admdoc01&schGroupCode=&etc1=78"
+        }
+      ],
+      "universityId": "0000102",
+      "universityIds": [
+        "0000102"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "admissions_home",
+      "archiveUrl": "https://go.pusan.ac.kr/",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000014",
+      "name": "부산대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1510943&mCode=MN114&mgr_seq=16&mode=view",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "admissions_home",
+          "title": "공식 입학처 (기출 개별주소 확인 중)",
+          "url": "https://go.pusan.ac.kr/"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://www.pusan.ac.kr/kor/CMS/Board/Board.do?board_seq=1510943&mCode=MN114&mgr_seq=16&mode=view"
+        }
+      ],
+      "universityId": "0000014",
+      "universityIds": [
+        "0000014"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://ipsi.syu.ac.kr/2016_syu/pages/index.asp?b=B_1_12&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=97",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000116",
+      "name": "삼육대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.syu.ac.kr/pt/%EB%85%BC%EC%88%A0-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%B6%81-%EA%B3%B5%EA%B0%9C-%EC%95%BD%EC%88%A0%ED%98%95-%EB%85%BC%EC%88%A0-%EC%A0%84%EB%9E%B5%EC%9D%80-3/",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.syu.ac.kr/2016_syu/pages/index.asp?b=B_1_12&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=97"
+        },
+        {
+          "title": "2027학년도 대학 공식 공지·전형안내",
+          "url": "https://www.syu.ac.kr/pt/%EB%85%BC%EC%88%A0-%EA%B0%80%EC%9D%B4%EB%93%9C%EB%B6%81-%EA%B3%B5%EA%B0%9C-%EC%95%BD%EC%88%A0%ED%98%95-%EB%85%BC%EC%88%A0-%EC%A0%84%EB%9E%B5%EC%9D%80-3/",
+          "kind": "current_year_evidence"
+        }
+      ],
+      "universityId": "0000116",
+      "universityIds": [
+        "0000116"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document_page",
+      "archiveUrl": "https://admission.smu.ac.kr/_seoul/board/bbs.html?bbsid=seoul_dataroom&bltn_seq=61691&ctg_cd=susi&keyword=&mode=view&page=1&skey=",
+      "campusScope": "서울",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000117",
+      "name": "상명대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.smu.ac.kr/_seoul/board/bbs.html?bbsid=seoul_dataroom&bltn_seq=61691&ctg_cd=susi&keyword=&mode=view&page=1&skey=",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document_page",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.smu.ac.kr/_seoul/board/bbs.html?bbsid=seoul_dataroom&bltn_seq=61691&ctg_cd=susi&keyword=&mode=view&page=1&skey="
+        }
+      ],
+      "universityId": "0000117",
+      "universityIds": [
+        "0000117"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document",
+      "archiveUrl": "https://admission.sogang.ac.kr/upload/BBS0014/202607031541342K5UMZ.PDF",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000120",
+      "name": "서강대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.sogang.ac.kr/upload/BBS0014/202607031541342K5UMZ.PDF",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.sogang.ac.kr/upload/BBS0014/202607031541342K5UMZ.PDF"
+        }
+      ],
+      "universityId": "0000120",
+      "universityIds": [
+        "0000120"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "page_unverified",
+      "archiveUrl": "https://go.skuniv.ac.kr/index.php?document_srl=197735",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000121",
+      "name": "서경대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://go.skuniv.ac.kr/index.php?mid=notice&category=182&document_srl=227393",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "page_unverified",
+          "title": "공식 논술 자료 경로",
+          "url": "https://go.skuniv.ac.kr/index.php?document_srl=197735"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://go.skuniv.ac.kr/index.php?mid=notice&category=182&document_srl=227393"
+        }
+      ],
+      "universityId": "0000121",
+      "universityIds": [
+        "0000121"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "viewer_unverified",
+      "archiveUrl": "https://admission.seoultech.ac.kr/cms/FR_CON/index.do?MENU_ID=140",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000036",
+      "name": "서울과학기술대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://gtm.seoultech.ac.kr/",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "viewer_unverified",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.seoultech.ac.kr/cms/FR_CON/index.do?MENU_ID=140"
+        },
+        {
+          "title": "2027학년도 대학 공식 공지·전형안내",
+          "url": "https://gtm.seoultech.ac.kr/",
+          "kind": "current_year_evidence"
+        }
+      ],
+      "universityId": "0000036",
+      "universityIds": [
+        "0000036"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "admissions_home",
+      "archiveUrl": "https://admission.uos.ac.kr/",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000040",
+      "name": "서울시립대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.uos.ac.kr/",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "admissions_home",
+          "title": "공식 입학처 (기출 개별주소 확인 중)",
+          "url": "https://admission.uos.ac.kr/"
+        }
+      ],
+      "universityId": "0000040",
+      "universityIds": [
+        "0000040"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "official_archive",
+      "archiveUrl": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000126",
+      "name": "서울여자대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000255229&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000126&searchSyr=2027",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "admissions_home",
+          "title": "공식 입학처 (기출 개별주소 확인 중)",
+          "url": "https://admission.swu.ac.kr/"
+        },
+        {
+          "title": "2027학년도 수시모집요강 PDF 논술전형 확인",
+          "url": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000255229&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000126&searchSyr=2027",
+          "kind": "current_year_guideline",
+          "downloadVerified": true
+        },
+        {
+          "title": "2022~2026 논술 문제·해설 공식 자료실",
+          "url": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul",
+          "kind": "archive"
+        }
+      ],
+      "universityId": "0000126",
+      "universityIds": [
+        "0000126"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://admission.skku.edu/admission/html/rolling/question.html",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000133",
+      "name": "성균관대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.skku.edu/upload/guide/20260813104526BBPE44.pdf",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.skku.edu/admission/html/rolling/question.html"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://admission.skku.edu/upload/guide/20260813104526BBPE44.pdf"
+        }
+      ],
+      "universityId": "0000133",
+      "universityIds": [
+        "0000133"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document_page",
+      "archiveUrl": "https://ipsi.sungshin.ac.kr/highschool_ties/guidebook.php?bbsid=guidebook&bltn_seq=34121&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000136",
+      "name": "성신여자대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://ipsi.sungshin.ac.kr/highschool_ties/guidebook.php?bbsid=guidebook&bltn_seq=36078&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document_page",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.sungshin.ac.kr/highschool_ties/guidebook.php?bbsid=guidebook&bltn_seq=34121&ctg_cd=&keyword=&mode=view&page=1&skey="
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://ipsi.sungshin.ac.kr/highschool_ties/guidebook.php?bbsid=guidebook&bltn_seq=36078&ctg_cd=&keyword=&mode=view&page=1&skey="
+        }
+      ],
+      "universityId": "0000136",
+      "universityIds": [
+        "0000136"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://ipsi.sejong.ac.kr/ipsi/assistant/exam-questions.do",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000138",
+      "name": "세종대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://ipsi.sejong.ac.kr/ipsi/assistant/exam-questions.do?mode=view&articleNo=2726&article.offset=0&articleLimit=10",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.sejong.ac.kr/ipsi/assistant/exam-questions.do"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://ipsi.sejong.ac.kr/ipsi/assistant/exam-questions.do?mode=view&articleNo=2726&article.offset=0&articleLimit=10"
+        }
+      ],
+      "universityId": "0000138",
+      "universityIds": [
+        "0000138"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://ipsi.suwon.ac.kr/board/pre_question",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000140",
+      "name": "수원대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://ipsi.suwon.ac.kr/board/notice?cate=%EC%88%98%EC%8B%9C&sf=title&st=%EB%85%BC%EC%88%A0",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ipsi.suwon.ac.kr/board/pre_question"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://ipsi.suwon.ac.kr/board/notice?cate=%EC%88%98%EC%8B%9C&sf=title&st=%EB%85%BC%EC%88%A0"
+        }
+      ],
+      "universityId": "0000140",
+      "universityIds": [
+        "0000140"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/essay.asp",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000141",
+      "name": "숙명여자대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.sookmyung.ac.kr/kr/news/sm-news.do?articleNo=93780&mode=view",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.sookmyung.ac.kr/admission/html/rolling/essay.asp"
+        },
+        {
+          "title": "2027학년도 대학 공식 공지·전형안내",
+          "url": "https://www.sookmyung.ac.kr/kr/news/sm-news.do?articleNo=93780&mode=view",
+          "kind": "current_year_evidence"
+        }
+      ],
+      "universityId": "0000141",
+      "universityIds": [
+        "0000141"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://iphak.ssu.ac.kr/board/exam_list.asp?flag2=1&keyword=&page=1&page_no=1_2_7&srchoption=",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000143",
+      "name": "숭실대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://iphak.ssu.ac.kr/board/exam_view.asp?number=137&srchoption=&keyword=&flag=&flag2=1&page_no=1_2_7&page=1",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://iphak.ssu.ac.kr/board/exam_list.asp?flag2=1&keyword=&page=1&page_no=1_2_7&srchoption="
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://iphak.ssu.ac.kr/board/exam_view.asp?number=137&srchoption=&keyword=&flag=&flag2=1&page_no=1_2_7&page=1"
+        }
+      ],
+      "universityId": "0000143",
+      "universityIds": [
+        "0000143"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "admissions_home",
+      "archiveUrl": "https://ipsi.shinhan.ac.kr/",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0002712",
+      "name": "신한대학교",
+      "notes": "",
+      "rosterSourceUrl": "http://ipsi.shinhan.ac.kr/ihp/bbs/selectBoardArticle.do?bbsId=BBSMSTR_000000000000&cateId=1&relateImagePath=svis_5&nttId=1081",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "admissions_home",
+          "title": "공식 입학처 (기출 개별주소 확인 중)",
+          "url": "https://ipsi.shinhan.ac.kr/"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "http://ipsi.shinhan.ac.kr/ihp/bbs/selectBoardArticle.do?bbsId=BBSMSTR_000000000000&cateId=1&relateImagePath=svis_5&nttId=1081"
+        }
+      ],
+      "universityId": "0002712",
+      "universityIds": [
+        "0002712",
+        "0002800"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://www.iajou.ac.kr/pasttest/?m_type=SUSI",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000146",
+      "name": "아주대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.iajou.ac.kr/pasttest/view.php?bn=78689&m_type=SUSI&nPage=0&f=&s=",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://www.iajou.ac.kr/pasttest/?m_type=SUSI"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://www.iajou.ac.kr/pasttest/view.php?bn=78689&m_type=SUSI&nPage=0&f=&s="
+        }
+      ],
+      "universityId": "0000146",
+      "universityIds": [
+        "0000146"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document",
+      "archiveUrl": "https://www2.yonsei.ac.kr/entrance/2025/2026%ED%95%99%EB%85%84%EB%8F%84_%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC_%EC%9E%90%EB%A3%8C%EC%A7%91.pdf",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000149",
+      "name": "연세대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.yonsei.ac.kr/seoul/upload/guide/20260529204109T8NZNJ.PDF",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document",
+          "title": "공식 논술 자료 경로",
+          "url": "https://www2.yonsei.ac.kr/entrance/2025/2026%ED%95%99%EB%85%84%EB%8F%84_%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC_%EC%9E%90%EB%A3%8C%EC%A7%91.pdf"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://admission.yonsei.ac.kr/seoul/upload/guide/20260529204109T8NZNJ.PDF"
+        }
+      ],
+      "universityId": "0000149",
+      "universityIds": [
+        "0000149"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document",
+      "archiveUrl": "https://admission.yonsei.ac.kr/mirae/download.asp?fname=01.+2025+%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD+%EF%BF%BD%EF%BF%BD%EF%BF%BD%E2%B9%AE%EF%BF%BD%EF%BF%BD%5B%EF%BF%BD%CC%B7%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%5D.pdf&furl=bbs%2F202503311731095AEPKS.PDF",
+      "campusScope": "분교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000150",
+      "name": "연세대학교(미래)",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.yonsei.ac.kr/mirae/download.asp?fname=01.+2025+%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD+%EF%BF%BD%EF%BF%BD%EF%BF%BD%E2%B9%AE%EF%BF%BD%EF%BF%BD%5B%EF%BF%BD%CC%B7%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%5D.pdf&furl=bbs%2F202503311731095AEPKS.PDF"
+        },
+        {
+          "title": "2027학년도 대학 공식 공지·전형안내",
+          "url": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+          "kind": "current_year_evidence"
+        }
+      ],
+      "universityId": "0000150",
+      "universityIds": [
+        "0000150"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document_page",
+      "archiveUrl": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=198&boardno=1958&menuno=7987&siteno=19&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTk1OCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B",
+      "campusScope": "모집단위별 캠퍼스 확인",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000161",
+      "name": "을지대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=198&boardno=1958&menuno=7987&siteno=19&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTk1OCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document_page",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=198&boardno=1958&menuno=7987&siteno=19&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTk1OCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B"
+        }
+      ],
+      "universityId": "0000161",
+      "universityIds": [
+        "0000161",
+        "0000162",
+        "0002911"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "admissions_home",
+      "archiveUrl": "https://admission.ewha.ac.kr/",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000163",
+      "name": "이화여자대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.ewha.ac.kr/",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "admissions_home",
+          "title": "공식 입학처 (기출 개별주소 확인 중)",
+          "url": "https://admission.ewha.ac.kr/"
+        }
+      ],
+      "universityId": "0000163",
+      "universityIds": [
+        "0000163"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://admission.inha.ac.kr/cms/FR_CON/index.do?MENU_ID=110",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000169",
+      "name": "인하대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.inha.ac.kr/cms/FR_CON/index.do?MENU_ID=260",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.inha.ac.kr/cms/FR_CON/index.do?MENU_ID=110"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://admission.inha.ac.kr/cms/FR_CON/index.do?MENU_ID=260"
+        }
+      ],
+      "universityId": "0000169",
+      "universityIds": [
+        "0000169"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://admission.cau.ac.kr/submenu.do?menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D",
+      "campusScope": "서울·다빈치",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000175",
+      "name": "중앙대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://admission.cau.ac.kr/submenu.do?menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://admission.cau.ac.kr/submenu.do?menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D"
+        }
+      ],
+      "universityId": "0000175",
+      "universityIds": [
+        "0000175",
+        "0000174"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "document_page",
+      "archiveUrl": "https://iphak.tukorea.ac.kr/guide/pds.htm?bbsid=pds&bltn_seq=12599&mode=view",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000247",
+      "name": "한국공학대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://iphak.tukorea.ac.kr/susi/guide.htm",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "document_page",
+          "title": "공식 논술 자료 경로",
+          "url": "https://iphak.tukorea.ac.kr/guide/pds.htm?bbsid=pds&bltn_seq=12599&mode=view"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://iphak.tukorea.ac.kr/susi/guide.htm"
+        }
+      ],
+      "universityId": "0000247",
+      "universityIds": [
+        "0000247"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "page_unverified",
+      "archiveUrl": "https://www.koreatech.ac.kr/board.es?act=view&bid=0036&list_no=54098&mid=a40601000000",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000189",
+      "name": "한국기술교육대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.koreatech.ac.kr/board.es?act=view&bid=0036&list_no=56187&mid=a40601000000&nPage=14",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "page_unverified",
+          "title": "공식 논술 자료 경로",
+          "url": "https://www.koreatech.ac.kr/board.es?act=view&bid=0036&list_no=54098&mid=a40601000000"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://www.koreatech.ac.kr/board.es?act=view&bid=0036&list_no=56187&mid=a40601000000&nPage=14"
+        }
+      ],
+      "universityId": "0000189",
+      "universityIds": [
+        "0000189"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "viewer_unverified",
+      "archiveUrl": "https://adms.hufs.ac.kr/cms/FrCon/index.do?MENU_ID=50",
+      "campusScope": "서울·글로벌",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000192",
+      "name": "한국외국어대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://sport.hufs.ac.kr/sport/2388/subview.do",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "viewer_unverified",
+          "title": "공식 논술 자료 경로",
+          "url": "https://adms.hufs.ac.kr/cms/FrCon/index.do?MENU_ID=50"
+        },
+        {
+          "title": "2027학년도 대학 공식 공지·전형안내",
+          "url": "https://sport.hufs.ac.kr/sport/2388/subview.do",
+          "kind": "current_year_evidence"
+        }
+      ],
+      "universityId": "0000192",
+      "universityIds": [
+        "0000192"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "admissions_home",
+      "archiveUrl": "https://ibhak.kau.ac.kr/",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000194",
+      "name": "한국항공대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://ibhak.kau.ac.kr/admission/html/guide/noticeView.asp?p_board_idx=6137",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "admissions_home",
+          "title": "공식 입학처 (기출 개별주소 확인 중)",
+          "url": "https://ibhak.kau.ac.kr/"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://ibhak.kau.ac.kr/admission/html/guide/noticeView.asp?p_board_idx=6137"
+        }
+      ],
+      "universityId": "0000194",
+      "universityIds": [
+        "0000194"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=43",
+      "campusScope": "본교",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000202",
+      "name": "한신대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=43",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=43"
+        }
+      ],
+      "universityId": "0000202",
+      "universityIds": [
+        "0000202"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://go.hanyang.ac.kr/web/pds/pds_list.do?ct02=ns01&ct04=in&m_type=SUSI",
+      "campusScope": "서울 (ERICA 제외)",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000203",
+      "name": "한양대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://go.hanyang.ac.kr/resources/upload_data/mojib/20260818042807559_.pdf",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://go.hanyang.ac.kr/web/pds/pds_list.do?ct02=ns01&ct04=in&m_type=SUSI"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://go.hanyang.ac.kr/resources/upload_data/mojib/20260818042807559_.pdf"
+        }
+      ],
+      "universityId": "0000203",
+      "universityIds": [
+        "0000203"
+      ],
+      "verifiedAt": "2026-09-09"
+    },
+    {
+      "academicYear": 2027,
+      "archiveStatus": "archive",
+      "archiveUrl": "https://www.hongik.ac.kr/kr/admission/previous-question.do?article.offset=0&mode=list",
+      "campusScope": "서울·세종",
+      "fullTextStatus": "not_ingested",
+      "id": "essay-0000212",
+      "name": "홍익대학교",
+      "notes": "",
+      "rosterSourceUrl": "https://www.hongik.ac.kr/kr/admission/previous-question.do?mode=view&articleNo=154971&article.offset=0&articleLimit=10",
+      "rosterStatus": "official_2027_notice_found",
+      "sources": [
+        {
+          "kind": "archive",
+          "title": "공식 논술 자료 경로",
+          "url": "https://www.hongik.ac.kr/kr/admission/previous-question.do?article.offset=0&mode=list"
+        },
+        {
+          "kind": "current_year_evidence",
+          "title": "2027학년도 공식 논술 안내 확인",
+          "url": "https://www.hongik.ac.kr/kr/admission/previous-question.do?mode=view&articleNo=154971&article.offset=0&articleLimit=10"
+        }
+      ],
+      "universityId": "0000212",
+      "universityIds": [
+        "0000212",
+        "0002949"
+      ],
+      "verifiedAt": "2026-09-09"
+    }
+  ]
+}
