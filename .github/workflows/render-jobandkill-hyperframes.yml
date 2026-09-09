@@ -1,0 +1,72 @@
+name: Render JOB&KILL Hyperframes Ad
+
+on:
+  push:
+    branches:
+      - codex/hyperframes-jobandkill-ad
+    paths:
+      - "hyperframes/jobandkill-ad/**"
+      - ".github/workflows/render-jobandkill-hyperframes.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HYPERFRAMES_CHROME_PATH: /usr/bin/google-chrome-stable
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome-stable
+      PUPPETEER_SKIP_DOWNLOAD: "true"
+    steps:
+      - name: Checkout render branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: hyperframes/jobandkill-ad/package.json
+
+      - name: Prepare Korean font and original local music bed
+        working-directory: hyperframes/jobandkill-ad
+        run: |
+          mkdir -p assets renders
+          FONT_PATH="$(fc-match 'Noto Sans CJK KR' -f '%{file}\n' | head -n 1)"
+          test -n "$FONT_PATH"
+          cp "$FONT_PATH" assets/NotoSansKR-Regular.ttf
+          ffmpeg -hide_banner -loglevel error \
+            -f lavfi -i "sine=frequency=110:sample_rate=48000:duration=30" \
+            -f lavfi -i "sine=frequency=165:sample_rate=48000:duration=30" \
+            -filter_complex "[0:a]volume=0.035[a0];[1:a]volume=0.018[a1];[a0][a1]amix=inputs=2,afade=t=in:st=0:d=1.5,afade=t=out:st=27:d=3" \
+            -c:a pcm_s16le assets/jobandkill-bed.wav
+
+      - name: Verify browser and composition
+        working-directory: hyperframes/jobandkill-ad
+        run: |
+          google-chrome-stable --version
+          npx --yes hyperframes@0.8.31 lint --json
+          npx --yes hyperframes@0.8.31 check --snapshots --json
+
+      - name: Render vertical MP4
+        working-directory: hyperframes/jobandkill-ad
+        run: |
+          npx --yes hyperframes@0.8.31 render \
+            --quality high \
+            --output renders/jobandkill_vertical_hyperframes.mp4
+          ffprobe -v error -show_entries format=duration,size \
+            -show_entries stream=codec_name,width,height,r_frame_rate \
+            -of json renders/jobandkill_vertical_hyperframes.mp4
+
+      - name: Upload video and snapshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobandkill-vertical-hyperframes
+          path: |
+            hyperframes/jobandkill-ad/renders/jobandkill_vertical_hyperframes.mp4
+            hyperframes/jobandkill-ad/.hyperframes/check/**
+          if-no-files-found: error
+          retention-days: 30
