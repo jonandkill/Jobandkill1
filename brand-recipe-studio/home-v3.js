@@ -54,3 +54,4 @@ function installV3HomeLinks(){
 const renderBeforeHomeV3=render;
 render=function(){renderBeforeHomeV3();installV3HomeLinks()};
 installV3HomeLinks();
+openHome();
