@@ -1,0 +1,5377 @@
+{
+  "metadata": {
+    "auditedAt": "2026-09-10",
+    "scope": "기존 전국 논술 조사명단 44개교 전수 메타데이터·연결상태 감사; 2022~2026 220개 학교-연도 셀",
+    "universityCount": 44,
+    "recordCount": 173,
+    "archiveEntryCount": 44,
+    "listingReferenceCount": 29,
+    "directFileLinkCount": 40,
+    "individualDocumentPageCount": 60,
+    "questionBodyVerifiedCount": 0,
+    "solutionBodyVerifiedCount": 0,
+    "allYearsCompleteUniversityCount": 0,
+    "newPastPapersAdded": 0,
+    "removedNonEssayCount": 5,
+    "isActualUserTesting": false,
+    "notes": [
+      "개별 링크나 PDF 주소의 존재는 문제 본문·해설 검증 또는 모든 문항 확보가 아니다.",
+      "자료 미등록은 대학의 자료 미공개 또는 해당 연도 논술 미실시를 뜻하지 않는다.",
+      "현재 2027 가이드북을 과거 2022~2026 기출로 자동 간주하지 않는다.",
+      "파일 접근 실패는 이번 실행 환경에서의 확인 실패이며 대학 서버 장애로 단정하지 않는다.",
+      "문제 본문은 복제·재배포하지 않았다."
+    ],
+    "observedAttachmentLinkCount": 45,
+    "observedAttachmentUniversityCount": 4,
+    "pdfResponsesReceived": 33,
+    "recordsWithAutomatedQuestionMarkers": 26
+  },
+  "removedRecords": [
+    {
+      "id": "document-0000140-2026-expanded-5",
+      "title": "2026학년도 편입학 영어 기출문제",
+      "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/5509",
+      "reason": "편입학 영어 기출은 수시 논술 범위가 아님"
+    },
+    {
+      "id": "document-0000140-2025-expanded-7",
+      "title": "2025학년도 편입학 영어 기출문제",
+      "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/4020",
+      "reason": "편입학 영어 기출은 수시 논술 범위가 아님"
+    },
+    {
+      "id": "document-0000140-2024-expanded-9",
+      "title": "2024학년도 편입학 영어 기출문제",
+      "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/2706",
+      "reason": "편입학 영어 기출은 수시 논술 범위가 아님"
+    },
+    {
+      "id": "document-0000140-2023-expanded-11",
+      "title": "2023학년도 편입학 영어 기출문제",
+      "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/1563",
+      "reason": "편입학 영어 기출은 수시 논술 범위가 아님"
+    },
+    {
+      "id": "document-0000140-2022-expanded-13",
+      "title": "2022학년도 편입학 영어 기출문제",
+      "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/360",
+      "reason": "편입학 영어 기출은 수시 논술 범위가 아님"
+    }
+  ],
+  "linkChecks": [
+    {
+      "url": "https://admission.cau.ac.kr/detail.do?board_seq=3072&categoryid=14&menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D&pageNo=1",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 36914,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.cau.ac.kr/detail.do?board_seq=3250&menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D&pageNo=1",
+      "httpStatus": "000",
+      "contentType": "",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.cau.ac.kr/submenu.do?menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D",
+      "httpStatus": "000",
+      "contentType": "",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=190&boardno=1958&menuno=7987&siteno=19&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTk1OCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B",
+      "httpStatus": "400",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=198&boardno=1958&menuno=7987&siteno=19&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTk1OCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B",
+      "httpStatus": "400",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=199&boardno=1958&menuno=7987&siteno=19&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTk1OCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B",
+      "httpStatus": "400",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=60678&boardno=545&menuno=2750&siteno=19&ztag=rO0ABXQAMTxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTQ1IiBza2luPSJub3RpY2UiPjwvY2FsbD4%3D",
+      "httpStatus": "400",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.ewha.ac.kr/",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 12560,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.ewha.ac.kr/admission/html/rolling/lecture-infoView.asp?idx=13948",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 36678,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.ewha.ac.kr/admission/html/rolling/lecture-infoView.asp?idx=14276",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 36704,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.ewha.ac.kr/admission/html/rolling/lecture-infoView.asp?idx=14644",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 37094,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.ewha.ac.kr/admission/html/rolling/lecture-infoView.asp?idx=14980",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 39772,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.ewha.ac.kr/admission/html/rolling/lecture-infoView.asp?idx=15312",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 44654,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.gachon.ac.kr/upload/BBS0024/20230704095617Z8UL9H.PDF",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.gachon.ac.kr/upload/BBS0024/202409251820093L4TU3.PDF",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.gachon.ac.kr/upload/BBS0024/202507151748295SGWU8.PDF",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.gachon.ac.kr/upload/BBS0024/20260616123153AZX4GY.PDF",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.inha.ac.kr/cms/FR_BBS_CON/BoardView.do?BBS_SEQ=189&BOARD_SEQ=2&CONTENTS_NO=&MENU_ID=110&PWD=&P_BBS_SEQ=&SEARCH=&SEARCH_FLD=&SEARCH_SEQ=3&SITE_NO=2&pageNo=1&pagePerCnt=15",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 144,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.inha.ac.kr/cms/FR_BBS_CON/BoardView.do?BBS_SEQ=204&BOARD_SEQ=2&MENU_ID=110&SEARCH_SEQ=3&SITE_NO=2&pageNo=1&pagePerCnt=15",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 144,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.inha.ac.kr/cms/FR_CON/index.do?MENU_ID=110",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 144,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=notice&file_seq=4156",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 593766,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.kangnam.ac.kr/doumi/notice.htm?bbsid=notice&bltn_seq=39528&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30620,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.konkuk.ac.kr/admission/37862/subview.do",
+      "httpStatus": "200",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 819,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.konkuk.ac.kr/nctgrBbs/admission/9/6287/1180057/artclView.do",
+      "httpStatus": "200",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.konkuk.ac.kr/nctgrBbs/admission/9/6287/1182825/artclView.do",
+      "httpStatus": "200",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.konkuk.ac.kr/nctgrBbs/admission/9/6287/1205035/artclView.do",
+      "httpStatus": "200",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.konkuk.ac.kr/nctgrBbs/admission/9/6287/1205036/artclView.do",
+      "httpStatus": "200",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.konkuk.ac.kr/nctgrBbs/admission/9/6287/1205037/artclView.do",
+      "httpStatus": "200",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.kookmin.ac.kr/common/file_download.php?id=notice&no=2172",
+      "httpStatus": "200",
+      "contentType": "application/pdf",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 10768997,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.kookmin.ac.kr/helper/notice.php?ctype=view&no=1065&page=&s_key=&s_word=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 122467,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.seoultech.ac.kr/cms/FR_CON/index.do?MENU_ID=140",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 1685,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.skku.edu/admission/html/rolling/question.html",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30938,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.smu.ac.kr/_seoul/board/bbs.html?bbsid=seoul_dataroom&bltn_seq=61691&ctg_cd=susi&keyword=&mode=view&page=1&skey=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 26970,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.smu.ac.kr/bbs/filedown.php?bbsid=seoul_dataroom&file_seq=8554",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1721887,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.sogang.ac.kr/upload/BBS0014/202607031541342K5UMZ.PDF",
+      "httpStatus": "502",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.sookmyung.ac.kr/admission/html/rolling/essay.asp",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32616,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=50996",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 31604,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33890,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33542,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 34369,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.ssu.ac.kr/upload/SSU%281%29_260804112813.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4994896,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 74743,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul&wr_id=28898",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47505,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul&wr_id=28945",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47517,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul&wr_id=28970",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47301,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul&wr_id=28996",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47400,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul&wr_id=29015",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 46953,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.uos.ac.kr/",
+      "httpStatus": "400",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 393,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://admission.yonsei.ac.kr/mirae/download.asp?fname=01.+2025+%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD+%EF%BF%BD%EF%BF%BD%EF%BF%BD%E2%B9%AE%EF%BF%BD%EF%BF%BD%5B%EF%BF%BD%CC%B7%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%5D.pdf&furl=bbs%2F202503311731095AEPKS.PDF",
+      "httpStatus": "200",
+      "contentType": "application/unknown; Charset=euc-kr",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 569244,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://adms.hufs.ac.kr/ajaxfile/FileCpnt/fileDown.do?gbn=d01&BOARD_SEQ=1&SITE_NO=2&BBS_SEQ=20650&FILE_SEQ=1",
+      "httpStatus": "200",
+      "contentType": "application/download; utf-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1744308,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://adms.hufs.ac.kr/ajaxfile/FileCpnt/fileDown.do?gbn=d01&BOARD_SEQ=1&SITE_NO=2&BBS_SEQ=20663&FILE_SEQ=1",
+      "httpStatus": "200",
+      "contentType": "application/download; utf-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 2645181,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://adms.hufs.ac.kr/ajaxfile/FileCpnt/fileDown.do?gbn=d01&BOARD_SEQ=1&SITE_NO=2&BBS_SEQ=20688&FILE_SEQ=1",
+      "httpStatus": "200",
+      "contentType": "application/download; utf-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4289927,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://adms.hufs.ac.kr/ajaxfile/FileCpnt/fileDown.do?gbn=d01&BOARD_SEQ=1&SITE_NO=2&BBS_SEQ=20704&FILE_SEQ=1",
+      "httpStatus": "200",
+      "contentType": "application/download; utf-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4867456,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://adms.hufs.ac.kr/ajaxfile/FileCpnt/fileDown.do?gbn=d01&BOARD_SEQ=1&SITE_NO=2&BBS_SEQ=20716&FILE_SEQ=1",
+      "httpStatus": "200",
+      "contentType": "application/download; utf-8",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 5462739,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://adms.hufs.ac.kr/cms/FrCon/index.do?MENU_ID=50",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 63322,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&bn=20495&m=read&p=43",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 16104,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&bn=21274&m=read&p=43",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 16851,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&bn=22064&m=read&p=43",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 18177,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&bn=22853&m=read&p=43",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 28487,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=43",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 17220,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://enter.duksung.ac.kr/data/?m_type=SUSI",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 93396,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://enter.duksung.ac.kr/upload_data/mojib/20260604094634_15.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf",
+      "isPdf": false,
+      "transportExitCode": 63,
+      "bytesReceived": 0,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://enter.kyonggi.ac.kr/cms/FR_BBS_CON/BoardView.do?BBS_SEQ=4043&BOARD_SEQ=4&CONTENTS_NO=1&MENU_ID=290&PWD=&P_BBS_SEQ=&SEARCH=&SEARCH_FLD=&SEARCH_SEQ=&SITE_NO=2&pageNo=1&pagePerCnt=10",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 84413,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://enter.kyonggi.ac.kr/cms/FR_CON/index.do?MENU_ID=290",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 75219,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://go.hanyang.ac.kr/web/pds/pds_list.do?ct02=ns01&ct04=in&m_type=SUSI",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://go.hanyang.ac.kr/web/pds/pds_list.do?ct02=ns01&ct04=ja&m_type=SUSI",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://go.hanyang.ac.kr/web/pds/pds_list.do?ct02=ns01&ct04=sa&m_type=SUSI",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 24952,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://go.hanyang.ac.kr/web/pds/pds_view.do?bn=20601&ct02=ns01&ct04=ja&f=ALL&m_type=SUSI&nPage=1&s=",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23998,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://go.pusan.ac.kr/",
+      "httpStatus": "200",
+      "contentType": "text/html",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 3616,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://go.skuniv.ac.kr/index.php?document_srl=197735",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 128037,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ibhak.kau.ac.kr/",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 74715,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ibhak.kau.ac.kr/admission/html/guide/noticeView.asp?p_board_idx=6137",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 14669,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.khu.ac.kr/detail.do?board_seq=13928&categoryid=27&menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D&pageNo=1&userpwd=",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 57893,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.khu.ac.kr/file/download.do?ofn=1.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%9D%B8%EB%AC%B8%EC%B2%B4%EC%9C%A1%EA%B3%84%29.pdf&sfn=20250331025728399_1.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%9D%B8%EB%AC%B8%EC%B2%B4%EC%9C%A1%EA%B3%84%29.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 469861,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.khu.ac.kr/file/download.do?ofn=2.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%82%AC%ED%9A%8C%EA%B3%84%29.pdf&sfn=20250331025728818_2.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%82%AC%ED%9A%8C%EA%B3%84%29.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 791712,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.khu.ac.kr/file/download.do?ofn=3.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%9E%90%EC%97%B0%EA%B3%84%29.pdf&sfn=20250331025728907_3.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%9E%90%EC%97%B0%EA%B3%84%29.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 758832,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.khu.ac.kr/file/download.do?ofn=4.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%9D%98%EC%95%BD%ED%95%99%EA%B3%84%29.pdf&sfn=20250331025728964_4.+2025+%EB%85%BC%EC%88%A0%EA%B3%A0%EC%82%AC+%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%28%EC%9D%98%EC%95%BD%ED%95%99%EA%B3%84%29.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 5811550,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.khu.ac.kr/submenu.do?menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 57492,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/_common/new_download_file.php?file_no=691&menu=boardfile",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1358428,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/_common/new_download_file.php?file_no=737&menu=boardfile",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 427292,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/_common/new_download_file.php?file_no=739&menu=boardfile",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 411392,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/_common/new_download_file.php?file_no=740&menu=boardfile",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 388704,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/_common/new_download_file.php?file_no=741&menu=boardfile",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 628756,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/pds/pds_list.php?m_type=SUSI",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 51823,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/pds/pds_view.php?bn=44604&f=&m_type=SUSI&nPage=1&s=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 37057,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.kw.ac.kr/pds/pds_view.php?bn=44694&m_type=SUSI&nPage=1&f=&s=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 38130,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.ssu.ac.kr/board/exam_list.asp?flag2=1&keyword=&page=1&page_no=1_2_7&srchoption=",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 60344,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.ssu.ac.kr/board/exam_view.asp?number=137&srchoption=&keyword=&flag=&flag2=1&page_no=1_2_7&page=1",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 50557,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://iphak.tukorea.ac.kr/guide/pds.htm?bbsid=pds&bltn_seq=12599&mode=view",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27038,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.catholic.ac.kr/file/download.do?sfn=20260604024625830_2027_%ea%b0%80%ed%86%a8%eb%a6%ad%eb%8c%80%ed%95%99%ea%b5%90_%eb%85%bc%ec%88%a0%ea%b0%80%ec%9d%b4%eb%93%9c_%eb%8b%a8%eb%a9%b4_0604.pdf&ofn=2027_%ea%b0%80%ed%86%a8%eb%a6%ad%eb%8c%80%ed%95%99%ea%b5%90_%eb%85%bc%ec%88%a0%ea%b0%80%ec%9d%b4%eb%93%9c_%eb%8b%a8%eb%a9%b4_0604.pdf",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream;;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 3406518,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.catholic.ac.kr/submenu.do?menuurl=5M7GPMZ4Fe9h2Uf15L%2B7XQ%3D%3D",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 58748,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dankook.ac.kr/jukjeon/doumi/ex_list.html?bbsid=juk_issue&bltn_seq=44670&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32933,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dankook.ac.kr/jukjeon/doumi/nonsul_list.html",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30377,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dankook.ac.kr/jukjeon/doumi/nonsul_list.html?bbsid=juk_pds09&camp_type=&ctg_cd=&page=1&skey=&keyword=&mode=view&bltn_seq=51777",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29353,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongduk.ac.kr/afile/fileDownload/jxrmn",
+      "httpStatus": "000",
+      "contentType": "",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongduk.ac.kr/ipsi/contents/nontime-doc.do?etc1=68&id=37407&page=1&schBdcode=_ipsi_admdoc01&schGroupCode=&schM=view&viewCount=10",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 45601,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongduk.ac.kr/ipsi/contents/nontime-doc.do?etc1=78&id=91947&page=1&schBdcode=_ipsi_admdoc01&schGroupCode=&schM=view&viewCount=10",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 46409,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=29983",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33999,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=31857",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32967,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=34440",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33477,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=37031",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 34341,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.dongguk.edu/admission/html/rolling/data.asp",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 46577,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.sejong.ac.kr/ipsi/assistant/exam-questions.do",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 77286,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.sejong.ac.kr/ipsi/assistant/exam-questions.do?mode=view&articleNo=2726&article.offset=0&articleLimit=10",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 106181,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.shinhan.ac.kr/",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 9702,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.shinhan.ac.kr/ihp/bbs/selectBoardArticle.do?bbsId=BBSMSTR_000000000000&cateId=1&nttId=1075&relateImagePath=svis_5",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.sungshin.ac.kr/bbs/filedown.php?bbsid=guidebook&file_seq=2912",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream",
+      "isPdf": true,
+      "transportExitCode": 63,
+      "bytesReceived": 20000000,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.sungshin.ac.kr/highschool_ties/guidebook.php?bbsid=guidebook&bltn_seq=34121&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 21481,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32793,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/1562",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23256,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/1563",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 22063,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/2705",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23304,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/2706",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 22090,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/359",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23559,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/360",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 22451,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/4019",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23282,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/4020",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 22076,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/5508",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23274,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.suwon.ac.kr/board/pre_question/read/5509",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 22016,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.syu.ac.kr/2016_syu/pages/index.asp?b=B_1_12&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=97",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23368,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.syu.ac.kr/2016_syu/pages/index.asp?gd=01&p=96",
+      "httpStatus": "200",
+      "contentType": "text/html; Charset=euc-kr",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 26159,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi.syu.ac.kr/upload_data/guide/RF(0)_260527141648.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 7884780,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi1.knu.ac.kr/_common/pdf_viewer.php?e_no=6&m_type=enterinfo",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 1183,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://ipsi1.knu.ac.kr/upload_data/enter/20250924101202_26.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4574983,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://oku.korea.ac.kr/ajaxfile/FR_SVC/FileDown.do?GBN=X01&BOARD_SEQ=2&SITE_NO=3&BBS_SEQ=28&FILE_SEQ=2",
+      "httpStatus": "200",
+      "contentType": "application/download; utf-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 3785521,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://oku.korea.ac.kr/oku/cms/FR_BBS_CON/BoardView.do?BBS_SEQ=86&BOARD_SEQ=2&CONTENTS_NO=&MENU_ID=720&PWD=&SEARCH=&SEARCH_FLD=&SITE_NO=2&pageNo=1&pagePerCnt=10",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 70493,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://oku.korea.ac.kr/oku/cms/FR_BBS_CON/BoardView.do?BBS_SEQ=87&BOARD_SEQ=2&CONTENTS_NO=&MENU_ID=720&SITE_NO=2",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 70139,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://oku.korea.ac.kr/oku/cms/FR_CON/index.do?MENU_ID=720",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 60456,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://oku.korea.ac.kr/sejong/cms/FR_CON/index.do?MENU_ID=510",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 48262,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000249229&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000014&searchSyr=2027",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 3246919,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000249230&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000014&searchSyr=2027",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1619858,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000249263&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000036&searchSyr=2027",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 5139367,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000249264&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000036&searchSyr=2027",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 188113,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000249330&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000040&searchSyr=2027",
+      "httpStatus": "200",
+      "contentType": "application/octet-stream;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 5454888,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.hongik.ac.kr/kr/admission/previous-question.do?article.offset=0&mode=list",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 187816,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.hongik.ac.kr/kr/admission/previous-question.do?mode=view&articleNo=154971&article.offset=0&articleLimit=10",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 172693,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.iajou.ac.kr/pasttest/?m_type=SUSI",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 58076,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.iajou.ac.kr/pasttest/view.php?bn=78689&m_type=SUSI&nPage=0&f=&s=",
+      "httpStatus": "200",
+      "contentType": "text/html; charset=utf-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 45932,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.koreatech.ac.kr/board.es?act=view&bid=0036&list_no=54098&mid=a40601000000",
+      "httpStatus": "200",
+      "contentType": "text/html;charset=UTF-8",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47338,
+      "bodyInspection": "not_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.koreatech.ac.kr/boardDownload.es?mid=a40601000000&bid=0036&list_no=54098&seq=1",
+      "httpStatus": "200",
+      "contentType": "application/pdf;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 418032,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www.koreatech.ac.kr/boardDownload.es?mid=a40601000000&bid=0036&list_no=54098&seq=2",
+      "httpStatus": "200",
+      "contentType": "application/pdf;charset=UTF-8",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 415132,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www2.yonsei.ac.kr/entrance/2024/2025%ED%95%99%EB%85%84%EB%8F%84_%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC%EC%9E%90%EB%A3%8C%EC%A7%91.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 2605056,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "url": "https://www2.yonsei.ac.kr/entrance/2025/2026%ED%95%99%EB%85%84%EB%8F%84_%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC_%EC%9E%90%EB%A3%8C%EC%A7%91.pdf",
+      "httpStatus": "200",
+      "contentType": "application/pdf",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 2686976,
+      "bodyInspection": "pdf_received_not_content_reviewed",
+      "checkedAt": "2026-09-10"
+    }
+  ],
+  "universities": [
+    {
+      "universityId": "0000063",
+      "name": "가천대학교",
+      "universityIds": [
+        "0000063"
+      ],
+      "archiveUrl": "https://admission.gachon.ac.kr/upload/BBS0024/202507151748295SGWU8.PDF",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 5,
+      "individualLinkCount": 4,
+      "directFileCount": 4,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000063-2023-expanded-25"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000063-2024-expanded-22"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000063-2025-expanded-23"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000063-2026-expanded-24"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000046",
+      "name": "가톨릭대학교",
+      "universityIds": [
+        "0000046",
+        "0000048",
+        "0000049"
+      ],
+      "archiveUrl": "https://ipsi.catholic.ac.kr/submenu.do?menuurl=5M7GPMZ4Fe9h2Uf15L%2B7XQ%3D%3D",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000046-2027-100"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000051",
+      "name": "강남대학교",
+      "universityIds": [
+        "0000051"
+      ],
+      "archiveUrl": "https://admission.kangnam.ac.kr/doumi/notice.htm?bbsid=notice&bltn_seq=39528&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000051-2026-88"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000051-2027-102"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000052",
+      "name": "건국대학교",
+      "universityIds": [
+        "0000052"
+      ],
+      "archiveUrl": "https://admission.konkuk.ac.kr/admission/37862/subview.do",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 6,
+      "individualLinkCount": 5,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000052-2022-expanded-4"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000052-2023-expanded-3"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000052-2024-expanded-2"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000052-2025-expanded-1"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000052-2026-expanded-0"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000056",
+      "name": "경기대학교",
+      "universityIds": [
+        "0000056",
+        "0000058"
+      ],
+      "archiveUrl": "https://enter.kyonggi.ac.kr/cms/FR_CON/index.do?MENU_ID=290",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000056-2025-national-170"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000005",
+      "name": "경북대학교",
+      "universityIds": [
+        "0000005"
+      ],
+      "archiveUrl": "https://ipsi1.knu.ac.kr/_common/pdf_viewer.php?e_no=6&m_type=enterinfo",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000005-2026-national-169"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000066",
+      "name": "경희대학교",
+      "universityIds": [
+        "0000066"
+      ],
+      "archiveUrl": "https://iphak.khu.ac.kr/submenu.do?menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 6,
+      "individualLinkCount": 5,
+      "directFileCount": 4,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000066-2025-84",
+            "document-0000066-2025-90",
+            "document-0000066-2025-91",
+            "document-0000066-2025-92",
+            "document-0000066-2025-93"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 4,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000069",
+      "name": "고려대학교",
+      "universityIds": [
+        "0000069"
+      ],
+      "archiveUrl": "https://oku.korea.ac.kr/oku/cms/FR_CON/index.do?MENU_ID=720",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000069-2025-national-172"
+          ],
+          "mockRecordIds": [
+            "document-0000069-2025-national-171"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000070",
+      "name": "고려대학교(세종)",
+      "universityIds": [
+        "0000070"
+      ],
+      "archiveUrl": "https://oku.korea.ac.kr/sejong/cms/FR_CON/index.do?MENU_ID=510",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000070-2026-national-168"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000074",
+      "name": "광운대학교",
+      "universityIds": [
+        "0000074"
+      ],
+      "archiveUrl": "https://iphak.kw.ac.kr/pds/pds_list.php?m_type=SUSI",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 8,
+      "individualLinkCount": 7,
+      "directFileCount": 5,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000074-2025-34"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000074-2026-79",
+            "document-0000074-2026-94",
+            "document-0000074-2026-95",
+            "document-0000074-2026-96",
+            "document-0000074-2026-97"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 4,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000074-2027-104"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000078",
+      "name": "국민대학교",
+      "universityIds": [
+        "0000078"
+      ],
+      "archiveUrl": "https://admission.kookmin.ac.kr/helper/notice.php?ctype=view&no=1065&page=&s_key=&s_word=",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000078-2027-101"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000082",
+      "name": "단국대학교",
+      "universityIds": [
+        "0000082"
+      ],
+      "archiveUrl": "https://ipsi.dankook.ac.kr/jukjeon/doumi/nonsul_list.html",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000082-2024-81"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000082-2027-105"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000099",
+      "name": "덕성여자대학교",
+      "universityIds": [
+        "0000099"
+      ],
+      "archiveUrl": "https://enter.duksung.ac.kr/data/?m_type=SUSI",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000099-2026-98"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000100",
+      "name": "동국대학교",
+      "universityIds": [
+        "0000100"
+      ],
+      "archiveUrl": "https://ipsi.dongguk.edu/admission/html/rolling/data.asp",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 5,
+      "individualLinkCount": 4,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000100-2023-expanded-42"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000100-2024-expanded-41"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000100-2025-expanded-40"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000100-2026-expanded-39"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000102",
+      "name": "동덕여자대학교",
+      "universityIds": [
+        "0000102"
+      ],
+      "archiveUrl": "https://ipsi.dongduk.ac.kr/ipsi/contents/nontime-doc.do?etc1=78&id=91947&page=1&schBdcode=_ipsi_admdoc01&schGroupCode=&schM=view&viewCount=10",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000102-2024-80"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000102-2027-103"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000014",
+      "name": "부산대학교",
+      "universityIds": [
+        "0000014"
+      ],
+      "archiveUrl": "https://go.pusan.ac.kr/",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 2,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000014-2026-national-173",
+            "document-0000014-2026-national-174"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 2,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000116",
+      "name": "삼육대학교",
+      "universityIds": [
+        "0000116"
+      ],
+      "archiveUrl": "https://ipsi.syu.ac.kr/2016_syu/pages/index.asp?b=B_1_12&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=97",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000116-2026-expanded-18",
+            "document-0000116-2026-expanded-43"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000117",
+      "name": "상명대학교",
+      "universityIds": [
+        "0000117"
+      ],
+      "archiveUrl": "https://admission.smu.ac.kr/_seoul/board/bbs.html?bbsid=seoul_dataroom&bltn_seq=61691&ctg_cd=susi&keyword=&mode=view&page=1&skey=",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000117-2027-expanded-21"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000120",
+      "name": "서강대학교",
+      "universityIds": [
+        "0000120"
+      ],
+      "archiveUrl": "https://admission.sogang.ac.kr/upload/BBS0014/202607031541342K5UMZ.PDF",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000120-2025-33"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000121",
+      "name": "서경대학교",
+      "universityIds": [
+        "0000121"
+      ],
+      "archiveUrl": "https://go.skuniv.ac.kr/index.php?document_srl=197735",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000121-2025-expanded-15"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000036",
+      "name": "서울과학기술대학교",
+      "universityIds": [
+        "0000036"
+      ],
+      "archiveUrl": "https://admission.seoultech.ac.kr/cms/FR_CON/index.do?MENU_ID=140",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 2,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000036-2026-national-175",
+            "document-0000036-2026-national-176"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 2,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000040",
+      "name": "서울시립대학교",
+      "universityIds": [
+        "0000040"
+      ],
+      "archiveUrl": "https://admission.uos.ac.kr/",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000040-2026-national-177"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000126",
+      "name": "서울여자대학교",
+      "universityIds": [
+        "0000126"
+      ],
+      "archiveUrl": "https://admission.swu.ac.kr/bbs/board.php?bo_table=dataroom&sca=%EC%88%98%EC%8B%9C&wr_9=gichul",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 6,
+      "individualLinkCount": 5,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000126-2022"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000126-2023"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000126-2024"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000126-2025"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000126-2026"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000133",
+      "name": "성균관대학교",
+      "universityIds": [
+        "0000133"
+      ],
+      "archiveUrl": "https://admission.skku.edu/admission/html/rolling/question.html",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 0,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000133-2025-29"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 1,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000133-2026-30"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 1,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000136",
+      "name": "성신여자대학교",
+      "universityIds": [
+        "0000136"
+      ],
+      "archiveUrl": "https://ipsi.sungshin.ac.kr/highschool_ties/guidebook.php?bbsid=guidebook&bltn_seq=34121&ctg_cd=&keyword=&mode=view&page=1&skey=",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000136-2027-99"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000138",
+      "name": "세종대학교",
+      "universityIds": [
+        "0000138"
+      ],
+      "archiveUrl": "https://ipsi.sejong.ac.kr/ipsi/assistant/exam-questions.do",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000138-2027-106"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000140",
+      "name": "수원대학교",
+      "universityIds": [
+        "0000140"
+      ],
+      "archiveUrl": "https://ipsi.suwon.ac.kr/board/pre_question",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 6,
+      "individualLinkCount": 5,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000140-2022-expanded-14"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000140-2023-expanded-12"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000140-2024-expanded-10"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000140-2025-expanded-8"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000140-2026-expanded-6"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000141",
+      "name": "숙명여자대학교",
+      "universityIds": [
+        "0000141"
+      ],
+      "archiveUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/essay.asp",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 5,
+      "individualLinkCount": 4,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000141-2023-national-167"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000141-2024-national-166"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000141-2025-national-165"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000141-2026-national-164"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000143",
+      "name": "숭실대학교",
+      "universityIds": [
+        "0000143"
+      ],
+      "archiveUrl": "https://iphak.ssu.ac.kr/board/exam_list.asp?flag2=1&keyword=&page=1&page_no=1_2_7&srchoption=",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000143-2026-78"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000143-2027-107"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0002712",
+      "name": "신한대학교",
+      "universityIds": [
+        "0002712",
+        "0002800"
+      ],
+      "archiveUrl": "https://ipsi.shinhan.ac.kr/",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0002712-2027-expanded-19"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000146",
+      "name": "아주대학교",
+      "universityIds": [
+        "0000146"
+      ],
+      "archiveUrl": "https://www.iajou.ac.kr/pasttest/?m_type=SUSI",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000146-2027-108"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000149",
+      "name": "연세대학교",
+      "universityIds": [
+        "0000149"
+      ],
+      "archiveUrl": "https://www2.yonsei.ac.kr/entrance/2025/2026%ED%95%99%EB%85%84%EB%8F%84_%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC_%EC%9E%90%EB%A3%8C%EC%A7%91.pdf",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 2,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000149-2024-32"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000149-2025-31"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000150",
+      "name": "연세대학교(미래)",
+      "universityIds": [
+        "0000150"
+      ],
+      "archiveUrl": "https://admission.yonsei.ac.kr/mirae/download.asp?fname=01.+2025+%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD+%EF%BF%BD%EF%BF%BD%EF%BF%BD%E2%B9%AE%EF%BF%BD%EF%BF%BD%5B%EF%BF%BD%CC%B7%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%5D.pdf&furl=bbs%2F202503311731095AEPKS.PDF",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 1,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000150-2025-89"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000161",
+      "name": "을지대학교",
+      "universityIds": [
+        "0000161",
+        "0000162",
+        "0002911"
+      ],
+      "archiveUrl": "https://admission.eulji.ac.kr/index.html?act=view&bbsno=198&boardno=1958&menuno=7987&siteno=19&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTk1OCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 5,
+      "individualLinkCount": 4,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000161-2025-expanded-31"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000161-2026-expanded-33"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000161-2027-expanded-30",
+        "document-0000161-2027-expanded-32"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000163",
+      "name": "이화여자대학교",
+      "universityIds": [
+        "0000163"
+      ],
+      "archiveUrl": "https://admission.ewha.ac.kr/",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 6,
+      "individualLinkCount": 5,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000163-2022-expanded-38"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000163-2023-expanded-37"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000163-2024-expanded-36"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000163-2025-expanded-35"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000163-2026-expanded-34"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000169",
+      "name": "인하대학교",
+      "universityIds": [
+        "0000169"
+      ],
+      "archiveUrl": "https://admission.inha.ac.kr/cms/FR_CON/index.do?MENU_ID=110",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000169-2025-87"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000169-2026-86"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000175",
+      "name": "중앙대학교",
+      "universityIds": [
+        "0000175",
+        "0000174"
+      ],
+      "archiveUrl": "https://admission.cau.ac.kr/submenu.do?menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000175-2025-83"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000175-2026-82"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000247",
+      "name": "한국공학대학교",
+      "universityIds": [
+        "0000247"
+      ],
+      "archiveUrl": "https://iphak.tukorea.ac.kr/guide/pds.htm?bbsid=pds&bltn_seq=12599&mode=view",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000247-2025-85"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000189",
+      "name": "한국기술교육대학교",
+      "universityIds": [
+        "0000189"
+      ],
+      "archiveUrl": "https://www.koreatech.ac.kr/board.es?act=view&bid=0036&list_no=54098&mid=a40601000000",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 3,
+      "individualLinkCount": 2,
+      "directFileCount": 2,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000189-2026-expanded-16",
+            "document-0000189-2026-expanded-17"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000192",
+      "name": "한국외국어대학교",
+      "universityIds": [
+        "0000192"
+      ],
+      "archiveUrl": "https://adms.hufs.ac.kr/cms/FrCon/index.do?MENU_ID=50",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 6,
+      "individualLinkCount": 5,
+      "directFileCount": 5,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000192-2022-national-163"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000192-2023-national-162"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000192-2024-national-161"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000192-2025-national-160"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "document-0000192-2026-national-159"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 1,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000194",
+      "name": "한국항공대학교",
+      "universityIds": [
+        "0000194"
+      ],
+      "archiveUrl": "https://ibhak.kau.ac.kr/",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000194-2027-expanded-20"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000202",
+      "name": "한신대학교",
+      "universityIds": [
+        "0000202"
+      ],
+      "archiveUrl": "https://ent.hs.ac.kr/ipsi/pages/?b=b_1_8&cate=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD&p=43",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 5,
+      "individualLinkCount": 4,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000202-2024-expanded-26"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000202-2025-expanded-27"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [
+            "document-0000202-2026-expanded-28"
+          ],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000202-2027-expanded-29"
+      ],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000203",
+      "name": "한양대학교",
+      "universityIds": [
+        "0000203"
+      ],
+      "archiveUrl": "https://go.hanyang.ac.kr/web/pds/pds_list.do?ct02=ns01&ct04=in&m_type=SUSI",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 29,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000203-2022-8",
+            "exam-0000203-2022-9",
+            "exam-0000203-2022-20",
+            "exam-0000203-2022-21",
+            "exam-0000203-2022-22",
+            "exam-0000203-2022-23",
+            "exam-0000203-2022-28"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 7,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000203-2023-6",
+            "exam-0000203-2023-7",
+            "exam-0000203-2023-17",
+            "exam-0000203-2023-18",
+            "exam-0000203-2023-19",
+            "exam-0000203-2023-27"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 6,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000203-2024-4",
+            "exam-0000203-2024-5",
+            "exam-0000203-2024-14",
+            "exam-0000203-2024-15",
+            "exam-0000203-2024-16",
+            "exam-0000203-2024-26"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 6,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000203-2025-2",
+            "exam-0000203-2025-3",
+            "exam-0000203-2025-11",
+            "exam-0000203-2025-12",
+            "exam-0000203-2025-13",
+            "exam-0000203-2025-25"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 6,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "registered_unverified",
+          "pastPaperRecordIds": [
+            "exam-0000203-2026-1",
+            "exam-0000203-2026-10",
+            "exam-0000203-2026-24"
+          ],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 1,
+          "listingReferenceCount": 2,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [],
+      "completeness": "not_complete"
+    },
+    {
+      "universityId": "0000212",
+      "name": "홍익대학교",
+      "universityIds": [
+        "0000212",
+        "0002949"
+      ],
+      "archiveUrl": "https://www.hongik.ac.kr/kr/admission/previous-question.do?article.offset=0&mode=list",
+      "rosterEvidenceStatus": "official_2027_notice_found",
+      "rosterReverifiedThisAudit": false,
+      "recordCount": 2,
+      "individualLinkCount": 1,
+      "directFileCount": 0,
+      "questionBodyVerifiedCount": 0,
+      "years": [
+        {
+          "academicYear": 2022,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2023,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2024,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2025,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        },
+        {
+          "academicYear": 2026,
+          "status": "no_past_paper_registered",
+          "pastPaperRecordIds": [],
+          "mockRecordIds": [],
+          "guideRecordIds": [],
+          "directFileCount": 0,
+          "documentPageCount": 0,
+          "listingReferenceCount": 0,
+          "questionBodyVerifiedCount": 0,
+          "solutionBodyVerifiedCount": 0,
+          "allSubjectsAndSessionsVerified": false
+        }
+      ],
+      "outsideTargetYears": [
+        "document-0000212-2027-109"
+      ],
+      "completeness": "not_complete"
+    }
+  ]
+}

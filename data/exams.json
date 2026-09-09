@@ -13,7 +13,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2025,
@@ -29,7 +44,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2025,
@@ -45,7 +75,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2024,
@@ -61,7 +106,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2024,
@@ -77,7 +137,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2023,
@@ -93,7 +168,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2023,
@@ -109,7 +199,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2022,
@@ -125,7 +230,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2022,
@@ -141,7 +261,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2026,
@@ -157,7 +292,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "document_page",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23998,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -173,7 +323,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2025,
@@ -189,7 +354,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2025,
@@ -205,7 +385,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2024,
@@ -221,7 +416,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2024,
@@ -237,7 +447,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2024,
@@ -253,7 +478,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2023,
@@ -269,7 +509,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2023,
@@ -285,7 +540,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2023,
@@ -301,7 +571,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2022,
@@ -317,7 +602,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2022,
@@ -333,7 +633,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2022,
@@ -349,7 +664,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2022,
@@ -365,7 +695,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29905,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2026,
@@ -381,7 +726,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 24952,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2025,
@@ -397,7 +757,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 24952,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2024,
@@ -413,7 +788,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 24952,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2023,
@@ -429,7 +819,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 24952,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2022,
@@ -445,7 +850,22 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 24952,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2025,
@@ -461,7 +881,22 @@
     "universityId": "0000133",
     "universityName": "성균관대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30938,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2026,
@@ -477,7 +912,22 @@
     "universityId": "0000133",
     "universityName": "성균관대학교",
     "verificationLevel": "official_listing",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "archive_listing",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30938,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": 2025,
@@ -493,7 +943,30 @@
     "universityId": "0000149",
     "universityName": "연세대학교",
     "verificationLevel": "official_search_index",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "pdf",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 2686976,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": null,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2024,
@@ -509,7 +982,30 @@
     "universityId": "0000149",
     "universityName": "연세대학교",
     "verificationLevel": "official_search_index",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "pdf",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 2605056,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": null,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -530,7 +1026,22 @@
     "universityId": "0000120",
     "universityName": "서강대학교",
     "verificationLevel": "official_search_index",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "pdf",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -545,7 +1056,64 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_post",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "resourceType": "pdf",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1358428,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 68,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        3,
+        6,
+        17,
+        19,
+        25,
+        26,
+        27,
+        32,
+        34,
+        38,
+        46,
+        54,
+        62
+      ],
+      "solutionMarkerPages": [
+        7,
+        11,
+        20,
+        22,
+        28,
+        30,
+        34,
+        36,
+        43,
+        44,
+        45,
+        51,
+        53,
+        59,
+        61,
+        66,
+        68
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -563,7 +1131,21 @@
     "universityId": "0000063",
     "universityName": "가천대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -581,7 +1163,21 @@
     "universityId": "0000046",
     "universityName": "가톨릭대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 58748,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -599,7 +1195,21 @@
     "universityId": "0000051",
     "universityName": "강남대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30620,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -617,7 +1227,21 @@
     "universityId": "0000052",
     "universityName": "건국대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 819,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -635,7 +1259,21 @@
     "universityId": "0000056",
     "universityName": "경기대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 75219,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -653,7 +1291,21 @@
     "universityId": "0000005",
     "universityName": "경북대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 1183,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -671,7 +1323,21 @@
     "universityId": "0000066",
     "universityName": "경희대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 57492,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -689,7 +1355,21 @@
     "universityId": "0000069",
     "universityName": "고려대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 60456,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -707,7 +1387,21 @@
     "universityId": "0000070",
     "universityName": "고려대학교(세종)",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 48262,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -725,7 +1419,21 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 51823,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -743,7 +1451,21 @@
     "universityId": "0000078",
     "universityName": "국민대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 122467,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -761,7 +1483,21 @@
     "universityId": "0000082",
     "universityName": "단국대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30377,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -779,7 +1515,21 @@
     "universityId": "0000099",
     "universityName": "덕성여자대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 93396,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -797,7 +1547,21 @@
     "universityId": "0000100",
     "universityName": "동국대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 46577,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -815,7 +1579,21 @@
     "universityId": "0000102",
     "universityName": "동덕여자대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 46409,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -833,7 +1611,21 @@
     "universityId": "0000014",
     "universityName": "부산대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 3616,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -851,7 +1643,21 @@
     "universityId": "0000116",
     "universityName": "삼육대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23368,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -869,7 +1675,21 @@
     "universityId": "0000117",
     "universityName": "상명대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 26970,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -887,7 +1707,21 @@
     "universityId": "0000120",
     "universityName": "서강대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -905,7 +1739,21 @@
     "universityId": "0000121",
     "universityName": "서경대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 128037,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -923,7 +1771,21 @@
     "universityId": "0000036",
     "universityName": "서울과학기술대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 1685,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -941,7 +1803,21 @@
     "universityId": "0000040",
     "universityName": "서울시립대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "400",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 393,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -959,7 +1835,21 @@
     "universityId": "0000126",
     "universityName": "서울여자대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 74743,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -977,7 +1867,21 @@
     "universityId": "0000133",
     "universityName": "성균관대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30938,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": null,
@@ -995,7 +1899,21 @@
     "universityId": "0000136",
     "universityName": "성신여자대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 21481,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1013,7 +1931,21 @@
     "universityId": "0000138",
     "universityName": "세종대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 77286,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1031,7 +1963,21 @@
     "universityId": "0000140",
     "universityName": "수원대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32793,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1049,7 +1995,21 @@
     "universityId": "0000141",
     "universityName": "숙명여자대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32616,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1067,7 +2027,21 @@
     "universityId": "0000143",
     "universityName": "숭실대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 60344,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1085,7 +2059,21 @@
     "universityId": "0002712",
     "universityName": "신한대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 9702,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1103,7 +2091,21 @@
     "universityId": "0000146",
     "universityName": "아주대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 58076,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1121,7 +2123,29 @@
     "universityId": "0000149",
     "universityName": "연세대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 2686976,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": null,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1139,7 +2163,47 @@
     "universityId": "0000150",
     "universityName": "연세대학교(미래)",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 569244,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 10,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "solutionMarkerPages": [
+        3,
+        5,
+        8,
+        10
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1157,7 +2221,21 @@
     "universityId": "0000161",
     "universityName": "을지대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "400",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1175,7 +2253,21 @@
     "universityId": "0000163",
     "universityName": "이화여자대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 12560,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1193,7 +2285,21 @@
     "universityId": "0000169",
     "universityName": "인하대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 144,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1211,7 +2317,21 @@
     "universityId": "0000175",
     "universityName": "중앙대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "000",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1229,7 +2349,21 @@
     "universityId": "0000247",
     "universityName": "한국공학대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27038,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1247,7 +2381,21 @@
     "universityId": "0000189",
     "universityName": "한국기술교육대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47338,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1265,7 +2413,21 @@
     "universityId": "0000192",
     "universityName": "한국외국어대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 63322,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1283,7 +2445,21 @@
     "universityId": "0000194",
     "universityName": "한국항공대학교",
     "verificationLevel": "official_entrypoint",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 74715,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1301,7 +2477,21 @@
     "universityId": "0000202",
     "universityName": "한신대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 17220,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": null,
@@ -1319,7 +2509,21 @@
     "universityId": "0000203",
     "universityName": "한양대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27346,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "연도·회차 제목이 등록되어 있지만 연결 대상은 게시판 목록입니다. 개별 문제 원문 확보 건수에서 제외합니다."
   },
   {
     "academicYear": null,
@@ -1337,7 +2541,21 @@
     "universityId": "0000212",
     "universityName": "홍익대학교",
     "verificationLevel": "official_archive",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "archive",
+    "auditLinkKind": "listing",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 187816,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1355,7 +2573,69 @@
     "universityId": "0000143",
     "universityName": "숭실대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4994896,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 42,
+      "coverYears": [],
+      "questionMarkerPages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "solutionMarkerPages": [
+        12,
+        13,
+        15,
+        16,
+        18,
+        19,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        37
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1373,7 +2653,21 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 37057,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2024,
@@ -1391,7 +2685,21 @@
     "universityId": "0000102",
     "universityName": "동덕여자대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 45601,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2024,
@@ -1409,7 +2717,21 @@
     "universityId": "0000082",
     "universityName": "단국대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32933,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1427,7 +2749,21 @@
     "universityId": "0000175",
     "universityName": "중앙대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "000",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1445,7 +2781,51 @@
     "universityId": "0000175",
     "universityName": "중앙대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 36914,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "2025학년도 수시모집 논술전형 자연계열(1교시)",
+        "url": "https://admission.cau.ac.kr/files/2025/2025_cau_ns_jy1.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.cau.ac.kr/detail.do?board_seq=3072&categoryid=14&menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D&pageNo=1"
+      },
+      {
+        "title": "2025학년도 수시모집 논술전형 자연계열(2교시)",
+        "url": "https://admission.cau.ac.kr/files/2025/2025_cau_ns_jy2.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.cau.ac.kr/detail.do?board_seq=3072&categoryid=14&menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D&pageNo=1"
+      },
+      {
+        "title": "2025학년도 수시모집 논술전형 경영경제계열(1교시)",
+        "url": "https://admission.cau.ac.kr/files/2025/2025_cau_ns_gy.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.cau.ac.kr/detail.do?board_seq=3072&categoryid=14&menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D&pageNo=1"
+      },
+      {
+        "title": "2025학년도 수시모집 논술전형 인문사회계열(2교시)",
+        "url": "https://admission.cau.ac.kr/files/2025/2025_cau_ns_im.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.cau.ac.kr/detail.do?board_seq=3072&categoryid=14&menuurl=jcgylvDgJz1bdCxN45fl1g%3D%3D&pageNo=1"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1463,7 +2843,51 @@
     "universityId": "0000066",
     "universityName": "경희대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 57893,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "1. 2025 논술고사 기출문제(인문체육계).pdf",
+        "url": "https://iphak.khu.ac.kr/file/download.do?sfn=20250331025728399_1.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%9d%b8%eb%ac%b8%ec%b2%b4%ec%9c%a1%ea%b3%84).pdf&ofn=1.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%9d%b8%eb%ac%b8%ec%b2%b4%ec%9c%a1%ea%b3%84).pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://iphak.khu.ac.kr/detail.do?board_seq=13928&categoryid=27&menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D&pageNo=1&userpwd="
+      },
+      {
+        "title": "2. 2025 논술고사 기출문제(사회계).pdf",
+        "url": "https://iphak.khu.ac.kr/file/download.do?sfn=20250331025728818_2.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%82%ac%ed%9a%8c%ea%b3%84).pdf&ofn=2.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%82%ac%ed%9a%8c%ea%b3%84).pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://iphak.khu.ac.kr/detail.do?board_seq=13928&categoryid=27&menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D&pageNo=1&userpwd="
+      },
+      {
+        "title": "3. 2025 논술고사 기출문제(자연계).pdf",
+        "url": "https://iphak.khu.ac.kr/file/download.do?sfn=20250331025728907_3.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%9e%90%ec%97%b0%ea%b3%84).pdf&ofn=3.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%9e%90%ec%97%b0%ea%b3%84).pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://iphak.khu.ac.kr/detail.do?board_seq=13928&categoryid=27&menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D&pageNo=1&userpwd="
+      },
+      {
+        "title": "4. 2025 논술고사 기출문제(의약학계).pdf",
+        "url": "https://iphak.khu.ac.kr/file/download.do?sfn=20250331025728964_4.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%9d%98%ec%95%bd%ed%95%99%ea%b3%84).pdf&ofn=4.+2025+%eb%85%bc%ec%88%a0%ea%b3%a0%ec%82%ac+%ea%b8%b0%ec%b6%9c%eb%ac%b8%ec%a0%9c(%ec%9d%98%ec%95%bd%ed%95%99%ea%b3%84).pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://iphak.khu.ac.kr/detail.do?board_seq=13928&categoryid=27&menuurl=89BGs%2Bk748ajyySWoWlQPw%3D%3D&pageNo=1&userpwd="
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1481,7 +2905,21 @@
     "universityId": "0000247",
     "universityName": "한국공학대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 27038,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1499,7 +2937,21 @@
     "universityId": "0000169",
     "universityName": "인하대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 144,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1517,7 +2969,21 @@
     "universityId": "0000169",
     "universityName": "인하대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 144,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1535,7 +3001,21 @@
     "universityId": "0000051",
     "universityName": "강남대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 30620,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1553,7 +3033,47 @@
     "universityId": "0000150",
     "universityName": "연세대학교(미래)",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 569244,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 10,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "solutionMarkerPages": [
+        3,
+        5,
+        8,
+        10
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1571,7 +3091,44 @@
     "universityId": "0000066",
     "universityName": "경희대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 469861,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 17,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        4,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "solutionMarkerPages": [
+        8,
+        10,
+        14,
+        16
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1589,7 +3146,53 @@
     "universityId": "0000066",
     "universityName": "경희대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 791712,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 19,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18
+      ],
+      "solutionMarkerPages": [
+        8,
+        9,
+        11,
+        14,
+        16,
+        18
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1607,7 +3210,46 @@
     "universityId": "0000066",
     "universityName": "경희대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 758832,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 13,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "solutionMarkerPages": [
+        5,
+        8,
+        11,
+        12
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2025,
@@ -1625,7 +3267,66 @@
     "universityId": "0000066",
     "universityName": "경희대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 5811550,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 39,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        2,
+        9,
+        10,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        24,
+        25,
+        26,
+        28,
+        29,
+        32,
+        34,
+        36,
+        38
+      ],
+      "solutionMarkerPages": [
+        10,
+        12,
+        13,
+        16,
+        17,
+        21,
+        25,
+        26,
+        29,
+        30,
+        33,
+        34,
+        38,
+        39
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1643,7 +3344,41 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 628756,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 14,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        1,
+        2,
+        8,
+        10
+      ],
+      "solutionMarkerPages": [
+        3,
+        4,
+        11,
+        13
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1661,7 +3396,42 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 427292,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 17,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        1,
+        2,
+        3,
+        10,
+        12
+      ],
+      "solutionMarkerPages": [
+        4,
+        5,
+        13,
+        14
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1679,7 +3449,40 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 411392,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 18,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        1,
+        10
+      ],
+      "solutionMarkerPages": [
+        7,
+        8,
+        9,
+        16,
+        18
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1697,7 +3500,40 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 388704,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 18,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        1,
+        10
+      ],
+      "solutionMarkerPages": [
+        7,
+        8,
+        9,
+        16,
+        18
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2026,
@@ -1715,7 +3551,21 @@
     "universityId": "0000099",
     "universityName": "덕성여자대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 63,
+      "bytesReceived": 0,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1733,7 +3583,29 @@
     "universityId": "0000136",
     "universityName": "성신여자대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 63,
+      "bytesReceived": 20000000,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": null,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1751,7 +3623,78 @@
     "universityId": "0000046",
     "universityName": "가톨릭대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 3406518,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 62,
+      "coverYears": [],
+      "questionMarkerPages": [
+        3,
+        6,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        44,
+        45,
+        50,
+        51,
+        53,
+        55,
+        56,
+        58
+      ],
+      "solutionMarkerPages": [
+        11,
+        15,
+        16,
+        19,
+        21,
+        24,
+        25,
+        26,
+        29,
+        30,
+        33,
+        34,
+        36,
+        38,
+        41,
+        43,
+        45,
+        48,
+        51,
+        53,
+        56,
+        58
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1769,7 +3712,29 @@
     "universityId": "0000078",
     "universityName": "국민대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 10768997,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": null,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1787,7 +3752,29 @@
     "universityId": "0000051",
     "universityName": "강남대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 593766,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": null,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1805,7 +3792,21 @@
     "universityId": "0000102",
     "universityName": "동덕여자대학교",
     "verificationLevel": "official_document",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "000",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1823,7 +3824,21 @@
     "universityId": "0000074",
     "universityName": "광운대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 38130,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1841,7 +3856,21 @@
     "universityId": "0000082",
     "universityName": "단국대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 29353,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1859,7 +3888,21 @@
     "universityId": "0000138",
     "universityName": "세종대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 106181,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1877,7 +3920,21 @@
     "universityId": "0000143",
     "universityName": "숭실대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 50557,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1895,7 +3952,21 @@
     "universityId": "0000146",
     "universityName": "아주대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 45932,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "academicYear": 2027,
@@ -1913,7 +3984,21 @@
     "universityId": "0000212",
     "universityName": "홍익대학교",
     "verificationLevel": "official_document_page",
-    "verifiedAt": "2026-09-09"
+    "verifiedAt": "2026-09-09",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 172693,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000126-2026",
@@ -1931,7 +4016,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "인문사회·자연",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다."
+    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 46953,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000126-2025",
@@ -1949,7 +4048,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "인문사회·자연",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다."
+    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47400,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000126-2024",
@@ -1967,7 +4080,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "인문사회·자연",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다."
+    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47301,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000126-2023",
@@ -1985,7 +4112,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "인문사회·자연",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다."
+    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47517,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000126-2022",
@@ -2003,7 +4144,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "인문사회·자연",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다."
+    "accessNote": "공식 게시물에서 문제·해설 PDF를 확인하세요. 대학 사이트는 첨부 직접접근을 제한하여 게시물에서 다운로드해야 합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 47505,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000052-2026-expanded-0",
@@ -2021,7 +4176,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다."
+    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000052-2025-expanded-1",
@@ -2039,7 +4208,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다."
+    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000052-2024-expanded-2",
@@ -2057,7 +4240,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다."
+    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000052-2023-expanded-3",
@@ -2075,7 +4272,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다."
+    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000052-2022-expanded-4",
@@ -2093,25 +4304,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다."
-  },
-  {
-    "id": "document-0000140-2026-expanded-5",
-    "universityId": "0000140",
-    "universityName": "수원대학교",
-    "campus": "본교",
-    "academicYear": 2026,
-    "title": "2026학년도 편입학 영어 기출문제",
-    "category": "논술 기출",
-    "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/5509",
-    "documentUrl": null,
-    "verifiedAt": "2026-09-09",
-    "verificationLevel": "official_document_page",
-    "resourceType": "document_page",
-    "fullTextStatus": "not_ingested",
-    "subject": "자료 내 계열별 확인",
-    "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 게시물에서 열람하세요. 대학은 기출문제의 상업적 사용을 금지합니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 839,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000140-2026-expanded-6",
@@ -2129,25 +4336,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
-  },
-  {
-    "id": "document-0000140-2025-expanded-7",
-    "universityId": "0000140",
-    "universityName": "수원대학교",
-    "campus": "본교",
-    "academicYear": 2025,
-    "title": "2025학년도 편입학 영어 기출문제",
-    "category": "논술 기출",
-    "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/4020",
-    "documentUrl": null,
-    "verifiedAt": "2026-09-09",
-    "verificationLevel": "official_document_page",
-    "resourceType": "document_page",
-    "fullTextStatus": "not_ingested",
-    "subject": "자료 내 계열별 확인",
-    "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23274,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000140-2025-expanded-8",
@@ -2165,25 +4368,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
-  },
-  {
-    "id": "document-0000140-2024-expanded-9",
-    "universityId": "0000140",
-    "universityName": "수원대학교",
-    "campus": "본교",
-    "academicYear": 2024,
-    "title": "2024학년도 편입학 영어 기출문제",
-    "category": "논술 기출",
-    "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/2706",
-    "documentUrl": null,
-    "verifiedAt": "2026-09-09",
-    "verificationLevel": "official_document_page",
-    "resourceType": "document_page",
-    "fullTextStatus": "not_ingested",
-    "subject": "자료 내 계열별 확인",
-    "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23282,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000140-2024-expanded-10",
@@ -2201,25 +4400,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
-  },
-  {
-    "id": "document-0000140-2023-expanded-11",
-    "universityId": "0000140",
-    "universityName": "수원대학교",
-    "campus": "본교",
-    "academicYear": 2023,
-    "title": "2023학년도 편입학 영어 기출문제",
-    "category": "논술 기출",
-    "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/1563",
-    "documentUrl": null,
-    "verifiedAt": "2026-09-09",
-    "verificationLevel": "official_document_page",
-    "resourceType": "document_page",
-    "fullTextStatus": "not_ingested",
-    "subject": "자료 내 계열별 확인",
-    "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23304,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000140-2023-expanded-12",
@@ -2237,25 +4432,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
-  },
-  {
-    "id": "document-0000140-2022-expanded-13",
-    "universityId": "0000140",
-    "universityName": "수원대학교",
-    "campus": "본교",
-    "academicYear": 2022,
-    "title": "2022학년도 편입학 영어 기출문제",
-    "category": "논술 기출",
-    "sourceUrl": "https://ipsi.suwon.ac.kr/board/pre_question/read/360",
-    "documentUrl": null,
-    "verifiedAt": "2026-09-09",
-    "verificationLevel": "official_document_page",
-    "resourceType": "document_page",
-    "fullTextStatus": "not_ingested",
-    "subject": "자료 내 계열별 확인",
-    "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23256,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000140-2022-expanded-14",
@@ -2273,7 +4464,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 23559,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000121-2025-expanded-15",
@@ -2291,7 +4496,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 128037,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000189-2026-expanded-16",
@@ -2309,7 +4528,58 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 418032,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 17,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16
+      ],
+      "solutionMarkerPages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000189-2026-expanded-17",
@@ -2327,7 +4597,38 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 415132,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 18,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        6
+      ],
+      "solutionMarkerPages": [
+        7,
+        9,
+        15,
+        17
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000116-2026-expanded-18",
@@ -2345,7 +4646,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 26159,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0002712-2027-expanded-19",
@@ -2363,7 +4678,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 28,
+      "bytesReceived": 0,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000194-2027-expanded-20",
@@ -2381,7 +4710,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 14669,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000117-2027-expanded-21",
@@ -2399,7 +4742,63 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1721887,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 42,
+      "coverYears": [
+        "2027"
+      ],
+      "questionMarkerPages": [
+        3,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41
+      ],
+      "solutionMarkerPages": [
+        8,
+        31
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000063-2024-expanded-22",
@@ -2417,7 +4816,21 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000063-2025-expanded-23",
@@ -2435,7 +4848,21 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000063-2026-expanded-24",
@@ -2453,7 +4880,21 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000063-2023-expanded-25",
@@ -2471,7 +4912,21 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "502",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 185,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000202-2024-expanded-26",
@@ -2489,7 +4944,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 16104,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000202-2025-expanded-27",
@@ -2507,7 +4976,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 16851,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000202-2026-expanded-28",
@@ -2525,7 +5008,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 18177,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000202-2027-expanded-29",
@@ -2543,7 +5040,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 28487,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000161-2027-expanded-30",
@@ -2561,7 +5072,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "guide",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "400",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000161-2025-expanded-31",
@@ -2579,7 +5104,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "400",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000161-2027-expanded-32",
@@ -2597,7 +5136,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "400",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000161-2026-expanded-33",
@@ -2615,7 +5168,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "400",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 166,
+      "checkedAt": "2026-09-10",
+      "status": "access_unconfirmed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000163-2026-expanded-34",
@@ -2633,7 +5200,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 44654,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000163-2025-expanded-35",
@@ -2651,7 +5232,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 39772,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000163-2024-expanded-36",
@@ -2669,7 +5264,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 37094,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000163-2023-expanded-37",
@@ -2687,7 +5296,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 36704,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000163-2022-expanded-38",
@@ -2705,7 +5328,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 36678,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000100-2026-expanded-39",
@@ -2723,7 +5360,44 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 34341,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "1. 2026학년도 수시모집 논술전형 인문계열1 문제 및 출제의도.pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=1.%202026%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B41%20%EB%AC%B8%EC%A0%9C%20%EB%B0%8F%20%EC%B6%9C%EC%A0%9C%EC%9D%98%EB%8F%84.pdf&strRealFileName=/upload/file/20260325103851QTXSBK.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=37031"
+      },
+      {
+        "title": "2. 2026학년도 수시모집 논술전형 인문계열2 문제 및 출제의도.pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=2.%202026%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B42%20%EB%AC%B8%EC%A0%9C%20%EB%B0%8F%20%EC%B6%9C%EC%A0%9C%EC%9D%98%EB%8F%84.pdf&strRealFileName=/upload/file/20260325103851ELJ7XY.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=37031"
+      },
+      {
+        "title": "3. 2026학년도 수시모집 논술전형 자연계열 문제 및 출제의도.pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=3.%202026%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9E%90%EC%97%B0%EA%B3%84%EC%97%B4%20%EB%AC%B8%EC%A0%9C%20%EB%B0%8F%20%EC%B6%9C%EC%A0%9C%EC%9D%98%EB%8F%84.pdf&strRealFileName=/upload/file/20260325103851A8BUE4.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=37031"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000100-2025-expanded-40",
@@ -2741,7 +5415,44 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33477,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "1. 2025학년도 수시모집 논술전형 인문계열1 문제.pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=1.%202025%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B41%20%EB%AC%B8%EC%A0%9C.pdf&strRealFileName=/upload/file/20250408095957LT8BPK.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=34440"
+      },
+      {
+        "title": "2. 2025학년도 수시모집 논술전형 인문계열2 문제.pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=2.%202025%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B42%20%EB%AC%B8%EC%A0%9C.pdf&strRealFileName=/upload/file/20250408095957J3KRHN.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=34440"
+      },
+      {
+        "title": "3. 2025학년도 수시모집 논술전형 자연계열 문제.pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=3.%202025%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9E%90%EC%97%B0%EA%B3%84%EC%97%B4%20%EB%AC%B8%EC%A0%9C.pdf&strRealFileName=/upload/file/20250408095957EPBEYS.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=34440"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000100-2024-expanded-41",
@@ -2759,7 +5470,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 32967,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000100-2023-expanded-42",
@@ -2777,7 +5502,44 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요."
+    "accessNote": "공식 개별 게시물에서 문제·해설 첨부자료를 확인하세요.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33999,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "1. 2023학년도 수시모집 논술전형 인문계열1 기출문제 및 해설(배포용).pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=1.%202023%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B41%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%20%EB%B0%8F%20%ED%95%B4%EC%84%A4(%EB%B0%B0%ED%8F%AC%EC%9A%A9).pdf&strRealFileName=/upload/file/20230328105306LLPK4S.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=29983"
+      },
+      {
+        "title": "2. 2023학년도 수시모집 논술전형 인문계열2 기출문제 및 해설(배포용).pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=2.%202023%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B42%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%20%EB%B0%8F%20%ED%95%B4%EC%84%A4(%EB%B0%B0%ED%8F%AC%EC%9A%A9).pdf&strRealFileName=/upload/file/20230328105306M4DHJQ.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=29983"
+      },
+      {
+        "title": "3. 2023학년도 수시모집 논술전형 자연계열 기출문제 및 해설(배포용).pdf",
+        "url": "https://ipsi.dongguk.edu/common/downLoad.asp?strFileName=3.%202023%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%A0%84%ED%98%95%20%EC%9E%90%EC%97%B0%EA%B3%84%EC%97%B4%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%20%EB%B0%8F%20%ED%95%B4%EC%84%A4(%EB%B0%B0%ED%8F%AC%EC%9A%A9).pdf&strRealFileName=/upload/file/20230328105306BU3GVS.PDF",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://ipsi.dongguk.edu/admission/html/counsel/dataView.asp?BOARD_IDX=29983"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000116-2026-expanded-43",
@@ -2795,7 +5557,29 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 원문 경로입니다. 대학 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 7884780,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 39,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000192-2026-national-159",
@@ -2813,7 +5597,29 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 28,
+      "bytesReceived": 5462739,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": null,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000192-2025-national-160",
@@ -2831,7 +5637,139 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4867456,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 162,
+      "coverYears": [
+        "2025"
+      ],
+      "questionMarkerPages": [
+        17,
+        25,
+        26,
+        34,
+        35,
+        36,
+        37,
+        45,
+        46,
+        47,
+        58,
+        59,
+        60,
+        61,
+        72,
+        73,
+        74,
+        91,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        119,
+        120,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        134,
+        135,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        145,
+        146,
+        147,
+        148,
+        150
+      ],
+      "solutionMarkerPages": [
+        23,
+        24,
+        34,
+        35,
+        36,
+        45,
+        46,
+        58,
+        59,
+        60,
+        72,
+        73,
+        74,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        84,
+        99,
+        104,
+        114,
+        119,
+        129,
+        134,
+        145,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000192-2024-national-161",
@@ -2849,7 +5787,113 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4289927,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 145,
+      "coverYears": [
+        "2024"
+      ],
+      "questionMarkerPages": [
+        15,
+        22,
+        23,
+        34,
+        41,
+        42,
+        52,
+        68,
+        71,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        85,
+        86,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        100,
+        101,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        115,
+        117,
+        118,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        132
+      ],
+      "solutionMarkerPages": [
+        21,
+        68,
+        80,
+        85,
+        95,
+        100,
+        111,
+        117,
+        127,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        142,
+        143,
+        144,
+        145
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000192-2023-national-162",
@@ -2867,7 +5911,101 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 2645181,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 84,
+      "coverYears": [
+        "2023"
+      ],
+      "questionMarkerPages": [
+        11,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        58,
+        59,
+        60,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "solutionMarkerPages": [
+        16,
+        17,
+        28,
+        32,
+        41,
+        45,
+        51,
+        55,
+        59,
+        68,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000192-2022-national-163",
@@ -2885,7 +6023,100 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1744308,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 89,
+      "coverYears": [
+        "2022"
+      ],
+      "questionMarkerPages": [
+        20,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        33,
+        35,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        48,
+        49,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        62,
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        76
+      ],
+      "solutionMarkerPages": [
+        15,
+        17,
+        28,
+        33,
+        43,
+        48,
+        53,
+        62,
+        66,
+        71,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        89
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000141-2026-national-164",
@@ -2903,7 +6134,72 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 34369,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "숙명여자대학교 2026학년도 논술시험 기출문제_인문1회차.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202026%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9D%B8%EB%AC%B81%ED%9A%8C%EC%B0%A8.pdf&strRealFileName=/upload/BBS0006/20260430095349001.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086"
+      },
+      {
+        "title": "숙명여자대학교 2026학년도 논술시험 기출문제_인문2회차.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202026%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9D%B8%EB%AC%B82%ED%9A%8C%EC%B0%A8.pdf&strRealFileName=/upload/BBS0006/20260430095349002.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086"
+      },
+      {
+        "title": "숙명여자대학교 2026학년도 논술시험 기출문제_자연(약학부 제외).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202026%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80%20%EC%A0%9C%EC%99%B8).pdf&strRealFileName=/upload/BBS0006/20260430095349003.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086"
+      },
+      {
+        "title": "숙명여자대학교 2026학년도 논술시험 기출문제_자연(약학부).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202026%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80).pdf&strRealFileName=/upload/BBS0006/20260430095349004.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086"
+      },
+      {
+        "title": "숙명여자대학교 2026학년도 논술시험 문항카드_인문.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202026%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C_%EC%9D%B8%EB%AC%B8.pdf&strRealFileName=/upload/BBS0006/20260430095349005.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086"
+      },
+      {
+        "title": "숙명여자대학교 2026학년도 논술시험 문항카드_자연(약학부 제외).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202026%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80%20%EC%A0%9C%EC%99%B8).pdf&strRealFileName=/upload/BBS0006/20260430095349006.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086"
+      },
+      {
+        "title": "숙명여자대학교 2026학년도 논술시험 문항카드_자연(약학부).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202026%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80).pdf&strRealFileName=/upload/BBS0006/20260430095349007.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=54086"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000141-2025-national-165",
@@ -2921,7 +6217,72 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33542,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "숙명여자대학교 2025학년도 논술시험 기출문제_인문1회차.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202025%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9D%B8%EB%AC%B81%ED%9A%8C%EC%B0%A8.pdf&strRealFileName=/upload/BBS0006/20250502094150001.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959"
+      },
+      {
+        "title": "숙명여자대학교 2025학년도 논술시험 기출문제_인문2회차.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202025%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9D%B8%EB%AC%B82%ED%9A%8C%EC%B0%A8.pdf&strRealFileName=/upload/BBS0006/20250502094150002.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959"
+      },
+      {
+        "title": "숙명여자대학교 2025학년도 논술시험 기출문제_자연(약학부제외).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202025%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80%EC%A0%9C%EC%99%B8).pdf&strRealFileName=/upload/BBS0006/20250502094150003.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959"
+      },
+      {
+        "title": "숙명여자대학교 2025학년도 논술시험 기출문제_자연(약학부).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202025%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80).pdf&strRealFileName=/upload/BBS0006/20250502094150004.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959"
+      },
+      {
+        "title": "숙명여자대학교 2025학년도 논술시험 문항카드_인문.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202025%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C_%EC%9D%B8%EB%AC%B8.pdf&strRealFileName=/upload/BBS0006/20250502094150005.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959"
+      },
+      {
+        "title": "숙명여자대학교 2025학년도 논술시험 문항카드_자연(약학부제외).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202025%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80%EC%A0%9C%EC%99%B8).pdf&strRealFileName=/upload/BBS0006/20250502094150006.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959"
+      },
+      {
+        "title": "숙명여자대학교 2025학년도 논술시험 문항카드_자연(약학부).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%202025%ED%95%99%EB%85%84%EB%8F%84%20%EB%85%BC%EC%88%A0%EC%8B%9C%ED%97%98%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C_%EC%9E%90%EC%97%B0(%EC%95%BD%ED%95%99%EB%B6%80).pdf&strRealFileName=/upload/BBS0006/20250502094150007.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=52959"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000141-2024-national-166",
@@ -2939,7 +6300,93 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 33890,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "2024학년도 수시모집 논술우수자전형 인문1회차문항.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=2024%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%9A%B0%EC%88%98%EC%9E%90%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B81%ED%9A%8C%EC%B0%A8%EB%AC%B8%ED%95%AD.pdf&strRealFileName=/upload/BBS0006/20240412093707001.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "2024학년도 수시모집 논술우수자전형 인문2회차문항.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=2024%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%9A%B0%EC%88%98%EC%9E%90%EC%A0%84%ED%98%95%20%EC%9D%B8%EB%AC%B82%ED%9A%8C%EC%B0%A8%EB%AC%B8%ED%95%AD.pdf&strRealFileName=/upload/BBS0006/20240412093707002.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "2024학년도 수시모집 논술우수자전형 자연문항.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=2024%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91%20%EB%85%BC%EC%88%A0%EC%9A%B0%EC%88%98%EC%9E%90%EC%A0%84%ED%98%95%20%EC%9E%90%EC%97%B0%EB%AC%B8%ED%95%AD.pdf&strRealFileName=/upload/BBS0006/20240412093707003.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "2024학년도 숙명여대 대학별고사 문항카드(논술_인문계열).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=2024%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%99%EB%AA%85%EC%97%AC%EB%8C%80%20%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C(%EB%85%BC%EC%88%A0_%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B4).pdf&strRealFileName=/upload/BBS0006/20240412093707004.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "2024학년도 숙명여대 대학별고사 문항카드(논술_자연계열).pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=2024%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%99%EB%AA%85%EC%97%AC%EB%8C%80%20%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C(%EB%85%BC%EC%88%A0_%EC%9E%90%EC%97%B0%EA%B3%84%EC%97%B4).pdf&strRealFileName=/upload/BBS0006/20240412093707005.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "*2024학년도 숙명여자대학교 수시모집 논술우수자전형 논술시험 인문1회차 기출문제",
+        "url": "https://admission.sookmyung.ac.kr/crosseditor_4.3.2.26/binary/files/000003/2024%ED%95%99%EB%85%84%EB%8F%84_%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91_%EB%85%BC%EC%88%A0%EC%9A%B0%EC%88%98%EC%9E%90%EC%A0%84%ED%98%95_%EC%9D%B8%EB%AC%B81%ED%9A%8C%EC%B0%A8%EB%AC%B8%ED%95%AD.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "*2024학년도 숙명여자대학교 수시모집 논술우수자전형 논술시험 인문2회차 기출문제",
+        "url": "https://admission.sookmyung.ac.kr/crosseditor_4.3.2.26/binary/files/000003/2024%ED%95%99%EB%85%84%EB%8F%84_%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91_%EB%85%BC%EC%88%A0%EC%9A%B0%EC%88%98%EC%9E%90%EC%A0%84%ED%98%95_%EC%9D%B8%EB%AC%B82%ED%9A%8C%EC%B0%A8%EB%AC%B8%ED%95%AD.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "*2024학년도 숙명여자대학교 수시모집 논술우수자전형 논술시험 자연계 기출문제",
+        "url": "https://admission.sookmyung.ac.kr/crosseditor_4.3.2.26/binary/files/000003/2024%ED%95%99%EB%85%84%EB%8F%84_%EC%88%98%EC%8B%9C%EB%AA%A8%EC%A7%91_%EB%85%BC%EC%88%A0%EC%9A%B0%EC%88%98%EC%9E%90%EC%A0%84%ED%98%95_%EC%9E%90%EC%97%B0%EB%AC%B8%ED%95%AD.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "*2024학년도 숙명여자대학교 수시모집 논술우수자전형 논술시험 인문계 문항카드",
+        "url": "https://admission.sookmyung.ac.kr/crosseditor_4.3.2.26/binary/files/000003/2024%ED%95%99%EB%85%84%EB%8F%84_%EC%88%99%EB%AA%85%EC%97%AC%EB%8C%80_%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC_%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C(%EB%85%BC%EC%88%A0_%EC%9D%B8%EB%AC%B8%EA%B3%84%EC%97%B4).pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      },
+      {
+        "title": "*2024학년도 숙명여자대학교 수시모집 논술우수자전형 논술시험 자연계 문항카드",
+        "url": "https://admission.sookmyung.ac.kr/crosseditor_4.3.2.26/binary/files/000003/2024%ED%95%99%EB%85%84%EB%8F%84_%EC%88%99%EB%AA%85%EC%97%AC%EB%8C%80_%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC_%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C(%EB%85%BC%EC%88%A0_%EC%9E%90%EC%97%B0%EA%B3%84%EC%97%B4).pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=51941"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000141-2023-national-167",
@@ -2957,7 +6404,51 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 31604,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "observedAttachments": [
+      {
+        "title": "인문_1회차_2023_기출문제.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%9D%B8%EB%AC%B8_1%ED%9A%8C%EC%B0%A8_2023_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C.pdf&strRealFileName=/upload/BBS0006/20230404170519001.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=50996"
+      },
+      {
+        "title": "인문_2회차_2023_기출문제.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%9D%B8%EB%AC%B8_2%ED%9A%8C%EC%B0%A8_2023_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C.pdf&strRealFileName=/upload/BBS0006/20230404170519002.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=50996"
+      },
+      {
+        "title": "자연_2023_기출문제.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=%EC%9E%90%EC%97%B0_2023_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C.pdf&strRealFileName=/upload/BBS0006/20230404170519003.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=50996"
+      },
+      {
+        "title": "2023학년도 숙명여자대학교 대학별고사 논술 문항카드.pdf",
+        "url": "https://admission.sookmyung.ac.kr/common/downLoad.asp?strFileName=2023%ED%95%99%EB%85%84%EB%8F%84%20%EC%88%99%EB%AA%85%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90%20%EB%8C%80%ED%95%99%EB%B3%84%EA%B3%A0%EC%82%AC%20%EB%85%BC%EC%88%A0%20%EB%AC%B8%ED%95%AD%EC%B9%B4%EB%93%9C.pdf&strRealFileName=/upload/BBS0006/20230404170519004.pdf",
+        "status": "link_observed_not_download_verified",
+        "observedAt": "2026-09-10",
+        "sourceUrl": "https://admission.sookmyung.ac.kr/admission/html/rolling/previousView.asp?p_board_idx=50996"
+      }
+    ],
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000070-2026-national-168",
@@ -2975,7 +6466,29 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "pdf_received_not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 3785521,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 25,
+      "coverYears": [],
+      "questionMarkerPages": [],
+      "solutionMarkerPages": [],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000005-2026-national-169",
@@ -2993,7 +6506,68 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 4574983,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 82,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        51,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        63,
+        65,
+        66,
+        67,
+        69,
+        71,
+        72,
+        75,
+        77,
+        78,
+        80
+      ],
+      "solutionMarkerPages": [
+        17,
+        60,
+        61,
+        62,
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        71,
+        75,
+        77,
+        78,
+        80
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000056-2025-national-170",
@@ -3011,7 +6585,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 84413,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000069-2025-national-171",
@@ -3029,7 +6617,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "mock",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 70493,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000069-2025-national-172",
@@ -3047,7 +6649,21 @@
     "fullTextStatus": "not_ingested",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "document_page",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "not_reviewed",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": false,
+      "transportExitCode": 0,
+      "bytesReceived": 70139,
+      "checkedAt": "2026-09-10",
+      "status": "html_received_unreviewed"
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000014-2026-national-173",
@@ -3065,7 +6681,107 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 3246919,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 109,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        22,
+        23,
+        24,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        47,
+        48,
+        49,
+        50,
+        53,
+        55,
+        57,
+        58,
+        59,
+        61,
+        62,
+        66,
+        67,
+        71,
+        72,
+        77,
+        78,
+        83,
+        84,
+        89,
+        90,
+        97,
+        98,
+        99,
+        101,
+        102,
+        103,
+        105,
+        108
+      ],
+      "solutionMarkerPages": [
+        17,
+        19,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        33,
+        35,
+        42,
+        44,
+        50,
+        51,
+        52,
+        59,
+        60,
+        62,
+        63,
+        68,
+        69,
+        73,
+        74,
+        79,
+        80,
+        85,
+        86,
+        91,
+        92,
+        100,
+        102,
+        104,
+        106,
+        109
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000014-2026-national-174",
@@ -3083,7 +6799,93 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 1619858,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 74,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        13,
+        14,
+        15,
+        18,
+        20,
+        22,
+        23,
+        24,
+        26,
+        27,
+        31,
+        32,
+        36,
+        37,
+        42,
+        43,
+        48,
+        49,
+        54,
+        55,
+        62,
+        63,
+        64,
+        66,
+        67,
+        68,
+        70,
+        73
+      ],
+      "solutionMarkerPages": [
+        7,
+        9,
+        15,
+        16,
+        17,
+        24,
+        25,
+        27,
+        28,
+        33,
+        34,
+        38,
+        39,
+        44,
+        45,
+        50,
+        51,
+        56,
+        57,
+        65,
+        67,
+        69,
+        71,
+        74
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000036-2026-national-175",
@@ -3101,7 +6903,78 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 5139367,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 121,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        16,
+        17,
+        18,
+        26,
+        28,
+        67,
+        69,
+        70,
+        72,
+        73,
+        74,
+        75,
+        76,
+        78,
+        79,
+        81,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        97,
+        99,
+        104,
+        106,
+        112,
+        114,
+        117,
+        118
+      ],
+      "solutionMarkerPages": [
+        14,
+        26,
+        28,
+        102,
+        107,
+        110,
+        114,
+        116,
+        119,
+        120
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000036-2026-national-176",
@@ -3119,7 +6992,39 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 188113,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 6,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        2,
+        4,
+        5
+      ],
+      "solutionMarkerPages": [
+        2,
+        4,
+        5
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   },
   {
     "id": "document-0000040-2026-national-177",
@@ -3137,6 +7042,49 @@
     "fullTextStatus": "official_remote_pdf",
     "subject": "자료 내 계열별 확인",
     "session": "자료 내 회차별 확인",
-    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다."
+    "accessNote": "공식 개별 자료 원문 경로입니다. 대학·어디가 서버 정책에 따라 다운로드 또는 새 창 열람이 필요할 수 있습니다.",
+    "auditResourceKind": "past_paper",
+    "auditLinkKind": "direct_file",
+    "contentStatus": "not_ingested",
+    "bodyVerificationStatus": "text_markers_detected",
+    "yearVerification": "metadata_only",
+    "linkCheck": {
+      "httpStatus": "200",
+      "isPdf": true,
+      "transportExitCode": 0,
+      "bytesReceived": 5454888,
+      "checkedAt": "2026-09-10",
+      "status": "pdf_received"
+    },
+    "documentInspection": {
+      "method": "automated_pdf_text_markers",
+      "pageCount": 63,
+      "coverYears": [
+        "2026"
+      ],
+      "questionMarkerPages": [
+        15,
+        26,
+        29,
+        32,
+        33,
+        35,
+        36
+      ],
+      "solutionMarkerPages": [
+        13,
+        15,
+        17,
+        24,
+        25,
+        27,
+        30,
+        33,
+        36,
+        37
+      ],
+      "allContentReviewed": false
+    },
+    "auditNote": "등록 제목·연도는 기존 메타데이터입니다. 이번 감사에서 문제·해설 본문 및 전체 회차는 검증하지 않았습니다."
   }
 ]

@@ -24,8 +24,8 @@ for(const row of coverage.universities){
 delete coverage.totals.verifiedOutcomeSeries;
 Object.assign(coverage.totals,{
   examUniversities:roster.universities.length,
-  examRecords:exams.filter(e=>e.resourceType!=='archive').length,
-  archiveEntries:exams.filter(e=>e.resourceType==='archive').length,
+  examRecords:exams.filter(e=>e.auditLinkKind?e.auditLinkKind!=='listing':!['archive','archive_listing'].includes(e.resourceType)).length,
+  archiveEntries:exams.filter(e=>e.auditLinkKind?e.auditLinkKind==='listing':['archive','archive_listing'].includes(e.resourceType)).length,
   outcomeUniversities:new Set(outcomes.map(o=>o.universityId)).size,
   outcomeRecords:outcomes.length,
   departmentCatalogsComplete:extra.universities.filter(u=>u.departmentCatalog?.complete).length,
