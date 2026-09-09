@@ -34,7 +34,11 @@ const report=vm.runInContext(`(()=>{
   if(unique(cards.slice(0,6).map(x=>x.front))!==6)failures.push({industry,style,name:'cardFronts6'});
   rows.push({industry,style,first:top[0].id,icon:top[0].icon,layout:top[0].layout,tone:top[0].tone,palette:state.palette,card:cards[0].id});
  }
- state.recommendMode=false;const chosen=recipes[47].id;state.recipe=chosen;render=()=>{};toast=()=>{};applyRecommendationChange('style','bold');
+ state.recommendMode=false;
+ if(new Set(sorted().slice(0,10).map(x=>x.icon)).size!==10)failures.push({name:'directLogoOrderNotDiverse'});
+ if(new Set(sortedCards().slice(0,12).map(x=>x.front)).size!==12)failures.push({name:'directCardOrderNotDiverse'});
+ if(new Set(sortedCards().map(x=>x.id)).size!==289)failures.push({name:'directCardOrderLostRecipes'});
+ const chosen=recipes[47].id;state.recipe=chosen;render=()=>{};toast=()=>{};applyRecommendationChange('style','bold');
  if(state.recipe!==chosen)failures.push({name:'directSelectionWasOverwritten'});
  return {combinations:rows.length,failures,rows};
 })()`,context);
@@ -45,4 +49,4 @@ if(report.failures.length){
 }
 console.log(`PASS ${report.combinations}/105 industry-style recommendation combinations`);
 console.log('PASS logo top-12 diversity, top-6 icon diversity, layout/tone diversity, SVG uniqueness');
-console.log('PASS card top-6 front-layout diversity and direct-selection preservation');
+console.log('PASS card top-6 front-layout diversity, direct-list diversity, and direct-selection preservation');
