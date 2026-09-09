@@ -35,7 +35,8 @@ function baseRecipeScore(r){const ip=activeIndustryProfile(),sp=activeStyleProfi
 score=baseRecipeScore;
 function recipeVisualKey(r){return r.layout==='wordmark'?'wordmark':`${r.layout}|${icon(r.icon,'#111','#222',r.tone)}`}
 function diversityRerank(pool){const remaining=[...pool].sort((a,b)=>baseRecipeScore(b)-baseRecipeScore(a)),out=[],iconUse={},layoutUse={},toneUse={},visualUse={};while(remaining.length){let bestIndex=0,bestValue=-Infinity;remaining.forEach((r,i)=>{const visual=recipeVisualKey(r);let v=baseRecipeScore(r)-(iconUse[r.icon]||0)*34-(layoutUse[r.layout]||0)*12-(toneUse[r.tone]||0)*5-(visualUse[visual]||0)*1000;if(out.length<6&&iconUse[r.icon])v-=90;if(out.at(-1)?.icon===r.icon)v-=80;if(out.at(-1)?.layout===r.layout)v-=14;if(v>bestValue){bestValue=v;bestIndex=i}});const pick=remaining.splice(bestIndex,1)[0],visual=recipeVisualKey(pick);out.push(pick);iconUse[pick.icon]=(iconUse[pick.icon]||0)+1;layoutUse[pick.layout]=(layoutUse[pick.layout]||0)+1;toneUse[pick.tone]=(toneUse[pick.tone]||0)+1;visualUse[visual]=(visualUse[visual]||0)+1}return out}
-sorted=function(){return state.recommendMode?diversityRerank(recipes):recipes};
+const directRecipeOrder=[...recipes].sort((a,b)=>(a.li*3+a.ti)-(b.li*3+b.ti)||a.si-b.si);
+sorted=function(){return state.recommendMode?diversityRerank(recipes):directRecipeOrder};
 function recommendedPalette(){const ip=activeIndustryProfile(),sp=activeStyleProfile(),common=ip.palettes.find(x=>sp.palettes.includes(x));return common||ip.palettes[(Object.keys(styleProfiles).indexOf(state.style)+industries.indexOf(state.industry))%ip.palettes.length]}
 reason=function(){const r=recipes.find(x=>x.id===state.recipe)||sorted()[0],sp=activeStyleProfile();return `${state.industry}의 ${activeIndustryProfile().icons.slice(0,2).map(x=>symbols.find(s=>s[0]===x)?.[1]).join('·')} 모티프와 ‘${sp.label}’의 ${r.layout==='horizontal'?'가로형':r.layout==='stacked'?'세로형':r.layout==='badge'?'배지형':r.layout==='wordmark'?'워드마크':'모노그램'} 구도를 함께 반영했습니다.`};
 
@@ -52,7 +53,8 @@ const styleCardProfiles={professional:['classic','frame','grid','topband'],minim
 function baseCardScore(c){const industryFronts=industryCardProfiles[state.industry]||industryCardProfiles['전문·과학·기술'],styleFronts=styleCardProfiles[state.style]||styleCardProfiles.professional;let total=20;total+=weighted(industryFronts,c.front,[48,32,20,10]);total+=weighted(styleFronts,c.front,[40,28,17,8]);if(state.brand.length>9)total+=['classic','topband','bottom','grid'].includes(c.front)?12:-4;total+=['logo','slogan','website','statement'].includes(c.back)?8:0;return total}
 cardScore=baseCardScore;
 function diversityRerankCards(pool){const remaining=[...pool].sort((a,b)=>baseCardScore(b)-baseCardScore(a)),out=[],frontUse={},backUse={};while(remaining.length){let bi=0,bv=-Infinity;remaining.forEach((c,i)=>{let v=baseCardScore(c)-(frontUse[c.front]||0)*42-(backUse[c.back]||0)*8;if(out.length<6&&frontUse[c.front])v-=100;if(out.at(-1)?.front===c.front)v-=80;if(v>bv){bv=v;bi=i}});const pick=remaining.splice(bi,1)[0];out.push(pick);frontUse[pick.front]=(frontUse[pick.front]||0)+1;backUse[pick.back]=(backUse[pick.back]||0)+1}return out}
-sortedCards=function(){return state.recommendMode?diversityRerankCards(cardRecipes):cardRecipes};
+const directCardOrder=[];for(let round=0;round<17;round++)for(let front=0;front<17;front++){const back=(front+round)%17;directCardOrder.push(cardRecipes[front*17+back])}
+sortedCards=function(){return state.recommendMode?diversityRerankCards(cardRecipes):directCardOrder};
 cardReason=function(){const c=cardRecipes.find(x=>x.id===state.cardRecipe)||sortedCards()[0];return `${state.industry}와 ‘${activeStyleProfile().label}’에 맞춰 ${c.name} 구성을 우선 추천했습니다. 앞면과 뒷면을 함께 비교하세요.`};
 
 const baseLogoSvgForStyle=logoSvg;
