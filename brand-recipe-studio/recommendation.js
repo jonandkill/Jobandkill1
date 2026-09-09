@@ -1,0 +1,68 @@
+const industryProfiles={
+'농업·임업·어업':{icons:['leaf','orbit','steps','bridge'],layouts:['stacked','badge','horizontal'],palettes:['forest-white','green-fill','olive-ivory']},
+'광업':{icons:['frame','shield','steps','pixel'],layouts:['badge','horizontal','monogram'],palettes:['charcoal-silver','gold-navy','brick-sand']},
+'제조업':{icons:['frame','steps','pixel','bridge'],layouts:['horizontal','monogram','wordmark'],palettes:['deep-trust','graphite-lime','royal-orange']},
+'전기·가스·에너지':{icons:['spark','pulse','orbit','steps'],layouts:['monogram','horizontal','badge'],palettes:['royal-orange','gold-navy','graphite-lime']},
+'수도·환경':{icons:['orbit','leaf','pulse','bridge'],layouts:['stacked','horizontal','badge'],palettes:['slate-cyan','emerald-mint','air-blue']},
+'건설업':{icons:['bridge','frame','steps','shield'],layouts:['horizontal','badge','monogram'],palettes:['charcoal-silver','deep-trust','brick-sand']},
+'도소매업':{icons:['signal','spark','bridge','orbit'],layouts:['stacked','badge','wordmark'],palettes:['warm-orange','cobalt-red','purple-yellow']},
+'운수·창고':{icons:['steps','bridge','orbit','signal'],layouts:['horizontal','wordmark','monogram'],palettes:['line-blue','royal-orange','slate-cyan']},
+'숙박·음식점':{icons:['signal','leaf','spark','orbit'],layouts:['badge','stacked','wordmark'],palettes:['burgundy-cream','warm-orange','brown-cream']},
+'정보통신업':{icons:['pixel','signal','orbit','spark'],layouts:['wordmark','monogram','horizontal'],palettes:['ink-cobalt','slate-cyan','violet-white']},
+'금융·보험':{icons:['shield','frame','bridge','steps'],layouts:['horizontal','monogram','wordmark'],palettes:['deep-trust','gold-navy','forest-white']},
+'부동산업':{icons:['frame','bridge','shield','steps'],layouts:['horizontal','badge','wordmark'],palettes:['navy-mint','burgundy-cream','charcoal-silver']},
+'전문·과학·기술':{icons:['orbit','pixel','frame','spark'],layouts:['wordmark','horizontal','monogram'],palettes:['air-blue','ink-cobalt','black-white']},
+'사업지원 서비스':{icons:['bridge','steps','signal','frame'],layouts:['horizontal','wordmark','stacked'],palettes:['line-blue','navy-mint','teal-coral']},
+'공공행정':{icons:['shield','bridge','frame','orbit'],layouts:['badge','horizontal','monogram'],palettes:['deep-trust','forest-white','burgundy-cream']},
+'교육 서비스':{icons:['steps','spark','bridge','orbit'],layouts:['stacked','horizontal','badge'],palettes:['air-blue','purple-yellow','green-fill']},
+'보건·사회복지':{icons:['pulse','shield','leaf','bridge'],layouts:['stacked','horizontal','badge'],palettes:['teal-coral','emerald-mint','sky-navy']},
+'예술·스포츠·여가':{icons:['spark','pulse','signal','orbit'],layouts:['badge','stacked','monogram'],palettes:['sunset','purple-yellow','cobalt-red']},
+'협회·수리·개인 서비스':{icons:['bridge','signal','leaf','frame'],layouts:['stacked','horizontal','badge'],palettes:['navy-mint','warm-orange','green-fill']},
+'가구 내 고용':{icons:['leaf','shield','bridge','signal'],layouts:['stacked','badge','horizontal'],palettes:['brown-cream','olive-ivory','warm-orange']},
+'국제·외국기관':{icons:['orbit','bridge','shield','signal'],layouts:['horizontal','badge','wordmark'],palettes:['deep-trust','gold-navy','slate-cyan']}
+};
+const styleProfiles={
+ professional:{label:'전문적',icons:['shield','frame','bridge','steps'],layouts:['horizontal','wordmark','monogram'],tones:['clean','line'],palettes:['deep-trust','line-blue','gold-navy']},
+ minimal:{label:'간결함',icons:['frame','orbit','pixel','bridge'],layouts:['wordmark','horizontal','monogram'],tones:['line','clean'],palettes:['black-white','line-blue','charcoal-silver']},
+ friendly:{label:'친근함',icons:['signal','leaf','orbit','bridge'],layouts:['stacked','badge','horizontal'],tones:['clean','solid'],palettes:['navy-mint','teal-coral','green-fill']},
+ bold:{label:'강한 인상',icons:['spark','steps','pulse','shield'],layouts:['badge','monogram','stacked'],tones:['solid','clean'],palettes:['cobalt-red','royal-orange','purple-yellow']},
+ modern:{label:'현대적',icons:['pixel','orbit','spark','signal'],layouts:['monogram','wordmark','horizontal'],tones:['line','clean'],palettes:['ink-cobalt','slate-cyan','violet-white']}
+};
+function activeIndustryProfile(){return industryProfiles[state.industry]||industryProfiles['전문·과학·기술']}
+function activeStyleProfile(){return styleProfiles[state.style]||styleProfiles.professional}
+function weighted(list,value,weights){const i=list.indexOf(value);return i<0?0:(weights[i]||0)}
+function baseRecipeScore(r){const ip=activeIndustryProfile(),sp=activeStyleProfile();let total=18;total+=weighted(ip.icons,r.icon,[58,38,24,12]);total+=weighted(sp.icons,r.icon,[48,34,22,10]);total+=weighted(ip.layouts,r.layout,[22,14,7]);total+=weighted(sp.layouts,r.layout,[26,16,8]);total+=weighted(sp.tones,r.tone,[18,9]);if(state.brand.length>9)total+=r.layout==='horizontal'||r.layout==='wordmark'?12:-7;if(state.brand.length<=3)total+=r.layout==='monogram'||r.layout==='badge'?10:0;return total}
+score=baseRecipeScore;
+function recipeVisualKey(r){return r.layout==='wordmark'?'wordmark':`${r.layout}|${icon(r.icon,'#111','#222',r.tone)}`}
+function diversityRerank(pool){const remaining=[...pool].sort((a,b)=>baseRecipeScore(b)-baseRecipeScore(a)),out=[],iconUse={},layoutUse={},toneUse={},visualUse={};while(remaining.length){let bestIndex=0,bestValue=-Infinity;remaining.forEach((r,i)=>{const visual=recipeVisualKey(r);let v=baseRecipeScore(r)-(iconUse[r.icon]||0)*34-(layoutUse[r.layout]||0)*12-(toneUse[r.tone]||0)*5-(visualUse[visual]||0)*1000;if(out.length<6&&iconUse[r.icon])v-=90;if(out.at(-1)?.icon===r.icon)v-=80;if(out.at(-1)?.layout===r.layout)v-=14;if(v>bestValue){bestValue=v;bestIndex=i}});const pick=remaining.splice(bestIndex,1)[0],visual=recipeVisualKey(pick);out.push(pick);iconUse[pick.icon]=(iconUse[pick.icon]||0)+1;layoutUse[pick.layout]=(layoutUse[pick.layout]||0)+1;toneUse[pick.tone]=(toneUse[pick.tone]||0)+1;visualUse[visual]=(visualUse[visual]||0)+1}return out}
+sorted=function(){return state.recommendMode?diversityRerank(recipes):recipes};
+function recommendedPalette(){const ip=activeIndustryProfile(),sp=activeStyleProfile(),common=ip.palettes.find(x=>sp.palettes.includes(x));return common||ip.palettes[(Object.keys(styleProfiles).indexOf(state.style)+industries.indexOf(state.industry))%ip.palettes.length]}
+reason=function(){const r=recipes.find(x=>x.id===state.recipe)||sorted()[0],sp=activeStyleProfile();return `${state.industry}의 ${activeIndustryProfile().icons.slice(0,2).map(x=>symbols.find(s=>s[0]===x)?.[1]).join('·')} 모티프와 ‘${sp.label}’의 ${r.layout==='horizontal'?'가로형':r.layout==='stacked'?'세로형':r.layout==='badge'?'배지형':r.layout==='wordmark'?'워드마크':'모노그램'} 구도를 함께 반영했습니다.`};
+
+const industryCardProfiles={
+ '농업·임업·어업':['circle','classic','bottom','capsule'],'광업':['frame','sideband','split','grid'],'제조업':['sideband','grid','classic','split'],
+ '전기·가스·에너지':['diagonal','split','grid','corner'],'수도·환경':['circle','outline','capsule','classic'],'건설업':['frame','sideband','classic','grid'],
+ '도소매업':['split','capsule','bottom','corner'],'운수·창고':['diagonal','sideband','grid','bottom'],'숙박·음식점':['editorial','capsule','circle','center'],
+ '정보통신업':['grid','offset','corner','editorial'],'금융·보험':['frame','classic','center','outline'],'부동산업':['classic','frame','sideband','topband'],
+ '전문·과학·기술':['grid','outline','offset','classic'],'사업지원 서비스':['classic','grid','topband','bottom'],'공공행정':['topband','frame','classic','sideband'],
+ '교육 서비스':['topband','circle','classic','editorial'],'보건·사회복지':['circle','capsule','classic','center'],'예술·스포츠·여가':['editorial','diagonal','offset','vertical'],
+ '협회·수리·개인 서비스':['capsule','classic','circle','bottom'],'가구 내 고용':['classic','capsule','circle','center'],'국제·외국기관':['frame','topband','classic','split']
+};
+const styleCardProfiles={professional:['classic','frame','grid','topband'],minimal:['center','outline','classic','offset'],friendly:['capsule','circle','corner','bottom'],bold:['split','diagonal','vertical','sideband'],modern:['offset','editorial','grid','corner']};
+function baseCardScore(c){const industryFronts=industryCardProfiles[state.industry]||industryCardProfiles['전문·과학·기술'],styleFronts=styleCardProfiles[state.style]||styleCardProfiles.professional;let total=20;total+=weighted(industryFronts,c.front,[48,32,20,10]);total+=weighted(styleFronts,c.front,[40,28,17,8]);if(state.brand.length>9)total+=['classic','topband','bottom','grid'].includes(c.front)?12:-4;total+=['logo','slogan','website','statement'].includes(c.back)?8:0;return total}
+cardScore=baseCardScore;
+function diversityRerankCards(pool){const remaining=[...pool].sort((a,b)=>baseCardScore(b)-baseCardScore(a)),out=[],frontUse={},backUse={};while(remaining.length){let bi=0,bv=-Infinity;remaining.forEach((c,i)=>{let v=baseCardScore(c)-(frontUse[c.front]||0)*42-(backUse[c.back]||0)*8;if(out.length<6&&frontUse[c.front])v-=100;if(out.at(-1)?.front===c.front)v-=80;if(v>bv){bv=v;bi=i}});const pick=remaining.splice(bi,1)[0];out.push(pick);frontUse[pick.front]=(frontUse[pick.front]||0)+1;backUse[pick.back]=(backUse[pick.back]||0)+1}return out}
+sortedCards=function(){return state.recommendMode?diversityRerankCards(cardRecipes):cardRecipes};
+cardReason=function(){const c=cardRecipes.find(x=>x.id===state.cardRecipe)||sortedCards()[0];return `${state.industry}와 ‘${activeStyleProfile().label}’에 맞춰 ${c.name} 구성을 우선 추천했습니다. 앞면과 뒷면을 함께 비교하세요.`};
+
+const baseLogoSvgForStyle=logoSvg;
+logoSvg=function(id=state.recipe){return baseLogoSvgForStyle(id).replace('class="logo-svg"',`class="logo-svg style-${state.style}"`)};
+function fitLabel(i){return i<3?'우선 추천':i<6?'대안 추천':'다른 방향'}
+card=function(r,i){return `<button class="recipe logo-recipe ${state.recipe===r.id?'active':''}" data-recipe="${r.id}"><div class="recipe-preview actual-logo">${logoSvg(r.id)}</div><div><strong>${r.name}</strong><small>${r.tag}<br>${fitLabel(i)}</small></div><span class="rank">${state.recommendMode&&i<3?i+1:''}</span></button>`};
+cardTile=function(c,i){const p=palette(state.palette);return `<button class="recipe card-recipe ${state.cardRecipe===c.id?'active':''}" data-card-recipe="${c.id}"><div class="pair-thumb" style="--p:${p.colors[0]};--a:${p.colors[1]};--b:${p.colors[2]}"><i class="micro-card f-${c.front}"><b></b><em></em><span></span></i><i class="micro-card back b-${c.back}"><b></b><em></em></i></div><div><strong>${c.name}</strong><small>${c.tag}<br>${fitLabel(i)}</small></div><span class="rank">${state.recommendMode&&i<3?i+1:''}</span></button>`};
+
+function applyRecommendationChange(kind,value){if(kind==='industry')state.industry=value;else state.style=value;if(state.recommendMode){if(!state.locked.color)state.palette=recommendedPalette();state.recipe=sorted()[0].id;state.cardRecipe=sortedCards()[0].id;limit=12}render();toast(state.recommendMode?`${kind==='industry'?'업종':'인상'}에 맞춰 심볼·구도·색상과 추천 사유를 변경했습니다`:`${kind==='industry'?'업종':'인상'}만 변경했습니다. 직접 고른 레시피는 유지됩니다`)}
+function injectRecommendationControls(){const filters=document.querySelector('.filters');if(filters&&!document.querySelector('#studioIndustry')){filters.insertAdjacentHTML('afterbegin',`<div class="industry-control"><label for="studioIndustry">업종</label><select id="studioIndustry">${industries.map(x=>`<option ${state.industry===x?'selected':''}>${x}</option>`).join('')}</select><small>추천 모드에서는 심볼·구도·색상이 함께 바뀝니다.</small></div>`);document.querySelector('#studioIndustry').onchange=e=>applyRecommendationChange('industry',e.target.value)}document.querySelectorAll('[data-style]').forEach(b=>b.onclick=()=>applyRecommendationChange('style',b.dataset.style));document.querySelectorAll('[data-setup-style]').forEach(b=>b.onclick=()=>{state.style=b.dataset.setupStyle;render()});const brand=document.querySelector('.topbar .brand>div:last-child');if(brand&&!document.querySelector('.qa-badge'))brand.insertAdjacentHTML('beforeend','<em class="qa-badge">내부 검증 베타 · 상용 출시 보류</em>')}
+const renderBeforeRecommendation=render;
+render=function(){renderBeforeRecommendation();injectRecommendationControls()};
+injectRecommendationControls();
