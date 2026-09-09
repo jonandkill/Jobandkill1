@@ -68,6 +68,21 @@ export function inferBlogCategory(input = {}) {
   return CATEGORY_RULES.find((rule) => rule.pattern.test(searchable))?.label ?? "일반 정보";
 }
 
+function hasFinalConsonant(value = "") {
+  const lastCharacter = [...normalizeText(value)].at(-1) ?? "";
+  const codePoint = lastCharacter.codePointAt(0) ?? 0;
+  const hangulIndex = codePoint - 0xac00;
+  return hangulIndex >= 0 && hangulIndex <= 11171 && hangulIndex % 28 !== 0;
+}
+
+function withTopicParticle(value) {
+  return `${value}${hasFinalConsonant(value) ? "은" : "는"}`;
+}
+
+function withSubjectParticle(value) {
+  return `${value}${hasFinalConsonant(value) ? "이" : "가"}`;
+}
+
 function defaultAudience(category) {
   const audiences = {
     "취업·면접": "채용을 준비하는 지원자",
@@ -98,7 +113,7 @@ function employmentSections({ keyword, audience }) {
       heading: "채용공고와 직무 기준부터 확인한다",
       paragraphs: [
         `${keyword} 관련 글은 채용공고의 담당업무, 지원요건, 우대조건, 전형절차를 구분하는 것에서 시작한다. 공고에 적힌 표현을 그대로 확인하고, 비슷해 보이는 직무라도 기업과 부서에 따라 요구하는 역할이 다를 수 있다는 점을 함께 살핀다.`,
-        `${audience}은 공고 문장마다 자신이 제시할 수 있는 경험을 연결해 표로 정리하면 좋다. 경험이 없는 항목은 억지로 꾸미지 않고 교육, 실습, 프로젝트, 아르바이트 등 실제로 수행한 범위에서 가장 가까운 근거를 찾는다.`,
+        `${withTopicParticle(audience)} 공고 문장마다 자신이 제시할 수 있는 경험을 연결해 표로 정리하면 좋다. 경험이 없는 항목은 억지로 꾸미지 않고 교육, 실습, 프로젝트, 아르바이트 등 실제로 수행한 범위에서 가장 가까운 근거를 찾는다.`,
       ],
     },
     {
@@ -145,7 +160,7 @@ function realEstateSections({ keyword, audience }) {
       heading: "공식 공고와 사업 개요를 먼저 확인한다",
       paragraphs: [
         `${keyword} 정보를 볼 때는 모집공고, 사업주체 안내, 지자체 고시 등 확인 가능한 원문을 먼저 찾는다. 단지명이나 홍보문구만으로 판단하지 않고 공급규모, 주택형, 일정, 자격조건처럼 의사결정에 직접 영향을 주는 항목을 분리한다.`,
-        `${audience}은 원문 게시일과 수정 여부도 함께 기록해야 한다. 블로그나 커뮤니티 자료는 이해를 돕는 참고자료로 활용하되 계약과 청약의 기준은 최신 공식 문서에서 다시 확인한다.`,
+        `${withTopicParticle(audience)} 원문 게시일과 수정 여부도 함께 기록해야 한다. 블로그나 커뮤니티 자료는 이해를 돕는 참고자료로 활용하되 계약과 청약의 기준은 최신 공식 문서에서 다시 확인한다.`,
       ],
     },
     {
@@ -192,7 +207,7 @@ function researchSections({ keyword, audience }) {
       heading: "연구 질문과 핵심 개념을 분명히 한다",
       paragraphs: [
         `${keyword}을 다룰 때는 먼저 어떤 현상을 누구에게서 어떤 관계로 확인하려는지 정리한다. 핵심 개념의 정의와 측정 범위를 구분하고 비슷한 용어를 같은 의미로 사용하지 않도록 한다.`,
-        `${audience}이 선행연구와 이번 연구의 차이를 이해할 수 있도록 이론적 근거, 연구 공백, 예상 기여를 연결하되 확인되지 않은 독창성이나 우월성을 단정하지 않는다.`,
+        `${withSubjectParticle(audience)} 선행연구와 이번 연구의 차이를 이해할 수 있도록 이론적 근거, 연구 공백, 예상 기여를 연결하되 확인되지 않은 독창성이나 우월성을 단정하지 않는다.`,
       ],
     },
     {
@@ -285,7 +300,7 @@ function generalSections({ keyword, audience }) {
     {
       heading: "검색한 목적과 핵심 질문을 정리한다",
       paragraphs: [
-        `${keyword}을 찾는 이유는 사람마다 다를 수 있다. 먼저 ${audience}이 알고 싶은 조건, 비교 기준, 비용, 절차와 주의사항을 질문 형태로 정리한다.`,
+        `${keyword}을 찾는 이유는 사람마다 다를 수 있다. 먼저 ${withSubjectParticle(audience)} 알고 싶은 조건, 비교 기준, 비용, 절차와 주의사항을 질문 형태로 정리한다.`,
         `질문을 먼저 정하면 관련 없는 정보를 늘리지 않고 실제 결정에 필요한 내용부터 확인할 수 있다.`,
       ],
     },

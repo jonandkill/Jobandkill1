@@ -168,6 +168,8 @@ test("keyword-only input generates a complete employment article", () => {
   assert.equal(article.generationMode, "keyword");
   assert.match(article.fullText, /근거와 출처를 관리한다/u);
   assert.match(article.fullText, /게시 전 마지막으로 확인한다/u);
+  assert.match(article.fullText, /채용을 준비하는 지원자는 공고 문장마다/u);
+  assert.equal(/지원자은/u.test(article.fullText), false);
   assert.equal(/100% 합격|업계 1위|무조건 합격/u.test(article.fullText), false);
 });
 
