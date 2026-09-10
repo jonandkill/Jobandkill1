@@ -1969,3 +1969,15 @@ footer p {
     animation-iteration-count: 1 !important;
   }
 }
+.generation-options { padding: 18px; border: 1px solid var(--line, #ded8ca); border-radius: 10px; background: #faf8f2; }
+.image-toggle { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; min-height: 44px; }
+.image-toggle input { width: 22px; height: 22px; margin: 2px 0; flex: 0 0 auto; }
+.image-toggle span { display: grid; gap: 6px; }
+.image-toggle small, #server-status { font-size: 13px; line-height: 1.65; }
+#server-status[data-state="error"] { color: #94351e; }
+#server-status[data-state="ready"] { color: #226444; }
+.generation-status { padding: 16px; border-radius: 8px; background: #eef4fb; color: #164873; line-height: 1.6; }
+.compose-button:disabled { opacity: .65; cursor: progress; }
+.generated-image-panel { padding: clamp(16px, 3vw, 32px); border: 1px solid var(--line, #ded8ca); border-radius: 12px; background: white; }
+.generated-image-panel img { display: block; width: min(100%, 640px); height: auto; margin: 16px 0; border-radius: 8px; }
+.generated-image-panel p { line-height: 1.7; color: #94351e; overflow-wrap: anywhere; }

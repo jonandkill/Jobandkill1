@@ -30,7 +30,10 @@ test("keyword generation is the default form action", () => {
   assert.match(html, /name="primaryKeyword" required/gu);
   assert.equal(/name="topic"[^>]*required/gu.test(html), false);
   assert.equal(/name="draft"[^>]*required/gu.test(html), false);
-  assert.match(app, /createKeywordDraft\(rawInput\)/gu);
+  assert.match(app, /fetch\("\/api\/generate"/gu);
+  assert.equal(/createKeywordDraft\(rawInput\)/gu.test(app), false);
+  assert.match(html, /name="generateImages"[^>]*checked/gu);
+  assert.match(app, /delete values.accessToken/gu);
   assert.match(app, /resultState\.scrollIntoView/gu);
 });
 

@@ -4,7 +4,6 @@ import {
   articleToMarkdown,
   auditArticle,
   buildArticle,
-  createKeywordDraft,
   createCopyBlocks,
   createImagePlan,
   createPublishPackage,
@@ -52,6 +51,15 @@ const composeLabel = document.querySelector("#compose-label");
 const composeHint = document.querySelector("#compose-hint");
 const draftHelp = document.querySelector("#draft-help");
 const formError = document.querySelector("#form-error");
+const composeButton = document.querySelector("#compose-button");
+const generationStatus = document.querySelector("#generation-status");
+const serverStatus = document.querySelector("#server-status");
+const accessToken = document.querySelector("#access-token");
+const generatedImagePanel = document.querySelector("#generated-image-panel");
+let requestController = null;
+let inputRevision = 0;
+let generatedImage = null;
+let generationMetadata = null;
 
 let article = null;
 let audit = null;
@@ -108,10 +116,43 @@ function updateCompositionModeUi() {
   clearFormError();
 }
 
-function applyGeneratedDefaults(input) {
-  for (const name of ["topic", "category", "audience", "cta"]) {
-    const control = form.elements.namedItem(name);
-    if (control && !control.value.trim() && input[name]) control.value = input[name];
+async function checkServer() {
+  try {
+    const response = await fetch("/api/config", { signal: AbortSignal.timeout(10000) });
+    if (!response.ok) throw new Error("unavailable");
+    const config = await response.json();
+    serverStatus.textContent = config.configured ? "AI 작성 서버 연결됨 · 생성 결과는 검수 후 사용하세요." : "AI 작성 서버 연결이 필요합니다. 관리자 설정 후 키워드 작성이 가능합니다.";
+    serverStatus.dataset.state = config.configured ? "ready" : "error";
+    document.querySelector("#access-token-field").hidden = !config.authorizationRequired;
+  } catch {
+    serverStatus.textContent = "AI 작성 서버 연결이 필요합니다. 현재 서버 상태를 확인할 수 없습니다. 기존 원고 재구성은 이용할 수 있습니다.";
+    serverStatus.dataset.state = "error";
+  }
+}
+
+function renderGeneratedImage(image, error = "") {
+  generatedImagePanel.replaceChildren();
+  generatedImagePanel.hidden = !image && !error;
+  if (!image && !error) return;
+  const heading = document.createElement("h3");
+  heading.textContent = "실제 AI 생성 이미지";
+  generatedImagePanel.append(heading);
+  if (image && /^data:image\/(?:png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(image.dataUrl || "")) {
+    const img = document.createElement("img");
+    img.src = image.dataUrl;
+    img.alt = image.altText || article?.title || "AI 생성 참고 이미지";
+    const link = document.createElement("a");
+    link.href = image.dataUrl;
+    link.download = `${safeFilename()}-image.${image.dataUrl.startsWith("data:image/jpeg") ? "jpg" : image.dataUrl.startsWith("data:image/webp") ? "webp" : "png"}`;
+    link.textContent = "생성 이미지 내려받기";
+    link.className = "button ghost";
+    generatedImagePanel.append(img, link);
+  } else if (image) error = "이미지 응답 형식을 확인할 수 없습니다. 본문은 그대로 사용할 수 있습니다.";
+  if (error) {
+    const note = document.createElement("p");
+    note.textContent = error;
+    note.setAttribute("role", "status");
+    generatedImagePanel.append(note);
   }
 }
 
@@ -125,14 +166,19 @@ function showToast(message) {
 }
 
 function serializeForm() {
-  return Object.fromEntries(new FormData(form).entries());
+  const values = Object.fromEntries(new FormData(form).entries());
+  delete values.accessToken;
+  values.generateImages = String(form.elements.namedItem("generateImages").checked);
+  return values;
 }
 
 function hydrateForm(values = {}) {
   for (const [key, value] of Object.entries(values)) {
     const control = form.elements.namedItem(key);
     if (!control || typeof value !== "string") continue;
-    control.value = value;
+    if (key === "accessToken") continue;
+    if (control.type === "checkbox") control.checked = value === "true";
+    else control.value = value;
   }
 }
 
@@ -330,7 +376,8 @@ function refreshArticle(input, { resetChecks = true } = {}) {
   if (resetChecks) resetFinalChecks();
 }
 
-function compose() {
+async function compose() {
+  if (requestController) return;
   clearFormError();
   const rawInput = serializeForm();
   const mode = compositionMode();
@@ -343,28 +390,72 @@ function compose() {
     return;
   }
 
-  const input = mode === "generate"
-    ? createKeywordDraft(rawInput)
-    : {
+  let input = {
         ...rawInput,
         compositionMode: "restructure",
         topic: rawInput.topic?.trim() || rawInput.primaryKeyword.trim(),
         category: rawInput.category || inferBlogCategory(rawInput),
       };
+  let payload = null;
+  if (mode === "generate") {
+    const revision = inputRevision;
+    requestController = new AbortController();
+    const timeout = window.setTimeout(() => requestController?.abort(), 180000);
+    composeButton.disabled = true;
+    form.setAttribute("aria-busy", "true");
+    generationStatus.hidden = false;
+    generationStatus.textContent = rawInput.generateImages === "true" ? "키워드에 맞는 본문과 이미지 1장을 생성 중입니다. 최대 3분 정도 걸릴 수 있습니다." : "키워드에 맞는 본문을 생성 중입니다.";
+    try {
+      const headers = { "Content-Type": "application/json" };
+      if (accessToken.value.trim()) headers.Authorization = `Bearer ${accessToken.value.trim()}`;
+      const response = await fetch("/api/generate", {
+        method: "POST", headers,
+        body: JSON.stringify({ ...rawInput, generateImages: rawInput.generateImages === "true" }),
+        signal: requestController.signal,
+      });
+      if (!(response.headers.get("content-type") || "").includes("application/json")) throw new Error("AI 작성 서버 연결이 필요합니다. 정적 사이트만으로는 키워드에 맞는 새 글을 작성할 수 없습니다.");
+      payload = await response.json();
+      if (!response.ok) throw new Error(typeof payload.error === "string" ? payload.error : payload.error?.message || payload.message || "본문 생성에 실패했습니다. 입력은 보존되었습니다.");
+      if (revision !== inputRevision) throw new Error("생성 중 입력이 바뀌어 이전 요청 결과를 적용하지 않았습니다. 현재 입력으로 다시 생성해 주세요.");
+      input = { ...rawInput, ...payload.articleInput, compositionMode: "generate" };
+      if (!payload.articleInput?.draft?.trim()) throw new Error("서버가 유효한 본문을 반환하지 않았습니다. 입력은 보존되었습니다.");
+    } catch (error) {
+      showFormError(error.name === "AbortError" ? "요청이 취소되었거나 제한 시간을 초과했습니다. 입력은 보존되었습니다. 과금 여부를 확인한 뒤 다시 시도해 주세요." : error.message || "작성 서버에 연결하지 못했습니다. 입력은 보존되었습니다.");
+      return;
+    } finally {
+      window.clearTimeout(timeout);
+      requestController = null;
+      composeButton.disabled = false;
+      form.removeAttribute("aria-busy");
+      generationStatus.hidden = true;
+    }
+  }
 
   if (!input.draft?.trim()) {
     showFormError("본문을 만들지 못했습니다. 대표 키워드를 다시 확인해 주세요.", primaryKeywordInput);
     return;
   }
 
-  if (mode === "generate") applyGeneratedDefaults(input);
   persistDraft();
   refreshArticle(input);
+  generatedImage = payload?.image || null;
+  generationMetadata = payload ? { warnings: payload.warnings, usage: payload.usage, imageError: payload.imageError } : null;
+  renderGeneratedImage(generatedImage, payload?.imageError || (mode === "generate" && rawInput.generateImages === "true" && !generatedImage ? "본문은 생성되었으나 이미지가 반환되지 않았습니다. 아래 배치안은 실제 이미지가 아닙니다." : ""));
+  const generationNotice = document.querySelector("#generation-notice");
+  generationNotice.hidden = mode !== "generate";
+  const reserve = Number(payload?.usage?.reservedKrw);
+  const cumulativeReserve = Number(payload?.usage?.budget?.reservedKrw);
+  generationNotice.textContent = mode === "generate" ? [
+    "AI 초안입니다. 실시간 검색·독립적인 사실 검증을 수행한 결과가 아닙니다.",
+    ...(Array.isArray(payload?.warnings) ? payload.warnings.filter((item) => typeof item === "string") : []),
+    ...(Number.isFinite(reserve) ? [`이번 요청 예산 예약액 ${reserve.toLocaleString("ko-KR")}원 (실제 청구액과 다를 수 있음).`] : []),
+    ...(Number.isFinite(cumulativeReserve) ? [`누적 예산 예약액 ${cumulativeReserve.toLocaleString("ko-KR")}원.`] : []),
+  ].join(" ") : "";
   emptyState.hidden = true;
   resultState.hidden = false;
   const message = mode === "generate"
     ? `대표 키워드로 본문 ${audit.metrics.textLength.toLocaleString("ko-KR")}자를 생성했습니다. 내용을 확인해 주세요.`
-    : `기존 원고를 게시 준비 묶음으로 재구성했습니다. 내부 품질 점수는 ${audit.score}점입니다.`;
+    : `기존 원고를 게시 준비 묶음으로 재구성했습니다. 형식 점검 점수는 ${audit.score}점입니다.`;
   announce(message, "success");
   showToast(mode === "generate" ? "본문 생성 완료" : "원고 재구성 완료");
   resultState.scrollIntoView({
@@ -465,6 +556,8 @@ function exportBundle() {
     version: 2,
     exportedAt: new Date().toISOString(),
     form: input,
+    articleInput: activeInput,
+    generationMetadata,
     article,
     publishPackage: createPublishPackage(article, input),
   };
@@ -484,8 +577,26 @@ async function importBundle(file) {
     if (!parsed?.form || typeof parsed.form !== "object") throw new Error("invalid bundle");
     hydrateForm(parsed.form);
     persistDraft();
-    compose();
-    announce("저장된 초안을 불러와 다시 구성했습니다.", "success");
+    inputRevision += 1;
+    requestController?.abort();
+    updateCompositionModeUi();
+    const storedInput = parsed.articleInput?.draft ? parsed.articleInput : parsed.article ? {
+      ...parsed.form,
+      title: parsed.article.title,
+      draft: [parsed.article.intro, ...(parsed.article.sections || []).map((section) => `## ${section.heading}\n\n${section.paragraphs.join("\n\n")}`)].filter(Boolean).join("\n\n"),
+    } : null;
+    if (storedInput) {
+      refreshArticle(storedInput);
+      resultState.hidden = false;
+      emptyState.hidden = true;
+    }
+    generatedImage = null;
+    renderGeneratedImage(null);
+    generationMetadata = parsed.generationMetadata || null;
+    const notice = document.querySelector("#generation-notice");
+    notice.hidden = !generationMetadata;
+    notice.textContent = generationMetadata ? ["저장된 AI 초안입니다. 사실·출처는 독립 검증되지 않았습니다.", ...(Array.isArray(generationMetadata.warnings) ? generationMetadata.warnings.filter((item) => typeof item === "string") : [])].join(" ") : "";
+    announce("저장된 자료를 불러왔습니다. AI를 호출하거나 비용을 발생시키지 않았습니다.", "success");
   } catch {
     announce("이 도구에서 저장한 올바른 JSON 파일인지 확인해 주세요.", "error");
   } finally {
@@ -651,11 +762,12 @@ form.addEventListener("submit", (event) => {
 });
 
 form.addEventListener("input", (event) => {
+  inputRevision += 1;
   event.target.removeAttribute?.("aria-invalid");
   clearFormError();
   scheduleSave();
 });
-form.addEventListener("change", scheduleSave);
+form.addEventListener("change", () => { inputRevision += 1; scheduleSave(); });
 compositionModeInputs.forEach((control) => control.addEventListener("change", updateCompositionModeUi));
 
 titleCandidates.addEventListener("click", (event) => {
@@ -722,6 +834,11 @@ openNaverButton.addEventListener("click", () => {
 document.querySelector("#clear-draft").addEventListener("click", () => {
   if (!window.confirm("현재 입력한 초안을 비우고 새로 시작할까요?")) return;
   form.reset();
+  inputRevision += 1;
+  requestController?.abort();
+  generatedImage = null;
+  generationMetadata = null;
+  renderGeneratedImage(null);
   localStorage.removeItem(FORM_STORAGE_KEY);
   article = null;
   audit = null;
@@ -788,6 +905,7 @@ updateSpeed();
 stopReview();
 updateCompositionModeUi();
 announce("대표 키워드 하나를 입력하고 ‘키워드로 본문 생성’을 누르세요.");
+checkServer();
 
 if (SAFETY_BOUNDARY.automaticPublishing || SAFETY_BOUNDARY.botDetectionEvasion) {
   throw new Error("Invalid content safety boundary");
