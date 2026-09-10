@@ -1,0 +1,733 @@
+{
+  "reviewDate": "2026-09-10",
+  "kind": "internal_research_and_heuristic_simulation",
+  "realUsersTested": 0,
+  "actualVotes": 0,
+  "method": "공식 공개 페이지 텍스트/메뉴/링크 확인. 점수는 조사자의 적용 가설이며 원본 사이트의 실측 성능이나 검증된 전환율이 아님. 모든 후보의 동영상 재생을 확인한 것이 아님.",
+  "weights": {
+    "entry": 0.3,
+    "structure": 0.25,
+    "education": 0.2,
+    "motionConcept": 0.1,
+    "implementation": 0.15
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "url": "https://www.apple.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "제품별 제목·이미지·자세히 보기 링크",
+      "transferHypothesis": "큰 제목과 명확한 다음 행동",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 5,
+        "education": 4,
+        "motionConcept": 4,
+        "implementation": 5
+      },
+      "transferScore": 94
+    },
+    {
+      "id": 2,
+      "name": "Airbnb",
+      "url": "https://www.airbnb.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "목적지·날짜·인원으로 나뉜 검색 진입",
+      "transferHypothesis": "조건별 검색",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 5,
+        "education": 4,
+        "motionConcept": 2,
+        "implementation": 5
+      },
+      "transferScore": 90
+    },
+    {
+      "id": 3,
+      "name": "Stripe",
+      "url": "https://stripe.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "서비스 설명·시작 버튼·고객 사례",
+      "transferHypothesis": "설명과 근거 연결",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 82
+    },
+    {
+      "id": 4,
+      "name": "Linear",
+      "url": "https://linear.app/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "제품·자료 메뉴와 실제 작업 예시 텍스트",
+      "transferHypothesis": "작업 상태와 미리보기",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 5,
+        "education": 3,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 81
+    },
+    {
+      "id": 5,
+      "name": "Notion",
+      "url": "https://www.notion.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "기능별 메뉴·제품 투어·시작 버튼",
+      "transferHypothesis": "기능별 짧은 안내",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 5,
+        "education": 4,
+        "motionConcept": 3,
+        "implementation": 5
+      },
+      "transferScore": 92
+    },
+    {
+      "id": 6,
+      "name": "Framer",
+      "url": "https://www.framer.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "디자인 도구 소개·템플릿 및 예시 링크",
+      "transferHypothesis": "시각 예시와 템플릿",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 76
+    },
+    {
+      "id": 7,
+      "name": "Webflow",
+      "url": "https://www.webflow.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "웹 제작 기능·고객 사례·시작 경로",
+      "transferHypothesis": "단계별 기능 소개",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 76
+    },
+    {
+      "id": 8,
+      "name": "Figma",
+      "url": "https://www.figma.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "디자인 협업 제품 소개와 기능 경로",
+      "transferHypothesis": "협업 중심 기능 구분",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 76
+    },
+    {
+      "id": 9,
+      "name": "Vercel",
+      "url": "https://www.vercel.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "배포 인프라 설명·제품 경로",
+      "transferHypothesis": "기능별 직접 진입",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 2,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 70
+    },
+    {
+      "id": 10,
+      "name": "Raycast",
+      "url": "https://www.raycast.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "키보드 기능·확장 도구 카테고리",
+      "transferHypothesis": "개인 도구함",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 3,
+        "structure": 4,
+        "education": 2,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 66
+    },
+    {
+      "id": 11,
+      "name": "Pitch",
+      "url": "https://www.pitch.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "짧은 헤드라인·가입/데모·화면 이미지",
+      "transferHypothesis": "결과물 미리보기",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 82
+    },
+    {
+      "id": 12,
+      "name": "Superhuman",
+      "url": "https://www.superhuman.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "문서·메일·AI 제품 소개",
+      "transferHypothesis": "개인 작업 공간",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 74
+    },
+    {
+      "id": 13,
+      "name": "Retool",
+      "url": "https://www.retool.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "내부 도구 제작 제품 소개",
+      "transferHypothesis": "데이터 중심 도구",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 3,
+        "structure": 5,
+        "education": 3,
+        "motionConcept": 2,
+        "implementation": 4
+      },
+      "transferScore": 71
+    },
+    {
+      "id": 14,
+      "name": "Intercom",
+      "url": "https://www.intercom.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "고객 서비스 제품 설명",
+      "transferHypothesis": "지원 요청 경로",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 74
+    },
+    {
+      "id": 15,
+      "name": "Dropbox",
+      "url": "https://www.dropbox.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "파일 저장·공유 서비스 안내",
+      "transferHypothesis": "저장 자료 분류",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 5,
+        "education": 3,
+        "motionConcept": 2,
+        "implementation": 5
+      },
+      "transferScore": 80
+    },
+    {
+      "id": 16,
+      "name": "Shopify",
+      "url": "https://www.shopify.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "상거래 기능 및 시작 안내",
+      "transferHypothesis": "행동 버튼 반복",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 80
+    },
+    {
+      "id": 17,
+      "name": "Squarespace",
+      "url": "https://www.squarespace.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "웹사이트 제작·템플릿 안내",
+      "transferHypothesis": "편집형 브랜드 소개",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 4,
+        "implementation": 4
+      },
+      "transferScore": 76
+    },
+    {
+      "id": 18,
+      "name": "Wix",
+      "url": "https://www.wix.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "웹사이트 제작 및 기능 소개",
+      "transferHypothesis": "빠른 시작",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 4,
+        "education": 3,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 80
+    },
+    {
+      "id": 19,
+      "name": "Canva",
+      "url": "https://www.canva.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "디자인 도구와 용도별 안내",
+      "transferHypothesis": "용도별 탐색",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 5,
+        "structure": 5,
+        "education": 4,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 89
+    },
+    {
+      "id": 20,
+      "name": "Lusion",
+      "url": "https://lusion.co/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "3D 스토리텔링·Play Reel·프로젝트 목록",
+      "transferHypothesis": "짧은 모션 장면",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 2,
+        "structure": 3,
+        "education": 2,
+        "motionConcept": 5,
+        "implementation": 2
+      },
+      "transferScore": 51
+    },
+    {
+      "id": 21,
+      "name": "Awwwards",
+      "url": "https://www.awwwards.com/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "디자인 분야·기술별 탐색·수상작 목록",
+      "transferHypothesis": "유형 필터",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 3,
+        "structure": 4,
+        "education": 2,
+        "motionConcept": 4,
+        "implementation": 3
+      },
+      "transferScore": 63
+    },
+    {
+      "id": 22,
+      "name": "Stanford",
+      "url": "https://www.stanford.edu/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "지원자/가족 경로·학문 메뉴",
+      "transferHypothesis": "학생·학부모 역할 구분",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 5,
+        "education": 5,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 87
+    },
+    {
+      "id": 23,
+      "name": "MIT",
+      "url": "https://www.mit.edu/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "대학 공식 콘텐츠·탐색 링크",
+      "transferHypothesis": "간결한 대학 정보",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 3,
+        "structure": 4,
+        "education": 5,
+        "motionConcept": 2,
+        "implementation": 4
+      },
+      "transferScore": 74
+    },
+    {
+      "id": 24,
+      "name": "Harvard",
+      "url": "https://www.harvard.edu/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "학위 과정과 단과대학 메뉴",
+      "transferHypothesis": "학과 계층",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 5,
+        "education": 5,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 87
+    },
+    {
+      "id": 25,
+      "name": "Oxford",
+      "url": "https://www.ox.ac.uk/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "대학 공식 안내·학업 경로",
+      "transferHypothesis": "대학 안내 허브",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 5,
+        "education": 5,
+        "motionConcept": 2,
+        "implementation": 4
+      },
+      "transferScore": 85
+    },
+    {
+      "id": 26,
+      "name": "Active Theory",
+      "url": "https://activetheory.net/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_shell_only",
+      "observedContent": "JavaScript 활성화 안내만 확인",
+      "transferHypothesis": "몰입형 후보(콘텐츠 미확인)",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 1,
+        "structure": 1,
+        "education": 1,
+        "motionConcept": 1,
+        "implementation": 1
+      },
+      "transferScore": 20
+    },
+    {
+      "id": 27,
+      "name": "RISD",
+      "url": "https://www.risd.edu/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "디자인대학 공식 안내",
+      "transferHypothesis": "전공 탐색",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 5,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 82
+    },
+    {
+      "id": 28,
+      "name": "ArtCenter",
+      "url": "https://www.artcenter.edu/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "예술·디자인 교육 공식 안내",
+      "transferHypothesis": "전공·진로 연결",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 5,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 82
+    },
+    {
+      "id": 29,
+      "name": "Unseen Studio",
+      "url": "https://unseen.co/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "Enter without audio·음향 전환·프로젝트 필터",
+      "transferHypothesis": "입장·음향 제어",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 2,
+        "structure": 3,
+        "education": 2,
+        "motionConcept": 5,
+        "implementation": 2
+      },
+      "transferScore": 51
+    },
+    {
+      "id": 30,
+      "name": "The New School",
+      "url": "https://www.newschool.edu/",
+      "checkedAt": "2026-09-10",
+      "verification": "public_text_opened",
+      "observedContent": "대학 공식 안내·교육 경로",
+      "transferHypothesis": "교육 분야별 진입",
+      "visualMotionVerified": false,
+      "mobilePerformanceMeasured": false,
+      "heuristicScores": {
+        "entry": 4,
+        "structure": 4,
+        "education": 5,
+        "motionConcept": 3,
+        "implementation": 4
+      },
+      "transferScore": 82
+    }
+  ],
+  "finalists": [
+    {
+      "id": "A",
+      "name": "밝은 에디토리얼 모션",
+      "referenceIds": [
+        1,
+        5,
+        22
+      ],
+      "attributes": {
+        "readability": 5,
+        "directAction": 5,
+        "trust": 5,
+        "motionImpact": 3,
+        "lowMotion": 5,
+        "taskDepth": 5
+      }
+    },
+    {
+      "id": "B",
+      "name": "몰입형 스튜디오",
+      "referenceIds": [
+        20,
+        29
+      ],
+      "attributes": {
+        "readability": 3,
+        "directAction": 3,
+        "trust": 3,
+        "motionImpact": 5,
+        "lowMotion": 2,
+        "taskDepth": 3
+      }
+    }
+  ],
+  "personas": [
+    {
+      "id": "parent_first",
+      "label": "처음 방문한 학부모",
+      "weights": [
+        0.3,
+        0.25,
+        0.3,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "scores": {
+        "A": 98,
+        "B": 61
+      },
+      "preferredConcept": "A"
+    },
+    {
+      "id": "student_mobile",
+      "label": "이동 중 학생",
+      "weights": [
+        0.2,
+        0.35,
+        0.1,
+        0.15,
+        0.1,
+        0.1
+      ],
+      "scores": {
+        "A": 94,
+        "B": 64
+      },
+      "preferredConcept": "A"
+    },
+    {
+      "id": "parent_comparison",
+      "label": "입결 비교 학부모",
+      "weights": [
+        0.25,
+        0.2,
+        0.3,
+        0.02,
+        0.03,
+        0.2
+      ],
+      "scores": {
+        "A": 99.2,
+        "B": 60.2
+      },
+      "preferredConcept": "A"
+    },
+    {
+      "id": "motion_sensitive",
+      "label": "움직임에 민감한 방문자",
+      "weights": [
+        0.25,
+        0.15,
+        0.15,
+        0,
+        0.4,
+        0.05
+      ],
+      "scores": {
+        "A": 100,
+        "B": 52
+      },
+      "preferredConcept": "A"
+    },
+    {
+      "id": "repeat_student",
+      "label": "논술 연습 재방문자",
+      "weights": [
+        0.15,
+        0.3,
+        0.1,
+        0.05,
+        0.1,
+        0.3
+      ],
+      "scores": {
+        "A": 98,
+        "B": 60
+      },
+      "preferredConcept": "A"
+    },
+    {
+      "id": "visual_explorer",
+      "label": "시각적 탐색 선호 방문자",
+      "weights": [
+        0.05,
+        0.05,
+        0.05,
+        0.75,
+        0.05,
+        0.05
+      ],
+      "scores": {
+        "A": 70,
+        "B": 89
+      },
+      "preferredConcept": "B"
+    }
+  ],
+  "selection": {
+    "winner": "A",
+    "simulatedPreferenceCounts": {
+      "A": 5,
+      "B": 1
+    },
+    "claim": "6개 가상 요구조건 모델의 계산 결과. 6명의 투표·설문·사용자 실험이 아님."
+  }
+}

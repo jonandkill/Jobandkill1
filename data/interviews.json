@@ -1,0 +1,397 @@
+{
+  "verifiedAt": "2026-09-10",
+  "coverageNote": "12개 대학의 면접 방식 일부를 공식 모집요강에서 확인했습니다. 전국 전체 전형·면접 기출·후기는 아직 완비되지 않았습니다.",
+  "schools": [
+    {
+      "name": "서울대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://admission.snu.ac.kr/webdata/admission/files/2027susi.pdf",
+      "sourceTitle": "2027학년도 수시모집 안내",
+      "formats": [
+        {
+          "track": "지역균형·기회균형(사회통합)",
+          "scope": "의과대학 제외",
+          "duration": "10분 내외",
+          "preparation": "별도 시간 확인값 없음",
+          "panel": "복수 면접위원 · 정확한 인원 미공개",
+          "method": "제출서류 확인과 기초 학업 소양 평가",
+          "pages": "PDF 19·45쪽"
+        },
+        {
+          "track": "일반전형",
+          "scope": "공과대학",
+          "duration": "15분 내외",
+          "preparation": "45분 내외",
+          "panel": "복수 면접위원 · 정확한 인원 미공개",
+          "method": "자연계열 수학 제시문으로 학업역량과 전공적성 평가",
+          "pages": "PDF 25~26쪽"
+        },
+        {
+          "track": "일반전형",
+          "scope": "간호대학",
+          "duration": "30분 내외",
+          "preparation": "별도 부여 가능",
+          "panel": "정확한 인원 확인값 없음",
+          "method": "여러 면접실에서 상황·제시문 및 서류 기반 면접",
+          "pages": "PDF 27쪽"
+        },
+        {
+          "track": "일반전형",
+          "scope": "수의과대학",
+          "duration": "50분 내외 · 5개 면접실 각 10분",
+          "preparation": "별도 부여 가능",
+          "panel": "정확한 인원 확인값 없음",
+          "method": "상황 판단과 생명과학 기초 학업 소양 확인",
+          "pages": "PDF 27쪽"
+        },
+        {
+          "track": "일반전형",
+          "scope": "의과대학",
+          "duration": "60분 내외",
+          "preparation": "별도 부여 가능",
+          "panel": "정확한 인원 확인값 없음",
+          "method": "여러 면접실에서 상황·제시문 및 서류 기반 면접",
+          "pages": "PDF 27쪽"
+        },
+        {
+          "track": "일반전형",
+          "scope": "치의학과",
+          "duration": "40분 내외 · 4개 면접실 각 10분",
+          "preparation": "별도 부여 가능",
+          "panel": "정확한 인원 확인값 없음",
+          "method": "다양한 상황 판단과 서류 내용 확인",
+          "pages": "PDF 28쪽"
+        }
+      ],
+      "pastPapers": [
+        {
+          "year": 2026,
+          "title": "면접 및 구술고사 문항 · 적성·인성 문항 수정 공지 포함",
+          "url": "https://admission.snu.ac.kr/materials/downloads/samples?bbsidx=167141&md=v",
+          "status": "공식 개별 게시물 확인 · 첨부 원문 수집 시 404, 본문 미확보"
+        },
+        {
+          "year": 2025,
+          "title": "면접 및 구술고사 문항",
+          "url": "https://admission.snu.ac.kr/materials/downloads/samples?bbsidx=153527&md=v",
+          "status": "공식 개별 게시물 확인 · 문항 본문 미확보"
+        },
+        {
+          "year": 2024,
+          "title": "면접 및 구술고사 문항",
+          "url": "https://admission.snu.ac.kr/materials/downloads/samples?bbsidx=146643&md=v",
+          "status": "공식 개별 게시물 확인 · 문항 본문 미확보"
+        },
+        {
+          "year": 2023,
+          "title": "면접 및 구술고사 문항",
+          "url": "https://admission.snu.ac.kr/materials/downloads/samples?bbsidx=140669&md=v",
+          "status": "공식 개별 게시물 확인 · 문항 본문 미확보"
+        },
+        {
+          "year": 2022,
+          "title": "면접 및 구술고사 문항",
+          "url": "https://admission.snu.ac.kr/materials/downloads/samples?bbsidx=135990&md=v",
+          "status": "공식 개별 게시물 확인 · 문항 본문 미확보"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "name": "부산대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000257099&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000014&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 2369699,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "학생부종합·지역인재Ⅰ",
+          "scope": "의·치·약 등 별도 방식 모집단위 제외",
+          "duration": "10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "다수 평가자 · 정확한 인원 확인값 없음",
+          "method": "학생부에 기초한 탐구·사회역량 확인",
+          "pages": "PDF 68쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "경북대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000242989&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000005&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 2184021,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "학생부종합 면접 실시 전형",
+          "scope": "지역의사선발 등 별도 절차는 추가 확인",
+          "duration": "10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인",
+          "method": "제출서류 기반 개별면접",
+          "pages": "PDF 83쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "동국대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000243064&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000100&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 2641158,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "Do Dream",
+          "scope": "해당 모집단위",
+          "duration": "10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인",
+          "method": "제출서류에 따른 전공적합성·발전가능성·인성 등 평가",
+          "pages": "PDF 19쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "경희대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000245976&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000066&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 21353244,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "네오르네상스",
+          "scope": "해당 모집단위",
+          "duration": "10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인",
+          "method": "공통 질문과 개인 서류 확인 · 출제문항 면접 없음",
+          "pages": "PDF 64쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "중앙대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000257306&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000175&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 46592162,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "탐구형인재·성장형인재·융합형인재",
+          "scope": "융합형인재는 의학부만",
+          "duration": "10분 이내",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "입학사정관 2인",
+          "method": "학생부 기반 개인별 질문 · 전형별 평가요소 차이 있음",
+          "pages": "PDF 95쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "한국외국어대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000257112&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000192&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 2201312,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "학생부종합(면접형)",
+          "scope": "해당 모집단위",
+          "duration": "확인값 없음",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인",
+          "method": "제출서류 기반 진로개발역량 60%·협력적소통역량 40%",
+          "pages": "PDF 25쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "건국대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000243061&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000052&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 15052701,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "KU자기추천·특수교육대상자",
+          "scope": "1단계 합격자",
+          "duration": "10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인",
+          "method": "제출서류 진위와 인성·학교생활 충실성 확인",
+          "pages": "PDF 72쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "인하대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000242994&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000169&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 2460348,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "인하미래인재(면접형)",
+          "scope": "의예과 제외",
+          "duration": "8~10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인",
+          "method": "제출서류 기반 개별 블라인드 면접",
+          "pages": "PDF 15쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "아주대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000257290&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000146&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 1757730,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "학생부종합 면접평가",
+          "scope": "의학과 제외",
+          "duration": "10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인 이상",
+          "method": "서류 신뢰도와 의사소통능력 평가",
+          "pages": "PDF 12쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "울산대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://www.adiga.kr/cmm/com/file/fileDown.do?fileId=00000000000000242895&fileSn=1&menuId=PCUVTINF2000&downLogYn=Y&unvCd=0000158&searchSyr=2027",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 738998,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "잠재역량",
+          "scope": "자율전공학부·간호학과",
+          "duration": "10분 이내",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "다대일 · 정확한 인원 확인값 없음",
+          "method": "서류 기반 학업·진로·공동체역량 평가",
+          "pages": "PDF 42쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    },
+    {
+      "name": "한양대학교",
+      "academicYear": 2027,
+      "sourceUrl": "https://go.hanyang.ac.kr/resources/upload_data/mojib/20260818042807559_.pdf",
+      "sourceTitle": "2027학년도 수시모집요강",
+      "sourceDownload": {
+        "status": "pdf_received",
+        "bytes": 1756325,
+        "verifiedAt": "2026-09-10"
+      },
+      "formats": [
+        {
+          "track": "학생부종합(면접형)",
+          "scope": "의과대학·사범대학",
+          "duration": "10분 내외",
+          "preparation": "별도 준비시간 확인값 없음",
+          "panel": "2인 내외",
+          "method": "학생부 기반 대면 면접 · 가치관·태도·의사표현 확인",
+          "pages": "PDF 34쪽"
+        }
+      ],
+      "pastPapers": [],
+      "reviews": []
+    }
+  ],
+  "practiceQuestions": [
+    {
+      "id": "motivation",
+      "category": "지원동기",
+      "text": "지원 전공에 관심을 갖게 된 계기와 이를 확인하기 위해 직접 한 활동을 설명해 주세요.",
+      "kind": "자체 연습 문항 · 실제 기출 아님"
+    },
+    {
+      "id": "inquiry",
+      "category": "탐구 경험",
+      "text": "탐구 활동에서 해결하려 한 문제, 본인이 선택한 방법, 결과와 한계를 설명해 주세요.",
+      "kind": "자체 연습 문항 · 실제 기출 아님"
+    },
+    {
+      "id": "teamwork",
+      "category": "협업",
+      "text": "공동 과제에서 의견이 달랐던 상황과 본인의 역할, 합의를 위해 한 행동을 설명해 주세요.",
+      "kind": "자체 연습 문항 · 실제 기출 아님"
+    },
+    {
+      "id": "growth",
+      "category": "성장",
+      "text": "계획대로 되지 않았던 학습 경험에서 무엇을 바꾸었으며 이후 어떤 변화가 있었나요?",
+      "kind": "자체 연습 문항 · 실제 기출 아님"
+    },
+    {
+      "id": "ethics",
+      "category": "판단 근거",
+      "text": "활동 중 서로 충돌하는 가치를 경험한 사례와 선택 기준, 다른 선택의 한계를 설명해 주세요.",
+      "kind": "자체 연습 문항 · 실제 기출 아님"
+    }
+  ]
+}

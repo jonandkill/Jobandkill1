@@ -319,6 +319,16 @@ app.get("/api/report", async (_request, response) => {
   response.status(405).json({ error: "client_generated_report_only" });
 });
 
+// Expose only the reviewed public practice datasets, never arbitrary server files.
+for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interviews.json']) {
+  app.get('/data/' + filename, (_request, response) => {
+    response.sendFile(path.join(__dirname, 'data', filename), error => {
+      if (error && !response.headersSent) response.status(503).json({error:'practice_data_unavailable'});
+    });
+  });
+}
+app.get('/api/exams', (_request, response) => response.json(exams));
+
 app.get("/api/outcomes", (request, response) => {
   const id = String(request.query.universityId || "");
   if (!/^\d{7}$/.test(id)) return response.status(400).json({ error: "university_id_required" });
