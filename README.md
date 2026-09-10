@@ -61,3 +61,14 @@ npm start
 npm run check:data
 npm test
 ```
+# 2026-09-10 추가 기능
+
+- `#home`: 모션 홈, 상단 탐색 메뉴, 따라오는 지원 후보 도구.
+- `#recommend`: 평균 내신(예: 2.3), 선택 교과별 등급 저장, 같은 전형 과거 입결 병렬 비교. 검증 산식 환산등급만 성적 차이 계산.
+- `#prepare/essay`: 공식 PDF 33개 연습 자료, 문항별 배점 행 209개, 답안 임시 저장·어려운 자료·자기평가 및 형식 피드백.
+- `#prepare/interview`: 12개교 일부 전형 안내, 자체 연습 질문, 답변 구상과 구조 피드백.
+- 논술 목록 중앙 이전/다음·현재/전체 페이지 표시.
+
+개인 합격확률·검증된 합격 순위·논술 정답 자동채점은 제공하지 않는다. 회원 동기화와 검증된 면접 후기 수집은 미완료다. 데이터/검수 상세는 `ESSAY_PRACTICE_AUDIT.md`, `INTERVIEW_AUDIT.md`, `DESIGN_RESEARCH.md`, `USER_ACCEPTANCE.md`를 참조한다.
+
+---
