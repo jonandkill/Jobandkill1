@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0", "version": "5.0", "updated": "2026-09-10",
+  "canonical": "https://www.jobandkill.com/people/jung-daewoong/",
+  "person": {
+    "name": "정대웅", "latin_name": "Daewoong Jung", "suffix": "Ph.D.",
+    "role": "주식회사 잡앤킬 대표", "organization": "주식회사 잡앤킬", "organization_url": "https://www.jobandkill.com/",
+    "tagline": ["구직자의 경험을 이해하고,", "더 나은 채용을 연구합니다."],
+    "introduction": "진로설계부터 자기소개서와 면접까지, 구직자가 자신의 경험을 직무와 연결하도록 돕습니다. 현장에서 만나는 질문을 취업 심리와 AI 채용 연구로 이어가고 있습니다.",
+    "description": "정대웅은 주식회사 잡앤킬 대표로 진로·취업 컨설팅과 면접 교육을 수행하며, 취업불안, AI 채용 경험과 고용주 브랜드를 연구합니다.",
+    "expertise": ["진로·취업 컨설팅", "면접 교육", "취업불안", "AI 채용", "고용주 브랜딩"],
+    "sources": ["company", "phd", "masters", "journal"],
+    "contact": {"label": "잡앤킬 교육·상담 문의", "phone": "052-244-3222", "email": "hitegisa@naver.com"}
+  },
+  "services": [
+    {"id":"career","number":"01","title":"진로·취업 컨설팅","description":"지원 기업과 직무를 살펴보고, 개인의 경험과 준비 과정을 취업전략으로 정리합니다.","tags":["진로설계","기업·직무 이해"]},
+    {"id":"interview","number":"02","title":"자기소개서·면접 교육","description":"경험에서 본인의 행동과 성과를 구분하고, 지원 직무에 맞는 글과 답변으로 전달하도록 돕습니다.","tags":["경험 정리","답변 구성"]},
+    {"id":"hiring","number":"03","title":"채용 경험 연구","description":"취업준비의 심리적 어려움과 AI 기반 평가 경험을 살펴, 구직자와 채용 조직을 함께 이해합니다.","tags":["구직자 행동","고용주 브랜드"]}
+  ],
+  "papers": [
+    {"id":"doctoral-thesis","kind":"Thesis","label":"박사학위논문","degree":"박사","year_month":null,"institution":"국립창원대학교","title":"AI 채용 면접의 지각된 특성이 고용주 브랜드 이미지 및 평가수용적 지원의도에 미치는 영향","authors":["정대웅"],"description":"AI 채용 면접을 구직자가 어떻게 받아들이는지, 그 인식이 고용주 브랜드 이미지와 평가수용적 지원의도에 어떻게 연결되는지를 다룬 연구입니다.","keywords":["AI 채용 면접","고용주 브랜드 이미지","평가수용적 지원의도"],"source_id":"phd"},
+    {"id":"journal-2026","kind":"ScholarlyArticle","label":"학술논문","year_month":"2026-03","journal":"한국진로창업경영학회지","volume":"10","issue":"2","page_start":"239","page_end":"261","title":"AI 역량검사에 대한 구직자 평가 수용 메커니즘: 과업-기술적합성(TTF)의 매개 역할과 자기효능감의 경계조건","authors":["정대웅","김미예","박영근"],"description":"AI 역량검사에 대한 구직자의 평가 수용을 과업-기술적합성(TTF)과 자기효능감의 관계에서 살펴본 공동연구입니다.","keywords":["AI 역량검사","평가 수용","과업-기술적합성","자기효능감"],"source_id":"journal"},
+    {"id":"masters-thesis","kind":"Thesis","label":"석사학위논문","degree":"석사","year_month":"2023-08","institution":"경성대학교 교육대학원","major":"상담심리전공","title":"전문대생의 취업불안과 취업스트레스 관계: 취업준비행동과 구직효능감의 순차적 이중매개효과","authors":["정대웅"],"description":"전문대생의 취업불안과 취업스트레스의 관계를 살펴보고, 취업준비행동과 구직효능감의 순차적 이중매개효과를 다룬 연구입니다.","keywords":["취업불안","취업스트레스","취업준비행동","구직효능감"],"source_id":"masters"}
+  ],
+  "activities": [
+    {"id":"interview-2026","category":"보도·인터뷰","date":"2026-01","title":"채용의 현실과 전략을 말하다","description":"면접의 평가 구조와 채용 편향, 직무 적합도와 AI 채용에 관한 인터뷰입니다.","source_ids":["press-2026a","press-2026b"]},
+    {"id":"platform-2025","category":"보도·인터뷰","date":"2025-12","title":"AI면접관 플랫폼 개발 보도","description":"이력서·자기소개서 기반 질문과 후속 질문을 활용한 면접 연습 플랫폼을 다룬 기사입니다.","source_ids":["platform"]},
+    {"id":"online-interview-2020","category":"교육·행사","date":"2020-05","title":"인크루트 모의 화상면접","description":"온라인 모의면접 프로그램의 면접관으로 참여할 예정임을 전한 보도입니다.","source_ids":["online"]},
+    {"id":"job-fair-2019","category":"교육·행사","date":"2019-10","title":"대전 서구 청년 채용박람회","description":"취업특강과 지원서 첨삭 강사로 초청됐다는 행사 안내 보도입니다.","source_ids":["fair"]},
+    {"id":"ktv-public-2017","category":"방송","date":"2017-03","title":"자료 분석으로 살펴보는 공기업 취업","description":"KTV 국민방송의 공기업 취업전략 강의 기록입니다.","source_ids":["ktv-2017"]},
+    {"id":"ktv-pt-2016","category":"방송","date":"2016-06","title":"금융권 PT면접 전략","description":"KTV 국민방송에서 프레젠테이션 면접 준비를 주제로 진행한 강의 기록입니다.","source_ids":["ktv-2016"]},
+    {"id":"youth-2016","category":"교육·행사","date":"2016-05","title":"청년희망재단 취업특강과 인터뷰","description":"자기소개서 작성과 취업준비를 다룬 같은 시기 활동을 정책브리핑의 두 기록으로 묶었습니다.","source_ids":["policy-2016a","policy-2016b"]}
+  ],
+  "sources": {
+    "company":{"publisher":"잡앤킬","title":"대표자 인사말 및 회사 정보","url":"https://www.jobandkill.com/com/intro_01.html","checked":"2026-09-10"},
+    "phd":{"publisher":"RISS","title":"박사학위논문 서지정보","url":"https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=cd85ccf7905a4200ffe0bdc3ef48d419&keyword=ai%20%EC%A0%95%EB%8C%80%EC%9B%85","checked":"2026-09-10"},
+    "journal":{"publisher":"DBpia","title":"학술논문 서지정보","url":"https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12880981","checked":"2026-09-10"},
+    "masters":{"publisher":"국회도서관","title":"석사학위논문 서지정보","url":"https://dl.nanet.go.kr/detail/KDMT12024000012305","checked":"2026-09-10"},
+    "press-2026a":{"publisher":"글로벌에픽","date":"2026-01-27","title":"정대웅 잡앤킬 교수가 말하는 채용의 현실과 전략","url":"https://www.globalepic.co.kr/view.php?ud=2026012617560932389aeda69934_29","checked":"2026-09-10"},
+    "press-2026b":{"publisher":"비욘드포스트","date":"2026-01-28","title":"정대웅 잡앤킬 교수 “채용 떨어지는 이유는 당신 때문 아닐 수도 있다”","url":"https://www.beyondpost.co.kr/view.php?ud=2026012717392110169aeda69934_30","checked":"2026-09-10"},
+    "platform":{"publisher":"대학저널","date":"2025-12-16","title":"잡앤킬 정대웅 교수 AI면접 연습 가능한 ‘AI면접관 플랫폼’ 개발","url":"https://dhnews.co.kr/news/view/1065601497186561","checked":"2026-09-10"},
+    "online":{"publisher":"뉴스1 · 파이낸셜뉴스","date":"2020-05-04","title":"'언택트 면접감각 익히려면?' 인크루트, 무료 모의 화상면접 진행","url":"https://www.fnnews.com/news/202005040831437166","checked":"2026-09-10"},
+    "fair":{"publisher":"뉴스1 · 파이낸셜뉴스","date":"2019-10-23","title":"대전 서구, 30일 청년 채용박람회 개최","url":"https://www.fnnews.com/news/201910231341029003","checked":"2026-09-10"},
+    "ktv-2017":{"publisher":"KTV 국민방송","date":"2017-03-05","date_kind":"방송 페이지 등록일","title":"객관적 자료 분석을 통한 공기업 취업 전략 - 정대웅 (잡앤킬 대표)","url":"https://www.ktv.go.kr/program/home/PG2160038D/content/533617","checked":"2026-09-10"},
+    "ktv-2016":{"publisher":"KTV 국민방송","date":"2016-06-20","date_kind":"방송 페이지 등록일","title":"금융권 PT면접의 합격 열쇠 - 정대웅 (잡앤킬 대표)","url":"https://m.ktv.go.kr/content/view?content_id=523493","checked":"2026-09-10"},
+    "policy-2016a":{"publisher":"대한민국 정책브리핑","date":"2016-05-12","title":"‘서류광탈’에서 벗어날 자기소개서 작성법","url":"https://www.korea.kr/news/reporterView.do?newsId=148815068","checked":"2026-09-10"},
+    "policy-2016b":{"publisher":"대한민국 정책브리핑 · 위클리공감","date":"2016-05-18","title":"“기존의 ‘틀’ 깨야 취업 ‘벽’ 뚫는다”","url":"https://www.korea.kr/news/interviewView.do?newsId=148815305","checked":"2026-09-10"}
+  }
+}
