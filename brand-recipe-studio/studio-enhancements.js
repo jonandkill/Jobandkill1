@@ -147,7 +147,7 @@
   render=function(){originalRender();bindEnhancements()};
   openHome=function(){originalOpenHome();injectHomePortfolio()};
   function injectHomePortfolio(){
-    const head=document.querySelector('.saved-head');
+    const head=document.querySelector('.saved-head, .v3-section-head');
     if(head&&!document.querySelector('#homePortfolio')){const b=document.createElement('button');b.id='homePortfolio';b.className='btn';b.textContent='저장 시안 포트폴리오';b.onclick=openPortfolioReport;head.append(b)}
   }
   if(document.querySelector('.home-shell'))injectHomePortfolio();else bindEnhancements();
