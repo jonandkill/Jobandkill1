@@ -78,3 +78,9 @@ test('input remains literal and decimal facts are not stripped or reconstructed'
   assert.equal(result.parts[0].original,experience);
   assert.equal(result.characterCount,[...result.text].length);
 });
+
+
+test('action feedback quotes a performed action instead of a situation mentioning an experiment',()=>{
+  const report=reviewWritingDraft('과학 동아리에서 같은 실험을 반복했는데 조마다 결과가 달랐습니다. 저는 측정 조건을 비교하고 실험 기록 양식을 통일하자고 제안했습니다.');
+  assert.equal(report.items.find(item=>item.label==='행동과 선택 이유').evidence,'저는 측정 조건을 비교하고 실험 기록 양식을 통일하자고 제안했습니다.');
+});
