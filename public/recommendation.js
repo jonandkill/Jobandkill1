@@ -49,6 +49,30 @@ export function filterSchoolCandidates(universities, summaries, profile = {}, qu
   return rankSchoolCandidates(universities,summaries,profile).filter(u=>!text||[u.name,u.displayName,u.campus,u.region,...(u.aliases||[])].join(' ').replace(/\s/g,'').toLocaleLowerCase('ko').includes(text));
 }
 
+// A valid overall grade can be applied before optional subject inputs are complete.
+// Incomplete details remain an editable draft and never produce a calculated grade.
+export function applyRecommendationProfile(profile, {average = '', scale = '9', badInput = false, gradePatch = {}, gradeErrors = []} = {}) {
+  const value = String(average).trim();
+  if (!['5','9'].includes(String(scale)) || badInput || (value !== '' && parseGrade(value,scale) === null)) {
+    return {error:`평균 내신은 1~${scale} 사이의 소수점 둘째 자리까지 입력하세요. 예: 2.3`, profile:null};
+  }
+  const detailsPending = gradeErrors.length > 0;
+  const next = {...profile,...gradePatch,average:value,scale:String(scale),
+    averageSource:profile.averageSource === 'entered_subjects' && value === String(profile.average) && !detailsPending ? 'entered_subjects' : 'manual',
+    gradeDetailsStatus:detailsPending ? 'needs_review' : 'ready'};
+  if(detailsPending){next.calculatedAverage=null;next.calculatedAverageMethod=null;}
+  return {profile:next,error:null,detailsPending};
+}
+
+export function gradeReferenceSummary(groups, profile) {
+  return {
+    average:parseGrade(profile.average,profile.scale),scale:String(profile.scale),
+    sameScaleGroups:groups.filter(group=>group.scaleMatches).length,
+    verifiedSeries:groups.filter(group=>group.scaleMatches&&group.comparable).length,
+    calculatedGroups:groups.filter(group=>group.distance!==null).length
+  };
+}
+
 export function renderRecommendations(target, {profile = {}, universities = [], outcomeSchools = [], onSave, onProfileChange} = {}) {
   const local = {...profile,scale:profile.scale||'9'};
   const converted = {};
@@ -58,15 +82,50 @@ export function renderRecommendations(target, {profile = {}, universities = [], 
   const types = [...new Set(universities.map(u=>u.institutionType).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ko'));
   if(local.preferredType&&!types.includes(local.preferredType))local.preferredType='';
   if(local.preferredRegion&&!regions.includes(local.preferredRegion))local.preferredRegion='';
-  target.innerHTML = `<p class="eyebrow">내 성적으로 대학 찾기</p><h1>학교부터 고르고, 내 성적과 비교해요</h1><p>대학을 먼저 둘러보고 관심 학과의 최근 입결을 확인하세요. 세부 성적은 선택이며 입력하면 평균 계산과 더 세밀한 진단에 활용할 수 있어요.</p><form id="recommend-profile" class="panel" novalidate><div class="fields"><div><label for="recommend-average">전체 평균 내신 · 선택</label><input id="recommend-average" type="number" inputmode="decimal" step="0.01" min="1" max="${esc(local.scale)}" placeholder="예: 2.3" value="${esc(local.average||'')}"><p class="hint">예: 2.3등급. 소수점 둘째 자리까지 입력할 수 있어요.</p></div><div><label for="recommend-scale">등급 체계</label><select id="recommend-scale"><option value="9" ${String(local.scale)!=='5'?'selected':''}>9등급제</option><option value="5" ${String(local.scale)==='5'?'selected':''}>5등급제</option></select></div></div><div id="recommend-grade-input"></div><button class="primary" type="submit">내 정보 적용</button><p id="recommend-error" role="alert"></p></form><p class="notice">추천 탐색 순서는 희망 지역·학교 유형과 수집된 입결 연수에 따른 것입니다. 과거 데이터는 현재 전형과 다르거나 오류가 있을 수 있어 합격을 보장하지 않습니다. 전체 평균을 대학별 환산등급으로 간주하거나, 70% 컷을 개인 합격확률로 바꾸지 않습니다.</p><section aria-label="학교 검색"><div class="filters"><div><label for="recommend-school-query">학교 이름 검색</label><input id="recommend-school-query" type="search" placeholder="예: 울산대학교, 서울"></div><div><label for="recommend-region">희망 지역</label><select id="recommend-region"><option value="">전국</option>${regions.map(region=>`<option value="${esc(region)}" ${local.preferredRegion===region?'selected':''}>${esc(region)}</option>`).join('')}</select></div><div><label for="recommend-type">학교 유형</label><select id="recommend-type"><option value="">전체 대학</option>${types.map(type=>`<option value="${esc(type)}" ${local.preferredType===type?'selected':''}>${esc(type)}</option>`).join('')}</select></div></div><p class="hint">현재 탐색 대상은 전국 ${totalSchools}개 캠퍼스입니다. 입결이 없는 학교도 목록에서 확인할 수 있습니다.</p><button type="button" id="recommend-reset">지역·검색 해제 · 전국 학교 보기</button></section><div id="recommend-output" aria-live="polite"></div>`;
+  target.innerHTML = `<p class="eyebrow">내 성적으로 대학 찾기</p><h1>학교부터 고르고, 내 성적과 비교해요</h1><p>대학을 먼저 둘러보고 관심 학과의 최근 입결을 확인하세요. 세부 성적은 선택이며 입력하면 평균 계산과 더 세밀한 진단에 활용할 수 있어요.</p><form id="recommend-profile" class="panel" novalidate><div class="fields"><div><label for="recommend-average">전체 평균 내신 · 선택</label><input id="recommend-average" type="number" inputmode="decimal" step="0.01" min="1" max="${esc(local.scale)}" placeholder="예: 2.3" value="${esc(local.average||'')}"><p class="hint">예: 2.3등급. 소수점 둘째 자리까지 입력할 수 있어요.</p></div><div><label for="recommend-scale">등급 체계</label><select id="recommend-scale"><option value="9" ${String(local.scale)!=='5'?'selected':''}>9등급제</option><option value="5" ${String(local.scale)==='5'?'selected':''}>5등급제</option></select></div></div><div id="recommend-grade-input"></div><button class="primary" type="submit" id="recommend-apply" aria-controls="recommend-output">내 정보 적용</button><p id="recommend-error" class="error" role="alert"></p><div id="recommend-status" class="notice" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></div></form><p class="notice">추천 탐색 순서는 희망 지역·학교 유형과 수집된 입결 연수에 따른 것입니다. 과거 데이터는 현재 전형과 다르거나 오류가 있을 수 있어 합격을 보장하지 않습니다. 전체 평균을 대학별 환산등급으로 간주하거나, 70% 컷을 개인 합격확률로 바꾸지 않습니다.</p><section aria-label="학교 검색"><div class="filters"><div><label for="recommend-school-query">학교 이름 검색</label><input id="recommend-school-query" type="search" placeholder="예: 울산대학교, 서울"></div><div><label for="recommend-region">희망 지역</label><select id="recommend-region"><option value="">전국</option>${regions.map(region=>`<option value="${esc(region)}" ${local.preferredRegion===region?'selected':''}>${esc(region)}</option>`).join('')}</select></div><div><label for="recommend-type">학교 유형</label><select id="recommend-type"><option value="">전체 대학</option>${types.map(type=>`<option value="${esc(type)}" ${local.preferredType===type?'selected':''}>${esc(type)}</option>`).join('')}</select></div></div><p class="hint">현재 탐색 대상은 전국 ${totalSchools}개 캠퍼스입니다. 입결이 없는 학교도 목록에서 확인할 수 있습니다.</p><button type="button" id="recommend-reset">지역·검색 해제 · 전국 학교 보기</button></section><div id="recommend-output" aria-live="polite"></div>`;
   const $ = id => target.querySelector('#'+id);
   const ownedOutput = $('recommend-output');
   const stillActive = () => target.isConnected && $('recommend-output') === ownedOutput;
+  let appliedAverage = String(local.average || ''), appliedScale = String(local.scale);
   const grades = renderGradeInput($('recommend-grade-input'),local,(patch,meta)=>{
     Object.assign(local,patch);
-    if(meta.averageApplied){$('recommend-average').value=patch.average;if(selectedSchool)drawGroups();else drawSchools();}
+    if(meta.averageApplied){
+      $('recommend-average').value=patch.average;
+      local.scale=$('recommend-scale').value;
+      $('recommend-error').textContent='';
+      showAppliedStatus(appliedAverage,appliedScale,[]);
+      refreshGradeResults();
+    }
     onProfileChange?.({...local});
   },{initiallyOpen:false});
+  function gradeLabel(average,scale){return `${average === '' ? '평균 미입력' : average+'등급'} · ${scale}등급제`;}
+  function showAppliedStatus(previousAverage,previousScale,detailErrors){
+    const changed=String(local.average)!==previousAverage||String(local.scale)!==previousScale;
+    const message=changed?`${gradeLabel(previousAverage,previousScale)} → ${gradeLabel(local.average,local.scale)}`:gradeLabel(local.average,local.scale);
+    $('recommend-status').innerHTML=`<strong>✓ ${esc(message)} 적용 완료</strong><p>학교 목록과 학과별 입결 비교표에 반영했어요. 평균만으로 합격 순위를 정하지 않으므로 학교 순서는 그대로일 수 있어요.</p>${detailErrors.length?`<p>선택 세부 성적은 아직 계산에 사용하지 않았어요. ${esc(detailErrors[0])}</p><button type="button" id="recommend-fix-details">세부 성적 오류 수정하기</button>`:''}`;
+    $('recommend-status').hidden=false;
+    if($('recommend-fix-details'))$('recommend-fix-details').onclick=()=>grades.open({focus:true});
+    $('recommend-apply').textContent='내 정보 적용';
+    appliedAverage=String(local.average);appliedScale=String(local.scale);
+  }
+  function refreshGradeResults(){
+    if(selectedSchool){
+      const summary=$('recommend-selected-summary');
+      if(summary)summary.textContent=schoolSummary();
+      drawGroups();
+    }else drawSchools();
+  }
+  function showPendingStatus(){
+    $('recommend-average').removeAttribute('aria-invalid');
+    $('recommend-error').textContent='';
+    $('recommend-status').hidden=false;
+    $('recommend-status').textContent=`입력값을 수정했어요. ‘변경 성적 적용’을 누르면 ${gradeLabel($('recommend-average').value,$('recommend-scale').value)}을 비교표에 반영합니다. 현재 적용값: ${gradeLabel(appliedAverage,appliedScale)}.`;
+    $('recommend-apply').textContent='변경 성적 적용';
+  }
+  function schoolSummary(){
+    const university=universities.find(u=>u.id===selectedSchool);
+    return `${university?.campus||'본교'} · ${university?.region||''} · 내 평균 ${parseGrade(local.average,local.scale)===null?'미입력':local.average+'등급'} · ${local.scale}등급제`;
+  }
   function pageControls(current,total,prefix,label) {
     return `<div class="pagination" role="group" aria-label="${label} 페이지"><button type="button" id="${prefix}-prev" ${current<=1?'disabled':''}>이전</button><span>${current} / ${total}페이지</span><button type="button" id="${prefix}-next" ${current>=total?'disabled':''}>다음</button></div>`;
   }
@@ -91,7 +150,7 @@ export function renderRecommendations(target, {profile = {}, universities = [], 
   function drawSchoolShell() {
     const university=universities.find(u=>u.id===selectedSchool);
     if(!university){backToSchools();return;}
-    ownedOutput.innerHTML=`<section class="recommend-detail"><button type="button" id="recommend-back-schools">← 학교 목록으로</button><h2 tabindex="-1">${esc(university.displayName||university.name)} · 학과별 입결</h2><p>${esc(university.campus||'본교')} · ${esc(university.region)} · 내 평균 ${parseGrade(local.average,local.scale)===null?'미입력':esc(local.average)+'등급'}</p><div class="actions"><a class="button" href="#university/${esc(selectedSchool)}">대학 상세 안내</a><a class="button" href="#majors/${esc(selectedSchool)}">학과 전체 안내</a><a class="button" href="#history/${esc(selectedSchool)}">전체 연도별 입결</a>${onSave?`<button type="button" data-save-school="${esc(selectedSchool)}">+ 이 대학 담기</button>`:''}</div><label for="recommend-major">이 대학의 관심 학과·전형 검색</label><input id="recommend-major" type="search" placeholder="예: 간호, 학생부교과"><div id="recommend-major-output"></div></section>`;
+    ownedOutput.innerHTML=`<section class="recommend-detail"><button type="button" id="recommend-back-schools">← 학교 목록으로</button><h2 tabindex="-1">${esc(university.displayName||university.name)} · 학과별 입결</h2><p id="recommend-selected-summary">${esc(schoolSummary())}</p><div class="actions"><a class="button" href="#university/${esc(selectedSchool)}">대학 상세 안내</a><a class="button" href="#majors/${esc(selectedSchool)}">학과 전체 안내</a><a class="button" href="#history/${esc(selectedSchool)}">전체 연도별 입결</a>${onSave?`<button type="button" data-save-school="${esc(selectedSchool)}">+ 이 대학 담기</button>`:''}</div><label for="recommend-major">이 대학의 관심 학과·전형 검색</label><input id="recommend-major" type="search" placeholder="예: 간호, 학생부교과"><div id="recommend-major-output"></div></section>`;
     $('recommend-back-schools').onclick=backToSchools;
     $('recommend-major').oninput=()=>{groupPage=1;drawGroups();};
     bindSaveButtons();
@@ -103,7 +162,8 @@ export function renderRecommendations(target, {profile = {}, universities = [], 
     const page=paginateItems(groups,groupPage,5);groupPage=page.page;
     const formulas=[...new Map(groups.filter(g=>g.comparable&&g.scaleMatches).map(g=>[g.rows[0].formulaKey,g.rows[0]])).values()];
     const university=universities.find(u=>u.id===selectedSchool);
-    $('recommend-major-output').innerHTML=`<h3 id="recommend-groups-heading" tabindex="-1">${groups.length}개 학과·전형 · ${page.page} / ${page.totalPages}페이지</h3>${formulas.length?`<details class="panel"><summary>대학 산식으로 계산한 환산등급 추가 · 선택</summary><p>전체 평균과 대학 환산등급은 다를 수 있어요. 아래 과거 산식으로 계산한 경우에만 연도별 차이를 산출합니다.</p>${formulas.map((f,i)=>`<form data-formula="${esc(f.formulaKey)}"><h4>${esc(f.formulaLabel||f.formulaKey)}</h4><label for="converted-${i}">대학 산식으로 계산한 환산등급</label><input id="converted-${i}" name="grade" type="number" inputmode="decimal" step="0.01" min="1" max="${esc(f.scale)}" placeholder="예: 2.3" required value="${esc(converted[f.formulaKey]?.grade||'')}"><label><input name="confirmed" type="checkbox" required ${converted[f.formulaKey]?.confirmed?'checked':''}> 전체 평균을 그대로 옮긴 것이 아니라 위 산식으로 계산했습니다.</label><button type="submit">과거 분포와 비교</button></form>`).join('')}</details>`:''}${groups.length?page.items.map(g=>`<article class="panel"><p class="eyebrow">${esc(university?.name||g.universityName)}</p><h3>${esc(g.program)} · ${esc(g.track)}</h3><p>${esc(g.reason)}</p>${g.distance!==null?`<p><strong>과거 범위와 거리 ${g.distance.toFixed(2)}등급</strong> · 70% 기준 ${g.range.min}~${g.range.max}등급</p>`:''}<div class="compare"><table><caption>${esc(university?.name||g.universityName)} ${esc(g.program)} · 공식 발표 성적</caption><thead><tr><th>학년도</th><th>평균</th><th>70% 기준</th><th>내 환산등급 차이</th><th>내 입력 평균 · 별도 기준</th></tr></thead><tbody>${g.rows.map(r=>{const difference=g.differences.find(d=>d.academicYear===r.academicYear);const unit=['5','9'].includes(String(r.scale))?'등급':'점';return `<tr><th>${esc(r.academicYear)}</th><td>${r.gradeMean==null?'미확보':esc(r.gradeMean)+unit}</td><td>${r.grade70==null?'미확보':esc(r.grade70)+unit}</td><td>${difference?(difference.difference>0?'+':'')+difference.difference.toFixed(2)+'등급':'동일 산식 확인 필요'}</td><td>${parseGrade(local.average,local.scale)===null?'미입력':esc(local.average)+'등급'}<br><small>대학 환산등급 아님</small></td></tr>`;}).join('')}</tbody></table></div><p class="hint">전체 평균은 참고로 나란히 표시합니다. 반영 과목·이수단위·집계 대상이 다르면 직접 비교할 수 없습니다. 70% 기준은 합격확률 70%가 아닙니다.</p>${[...new Set(g.rows.map(r=>r.comparabilityNote).filter(Boolean))].map(note=>`<p class="notice">${esc(note)}</p>`).join('')}<p>${g.rows.map(r=>/^https:\/\//.test(r.sourceUrl||'')?`<a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(r.academicYear)} 공식 출처</a>`:'').join(' · ')}</p></article>`).join(''):'<div class="empty"><h3>이 조건의 입결 자료는 아직 수집하지 못했어요</h3><p>이 학교가 없거나 지원할 수 없다는 뜻은 아닙니다. 위 대학 상세·학과 안내를 이용하거나 검색어를 바꿔 보세요.</p></div>'}${groups.length?pageControls(page.page,page.totalPages,'recommend-groups','학과 입결'):''}`;
+    const reference=gradeReferenceSummary(groups,local);
+    $('recommend-major-output').innerHTML=`<h3 id="recommend-groups-heading" tabindex="-1">${groups.length}개 학과·전형 · ${page.page} / ${page.totalPages}페이지</h3><div class="notice"><strong>현재 적용: ${reference.average===null?'평균 미입력':esc(local.average)+'등급'} · ${esc(reference.scale)}등급제</strong><p>같은 등급 체계의 자료 ${reference.sameScaleGroups}개 학과·전형 · 3개년 이상 비교 조건 확인 ${reference.verifiedSeries}개 · 대학 환산등급 차이 계산 ${reference.calculatedGroups}개</p><p>입력 평균은 표의 마지막 열에 표시합니다. 학교별 반영 과목·산식이 확인되기 전에는 합격 가능성이나 성적 차이를 계산하지 않아요.</p></div>${formulas.length?`<details class="panel"><summary>대학 산식으로 계산한 환산등급 추가 · 선택</summary><p>전체 평균과 대학 환산등급은 다를 수 있어요. 아래 과거 산식으로 계산한 경우에만 연도별 차이를 산출합니다.</p>${formulas.map((f,i)=>`<form data-formula="${esc(f.formulaKey)}"><h4>${esc(f.formulaLabel||f.formulaKey)}</h4><label for="converted-${i}">대학 산식으로 계산한 환산등급</label><input id="converted-${i}" name="grade" type="number" inputmode="decimal" step="0.01" min="1" max="${esc(f.scale)}" placeholder="예: 2.3" required value="${esc(converted[f.formulaKey]?.grade||'')}"><label><input name="confirmed" type="checkbox" required ${converted[f.formulaKey]?.confirmed?'checked':''}> 전체 평균을 그대로 옮긴 것이 아니라 위 산식으로 계산했습니다.</label><button type="submit">과거 분포와 비교</button></form>`).join('')}</details>`:''}${groups.length?page.items.map(g=>`<article class="panel"><p class="eyebrow">${esc(university?.name||g.universityName)}</p><h3>${esc(g.program)} · ${esc(g.track)}</h3><p>${esc(g.reason)}</p>${g.range&&g.scaleMatches?`<p><strong>최근 ${g.rows.length}개년 공식 70% 기준: ${g.range.min.toFixed(2)}~${g.range.max.toFixed(2)}등급</strong><br>내 입력 평균 ${parseGrade(local.average,local.scale)===null?'미입력':esc(local.average)+'등급'}은 별도 기준의 참고값입니다.</p>`:''}${g.distance!==null?`<p><strong>과거 범위와 거리 ${g.distance.toFixed(2)}등급</strong> · 70% 기준 ${g.range.min}~${g.range.max}등급</p>`:''}<div class="compare"><table><caption>${esc(university?.name||g.universityName)} ${esc(g.program)} · 공식 발표 성적</caption><thead><tr><th>학년도</th><th>평균</th><th>70% 기준</th><th>내 환산등급 차이</th><th>내 입력 평균 · 별도 기준</th></tr></thead><tbody>${g.rows.map(r=>{const difference=g.differences.find(d=>d.academicYear===r.academicYear);const unit=['5','9'].includes(String(r.scale))?'등급':'점';return `<tr><th>${esc(r.academicYear)}</th><td>${r.gradeMean==null?'미확보':esc(r.gradeMean)+unit}</td><td>${r.grade70==null?'미확보':esc(r.grade70)+unit}</td><td>${difference?(difference.difference>0?'+':'')+difference.difference.toFixed(2)+'등급':'동일 산식 확인 필요'}</td><td>${parseGrade(local.average,local.scale)===null?'미입력':esc(local.average)+'등급'}<br><small>대학 환산등급 아님</small></td></tr>`;}).join('')}</tbody></table></div><p class="hint">전체 평균은 참고로 나란히 표시합니다. 반영 과목·이수단위·집계 대상이 다르면 직접 비교할 수 없습니다. 70% 기준은 합격확률 70%가 아닙니다.</p>${[...new Set(g.rows.map(r=>r.comparabilityNote).filter(Boolean))].map(note=>`<p class="notice">${esc(note)}</p>`).join('')}<p>${g.rows.map(r=>/^https:\/\//.test(r.sourceUrl||'')?`<a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(r.academicYear)} 공식 출처</a>`:'').join(' · ')}</p></article>`).join(''):'<div class="empty"><h3>이 조건의 입결 자료는 아직 수집하지 못했어요</h3><p>이 학교가 없거나 지원할 수 없다는 뜻은 아닙니다. 위 대학 상세·학과 안내를 이용하거나 검색어를 바꿔 보세요.</p></div>'}${groups.length?pageControls(page.page,page.totalPages,'recommend-groups','학과 입결'):''}`;
     target.querySelectorAll('[data-formula]').forEach(form=>form.onsubmit=event=>{event.preventDefault();const key=form.dataset.formula;const formula=formulas.find(f=>f.formulaKey===key);const grade=parseGrade(form.elements.grade.value,formula.scale);if(grade===null||!form.elements.confirmed.checked)return;converted[key]={grade,scale:formula.scale,confirmed:true};drawGroups();});
     if($('recommend-groups-prev'))$('recommend-groups-prev').onclick=()=>{groupPage--;drawGroups(true);};
     if($('recommend-groups-next'))$('recommend-groups-next').onclick=()=>{groupPage++;drawGroups(true);};
@@ -127,10 +187,18 @@ export function renderRecommendations(target, {profile = {}, universities = [], 
   for(const id of ['recommend-region','recommend-type','recommend-school-query'])$(id).oninput=applyFilters;
   $('recommend-profile').onsubmit=event=>{
     event.preventDefault();const scale=$('recommend-scale').value;const value=$('recommend-average').value;const result=grades.validate();
-    if($('recommend-average').validity.badInput||(value!==''&&parseGrade(value,scale)===null)||result.errors.length){$('recommend-error').textContent=result.errors[0]||`평균 내신은 1~${scale} 사이의 소수점 둘째 자리까지 입력하세요. 예: 2.3`;return;}
-    local.average=value;local.scale=scale;Object.assign(local,grades.getValue());onProfileChange?.({...local});$('recommend-error').textContent='내 정보에 적용했어요.';
-    if(selectedSchool){drawGroups();}else{drawSchools();}
+    const update=applyRecommendationProfile(local,{average:value,scale,badInput:$('recommend-average').validity.badInput,gradePatch:grades.getValue(),gradeErrors:result.errors});
+    if(update.error){$('recommend-error').textContent=update.error;$('recommend-average').setAttribute('aria-invalid','true');$('recommend-average').focus();return;}
+    Object.assign(local,update.profile);
+    $('recommend-average').value=local.average;
+    onProfileChange?.({...local});
+    $('recommend-error').textContent='';
+    showAppliedStatus(appliedAverage,appliedScale,result.errors);
+    refreshGradeResults();
+    $('recommend-status').focus({preventScroll:true});
+    $('recommend-status').scrollIntoView({block:'center',behavior:'auto'});
   };
-  $('recommend-scale').onchange=()=>{const scale=$('recommend-scale').value;local.scale=scale;$('recommend-average').max=scale;grades.setScale(scale);$('recommend-error').textContent='등급 체계가 바뀌었어요. 기존 성적이 선택한 체계에 맞는지 확인한 뒤 적용해 주세요. 5등급제와 9등급제를 자동 환산하지 않습니다.';};
+  $('recommend-average').oninput=()=>{local.averageSource='manual';showPendingStatus();};
+  $('recommend-scale').onchange=()=>{const scale=$('recommend-scale').value;$('recommend-average').max=scale;grades.setScale(scale);showPendingStatus();$('recommend-error').textContent='등급 체계가 바뀌었어요. 기존 성적이 선택한 체계에 맞는지 확인한 뒤 적용해 주세요. 5등급제와 9등급제를 자동 환산하지 않습니다.';};
   drawSchools();
 }

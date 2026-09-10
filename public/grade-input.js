@@ -70,10 +70,19 @@ export function renderGradeInput(root, profile = {}, onChange = () => {}, option
     $('[data-grade-apply]').disabled=calculation.average===null;
     if(notify)onChange(patch(),{averageApplied:false,calculation,errors:calculation.errors});
   }
-  $('[data-grade-toggle]').onclick=()=>{open=!open;$('[data-grade-body]').hidden=!open;$('[data-grade-toggle]').setAttribute('aria-expanded',String(open));$('[data-grade-toggle]').textContent=open?'입력란 접기':'세부 성적 입력하기';};
+  function setOpen(value,{focus=false}={}){
+    open=Boolean(value);$('[data-grade-body]').hidden=!open;
+    $('[data-grade-toggle]').setAttribute('aria-expanded',String(open));
+    $('[data-grade-toggle]').textContent=open?'입력란 접기':'세부 성적 입력하기';
+    if(focus&&open){
+      const first=root.querySelector('[data-grade-field="grade"]')||$('[data-grade-toggle]');
+      first.focus({preventScroll:true});first.scrollIntoView({block:'center'});
+    }
+  }
+  $('[data-grade-toggle]').onclick=()=>setOpen(!open);
   $('[data-grade-add]').onclick=()=>{entries.push({subject:'',grade:'',units:''});drawRows();update();root.querySelector(`[data-grade-row="${entries.length-1}"][data-grade-field="subject"]`).focus();};
   $('[data-grade-scale-confirm]').onchange=()=>{if($('[data-grade-scale-confirm]').checked){enteredScale=scale;update();}};
   $('[data-grade-apply]').onclick=()=>{update(false);if(calculation.average===null)return;onChange({...patch(),average:calculation.average.toFixed(2),averageSource:'entered_subjects'},{averageApplied:true,calculation,errors:[]});$('[data-grade-calculation]').insertAdjacentHTML('beforeend','<p>평균 내신에 적용했어요. 입력한 과목 범위를 확인해 주세요.</p>');};
   drawRows();update(false);
-  return {getValue:()=>patch(),validate,setScale:value=>{scale=String(value);if(!entries.some(row=>row.grade||row.units))enteredScale=scale;$('[data-grade-scale-confirm]').checked=false;root.querySelectorAll('[data-grade-field="grade"]').forEach(input=>input.max=scale);update();}};
+  return {getValue:()=>patch(),validate,open:options=>setOpen(true,options),setScale:value=>{scale=String(value);if(!entries.some(row=>row.grade||row.units))enteredScale=scale;$('[data-grade-scale-confirm]').checked=false;root.querySelectorAll('[data-grade-field="grade"]').forEach(input=>input.max=scale);update();}};
 }
