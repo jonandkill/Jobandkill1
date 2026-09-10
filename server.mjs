@@ -313,7 +313,7 @@ app.get("/api/health", async (_request, response) => {
 app.get("/api/catalog", async (_request, response) => {
   try {
     const [sources, programs, universities] = await Promise.all([getSources(), getPrograms(), getUniversities()]);
-    response.set("Cache-Control", "public, max-age=300");
+    response.set("Cache-Control", "no-cache");
     response.json({ metadata: { ...seed.metadata, registry: {...universityRegistry.metadata,totalWithSupplements:universities.length,supplementalCount:supplementalRegistry.universities.length} }, sources, programs, universities, details, exams, coverage, outcomeSchools, essayUniversities, storage: storageMode });
   } catch (error) {
     response.status(500).json({ error: "catalog_unavailable" });

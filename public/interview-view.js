@@ -14,12 +14,32 @@ export function splitSentences(text = '') {
   return String(text).replace(/\r/g, '').split(/(?<=[.!?。！？])\s+|\n+/).map(x => x.trim()).filter(Boolean);
 }
 
+function relevantEvidence(key, sentences) {
+  const actionVerb=/(?:분석|비교|측정|기록|검증|통제|조사|설계|제안|실행|수정|설득|정리|연습|관찰|확인|통일|반복)(?:했|하|해|한|하여|하고|하도록|해보|해 보)/;
+  const rolePhrase=/담당|역할|책임|맡[았은아]/;
+  const cues={
+    situation:[[/어렵|어려|달라|달랐|문제|갈등|실패|부족|처음|당시|오류|불일치/,6],[/학년|수업|동아리|프로젝트|활동|실험|과제|봉사|탐구/,2]],
+    role:[[rolePhrase,6],[/저는|제가|나는|내가/,1],[/(?:저는|제가|나는|내가).*(?:분석|비교|조사|설계|실행|제안|통제)/,3]],
+    action:[[actionVerb,5],[/제안했|선택했|통일하|수정했|통제했/,3],[/먼저|다음|반복|위해|때문|저는|제가|내가/,1]],
+    result:[[/줄었|늘었|향상되|향상됐|높아졌|낮아졌|개선되|개선됐|완성했|성공했|실패했|달라졌|도달했|피드백을 받|평가를 받|확인할 수 있었/,6],[/전후|이전보다|이후에는|그 결과|그결과|변화가/,3],[/\d\s*(?:명|회|번|점|%|분|시간|개)/,1]],
+    learning:[[/배웠|배운|깨달|알게 되|알게되|중요성을|한계를/,6],[/앞으로|전공|학과|진학|배우고|공부하|학습|지키고 싶/,3]]
+  };
+  const minimum={situation:2,role:2,action:5,result:3,learning:3};
+  return sentences.map((sentence,index)=>{
+    let relevance=(cues[key]||[]).reduce((sum,[pattern,weight])=>sum+(pattern.test(sentence)?weight:0),0);
+    if(key!=='role'&&rolePhrase.test(sentence)&&!actionVerb.test(sentence)&&!/(문제|어려|갈등|줄었|배웠|깨달)/.test(sentence))relevance=0;
+    if(key==='action'&&/배웠|배운|깨달|중요성을/.test(sentence))relevance-=4;
+    if(key==='result'&&/배웠|배운|깨달|싶습니다|계획입니다/.test(sentence))relevance=0;
+    return {sentence,index,relevance};
+  }).filter(row=>row.relevance>=minimum[key]).sort((a,b)=>b.relevance-a.relevance||a.index-b.index)[0]?.sentence;
+}
+
 // A marker is an expression to discuss, not proof of ability or factual accuracy.
 export function interviewFeedback(value = '', context = {}) {
   const text = typeof value === 'string' ? value.trim() : legacyFields.map(k => String(value[k] || '').trim()).filter(Boolean).join('\n\n');
   const sentences = splitSentences(text);
   const items = rules.map(rule => {
-    const sentence = sentences.find(s => rule.pattern.test(s));
+    const sentence = relevantEvidence(rule.key,sentences);
     return {key:rule.key, label:rule.label, detected:!!sentence, filled:!!sentence, evidence:sentence || '', feedback:sentence ? '이 문장을 근거로 설명할 수 있어요. ' + rule.prompt : rule.prompt};
   });
   const followups = [];
@@ -72,13 +92,20 @@ export function validateResumeFile(file) {
   return '';
 }
 
-export async function extractResumeFile(file) {
+export function resumeFileError(error = {}) {
+  if(['NotReadableError','NotFoundError','SecurityError'].includes(error.name))return '선택한 파일을 브라우저에서 읽을 수 없어요. 파일이 이동·삭제되었거나 접근 권한이 제한되었을 수 있습니다. 기기에 저장한 파일을 다시 선택하거나 내용을 붙여넣어 주세요.';
+  if(error.name==='PasswordException')return '암호가 설정된 PDF는 읽을 수 없어요. 암호를 해제한 사본을 선택하거나 필요한 내용을 붙여넣어 주세요.';
+  return /10MB|50쪽|추출하지|PDF 또는/.test(error.message||'')?error.message:'파일을 읽지 못했어요. 파일 형식·암호·스캔 여부를 확인하거나 필요한 문장을 붙여넣어 주세요.';
+}
+
+export async function extractResumeFile(file, runtime = null) {
   const error = validateResumeFile(file); if (error) throw new Error(error);
   if (/\.txt$/i.test(file.name)) return (await file.text()).slice(0,30000);
-  const pdfjs = await import('/vendor/pdfjs/pdf.mjs');
-  pdfjs.GlobalWorkerOptions.workerSrc = '/vendor/pdfjs/pdf.worker.mjs';
-  const doc = await pdfjs.getDocument({data:new Uint8Array(await file.arrayBuffer()),isEvalSupported:false,cMapUrl:'/vendor/pdfjs/cmaps/',cMapPacked:true,standardFontDataUrl:'/vendor/pdfjs/standard_fonts/',wasmUrl:'/vendor/pdfjs/wasm/'}).promise;
+  const pdfjs = runtime || await import('/vendor/pdfjs/pdf.mjs');
+  if(!runtime)pdfjs.GlobalWorkerOptions.workerSrc = '/vendor/pdfjs/pdf.worker.mjs';
+  const loadingTask = pdfjs.getDocument({data:new Uint8Array(await file.arrayBuffer()),isEvalSupported:false,cMapUrl:'/vendor/pdfjs/cmaps/',cMapPacked:true,standardFontDataUrl:'/vendor/pdfjs/standard_fonts/',wasmUrl:'/vendor/pdfjs/wasm/'});
   try {
+    const doc = await loadingTask.promise;
     if (doc.numPages > 50) throw new Error('50쪽 이하 파일을 선택하거나 필요한 부분을 붙여넣어 주세요.');
     let text = '';
     for (let page = 1; page <= doc.numPages && text.length < 30000; page++) {
@@ -87,7 +114,7 @@ export async function extractResumeFile(file) {
     }
     if (text.trim().length < 30) throw new Error('글자를 추출하지 못했어요. 스캔 PDF는 필요한 문장을 직접 붙여넣어 주세요.');
     return text.slice(0,30000);
-  } finally { await doc.destroy(); }
+  } finally { await loadingTask.destroy(); }
 }
 
 export function findOfficialInterviewSchool(university, schools = []) {
@@ -104,7 +131,7 @@ export async function renderInterview(root) {
   root.innerHTML = '<p class="eyebrow">면접 준비실</p><h1>한 번의 답변에서, 다음 개선점을 찾아요</h1><p id="iv-loading" role="status">학교와 면접 자료를 불러오고 있어요…</p>';
   const results = await Promise.allSettled([
     fetch('/data/interviews.json').then(r => {if(!r.ok)throw Error();return r.json();}),
-    fetch('/api/catalog').then(r => {if(!r.ok)throw Error();return r.json();}),
+    fetch('/api/catalog',{cache:'no-cache'}).then(r => {if(!r.ok)throw Error();return r.json();}),
     fetch('/api/integrations').then(r => {if(!r.ok)throw Error();return r.json();})
   ]);
   if (!active()) return;
@@ -116,7 +143,7 @@ export async function renderInterview(root) {
   const catalog = results[1].status === 'fulfilled' ? results[1].value : null;
   const integration = results[2].status === 'fulfilled' ? results[2].value : null;
   const schools = (catalog?.universities || data.schools.map((s,i) => ({id:'official-'+i,name:s.name}))).filter(s => !inactive.has(s.id)).sort((a,b) => a.name.localeCompare(b.name,'ko'));
-  let state = {school:'', major:'', format:'', question:'target-motivation', answers:{}, custom:''};
+  let state = {school:'', major:'', majorManual:'', format:'', question:'target-motivation', answers:{}, custom:''};
   try { state = {...state, ...JSON.parse(localStorage.getItem('jobnkill-interview-v2') || '{}')}; } catch {}
   if(!state.answers || typeof state.answers!=='object')state.answers={};
   let resumeEvidence = [], questions = [], loadVersion = 0, uploadVersion = 0;
@@ -130,10 +157,13 @@ export async function renderInterview(root) {
   const selectedSchool = () => schools.find(s => s.id === $('#iv-school').value);
   const selectedOfficial = () => findOfficialInterviewSchool(selectedSchool(),data.schools);
   $('#iv-major').parentElement.insertAdjacentHTML('afterend','<div><label for="iv-format">확인된 면접 전형 (선택)</label><select id="iv-format"><option value="">전형 미선택 · 공통 연습</option></select></div>');
-  const questionKey = () => [$('#iv-school').value, $('#iv-major').value, $('#iv-format').value, $('#iv-question').value].join('|');
+  $('#iv-major').parentElement.insertAdjacentHTML('beforeend','<label for="iv-major-manual">희망학과 직접 입력 (선택)</label><input id="iv-major-manual" maxlength="80" placeholder="예: 인공지능학과" aria-describedby="iv-major-manual-note"><p id="iv-major-manual-note" class="hint">목록에 없으면 직접 적어 주세요. 직접 입력한 학과를 우선 사용하며, 대학에서 확인한 학과·전형 정보로 간주하지 않습니다. 목록에서 다시 선택하면 직접 입력값이 지워집니다.</p><p id="iv-major-applied" class="hint" role="status"></p>');
+  $('#iv-major-manual').value=typeof state.majorManual==='string'?state.majorManual:'';
+  const selectedMajor = () => $('#iv-major-manual').value.trim() || $('#iv-major').value;
+  const questionKey = () => [$('#iv-school').value, ($('#iv-major-manual').value.trim()?'직접입력:':'')+selectedMajor(), $('#iv-format').value, $('#iv-question').value].join('|');
   const progress = () => { $('#iv-progress').textContent = [...$('#iv-answer').value].length+'자 · 답변 후 보완할 부분을 확인할 수 있어요'; };
   function persist() {
-    state.school = $('#iv-school').value; state.major = $('#iv-major').value; state.format = $('#iv-format').value; state.question = $('#iv-question').value; state.custom = $('#iv-custom').value; state.persist = $('#iv-persist').checked;
+    state.school = $('#iv-school').value; state.major = $('#iv-major').value; state.majorManual = $('#iv-major-manual').value.trim(); state.format = $('#iv-format').value; state.question = $('#iv-question').value; state.custom = $('#iv-custom').value; state.persist = $('#iv-persist').checked;
     state.answers[questionKey()] = $('#iv-answer').value;
     try {
       const saved = {...state, question:state.question.startsWith('resume-')?'target-motivation':state.question, answers:Object.fromEntries(Object.entries(state.answers).filter(([k])=>!k.split('|').at(-1).startsWith('resume-')))};
@@ -153,7 +183,10 @@ export async function renderInterview(root) {
   function updateQuestions() {
     const old = $('#iv-question').value || state.question;
     const format=selectedOfficial()?.formats?.[Number($('#iv-format').value)];
-    questions = buildPracticeQuestions({school:selectedSchool()?.name, major:$('#iv-major').value, evidence:resumeEvidence, formats:$('#iv-format').value!==''&&format?[format]:[], basics:data.practiceQuestions});
+    const manual=!!$('#iv-major-manual').value.trim();
+    $('#iv-format').disabled=manual;
+    $('#iv-major-applied').textContent=selectedMajor()?(manual?'직접 입력 학과: ':'수집 목록에서 선택: ')+selectedMajor()+(manual?' · 분야별 연습 질문에만 사용하며 공식 전형 질문과 연결하지 않아요.':''):'';
+    questions = buildPracticeQuestions({school:selectedSchool()?.name, major:selectedMajor(), evidence:resumeEvidence, formats:!manual&&$('#iv-format').value!==''&&format?[format]:[], basics:data.practiceQuestions});
     $('#iv-question').innerHTML = questions.map(q=>'<option value="'+esc(q.id)+'">'+esc(q.category)+'</option>').join('')+'<option value="custom">직접 질문 입력</option>';
     $('#iv-question').value = old === 'custom' || questions.some(q=>q.id===old) ? old : questions[0].id;
     changeQuestion();
@@ -166,6 +199,7 @@ export async function renderInterview(root) {
   async function changeSchool(initial = false) {
     const version = ++loadVersion;
     const desired = initial ? state.major : '';
+    if(!initial)$('#iv-major-manual').value='';
     showOfficial();
     const formats=selectedOfficial()?.formats||[];
     $('#iv-format').innerHTML='<option value="">'+(formats.length?'전형 미선택 · 공통 연습':'확인된 면접 전형 없음')+'</option>'+formats.map((f,i)=>'<option value="'+i+'">'+esc(f.track+' · '+f.scope)+'</option>').join('');
@@ -180,7 +214,8 @@ export async function renderInterview(root) {
     $('#iv-major').disabled=false; $('#iv-major').value=departments.some(d=>d.name===desired)?desired:'';updateQuestions();
   }
   $('#iv-school').onchange=()=>changeSchool();
-  $('#iv-major').onchange=updateQuestions;
+  $('#iv-major').onchange=()=>{$('#iv-major-manual').value='';updateQuestions();};
+  $('#iv-major-manual').oninput=()=>{if($('#iv-major-manual').value.trim())$('#iv-format').value='';updateQuestions();};
   $('#iv-format').onchange=updateQuestions;
   $('#iv-question').onchange=changeQuestion;
   $('#iv-answer').oninput=persist; $('#iv-custom').oninput=persist; $('#iv-persist').onchange=persist;
@@ -188,7 +223,7 @@ export async function renderInterview(root) {
     const file=$('#iv-upload').files[0];if(!file)return;const version=++uploadVersion;
     $('#iv-upload-status').textContent='기기에서 문서를 읽고 있어요…';$('#iv-make-questions').disabled=true;
     try {const text=await extractResumeFile(file);if(!active()||version!==uploadVersion)return;$('#iv-resume').value=text;$('#iv-upload-status').textContent='문장을 추출했어요. 내용을 확인한 뒤 “이 내용으로 질문 만들기”를 눌러 주세요.';}
-    catch(error){if(active()&&version===uploadVersion)$('#iv-upload-status').textContent=/10MB|50쪽|추출하지|PDF 또는/.test(error.message||'')?error.message:'파일을 읽지 못했어요. 암호·스캔 여부를 확인하거나 필요한 문장을 붙여넣어 주세요.';}
+    catch(error){if(active()&&version===uploadVersion)$('#iv-upload-status').textContent=resumeFileError(error);}
     finally {if(active()&&version===uploadVersion)$('#iv-make-questions').disabled=false;}
   };
   $('#iv-make-questions').onclick=()=>{
@@ -202,7 +237,7 @@ export async function renderInterview(root) {
   $('#iv-writer').innerHTML=safeUrl(writer?.url)?link(writer.url,writer.label||'잡앤킬 자기소개서 작성 도구 열기')+'<p class="hint">작성 도구는 새 창에서 열립니다. 문서가 자동 전송되지는 않아요.</p>':'<p class="hint">자기소개서 작성 도구의 연결 주소를 확인 중입니다. 작성한 자료를 위에서 가져오거나 붙여넣을 수 있어요.</p>';
   $('#iv-clear').onclick=()=>{$('#iv-answer').value='';persist();$('#iv-feedback').innerHTML='';$('#iv-answer').focus();};
   $('#iv-form').onsubmit=event=>{
-    event.preventDefault();persist();const result=interviewFeedback($('#iv-answer').value,{major:$('#iv-major').value});const out=$('#iv-feedback');
+    event.preventDefault();persist();const result=interviewFeedback($('#iv-answer').value,{major:selectedMajor()});const out=$('#iv-feedback');
     if(!result.text){out.innerHTML='<p>내 답변을 먼저 작성해 주세요.</p>';$('#iv-answer').focus();return;}
     out.innerHTML='<section class="panel"><p class="eyebrow">답변 → 피드백 → 다시 답변</p><h2>먼저 이 부분부터 보완해 보세요</h2><ol>'+result.priority.map(p=>'<li>'+esc(p)+'</li>').join('')+'</ol><h3>내 답변에서 확인한 표현</h3><p class="hint">문장 표현을 찾는 기본 검사입니다. 표현이 있다는 것만으로 역량이나 사실성이 입증되는 것은 아닙니다.</p>'+result.items.map(item=>'<article class="program"><h4>'+esc(item.label)+' · '+(item.detected?'관련 표현 발견':'보완할 표현 확인')+'</h4>'+(item.evidence?'<blockquote>'+esc(item.evidence)+'</blockquote>':'')+'<p>'+esc(item.feedback)+'</p></article>').join('')+'<h3>잡앤킬 관점으로 더 깊게 답하기</h3><ul><li><strong>전문성:</strong> 직접 해 본 탐구·실습과 책·수업으로 익힌 지식을 구분하고, 근거를 설명하세요.</li><li><strong>성향:</strong> “성실하다” 같은 평가보다 선택 상황에서 드러난 태도·가치와 행동을 말하세요.</li><li><strong>전공·진로관:</strong> 이 경험이 왜 해당 전공의 학습과 향후 역할에 연결되는지 자신의 말로 설명하세요.</li></ul><h3>이어질 수 있는 추가 질문</h3><ul>'+result.followups.map(q=>'<li>'+esc(q)+'</li>').join('')+'</ul><button class="primary" id="iv-revise">피드백을 보고 답변 수정하기</button><p class="hint">이 피드백은 입력 문장에 적용한 자체 연습 규칙입니다. 사실·전공 지식의 정확성이나 합격가능성을 판정하는 평가 점수는 제공하지 않습니다.</p></section>';
     $('#iv-revise').onclick=()=>{$('#iv-answer').focus();$('#iv-answer').scrollIntoView({block:'center',behavior:'auto'});};out.tabIndex=-1;out.focus();out.scrollIntoView({block:'start'});

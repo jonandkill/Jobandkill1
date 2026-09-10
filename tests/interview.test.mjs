@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {interviewFeedback, extractResumeEvidence, buildPracticeQuestions, validateResumeFile, findOfficialInterviewSchool} from '../public/interview-view.js';
+import {interviewFeedback, extractResumeEvidence, buildPracticeQuestions, validateResumeFile, findOfficialInterviewSchool,resumeFileError,extractResumeFile} from '../public/interview-view.js';
 
 test('blank answer has no evidence, followups or synthetic score',()=>{
   const r=interviewFeedback('   \n');
@@ -55,4 +55,46 @@ test('official practice question names its exact verified track and scope',()=>{
   const question=questions.find(q=>q.id==='target-official');
   assert.ok(question.text.includes('일반전형 전형(간호대학)'));
   assert.ok(questions.find(q=>q.id==='target-domain').kind.includes('실제 기출'));
+});
+test('feedback chooses strong category evidence instead of repeating a record-keeper role sentence',()=>{
+  const answer='저는 과학 동아리에서 기록 담당을 맡았습니다. 처음에는 측정값이 달라 비교하기 어려웠습니다. 저는 측정 위치와 시간을 통일하고 세 번 반복해 평균을 기록하도록 제안했습니다. 팀원들과 결과를 비교하면서 측정 조건을 맞추는 중요성을 배웠습니다. 간호학에서도 관찰 기록의 정확성을 지키고 싶습니다.';
+  const items=Object.fromEntries(interviewFeedback(answer).items.map(item=>[item.key,item]));
+  assert.ok(items.role.evidence.includes('기록 담당'));
+  assert.ok(items.situation.evidence.includes('어려웠습니다'));
+  assert.ok(items.action.evidence.includes('제안했습니다'));
+  assert.ok(items.learning.evidence.includes('배웠습니다'));
+  assert.equal(items.result.detected,false);
+});
+test('the noun record alone does not establish action or outcome',()=>{
+  const items=Object.fromEntries(interviewFeedback('저는 기록 담당을 맡았습니다.').items.map(item=>[item.key,item]));
+  assert.equal(items.action.detected,false);assert.equal(items.result.detected,false);
+});
+test('file access failure provides a recoverable cause without repeating document text',()=>{
+  const message=resumeFileError({name:'NotReadableError',message:'sensitive filename and private content'});
+  assert.ok(message.includes('접근 권한'));
+  assert.ok(message.includes('다시 선택'));
+  assert.equal(message.includes('sensitive'),false);
+});
+test('real PDF.js 6 extracts a PDF and releases its loading task without losing the text',async()=>{
+  const pdfjs=await import('pdfjs-dist/legacy/build/pdf.mjs');
+  const expected='I compared measurement records and proposed a repeatable procedure for our science project.';
+  const stream='BT /F1 12 Tf 40 700 Td ('+expected+') Tj ET';
+  const objects=[
+    '<< /Type /Catalog /Pages 2 0 R >>',
+    '<< /Type /Pages /Kids [3 0 R] /Count 1 >>',
+    '<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>',
+    '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',
+    '<< /Length '+stream.length+' >>\nstream\n'+stream+'\nendstream'
+  ];
+  let pdf='%PDF-1.4\n';const offsets=[0];
+  for(const [i,body] of objects.entries()){offsets.push(Buffer.byteLength(pdf));pdf+=(i+1)+' 0 obj\n'+body+'\nendobj\n';}
+  const xref=Buffer.byteLength(pdf);
+  pdf+='xref\n0 6\n0000000000 65535 f \n'+offsets.slice(1).map(offset=>String(offset).padStart(10,'0')+' 00000 n \n').join('')+'trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF';
+  let released=false;
+  const runtime={getDocument(options){
+    const task=pdfjs.getDocument({...options,standardFontDataUrl:new URL('../node_modules/pdfjs-dist/standard_fonts/',import.meta.url).pathname});
+    const destroy=task.destroy.bind(task);task.destroy=async()=>{await destroy();released=true;};return task;
+  }};
+  const result=await extractResumeFile(new File([pdf],'sample.pdf',{type:'application/pdf'}),runtime);
+  assert.ok(result.includes(expected));assert.equal(released,true);
 });

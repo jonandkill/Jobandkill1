@@ -38,11 +38,11 @@ export function validateGradeEntries(entries, scale, enteredScale = scale) {
 }
 
 // Emits a profile patch. The overall average changes only when the learner applies it.
-export function renderGradeInput(root, profile = {}, onChange = () => {}) {
+export function renderGradeInput(root, profile = {}, onChange = () => {}, options = {}) {
   let scale = String(profile.scale || '9');
   let entries = initialGradeEntries(profile);
   let enteredScale = String(profile.gradeEntriesScale || profile.subjectGradesScale || scale);
-  let open = entries.some(row => row.grade || row.units);
+  let open = options.initiallyOpen ?? entries.some(row => row.grade || row.units);
   let calculation = validateGradeEntries(entries,scale,enteredScale);
   root.innerHTML = `<section class="grade-input" aria-label="선택 세부 성적"><div class="section-head"><div><h3>세부 성적 입력 · 선택</h3><p class="hint">과목별 성적을 넣으면 평균도 계산해 드려요. 나중에 입력해도 됩니다.</p></div><button type="button" data-grade-toggle aria-expanded="${open}">${open?'입력란 접기':'세부 성적 입력하기'}</button></div><div data-grade-body ${open?'':'hidden'}><p>국어 2.3등급, 수학 1.8등급처럼 입력하세요. 학기별 과목을 따로 적으려면 ‘과목 추가’를 누르세요.</p><p class="hint">이수단위·학점을 모두 입력하면 가중평균, 모두 비우면 단순평균입니다. 일부 과목만 넣었다면 해당 과목들만의 평균이며 전체 학생부 평균과 다를 수 있어요.</p><div data-grade-rows></div><button type="button" data-grade-add>+ 과목 추가</button><div class="notice" data-grade-calculation role="status" aria-live="polite"></div><button class="primary" type="button" data-grade-apply>계산한 평균을 내신에 적용</button><p class="hint">세부 성적을 추가하면 더 세밀한 진단에 활용할 수 있어요. 대학별 반영 교과·학기·이수단위와 산식까지 확인된 경우에만 대학 환산등급을 계산합니다.</p></div></section>`;
   const $ = selector => root.querySelector(selector);

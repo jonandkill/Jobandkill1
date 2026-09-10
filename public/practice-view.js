@@ -78,7 +78,9 @@ export async function renderPractice(root) {
   }
   async function open(id, requestedQuestionId = '') {
     const version = ++openVersion;
-    clearInterval(clock); reader?.destroy(); reader = null;
+    clearInterval(clock);
+    const previousReader = reader; reader = null;
+    try { Promise.resolve(previousReader?.destroy?.()).catch(() => undefined); } catch { /* Cleanup failure must not prevent the next question from opening. */ }
     const authored = questions.find(q => `authored:${q.id}` === id);
     active = resources.find(r => r.id === id) || (authored ? { id, title: authored.title, universityName: schoolFor(authored), subject: subjectFor(authored) } : null);
     if (!active) return;
