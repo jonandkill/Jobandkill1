@@ -4,11 +4,13 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { gunzipSync } from "node:zlib";
+import {installDocumentRoutes} from './document-service.mjs';
 
 const { Pool } = pg;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const seed = JSON.parse(await readFile(path.join(__dirname, "data", "seed.json"), "utf8"));
 const universityRegistry = JSON.parse(await readFile(path.join(__dirname, "data", "universities.json"), "utf8"));
+const supplementalRegistry=JSON.parse(await readFile(path.join(__dirname,'data/supplemental-universities.json'),'utf8'));
 const details = JSON.parse(await readFile(path.join(__dirname, "data", "details.json"), "utf8"));
 const exams = JSON.parse(await readFile(path.join(__dirname, "data", "exams.json"), "utf8"));
 const coverage = JSON.parse(await readFile(path.join(__dirname, "data", "coverage.json"), "utf8"));
@@ -35,6 +37,10 @@ app.use(express.static(path.join(__dirname, "public"), {
   maxAge: 0,
   etag: true
 }));
+app.use('/vendor/pdfjs',express.static(path.join(__dirname,'node_modules/pdfjs-dist/build'),{maxAge:'1d'}));
+for(const part of ['cmaps','standard_fonts','wasm','iccs'])app.use('/vendor/pdfjs/'+part,express.static(path.join(__dirname,'node_modules/pdfjs-dist',part),{maxAge:'1d'}));
+const practiceBank=JSON.parse(await readFile(path.join(__dirname,'data/practice-questions.json'),'utf8'));
+installDocumentRoutes(app,[...exams.filter(p=>p.documentUrl&&p.linkCheck?.isPdf).map(p=>({id:p.id,url:p.documentUrl,title:p.title})),...(practiceBank.resources||[])]);
 
 let pool = null;
 let storageMode = "verified-file";
@@ -267,9 +273,8 @@ async function getSources() {
 }
 
 async function getUniversities() {
-  if (!pool || storageMode !== "postgresql") return universityRegistry.universities;
-  const result = await pool.query("SELECT * FROM universities ORDER BY name, campus");
-  return result.rows.map(mapUniversity);
+  const base=(!pool||storageMode!=='postgresql')?universityRegistry.universities:(await pool.query('SELECT * FROM universities ORDER BY name, campus')).rows.map(mapUniversity);
+  return [...base,...(supplementalRegistry.universities||[]).filter(u=>!base.some(b=>b.id===u.id))];
 }
 
 async function getPrograms() {
@@ -309,7 +314,7 @@ app.get("/api/catalog", async (_request, response) => {
   try {
     const [sources, programs, universities] = await Promise.all([getSources(), getPrograms(), getUniversities()]);
     response.set("Cache-Control", "public, max-age=300");
-    response.json({ metadata: { ...seed.metadata, registry: universityRegistry.metadata }, sources, programs, universities, details, exams, coverage, outcomeSchools, essayUniversities, storage: storageMode });
+    response.json({ metadata: { ...seed.metadata, registry: {...universityRegistry.metadata,totalWithSupplements:universities.length,supplementalCount:supplementalRegistry.universities.length} }, sources, programs, universities, details, exams, coverage, outcomeSchools, essayUniversities, storage: storageMode });
   } catch (error) {
     response.status(500).json({ error: "catalog_unavailable" });
   }
@@ -320,7 +325,7 @@ app.get("/api/report", async (_request, response) => {
 });
 
 // Expose only the reviewed public practice datasets, never arbitrary server files.
-for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interviews.json']) {
+for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interviews.json', 'essay-standards.json', 'education-registry.json', 'essay-universities.json']) {
   app.get('/data/' + filename, (_request, response) => {
     response.sendFile(path.join(__dirname, 'data', filename), error => {
       if (error && !response.headersSent) response.status(503).json({error:'practice_data_unavailable'});
@@ -328,9 +333,14 @@ for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interv
   });
 }
 app.get('/api/exams', (_request, response) => response.json(exams));
+app.get('/api/integrations',(_request,response)=>{
+  const url=process.env.RESUME_WRITER_URL||'';
+  response.json({resumeWriter:{url:/^https:\/\//.test(url)?url:null,label:'잡앤킬 자기소개서 작성'}});
+});
 
 app.get("/api/outcomes", (request, response) => {
   const id = String(request.query.universityId || "");
+  if((supplementalRegistry.universities||[]).some(u=>u.id===id))return response.json([]);
   if (!/^\d{7}$/.test(id)) return response.status(400).json({ error: "university_id_required" });
   response.set("Cache-Control", "public, max-age=300");
   response.json(outcomes.filter(row => row.universityId === id));
@@ -339,6 +349,7 @@ app.get("/api/outcomes", (request, response) => {
 app.get("/api/departments", (request, response) => {
   const universityId = String(request.query.universityId || "");
   if (universityId) {
+    if((supplementalRegistry.universities||[]).some(u=>u.id===universityId))return response.json(null);
     if (!/^\d{7}$/.test(universityId)) return response.status(400).json({error:"university_id_invalid"});
     return response.json(extraDetails.universities.find(u=>u.universityId===universityId)||null);
   }

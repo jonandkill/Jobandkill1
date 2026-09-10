@@ -12,3 +12,96 @@
 @media(prefers-reduced-motion:reduce){.motion-scene *{animation:none!important}.motion-toggle{display:none}}
 @media print{.shortlist,.site-header,.bottom-nav,.motion-toggle{display:none}.workspace{display:block;padding:0}.workspace main{padding:0}}
 .motion-toggle,.shortlist summary{min-height:44px}.top-nav{min-width:0}#app{scroll-margin-top:140px}@media(max-width:1100px){.shortlist{bottom:calc(76px + env(safe-area-inset-bottom))}}
+
+/* Lifecycle workspace: exploration, comparison, practice and a deliberate next step. */
+.lifecycle-hero{min-height:470px;grid-template-columns:minmax(0,1.2fr) minmax(280px,.85fr);gap:28px}
+.lifecycle-hero .hero-story h1{font-size:clamp(33px,4.4vw,58px);letter-spacing:-2px;line-height:1.27}
+.lifecycle-hero .hero-story .eyebrow{letter-spacing:1px;font-size:14px}
+.lifecycle-hero .hero-lead{font-size:19px;line-height:1.8}
+.home-primary-actions .button,.home-primary-actions button{font-size:15px;min-height:48px}
+.lifecycle-scene{height:360px;border-radius:110px 110px 20px 20px}
+.lifecycle-scene .scene-label{font-size:13px;letter-spacing:.5px}
+.lifecycle-scene .sheet-one{top:58px;left:18px;width:215px;padding:20px}
+.lifecycle-scene .sheet-two{top:178px;right:10px;width:232px;padding:20px}
+.lifecycle-scene .scene-sheet>span{font-size:12px;letter-spacing:.3px;margin-bottom:10px}
+.lifecycle-scene .scene-sheet strong{font-size:22px}
+.lifecycle-scene .scene-sheet p{font-size:13px;margin:8px 0 0}
+.lifecycle-scene .grade-sample{font-size:39px;margin-top:13px;line-height:1.25}
+.lifecycle-scene .grade-sample small{font-size:12px}
+.lifecycle-scene .scene-footer{font-size:12px;bottom:6px}
+.home-resume{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.home-resume .eyebrow{margin-bottom:8px;letter-spacing:.5px}
+.home-resume h2{font-size:22px;margin-bottom:9px}
+.home-resume p:last-child{margin-bottom:0;color:#535e56;font-size:15px;max-width:660px}
+.home-resume-actions{display:flex;flex-direction:column;gap:9px;align-items:center}
+.home-resume-actions>a{min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center}
+.lifecycle-section .section-head{align-items:flex-end}
+.lifecycle-section .section-head .muted{max-width:230px;font-size:15px}
+.lifecycle-list{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--line)}
+.lifecycle-list li{border-bottom:1px solid var(--line)}
+.lifecycle-list a{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:20px;min-height:112px;padding:21px 10px;text-decoration:none;color:inherit;transition:background-color .15s}
+.lifecycle-list a:hover{background:#eeeee5}
+.lifecycle-number{font-size:17px;color:#737e6e;font-variant-numeric:tabular-nums;align-self:start;padding-top:2px}
+.lifecycle-list h3{font-size:20px;margin:0 0 5px}
+.lifecycle-list p{font-size:15px;color:#59645b;margin:0;line-height:1.75}
+.lifecycle-state{font-size:14px;color:#355747;display:flex;gap:16px;align-items:center;white-space:nowrap}
+.lifecycle-state b{font-size:22px}
+.home-practice{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:40px;padding:12px 0 45px}
+.home-practice h2{font-size:27px;line-height:1.5;max-width:330px}
+.home-practice-links{border-top:1px solid var(--line)}
+.home-practice-links>a{display:grid;grid-template-columns:minmax(0,1fr) 24px;gap:2px 12px;padding:20px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.home-practice-links strong{font-size:19px}
+.home-practice-links span{grid-column:1;font-size:14px;color:#59645b}
+.home-practice-links b{grid-column:2;grid-row:1/3;align-self:center;font-size:24px;color:var(--teal)}
+.home-note{border-left:3px solid #7e9279;border-radius:0 12px 12px 0}
+.home-note a{display:inline-flex;align-items:center;min-height:44px}
+
+/* Long school records stay readable, while working controls remain reachable. */
+.workspace fieldset{min-width:0}
+.workspace .section-head h1{overflow-wrap:anywhere}
+.workspace .card h2,.workspace .card h3{line-height:1.55}
+.workspace .panel>.hint,.workspace .panel .notice{line-height:1.8}
+.workspace .warn{background:#fff2d9;color:#735019}
+.shortlist li a{font-size:15px;line-height:1.6;min-height:44px;display:flex;align-items:center;overflow-wrap:anywhere}
+.shortlist .hint{font-size:13px;line-height:1.7}
+.shortlist .wide{font-size:14px;min-height:46px}
+.grade-input .section-head{flex-wrap:wrap;align-items:center}
+.grade-entry{margin:16px 0;padding:20px!important}
+.grade-entry legend{font-weight:750;padding:0 8px;line-height:1.6}
+.grade-entry .fields{align-items:end}
+.school-candidate h2,.school-candidate h3{margin:8px 0 12px!important;font-size:22px!important}
+.school-result-summary{border-left:3px solid #7e9279;padding-left:16px;margin-bottom:20px}
+.recommend-detail{scroll-margin-top:150px}
+.practice-workspace,.practice-answer-area,.practice-feedback{min-width:0}
+.practice-progress{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:15px}
+.practice-timer{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 20px;background:#f0f1e8;border:1px solid var(--line);border-radius:12px;margin:18px 0}
+.practice-timer strong,.practice-timer time{font-size:28px;font-variant-numeric:tabular-nums;line-height:1.3}
+.practice-question-body{max-width:78ch;font-size:17px;line-height:1.95;color:#283c31}
+.practice-question-body p{margin:0 0 1.15em;white-space:pre-wrap;overflow-wrap:anywhere}
+.practice-question-body li{margin-bottom:10px}
+.practice-answer-area textarea{min-height:300px;line-height:1.95;padding:18px;scroll-margin-top:150px}
+.practice-feedback{border-top:3px solid #789171;scroll-margin-top:150px}
+.practice-feedback p,.practice-feedback li{line-height:1.9}
+.practice-feedback li{margin-bottom:10px}
+#iv-answer{min-height:320px;line-height:1.95;padding:18px;scroll-margin-top:150px}
+#iv-question-text{font-size:18px;font-weight:650;line-height:1.8;border-left:3px solid #7e9279}
+#iv-feedback{scroll-margin-top:150px}
+#iv-feedback blockquote{margin:12px 0;padding:14px 18px;background:#edf0e8;border-left:3px solid #8ca183;font-size:16px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere}
+#iv-feedback .program p{line-height:1.9}
+#iv-revise{min-height:48px}
+.practice-library-list{display:grid;gap:16px}
+.document-reader{max-width:100%;min-width:0;border:1px solid var(--line);border-radius:12px;padding:14px;background:#f0f0e9;overflow:hidden}
+.document-reader canvas{display:block;max-width:100%;height:auto!important;margin:0 auto;background:white}
+.document-reader .pagination{margin:14px 0;position:static}
+.document-reader .error{background:#fffefa;border:1px solid #ddc8b4;padding:18px;border-radius:8px}
+.document-reader:empty{display:none}
+.workspace input[type=file]{padding:9px;white-space:normal;min-height:48px}
+.workspace input[type=file]::file-selector-button{border:1px solid #aabcc4;background:#f3f4ed;border-radius:5px;padding:6px 10px;font:inherit;color:inherit;margin-right:10px}
+@media(min-width:1101px) and (max-width:1280px){.workspace{grid-template-columns:minmax(0,1fr) 200px;gap:20px;padding-inline:24px}.lifecycle-hero{grid-template-columns:minmax(0,1fr) minmax(270px,.8fr)}.home-primary-actions .button,.home-primary-actions button{font-size:14px}}
+@media(max-width:1100px){.shortlist{padding:8px 14px}.shortlist summary{display:list-item;min-height:44px;line-height:44px}.shortlist details[open] summary{margin-bottom:8px}.workspace:has(main textarea:focus,main input:focus,main select:focus) .shortlist{display:none}.home-resume{gap:20px}.lifecycle-list a{grid-template-columns:35px minmax(0,1fr) auto;gap:16px}}
+@media(max-width:760px){.lifecycle-hero{grid-template-columns:minmax(0,1fr);gap:24px;min-height:0}.lifecycle-hero .hero-story h1{font-size:clamp(33px,6vw,48px)}.lifecycle-scene{max-width:430px;width:100%;margin:auto;height:330px}.lifecycle-scene .sheet-two{top:160px;right:18px}.lifecycle-scene .sheet-one{top:48px;left:30px}.home-resume{grid-template-columns:1fr;padding:25px 0}.home-resume-actions{align-items:stretch}.lifecycle-section .section-head{display:block}.lifecycle-section .section-head .muted{max-width:none}.lifecycle-list a{grid-template-columns:30px minmax(0,1fr);gap:5px 14px;padding:20px 0}.lifecycle-number{grid-row:1/3}.lifecycle-state{grid-column:2;justify-content:space-between;margin-top:5px;white-space:normal}.lifecycle-list h3{font-size:19px}.home-practice{grid-template-columns:1fr;gap:18px;padding-bottom:35px}.home-practice h2{font-size:24px;max-width:none}.home-practice p br{display:none}.home-primary-actions .button,.home-primary-actions button{width:100%;text-align:center}.home-primary-actions .button+.button{margin:0}.practice-question-body{font-size:16px;line-height:1.9}.practice-timer{padding:14px;gap:9px}.practice-answer-area textarea{min-height:260px;padding:14px}.document-reader{padding:8px}.grade-entry{padding:15px!important}.grade-entry .fields{grid-template-columns:1fr}.school-candidate h2,.school-candidate h3{font-size:21px!important}}
+@media(max-width:390px){.lifecycle-hero .hero-story h1{font-size:32px;letter-spacing:-1.3px}.lifecycle-hero .hero-lead{font-size:17px}.lifecycle-scene{height:300px}.lifecycle-scene .sheet-one{left:18px;top:44px;width:190px;padding:15px}.lifecycle-scene .sheet-two{right:10px;top:151px;width:204px;padding:16px}.lifecycle-scene .scene-sheet strong{font-size:19px}.lifecycle-scene .scene-sheet p{font-size:12px}.lifecycle-scene .grade-sample{font-size:32px}.lifecycle-scene .grade-sample small{font-size:11px}.lifecycle-list a{gap:4px 10px}.lifecycle-list p{font-size:15px}.home-resume h2{font-size:21px}.shortlist{max-width:calc(100vw - 24px)}.pagination{gap:8px}.pagination button{min-width:72px}}
+@media print{.lifecycle-hero{min-height:0;display:block}.lifecycle-scene{display:none}.lifecycle-list a{break-inside:avoid}.home-resume,.home-practice{display:block}.home-resume-actions,.home-primary-actions{display:none}}
+
+/* An opened original document uses the full archive grid width. */
+.cards > .card:has(details[open] .document-reader){grid-column:1 / -1}

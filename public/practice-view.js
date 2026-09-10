@@ -1,21 +1,189 @@
-const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const url=v=>/^https:\/\//.test(v||'')?esc(v):'#';
-export async function renderPractice(root){
- root.innerHTML='<h1>논술 연습실</h1><p role="status">공식 자료와 평가 기준을 불러오고 있어요.</p>';
- const loading=root.firstElementChild;
- let bank,rubrics;
- try{const response=await Promise.all([fetch('/data/practice-questions.json'),fetch('/data/essay-rubrics.json')]);if(response.some(x=>!x.ok))throw Error();[bank,rubrics]=await Promise.all(response.map(x=>x.json()));}catch{if(root.firstElementChild!==loading)return;root.innerHTML='<h1>논술 연습실</h1><p>자료를 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p><a href="#prepare/exams">논술 자료실로 돌아가기</a>';return;}
- if(!root.isConnected||root.firstElementChild!==loading)return;
- const resources=bank.resources||[],criteria=rubrics.criteria||[];
- const load=()=>{try{return JSON.parse(localStorage.getItem('susi-practice-v1')||'{}')}catch{return {}}};let saved=load(),active=null;
- root.innerHTML=`<p class="eyebrow">작성 · 자기평가 · 다시 풀기</p><h1>논술 연습실</h1><p>학교와 계열을 선택하고 공식 문제를 읽은 뒤 답안을 작성하세요. 초안과 어려운 문제는 이 기기에 저장됩니다.</p><p class="notice">점수는 공식 채점기준을 보고 직접 체크한 자기평가입니다. 자동으로 정답이나 합격 가능성을 판정하지 않습니다. 공식 채점표의 배점 항목 ${rubrics.verifiedDistinctCriteria}개를 원문 대조했습니다. 서로 다른 보편적 평가법 ${rubrics.targetDistinctCriteria}종이라는 뜻이 아니며 입시 전문가의 추가 검수는 남아 있습니다.</p><div class="filters"><div><label for="practice-school">학교</label><select id="practice-school"><option value="">전체 학교</option>${[...new Set(resources.map(x=>x.universityName))].sort().map(x=>`<option>${esc(x)}</option>`).join('')}</select></div><div><label for="practice-subject">계열·관련 전공 범위</label><select id="practice-subject"><option value="">전체 계열</option>${[...new Set(resources.map(x=>x.subject).filter(Boolean))].sort().map(x=>`<option>${esc(x)}</option>`).join('')}</select></div><div><label for="practice-hard"><input type="checkbox" id="practice-hard"> 어려운 자료만 보기</label></div></div><p class="hint">계열 분류는 자료의 표기입니다. 특정 학과 지원 가능 여부를 뜻하지 않습니다.</p><div id="practice-list"></div><section id="practice-editor" class="panel" hidden></section>`;
- const school=root.querySelector('#practice-school'),subject=root.querySelector('#practice-subject'),hard=root.querySelector('#practice-hard'),list=root.querySelector('#practice-list'),editor=root.querySelector('#practice-editor');
- function persist(){try{localStorage.setItem('susi-practice-v1',JSON.stringify(saved));return true}catch{return false}}
- function draw(){let rows=resources.filter(x=>(!school.value||x.universityName===school.value)&&(!subject.value||x.subject===subject.value)&&(!hard.checked||saved[x.id]?.hard));list.innerHTML=`<p>${rows.length}개 공식 자료</p><div class="cards">${rows.map(x=>`<article class="card"><span class="tag">${esc(x.universityName)} · ${esc(x.year)} 자료</span><h2>${esc(x.title)}</h2><p>${esc(x.subject)} · ${bank.questions.some(q=>q.sourceId===x.id)?'출처 대조한 채점표 자기평가 제공':'답안 기록 제공 · 개별 배점 미검수'}</p><button data-open="${esc(x.id)}">문제 읽고 풀기</button><button data-hard="${esc(x.id)}" aria-pressed="${!!saved[x.id]?.hard}">${saved[x.id]?.hard?'★ 어려운 자료 해제':'☆ 어려운 자료 담기'}</button></article>`).join('')}</div>${rows.length?'':'<p class="empty">해당 조건의 연습 자료가 없습니다. 다른 계열을 선택해 주세요.</p>'}`;list.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>open(b.dataset.open));list.querySelectorAll('[data-hard]').forEach(b=>b.onclick=()=>{let id=b.dataset.hard;saved[id]={...saved[id],hard:!saved[id]?.hard};const ok=persist();draw();if(!ok)list.insertAdjacentHTML('afterbegin','<p role="alert">저장 공간 문제로 보관함을 저장하지 못했습니다. 페이지를 닫으면 변경 내용이 사라질 수 있습니다.</p>')})}
- function open(id){active=resources.find(x=>x.id===id);const qs=bank.questions.filter(q=>q.sourceId===id);editor.hidden=false;editor.innerHTML=`<h2 tabindex="-1">${esc(active.title)}</h2><a class="button" href="${url(active.url)}" target="_blank" rel="noopener">공식 PDF 열기 · 저장</a><p class="hint">새 창의 PDF 뷰어에서 다운로드할 수 있습니다. 대학 서버 정책에 따라 미리보기가 제한될 수 있습니다.</p><details><summary>문제 PDF 펼치기</summary><iframe title="공식 논술 문제" loading="lazy" src="${url(active.url)}" style="width:100%;height:65vh;border:1px solid #ddd"></iframe></details><label for="practice-question">연습 문항</label><select id="practice-question"><option value="">원문에서 문항 선택 · 자유 기록</option>${qs.map(q=>`<option value="${esc(q.id)}">${esc(q.title)} · PDF ${q.questionPage}쪽</option>`).join('')}</select><div id="practice-criteria"></div><label for="practice-answer">내 답안</label><textarea id="practice-answer" rows="12" placeholder="공식 PDF 문제를 읽고 답안을 작성하세요. 제시문의 표현을 그대로 옮기기보다 자신의 논리로 설명해 보세요.">${esc(saved[id]?.drafts?.[saved[id]?.questionId||'']?.answer??saved[id]?.answer??'')}</textarea><p id="practice-count" aria-live="polite"></p><button id="practice-feedback" class="primary">자기평가와 구조 점검</button><p id="practice-save" role="status"></p><div id="practice-result" aria-live="polite"></div>`;
- const select=editor.querySelector('#practice-question'),answer=editor.querySelector('#practice-answer'),out=editor.querySelector('#practice-result');select.value=saved[id]?.questionId||'';
- function store(){saved[id]={...saved[id],answer:answer.value,questionId:select.value,drafts:{...saved[id]?.drafts,[select.value]:{answer:answer.value,updatedAt:new Date().toISOString()}},updatedAt:new Date().toISOString()};editor.querySelector('#practice-save').textContent=persist()?'이 기기에 임시 저장했습니다.':'저장 공간 문제로 저장하지 못했습니다. 답안을 따로 복사해 주세요.';editor.querySelector('#practice-count').textContent=`공백 포함 ${[...answer.value].length}자 · ${answer.value.trim().split(/\n\s*\n/).filter(Boolean).length}문단`;}
- function drawCriteria(){const q=qs.find(q=>q.id===select.value),rs=criteria.filter(r=>r.questionId===q?.id);editor.querySelector('#practice-criteria').innerHTML=q?`<p class="notice">${esc(q.scoringNote)}</p><a href="${url(active.url)}#page=${q.questionPage}" target="_blank" rel="noopener">${q.referenceKind==='rubric_page'?'평가 기준':'문제'} ${q.questionPage}쪽</a> · <a href="${url(active.url)}#page=${q.rubricPages[0]}" target="_blank" rel="noopener">채점표 ${q.rubricPages.join('·')}쪽</a><fieldset><legend>원문 해설과 비교한 자기평가</legend>${rs.map(r=>`<label style="display:block;margin:12px 0"><input type="checkbox" data-rubric="${esc(r.id)}" value="${r.maxPoints}"> ${esc(r.label)} (${r.maxPoints}점)</label>`).join('')}</fieldset>`:'<p class="hint">연습 문항을 선택하면 확보된 배점 항목이 표시됩니다. 자유 기록이나 배점 미확보 문항은 답안 길이·문단 등 형식만 점검합니다.</p>';out.innerHTML='';}
- answer.oninput=store;select.onchange=()=>{answer.value=saved[id]?.drafts?.[select.value]?.answer||'';drawCriteria();store()};drawCriteria();store();editor.querySelector('#practice-feedback').onclick=()=>{const text=answer.value.trim(),q=qs.find(q=>q.id===select.value),rs=criteria.filter(r=>r.questionId===q?.id),checked=[...editor.querySelectorAll('[data-rubric]:checked')],points=checked.reduce((s,x)=>s+Number(x.value),0),max=rs.reduce((s,x)=>s+x.maxPoints,0);if(!text){out.innerHTML='<p>먼저 답안을 작성해 주세요.</p>';return;}const notes=[];if(q?.minChars&&text.length<q.minChars)notes.push(`권장 분량 ${q.minChars}자에 비해 ${q.minChars-text.length}자 부족합니다. 근거와 설명이 빠지지 않았는지 점검하세요.`);if(q?.maxChars&&text.length>q.maxChars)notes.push(`권장 분량 ${q.maxChars}자를 넘었습니다. 반복된 내용을 줄여 보세요.`);if(text.length>400&&!/\n\s*\n/.test(text))notes.push('문단 구분이 없습니다. 주장이나 풀이 단계가 달라지는 곳을 나누어 보세요.');notes.push('수치·문장 길이만으로 논리의 정확성을 평가할 수 없습니다. 공식 해설의 근거와 자신의 풀이를 대조하세요.');out.innerHTML=`<h3>내 답안 점검</h3>${max?`<p><strong>자기 체크 ${points} / ${max}점</strong> · 실제 대학 채점 결과가 아닙니다.</p><p>${rs.length-checked.length}개 평가 항목을 아직 확인하지 않았습니다.</p>`:'<p>검증된 배점이 없어 점수를 산출하지 않았습니다.</p>'}<ul>${notes.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><p>다음 행동: 확인하지 못한 기준 하나를 골라 답안을 수정한 뒤 다시 점검하세요.</p>`;};editor.querySelector('h2').focus();editor.scrollIntoView({block:'start',behavior:'smooth'});}
- school.onchange=draw;subject.onchange=draw;hard.onchange=draw;draw();
+import { renderDocument } from './document-reader.js';
+import { createTimer, startTimer, pauseTimer, remainingSeconds, formatRemaining } from './practice-timer.js';
+import { evaluateEssay, evaluateNumericAnswer } from './essay-evaluator.js';
+
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const paragraphs = value => String(value ?? '').split(/\n\s*\n/).filter(Boolean).map(p => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('');
+const storageKey = 'susi-practice-v1';
+function numericFeedback(result, question) {
+  const official = question.numericAnswer.sourceKind === 'official';
+  const points = Number.isFinite(result.earned) && Number.isFinite(result.max);
+  return `<div class="notice"><strong>${esc(result.feedback || result.status)}</strong>${points ? official ? `<p>최종 수치 배점 ${result.earned} / ${result.max}점</p><p>이 소문항의 전체 ${question.numericAnswer.totalQuestionPoints}점 중 풀이·증명 ${question.numericAnswer.proofPointsUnassessed}점은 아직 평가하지 않았습니다.</p>` : '<p>자체 연습의 최종값 1항목을 비교했습니다. 대학 배점으로 환산하지 않습니다.</p>' : ''}<p class="hint">${esc(question.numericAnswer.scoreNote || '')}</p></div>`;
+}
+
+export async function renderPractice(root) {
+  root.innerHTML = '<h1>논술 연습실</h1><p role="status">문항과 공식 자료를 불러오고 있어요.</p>';
+  const token = root.firstElementChild;
+  let bank, standards, roster;
+  try {
+    const responses = await Promise.all([fetch('/data/practice-questions.json'), fetch('/data/essay-standards.json'), fetch('/data/essay-universities.json')]);
+    if (responses.some(r => !r.ok)) throw new Error('load');
+    [bank, standards, roster] = await Promise.all(responses.map(r => r.json()));
+  } catch {
+    if (root.firstElementChild !== token) return;
+    root.innerHTML = '<h1>논술 연습실</h1><p role="alert">문항을 불러오지 못했습니다. 답안은 이 브라우저에 남아 있습니다.</p><button id="practice-retry">다시 불러오기</button><a class="button" href="#prepare/exams">공식 자료실 열기</a>';
+    root.querySelector('#practice-retry').onclick = () => renderPractice(root);
+    return;
+  }
+  if (!root.isConnected || root.firstElementChild !== token) return;
+  const resources = bank.resources || [], readyQuestions = [...(standards.questions || [])].sort((a, b) => Number(!!b.sourceId) - Number(!!a.sourceId));
+  const combined = new Map((bank.questions || []).map(q => [q.id, q]));
+  readyQuestions.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
+  const questions = [...combined.values()];
+  const resourceFor = q => resources.find(r => r.id === q.sourceId);
+  const schoolFor = q => q.universityName || resourceFor(q)?.universityName || '자체 제작 연습';
+  const subjectFor = q => q.subject || resourceFor(q)?.subject || '통합';
+  const schoolNames = [...new Set([...(roster.universities || []).map(r => r.name), ...resources.map(r => r.universityName), ...readyQuestions.map(schoolFor)])].sort((a, b) => a.localeCompare(b, 'ko'));
+  let saved;
+  try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch { saved = {}; }
+  if (!saved || typeof saved !== 'object' || Array.isArray(saved)) saved = {};
+  let active, activeQuestion, reader, clock, openVersion = 0, page = 0;
+  const own = document.createElement('div');
+  own.className = 'practice-workspace';
+  root.replaceChildren(own);
+  own.innerHTML = `<p class="eyebrow">문제 선택 → 시간 설정 → 답안 작성 → 피드백</p><h1>문제를 읽고, 직접 풀어보세요</h1><p>문제와 풀이 기준을 함께 제공합니다. 대학 기출과 자체 제작 연습은 구분해 표시합니다.</p><div class="filters"><div><label for="practice-mode">자료 선택</label><select id="practice-mode"><option value="questions">바로 풀 수 있는 문항</option><option value="resources">대학 공식 PDF 자료</option></select></div><div><label for="practice-school">학교</label><select id="practice-school"><option value="">전체 학교</option>${schoolNames.map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-subject">계열</label><select id="practice-subject"><option value="">전체 계열</option>${[...new Set([...resources.map(r => r.subject), ...readyQuestions.map(subjectFor)].filter(Boolean))].sort().map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-hard"><input type="checkbox" id="practice-hard"> 어려운 문제·자료만</label></div></div><p class="hint">공식 PDF ${resources.length}건과 바로 풀 수 있는 문항 ${readyQuestions.length}개가 있습니다. 모든 대학의 모든 기출을 확보한 상태는 아닙니다.</p><section id="practice-list" class="practice-library-list" tabindex="-1"></section><section id="practice-editor" class="panel" hidden></section>`;
+  const mode = own.querySelector('#practice-mode'), school = own.querySelector('#practice-school'), subject = own.querySelector('#practice-subject'), hard = own.querySelector('#practice-hard'), list = own.querySelector('#practice-list'), editor = own.querySelector('#practice-editor');
+  const alive = () => own.isConnected;
+  function persist() { try { localStorage.setItem(storageKey, JSON.stringify(saved)); return true; } catch { return false; } }
+  function keyFor(q) { return q.sourceId || `authored:${q.id}`; }
+  function isHard(id, questionId) { return !!(questionId ? saved[id]?.drafts?.[questionId]?.hard : saved[id]?.hard || Object.values(saved[id]?.drafts || {}).some(d => d.hard)); }
+  function drawList(move = false) {
+    const isQuestions = mode.value === 'questions';
+    const rows = (isQuestions ? readyQuestions : resources).filter(item => {
+      const name = isQuestions ? schoolFor(item) : item.universityName, field = isQuestions ? subjectFor(item) : item.subject;
+      return (!school.value || name === school.value) && (!subject.value || field === subject.value) && (!hard.checked || isHard(isQuestions ? keyFor(item) : item.id, isQuestions ? item.id : null));
+    });
+    const pages = Math.ceil(rows.length / 9);
+    page = Math.min(page, Math.max(0, pages - 1));
+    list.innerHTML = `<p><strong>${rows.length}개 ${isQuestions ? '연습 문항' : '공식 PDF 자료'}</strong></p><div class="cards">${rows.slice(page * 9, page * 9 + 9).map(item => {
+      const id = isQuestions ? keyFor(item) : item.id, qid = isQuestions ? item.id : '';
+      return `<article class="card"><span class="tag">${esc(isQuestions ? schoolFor(item) : item.universityName)}${item.year ? ` · ${esc(item.year)}` : ''}</span><h2>${esc(item.title)}</h2><p>${esc(isQuestions ? subjectFor(item) : item.subject)}</p><p class="hint">${isQuestions ? item.sourceId ? item.sourceKind === 'official_mock' ? '공식 모의논술 · 본시험 기출과 구분' : '공식 기출 연결 문항 · 근거와 풀이 점검' : '자체 제작 연습 · 대학 실제 기출이 아닙니다' : '원문 PDF 읽기 · 문항별 확보 범위 확인'}</p><button class="primary" data-open="${esc(id)}" data-question="${esc(qid)}">${isQuestions ? '이 문제 풀기' : 'PDF 읽고 문제 선택'}</button><button data-hard="${esc(id)}" data-question="${esc(qid)}" aria-pressed="${isHard(id, qid)}">${isHard(id, qid) ? '★ 어려운 항목 해제' : '☆ 어려운 항목 담기'}</button></article>`;
+    }).join('')}</div>${rows.length ? '' : '<p class="empty">선택한 조건의 문항이 없습니다. 학교·계열 조건을 바꾸거나 대학 공식 PDF 자료를 선택해 주세요.</p>'}<div class="pagination" aria-label="논술 연습 목록 페이지"><button data-page-prev ${page === 0 ? 'disabled' : ''}>← 이전</button><span>${rows.length ? page + 1 : 0} / ${pages} 페이지</span><button data-page-next ${page + 1 >= pages ? 'disabled' : ''}>다음 →</button></div>`;
+    list.querySelectorAll('[data-open]').forEach(b => b.onclick = () => open(b.dataset.open, b.dataset.question));
+    list.querySelectorAll('[data-hard]').forEach(b => b.onclick = () => {
+      const id = b.dataset.hard, qid = b.dataset.question;
+      saved[id] ||= {};
+      if (qid) { saved[id].drafts ||= {}; saved[id].drafts[qid] = { ...saved[id].drafts[qid], hard: !isHard(id, qid) }; }
+      else saved[id].hard = !saved[id].hard;
+      const ok = persist(); drawList();
+      if (!ok) list.insertAdjacentHTML('afterbegin', '<p role="alert">이 브라우저의 저장 공간이 부족해 보관하지 못했습니다.</p>');
+    });
+    list.querySelector('[data-page-prev]').onclick = () => { page--; drawList(true); };
+    list.querySelector('[data-page-next]').onclick = () => { page++; drawList(true); };
+    if (!rows.length && school.value) {
+      const entry = (roster.universities || []).find(r => r.name === school.value);
+      if (entry && /^https:\/\//.test(entry.archiveUrl || '')) list.querySelector('.empty')?.insertAdjacentHTML('beforeend', `<br><a class="button" href="${esc(entry.archiveUrl)}" target="_blank" rel="noopener">${esc(entry.name)} 공식 자료 확인 ↗</a>`);
+    }
+    if (move) { list.focus({ preventScroll: true }); list.scrollIntoView({ block: 'start' }); }
+  }
+  async function open(id, requestedQuestionId = '') {
+    const version = ++openVersion;
+    clearInterval(clock); reader?.destroy(); reader = null;
+    const authored = questions.find(q => `authored:${q.id}` === id);
+    active = resources.find(r => r.id === id) || (authored ? { id, title: authored.title, universityName: schoolFor(authored), subject: subjectFor(authored) } : null);
+    if (!active) return;
+    saved[id] ||= {};
+    const qs = questions.filter(q => q.sourceId === id || `authored:${q.id}` === id);
+    activeQuestion = qs.find(q => q.id === (requestedQuestionId || saved[id].questionId)) || qs.find(q => q.prompt || q.promptText) || qs[0] || null;
+    editor.hidden = false;
+    editor.innerHTML = `<p class="practice-progress">1 문제 확인 · 2 시간 설정 · 3 답안 작성 · 4 피드백</p><h2 tabindex="-1">${esc(active.title)}</h2><label for="practice-question">연습 문항</label><select id="practice-question">${qs.map(q => `<option value="${esc(q.id)}">${esc(q.title)}</option>`).join('')}<option value="">PDF에서 선택한 문항 자유 기록</option></select><div id="practice-question-body" class="practice-question-body"></div>${active.url ? '<details id="practice-document" open><summary>공식 PDF 본문 읽기</summary><div id="practice-pdf"></div></details>' : ''}<section class="practice-timer" aria-labelledby="practice-timer-title"><h3 id="practice-timer-title">시험시간 연습</h3><p id="practice-duration-note"></p><label for="practice-minutes">제한 시간(분)</label><input type="number" id="practice-minutes" min="1" max="360" step="1"><p id="practice-clock" style="font-size:2rem;font-variant-numeric:tabular-nums"><strong>00:00</strong></p><div class="actions"><button id="practice-start" class="primary">시간 시작</button><button id="practice-pause" disabled>일시정지</button><button id="practice-reset">시간 다시 설정</button></div><p id="practice-timer-status" role="status"></p><p class="hint">시작 버튼을 누르면 시간이 흐릅니다. 페이지를 닫아도 진행 중인 시간은 계속 계산됩니다. 일시정지는 연습용이며, 시간이 끝나도 답안은 삭제되지 않습니다.</p></section><section class="practice-answer-area"><label for="practice-answer">내 답안</label><textarea id="practice-answer" rows="12" placeholder="질문에 대한 답과 근거, 풀이 과정을 자유롭게 작성해 주세요."></textarea><div id="practice-numeric"></div><p id="practice-count"></p><div class="actions"><button id="practice-feedback" class="primary">답안 평가·피드백 보기</button><button id="practice-question-hard">☆ 어려운 문제 담기</button></div><p id="practice-save" role="status"></p></section><section id="practice-result" class="practice-feedback" aria-live="polite"></section>`;
+    const select = editor.querySelector('#practice-question'), answer = editor.querySelector('#practice-answer'), questionBody = editor.querySelector('#practice-question-body'), result = editor.querySelector('#practice-result');
+    select.value = activeQuestion?.id || '';
+    const qkey = () => activeQuestion?.id || '';
+    function storeDraft() {
+      saved[id].drafts ||= {};
+      saved[id].drafts[qkey()] = { ...saved[id].drafts[qkey()], answer: answer.value, finalAnswer: editor.querySelector('#practice-final-answer')?.value || '', updatedAt: new Date().toISOString() };
+      saved[id].questionId = qkey();
+      saved._session = { id, questionId: qkey(), mode: mode.value, school: school.value, subject: subject.value };
+      editor.querySelector('#practice-save').textContent = persist() ? '답안을 이 브라우저에 저장했습니다.' : '저장 공간이 부족합니다. 답안을 따로 복사해 주세요.';
+      editor.querySelector('#practice-count').textContent = `공백 포함 ${[...answer.value].length}자`;
+    }
+    function showQuestion() {
+      const q = activeQuestion, draft = saved[id].drafts?.[qkey()], prompt = q?.prompt || q?.promptText;
+      answer.value = draft?.answer ?? (saved[id].questionId === qkey() ? saved[id].answer || '' : '');
+      questionBody.innerHTML = q ? `<h3>${esc(q.title)}</h3><p class="tag">${q.sourceId ? q.sourceKind === 'official_mock' ? '공식 모의논술 문항' : '공식 자료 연결 문항' : '자체 제작 연습 문항'}</p>${prompt ? paragraphs(prompt) : '<p>이 문항은 아래 공식 PDF에서 읽을 수 있습니다. 문제 쪽수와 채점 기준 쪽수를 구분해 확인하세요.</p>'}${(Array.isArray(q.passages) ? q.passages : []).map(p => typeof p === 'string' ? `<blockquote>${paragraphs(p)}</blockquote>` : `<blockquote>${p.title || p.label ? `<strong>${esc(p.title || p.label)}</strong>` : ''}${paragraphs(p.text || p.content)}</blockquote>`).join('')}${q.questionPage && active.url ? `<button data-question-page>${q.referenceKind === 'rubric_page' ? '평가 기준' : '문제'} PDF ${Number(q.questionPage)}쪽 읽기</button>` : ''}${q.scoringNote ? `<p class="hint">${esc(q.scoringNote)}</p>` : ''}${q.sampleAnswer ? `<details><summary>풀이 기준·참고 답안 보기</summary><p class="hint">${q.sourceId ? '출처에 기반한 비교 기준입니다. 정답 수치 자동 비교와 서술형 풀이 점검은 구분됩니다.' : '자체 제작한 참고 답안입니다. 이 표현과 일치해야 정답이라는 뜻은 아닙니다.'}</p>${paragraphs(q.sampleAnswer)}</details>` : ''}` : '<h3>PDF 문항 자유 기록</h3><p>읽고 있는 PDF의 문항 번호와 답안을 기록하세요. 개별 정답 기준이 연결되지 않은 문항은 답안 구조 점검만 제공합니다.</p>';
+      editor.querySelector('#practice-numeric').innerHTML = q?.numericAnswer ? '<label for="practice-final-answer">최종 수치 답안</label><input id="practice-final-answer" type="text" placeholder="예: 602 또는 1/2"><p class="hint">계산 결과를 비교합니다. 서술·증명 과정 배점과 구분합니다.</p>' : '';
+      const finalInput = editor.querySelector('#practice-final-answer');
+      if (finalInput) { finalInput.value = draft?.finalAnswer || ''; finalInput.oninput = storeDraft; }
+      questionBody.querySelector('[data-question-page]')?.addEventListener('click', () => { const details = editor.querySelector('#practice-document'); if (details) details.open = true; reader?.goTo(q.questionPage); details?.scrollIntoView({ block: 'start' }); });
+      editor.querySelector('#practice-question-hard').textContent = isHard(id, qkey()) ? '★ 어려운 문제 해제' : '☆ 어려운 문제 담기';
+      result.innerHTML = ''; storeDraft(); setupDuration();
+      if (q?.questionPage) reader?.goTo(q.questionPage);
+    }
+    function setupDuration() {
+      const q = activeQuestion, verified = !!q?.durationVerified && Number(q.examDurationMinutes) > 0;
+      const minutes = verified ? Number(q.examDurationMinutes) : Number(q?.practiceDurationMinutes) || 60;
+      if (!saved[id].timer || saved[id].timer.status === 'idle') {
+        saved[id].timer = createTimer(minutes);
+        saved[id].timerInfo = { verified, note: verified ? `${q.sourceKind === 'official_mock' ? '공식 모의논술' : '해당 연도 공식 시험'} 전체 시간 ${minutes}분. ${q.durationNote || '문항 하나의 권장시간과는 다릅니다.'}` : `자유 연습 ${minutes}분입니다. ${q?.durationNote || '이 문항의 실제 시험시간은 확인되지 않아 공식 시간으로 표시하지 않습니다.'}` };
+        persist();
+      }
+      editor.querySelector('#practice-minutes').value = saved[id].timer.durationSeconds / 60;
+      editor.querySelector('#practice-duration-note').textContent = saved[id].timerInfo?.note || '이전에 저장한 연습 시간입니다.';
+      refreshClock();
+    }
+    function refreshClock() {
+      if (!alive() || version !== openVersion) { clearInterval(clock); return; }
+      const timer = saved[id].timer;
+      if (!timer) return;
+      const remaining = remainingSeconds(timer);
+      if (timer.status === 'running' && remaining === 0) { saved[id].timer = pauseTimer(timer); persist(); editor.querySelector('#practice-timer-status').textContent = '설정한 시간이 끝났습니다. 현재 답안을 저장하고 피드백을 확인해 보세요.'; }
+      const status = saved[id].timer.status;
+      editor.querySelector('#practice-clock strong').textContent = formatRemaining(remaining);
+      editor.querySelector('#practice-start').textContent = status === 'paused' ? '시간 이어하기' : '시간 시작';
+      editor.querySelector('#practice-start').disabled = status === 'running' || status === 'finished';
+      editor.querySelector('#practice-pause').disabled = status !== 'running';
+      editor.querySelector('#practice-minutes').disabled = status === 'running';
+    }
+    answer.oninput = storeDraft;
+    select.onchange = () => { storeDraft(); activeQuestion = qs.find(q => q.id === select.value) || null; showQuestion(); };
+    editor.querySelector('#practice-start').onclick = () => {
+      const minutesInput = editor.querySelector('#practice-minutes');
+      try {
+        if (saved[id].timer.status === 'idle' && Number(minutesInput.value) * 60 !== saved[id].timer.durationSeconds) {
+          saved[id].timer = createTimer(minutesInput.value); saved[id].timerInfo = { verified: false, note: `직접 설정한 자유 연습 ${minutesInput.value}분입니다.` };
+          editor.querySelector('#practice-duration-note').textContent = saved[id].timerInfo.note;
+        }
+        saved[id].timer = startTimer(saved[id].timer); persist(); refreshClock(); editor.querySelector('#practice-timer-status').textContent = '시간 측정을 시작했습니다.';
+      } catch (e) { editor.querySelector('#practice-timer-status').textContent = e.message; }
+    };
+    editor.querySelector('#practice-pause').onclick = () => { saved[id].timer = pauseTimer(saved[id].timer); persist(); refreshClock(); editor.querySelector('#practice-timer-status').textContent = '연습 시간을 일시정지했습니다.'; };
+    editor.querySelector('#practice-reset').onclick = () => {
+      try {
+        saved[id].timer = createTimer(editor.querySelector('#practice-minutes').value);
+        const verified = activeQuestion?.durationVerified && Number(activeQuestion.examDurationMinutes) === saved[id].timer.durationSeconds / 60;
+        saved[id].timerInfo = { verified, note: verified ? `${activeQuestion.sourceKind === 'official_mock' ? '공식 모의논술' : '해당 연도 공식 시험'} 전체 시간 ${activeQuestion.examDurationMinutes}분. ${activeQuestion.durationNote || ''}` : `직접 설정한 자유 연습 ${saved[id].timer.durationSeconds / 60}분입니다.` };
+        persist(); editor.querySelector('#practice-duration-note').textContent = saved[id].timerInfo.note; refreshClock(); editor.querySelector('#practice-timer-status').textContent = '시간만 다시 설정했습니다. 작성한 답안은 유지됩니다.';
+      } catch (e) { editor.querySelector('#practice-timer-status').textContent = e.message; }
+    };
+    editor.querySelector('#practice-question-hard').onclick = () => { storeDraft(); saved[id].drafts[qkey()].hard = !isHard(id, qkey()); persist(); editor.querySelector('#practice-question-hard').textContent = isHard(id, qkey()) ? '★ 어려운 문제 해제' : '☆ 어려운 문제 담기'; drawList(); };
+    editor.querySelector('#practice-feedback').onclick = () => {
+      storeDraft();
+      const text = answer.value.trim();
+      if (!text && !editor.querySelector('#practice-final-answer')?.value.trim()) { result.innerHTML = '<p role="alert">먼저 풀이 과정이나 답안을 작성해 주세요.</p>'; answer.focus(); return; }
+      const evaluation = evaluateEssay(text, activeQuestion || { criteria: [] });
+      const numeric = activeQuestion?.numericAnswer ? evaluateNumericAnswer(editor.querySelector('#practice-final-answer')?.value || '', activeQuestion) : null;
+      result.innerHTML = `<h3>답안 평가와 다음 수정</h3>${numeric ? numericFeedback(numeric, activeQuestion) : ''}<p>${esc(evaluation.summary || '답안의 근거와 구성 요소를 확인했습니다.')}</p>${(evaluation.criteria || []).map(c => `<article><h4>${esc(c.label)}</h4>${c.referenceEvidence ? `<p><strong>비교할 기준</strong> ${esc(c.referenceEvidence)}</p>` : ''}${c.evidence ? `<blockquote><strong>내 답안에서 확인한 부분</strong><br>${esc(Array.isArray(c.evidence) ? c.evidence.join(' · ') : c.evidence)}</blockquote>` : ''}<p>${esc(c.feedback || '')}</p></article>`).join('')}${evaluation.nextActions?.length ? `<h4>다음 답안에서 바꿀 것</h4><ol>${evaluation.nextActions.map(s => `<li>${esc(s)}</li>`).join('')}</ol>` : ''}${evaluation.warnings?.length ? `<p class="hint">${evaluation.warnings.map(esc).join(' ')}</p>` : ''}<p class="hint">서술형 피드백은 학습을 돕는 기준 비교입니다. 대학의 실제 채점 결과나 합격 가능성을 산출하지 않습니다.</p><button id="practice-revise">답안 고쳐 쓰기</button>`;
+      result.querySelector('#practice-revise').onclick = () => answer.focus(); result.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    };
+    showQuestion(); clock = setInterval(refreshClock, 500);
+    editor.querySelector('h2').focus({ preventScroll: true }); editor.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    if (active.url) {
+      const control = await renderDocument(editor.querySelector('#practice-pdf'), { resourceId: id, title: active.title, originalUrl: active.url, initialPage: activeQuestion?.questionPage || 1 });
+      if (!alive() || version !== openVersion) control.destroy(); else { reader = control; if (activeQuestion?.questionPage) reader.goTo(activeQuestion.questionPage); }
+    }
+  }
+  [mode, school, subject, hard].forEach(control => control.onchange = () => { page = 0; drawList(); });
+  school.onchange = () => {
+    if (mode.value === 'questions' && school.value && !readyQuestions.some(q => schoolFor(q) === school.value) && resources.some(r => r.universityName === school.value)) mode.value = 'resources';
+    subject.value = ''; page = 0; drawList();
+  };
+  const previous = saved._session;
+  if (previous) {
+    mode.value = previous.mode === 'resources' ? 'resources' : 'questions';
+    if ([...school.options].some(o => o.value === previous.school)) school.value = previous.school;
+    if ([...subject.options].some(o => o.value === previous.subject)) subject.value = previous.subject;
+  }
+  drawList();
+  if (previous?.id) open(previous.id, previous.questionId);
 }
