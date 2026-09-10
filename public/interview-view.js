@@ -1,3 +1,10 @@
+import {mountWriting,getSavedWritingTarget} from './writing-view.js';
+let interviewSession = null;
+const materialAnswerSets = new Map();
+export function cleanupInterview(root) {
+  root?._interviewCleanup?.();
+  if(root){root._interviewCleanup=null;root._interviewGeneration=null;}
+}
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl = value => /^https:\/\//i.test(String(value || '')) ? value : '';
 const inactive = new Set(['0000431', '0002659', '0000548']);
@@ -82,7 +89,7 @@ export function buildPracticeQuestions({school = '', major = '', evidence = [], 
   const domain = domains.find(([pattern])=>pattern.test(major));
   if(domain)result.push({id:'target-domain',category:domain[1],text:major+' 연습: '+domain[2],kind:'학과명에서 선택한 분야별 자체 연습 질문 · 실제 기출·교육과정 검증값 아님'});
   if (formats.length) result.push({id:'target-official', category:'선택 전형 평가방법 대비', text:'선택한 '+formats[0].track+' 전형('+formats[0].scope+')의 공식 안내 “' + String(formats[0].method).slice(0, 180) + '”에 대비해, 본인의 경험 중 해당 역량을 설명할 수 있는 사례와 확인 근거를 말해 주세요.', kind:'확인된 평가방법 기반 연습 질문 · 선택한 전형·모집단위 범위에 한함'});
-  evidence.forEach((entry, i) => result.push({id:'resume-'+i, category:'내 자료 기반 질문 '+(i+1), evidence:entry.text, text:'자료에 “'+entry.text+'”라고 적었습니다. 이 경험에서 본인이 직접 한 일, 그렇게 한 이유, 결과를 확인한 근거를 설명해 주세요.', kind:'첨부·붙여넣은 문장 기반 연습 질문 · 실제 기출 아님'}));
+  evidence.forEach((entry, i) => result.push({id:'resume-'+i, category:'내 자료 기반 질문 '+(i+1), evidence:entry.text, text:'자료에 “'+entry.text+'”라고 적었습니다. 이 경험에서 본인이 직접 한 일, 그렇게 한 이유, 결과를 확인한 근거를 설명해 주세요.', kind:'직접 작성하거나 가져온 문장 기반 연습 질문 · 실제 기출 아님'}));
   return result;
 }
 
@@ -125,7 +132,8 @@ export function findOfficialInterviewSchool(university, schools = []) {
 }
 function link(url,label) { return safeUrl(url) ? '<a class="button" target="_blank" rel="noopener noreferrer" href="'+esc(url)+'">'+esc(label)+'</a>' : ''; }
 
-export async function renderInterview(root) {
+export async function renderInterview(root, options = {}) {
+  cleanupInterview(root);
   const generation = Symbol(); root._interviewGeneration = generation;
   const active = () => root._interviewGeneration === generation && !!root.querySelector('#iv-loading, #iv-answer');
   root.innerHTML = '<p class="eyebrow">면접 준비실</p><h1>한 번의 답변에서, 다음 개선점을 찾아요</h1><p id="iv-loading" role="status">학교와 면접 자료를 불러오고 있어요…</p>';
@@ -144,13 +152,20 @@ export async function renderInterview(root) {
   const integration = results[2].status === 'fulfilled' ? results[2].value : null;
   const schools = (catalog?.universities || data.schools.map((s,i) => ({id:'official-'+i,name:s.name}))).filter(s => !inactive.has(s.id)).sort((a,b) => a.name.localeCompare(b.name,'ko'));
   let state = {school:'', major:'', majorManual:'', format:'', question:'target-motivation', answers:{}, custom:''};
-  try { state = {...state, ...JSON.parse(localStorage.getItem('jobnkill-interview-v2') || '{}')}; } catch {}
+  if(interviewSession)state={...state,...interviewSession.state};
+  else try { state = {...state, ...JSON.parse(localStorage.getItem('jobnkill-interview-v2') || '{}')}; } catch {}
+  if(!interviewSession && !state.school){
+    const target=getSavedWritingTarget();
+    const match=target?.schoolId?schools.find(s=>s.id===target.schoolId):null;
+    if(match){state.school=match.id;state.major=target.major || '';}
+  }
   if(!state.answers || typeof state.answers!=='object')state.answers={};
-  let resumeEvidence = [], questions = [], loadVersion = 0, uploadVersion = 0;
-  root.innerHTML = '<p class="eyebrow">면접 준비실</p><h1>질문을 읽고, 내 말로 답해 보세요</h1><p>대학·학과 선택 → 질문 선택 → 답변 작성 → 피드백·재답변 순서로 연습해요.</p><nav class="actions" aria-label="준비 메뉴"><a class="button" href="#find">대학 찾기</a><a class="button" href="#prepare/exams">논술 기출</a><a class="button" href="#prepare/essay">논술 연습</a></nav>'+
+  let appliedMaterial = interviewSession?.appliedMaterial || '';
+  let resumeEvidence = interviewSession?.evidence || [], questions = [], loadVersion = 0, uploadVersion = 0, writing;
+  root.innerHTML = '<p class="eyebrow">면접 준비실</p><h1>질문을 읽고, 내 말로 답해 보세요</h1><p>대학·학과를 고르고 경험을 정리한 뒤, 내 글로 질문을 만들어 면접까지 연습해요.</p><nav class="actions" aria-label="준비 메뉴"><a class="button" href="#find">대학 찾기</a><a class="button" href="#prepare/exams">논술 기출</a><a class="button" href="#prepare/essay">논술 연습</a></nav>'+
     '<section class="panel"><h2>1. 지원 대학·학과</h2><div class="fields"><div><label for="iv-school">대학 선택</label><select id="iv-school"><option value="">대학 선택 전 · 공통 연습</option>'+schools.map(s => '<option value="'+esc(s.id)+'">'+esc(s.displayName || s.name)+'</option>').join('')+'</select></div><div><label for="iv-major">학과 선택</label><select id="iv-major"><option value="">대학을 선택하면 학과가 나와요</option></select></div></div><p id="iv-school-status" class="hint" role="status">'+schools.length+'개 대학 선택 가능 · 공식 면접 방식은 '+data.schools.length+'개 대학의 일부 전형 확인'+(!catalog?' · 전국 목록 연결 실패로 확인된 대학만 표시':'')+'</p><details><summary>학교별 면접시간·방법·기출 확인</summary><div id="iv-info"></div></details></section>'+
-    '<section class="panel"><h2>2. 나에게 맞는 질문</h2><details id="iv-material"><summary>자기소개서·활동 자료로 질문 만들기 (선택)</summary><p>자기소개서, 활동 기록, 면접 준비 메모에서 본인이 작성한 문장을 바탕으로 추가 질문을 만들어요. 대학에 자기소개서를 제출해야 한다는 뜻은 아닙니다.</p><label for="iv-upload">PDF·TXT 가져오기 · 최대 10MB, PDF 50쪽</label><input type="file" id="iv-upload" accept=".pdf,.txt,application/pdf,text/plain"><p id="iv-upload-status" role="status"></p><label for="iv-resume">추출된 내용을 확인하거나 직접 붙여넣기</label><textarea id="iv-resume" rows="6" maxlength="30000" placeholder="질문으로 연습하고 싶은 실제 경험이나 활동 기록을 붙여넣어 주세요."></textarea><p class="hint">파일은 기기에서 읽으며 서버나 외부 AI로 전송하지 않아요. 첨부 원문은 브라우저 저장소에도 저장하지 않습니다.</p><div class="actions"><button type="button" id="iv-make-questions">이 내용으로 질문 만들기</button><button type="button" id="iv-remove-material">가져온 자료 지우기</button></div><p id="iv-material-status" role="status"></p><div id="iv-writer"></div></details><label for="iv-question">연습 질문 선택</label><select id="iv-question"></select><div id="iv-question-text" class="notice"></div><label for="iv-custom" id="iv-custom-label" hidden>직접 연습할 질문</label><textarea id="iv-custom" rows="3" maxlength="2000" hidden></textarea></section>'+
-    '<section class="panel"><h2>3. 답변 작성</h2><form id="iv-form"><label for="iv-answer">내 답변</label><textarea id="iv-answer" rows="9" maxlength="10000" placeholder="항목을 나누지 않고 면접에서 말하듯 답해 주세요. 피드백에서 상황·역할·행동·근거·전공 연결을 함께 살펴볼게요." aria-describedby="iv-answer-help"></textarea><p id="iv-answer-help" class="hint">실제 경험과 생각을 자유롭게 작성하세요. 짧게 시작하고 피드백을 보고 보완해도 좋아요.</p><p id="iv-progress" role="status"></p><label><input type="checkbox" id="iv-persist"> 이 기기에 답변 저장하기 (공용 기기에서는 해제)</label><p class="hint">자기소개서 기반 질문의 답변은 저장 옵션과 관계없이 이번 화면에서만 유지됩니다.</p><div class="actions"><button type="submit" class="primary">답변 피드백 받기</button><button type="button" id="iv-clear">현재 답변 지우기</button></div><p id="iv-save-status" role="status"></p></form></section><section id="iv-feedback" aria-live="polite"></section>';
+    '<section id="iv-writer" class="panel"></section><section class="panel"><h2>2. 나에게 맞는 질문</h2><details id="iv-material"><summary>자기소개서·활동 자료로 질문 만들기 (선택)</summary><p>자기소개서, 활동 기록, 면접 준비 메모에서 본인이 작성한 문장을 바탕으로 추가 질문을 만들어요. 대학에 자기소개서를 제출해야 한다는 뜻은 아닙니다.</p><label for="iv-upload">PDF·TXT 가져오기 · 최대 10MB, PDF 50쪽</label><input type="file" id="iv-upload" accept=".pdf,.txt,application/pdf,text/plain"><p id="iv-upload-status" role="status"></p><label for="iv-resume">추출된 내용을 확인하거나 직접 붙여넣기</label><textarea id="iv-resume" rows="6" maxlength="30000" placeholder="질문으로 연습하고 싶은 실제 경험이나 활동 기록을 붙여넣어 주세요."></textarea><p class="hint">파일은 기기에서 읽으며 서버나 외부 AI로 전송하지 않아요. 첨부 원문은 브라우저 저장소에도 저장하지 않습니다.</p><div class="actions"><button type="button" id="iv-make-questions">이 내용으로 질문 만들기</button><button type="button" id="iv-remove-material">가져온 자료 지우기</button></div><p id="iv-material-status" role="status"></p></details><label for="iv-question">연습 질문 선택</label><select id="iv-question"></select><div id="iv-question-text" class="notice"></div><label for="iv-custom" id="iv-custom-label" hidden>직접 연습할 질문</label><textarea id="iv-custom" rows="3" maxlength="2000" hidden></textarea></section>'+
+    '<section class="panel"><h2>3. 답변 작성</h2><form id="iv-form"><label for="iv-answer">내 답변</label><textarea id="iv-answer" rows="9" maxlength="10000" placeholder="항목을 나누지 않고 면접에서 말하듯 답해 주세요. 피드백에서 상황·역할·행동·근거·전공 연결을 함께 살펴볼게요." aria-describedby="iv-answer-help"></textarea><p id="iv-answer-help" class="hint">실제 경험과 생각을 자유롭게 작성하세요. 짧게 시작하고 피드백을 보고 보완해도 좋아요.</p><p id="iv-progress" role="status"></p><label><input type="checkbox" id="iv-persist"> 이 기기에 답변 저장하기 (공용 기기에서는 해제)</label><p class="hint">내 글로 만든 질문과 답변은 저장 옵션과 관계없이 새로고침하거나 닫으면 사라집니다. 이 탭에서는 최근 사용한 글 5개까지 답변을 이어볼 수 있어요.</p><div class="actions"><button type="submit" class="primary">답변 피드백 받기</button><button type="button" id="iv-clear">현재 답변 지우기</button></div><p id="iv-save-status" role="status"></p></form></section><section id="iv-feedback" aria-live="polite"></section>';
   const $ = selector => root.querySelector(selector);
   $('#iv-school').value = schools.some(s=>s.id===state.school) ? state.school : '';
   $('#iv-persist').checked = !!state.persist;
@@ -168,7 +183,7 @@ export async function renderInterview(root) {
     try {
       const saved = {...state, question:state.question.startsWith('resume-')?'target-motivation':state.question, answers:Object.fromEntries(Object.entries(state.answers).filter(([k])=>!k.split('|').at(-1).startsWith('resume-')))};
       if (state.persist) { localStorage.setItem('jobnkill-interview-v2',JSON.stringify(saved)); $('#iv-save-status').textContent='일반 연습 답변을 이 기기에 저장했어요.'; }
-      else { localStorage.removeItem('jobnkill-interview-v2'); $('#iv-save-status').textContent='이번 화면에서만 유지해요. 이동하기 전에 필요한 답변을 복사해 주세요.'; }
+      else { localStorage.removeItem('jobnkill-interview-v2'); $('#iv-save-status').textContent='이 탭에서 이동하는 동안 유지해요. 새로고침하거나 닫기 전에 필요한 답변을 복사해 주세요.'; }
     } catch { $('#iv-save-status').textContent='기기 저장 공간을 사용할 수 없어요. 답변을 따로 복사해 주세요.'; }
     progress();
   }
@@ -181,6 +196,7 @@ export async function renderInterview(root) {
     $('#iv-feedback').innerHTML = ''; progress();
   }
   function updateQuestions() {
+    writing?.setContext({schoolId:selectedSchool()?.id || '',school:selectedSchool()?.name || '',major:selectedMajor()});
     const old = $('#iv-question').value || state.question;
     const format=selectedOfficial()?.formats?.[Number($('#iv-format').value)];
     const manual=!!$('#iv-major-manual').value.trim();
@@ -211,7 +227,7 @@ export async function renderInterview(root) {
     }
     if(!active() || version!==loadVersion)return;
     $('#iv-major').innerHTML='<option value="">'+(departments.length?'학과 선택 (선택사항)':'학과 미선택 · 공통 질문으로 연습')+'</option>'+[...new Set(departments.map(d=>d.name))].sort((a,b)=>a.localeCompare(b,'ko')).map(name=>'<option value="'+esc(name)+'">'+esc(name)+'</option>').join('');
-    $('#iv-major').disabled=false; $('#iv-major').value=departments.some(d=>d.name===desired)?desired:'';updateQuestions();
+    $('#iv-major').disabled=false; $('#iv-major').value=departments.some(d=>d.name===desired)?desired:'';if(initial && desired && !$('#iv-major').value && !$('#iv-major-manual').value)$('#iv-major-manual').value=desired;updateQuestions();
   }
   $('#iv-school').onchange=()=>changeSchool();
   $('#iv-major').onchange=()=>{$('#iv-major-manual').value='';updateQuestions();};
@@ -227,14 +243,40 @@ export async function renderInterview(root) {
     finally {if(active()&&version===uploadVersion)$('#iv-make-questions').disabled=false;}
   };
   $('#iv-make-questions').onclick=()=>{
-    state.answers=Object.fromEntries(Object.entries(state.answers).filter(([k])=>!k.split('|').at(-1).startsWith('resume-')));
-    resumeEvidence=extractResumeEvidence($('#iv-resume').value);updateQuestions();
+    const nextMaterial=$('#iv-resume').value;
+    if(appliedMaterial!==nextMaterial){
+      if(appliedMaterial)materialAnswerSets.set(appliedMaterial,Object.fromEntries(Object.entries(state.answers).filter(([k])=>k.split('|').at(-1).startsWith('resume-'))));
+      while(materialAnswerSets.size>5)materialAnswerSets.delete(materialAnswerSets.keys().next().value);
+      state.answers={...Object.fromEntries(Object.entries(state.answers).filter(([k])=>!k.split('|').at(-1).startsWith('resume-'))),...(materialAnswerSets.get(nextMaterial)||{})};
+    }
+    appliedMaterial=nextMaterial;
+    resumeEvidence=extractResumeEvidence(nextMaterial);updateQuestions();
     $('#iv-material-status').textContent=resumeEvidence.length?'내 문장을 근거로 '+resumeEvidence.length+'개 연습 질문을 만들었어요. 질문 선택 목록에서 확인하세요.':'질문으로 사용할 문장을 찾지 못했어요. 활동·행동·배운 점이 담긴 문장을 조금 더 작성해 주세요.';
     if(resumeEvidence.length){$('#iv-question').value='resume-0';changeQuestion();$('#iv-question').focus();}
   };
-  $('#iv-remove-material').onclick=()=>{uploadVersion++;resumeEvidence=[];$('#iv-resume').value='';$('#iv-upload').value='';$('#iv-upload-status').textContent='';$('#iv-make-questions').disabled=false;state.answers=Object.fromEntries(Object.entries(state.answers).filter(([k])=>!k.split('|').at(-1).startsWith('resume-')));updateQuestions();$('#iv-material-status').textContent='가져온 원문과 자료 기반 질문·답변을 지웠어요.';};
+  $('#iv-remove-material').onclick=()=>{uploadVersion++;appliedMaterial='';materialAnswerSets.clear();resumeEvidence=[];$('#iv-resume').value='';$('#iv-upload').value='';$('#iv-upload-status').textContent='';$('#iv-make-questions').disabled=false;state.answers=Object.fromEntries(Object.entries(state.answers).filter(([k])=>!k.split('|').at(-1).startsWith('resume-')));updateQuestions();$('#iv-material-status').textContent='가져온 원문과 자료 기반 질문·답변을 지웠어요.';};
+  $('#iv-resume').value=interviewSession?.material || '';
+  $('#iv-material').open=!!interviewSession?.material;
+  writing=mountWriting($('#iv-writer'),{
+    getContext:()=>({schoolId:selectedSchool()?.id || '',school:selectedSchool()?.name || '',major:selectedMajor()}),
+    initiallyOpen:!!options.compose,
+    onUseDraft:({text})=>{
+      if(!extractResumeEvidence(text).length)throw new Error('질문으로 사용할 경험 문장을 찾지 못했어요. 활동과 직접 한 일이 드러나는 문장으로 보완해 주세요.');
+      uploadVersion++;$('#iv-upload').value='';$('#iv-upload-status').textContent='';$('#iv-make-questions').disabled=false;
+      $('#iv-resume').value=text;
+      $('#iv-material').open=true;
+      $('#iv-make-questions').click();
+      $('#iv-question-text').scrollIntoView({block:'center'});
+    }
+  });
   const writer=integration?.resumeWriter;
-  $('#iv-writer').innerHTML=safeUrl(writer?.url)?link(writer.url,writer.label||'잡앤킬 자기소개서 작성 도구 열기')+'<p class="hint">작성 도구는 새 창에서 열립니다. 문서가 자동 전송되지는 않아요.</p>':'<p class="hint">자기소개서 작성 도구의 연결 주소를 확인 중입니다. 작성한 자료를 위에서 가져오거나 붙여넣을 수 있어요.</p>';
+  if(safeUrl(writer?.url))$('#iv-material').insertAdjacentHTML('beforeend','<details><summary>기존 자기소개서 서비스 보관함</summary>'+link(writer.url,'기존 서비스 열기')+'<p class="hint">기존 회원 보관함은 별도 창에서 확인합니다. 이 화면의 글이 자동 전송되지는 않아요.</p></details>');
+  root._interviewCleanup=()=>{
+    if(!$('#iv-answer'))return;
+    state.school=$('#iv-school').value;state.major=$('#iv-major').value;state.majorManual=$('#iv-major-manual').value.trim();state.format=$('#iv-format').value;state.question=$('#iv-question').value;state.custom=$('#iv-custom').value;
+    interviewSession={state,evidence:resumeEvidence,material:$('#iv-resume').value,appliedMaterial};
+    writing.destroy();uploadVersion++;loadVersion++;
+  };
   $('#iv-clear').onclick=()=>{$('#iv-answer').value='';persist();$('#iv-feedback').innerHTML='';$('#iv-answer').focus();};
   $('#iv-form').onsubmit=event=>{
     event.preventDefault();persist();const result=interviewFeedback($('#iv-answer').value,{major:selectedMajor()});const out=$('#iv-feedback');

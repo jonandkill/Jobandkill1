@@ -334,7 +334,7 @@ for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interv
 }
 app.get('/api/exams', (_request, response) => response.json(exams));
 app.get('/api/integrations',(_request,response)=>{
-  const url=process.env.RESUME_WRITER_URL||'';
+  const url=process.env.RESUME_WRITER_URL||'https://jobnkill-essay-platform.jungdaewoong.chatgpt.site';
   response.json({resumeWriter:{url:/^https:\/\//.test(url)?url:null,label:'잡앤킬 자기소개서 작성'}});
 });
 
