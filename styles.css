@@ -1981,3 +1981,9 @@ footer p {
 .generated-image-panel { padding: clamp(16px, 3vw, 32px); border: 1px solid var(--line, #ded8ca); border-radius: 12px; background: white; }
 .generated-image-panel img { display: block; width: min(100%, 640px); height: auto; margin: 16px 0; border-radius: 8px; }
 .generated-image-panel p { line-height: 1.7; color: #94351e; overflow-wrap: anywhere; }
+
+.generated-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.generated-gallery figure { margin: 0; min-width: 0; display: grid; align-content: start; gap: 10px; }
+.generated-gallery img { width: 100%; height: auto; border-radius: 12px; }
+.generated-gallery a { min-height: 44px; white-space: normal; }
+@media (max-width: 600px) { .generated-gallery { grid-template-columns: 1fr; } }

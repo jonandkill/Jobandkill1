@@ -15,7 +15,7 @@ const options = { apiKey: 'mock-not-a-key', ledger, now: '2026-09-10' };
 test('keyword body and default image are real separate API requests; no live calls', async () => {
   const calls = [];
   const result = await generateArticle({ primaryKeyword: keyword }, { ...options, fetchImpl: async (url, init) => { calls.push({ url, body: JSON.parse(init.body) }); return { ok: true, json: async () => url.endsWith('/responses') ? response : { data: [{ b64_json: 'YWJj' }] } }; } });
-  assert.equal(calls.length, 2); assert.equal(calls[0].body.max_output_tokens, 2500); assert.equal(calls[1].body.quality, 'low'); assert.match(result.articleInput.draft, /영양표시/); assert.match(result.image.dataUrl, /^data:image\/png/);
+  assert.equal(calls.length, 3); assert.equal(calls[0].body.max_output_tokens, 2500); assert.equal(calls[1].body.quality, 'low'); assert.match(result.articleInput.draft, /영양표시/); assert.match(result.image.dataUrl, /^data:image\/png/);
   assert.ok(buildArticle(result.articleInput).sections.length >= 3);
 });
 test('image unchecked never calls image API', async () => {
@@ -31,7 +31,7 @@ test('missing credentials or ledger never calls provider', async () => {
 test('oversize, punctuation and nonstring keyword rejected', () => {
   for (const primaryKeyword of ['%%%%', {}, '', 'a'.repeat(121)]) assert.throws(() => prepareRequest({ primaryKeyword }), { code: 'INVALID_KEYWORD' });
   assert.throws(() => prepareRequest({ primaryKeyword: keyword, draft: '가'.repeat(5000) }), { code: 'INPUT_TOO_LONG' });
-  assert.ok(prepareRequest({ primaryKeyword: keyword }).reserveKrw < 30);
+  assert.ok(prepareRequest({ primaryKeyword: keyword }).reserveKrw < 50);
 });
 test('empty or unrelated response is not disguised as successful template', async () => {
   const fetchImpl = async () => ({ ok: true, json: async () => ({ output: [] }) });
@@ -69,4 +69,30 @@ test('server refuses unauthenticated paid endpoint and hides server files', asyn
     const result = await fetch(`${url}/api/generate`, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${'x'.repeat(32)}` }, body: JSON.stringify({ primaryKeyword: keyword }) });
     assert.equal(result.status, 200); assert.equal(calls, 1);
   } finally { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
+});
+
+test('two illustrations and six source-derived cards; bounded reservation covers both prompts', async () => {
+  const result = await generateArticle({ primaryKeyword: keyword }, { ...options, fetchImpl: async url => ({ ok: true, json: async () => url.endsWith('/responses') ? response : { data: [{ b64_json: 'YWJj' }] } }) });
+  assert.equal(result.images.length, 2);
+  assert.equal(result.cards.length, 6);
+  assert.deepEqual(result.visualStatus, { expected: 8, available: 8, complete: true });
+  assert.equal(result.cards[1].body, article.sections[0].body);
+  assert.match(result.cards[5].body, /사실 검증/);
+  const without = prepareRequest({ primaryKeyword: keyword, generateImages: false }).reserveKrw;
+  assert.ok(result.usage.reservedKrw - without >= 27.32);
+  assert.ok(result.usage.reservedKrw <= 42.23);
+});
+test('one failed illustration preserves the other and all six cards without retry', async () => {
+  let imageCalls = 0;
+  const result = await generateArticle({ primaryKeyword: keyword }, { ...options, fetchImpl: async url => {
+    if (url.endsWith('/responses')) return { ok: true, json: async () => response };
+    imageCalls++;
+    return imageCalls === 1 ? { ok: false, status: 500 } : { ok: true, json: async () => ({ data: [{ b64_json: 'YWJj' }] }) };
+  } });
+  assert.equal(imageCalls, 2);
+  assert.equal(result.images.length, 1);
+  assert.equal(result.cards.length, 6);
+  assert.equal(result.visualStatus.complete, false);
+  assert.equal(result.visualStatus.available, 7);
+  assert.match(result.imageError, /AI 그림 1/);
 });

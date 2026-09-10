@@ -130,29 +130,68 @@ async function checkServer() {
   }
 }
 
-function renderGeneratedImage(image, error = "") {
+function cardImage(card) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) throw new Error("이 브라우저에서 정보 카드를 그릴 수 없습니다.");
+  const wrap = (text, font) => {
+    ctx.font = font;
+    const lines = [];
+    for (const paragraph of String(text || "").split("\n")) {
+      let line = "";
+      for (const char of paragraph) {
+        if (ctx.measureText(line + char).width > 900) { lines.push(line); line = char; }
+        else line += char;
+      }
+      lines.push(line);
+    }
+    return lines;
+  };
+  const title = wrap(String(card.title || "").slice(0, 120), 'bold 48px sans-serif');
+  const original = String(card.body || "");
+  const excerpt = original.length > 600;
+  const body = wrap(excerpt ? original.slice(0, 600) + "…" : original, '32px sans-serif');
+  canvas.height = Math.max(1080, 330 + title.length * 66 + body.length * 52);
+  ctx.fillStyle = ["#edf4fa", "#f4f1e9", "#edf5ef"][Number(card.order || 0) % 3];
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#315c77"; ctx.font = 'bold 24px sans-serif';
+  ctx.fillText(`본문 정보 카드 · ${card.order || ""}`, 90, 96);
+  let y = 180;
+  ctx.fillStyle = "#172e42"; ctx.font = 'bold 48px sans-serif';
+  for (const line of title) { ctx.fillText(line, 90, y); y += 66; }
+  y += 40; ctx.font = '32px sans-serif';
+  for (const line of body) { ctx.fillText(line, 90, y); y += 52; }
+  ctx.font = '24px sans-serif'; ctx.fillStyle = "#435b6c";
+  ctx.fillText(excerpt ? "AI 초안 일부 발췌 · 게시 전 사실 확인 필요" : "AI 초안 기반 · 게시 전 사실 확인 필요", 90, canvas.height - 65);
+  return { kind: "card", dataUrl: canvas.toDataURL("image/png"), altText: `${card.title}: ${original}` };
+}
+
+function renderGeneratedImage(value, error = "") {
   generatedImagePanel.replaceChildren();
-  generatedImagePanel.hidden = !image && !error;
-  if (!image && !error) return;
+  const images = (Array.isArray(value) ? value : value ? [value] : []).slice(0, 8);
+  generatedImagePanel.hidden = !images.length && !error;
+  if (generatedImagePanel.hidden) return;
   const heading = document.createElement("h3");
-  heading.textContent = "실제 AI 생성 이미지";
+  heading.textContent = `다운로드 가능한 이미지 ${images.length}개 / 기본 구성 8개`;
   generatedImagePanel.append(heading);
-  if (image && /^data:image\/(?:png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(image.dataUrl || "")) {
-    const img = document.createElement("img");
-    img.src = image.dataUrl;
-    img.alt = image.altText || article?.title || "AI 생성 참고 이미지";
-    const link = document.createElement("a");
-    link.href = image.dataUrl;
-    link.download = `${safeFilename()}-image.${image.dataUrl.startsWith("data:image/jpeg") ? "jpg" : image.dataUrl.startsWith("data:image/webp") ? "webp" : "png"}`;
-    link.textContent = "생성 이미지 내려받기";
-    link.className = "button ghost";
-    generatedImagePanel.append(img, link);
-  } else if (image) error = "이미지 응답 형식을 확인할 수 없습니다. 본문은 그대로 사용할 수 있습니다.";
+  const grid = document.createElement("div"); grid.className = "generated-gallery";
+  images.forEach((image, index) => {
+    if (!/^data:image\/(?:png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(image?.dataUrl || "")) {
+      error += " 이미지 파일 형식이 올바르지 않습니다."; return;
+    }
+    const figure = document.createElement("figure");
+    const img = document.createElement("img"); img.src = image.dataUrl;
+    img.alt = image.altText || "생성 이미지"; img.loading = "lazy";
+    const link = document.createElement("a"); link.href = image.dataUrl;
+    link.download = `${safeFilename()}-${index + 1}.${image.dataUrl.startsWith("data:image/jpeg") ? "jpg" : image.dataUrl.startsWith("data:image/webp") ? "webp" : "png"}`;
+    link.textContent = `${index + 1}. ${image.kind === "card" ? "정보 카드" : "AI 그림"} 내려받기`;
+    link.className = "button ghost"; figure.append(img, link); grid.append(figure);
+  });
+  generatedImagePanel.append(grid);
   if (error) {
-    const note = document.createElement("p");
-    note.textContent = error;
-    note.setAttribute("role", "status");
-    generatedImagePanel.append(note);
+    const note = document.createElement("p"); note.textContent = error;
+    note.setAttribute("role", "status"); generatedImagePanel.append(note);
   }
 }
 
@@ -404,7 +443,7 @@ async function compose() {
     composeButton.disabled = true;
     form.setAttribute("aria-busy", "true");
     generationStatus.hidden = false;
-    generationStatus.textContent = rawInput.generateImages === "true" ? "키워드에 맞는 본문과 이미지 1장을 생성 중입니다. 최대 3분 정도 걸릴 수 있습니다." : "키워드에 맞는 본문을 생성 중입니다.";
+    generationStatus.textContent = rawInput.generateImages === "true" ? "키워드에 맞는 본문과 AI 그림 2장, 정보 카드 6장을 생성 중입니다. 최대 3분 정도 걸릴 수 있습니다." : "키워드에 맞는 본문을 생성 중입니다.";
     try {
       const headers = { "Content-Type": "application/json" };
       if (accessToken.value.trim()) headers.Authorization = `Bearer ${accessToken.value.trim()}`;
@@ -438,9 +477,14 @@ async function compose() {
 
   persistDraft();
   refreshArticle(input);
-  generatedImage = payload?.image || null;
+  generatedImage = payload ? [...(payload.images || (payload.image ? [payload.image] : []))] : null;
+  let cardError = "";
+  if (Array.isArray(payload?.cards)) {
+    try { generatedImage.push(...payload.cards.slice(0, 6).map(cardImage)); }
+    catch { cardError = "정보 카드 변환에 실패했습니다. 본문과 AI 그림은 보존했습니다."; }
+  }
   generationMetadata = payload ? { warnings: payload.warnings, usage: payload.usage, imageError: payload.imageError } : null;
-  renderGeneratedImage(generatedImage, payload?.imageError || (mode === "generate" && rawInput.generateImages === "true" && !generatedImage ? "본문은 생성되었으나 이미지가 반환되지 않았습니다. 아래 배치안은 실제 이미지가 아닙니다." : ""));
+  renderGeneratedImage(generatedImage, cardError || payload?.imageError || (mode === "generate" && rawInput.generateImages === "true" && !generatedImage ? "본문은 생성되었으나 이미지가 반환되지 않았습니다. 아래 배치안은 실제 이미지가 아닙니다." : ""));
   const generationNotice = document.querySelector("#generation-notice");
   generationNotice.hidden = mode !== "generate";
   const reserve = Number(payload?.usage?.reservedKrw);
@@ -558,6 +602,7 @@ function exportBundle() {
     form: input,
     articleInput: activeInput,
     generationMetadata,
+    generatedImages: generatedImage,
     article,
     publishPackage: createPublishPackage(article, input),
   };
@@ -590,8 +635,8 @@ async function importBundle(file) {
       resultState.hidden = false;
       emptyState.hidden = true;
     }
-    generatedImage = null;
-    renderGeneratedImage(null);
+    generatedImage = Array.isArray(parsed.generatedImages) ? parsed.generatedImages.slice(0, 8) : null;
+    renderGeneratedImage(generatedImage);
     generationMetadata = parsed.generationMetadata || null;
     const notice = document.querySelector("#generation-notice");
     notice.hidden = !generationMetadata;

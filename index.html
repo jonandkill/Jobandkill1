@@ -33,7 +33,7 @@
           <span class="boundary-dot" aria-hidden="true"></span>
           <div>
             <strong>주제에 맞는 본문 · 이미지 선택 생성</strong>
-            <p>AI 작성은 서버 연결이 필요합니다. 100건당 3,000원 이하 예산을 지향하며 서버 한도에 도달하면 요청을 중단합니다. AI 내용과 출처는 자동 검증된 사실이 아닙니다.</p>
+            <p>AI 작성은 서버 연결이 필요합니다. 기본 이미지 8개 구성으로 100건당 API 예산 5,000원을 설정하며 서버 한도에 도달하면 요청을 중단합니다. AI 내용과 출처는 자동 검증된 사실이 아닙니다.</p>
           </div>
         </div>
       </section>
@@ -144,7 +144,7 @@
           </div>
 
           <section class="generation-options" aria-label="AI 생성 옵션">
-            <label class="image-toggle"><input type="checkbox" name="generateImages" checked><span><strong>실제 AI 이미지 1장 함께 생성</strong><small>기본 선택 · 해제하면 본문만 생성합니다. 기존 원고 재구성에서는 AI를 호출하지 않습니다.</small></span></label>
+            <label class="image-toggle"><input type="checkbox" name="generateImages" checked><span><strong>AI 그림 2장 + 정보 카드 6장</strong><small>기본 8개 · 카드는 본문에서 제작하며 추가 이미지 API 비용이 없습니다. 해제하면 본문만 생성합니다. 기존 원고 재구성에서는 AI를 호출하지 않습니다.</small></span></label>
             <p id="server-status" role="status">AI 작성 서버 연결을 확인하고 있습니다…</p>
             <label class="field" id="access-token-field" hidden><span>스튜디오 이용 암호</span><input id="access-token" type="password" autocomplete="off" placeholder="관리자가 발급한 이용 암호"><small>이 화면에서만 사용합니다. 브라우저 저장·문서 내보내기에 포함하지 않습니다. OpenAI API 키는 입력하지 마세요.</small></label>
           </section>

@@ -1,6 +1,6 @@
 {
   "name": "jobandkill-naver-blog-studio",
-  "version": "1.3.0-pilot.1",
+  "version": "1.3.0-pilot.2",
   "private": true,
   "type": "module",
   "description": "Keyword-first Naver blog drafting, review, and manual publishing assistant",

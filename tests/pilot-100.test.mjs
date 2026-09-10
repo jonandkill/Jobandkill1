@@ -46,7 +46,7 @@ for (const [index, keyword] of keywords.entries()) {
     assert.equal(prepared.request.instructions.includes(note), false);
     assert.equal(prepared.generateImages, index % 2 === 0);
     assert.equal(prepared.request.store, false);
-    assert.ok(prepared.reserveKrw > 0 && prepared.reserveKrw <= 30);
+    assert.ok(prepared.reserveKrw > 0 && prepared.reserveKrw <= 50);
     if (index === 0) {
       assert.match(prepared.request.instructions, /health topics/u);
       assert.match(prepared.request.instructions, /no treatment claims/u);
@@ -86,7 +86,7 @@ for (const keyword of keywords) {
       calls.push({ url, body: JSON.parse(request.body) });
       return url.endsWith("/responses") ? okResponse(fixture(keyword)) : { ok: true, json: async () => ({ data: [{ b64_json: "YWJj" }] }) };
     }));
-    assert.equal(calls.length, 2);
+    assert.equal(calls.length, 3);
     assert.equal(calls[1].body.quality, "low");
     assert.equal(calls[1].body.n, 1);
     assert.ok(Buffer.byteLength(calls[1].body.prompt, "utf8") <= 800);
@@ -166,7 +166,7 @@ for (const [index, keyword] of keywords.entries()) scenario("images-failure", ke
     if (index < 5) return { ok: false, status: [400, 401, 403, 429, 500][index] };
     return { ok: true, json: async () => [{}, { data: [] }, { data: [{}] }, { data: [{ b64_json: "" }] }, { data: [{ b64_json: "!invalid!" }] }][index - 5] };
   }));
-  assert.equal(calls, 2);
+  assert.equal(calls, 3);
   assert.ok(result.articleInput.draft.includes(keyword));
   assert.equal(result.image, undefined);
   assert.ok(result.imageError);

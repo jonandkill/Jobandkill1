@@ -1,7 +1,7 @@
 import { readFile, writeFile, rename, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
 
-export const PRICING = Object.freeze({ textModel: 'gpt-4.1-mini', imageModel: 'gpt-image-1-mini', inputUsdPerMillion: 0.4, outputUsdPerMillion: 1.6, imagePromptUsdPerMillion: 2, imageUsd: 0.005, safetyFx: 1800, overhead: 1.15, maxJobs: 100, capKrw: 3000, verified: '2026-09-10' });
+export const PRICING = Object.freeze({ textModel: 'gpt-4.1-mini', imageModel: 'gpt-image-1-mini', inputUsdPerMillion: 0.4, outputUsdPerMillion: 1.6, imagePromptUsdPerMillion: 2, imageUsd: 0.005, safetyFx: 1800, overhead: 1.15, maxJobs: 100, capKrw: 5000, verified: '2026-09-10' });
 export class GenerationError extends Error {
   constructor(code, message, status = 400) { super(message); this.code = code; this.status = status; }
 }
@@ -23,7 +23,7 @@ export function prepareRequest(input = {}) {
   const maxInputTokens = bytes(JSON.stringify(request));
   if (maxInputTokens > 8000) fail('INPUT_TOO_LONG', '비용 상한을 위해 입력 자료를 줄여 주세요. 키워드와 핵심 메모만 남겨 주세요.');
   const generateImages = input.generateImages !== false;
-  const reserveUsd = (maxInputTokens * PRICING.inputUsdPerMillion + 2500 * PRICING.outputUsdPerMillion) / 1e6 + (generateImages ? PRICING.imageUsd + 800 * PRICING.imagePromptUsdPerMillion / 1e6 : 0);
+  const reserveUsd = (maxInputTokens * PRICING.inputUsdPerMillion + 2500 * PRICING.outputUsdPerMillion) / 1e6 + (generateImages ? 2 * (PRICING.imageUsd + 800 * PRICING.imagePromptUsdPerMillion / 1e6) : 0);
   return { request, data, generateImages, reserveKrw: Math.ceil(reserveUsd * PRICING.safetyFx * PRICING.overhead * 100) / 100 };
 }
 
@@ -37,7 +37,7 @@ export class DurableBudgetLedger {
       try { state = JSON.parse(await readFile(this.path, 'utf8')); }
       catch (error) { if (error.code !== 'ENOENT') throw error; state = { version: 1, attempts: 0, reservedKrw: 0 }; }
       if (state.version !== 1 || !Number.isInteger(state.attempts) || state.attempts < 0 || !Number.isFinite(state.reservedKrw) || state.reservedKrw < 0) fail('LEDGER_INVALID', '예산 기록을 확인해야 합니다.', 503);
-      if (!Number.isFinite(amount) || amount <= 0 || amount > 30) fail('JOB_BUDGET', '한 건의 예상 비용이 상한을 넘었습니다.', 402);
+      if (!Number.isFinite(amount) || amount <= 0 || amount > 50) fail('JOB_BUDGET', '한 건의 예상 비용이 상한을 넘었습니다.', 402);
       if (state.attempts >= PRICING.maxJobs || state.reservedKrw + amount > PRICING.capKrw) fail('BUDGET_EXHAUSTED', '100건 단위 예산이 소진되어 추가 호출을 중단했습니다.', 402);
       state.attempts += 1; state.reservedKrw = Math.ceil((state.reservedKrw + amount) * 100) / 100;
       await mkdir(dirname(this.path), { recursive: true });
@@ -91,16 +91,29 @@ export async function generateArticle(input, { apiKey, fetchImpl = fetch, ledger
   const draft = validateArticle(article, prepared.data.primaryKeyword);
   const result = { articleInput: { ...input, ...prepared.data, title: article.title, topic: article.title, draft, compositionMode: 'generate', generationMode: 'ai' }, warnings: [...article.warnings, '실시간 검색 및 독립적인 사실 검증을 수행하지 않은 AI 초안입니다.'], usage: { provider: response.usage ?? null, reservedKrw: prepared.reserveKrw, budget, pricing: PRICING } };
   if (prepared.generateImages) {
+    result.cards = [
+      { title: article.title, body: article.introduction },
+      ...article.sections.slice(0, 3).map(s => ({ title: s.heading, body: s.body })),
+      { title: '마무리', body: article.conclusion },
+      { title: '근거와 해석의 한계', body: result.warnings.join('\n') }
+    ].map((card, index) => ({ ...card, kind: 'card', order: index + 1 }));
+    result.images = [];
+    const errors = [];
+    for (let index = 0; index < 2; index++) {
     // Bound the full image prompt, not only user-supplied words.
-    const prefix = 'Editorial illustration. No text, logos or claims. ';
+    const prefix = index === 0 ? 'Wide editorial cover scene. No text, logos or claims. ' : 'Close-up editorial detail, different composition. No text, logos or claims. ';
     let prompt = prefix + article.imagePrompt;
     while (bytes(prompt) > 800) prompt = prompt.slice(0, -1);
     try {
       const image = await apiCall('images/generations', { model: PRICING.imageModel, prompt, n: 1, size: '1024x1024', quality: 'low', output_format: 'png' }, { apiKey, fetchImpl, timeoutMs: Math.max(timeoutMs, 60000) });
       const encoded = image.data?.[0]?.b64_json;
       if (typeof encoded !== 'string' || !/^[A-Za-z0-9+/=]+$/.test(encoded)) fail('IMAGE_EMPTY', '이미지 응답이 비어 있습니다.', 502);
-      result.image = { dataUrl: `data:image/png;base64,${encoded}`, altText: `${prepared.data.primaryKeyword} 주제의 AI 생성 삽화` };
-    } catch (error) { result.imageError = error.message; }
+      result.images.push({ kind: 'ai', dataUrl: `data:image/png;base64,${encoded}`, altText: `${prepared.data.primaryKeyword} 주제의 AI 생성 삽화 ${index + 1}` });
+    } catch (error) { errors.push(`AI 그림 ${index + 1}: ${error.message}`); }
+    }
+    result.image = result.images[0]; // Legacy clients.
+    if (errors.length) result.imageError = errors.join(' ');
+    result.visualStatus = { expected: 8, available: result.images.length + result.cards.length, complete: result.images.length === 2 };
   }
   return result;
 }
