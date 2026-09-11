@@ -116,11 +116,12 @@ export async function renderPractice(root) {
       if (q?.questionPage) reader?.goTo(q.questionPage);
     }
     function setupDuration() {
-      const q = activeQuestion, verified = !!q?.durationVerified && Number(q.examDurationMinutes) > 0;
-      const minutes = verified ? Number(q.examDurationMinutes) : Number(q?.practiceDurationMinutes) || 60;
+      const q = activeQuestion, durationSource = q?.durationVerified ? q : active;
+      const verified = !!durationSource?.durationVerified && Number(durationSource.examDurationMinutes) > 0;
+      const minutes = verified ? Number(durationSource.examDurationMinutes) : Number(q?.practiceDurationMinutes) || 60;
       if (!saved[id].timer || saved[id].timer.status === 'idle') {
         saved[id].timer = createTimer(minutes);
-        saved[id].timerInfo = { verified, note: verified ? `${q.sourceKind === 'official_mock' ? '공식 모의논술' : '해당 연도 공식 시험'} 전체 시간 ${minutes}분. ${q.durationNote || '문항 하나의 권장시간과는 다릅니다.'}` : `자유 연습 ${minutes}분입니다. ${q?.durationNote || '이 문항의 실제 시험시간은 확인되지 않아 공식 시간으로 표시하지 않습니다.'}` };
+        saved[id].timerInfo = { verified, note: verified ? `${durationSource.sourceKind === 'official_mock' ? '공식 모의논술' : '해당 연도 공식 시험'} 전체 시간 ${minutes}분. ${durationSource.durationNote || '문항 하나의 권장시간과는 다릅니다.'}` : `자유 연습 ${minutes}분입니다. ${q?.durationNote || '이 문항의 실제 시험시간은 확인되지 않아 공식 시간으로 표시하지 않습니다.'}` };
         persist();
       }
       editor.querySelector('#practice-minutes').value = saved[id].timer.durationSeconds / 60;
@@ -156,8 +157,9 @@ export async function renderPractice(root) {
     editor.querySelector('#practice-reset').onclick = () => {
       try {
         saved[id].timer = createTimer(editor.querySelector('#practice-minutes').value);
-        const verified = activeQuestion?.durationVerified && Number(activeQuestion.examDurationMinutes) === saved[id].timer.durationSeconds / 60;
-        saved[id].timerInfo = { verified, note: verified ? `${activeQuestion.sourceKind === 'official_mock' ? '공식 모의논술' : '해당 연도 공식 시험'} 전체 시간 ${activeQuestion.examDurationMinutes}분. ${activeQuestion.durationNote || ''}` : `직접 설정한 자유 연습 ${saved[id].timer.durationSeconds / 60}분입니다.` };
+        const durationSource = activeQuestion?.durationVerified ? activeQuestion : active;
+        const verified = durationSource?.durationVerified && Number(durationSource.examDurationMinutes) === saved[id].timer.durationSeconds / 60;
+        saved[id].timerInfo = { verified, note: verified ? `${durationSource.sourceKind === 'official_mock' ? '공식 모의논술' : '해당 연도 공식 시험'} 전체 시간 ${durationSource.examDurationMinutes}분. ${durationSource.durationNote || ''}` : `직접 설정한 자유 연습 ${saved[id].timer.durationSeconds / 60}분입니다.` };
         persist(); editor.querySelector('#practice-duration-note').textContent = saved[id].timerInfo.note; refreshClock(); editor.querySelector('#practice-timer-status').textContent = '시간만 다시 설정했습니다. 작성한 답안은 유지됩니다.';
       } catch (e) { editor.querySelector('#practice-timer-status').textContent = e.message; }
     };

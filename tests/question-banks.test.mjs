@@ -26,3 +26,12 @@ test('authored practice bank has checked reference answers and never predicts ex
   assert.match(authored.notice, /출제확률 7%를 의미하지 않으며/);
   assert.ok(authored.questions.every(q => !('probability' in q) && !('admissionProbability' in q)));
 });
+
+test('verified essay duration is applied only when the source PDF states it', () => {
+  const verified = official.questions.filter(q => q.durationVerified);
+  assert.ok(verified.length > 0);
+  assert.ok(verified.every(q => Number.isInteger(q.examDurationMinutes) && q.examDurationMinutes >= 30 && q.examDurationMinutes <= 360));
+  assert.ok(official.questions.filter(q => !q.durationVerified).every(q => !('examDurationMinutes' in q)));
+  assert.ok(official.resources.filter(r => r.durationVerified).every(r => Number.isInteger(r.examDurationMinutes)));
+  assert.match(official.durationNotice, /명시적으로 확인된 자료만/);
+});
