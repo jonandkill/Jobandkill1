@@ -15,10 +15,11 @@
   state.logoSource=state.logoSource||'recipe';
   state.expandedSettings=Array.isArray(state.expandedSettings)?state.expandedSettings:['company-logo','brand'];
 
-  function shortBrandName(){
-    const cleaned=String(state.brand||'브랜드').trim().replace(LEGAL_PREFIX,'').replace(/\s+/g,'');
+  function legalShortName(value){
+    const cleaned=String(value||'브랜드').trim().replace(LEGAL_PREFIX,'').replace(/\s+/g,'');
     return cleaned.slice(0,2)||'BR';
   }
+  function shortBrandName(){return legalShortName(state.brand)}
 
   function uploadedLogoSvg(){
     const href=String(state.customLogoData||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;');
@@ -36,6 +37,10 @@
   }
 
   settings=function(){return companyLogoSection()+originalSettings()};
+  const originalProjectCardMarkup=projectCardMarkup;
+  projectCardMarkup=function(item){
+    return originalProjectCardMarkup(item).replace(/(<span>)([^<]*)(<\/span>)/,`$1${esc(legalShortName(item.title))}$3`);
+  };
 
   const GROUP_KEYS=['company-logo','brand','color','layout','print','export'];
   function sectionKey(section,index){
@@ -150,5 +155,5 @@
     const head=document.querySelector('.saved-head, .v3-section-head');
     if(head&&!document.querySelector('#homePortfolio')){const b=document.createElement('button');b.id='homePortfolio';b.className='btn';b.textContent='저장 시안 포트폴리오';b.onclick=openPortfolioReport;head.append(b)}
   }
-  if(document.querySelector('.home-shell'))injectHomePortfolio();else bindEnhancements();
+  if(document.querySelector('.home-shell, .v3-home'))injectHomePortfolio();else bindEnhancements();
 })();
