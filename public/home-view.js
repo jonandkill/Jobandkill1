@@ -31,7 +31,7 @@ export function renderHome(root, profile = {}, onStart, context = {}) {
         </article>
         <article class="home-slide" data-slide aria-hidden="true">
           <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1500&q=85" alt="졸업을 앞둔 학생들이 캠퍼스에 서 있는 모습" loading="lazy">
-          <div class="home-slide-copy"><p>대학·학과·전형을 한곳에서</p><h2>지원 후보를<br>근거와 함께.</h2><a href="#find">\${countLabel} →</a></div>
+          <div class="home-slide-copy"><p>대학·학과·전형을 한곳에서</p><h2>지원 후보를<br>근거와 함께.</h2><a href="#find">${countLabel} →</a></div>
         </article>
         <article class="home-slide" data-slide aria-hidden="true">
           <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=85" alt="노트북으로 학습 자료를 확인하는 학생" loading="lazy">
