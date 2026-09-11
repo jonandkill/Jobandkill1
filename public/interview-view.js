@@ -217,9 +217,18 @@ export async function renderInterview(root, options = {}) {
     if (!university || !Array.isArray(data.reviewGuides)) return undefined;
     const normalize = value => String(value || '').replace(/\s+/g, '').replace(/대학교/g, '대').replace(/글로컬|GLOCAL/gi, '글로컬').replace(/\[[^\]]+\]/g, '');
     const target = normalize(university.name || university.displayName);
+    const display = normalize(university.displayName || university.name);
+    const campus = String(university.campus || '').trim() || ((String(university.displayName || '').match(/\[([^\]]+)\]/) || [,'본교'])[1]);
     return data.reviewGuides.find(guide => {
       const name = normalize(guide.name);
-      return name === target || name.includes(target) || target.includes(name);
+      const identityMatch = name === target || name.includes(target) || target.includes(name) || (display && (name.includes(display) || display.includes(name)));
+      if (!identityMatch) return false;
+      if (campus && campus !== '본교' && campus !== '분교') {
+        return false;
+      }
+      if (campus === '분교' && !/글로컬|글로벌/.test(name)) return false;
+      if (/글로컬|글로벌/.test(name) && !/글로컬|글로벌/.test(display)) return false;
+      return true;
     });
   };
   function renderReviewGuide(guide) {
@@ -231,8 +240,10 @@ export async function renderInterview(root, options = {}) {
       if (!item) return '';
       return '<article class="review-topic"><h4>' + esc(topic) + '</h4><p class="hint">자료집 사례에서 확인한 질문 주제(원문 문항·공식 채점기준 아님)</p><p>' + esc(item.question) + '</p><div class="review-example"><strong>답변 설계 예시</strong><p>' + esc(item.example) + '</p></div><p class="hint">내 활동의 실제 행동·근거로 바꾸어 말하고, 확인하지 못한 사실이나 수치는 만들지 마세요.</p></article>';
     }).join('');
-    return '<section class="interview-review-guide"><div class="review-source"><span class="tag">2026 후기 자료집 기반</span><strong>' + esc(guide.name) + ' 사례 주제</strong><span class="hint">' + esc(guide.source) + ' · ' + esc(guide.sourcePages) + '</span></div><p>울산교육청 자료집에 수록된 수험생 회고를 질문 주제 중심으로 정리했습니다. 아래 문장은 자료집 원문 답안이 아니라 잡앤킬이 작성한 연습용 답변 설계 예시입니다.</p><div class="review-topic-list">' + cards + '</div><div class="review-method"><h4>답변 순서</h4><ol><li>질문에 대한 결론을 한 문장으로 먼저 말합니다.</li><li>학생부·활동에서 내가 직접 한 행동과 선택 이유를 붙입니다.</li><li>결과를 관찰·기록·피드백으로 확인하고 한계를 밝힙니다.</li><li>지원 학과에서 이어서 배우고 싶은 내용으로 마무리합니다.</li></ol></div><p class="hint">자료집은 수험생 회고를 모은 참고자료라 실제 면접의 모든 질문·시간·위원 수를 보장하지 않습니다. 공식 시간·위원 수는 위 모집요강 카드에서 확인된 값만 표시하며, 최종 안내는 해당 연도 모집요강을 확인하세요.</p>' + (source.url ? link(source.url, '울산진로진학지원센터 출처') : '') + '</section>';
-  }
+    const samples = Array.isArray(guide.questionSamples) ? guide.questionSamples : [];
+    const sampleHtml = samples.length ? '<div class="review-samples"><h4>자료집에 기록된 질문·추가질문 발췌</h4><ul>' + samples.map(q => '<li>' + esc(q) + '</li>').join('') + '</ul><p class="hint">짧은 발췌이며, 표현·범위는 수험생 회고 원문과 다를 수 있습니다. 대학의 공식 기출·채점기준으로 표시하지 않습니다.</p></div>' : '<div class="review-samples"><h4>자료집 질문 문장 분리 결과</h4><p>이 대학은 PDF에서 질문 문장을 안정적으로 분리하지 못해 주제 요약으로 제공합니다. 질문을 임의로 기출처럼 만들지 않았습니다.</p></div>';
+    return '<section class="interview-review-guide"><div class="review-source"><span class="tag">2026 후기 자료집 기반</span><strong>' + esc(guide.name) + ' 사례 주제</strong><span class="hint">' + esc(guide.source) + ' · ' + esc(guide.sourcePages) + '</span></div><p>울산교육청 자료집에 수록된 수험생 회고를 질문 주제 중심으로 정리했습니다. 아래 문장은 자료집 원문 답안이 아니라 잡앤킬이 작성한 연습용 답변 설계 예시입니다.</p>' + sampleHtml + '<div class="review-topic-list">' + cards + '</div><div class="review-method"><h4>답변 순서</h4><ol><li>질문에 대한 결론을 한 문장으로 먼저 말합니다.</li><li>학생부·활동에서 내가 직접 한 행동과 선택 이유를 붙입니다.</li><li>결과를 관찰·기록·피드백으로 확인하고 한계를 밝힙니다.</li><li>지원 학과에서 이어서 배우고 싶은 내용으로 마무리합니다.</li></ol></div><p class="hint">자료집은 수험생 회고를 모은 참고자료라 실제 면접의 모든 질문·시간·위원 수를 보장하지 않습니다. 공식 시간·위원 수는 위 모집요강 카드에서 확인된 값만 표시하며, 최종 안내는 해당 연도 모집요강을 확인하세요.</p>' + (source.url ? link(source.url, '울산진로진학지원센터 출처') : '') + '</section>';
+  };
   function showOfficial() {
     const s = selectedOfficial();
     const guide = selectedReviewGuide();
