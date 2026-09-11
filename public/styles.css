@@ -155,3 +155,24 @@
 @media(prefers-reduced-motion:reduce){
   .home-slide,.home-slide img{transition:none!important}
 }
+
+.interview-review-guide{margin-top:1.4rem;padding:1.15rem;border:1px solid #cfe1e6;border-radius:18px;background:linear-gradient(145deg,#f8fcfc,#f1f8f6)}
+.interview-review-guide h3,.interview-review-guide h4{color:#173f4b}
+.review-source{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.7rem}
+.review-source .tag{display:inline-flex;align-items:center;padding:.28rem .55rem;border-radius:999px;background:#d7eee8;color:#17594c;font-size:.78rem;font-weight:700}
+.review-source strong{font-size:1.04rem}
+.review-source .hint{flex-basis:100%}
+.review-topic-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1rem 0}
+.review-topic{padding:.95rem;border:1px solid #d6e5e2;border-radius:14px;background:#fff}
+.review-topic h4{margin:.05rem 0 .35rem;font-size:1rem}
+.review-topic>p{margin:.35rem 0;line-height:1.6}
+.review-example{margin:.7rem 0;padding:.7rem .8rem;border-left:4px solid #2b8069;border-radius:8px;background:#f3faf7}
+.review-example p{margin:.35rem 0 0;line-height:1.65}
+.review-method{margin-top:.8rem;padding:.8rem 1rem;border-radius:12px;background:#e8f2ed}
+.review-method ol{margin:.45rem 0 0 1.2rem;padding:0}
+.review-method li{margin:.3rem 0}
+@media (max-width:760px){
+  .review-topic-list{grid-template-columns:1fr}
+  .interview-review-guide{padding:.9rem}
+  .review-source{align-items:flex-start;flex-direction:column;gap:.3rem}
+}
