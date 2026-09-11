@@ -212,10 +212,40 @@ export async function renderInterview(root, options = {}) {
     $('#iv-question').value = old === 'custom' || questions.some(q=>q.id===old) ? old : questions[0].id;
     changeQuestion();
   }
+  const selectedReviewGuide = () => {
+    const university = selectedSchool();
+    if (!university || !Array.isArray(data.reviewGuides)) return undefined;
+    const normalize = value => String(value || '').replace(/\s+/g, '').replace(/대학교/g, '대').replace(/글로컬|GLOCAL/gi, '글로컬').replace(/\[[^\]]+\]/g, '');
+    const target = normalize(university.name || university.displayName);
+    return data.reviewGuides.find(guide => {
+      const name = normalize(guide.name);
+      return name === target || name.includes(target) || target.includes(name);
+    });
+  };
+  function renderReviewGuide(guide) {
+    if (!guide) return '<section class="interview-review-guide"><h3>자료집 후기 확인</h3><p>선택한 대학은 이번에 불러온 울산교육청 2026 면접 후기 자료집에서 대학별 사례를 확인하지 못했습니다. 확인되지 않은 질문·면접시간·위원 수를 임의로 만들지 않고, 아래 공통 연습 질문만 제공합니다.</p></section>';
+    const source = data.reviewSource || {};
+    const topics = Array.isArray(guide.topics) ? guide.topics : [];
+    const cards = topics.map(topic => {
+      const item = guide.answerGuides && guide.answerGuides[topic];
+      if (!item) return '';
+      return '<article class="review-topic"><h4>' + esc(topic) + '</h4><p class="hint">자료집 사례에서 확인한 질문 주제(원문 문항·공식 채점기준 아님)</p><p>' + esc(item.question) + '</p><div class="review-example"><strong>답변 설계 예시</strong><p>' + esc(item.example) + '</p></div><p class="hint">내 활동의 실제 행동·근거로 바꾸어 말하고, 확인하지 못한 사실이나 수치는 만들지 마세요.</p></article>';
+    }).join('');
+    return '<section class="interview-review-guide"><div class="review-source"><span class="tag">2026 후기 자료집 기반</span><strong>' + esc(guide.name) + ' 사례 주제</strong><span class="hint">' + esc(guide.source) + ' · ' + esc(guide.sourcePages) + '</span></div><p>울산교육청 자료집에 수록된 수험생 회고를 질문 주제 중심으로 정리했습니다. 아래 문장은 자료집 원문 답안이 아니라 잡앤킬이 작성한 연습용 답변 설계 예시입니다.</p><div class="review-topic-list">' + cards + '</div><div class="review-method"><h4>답변 순서</h4><ol><li>질문에 대한 결론을 한 문장으로 먼저 말합니다.</li><li>학생부·활동에서 내가 직접 한 행동과 선택 이유를 붙입니다.</li><li>결과를 관찰·기록·피드백으로 확인하고 한계를 밝힙니다.</li><li>지원 학과에서 이어서 배우고 싶은 내용으로 마무리합니다.</li></ol></div><p class="hint">자료집은 수험생 회고를 모은 참고자료라 실제 면접의 모든 질문·시간·위원 수를 보장하지 않습니다. 공식 시간·위원 수는 위 모집요강 카드에서 확인된 값만 표시하며, 최종 안내는 해당 연도 모집요강을 확인하세요.</p>' + (source.url ? link(source.url, '울산진로진학지원센터 출처') : '') + '</section>';
+  }
   function showOfficial() {
     const s = selectedOfficial();
-    if(!s) { $('#iv-info').innerHTML='<p>선택한 대학의 공식 면접 시간·위원 수·기출 본문은 아직 확인하지 못했어요. 공통 질문과 학과·내 자료 기반 질문으로 연습할 수 있습니다.</p>'+(selectedSchool()?'<a class="button" href="#university/'+esc(selectedSchool().id)+'">선택 대학 상세 안내</a>':'');return; }
-    $('#iv-info').innerHTML='<p>'+esc(s.academicYear)+'학년도 · 확인일 '+esc(data.verifiedAt)+'</p><div class="cards">'+s.formats.map(f=>'<article class="card"><h3>'+esc(f.track)+' · '+esc(f.scope)+'</h3><dl><dt>면접시간</dt><dd>'+esc(f.duration)+'</dd><dt>준비시간</dt><dd>'+esc(f.preparation)+'</dd><dt>면접위원</dt><dd>'+esc(f.panel)+'</dd><dt>평가방법</dt><dd>'+esc(f.method)+'</dd></dl><p class="hint">'+esc(f.pages)+'</p></article>').join('')+'</div>'+link(s.sourceUrl,'공식 모집요강 열기')+'<h3>면접 기출</h3>'+(s.pastPapers?.length?s.pastPapers.map(p=>'<p>'+link(p.url,p.year+'학년도 '+p.title)+'<br><span class="hint">'+esc(p.status)+'</span></p>').join(''):'<p>공식 기출 본문 미확보</p>')+'<h3>면접 후기</h3><p>검증된 개인 후기 '+(s.reviews?.length||0)+'건. 기출·후기가 없는 경우 임의로 만들지 않습니다.</p><p class="hint">면접 방식은 표시한 학년도·전형·모집단위에 한정됩니다. 최종 모집요강과 수정 공지를 확인하세요.</p>';
+    const guide = selectedReviewGuide();
+    if(!s && !guide) {
+      $('#iv-info').innerHTML='<p>선택한 대학의 공식 면접 시간·위원 수·기출 본문과 이번 자료집 대학별 사례를 아직 확인하지 못했어요. 확인되지 않은 정보를 임의로 만들지 않고 공통 질문과 내 자료 기반 질문으로 연습할 수 있습니다.</p>'+(selectedSchool()?'<a class="button" href="#university/'+esc(selectedSchool().id)+'">선택 대학 상세 안내</a>':'');
+      return;
+    }
+    let html = '';
+    if(s) {
+      html='<p>'+esc(s.academicYear)+'학년도 · 확인일 '+esc(data.verifiedAt)+'</p><div class="cards">'+s.formats.map(f=>'<article class="card"><h3>'+esc(f.track)+' · '+esc(f.scope)+'</h3><dl><dt>면접시간</dt><dd>'+esc(f.duration)+'</dd><dt>준비시간</dt><dd>'+esc(f.preparation)+'</dd><dt>면접위원</dt><dd>'+esc(f.panel)+'</dd><dt>평가방법</dt><dd>'+esc(f.method)+'</dd></dl><p class="hint">'+esc(f.pages)+'</p></article>').join('')+'</div>'+link(s.sourceUrl,'공식 모집요강 열기')+'<h3>면접 기출</h3>'+(s.pastPapers?.length?s.pastPapers.map(p=>'<p>'+link(p.url,p.year+'학년도 '+p.title)+'<br><span class="hint">'+esc(p.status)+'</span></p>').join(''):'<p>공식 기출 본문 미확보</p>')+'<h3>면접 후기</h3><p>검증된 개인 후기 '+(s.reviews?.length||0)+'건. 기출·후기가 없는 경우 임의로 만들지 않습니다.</p>';
+    }
+    html += renderReviewGuide(guide);
+    $('#iv-info').innerHTML=html+'<p class="hint">면접 방식은 표시한 학년도·전형·모집단위 범위에 한정됩니다. 최종 모집요강과 수정 공지를 확인하세요.</p>';
   }
   async function changeSchool(initial = false) {
     const version = ++loadVersion;
