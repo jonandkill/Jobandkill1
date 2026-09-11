@@ -154,6 +154,8 @@
   function injectHomePortfolio(){
     const head=document.querySelector('.saved-head, .v3-section-head');
     if(head&&!document.querySelector('#homePortfolio')){const b=document.createElement('button');b.id='homePortfolio';b.className='btn';b.textContent='저장 시안 포트폴리오';b.onclick=openPortfolioReport;head.append(b)}
+    const items=projectList();
+    document.querySelectorAll('.saved-preview span').forEach((el,index)=>{if(items[index])el.textContent=legalShortName(items[index].title)});
   }
   if(document.querySelector('.home-shell, .v3-home'))injectHomePortfolio();else bindEnhancements();
 })();
