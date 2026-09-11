@@ -216,8 +216,10 @@ export async function renderInterview(root, options = {}) {
     const university = selectedSchool();
     if (!university || !Array.isArray(data.reviewGuides)) return undefined;
     const normalize = value => String(value || '').replace(/\s+/g, '').replace(/대학교/g, '대').replace(/글로컬|GLOCAL/gi, '글로컬').replace(/\[[^\]]+\]/g, '');
-    const target = normalize(university.name || university.displayName);
-    const display = normalize(university.displayName || university.name);
+    const aliases = {'한국외국어대':'한국외대','경인교육대':'경인교대','대구교육대':'대구교대','부산교육대':'부산교대','진주교육대':'진주교대','포항공과대':'포항공대','서울과학기술대':'서울과기대','서울여자대':'서울여대','성신여자대':'성신여대','숙명여자대':'숙명여대','덕성여자대':'덕성여대','이화여자대':'이화여대'};
+    const canonical = value => aliases[normalize(value)] || normalize(value);
+    const target = canonical(university.name || university.displayName);
+    const display = canonical(university.displayName || university.name);
     const campus = String(university.campus || '').trim() || ((String(university.displayName || '').match(/\[([^\]]+)\]/) || [,'본교'])[1]);
     return data.reviewGuides.find(guide => {
       const name = normalize(guide.name);
