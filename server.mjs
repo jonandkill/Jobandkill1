@@ -40,7 +40,8 @@ app.use(express.static(path.join(__dirname, "public"), {
 app.use('/vendor/pdfjs',express.static(path.join(__dirname,'node_modules/pdfjs-dist/build'),{maxAge:'1d'}));
 for(const part of ['cmaps','standard_fonts','wasm','iccs'])app.use('/vendor/pdfjs/'+part,express.static(path.join(__dirname,'node_modules/pdfjs-dist',part),{maxAge:'1d'}));
 const practiceBank=JSON.parse(await readFile(path.join(__dirname,'data/practice-questions.json'),'utf8'));
-installDocumentRoutes(app,[...exams.filter(p=>p.documentUrl&&p.linkCheck?.isPdf).map(p=>({id:p.id,url:p.documentUrl,title:p.title})),...(practiceBank.resources||[])]);
+const officialQuestionBank=JSON.parse(await readFile(path.join(__dirname,'data/official-question-bank.json'),'utf8'));
+installDocumentRoutes(app,[...exams.filter(p=>p.documentUrl&&p.linkCheck?.isPdf).map(p=>({id:p.id,url:p.documentUrl,title:p.title})),...(practiceBank.resources||[]),...(officialQuestionBank.resources||[])]);
 
 let pool = null;
 let storageMode = "verified-file";
@@ -325,7 +326,7 @@ app.get("/api/report", async (_request, response) => {
 });
 
 // Expose only the reviewed public practice datasets, never arbitrary server files.
-for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interviews.json', 'essay-standards.json', 'education-registry.json', 'essay-universities.json']) {
+for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interviews.json', 'essay-standards.json', 'education-registry.json', 'essay-universities.json', 'official-question-bank.json', 'authored-question-bank.json']) {
   app.get('/data/' + filename, (_request, response) => {
     response.sendFile(path.join(__dirname, 'data', filename), error => {
       if (error && !response.headersSent) response.status(503).json({error:'practice_data_unavailable'});

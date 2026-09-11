@@ -1,11 +1,12 @@
-import {buildWritingDraft, reviewWritingDraft} from './writing-engine.js';
+import {buildWritingDraft, reviewWritingDraft, buildSelfIntroductionDraft, reviewSelfIntroductionDraft, WRITING_PROMPTS} from './writing-engine.js';
 
 const STORAGE_KEY = 'jobnkill-writing-v1';
 const FIELD_KEYS = ['experience', 'action', 'result', 'learning'];
-const LABELS = ['경험 떠올리기', '내 행동 정리', '결과와 배운 점', '작성문 확인'];
+const EXTRA_KEYS = ['purpose','question','company','job','challenge','reason','ask','feedback','evidence','targetEvidence','plan','targetMin','targetMax'];
+const LABELS = ['문항·목적', '경험과 맥락', '행동·근거', '초안·첨삭'];
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const clean = (value, limit = 16000) => typeof value === 'string' ? value.slice(0, limit) : '';
-const emptyState = () => ({experience:'', action:'', result:'', learning:'', draft:'', sourceSignature:'', edited:false, step:0, started:false, consent:false, review:null, warnings:[], mode:'original', schoolId:'', school:'', major:''});
+const emptyState = () => ({experience:'', action:'', result:'', learning:'', purpose:'admission', question:'', company:'', job:'', challenge:'', reason:'', ask:'', feedback:'', evidence:'', targetEvidence:'', plan:'', targetMin:0, targetMax:16000, draft:'', sourceSignature:'', edited:false, step:0, started:false, consent:false, review:null, warnings:[], mode:'original', schoolId:'', school:'', major:''});
 let session = null;
 let mountNumber = 0;
 
@@ -16,6 +17,7 @@ function restoreState() {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
     if (saved?.version === 1 && saved.consent === true) {
       for (const key of FIELD_KEYS) session[key] = clean(saved[key], 4000);
+      for (const key of EXTRA_KEYS) session[key] = ['targetMin','targetMax'].includes(key) ? Number(saved[key]) || (key === 'targetMax' ? 16000 : 0) : clean(saved[key], key === 'question' ? 2000 : 4000);
       session.draft = clean(saved.draft);
       session.sourceSignature = clean(saved.sourceSignature, 17000);
       session.schoolId = clean(saved.schoolId, 200);
@@ -29,6 +31,12 @@ function restoreState() {
     }
   } catch { /* An unavailable or malformed store must not stop the editor. */ }
   return session;
+}
+
+export function hasUnsavedWriting() {
+  const state = restoreState();
+  const content = !!(state.draft.trim() || FIELD_KEYS.some(key => String(state[key] || '').trim()));
+  return !!(state.started && content && !state.consent);
 }
 
 export function getSavedWritingTarget() {
@@ -47,9 +55,9 @@ export function mountWriting(root, {getContext = () => ({}), onUseDraft = () => 
   let context = {schoolId:state.schoolId, school:state.school, major:state.major};
   let statusMessage = '';
   const $ = selector => root.querySelector(selector);
-  const signature = () => JSON.stringify(FIELD_KEYS.map(key => state[key]));
+  const signature = () => JSON.stringify([...FIELD_KEYS, ...EXTRA_KEYS].map(key => state[key]));
   const hasContent = () => !!(state.draft.trim() || FIELD_KEYS.some(key => state[key].trim()));
-  const original = () => FIELD_KEYS.map(key => state[key].trim()).filter(Boolean).join('\n\n');
+  const original = () => [state.experience,state.challenge,state.reason,state.action,state.ask,state.feedback,state.result,state.evidence,state.learning,state.targetEvidence,state.plan].map(v=>String(v||'').trim()).filter(Boolean).join('\n\n');
   const contextLabel = () => [context.school, context.major].filter(Boolean).join(' · ') || '대학·학과를 선택하면 작성문에도 함께 연결돼요.';
 
   function latestContext() {
@@ -104,16 +112,12 @@ export function mountWriting(root, {getContext = () => ({}), onUseDraft = () => 
     return '<label for="'+prefix+'-'+key+'">'+label+'</label><p id="'+prefix+'-'+key+'-help" class="writing-note">'+hint+'</p><textarea id="'+prefix+'-'+key+'" data-writing-field="'+key+'" rows="6" maxlength="4000" aria-describedby="'+prefix+'-'+key+'-help" placeholder="'+esc(placeholder)+'">'+esc(state[key])+'</textarea>';
   }
   function stageBody() {
-    if (state.step === 0) return '<p class="writing-step-kicker">01 · 실제 있었던 경험</p><h3 tabindex="-1" data-writing-stage-title>어떤 경험을 이야기하고 싶나요?</h3>'+field('experience','활동과 당시 상황','수업·탐구·동아리 등에서 기억나는 경험 하나를 골라, 무엇이 어려웠는지 적어 보세요.','예: 과학 동아리에서 같은 실험을 반복했는데 조마다 결과가 달랐습니다.');
-    if (state.step === 1) return '<p class="writing-step-kicker">02 · 내가 선택한 방법</p><h3 tabindex="-1" data-writing-stage-title>그때 직접 무엇을 했나요?</h3>'+field('action','내가 맡은 일과 행동','팀이 함께 한 일 중 본인이 결정하고 실행한 부분을 구분하고, 그 방법을 택한 이유를 적어 보세요.','예: 저는 측정 조건을 비교하고, 차이를 확인하기 위해 실험 기록 양식을 통일하자고 제안했습니다.');
-    if (state.step === 2) return '<p class="writing-step-kicker">03 · 확인한 변화와 배움</p><h3 tabindex="-1" data-writing-stage-title>무엇이 달라졌고, 무엇을 배웠나요?</h3>'+field('result','결과와 확인 근거','숫자가 없어도 괜찮아요. 관찰한 변화나 받은 피드백, 아직 해결하지 못한 점을 적어도 좋아요.','예: 기록을 비교하면서 조건이 달랐던 실험을 찾아 다시 측정할 수 있었습니다.')+field('learning','배운 점과 이어갈 학습 (선택)','생각이 바뀐 부분이나 지원 학과에서 더 알아보고 싶은 내용을 덧붙여 보세요.','예: 결과를 해석하기 전에 측정 조건부터 확인해야 한다는 점을 배웠습니다.');
+    if (state.step === 0) return `<p class="writing-step-kicker">01 · 문항과 목적</p><h3 tabindex="-1" data-writing-stage-title>어떤 질문에 답하는 자기소개서인가요?</h3><p class="writing-note">문항을 먼저 정하면 경험·근거·분량을 같은 기준으로 정리할 수 있어요.</p><label for="${prefix}-purpose">작성 목적</label><select id="${prefix}-purpose" data-writing-field="purpose"><option value="admission"${state.purpose==='admission'?' selected':''}>대학 자기소개·경험 서술</option><option value="interview"${state.purpose==='interview'?' selected':''}>면접 자기소개 답변</option><option value="employment"${state.purpose==='employment'?' selected':''}>취업 자기소개서</option></select>${field('question','작성 문항','실제 문항을 붙여넣거나 아래 예시에서 선택하세요.','예: 지원 동기와 학업 계획을 경험과 연결해 서술하시오.')}<label for="${prefix}-template">문항 예시</label><select id="${prefix}-template" data-writing-template><option value="">직접 입력</option>${WRITING_PROMPTS.map(item=>`<option value="${esc(item.id)}">${esc(item.label)}</option>`).join('')}</select><p class="writing-context" data-writing-context>${esc(contextLabel())}</p>`;
+    if (state.step === 1) return `<p class="writing-step-kicker">02 · 경험과 맥락</p><h3 tabindex="-1" data-writing-stage-title>무슨 일이 있었고 무엇이 어려웠나요?</h3>${field('experience','활동과 당시 상황','실제로 있었던 장면 하나를 적어 보세요.','예: 과학 동아리에서 같은 실험을 반복했는데 조마다 결과가 달랐습니다.')}${field('challenge','문제와 어려움 (선택)','문제를 해결하지 못하면 생길 영향이나 처음의 한계를 적어 보세요.','예: 조건이 달라 결과를 바로 비교하기 어려웠습니다.')}`;
+    if (state.step === 2) return `<p class="writing-step-kicker">03 · 행동과 근거</p><h3 tabindex="-1" data-writing-stage-title>어떻게 판단하고, 확인하고, 고쳤나요?</h3>${field('reason','판단 기준과 선택 이유 (선택)','다른 방법과 비교해 왜 이 방법을 골랐는지 적어 보세요.','예: 비교 가능한 기록을 만들기 위해 조건부터 통일해야 한다고 판단했습니다.')}${field('action','내가 직접 한 행동','팀의 행동과 본인이 결정·실행한 일을 구분하세요.','예: 저는 측정 조건을 비교하고 기록 양식 통일을 제안했습니다.')}${field('ask','질문·확인한 내용 (선택)','누구에게 무엇을 물었고, 어떤 자료를 확인했는지 적어 보세요.','예: 담당 선생님께 측정 오차 기준을 묻고 기록 항목을 정했습니다.')}${field('feedback','피드백과 수정 (선택)','첫 시도 뒤 받은 지적이나 스스로 발견한 부족한 점과 수정 내용을 적어 보세요.','예: 누락된 시간을 발견해 기록표에 측정 시각을 추가했습니다.')}`;
+    if (!state.draft.trim() && !state.sourceSignature) return `<p class="writing-step-kicker">04 · 결과와 지원 연결</p><h3 tabindex="-1" data-writing-stage-title>무엇이 달라졌고 어디에 이어갈까요?</h3>${field('result','결과와 확인 근거','관찰·기록·피드백으로 확인한 변화만 적어 주세요.','예: 기록을 비교하니 조건이 달랐던 실험을 찾아 다시 측정했고 차이가 줄었습니다.')}${field('evidence','결과를 확인한 기록 (선택)','숫자·기록·관찰 등 실제 근거를 적으세요.','예: 실험 기록표의 세 번 측정값을 비교했습니다.')}${field('learning','배운 점 (선택)','경험 전후로 달라진 생각을 적어 보세요.','예: 결과보다 측정 조건을 먼저 확인해야 한다는 점을 배웠습니다.')}${field('targetEvidence','지원 학교·학과에서 확인한 내용 (선택)','공식 교육과정·모집요강에서 직접 확인한 내용만 적으세요.','예: 간호학과 교육과정에서 기본간호학 과목을 확인했습니다.')}${field('plan','이어갈 학습 계획 (선택)','앞으로 할 일을 과거 성과처럼 쓰지 말고 계획으로 적으세요.','예: 입학 후 관찰 기록 방법을 더 배우고 싶습니다.')}<div class="writing-grid"><div><label for="${prefix}-targetMin">최소 글자 수 (선택)</label><input id="${prefix}-targetMin" data-writing-field="targetMin" type="number" min="0" max="16000" value="${state.targetMin||0}"></div><div><label for="${prefix}-targetMax">최대 글자 수</label><input id="${prefix}-targetMax" data-writing-field="targetMax" type="number" min="1" max="16000" value="${state.targetMax||16000}"></div></div><button type="button" data-writing-action="make-draft" class="primary">입력한 사실로 초안 만들기</button>`;
     const changed = state.sourceSignature && state.sourceSignature !== signature();
-    return '<p class="writing-step-kicker">04 · 내 말로 마무리</p><h3 tabindex="-1" data-writing-stage-title>작성문을 확인하고 면접 연습으로 이어가요</h3><p class="writing-note">입력한 문장을 모았어요. 직접 고치거나 문장 흐름을 다듬은 뒤, 사용할 글을 확인해 주세요.</p>'+
-      (changed ? '<p class="writing-change-note">이전 단계의 입력이 바뀌었어요. 지금 편집한 글은 유지했으며, 아래 버튼을 누르면 바뀐 입력으로 다시 만들 수 있어요.</p>' : '')+
-      '<div class="writing-secondary-actions"><button type="button" data-writing-action="original">입력 문장 그대로 모으기</button><button type="button" data-writing-action="polish">문장 흐름 다듬기</button></div>'+
-      (state.warnings.length ? '<ul class="writing-note">'+state.warnings.map(w => '<li>'+esc(w)+'</li>').join('')+'</ul>' : '')+
-      '<label for="'+prefix+'-draft">작성문 · 자유롭게 편집할 수 있어요</label><textarea id="'+prefix+'-draft" data-writing-field="draft" rows="12" maxlength="16000" aria-describedby="'+prefix+'-count">'+esc(state.draft)+'</textarea><p id="'+prefix+'-count" class="writing-counter" data-writing-count>공백 포함 '+[...state.draft].length.toLocaleString('ko-KR')+'자</p>'+
-      '<div class="writing-secondary-actions"><button type="button" data-writing-action="review">이 글의 보완점 확인</button><button type="button" data-writing-action="download">TXT로 내려받기</button></div><div data-writing-feedback>'+renderFeedback()+'</div>';
+    return `<p class="writing-step-kicker">04 · 초안과 첨삭</p><h3 tabindex="-1" data-writing-stage-title>작성문을 확인하고 면접 연습으로 이어가요</h3><p class="writing-note">입력한 경험·판단·행동·결과를 한 편의 초안으로 묶었습니다. 직접 고친 뒤 보완점을 확인하세요.</p>${changed ? '<p class="writing-change-note">이전 입력이 바뀌었어요. 초안을 다시 만들면 현재 편집본이 바뀔 수 있습니다.</p>' : ''}<div class="writing-secondary-actions"><button type="button" data-writing-action="original">입력 문장 그대로 모으기</button><button type="button" data-writing-action="polish">문장 흐름 다듬기</button></div>${state.warnings.length ? '<ul class="writing-note">'+state.warnings.map(w=>'<li>'+esc(w)+'</li>').join('')+'</ul>' : ''}<label for="${prefix}-draft">작성문 · 자유롭게 편집할 수 있어요</label><textarea id="${prefix}-draft" data-writing-field="draft" rows="12" maxlength="16000" aria-describedby="${prefix}-count">${esc(state.draft)}</textarea><p id="${prefix}-count" class="writing-counter" data-writing-count>공백 포함 ${[...state.draft].length.toLocaleString('ko-KR')}자</p><div class="writing-secondary-actions"><button type="button" data-writing-action="review">이 글의 보완점 확인</button><button type="button" data-writing-action="download">TXT로 내려받기</button></div><div data-writing-feedback>${renderFeedback()}</div>`;
   }
   function render() {
     if (destroyed) return;
@@ -131,7 +135,7 @@ export function mountWriting(root, {getContext = () => ({}), onUseDraft = () => 
       if (!window.confirm('편집한 작성문을 현재 입력으로 다시 만들까요? 지금 작성문을 보관하려면 취소한 뒤 TXT로 내려받아 주세요.')) return false;
     }
     try {
-      const result = buildWritingDraft(Object.fromEntries(FIELD_KEYS.map(key => [key, state[key]])));
+      const result = buildSelfIntroductionDraft({...state, school:context.school, major:context.major});
       state.draft = mode === 'polished' ? result.text : (result.originalText || original());
       state.warnings = Array.isArray(result.warnings) ? result.warnings.map(String) : [];
       state.mode = mode;
@@ -166,14 +170,14 @@ export function mountWriting(root, {getContext = () => ({}), onUseDraft = () => 
     if (action === 'collapse') { state.started = false; render(); $('[data-writing-action="open"]')?.focus(); return; }
     if (action === 'previous') { state.step = Math.max(0, state.step-1); statusMessage=''; persist({silent:true}); render(); focusStage(); return; }
     if (action === 'next') {
-      const key = FIELD_KEYS[state.step];
-      if (!state[key].trim()) {
-        announce(state.step === 0 ? '이야기할 경험을 한 문장부터 적어 주세요.' : state.step === 1 ? '본인이 직접 한 행동을 적어 주세요.' : '관찰한 결과나 아직 해결하지 못한 점을 적어 주세요.', true);
+      const key = state.step === 1 ? 'experience' : state.step === 2 ? 'action' : '';
+      if (key && !String(state[key] || '').trim()) {
+        announce(key === 'experience' ? '이야기할 경험을 한 문장부터 적어 주세요.' : '본인이 직접 한 행동을 적어 주세요.', true);
         $('[data-writing-field="'+key+'"]')?.focus(); return;
       }
-      if (state.step === 2 && !state.draft.trim() && !generate('original', false)) return;
       state.step = Math.min(3, state.step+1); statusMessage=''; persist({silent:true}); render(); focusStage(); return;
     }
+    if (action === 'make-draft') { if (generate('polished', false)) { state.sourceSignature=signature(); state.step=3; state.draft=state.draft||original(); statusMessage='입력한 사실로 초안을 만들었습니다. 다음 화면에서 문장과 피드백을 확인하세요.'; render(); focusStage(); } return; }
     if (action === 'original' || action === 'polish') {
       if (generate(action === 'polish' ? 'polished' : 'original')) { statusMessage=action === 'polish' ? '입력한 내용을 바탕으로 문장 흐름을 다듬었어요. 표현과 사실을 확인해 주세요.' : '입력 문장을 그대로 모았어요. 작성문을 직접 편집할 수 있어요.'; render(); $('[data-writing-field="draft"]')?.focus(); }
       return;
@@ -181,7 +185,7 @@ export function mountWriting(root, {getContext = () => ({}), onUseDraft = () => 
     if (action === 'review') {
       if (state.draft.trim().length < 20) { announce('보완점을 확인하려면 작성문을 20자 이상 입력해 주세요.', true); return; }
       try {
-        state.review = reviewWritingDraft(state.draft, latestContext());
+        state.review = reviewSelfIntroductionDraft(state.draft, {...latestContext(), ...state});
         $('[data-writing-feedback]').innerHTML = renderFeedback();
         announce('내 문장을 근거로 보완점을 정리했어요. 먼저 보완할 부분부터 확인해 주세요.');
         $('[data-writing-feedback]')?.scrollIntoView({block:'start',behavior:'auto'});
@@ -209,8 +213,8 @@ export function mountWriting(root, {getContext = () => ({}), onUseDraft = () => 
   }
   function onInput(event) {
     const key = event.target.dataset?.writingField;
-    if (!key || ![...FIELD_KEYS,'draft'].includes(key)) return;
-    state[key] = event.target.value;
+    if (!key || ![...FIELD_KEYS,...EXTRA_KEYS,'draft'].includes(key)) return;
+    state[key] = [...FIELD_KEYS,...EXTRA_KEYS].includes(key) ? (['targetMin','targetMax'].includes(key) ? Number(event.target.value)||0 : event.target.value) : event.target.value;
     if (key === 'draft') {
       state.edited=true; state.review=null;
       const count=$('[data-writing-count]');
@@ -221,7 +225,10 @@ export function mountWriting(root, {getContext = () => ({}), onUseDraft = () => 
     persist();
   }
   function onChange(event) {
-    if (!event.target.matches('[data-writing-persist]')) return;
+    const changedField = event.target.dataset?.writingField;
+    if (changedField === 'purpose') { state.purpose = ['admission','interview','employment'].includes(event.target.value) ? event.target.value : 'admission'; persist({silent:true}); render(); return; }
+    if (Object.prototype.hasOwnProperty.call(event.target.dataset || {}, 'writingTemplate')) { const option = WRITING_PROMPTS.find(item=>item.id===event.target.value); if(option && !state.question.trim()) { state.question=option.prompt || option.label; render(); } return; }
+    if (!(Object.prototype.hasOwnProperty.call(event.target.dataset || {}, 'writingPersist') || (!event.target.dataset && event.target.matches?.('[data-writing-persist]')))) return;
     const consent=event.target.checked;
     if (!consent) {
       try { localStorage.removeItem(STORAGE_KEY); }

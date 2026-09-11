@@ -52,7 +52,7 @@ export function renderHome(root, profile = {}, onStart, context = {}) {
 
     <section class="home-practice" aria-labelledby="practice-title">
       <div><p class="eyebrow">반복할수록 구체적으로</p><h2 id="practice-title">오늘 연습할 한 가지를 골라보세요.</h2><p class="muted">읽기만 했던 문제를 직접 풀고,<br>생각해 둔 답변을 나의 말로 작성해 보세요.</p></div>
-      <div class="home-practice-links"><a href="#prepare/writing"><strong>경험 정리·글 작성</strong><span>내 경험 작성 → 글 보완 → 면접 질문으로 연결</span><b aria-hidden="true">↗</b></a><a href="#prepare/essay"><strong>논술 문제 풀기</strong><span>문제 선택 → 시간 확인 → 답안 작성 → 피드백</span><b aria-hidden="true">↗</b></a><a href="#prepare/interview"><strong>면접 답변 연습</strong><span>학교·학과 선택 → 질문 확인 → 답변 보완</span><b aria-hidden="true">↗</b></a><a href="#prepare/exams"><strong>공식 논술 자료 찾기</strong><span>학교·연도·계열별 자료와 원문 확인</span><b aria-hidden="true">↗</b></a></div>
+      <div class="home-practice-links"><a href="#prepare/writing"><strong>자기소개서 작성</strong><span>내 경험 작성 → 글 보완 → 면접 질문으로 연결</span><b aria-hidden="true">↗</b></a><a href="#prepare/essay"><strong>논술 문제 풀기</strong><span>문제 선택 → 시간 확인 → 답안 작성 → 피드백</span><b aria-hidden="true">↗</b></a><a href="#prepare/interview"><strong>면접 답변 연습</strong><span>학교·학과 선택 → 질문 확인 → 답변 보완</span><b aria-hidden="true">↗</b></a><a href="#prepare/exams"><strong>공식 논술 자료 찾기</strong><span>학교·연도·계열별 자료와 원문 확인</span><b aria-hidden="true">↗</b></a></div>
     </section>
     <section class="home-note"><h2>선택의 근거를 함께 확인하세요.</h2><p>과거 입결은 올해의 합격을 보장하지 않으며 실제 결과와 다를 수 있습니다. 대학별 성적 반영 방식과 전형 변경을 함께 확인하고, 공식 자료와 자체 연습 피드백을 구분해 안내합니다.</p><a href="#history">연도별 입결 자료 살펴보기 →</a></section>`;
 
