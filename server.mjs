@@ -352,9 +352,6 @@ function outcomeCandidateGroups(scale, formulaKey) {
 
 function availableOutcomeFormulas(scale) {
   const formulas = new Map();
-  for (const rows of outcomeCandidateGroups(scale, null)) {
-    // This branch is intentionally unreachable because a formula is required below.
-  }
   for (const row of outcomes) {
     if (String(row.scale) !== String(scale) || !row.formulaKey || !row.formulaLabel) continue;
     const item = formulas.get(row.formulaKey) || { key: row.formulaKey, label: row.formulaLabel, series: 0 };
