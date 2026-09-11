@@ -339,6 +339,110 @@ app.get('/api/integrations',(_request,response)=>{
   response.json({resumeWriter:{url:/^https:\/\//.test(url)?url:null,label:'잡앤킬 자기소개서 작성'}});
 });
 
+function outcomeCandidateGroups(scale, formulaKey) {
+  const grouped = new Map();
+  for (const row of outcomes) {
+    if (String(row.scale) !== String(scale) || String(row.formulaKey || '') !== String(formulaKey || '')) continue;
+    const key = [row.universityId, row.program, row.track, row.metric, row.scale, row.formulaKey].join('|');
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key).push(row);
+  }
+  return [...grouped.values()].map(rows => rows.sort((a, b) => Number(a.academicYear) - Number(b.academicYear)));
+}
+
+function availableOutcomeFormulas(scale) {
+  const formulas = new Map();
+  for (const rows of outcomeCandidateGroups(scale, null)) {
+    // This branch is intentionally unreachable because a formula is required below.
+  }
+  for (const row of outcomes) {
+    if (String(row.scale) !== String(scale) || !row.formulaKey || !row.formulaLabel) continue;
+    const item = formulas.get(row.formulaKey) || { key: row.formulaKey, label: row.formulaLabel, series: 0 };
+    formulas.set(row.formulaKey, item);
+  }
+  for (const item of formulas.values()) {
+    item.series = outcomeCandidateGroups(scale, item.key).filter(rows => {
+      const latest = Math.max(...rows.map(row => Number(row.academicYear)));
+      const recent = rows.filter(row => Number(row.academicYear) >= latest - 4);
+      const years = new Set(recent.map(row => Number(row.academicYear)));
+      return years.size >= 3 && years.size === recent.length && recent.every(row => Number.isFinite(row.grade70) && row.grade70 >= 1 && row.grade70 <= Number(scale));
+    }).length;
+  }
+  return [...formulas.values()].filter(item => item.series > 0).sort((a, b) => b.series - a.series || a.label.localeCompare(b.label, 'ko'));
+}
+
+function rankOutcomeCandidates({ grade, scale, formulaKey, limit = 3 }) {
+  const candidates = [];
+  for (const rows of outcomeCandidateGroups(scale, formulaKey)) {
+    const latest = Math.max(...rows.map(row => Number(row.academicYear)));
+    const recent = rows.filter(row => Number(row.academicYear) >= latest - 4);
+    const years = new Set(recent.map(row => Number(row.academicYear)));
+    const sameSeries = years.size >= 3 && years.size === recent.length && recent.every(row => (
+      Number.isFinite(row.grade70) && row.grade70 >= 1 && row.grade70 <= Number(scale) &&
+      String(row.scale) === String(scale) && String(row.formulaKey) === String(formulaKey) &&
+      row.metric === recent[0].metric
+    ));
+    if (!sameSeries) continue;
+    const cutoffs = recent.map(row => Number(row.grade70)).sort((a, b) => a - b);
+    const min = cutoffs[0], max = cutoffs[cutoffs.length - 1], middle = cutoffs[Math.floor(cutoffs.length / 2)];
+    const rangeDistance = grade < min ? min - grade : grade > max ? grade - max : 0;
+    const relation = grade < min ? '입력한 환산등급이 과거 70% 기준 범위보다 낮습니다.' :
+      grade > max ? '입력한 환산등급이 과거 70% 기준 범위보다 높습니다.' :
+      '입력한 환산등급이 과거 70% 기준 범위 안에 있습니다.';
+    const first = recent[0];
+    candidates.push({
+      universityId: first.universityId,
+      universityName: first.universityName,
+      program: first.program,
+      track: first.track,
+      formulaLabel: first.formulaLabel,
+      metric: first.metric,
+      scale: String(scale),
+      years: recent.map(row => Number(row.academicYear)),
+      grade70Range: { min, max },
+      referenceMedian: middle,
+      studentGrade: grade,
+      differenceFromMedian: Math.round((grade - middle) * 100) / 100,
+      rangeDistance: Math.round(rangeDistance * 100) / 100,
+      relation,
+      sourceUrls: [...new Set(recent.map(row => row.sourceUrl).filter(url => /^https:\/\//.test(url)))],
+      dataYears: recent.length
+    });
+  }
+  return candidates.sort((a, b) =>
+    a.rangeDistance - b.rangeDistance ||
+    Math.abs(a.differenceFromMedian) - Math.abs(b.differenceFromMedian) ||
+    b.dataYears - a.dataYears ||
+    a.universityName.localeCompare(b.universityName, 'ko') ||
+    a.program.localeCompare(b.program, 'ko')
+  ).slice(0, Math.max(1, Math.min(3, Number(limit) || 3)));
+}
+
+app.get('/api/outcome-candidates', (request, response) => {
+  const scale = String(request.query.scale || '');
+  if (!['5', '9'].includes(scale)) return response.status(400).json({ error: 'grade_scale_required' });
+  const formulas = availableOutcomeFormulas(scale);
+  const formulaKey = String(request.query.formulaKey || '');
+  const rawGrade = String(request.query.grade || '').trim();
+  if (!formulaKey || rawGrade === '') return response.json({
+    formulas,
+    candidates: [],
+    message: '대학별 산식으로 계산한 환산등급과 비교 산식을 선택하면, 동일 산식·동일 전형의 최근 3~5개년 입결을 기준으로 후보 순위를 계산합니다.'
+  });
+  const grade = Number(rawGrade);
+  if (!Number.isFinite(grade) || grade < 1 || grade > Number(scale)) return response.status(400).json({ error: 'converted_grade_invalid' });
+  if (!formulas.some(item => item.key === formulaKey)) return response.status(400).json({ error: 'formula_key_invalid' });
+  const candidates = rankOutcomeCandidates({ grade, scale, formulaKey });
+  response.set('Cache-Control', 'public, max-age=300');
+  response.json({
+    formulas,
+    candidates,
+    message: candidates.length
+      ? '순위는 동일 산식·동일 등급체계·최근 3~5개년 공식 70% 기준 범위와 입력한 환산등급의 거리로 정렬한 성적 비교 후보입니다. 합격 예측이나 합격 보장이 아닙니다.'
+      : '현재 수집된 자료에서는 입력한 산식·등급체계로 최근 3개년 이상 동일 비교 조건을 충족한 후보를 찾지 못했습니다.'
+  });
+});
+
 app.get("/api/outcomes", (request, response) => {
   const id = String(request.query.universityId || "");
   if((supplementalRegistry.universities||[]).some(u=>u.id===id))return response.json([]);
