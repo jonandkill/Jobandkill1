@@ -341,3 +341,161 @@
 @media(prefers-reduced-motion:reduce){
   .lifecycle-hero .home-slide img{transform:none!important}
 }
+
+
+/* Typography pass: standard web reading scale for body, actions and metadata. */
+:root{
+  --body-type:16px;
+  --body-leading:1.75;
+  --button-type:15px;
+  --meta-type:14px;
+}
+body{
+  font-size:var(--body-type);
+  line-height:var(--body-leading);
+}
+.workspace main{
+  font-size:var(--body-type);
+}
+.workspace main p,
+.workspace main li,
+.workspace main dd{
+  font-size:1rem;
+  line-height:1.75;
+}
+.workspace main .muted,
+.workspace main .hint,
+.workspace main small,
+.workspace main .eyebrow{
+  font-size:var(--meta-type);
+  line-height:1.65;
+}
+.workspace main label,
+.workspace main legend{
+  font-size:15px;
+  line-height:1.55;
+}
+.workspace main button,
+.workspace main .button{
+  font-size:var(--button-type);
+  line-height:1.35;
+  min-height:46px;
+  padding:10px 16px;
+}
+.workspace main button.text{
+  font-size:var(--button-type);
+  min-height:44px;
+}
+.workspace main input,
+.workspace main select,
+.workspace main textarea{
+  font-size:16px;
+  line-height:1.55;
+}
+.workspace main .tag{
+  font-size:13px;
+  line-height:1.4;
+}
+.workspace main .facts dt{
+  font-size:13px;
+  line-height:1.5;
+}
+.workspace main .facts dd{
+  font-size:16px;
+  line-height:1.5;
+}
+.workspace main .card p,
+.workspace main .program,
+.workspace main .sources a{
+  font-size:15px;
+  line-height:1.7;
+}
+.workspace main .section-head .muted{
+  font-size:15px;
+  line-height:1.65;
+}
+.workspace main .notice,
+.workspace main .rule{
+  font-size:15px;
+  line-height:1.75;
+}
+.workspace .shortlist{
+  font-size:15px;
+}
+.workspace .shortlist li a,
+.workspace .shortlist .wide{
+  font-size:15px;
+  line-height:1.55;
+}
+.workspace .shortlist .hint{
+  font-size:13px;
+}
+.pagination button,
+.pagination span{
+  font-size:15px;
+}
+.home-slider-controls button{
+  min-width:44px;
+  min-height:44px;
+  font-size:14px;
+}
+.lifecycle-hero .hero-story>.hint{
+  font-size:14px;
+}
+.interview-review-guide,
+.review-topic>p,
+.review-example p,
+.review-method,
+.review-samples{
+  font-size:15px;
+  line-height:1.75;
+}
+.review-source .tag{
+  font-size:13px;
+}
+.review-source strong{
+  font-size:16px;
+}
+.review-topic h4,
+.review-samples h4{
+  font-size:16px;
+}
+.candidate-program{
+  font-size:16px;
+  line-height:1.55;
+}
+.candidate-reason{
+  font-size:15px;
+  line-height:1.75;
+}
+.practice-progress,
+.practice-timer,
+.practice-feedback,
+#iv-feedback{
+  font-size:16px;
+}
+@media(max-width:760px){
+  .workspace main p,
+  .workspace main li,
+  .workspace main dd{
+    line-height:1.7;
+  }
+  .workspace main button,
+  .workspace main .button{
+    font-size:16px;
+  }
+  .workspace main .muted,
+  .workspace main .hint,
+  .workspace main small{
+    font-size:14px;
+  }
+  .workspace main .card p,
+  .workspace main .program,
+  .workspace main .sources a{
+    font-size:16px;
+  }
+  .home-slider-controls button{
+    min-width:44px;
+    min-height:44px;
+  }
+}
