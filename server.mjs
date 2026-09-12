@@ -341,10 +341,12 @@ app.get('/api/integrations',(_request,response)=>{
 
 const REFERENCE_FORMULA_KEY = '__published_grade_reference__';
 const REFERENCE_FORMULA_LABEL = '공시 최종등록자 학생부등급(대학별 산출식 미확인) · 참고 비교';
+const RESTRICTED_REFERENCE_TRACK = /(특성화고|농어촌|기초생활|차상위|한부모|장애인|재직자|고른기회|국가보훈|사회배려|특별전형|체육|실기|성인학습자|평생학습자|계약학과|지역인재|지역학생|기회균형|사회통합|저소득|다문화|영농|군사)/;
 
 function isReferenceOutcomeRow(row, scale) {
   return String(row.scale) === String(scale) &&
     !row.formulaKey &&
+    !RESTRICTED_REFERENCE_TRACK.test(String(row.track || '')) &&
     ['final_registered_grade', 'enrolled_student_grade'].includes(row.metric) &&
     Number.isFinite(Number(row.grade70)) &&
     Number(row.grade70) >= 1 &&
@@ -490,7 +492,7 @@ app.get('/api/outcome-candidates', (request, response) => {
     },
     message: candidates.length
       ? (formulaKey === REFERENCE_FORMULA_KEY
-        ? '1~3순위는 공시된 최종등록자 70% 기준을 최근 3~5개년·학과·전형별로 비교한 참고 순위입니다. 대학별 산출식이 확인되지 않은 자료를 섞어 개인 합격확률로 해석하지 않습니다.'
+        ? '1~3순위는 지원 자격이 제한된 특별전형을 제외하고, 공시된 최종등록자 70% 기준을 최근 3~5개년·학과·전형별로 비교한 참고 순위입니다. 대학별 산출식이 확인되지 않은 자료를 섞어 개인 합격확률로 해석하지 않습니다.'
         : '1~3순위는 동일 산식·동일 등급체계·최근 3~5개년 공식 70% 기준 범위와 입력한 환산등급의 거리로 정렬한 성적 비교 후보입니다. 합격 예측이나 합격 보장이 아닙니다.')
       : '현재 수집된 자료에서는 입력한 산식·등급체계로 최근 3개년 이상 동일 비교 조건을 충족한 후보를 찾지 못했습니다.'
   });
