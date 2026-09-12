@@ -339,60 +339,94 @@ app.get('/api/integrations',(_request,response)=>{
   response.json({resumeWriter:{url:/^https:\/\//.test(url)?url:null,label:'잡앤킬 자기소개서 작성'}});
 });
 
+const REFERENCE_FORMULA_KEY = '__published_grade_reference__';
+const REFERENCE_FORMULA_LABEL = '공시 최종등록자 학생부등급(대학별 산출식 미확인) · 참고 비교';
+
+function isReferenceOutcomeRow(row, scale) {
+  return String(row.scale) === String(scale) &&
+    !row.formulaKey &&
+    ['final_registered_grade', 'enrolled_student_grade'].includes(row.metric) &&
+    Number.isFinite(Number(row.grade70)) &&
+    Number(row.grade70) >= 1 &&
+    Number(row.grade70) <= Number(scale);
+}
+
 function outcomeCandidateGroups(scale, formulaKey) {
+  const reference = String(formulaKey) === REFERENCE_FORMULA_KEY;
   const grouped = new Map();
   for (const row of outcomes) {
-    if (String(row.scale) !== String(scale) || String(row.formulaKey || '') !== String(formulaKey || '')) continue;
-    const key = [row.universityId, row.program, row.track, row.metric, row.scale, row.formulaKey].join('|');
+    const matches = reference
+      ? isReferenceOutcomeRow(row, scale)
+      : String(row.scale) === String(scale) && String(row.formulaKey || '') === String(formulaKey || '');
+    if (!matches) continue;
+    const key = [row.universityId, row.program, row.track, row.metric, row.scale, reference ? REFERENCE_FORMULA_KEY : row.formulaKey].join('|');
     if (!grouped.has(key)) grouped.set(key, []);
     grouped.get(key).push(row);
   }
   return [...grouped.values()].map(rows => rows.sort((a, b) => Number(a.academicYear) - Number(b.academicYear)));
 }
 
+function recentComparableRows(rows, scale, formulaKey) {
+  const latest = Math.max(...rows.map(row => Number(row.academicYear)));
+  const recent = rows.filter(row => Number(row.academicYear) >= latest - 4);
+  const years = new Set(recent.map(row => Number(row.academicYear)));
+  const reference = String(formulaKey) === REFERENCE_FORMULA_KEY;
+  const sameSeries = years.size >= 3 && years.size === recent.length && recent.every(row => (
+    Number.isFinite(row.grade70) && row.grade70 >= 1 && row.grade70 <= Number(scale) &&
+    String(row.scale) === String(scale) &&
+    (reference ? !row.formulaKey : String(row.formulaKey || '') === String(formulaKey)) &&
+    row.metric === recent[0].metric
+  ));
+  return { recent, years, sameSeries };
+}
+
 function availableOutcomeFormulas(scale) {
   const formulas = new Map();
   for (const row of outcomes) {
     if (String(row.scale) !== String(scale) || !row.formulaKey || !row.formulaLabel) continue;
-    const item = formulas.get(row.formulaKey) || { key: row.formulaKey, label: row.formulaLabel, series: 0 };
+    const item = formulas.get(row.formulaKey) || { key: row.formulaKey, label: row.formulaLabel, series: 0, comparisonMode: 'verified_formula' };
     formulas.set(row.formulaKey, item);
   }
   for (const item of formulas.values()) {
-    item.series = outcomeCandidateGroups(scale, item.key).filter(rows => {
-      const latest = Math.max(...rows.map(row => Number(row.academicYear)));
-      const recent = rows.filter(row => Number(row.academicYear) >= latest - 4);
-      const years = new Set(recent.map(row => Number(row.academicYear)));
-      return years.size >= 3 && years.size === recent.length && recent.every(row => Number.isFinite(row.grade70) && row.grade70 >= 1 && row.grade70 <= Number(scale));
-    }).length;
+    item.series = outcomeCandidateGroups(scale, item.key).filter(rows => recentComparableRows(rows, scale, item.key).sameSeries).length;
   }
-  return [...formulas.values()].filter(item => item.series > 0).sort((a, b) => b.series - a.series || a.label.localeCompare(b.label, 'ko'));
+  const referenceSeries = outcomeCandidateGroups(scale, REFERENCE_FORMULA_KEY)
+    .filter(rows => recentComparableRows(rows, scale, REFERENCE_FORMULA_KEY).sameSeries);
+  if (referenceSeries.length) {
+    formulas.set(REFERENCE_FORMULA_KEY, {
+      key: REFERENCE_FORMULA_KEY,
+      label: REFERENCE_FORMULA_LABEL,
+      series: referenceSeries.length,
+      universityCount: new Set(referenceSeries.map(rows => rows[0].universityId)).size,
+      comparisonMode: 'published_grade_reference'
+    });
+  }
+  return [...formulas.values()]
+    .filter(item => item.series > 0)
+    .sort((a, b) => (a.key === REFERENCE_FORMULA_KEY ? -1 : b.key === REFERENCE_FORMULA_KEY ? 1 : b.series - a.series || a.label.localeCompare(b.label, 'ko')));
 }
 
 function rankOutcomeCandidates({ grade, scale, formulaKey, limit = 3 }) {
+  const reference = String(formulaKey) === REFERENCE_FORMULA_KEY;
   const candidates = [];
   for (const rows of outcomeCandidateGroups(scale, formulaKey)) {
-    const latest = Math.max(...rows.map(row => Number(row.academicYear)));
-    const recent = rows.filter(row => Number(row.academicYear) >= latest - 4);
-    const years = new Set(recent.map(row => Number(row.academicYear)));
-    const sameSeries = years.size >= 3 && years.size === recent.length && recent.every(row => (
-      Number.isFinite(row.grade70) && row.grade70 >= 1 && row.grade70 <= Number(scale) &&
-      String(row.scale) === String(scale) && String(row.formulaKey) === String(formulaKey) &&
-      row.metric === recent[0].metric
-    ));
+    const { recent, years, sameSeries } = recentComparableRows(rows, scale, formulaKey);
     if (!sameSeries) continue;
     const cutoffs = recent.map(row => Number(row.grade70)).sort((a, b) => a - b);
     const min = cutoffs[0], max = cutoffs[cutoffs.length - 1], middle = cutoffs[Math.floor(cutoffs.length / 2)];
     const rangeDistance = grade < min ? min - grade : grade > max ? grade - max : 0;
-    const relation = grade < min ? '입력한 환산등급이 과거 70% 기준 범위보다 낮습니다.' :
-      grade > max ? '입력한 환산등급이 과거 70% 기준 범위보다 높습니다.' :
-      '입력한 환산등급이 과거 70% 기준 범위 안에 있습니다.';
+    const relation = grade < min ? '입력한 등급이 과거 70% 기준 범위보다 낮습니다.' :
+      grade > max ? '입력한 등급이 과거 70% 기준 범위보다 높습니다.' :
+      '입력한 등급이 과거 70% 기준 범위 안에 있습니다.';
     const first = recent[0];
     candidates.push({
       universityId: first.universityId,
       universityName: first.universityName,
       program: first.program,
       track: first.track,
-      formulaLabel: first.formulaLabel,
+      formulaLabel: reference ? REFERENCE_FORMULA_LABEL : first.formulaLabel,
+      formulaVerified: !reference,
+      comparisonMode: reference ? 'published_grade_reference' : 'verified_formula',
       metric: first.metric,
       scale: String(scale),
       years: recent.map(row => Number(row.academicYear)),
@@ -406,13 +440,22 @@ function rankOutcomeCandidates({ grade, scale, formulaKey, limit = 3 }) {
       dataYears: recent.length
     });
   }
-  return candidates.sort((a, b) =>
+  const sorted = candidates.sort((a, b) =>
     a.rangeDistance - b.rangeDistance ||
     Math.abs(a.differenceFromMedian) - Math.abs(b.differenceFromMedian) ||
     b.dataYears - a.dataYears ||
     a.universityName.localeCompare(b.universityName, 'ko') ||
     a.program.localeCompare(b.program, 'ko')
-  ).slice(0, Math.max(1, Math.min(3, Number(limit) || 3)));
+  );
+  const uniqueSchools = [];
+  const seen = new Set();
+  for (const candidate of sorted) {
+    if (seen.has(candidate.universityId)) continue;
+    seen.add(candidate.universityId);
+    uniqueSchools.push(candidate);
+    if (uniqueSchools.length >= Math.max(1, Math.min(3, Number(limit) || 3))) break;
+  }
+  return uniqueSchools;
 }
 
 app.get('/api/outcome-candidates', (request, response) => {
