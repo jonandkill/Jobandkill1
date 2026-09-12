@@ -102,7 +102,7 @@ export function renderRecommendations(target, {profile = {}, universities = [], 
   function showAppliedStatus(previousAverage,previousScale,detailErrors){
     const changed=String(local.average)!==previousAverage||String(local.scale)!==previousScale;
     const message=changed?`${gradeLabel(previousAverage,previousScale)} → ${gradeLabel(local.average,local.scale)}`:gradeLabel(local.average,local.scale);
-    $('recommend-status').innerHTML=`<strong>✓ ${esc(message)} 적용 완료</strong><p>학교 목록과 학과별 입결 비교표에 반영했어요. 평균만으로 합격 순위를 정하지 않으므로 학교 순서는 그대로일 수 있어요.</p>${detailErrors.length?`<p>선택 세부 성적은 아직 계산에 사용하지 않았어요. ${esc(detailErrors[0])}</p><button type="button" id="recommend-fix-details">세부 성적 오류 수정하기</button>`:''}`;
+    $('recommend-status').innerHTML=`<strong>✓ ${esc(message)} 적용 완료</strong><p>학교 목록은 탐색용 가나다순으로 유지하고, 위 후보 카드에 공시 입결 참고 1~3순위를 새로 계산해 보여드려요.</p>${detailErrors.length?`<p>선택 세부 성적은 아직 계산에 사용하지 않았어요. ${esc(detailErrors[0])}</p><button type="button" id="recommend-fix-details">세부 성적 오류 수정하기</button>`:''}`;
     $('recommend-status').hidden=false;
     if($('recommend-fix-details'))$('recommend-fix-details').onclick=()=>grades.open({focus:true});
     $('recommend-apply').textContent='내 정보 적용';
