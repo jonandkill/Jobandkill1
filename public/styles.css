@@ -181,3 +181,163 @@
 .review-samples h4{margin:.05rem 0 .45rem}
 .review-samples ul{margin:.35rem 0 .45rem 1.15rem;padding:0}
 .review-samples li{margin:.32rem 0;line-height:1.55}
+
+
+/* Full-bleed home hero: a calm editorial image carousel with the option-1 palette. */
+.lifecycle-hero{
+  display:block;
+  position:relative;
+  width:calc(100% + 56px);
+  margin-left:-28px;
+  min-height:clamp(540px,72vh,700px);
+  padding:0;
+  border-bottom:0;
+  overflow:hidden;
+  background:#203931;
+}
+.lifecycle-hero .home-slider{
+  width:100%;
+  height:clamp(540px,72vh,700px);
+  min-height:0;
+  border-radius:0;
+  box-shadow:none;
+}
+.lifecycle-hero .home-slide:after{
+  background:linear-gradient(90deg,rgba(20,42,32,.9) 0%,rgba(34,61,47,.67) 45%,rgba(25,44,36,.22) 100%);
+}
+.lifecycle-hero .hero-story{
+  position:absolute;
+  inset:0 auto auto 0;
+  z-index:6;
+  width:min(640px,calc(100% - 40px));
+  padding:clamp(70px,11vh,128px) clamp(24px,7vw,90px) 30px;
+  color:#fff;
+  pointer-events:none;
+}
+.lifecycle-hero .hero-story .eyebrow{
+  color:#e8d9b6;
+  letter-spacing:1.5px;
+}
+.lifecycle-hero .hero-story h1{
+  color:#fff;
+  font-size:clamp(38px,5vw,68px);
+  line-height:1.14;
+  letter-spacing:-3px;
+  margin:22px 0 20px;
+  text-wrap:balance;
+}
+.lifecycle-hero .hero-lead{
+  color:#f0f3eb;
+  font-size:clamp(16px,1.8vw,20px);
+  line-height:1.8;
+  max-width:500px;
+  text-shadow:0 1px 14px rgba(0,0,0,.18);
+}
+.lifecycle-hero .hero-story .actions{
+  pointer-events:auto;
+  margin-top:28px;
+}
+.lifecycle-hero .hero-story .actions>*{
+  pointer-events:auto;
+}
+.lifecycle-hero .home-primary-actions .button,
+.lifecycle-hero .home-primary-actions button{
+  min-height:50px;
+}
+.lifecycle-hero .home-primary-actions .button:not(.primary),
+.lifecycle-hero .home-primary-actions button:not(.primary){
+  color:#fff;
+  border-color:rgba(255,255,255,.72);
+  background:rgba(255,255,255,.1);
+  backdrop-filter:blur(8px);
+}
+.lifecycle-hero .hero-story>.hint{
+  color:#e5ebdf;
+  font-size:13px;
+}
+.lifecycle-hero .home-slide-copy{
+  left:auto;
+  right:clamp(24px,7vw,90px);
+  bottom:96px;
+  max-width:310px;
+  text-align:right;
+  z-index:3;
+}
+.lifecycle-hero .home-slide-copy p{color:#edf3eb}
+.lifecycle-hero .home-slide-copy h2{
+  font-size:clamp(24px,2.7vw,36px);
+  text-shadow:0 2px 18px rgba(0,0,0,.22);
+}
+.lifecycle-hero .home-slide-copy a{
+  color:#fff;
+  border-bottom-color:rgba(255,255,255,.7);
+}
+.lifecycle-hero .home-slider-controls{
+  z-index:8;
+}
+@media(max-width:1100px){
+  .lifecycle-hero{
+    width:calc(100% + 48px);
+    margin-left:-24px;
+  }
+  .lifecycle-hero .hero-story{
+    padding-inline:clamp(24px,6vw,72px);
+  }
+}
+@media(max-width:760px){
+  .lifecycle-hero{
+    width:calc(100% + 36px);
+    margin-left:-18px;
+    min-height:560px;
+  }
+  .lifecycle-hero .home-slider{
+    height:560px;
+  }
+  .lifecycle-hero .hero-story{
+    width:min(560px,calc(100% - 28px));
+    padding:58px 24px 24px;
+  }
+  .lifecycle-hero .hero-story h1{
+    font-size:clamp(35px,9vw,50px);
+    letter-spacing:-2.2px;
+    margin:18px 0;
+  }
+  .lifecycle-hero .hero-lead{font-size:16px;line-height:1.75}
+  .lifecycle-hero .hero-story .actions{margin-top:20px}
+  .lifecycle-hero .home-primary-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+  }
+  .lifecycle-hero .home-primary-actions .button,
+  .lifecycle-hero .home-primary-actions button{
+    width:auto;
+    flex:1 1 210px;
+  }
+  .lifecycle-hero .home-slide-copy{
+    left:24px;
+    right:24px;
+    bottom:78px;
+    max-width:420px;
+    text-align:left;
+  }
+  .lifecycle-hero .home-slide-copy h2{
+    font-size:clamp(22px,6vw,30px);
+    margin-bottom:10px;
+  }
+  .lifecycle-hero .home-slider-controls{left:16px;right:12px}
+}
+@media(max-width:390px){
+  .lifecycle-hero{
+    min-height:530px;
+  }
+  .lifecycle-hero .home-slider{height:530px}
+  .lifecycle-hero .hero-story{padding:48px 18px 20px}
+  .lifecycle-hero .hero-story h1{font-size:32px}
+  .lifecycle-hero .hero-lead{font-size:15px}
+  .lifecycle-hero .home-slide-copy{bottom:72px}
+  .lifecycle-hero .home-slide-copy h2{font-size:23px}
+}
+@media(prefers-reduced-motion:reduce){
+  .lifecycle-hero .home-slide img{transform:none!important}
+}
