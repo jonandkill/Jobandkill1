@@ -114,28 +114,73 @@ export function renderRecommendations(target, {profile = {}, universities = [], 
     return `최근 70% 기준 중앙값과 ${sign}${Number(candidate.differenceFromMedian).toFixed(2)}등급 차이 · ${esc(candidate.relation)}`;
   }
   function candidateCards(candidates = []) {
-    if (!candidates.length) return '<div class="empty"><h3>순위를 계산할 수 있는 동일 비교 자료가 없어요</h3><p>이 대학에 지원할 수 없다는 뜻은 아닙니다. 다른 공식 산식을 선택하거나 대학·학과 상세에서 입결과 모집요강을 확인해 주세요.</p></div>';
-    return `<div class="candidate-rank-grid">${candidates.map((candidate, index) => `<article class="card candidate-rank-card"><span class="tag">${index + 1}순위 성적 비교 후보</span><h3>${esc(candidate.universityName)}</h3><p class="candidate-program">${esc(candidate.program)} · ${esc(candidate.track)}</p><dl class="facts"><div><dt>내 환산등급</dt><dd>${Number(candidate.studentGrade).toFixed(2)}등급</dd></div><div><dt>최근 ${candidate.dataYears}개년 70% 기준</dt><dd>${Number(candidate.grade70Range.min).toFixed(2)}~${Number(candidate.grade70Range.max).toFixed(2)}등급</dd></div><div><dt>비교 산식</dt><dd>${esc(candidate.formulaLabel)}</dd></div><div><dt>비교 연도</dt><dd>${candidate.years.map(esc).join(' · ')}</dd></div></dl><p class="hint">${candidateRelationText(candidate)}</p><p class="candidate-reason"><strong>순위 근거</strong> 같은 산식·등급체계에서 과거 기준 범위와의 거리, 중앙값과의 차이, 확인 연수를 차례로 비교했습니다.</p><div class="actions"><button type="button" class="primary" data-candidate-school="${esc(candidate.universityId)}">학과·입결 자세히</button>${candidate.sourceUrls?.[0] ? `<a class="button" href="${esc(candidate.sourceUrls[0])}" target="_blank" rel="noopener noreferrer">공식 출처</a>` : ''}</div></article>`).join('')}</div>`;
+    if (!candidates.length) return '<div class="empty"><h3>최근 3개년 이상 비교 가능한 입결 자료가 없어요</h3><p>이 결과는 지원 불가 판정이 아닙니다. 대학·학과 상세에서 자료 연수와 전형 변경을 확인해 주세요.</p></div>';
+    return '<div class="candidate-rank-grid">' + candidates.map((candidate, index) => {
+      const reference = candidate.comparisonMode === 'published_grade_reference';
+      const modeLabel = reference ? '공시 입결 참고' : '산식 일치 비교';
+      const evidenceLabel = reference ? '대학별 산출식 확인 필요' : '대학 산식 확인';
+      const source = candidate.sourceUrls?.[0] ? '<a class="button" href="' + esc(candidate.sourceUrls[0]) + '" target="_blank" rel="noopener noreferrer">공식 출처</a>' : '';
+      return '<article class="card candidate-rank-card"><span class="tag">' + (index + 1) + '순위 · ' + modeLabel + '</span><h3>' + esc(candidate.universityName) + '</h3><p class="candidate-program">' + esc(candidate.program) + ' · ' + esc(candidate.track) + '</p><dl class="facts"><div><dt>비교한 내신</dt><dd>' + Number(candidate.studentGrade).toFixed(2) + '등급</dd></div><div><dt>최근 ' + candidate.dataYears + '개년 70% 기준</dt><dd>' + Number(candidate.grade70Range.min).toFixed(2) + '~' + Number(candidate.grade70Range.max).toFixed(2) + '등급</dd></div><div><dt>비교 기준</dt><dd>' + esc(candidate.formulaLabel) + '</dd></div><div><dt>비교 연도</dt><dd>' + candidate.years.map(esc).join(' · ') + '</dd></div></dl><p class="hint">' + candidateRelationText(candidate) + '</p><p class="candidate-reason"><strong>순위 근거</strong> 과거 입결 범위와 입력 등급의 거리를 계산해 대학별로 하나씩 비교했습니다. ' + evidenceLabel + '이며 개인 합격확률이 아닙니다.</p><div class="actions"><button type="button" class="primary" data-candidate-school="' + esc(candidate.universityId) + '">학과·입결 자세히</button>' + source + '</div></article>';
+    }).join('') + '</div>';
   }
   async function loadCandidateFormulas() {
     const version = ++candidateRequest;
     const formula = $('candidate-formula'), status = $('candidate-ranking-status'), submit = $('candidate-ranking-submit');
     formula.disabled = true; submit.disabled = true;
-    formula.innerHTML = '<option value="">공식 산식 목록을 불러오는 중…</option>';
-    status.textContent = '공식 입결 자료에서 같은 산식으로 비교 가능한 전형을 확인하고 있어요.';
+    formula.innerHTML = '<option value="">공식 입결 비교 기준을 불러오는 중…</option>';
+    status.textContent = '공식 입결 자료에서 3개년 이상 비교 가능한 대학·학과·전형을 확인하고 있어요.';
     try {
       const response = await fetch('/api/outcome-candidates?scale=' + encodeURIComponent($('recommend-scale').value));
       if (!response.ok) throw Error('candidate_formula_fetch');
       const data = await response.json();
       if (version !== candidateRequest || !stillActive()) return;
-      formula.innerHTML = '<option value="">비교할 대학 산식을 선택하세요</option>' + (data.formulas || []).map(item => `<option value="${esc(item.key)}">${esc(item.label)} · 비교 가능 전형 ${esc(item.series)}개</option>`).join('');
-      formula.disabled = !(data.formulas || []).length;
-      submit.disabled = !(data.formulas || []).length;
-      status.textContent = (data.formulas || []).length ? '전체 평균과 다른 대학 산식은 자동 환산하지 않습니다. 산식으로 계산한 값을 입력해 주세요.' : '현재 등급체계에서 최근 3개년 이상 같은 산식으로 비교 가능한 공식 자료를 찾지 못했습니다.';
+      const items = data.formulas || [];
+      formula.innerHTML = '<option value="">비교 기준을 선택하세요</option>' + items.map(item => '<option value="' + esc(item.key) + '">' + esc(item.label) + ' · 비교 가능 전형 ' + esc(item.series) + '개</option>').join('');
+      formula.disabled = !items.length;
+      submit.disabled = !items.length;
+      const reference = items.find(item => item.key === '__published_grade_reference__');
+      if (items.length) {
+        formula.value = reference?.key || items[0].key;
+        const average = parseGrade(local.average, $('recommend-scale').value);
+        if (average !== null) $('candidate-converted-grade').value = average.toFixed(2);
+      }
+      status.textContent = reference
+        ? '전체 평균을 입력하면 공시 입결 참고 순위를 자동으로 보여드려요. 대학 산식이 확인된 자료는 별도 기준으로 다시 비교할 수 있습니다.'
+        : (items.length ? '대학 산식으로 계산한 환산등급을 입력하면 같은 산식끼리 비교할 수 있어요.' : '현재 등급체계에서 최근 3개년 이상 비교 가능한 공식 자료를 찾지 못했습니다.');
     } catch {
       if (version !== candidateRequest || !stillActive()) return;
-      formula.innerHTML = '<option value="">비교 산식을 불러오지 못했습니다</option>';
+      formula.innerHTML = '<option value="">비교 기준을 불러오지 못했습니다</option>';
       status.textContent = '성적 기준 후보 자료 연결에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+    }
+  }
+  async function requestQuickRanking() {
+    const average = parseGrade(local.average, $('recommend-scale').value);
+    const results = $('candidate-ranking-results'), status = $('candidate-ranking-status');
+    if (average === null) {
+      results.innerHTML = '';
+      return;
+    }
+    const version = ++candidateRequest;
+    const formulaKey = '__published_grade_reference__';
+    $('candidate-converted-grade').value = average.toFixed(2);
+    $('candidate-formula').value = formulaKey;
+    status.textContent = '전체 평균과 최근 3~5개년 공시 입결을 비교해 1~3순위를 계산하고 있어요.';
+    results.innerHTML = '<p class="hint">비교 가능한 대학을 찾고 있습니다…</p>';
+    try {
+      const query = new URLSearchParams({scale: $('recommend-scale').value, grade: String(average), formulaKey});
+      const response = await fetch('/api/outcome-candidates?' + query.toString());
+      if (!response.ok) throw Error('quick_ranking_fetch');
+      const data = await response.json();
+      if (version !== candidateRequest || !stillActive()) return;
+      const comparison = data.comparison || {};
+      const universityCount = Number(comparison.comparableUniversityCount) || 0;
+      status.innerHTML = '<strong>' + esc(data.message || '입결 비교가 완료되었습니다.') + '</strong><p>최근 3~5개년 비교 조건을 충족한 대학 ' + universityCount + '곳 중 대학별로 1개 후보씩 선정했습니다. 학교별 산출식이 확인되지 않은 자료는 참고 순위로 표시합니다.</p>';
+      results.innerHTML = candidateCards(data.candidates || []);
+      results.querySelectorAll('[data-candidate-school]').forEach(button => button.onclick = () => openSchool(button.dataset.candidateSchool));
+    } catch {
+      if (version !== candidateRequest || !stillActive()) return;
+      results.innerHTML = '';
+      status.textContent = '성적 기준 후보를 불러오지 못했습니다. 입력값은 유지되며 다시 시도할 수 있어요.';
     }
   }
   async function requestCandidateRanking(event) {
