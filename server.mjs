@@ -467,18 +467,31 @@ app.get('/api/outcome-candidates', (request, response) => {
   if (!formulaKey || rawGrade === '') return response.json({
     formulas,
     candidates: [],
-    message: '대학별 산식으로 계산한 환산등급과 비교 산식을 선택하면, 동일 산식·동일 전형의 최근 3~5개년 입결을 기준으로 후보 순위를 계산합니다.'
+    message: '전체 평균을 입력하면 공시 입결 참고 비교를 먼저 볼 수 있습니다. 대학 산식 환산등급을 알고 있다면 해당 산식을 선택해 더 엄격하게 비교하세요.'
   });
   const grade = Number(rawGrade);
   if (!Number.isFinite(grade) || grade < 1 || grade > Number(scale)) return response.status(400).json({ error: 'converted_grade_invalid' });
   if (!formulas.some(item => item.key === formulaKey)) return response.status(400).json({ error: 'formula_key_invalid' });
+  const formulaInfo = formulas.find(item => item.key === formulaKey);
+  const comparableSeries = outcomeCandidateGroups(scale, formulaKey)
+    .filter(rows => recentComparableRows(rows, scale, formulaKey).sameSeries);
   const candidates = rankOutcomeCandidates({ grade, scale, formulaKey });
+  const comparableUniversityCount = new Set(comparableSeries.map(rows => rows[0].universityId)).size;
   response.set('Cache-Control', 'public, max-age=300');
   response.json({
     formulas,
     candidates,
+    comparison: {
+      mode: formulaInfo?.comparisonMode || 'unknown',
+      label: formulaInfo?.label || '',
+      comparableSeries: comparableSeries.length,
+      comparableUniversityCount,
+      uniqueCandidates: candidates.length
+    },
     message: candidates.length
-      ? '순위는 동일 산식·동일 등급체계·최근 3~5개년 공식 70% 기준 범위와 입력한 환산등급의 거리로 정렬한 성적 비교 후보입니다. 합격 예측이나 합격 보장이 아닙니다.'
+      ? (formulaKey === REFERENCE_FORMULA_KEY
+        ? '1~3순위는 공시된 최종등록자 70% 기준을 최근 3~5개년·학과·전형별로 비교한 참고 순위입니다. 대학별 산출식이 확인되지 않은 자료를 섞어 개인 합격확률로 해석하지 않습니다.'
+        : '1~3순위는 동일 산식·동일 등급체계·최근 3~5개년 공식 70% 기준 범위와 입력한 환산등급의 거리로 정렬한 성적 비교 후보입니다. 합격 예측이나 합격 보장이 아닙니다.')
       : '현재 수집된 자료에서는 입력한 산식·등급체계로 최근 3개년 이상 동일 비교 조건을 충족한 후보를 찾지 못했습니다.'
   });
 });
