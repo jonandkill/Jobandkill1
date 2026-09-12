@@ -26,15 +26,15 @@ export function renderHome(root, profile = {}, onStart, context = {}) {
       </div>
       <section id="home-slider" class="home-slider" aria-roledescription="carousel" aria-label="잡앤킬 진학설계 주요 안내">
         <article class="home-slide is-active" data-slide aria-hidden="false">
-          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1500&q=85" alt="함께 학습하며 진학 계획을 세우는 학생들" fetchpriority="high">
+          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&crop=faces,center&w=1500&q=85" alt="한국 대학생이 진학 자료를 살펴보는 모습" fetchpriority="high">
           <div class="home-slide-copy"><p>성적부터 지원 전략까지</p><h2>내 성적을<br>비교의 근거로.</h2><a href="#recommend">입결 비교 시작 →</a></div>
         </article>
         <article class="home-slide" data-slide aria-hidden="true">
-          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1500&q=85" alt="졸업을 앞둔 학생들이 캠퍼스에 서 있는 모습" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1500&q=85" alt="한국 대학생들이 캠퍼스에서 대화를 나누는 모습" loading="lazy">
           <div class="home-slide-copy"><p>대학·학과·전형을 한곳에서</p><h2>지원 후보를<br>근거와 함께.</h2><a href="#find">${countLabel} →</a></div>
         </article>
         <article class="home-slide" data-slide aria-hidden="true">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=85" alt="노트북으로 학습 자료를 확인하는 학생" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1500&q=85" alt="한국 대학생이 노트북으로 학습 자료를 확인하는 모습" loading="lazy">
           <div class="home-slide-copy"><p>논술·면접까지 이어지는 준비</p><h2>찾은 뒤에는<br>직접 연습해요.</h2><a href="#prepare/essay">논술 문제 풀기 →</a></div>
         </article>
         <div class="home-slider-controls">
