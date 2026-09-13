@@ -37,13 +37,50 @@ export async function renderPractice(root) {
   const resourceMap = new Map([...(bank.resources || []), ...(official.resources || [])].map(item => [item.id, item]));
   const resources = [...resourceMap.values()];
   const readyQuestions = [...(standards.questions || []), ...(official.questions || []), ...(authored.questions || [])].sort((a, b) => Number(!!b.sourceId) - Number(!!a.sourceId));
-  const combined = new Map((bank.questions || []).map(q => [q.id, q]));
-  readyQuestions.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
-  const questions = [...combined.values()];
   const resourceFor = q => resources.find(r => r.id === q.sourceId);
   const schoolFor = q => q.universityName || resourceFor(q)?.universityName || '자체 제작 연습';
   const subjectFor = q => q.subject || resourceFor(q)?.subject || '통합';
-  const schoolNames = [...new Set([...(roster.universities || []).map(r => r.name), ...resources.map(r => r.universityName), ...readyQuestions.map(schoolFor)])].sort((a, b) => a.localeCompare(b, 'ko'));
+  const subjectMatches = (selected, actual) => {
+    if (!selected) return true;
+    const value = String(actual || '').trim();
+    if (!value || /자료 내|계열별 확인|계열에서 선택|계열별 확인/u.test(value)) return true;
+    return value === selected || value.split(/[·,/]/u).map(token => token.trim()).includes(selected);
+  };
+  // 공식 PDF에 문제 쪽수는 확인됐지만 문항 객체가 아직 연결되지 않은 자료도
+  // 반드시 연습 목록에서 접근할 수 있도록 페이지 단위의 원문 확인 항목을 만든다.
+  const generatedQuestions = resources.flatMap(resource => {
+    const pages = Array.isArray(resource.questionPages) ? resource.questionPages.filter(page => Number.isFinite(Number(page))) : [];
+    if (!pages.length || readyQuestions.some(question => question.sourceId === resource.id)) return [];
+    return pages.map((page, index) => ({
+      id: `resource-${resource.id}-page-${page}-${index + 1}`,
+      sourceId: resource.id,
+      universityId: resource.universityId,
+      universityName: resource.universityName,
+      year: resource.year,
+      subject: resource.subject || '자료 내 계열별 확인',
+      title: `${resource.year || ''} ${resource.universityName || '대학'} 논술 원문 ${page}쪽`.trim(),
+      questionPage: Number(page),
+      promptSummary: `공식 PDF ${page}쪽에서 문제 본문을 확인하고 문항의 요구사항을 답안에 옮겨 적으세요.`,
+      prompt: '',
+      solutionPages: Array.isArray(resource.rubricCandidatePages) ? resource.rubricCandidatePages : [],
+      sourceKind: 'official_past',
+      officialPastPaper: true,
+      requiresSource: true,
+      contentStatus: 'question_page_fallback',
+      answerStatus: 'official_solution_not_indexed',
+      verification: 'resource_question_page_fallback',
+      feedbackStatus: 'question_page_available_manual_solution_review',
+      rubricComplete: false,
+      durationVerified: !!resource.durationVerified,
+      examDurationMinutes: resource.examDurationMinutes,
+      durationNote: resource.durationNote
+    }));
+  });
+  const questionRows = [...readyQuestions, ...generatedQuestions];
+  const combined = new Map((bank.questions || []).map(q => [q.id, q]));
+  questionRows.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
+  const questions = [...combined.values()];
+  const schoolNames = [...new Set([...(roster.universities || []).map(r => r.name), ...resources.map(r => r.universityName), ...questionRows.map(schoolFor)])].sort((a, b) => a.localeCompare(b, 'ko'));
   let saved;
   try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch { saved = {}; }
   if (!saved || typeof saved !== 'object' || Array.isArray(saved)) saved = {};
@@ -51,7 +88,7 @@ export async function renderPractice(root) {
   const own = document.createElement('div');
   own.className = 'practice-workspace';
   root.replaceChildren(own);
-  own.innerHTML = `<p class="eyebrow">문제 선택 → 시간 설정 → 답안 작성 → 피드백</p><h1>문제를 읽고, 직접 풀어보세요</h1><p>문제와 풀이 기준을 함께 제공합니다. 대학 기출과 자체 제작 연습은 구분해 표시합니다.</p><div class="filters"><div><label for="practice-mode">자료 선택</label><select id="practice-mode"><option value="questions">바로 풀 수 있는 문항</option><option value="resources">대학 공식 PDF 자료</option></select></div><div><label for="practice-school">학교</label><select id="practice-school"><option value="">전체 학교</option>${schoolNames.map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-subject">계열</label><select id="practice-subject"><option value="">전체 계열</option>${[...new Set([...resources.map(r => r.subject), ...readyQuestions.map(subjectFor)].filter(Boolean))].sort().map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-hard"><input type="checkbox" id="practice-hard"> 어려운 문제·자료만</label></div></div><p class="hint">공식 PDF ${resources.length}건 · 원문에서 색인한 공식 문제 위치 ${official.questions?.length || 0}건 · 자체 제작 기준 풀이 ${authored.questions?.length || 0}건 · 기존 연결 문항 ${standards.questions?.length || 0}건이 있습니다. 자료실 링크만 있는 항목은 문제 확보 수에 포함하지 않습니다.</p><section id="practice-list" class="practice-library-list" tabindex="-1"></section><section id="practice-editor" class="panel" hidden></section>`;
+  own.innerHTML = `<p class="eyebrow">문제 선택 → 시간 설정 → 답안 작성 → 피드백</p><h1>문제를 읽고, 직접 풀어보세요</h1><p>문제와 풀이 기준을 함께 제공합니다. 대학 기출과 자체 제작 연습은 구분해 표시합니다.</p><div class="filters"><div><label for="practice-mode">자료 선택</label><select id="practice-mode"><option value="questions">바로 풀 수 있는 문항</option><option value="resources">대학 공식 PDF 자료</option></select></div><div><label for="practice-school">학교</label><select id="practice-school"><option value="">전체 학교</option>${schoolNames.map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-subject">계열</label><select id="practice-subject"><option value="">전체 계열</option>${[...new Set([...resources.map(r => r.subject), ...questionRows.map(subjectFor)].filter(Boolean))].sort().map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-hard"><input type="checkbox" id="practice-hard"> 어려운 문제·자료만</label></div></div><p class="hint">공식 PDF ${resources.length}건 · 원문에서 색인한 공식 문제 위치 ${official.questions?.length || 0}건 · 자체 제작 기준 풀이 ${authored.questions?.length || 0}건 · 기존 연결 문항 ${standards.questions?.length || 0}건이 있습니다. 자료실 링크만 있는 항목은 문제 확보 수에 포함하지 않습니다.</p><section id="practice-list" class="practice-library-list" tabindex="-1"></section><section id="practice-editor" class="panel" hidden></section>`;
   const mode = own.querySelector('#practice-mode'), school = own.querySelector('#practice-school'), subject = own.querySelector('#practice-subject'), hard = own.querySelector('#practice-hard'), list = own.querySelector('#practice-list'), editor = own.querySelector('#practice-editor');
   const alive = () => own.isConnected;
   function persist() { try { localStorage.setItem(storageKey, JSON.stringify(saved)); return true; } catch { return false; } }
@@ -59,16 +96,18 @@ export async function renderPractice(root) {
   function isHard(id, questionId) { return !!(questionId ? saved[id]?.drafts?.[questionId]?.hard : saved[id]?.hard || Object.values(saved[id]?.drafts || {}).some(d => d.hard)); }
   function drawList(move = false) {
     const isQuestions = mode.value === 'questions';
-    const rows = (isQuestions ? readyQuestions : resources).filter(item => {
+    const rows = (isQuestions ? questionRows : resources).filter(item => {
       const name = isQuestions ? schoolFor(item) : item.universityName, field = isQuestions ? subjectFor(item) : item.subject;
-      return (!school.value || name === school.value) && (!subject.value || field === subject.value) && (!hard.checked || isHard(isQuestions ? keyFor(item) : item.id, isQuestions ? item.id : null));
+      return (!school.value || name === school.value) && subjectMatches(subject.value, field) && (!hard.checked || isHard(isQuestions ? keyFor(item) : item.id, isQuestions ? item.id : null));
     });
     const pages = Math.ceil(rows.length / 9);
     page = Math.min(page, Math.max(0, pages - 1));
     list.innerHTML = `<p><strong>${rows.length}개 ${isQuestions ? '연습 문항' : '공식 PDF 자료'}</strong></p><div class="cards">${rows.slice(page * 9, page * 9 + 9).map(item => {
       const id = isQuestions ? keyFor(item) : item.id, qid = isQuestions ? item.id : '';
-      const status = isQuestions ? (item.sourceKind === 'official_past' ? '공식 기출 · 원문 PDF 쪽과 요구사항 색인' : item.sourceKind === 'official_mock' ? '공식 모의논술 · 본시험 기출과 구분' : item.sourceId ? '공식 자료 연결 문항 · 근거와 풀이 점검' : '자체 제작 연습 · 대학 실제 기출이 아님') : '원문 PDF 읽기 · 문항별 확보 범위 확인';
-      return `<article class="card"><span class="tag">${esc(isQuestions ? schoolFor(item) : item.universityName)}${item.year ? ` · ${esc(item.year)}` : ''}</span><h2>${esc(item.title)}</h2><p>${esc(isQuestions ? subjectFor(item) : item.subject)}</p><p class="hint">${status}</p>${isQuestions && item.promptSummary ? `<p>${esc(item.promptSummary)}</p>` : ''}<button class="primary" data-open="${esc(id)}" data-question="${esc(qid)}">${isQuestions ? '이 문제 풀기' : 'PDF 읽고 문제 선택'}</button><button data-hard="${esc(id)}" data-question="${esc(qid)}" aria-pressed="${isHard(id, qid)}">${isHard(id, qid) ? '★ 어려운 항목 해제' : '☆ 어려운 항목 담기'}</button></article>`;
+      const status = isQuestions ? (item.contentStatus === 'question_page_fallback' ? '공식 기출 · 문제 쪽 자동 연결 · 원문 PDF에서 본문 확인' : item.sourceKind === 'official_past' ? '공식 기출 · 원문 PDF 쪽과 요구사항 색인' : item.sourceKind === 'official_mock' ? '공식 모의논술 · 본시험 기출과 구분' : item.sourceId ? '공식 자료 연결 문항 · 근거와 풀이 점검' : '자체 제작 연습 · 대학 실제 기출이 아님') : '원문 PDF 읽기 · 문항별 확보 범위 확인';
+      const resourceQuestionCount = !isQuestions ? questionRows.filter(question => question.sourceId === item.id).length : 0;
+      const subjectLabel = !isQuestions && /자료 내|계열별 확인/u.test(String(item.subject || '')) ? '계열은 PDF 문항별 확인' : (isQuestions ? subjectFor(item) : item.subject);
+      return `<article class="card"><span class="tag">${esc(isQuestions ? schoolFor(item) : item.universityName)}${item.year ? ` · ${esc(item.year)}` : ''}</span><h2>${esc(item.title)}</h2><p>${esc(subjectLabel)}</p><p class="hint">${status}</p>${resourceQuestionCount ? `<p class="hint">${resourceQuestionCount}개 문제 쪽을 원문 PDF에서 바로 확인할 수 있습니다.</p>` : ''}${isQuestions && item.promptSummary ? `<p>${esc(item.promptSummary)}</p>` : ''}<button class="primary" data-open="${esc(id)}" data-question="${esc(qid)}">${isQuestions ? '이 문제 풀기' : 'PDF 읽고 문제 선택'}</button><button data-hard="${esc(id)}" data-question="${esc(qid)}" aria-pressed="${isHard(id, qid)}">${isHard(id, qid) ? '★ 어려운 항목 해제' : '☆ 어려운 항목 담기'}</button></article>`;
     }).join('')}</div>${rows.length ? '' : '<p class="empty">선택한 조건의 문항이 없습니다. 학교·계열 조건을 바꾸거나 대학 공식 PDF 자료를 선택해 주세요.</p>'}<div class="pagination" aria-label="논술 연습 목록 페이지"><button data-page-prev ${page === 0 ? 'disabled' : ''}>← 이전</button><span>${rows.length ? page + 1 : 0} / ${pages} 페이지</span><button data-page-next ${page + 1 >= pages ? 'disabled' : ''}>다음 →</button></div>`;
     list.querySelectorAll('[data-open]').forEach(b => b.onclick = () => open(b.dataset.open, b.dataset.question));
     list.querySelectorAll('[data-hard]').forEach(b => b.onclick = () => {
@@ -198,7 +237,7 @@ export async function renderPractice(root) {
   }
   [mode, school, subject, hard].forEach(control => control.onchange = () => { page = 0; drawList(); });
   school.onchange = () => {
-    if (mode.value === 'questions' && school.value && !readyQuestions.some(q => schoolFor(q) === school.value) && resources.some(r => r.universityName === school.value)) mode.value = 'resources';
+    if (mode.value === 'questions' && school.value && !questionRows.some(q => schoolFor(q) === school.value) && resources.some(r => r.universityName === school.value)) mode.value = 'resources';
     subject.value = ''; page = 0; drawList();
   };
   const previous = saved._session;
