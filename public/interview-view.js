@@ -164,7 +164,7 @@ export async function renderInterview(root, options = {}) {
   let appliedMaterial = interviewSession?.appliedMaterial || '';
   let resumeEvidence = interviewSession?.evidence || [], questions = [], loadVersion = 0, uploadVersion = 0, writing;
   root.innerHTML = (options.compose ? '<p class="eyebrow">자기소개서 작성실</p><h1>문항에 답할 자기소개서를 완성해요</h1><p>문항·경험·행동·근거를 차례로 정리하고, 완성한 글로 면접 질문까지 이어서 연습해요.</p>' : '<p class="eyebrow">면접 준비실</p><h1>질문을 읽고, 내 말로 답해 보세요</h1><p>대학·학과를 고르고 경험을 정리한 뒤, 내 글로 질문을 만들어 면접까지 연습해요.</p>')+'<nav class="actions" aria-label="준비 메뉴"><a class="button" href="#find">대학 찾기</a><a class="button" href="#prepare/exams">논술 기출</a><a class="button" href="#prepare/essay">논술 연습</a></nav>'+
-    '<section class="panel"><h2>1. 지원 대학·학과</h2><div class="fields"><div><label for="iv-school">대학 선택</label><select id="iv-school"><option value="">대학 선택 전 · 공통 연습</option>'+schools.map(s => '<option value="'+esc(s.id)+'">'+esc(s.displayName || s.name)+'</option>').join('')+'</select></div><div><label for="iv-major">학과 선택</label><select id="iv-major"><option value="">대학을 선택하면 학과가 나와요</option></select></div></div><p id="iv-school-status" class="hint" role="status">'+schools.length+'개 대학 선택 가능 · 공식 면접 방식은 '+data.schools.length+'개 대학 · 후기 자료집 주제는 '+(data.reviewGuides?.length||0)+'개 대학 확인'+(!catalog?' · 전국 목록 연결 실패로 확인된 대학만 표시':'')+'</p><details><summary>학교별 면접시간·방법·기출 확인</summary><div id="iv-info"></div></details></section>'+
+    '<section class="panel"><h2>1. 지원 대학·학과</h2><div class="fields"><div><label for="iv-school">대학 선택</label><select id="iv-school"><option value="">대학 선택 전 · 공통 연습</option>'+schools.map(s => '<option value="'+esc(s.id)+'">'+esc(s.displayName || s.name)+'</option>').join('')+'</select></div><div><label for="iv-major">학과 선택</label><select id="iv-major"><option value="">대학을 선택하면 학과가 나와요</option></select></div></div><p id="iv-school-status" class="hint" role="status">'+schools.length+'개 대학 선택 가능 · 공식 면접 방식은 '+data.schools.length+'개 대학 · 후기 자료집 주제는 '+(data.reviewGuides?.length||0)+'개 대학 · 논술 목록 기준 학교별 자료 상태 '+(data.schoolCoverage?.length||0)+'개 점검'+(!catalog?' · 전국 목록 연결 실패로 확인된 대학만 표시':'')+'</p><details><summary>학교별 면접시간·방법·기출 확인</summary><div id="iv-info"></div></details></section>'+
     '<section id="iv-writer" class="panel"></section><section class="panel"><h2>2. 나에게 맞는 질문</h2><details id="iv-material"><summary>자기소개서·활동 자료로 질문 만들기 (선택)</summary><p>자기소개서, 활동 기록, 면접 준비 메모에서 본인이 작성한 문장을 바탕으로 추가 질문을 만들어요. 대학에 자기소개서를 제출해야 한다는 뜻은 아닙니다.</p><label for="iv-upload">PDF·TXT 가져오기 · 최대 10MB, PDF 50쪽</label><input type="file" id="iv-upload" accept=".pdf,.txt,application/pdf,text/plain"><p id="iv-upload-status" role="status"></p><label for="iv-resume">추출된 내용을 확인하거나 직접 붙여넣기</label><textarea id="iv-resume" rows="6" maxlength="30000" placeholder="질문으로 연습하고 싶은 실제 경험이나 활동 기록을 붙여넣어 주세요."></textarea><p class="hint">파일은 기기에서 읽으며 서버나 외부 AI로 전송하지 않아요. 첨부 원문은 브라우저 저장소에도 저장하지 않습니다.</p><div class="actions"><button type="button" id="iv-make-questions">이 내용으로 질문 만들기</button><button type="button" id="iv-remove-material">가져온 자료 지우기</button></div><p id="iv-material-status" role="status"></p></details><label for="iv-question">연습 질문 선택</label><select id="iv-question"></select><div id="iv-question-text" class="notice"></div><label for="iv-custom" id="iv-custom-label" hidden>직접 연습할 질문</label><textarea id="iv-custom" rows="3" maxlength="2000" hidden></textarea></section>'+
     '<section class="panel"><h2>3. 답변 작성</h2><form id="iv-form"><label for="iv-answer">내 답변</label><textarea id="iv-answer" rows="9" maxlength="10000" placeholder="항목을 나누지 않고 면접에서 말하듯 답해 주세요. 피드백에서 상황·역할·행동·근거·전공 연결을 함께 살펴볼게요." aria-describedby="iv-answer-help"></textarea><p id="iv-answer-help" class="hint">실제 경험과 생각을 자유롭게 작성하세요. 짧게 시작하고 피드백을 보고 보완해도 좋아요.</p><p id="iv-progress" role="status"></p><label><input type="checkbox" id="iv-persist"> 이 기기에 답변 저장하기 (공용 기기에서는 해제)</label><p class="hint">내 글로 만든 질문과 답변은 저장 옵션과 관계없이 새로고침하거나 닫으면 사라집니다. 이 탭에서는 최근 사용한 글 5개까지 답변을 이어볼 수 있어요.</p><div class="actions"><button type="submit" class="primary">답변 피드백 받기</button><button type="button" id="iv-clear">현재 답변 지우기</button></div><p id="iv-save-status" role="status"></p></form></section><section id="iv-feedback" aria-live="polite"></section>';
   const $ = selector => root.querySelector(selector);
@@ -172,6 +172,32 @@ export async function renderInterview(root, options = {}) {
   $('#iv-persist').checked = !!state.persist;
   const selectedSchool = () => schools.find(s => s.id === $('#iv-school').value);
   const selectedOfficial = () => findOfficialInterviewSchool(selectedSchool(),data.schools);
+  const selectedCoverage = () => {
+    const school = selectedSchool();
+    const list = Array.isArray(data.schoolCoverage) ? data.schoolCoverage : [];
+    if (!school || !list.length) return undefined;
+    const compact = value => String(value || '').replace(/\\s+/g,'').replace(/대학교/g,'대').replace(/[\\[\\]]/g,'');
+    const names = [compact(school.name), compact(school.displayName)].filter(Boolean);
+    return list.find(item => {
+      const target = compact(item.name);
+      return names.some(name => target === name || target.includes(name) || name.includes(target));
+    });
+  };
+  const sourceLink = (url,label) => /^https?:\\/\\//i.test(String(url || '')) ? '<a class="button" target="_blank" rel="noopener noreferrer" href="' + esc(url) + '">' + esc(label) + '</a>' : '';
+  function renderCoverage(coverage) {
+    if (!coverage) return '';
+    const officialText = coverage.officialFormat === 'confirmed'
+      ? '대학 공식 모집요강에서 면접 방식 확인'
+      : '대학 공식 면접 방식·시간·위원 수 미확보';
+    const reviewText = coverage.educationOfficeReview === 'found'
+      ? '울산교육청 2026 후기 자료집에 대학별 사례 수록'
+      : '울산교육청 2026 후기 자료집에서 대학별 사례 미확인';
+    const links = [];
+    if (coverage.officialInterviewSourceUrl) links.push(sourceLink(coverage.officialInterviewSourceUrl,'확인된 공식 면접 안내 열기'));
+    if (coverage.officialAdmissionsUrl && coverage.officialAdmissionsUrl !== coverage.officialInterviewSourceUrl) links.push(sourceLink(coverage.officialAdmissionsUrl,'2027 공식 모집요강 열기'));
+    if (coverage.educationOfficeSourceUrl) links.push(sourceLink(coverage.educationOfficeSourceUrl,'울산교육청 자료실 열기'));
+    return '<section class="interview-coverage-status"><div class="review-source"><span class="tag">44개 학교 전수 점검</span><strong>' + esc(coverage.statusLabel || '학교별 자료 상태') + '</strong><span class="hint">확인일 ' + esc(coverage.verifiedAt || data.verifiedAt || '') + '</span></div><ul><li>' + esc(officialText) + '</li><li>' + esc(reviewText) + (coverage.reviewGuideName ? ' · ' + esc(coverage.reviewGuideName) + ' 사례 주제' : '') + '</li></ul><p>' + esc(coverage.note || '확인되지 않은 질문·시간·위원 수는 임의로 만들지 않습니다.') + '</p><div class="actions">' + links.filter(Boolean).join('') + '</div></section>';
+  }
   $('#iv-major').parentElement.insertAdjacentHTML('afterend','<div><label for="iv-format">확인된 면접 전형 (선택)</label><select id="iv-format"><option value="">전형 미선택 · 공통 연습</option></select></div>');
   $('#iv-major').parentElement.insertAdjacentHTML('beforeend','<label for="iv-major-manual">희망학과 직접 입력 (선택)</label><input id="iv-major-manual" maxlength="80" placeholder="예: 인공지능학과" aria-describedby="iv-major-manual-note"><p id="iv-major-manual-note" class="hint">목록에 없으면 직접 적어 주세요. 직접 입력한 학과를 우선 사용하며, 대학에서 확인한 학과·전형 정보로 간주하지 않습니다. 목록에서 다시 선택하면 직접 입력값이 지워집니다.</p><p id="iv-major-applied" class="hint" role="status"></p>');
   $('#iv-major-manual').value=typeof state.majorManual==='string'?state.majorManual:'';
@@ -249,7 +275,8 @@ export async function renderInterview(root, options = {}) {
   function showOfficial() {
     const s = selectedOfficial();
     const guide = selectedReviewGuide();
-    if(!s && !guide) {
+    const coverage = selectedCoverage();
+    if(!s && !guide && !coverage) {
       $('#iv-info').innerHTML='<p>선택한 대학의 공식 면접 시간·위원 수·기출 본문과 이번 자료집 대학별 사례를 아직 확인하지 못했어요. 확인되지 않은 정보를 임의로 만들지 않고 공통 질문과 내 자료 기반 질문으로 연습할 수 있습니다.</p>'+(selectedSchool()?'<a class="button" href="#university/'+esc(selectedSchool().id)+'">선택 대학 상세 안내</a>':'');
       return;
     }
@@ -257,6 +284,7 @@ export async function renderInterview(root, options = {}) {
     if(s) {
       html='<p>'+esc(s.academicYear)+'학년도 · 확인일 '+esc(data.verifiedAt)+'</p><div class="cards">'+s.formats.map(f=>'<article class="card"><h3>'+esc(f.track)+' · '+esc(f.scope)+'</h3><dl><dt>면접시간</dt><dd>'+esc(f.duration)+'</dd><dt>준비시간</dt><dd>'+esc(f.preparation)+'</dd><dt>면접위원</dt><dd>'+esc(f.panel)+'</dd><dt>평가방법</dt><dd>'+esc(f.method)+'</dd></dl><p class="hint">'+esc(f.pages)+'</p></article>').join('')+'</div>'+link(s.sourceUrl,'공식 모집요강 열기')+'<h3>면접 기출</h3>'+(s.pastPapers?.length?s.pastPapers.map(p=>'<p>'+link(p.url,p.year+'학년도 '+p.title)+'<br><span class="hint">'+esc(p.status)+'</span></p>').join(''):'<p>공식 기출 본문 미확보</p>')+'<h3>면접 후기</h3><p>검증된 개인 후기 '+(s.reviews?.length||0)+'건. 기출·후기가 없는 경우 임의로 만들지 않습니다.</p>';
     }
+    html += renderCoverage(coverage);
     html += renderReviewGuide(guide);
     $('#iv-info').innerHTML=html+'<p class="hint">면접 방식은 표시한 학년도·전형·모집단위 범위에 한정됩니다. 최종 모집요강과 수정 공지를 확인하세요.</p>';
   }
