@@ -499,3 +499,82 @@ body{
     min-height:44px;
   }
 }
+
+/* Navigation groups: predictable desktop hover and tap-friendly mobile disclosure. */
+.top-nav{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:nowrap;min-width:0}
+.top-nav>a,.nav-menu>summary{font-size:15px;font-weight:750;white-space:nowrap}
+.top-nav-home{display:inline-flex;align-items:center}
+.nav-menu{position:relative;flex:0 0 auto}
+.nav-menu>summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 13px;border-radius:10px;cursor:pointer;list-style:none;color:#536a78}
+.nav-menu>summary::-webkit-details-marker{display:none}
+.nav-menu>summary::after{content:'⌄';font-size:15px;line-height:1;transition:transform .18s ease}
+.nav-menu[open]>summary,.nav-menu>summary:hover,.nav-menu>summary:focus-visible{background:#e8f1ed;color:#174838}
+.nav-menu[open]>summary::after{transform:rotate(180deg)}
+.nav-menu-panel{position:absolute;top:calc(100% + 8px);left:0;display:grid;gap:3px;min-width:220px;padding:8px;border:1px solid var(--line);border-radius:14px;background:#fffefa;box-shadow:0 18px 38px rgba(24,49,43,.16);z-index:60}
+.nav-menu-panel a{display:flex;align-items:center;min-height:42px;padding:9px 11px;border-radius:9px;color:#263f38;text-decoration:none;font-size:14px;line-height:1.4}
+.nav-menu-panel a:hover,.nav-menu-panel a:focus-visible{background:#edf5f0;color:#15533f}
+.bottom-nav{overflow-x:auto;justify-content:center}
+.bottom-nav a{white-space:nowrap}
+.bottom-nav a[href="#consult"]{color:#174d3d}
+@media(max-width:1100px){
+  .top-nav{width:100%;justify-content:flex-start;flex-wrap:wrap;overflow:visible;order:3}
+  .site-header{align-items:center}
+  .nav-menu-panel{top:calc(100% + 4px)}
+}
+@media(max-width:760px){
+  .top-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;width:100%;overflow:visible}
+  .top-nav-home{grid-column:1 / -1;justify-content:center}
+  .top-nav>a,.nav-menu>summary{justify-content:center;width:100%;font-size:13px;padding:8px 5px}
+  .nav-menu-panel{position:static;min-width:0;margin:3px 0 4px;grid-column:1 / -1;box-shadow:none;border-radius:10px}
+  .nav-menu-panel a{justify-content:center;font-size:14px}
+  .header-profile{font-size:14px}
+  .bottom-nav{justify-content:flex-start}
+  .bottom-nav a{padding-inline:15px}
+}
+/* Mobile hero is stacked so the persistent story and carousel copy never share a text layer. */
+@media(max-width:760px){
+  .lifecycle-hero{display:grid;grid-template-rows:auto auto;min-height:0;height:auto;overflow:visible;background:#203931}
+  .lifecycle-hero .hero-story{position:relative;inset:auto;width:100%;padding:34px 22px 28px;z-index:2;background:#203931}
+  .lifecycle-hero .hero-story h1{font-size:clamp(34px,9vw,48px);line-height:1.16;margin:16px 0 18px}
+  .lifecycle-hero .hero-lead{max-width:32rem}
+  .lifecycle-hero .home-primary-actions{display:grid;grid-template-columns:1fr;gap:10px}
+  .lifecycle-hero .home-primary-actions .button,.lifecycle-hero .home-primary-actions button{width:100%;min-height:52px}
+  .lifecycle-hero .home-slider{height:360px;min-height:360px}
+  .lifecycle-hero .home-slide-copy{left:22px;right:22px;bottom:68px;max-width:300px;text-align:left}
+  .lifecycle-hero .home-slide-copy h2{font-size:clamp(24px,7vw,32px);line-height:1.2}
+  .lifecycle-hero .home-slider-controls{left:16px;right:12px;bottom:12px}
+}
+@media(max-width:390px){
+  .lifecycle-hero .hero-story{padding:28px 18px 24px}
+  .lifecycle-hero .home-slider{height:330px;min-height:330px}
+  .lifecycle-hero .home-slide-copy{left:18px;right:18px;bottom:64px}
+}
+/* Candidate drawer stays compact on phones instead of covering the reading area. */
+@media(max-width:760px){
+  .shortlist{right:12px;bottom:calc(70px + env(safe-area-inset-bottom));max-width:calc(100vw - 24px);padding:0;border:0;background:transparent;box-shadow:none;overflow:visible}
+  .shortlist details{max-height:58dvh;overflow:auto;padding:10px 14px;border:1px solid var(--line);border-radius:16px;background:#fffefa;box-shadow:0 10px 28px rgba(20,55,43,.16)}
+  .shortlist details:not([open]){padding:0}
+  .shortlist details:not([open]) summary{padding:12px 16px}
+  .shortlist summary{font-size:15px}
+}
+/* In-site consultation intake. */
+.consult-shell{max-width:1120px;margin:0 auto}
+.consult-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.75fr);gap:22px;align-items:start}
+.consult-shell .section-head{margin-bottom:20px}
+.consult-shell .panel{background:#fffefa}
+.consult-shell .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.consult-shell .fields .full{grid-column:1 / -1}
+.consult-shell textarea{min-height:150px;resize:vertical}
+.consent-row{display:flex;align-items:flex-start;gap:10px;margin:18px 0;font-size:14px;line-height:1.6}
+.consent-row input{margin-top:4px}
+.consult-status:empty{display:none}
+.consult-status.success{border-left-color:#2a8067;background:#eaf6ef;color:#15533f}
+.consult-aside{position:sticky;top:104px}
+.consult-aside ul{margin:0;padding-left:1.2rem}
+.consult-aside li{margin:.45rem 0}
+@media(max-width:760px){
+  .consult-layout{grid-template-columns:1fr}
+  .consult-shell .fields{grid-template-columns:1fr}
+  .consult-shell .fields .full{grid-column:auto}
+  .consult-aside{position:static}
+}
