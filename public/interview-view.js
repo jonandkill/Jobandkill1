@@ -176,14 +176,14 @@ export async function renderInterview(root, options = {}) {
     const school = selectedSchool();
     const list = Array.isArray(data.schoolCoverage) ? data.schoolCoverage : [];
     if (!school || !list.length) return undefined;
-    const compact = value => String(value || '').replace(/\\s+/g,'').replace(/대학교/g,'대').replace(/[\\[\\]]/g,'');
+    const compact = value => String(value || '').replace(/\s+/g,'').replace(/대학교/g,'대').replace(/[\[\]]/g,'');
     const names = [compact(school.name), compact(school.displayName)].filter(Boolean);
     return list.find(item => {
       const target = compact(item.name);
       return names.some(name => target === name || target.includes(name) || name.includes(target));
     });
   };
-  const sourceLink = (url,label) => /^https?:\\/\\//i.test(String(url || '')) ? '<a class="button" target="_blank" rel="noopener noreferrer" href="' + esc(url) + '">' + esc(label) + '</a>' : '';
+  const sourceLink = (url,label) => /^https?:\/\//i.test(String(url || '')) ? '<a class="button" target="_blank" rel="noopener noreferrer" href="' + esc(url) + '">' + esc(label) + '</a>' : '';
   function renderCoverage(coverage) {
     if (!coverage) return '';
     const officialText = coverage.officialFormat === 'confirmed'
