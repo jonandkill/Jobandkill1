@@ -27,8 +27,12 @@ function bindNavMenus(){
     summary.setAttribute('aria-haspopup','menu');
     summary.setAttribute('aria-expanded',String(menu.open));
     let closeTimer;
-    const open=()=>{clearTimeout(closeTimer);menu.open=true;summary.setAttribute('aria-expanded','true');};
-    const close=()=>{clearTimeout(closeTimer);closeTimer=setTimeout(()=>{if(!menu.matches(':focus-within')){menu.open=false;summary.setAttribute('aria-expanded','false');}},180);};
+    let pinned=false;
+    const setOpen=open=>{menu.open=open;summary.setAttribute('aria-expanded',String(open));};
+    const open=()=>{clearTimeout(closeTimer);setOpen(true);};
+    const close=()=>{clearTimeout(closeTimer);closeTimer=setTimeout(()=>{if(!pinned&&!menu.matches(':focus-within'))setOpen(false);},180);};
+    summary.addEventListener('click',event=>{event.preventDefault();pinned=!pinned;setOpen(pinned);});
+    menu.querySelectorAll('.nav-menu-panel a').forEach(link=>link.addEventListener('click',()=>{pinned=false;setOpen(false);}));
     menu.addEventListener('mouseenter',open);
     menu.addEventListener('mouseleave',close);
     menu.addEventListener('focusin',open);
