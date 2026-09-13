@@ -578,5 +578,5 @@ body{
   .consult-shell .fields .full{grid-column:auto}
   .consult-aside{position:static}
 }
-\n.nav-menu:not([open]) > .nav-menu-panel{display:none}\n
+
 .nav-menu:not([open]) > .nav-menu-panel{display:none}
