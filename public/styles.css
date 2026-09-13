@@ -580,3 +580,39 @@ body{
 }
 
 .nav-menu:not([open]) > .nav-menu-panel{display:none}
+
+/* Essay coaching result: score visibility, criterion evidence and actionable fixes. */
+.practice-score-card{margin:18px 0;padding:18px 20px;border:1px solid #b9d5c8;border-radius:16px;background:linear-gradient(135deg,#f3faf5,#fffefa)}
+.score-card-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.score-card-head strong{font-size:23px;color:#174d3d}
+.score-card-head span{font-size:13px;color:#5e7168}
+.score-meter{height:12px;margin:14px 0 8px;border-radius:999px;background:#e2ece7;overflow:hidden}
+.score-meter i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#3f7f63,#d09b45);transition:width .35s ease}
+.practice-structure{margin:18px 0;padding:16px 18px;border:1px solid #d8e6df;border-radius:14px;background:#fbfefd}
+.practice-structure h4{margin:0 0 8px}
+.practice-structure ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 18px;margin:0;padding:0;list-style:none}
+.practice-structure li{display:flex;gap:7px;align-items:flex-start;font-size:14px;line-height:1.55}
+.practice-structure li span{font-weight:800}
+.practice-structure .is-ok span{color:#237455}
+.practice-structure .is-missing span{color:#b05b34}
+.rubric-result{margin:12px 0;padding:16px 18px;border:1px solid #dce6e1;border-left:4px solid #aebfb5;border-radius:12px;background:#fffefa}
+.rubric-result.observed{border-left-color:#2a8067}
+.rubric-result.partial{border-left-color:#d09b45}
+.rubric-result.needs_review,.rubric-result.not_observed{border-left-color:#b05b34}
+.rubric-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.rubric-head h4{margin:0}
+.rubric-head strong{white-space:nowrap;color:#174d3d}
+.rubric-result blockquote{margin:10px 0;padding:10px 12px;border-left:3px solid #7ba48f;border-radius:6px;background:#f1f8f4;font-size:14px;line-height:1.65}
+.practice-coaching{margin-top:18px;padding:18px 20px;border:1px solid #c9ddd3;border-radius:16px;background:#eef7f1}
+.practice-coaching h3{margin-top:0;color:#174d3d}
+.practice-coaching ol{margin:8px 0 12px;padding-left:1.25rem}
+.practice-coaching li{margin:6px 0;line-height:1.65}
+@media(max-width:760px){
+  .score-card-head strong{font-size:20px}
+  .practice-structure ul{grid-template-columns:1fr}
+  .rubric-head{align-items:flex-start;flex-direction:column;gap:4px}
+  .practice-coaching{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){
+  .score-meter i{transition:none}
+}
