@@ -196,6 +196,11 @@ export async function renderInterview(root, options = {}) {
     if (coverage.officialInterviewSourceUrl) links.push(sourceLink(coverage.officialInterviewSourceUrl,'확인된 공식 면접 안내 열기'));
     if (coverage.officialAdmissionsUrl && coverage.officialAdmissionsUrl !== coverage.officialInterviewSourceUrl) links.push(sourceLink(coverage.officialAdmissionsUrl,'2027 공식 모집요강 열기'));
     if (coverage.educationOfficeSourceUrl) links.push(sourceLink(coverage.educationOfficeSourceUrl,'울산교육청 자료실 열기'));
+    (Array.isArray(coverage.researchSources) ? coverage.researchSources : []).forEach(source => {
+      if (source.url && source.url !== coverage.officialAdmissionsUrl && source.url !== coverage.officialInterviewSourceUrl) {
+        links.push(sourceLink(source.url, source.title || '추가 확인 원문 열기'));
+      }
+    });
     return '<section class="interview-coverage-status"><div class="review-source"><span class="tag">44개 학교 전수 점검</span><strong>' + esc(coverage.statusLabel || '학교별 자료 상태') + '</strong><span class="hint">확인일 ' + esc(coverage.verifiedAt || data.verifiedAt || '') + '</span></div><ul><li>' + esc(officialText) + '</li><li>' + esc(reviewText) + (coverage.reviewGuideName ? ' · ' + esc(coverage.reviewGuideName) + ' 사례 주제' : '') + '</li></ul><p>' + esc(coverage.note || '확인되지 않은 질문·시간·위원 수는 임의로 만들지 않습니다.') + '</p><div class="actions">' + links.filter(Boolean).join('') + '</div></section>';
   }
   $('#iv-major').parentElement.insertAdjacentHTML('afterend','<div><label for="iv-format">확인된 면접 전형 (선택)</label><select id="iv-format"><option value="">전형 미선택 · 공통 연습</option></select></div>');
