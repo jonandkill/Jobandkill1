@@ -127,6 +127,23 @@ async function initializeDatabase() {
         updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
       )
     `);
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS consultation_requests (
+        id BIGSERIAL PRIMARY KEY,
+        category TEXT NOT NULL,
+        grade TEXT,
+        applicant_name TEXT NOT NULL,
+        contact TEXT NOT NULL,
+        target TEXT,
+        consultation_mode TEXT NOT NULL,
+        preferred_time TEXT,
+        message TEXT NOT NULL,
+        consent BOOLEAN NOT NULL DEFAULT FALSE,
+        status TEXT NOT NULL DEFAULT 'received',
+        created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+      )
+    `);
+    await client.query("CREATE INDEX IF NOT EXISTS idx_consultations_created_at ON consultation_requests(created_at DESC)");
     await client.query("CREATE INDEX IF NOT EXISTS idx_programs_year_track ON admissions_programs(academic_year, track)");
     await client.query("CREATE INDEX IF NOT EXISTS idx_programs_university ON admissions_programs(university)");
     await client.query("CREATE INDEX IF NOT EXISTS idx_universities_name ON universities(name)");
@@ -324,6 +341,42 @@ app.get("/api/catalog", async (_request, response) => {
 app.get("/api/report", async (_request, response) => {
   response.status(405).json({ error: "client_generated_report_only" });
 });
+
+const consultationInbox = [];
+app.post("/api/consultations", async (request, response) => {
+  const body = request.body && typeof request.body === "object" ? request.body : {};
+  const category = ["overall", "writing", "interview", "essay"].includes(String(body.category)) ? String(body.category) : "overall";
+  const grade = String(body.grade || "").slice(0, 20);
+  const applicantName = String(body.name || "").trim().slice(0, 80);
+  const contact = String(body.contact || "").trim().slice(0, 80);
+  const target = String(body.target || "").trim().slice(0, 160);
+  const consultationMode = ["online", "phone", "visit"].includes(String(body.mode)) ? String(body.mode) : "online";
+  const preferredTime = String(body.time || "").trim().slice(0, 120);
+  const message = String(body.message || "").trim().slice(0, 4000);
+  const consent = body.consent === true;
+  if (!applicantName || !contact || message.length < 10 || !consent) {
+    return response.status(400).json({ ok: false, error: "consultation_fields_required", message: "신청자명·연락처·상담 내용을 입력하고 개인정보 수집·이용에 동의해 주세요." });
+  }
+  if (pool && storageMode === "postgresql") {
+    try {
+      const result = await pool.query(
+        `INSERT INTO consultation_requests
+          (category, grade, applicant_name, contact, target, consultation_mode, preferred_time, message, consent)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+         RETURNING id, created_at`,
+        [category, grade || null, applicantName, contact, target || null, consultationMode, preferredTime || null, message, consent]
+      );
+      return response.status(201).json({ ok: true, id: String(result.rows[0].id), storage: "postgresql", createdAt: result.rows[0].created_at });
+    } catch (error) {
+      return response.status(500).json({ ok: false, error: "consultation_storage_failed", message: "접수 내용을 저장하지 못했어요. 잠시 후 다시 시도해 주세요." });
+    }
+  }
+  const id = `pending-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
+  consultationInbox.push({ id, category, grade, applicantName, contact, target, consultationMode, preferredTime, message, consent, receivedAt: new Date().toISOString() });
+  return response.status(202).json({ ok: true, id, storage: "pending", message: "접수 요청을 받았어요. 운영 DB 연결 전이라 담당자 확인 대기 상태로 보관됩니다." });
+});
+
+
 
 // Expose only the reviewed public practice datasets, never arbitrary server files.
 for (const filename of ['essay-rubrics.json', 'practice-questions.json', 'interviews.json', 'essay-standards.json', 'education-registry.json', 'essay-universities.json', 'official-question-bank.json', 'authored-question-bank.json']) {
