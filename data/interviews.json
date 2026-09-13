@@ -400,6 +400,10 @@
     "files": [
       "(울산광역시교육청) 2026 대입 면접 후기 자료집1(가천대~부산대).pdf",
       "(울산광역시교육청) 2026 대입 면접 후기 자료집2(부산대~홍익대).pdf"
+    ],
+    "urls": [
+      "https://use.go.kr/jinhak/user/bbs/BD_selectBbs.do?q_bbsDocNo=20260810142853413&q_bbsSn=1095",
+      "https://use.go.kr/jinhak/user/bbs/BD_selectBbsList.do?q_bbsSn=1095"
     ]
   },
   "reviewGuides": [
@@ -2421,7 +2425,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "가톨릭대학교",
@@ -2438,7 +2443,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "강남대학교",
@@ -2455,7 +2461,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "건국대학교",
@@ -2472,7 +2479,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "경기대학교",
@@ -2489,7 +2497,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "경북대학교",
@@ -2506,7 +2515,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "경희대학교",
@@ -2523,7 +2533,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "고려대학교",
@@ -2540,7 +2551,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "고려대학교(세종)",
@@ -2557,7 +2569,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "광운대학교",
@@ -2574,7 +2587,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "국민대학교",
@@ -2591,7 +2605,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "단국대학교",
@@ -2608,7 +2623,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "덕성여자대학교",
@@ -2625,7 +2641,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "동국대학교",
@@ -2642,7 +2659,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "동덕여자대학교",
@@ -2659,7 +2677,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "부산대학교",
@@ -2676,7 +2695,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "삼육대학교",
@@ -2693,7 +2713,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "상명대학교",
@@ -2710,7 +2731,18 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": [
+        {
+          "school": "상명대학교",
+          "kind": "official_admission_site",
+          "title": "상명대학교 입학처",
+          "url": "https://admission.smu.ac.kr/",
+          "scope": "학생부종합 면접 안내 경로",
+          "verifiedAt": "2026-09-13",
+          "usage": "최종 모집요강 확인 경로"
+        }
+      ]
     },
     {
       "name": "서강대학교",
@@ -2727,7 +2759,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "서경대학교",
@@ -2744,7 +2777,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "서울과학기술대학교",
@@ -2761,7 +2795,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "서울시립대학교",
@@ -2778,7 +2813,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "서울여자대학교",
@@ -2795,7 +2831,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "성균관대학교",
@@ -2812,7 +2849,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "성신여자대학교",
@@ -2829,7 +2867,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "세종대학교",
@@ -2846,7 +2885,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "수원대학교",
@@ -2863,7 +2903,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "숙명여자대학교",
@@ -2880,7 +2921,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "숭실대학교",
@@ -2897,7 +2939,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "신한대학교",
@@ -2914,7 +2957,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "아주대학교",
@@ -2931,7 +2975,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "연세대학교",
@@ -2948,7 +2993,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "연세대학교(미래)",
@@ -2965,7 +3011,18 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": [
+        {
+          "school": "연세대학교(미래)",
+          "kind": "official_admission_site",
+          "title": "연세대학교 미래캠퍼스 입학 안내",
+          "url": "https://mirae.yonsei.ac.kr/",
+          "scope": "미래캠퍼스 면접·전형 공지 경로",
+          "verifiedAt": "2026-09-13",
+          "usage": "최종 모집요강 확인 경로"
+        }
+      ]
     },
     {
       "name": "을지대학교",
@@ -2982,7 +3039,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "이화여자대학교",
@@ -2999,7 +3057,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "인하대학교",
@@ -3016,7 +3075,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "중앙대학교",
@@ -3033,7 +3093,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "한국공학대학교",
@@ -3050,7 +3111,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "한국기술교육대학교",
@@ -3067,7 +3129,18 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": [
+        {
+          "school": "한국기술교육대학교",
+          "kind": "official_admission_site",
+          "title": "한국기술교육대학교 입학 안내",
+          "url": "https://www.koreatech.ac.kr/",
+          "scope": "2027 학생부종합 면접평가 안내 경로",
+          "verifiedAt": "2026-09-13",
+          "usage": "최종 면접평가 안내 확인 경로"
+        }
+      ]
     },
     {
       "name": "한국외국어대학교",
@@ -3084,7 +3157,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "한국항공대학교",
@@ -3101,7 +3175,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "한신대학교",
@@ -3118,7 +3193,8 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
     },
     {
       "name": "한양대학교",
@@ -3135,7 +3211,18 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "이번에 확인한 교육청 후기 자료집에서 대학별 사례를 찾지 못했습니다. 공식 모집요강과 대학 입학처 공지를 우선 확인하세요.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": [
+        {
+          "school": "한양대학교",
+          "kind": "official_admission_site",
+          "title": "한양대학교 입학처",
+          "url": "https://go.hanyang.ac.kr/",
+          "scope": "학생부종합(면접형) 제시문 기반 면접 문항 게시 경로",
+          "verifiedAt": "2026-09-13",
+          "usage": "공식 문항·모집요강 확인 경로"
+        }
+      ]
     },
     {
       "name": "홍익대학교",
@@ -3152,7 +3239,62 @@
       "officialAdmissionsTitle": "2027학년도 공식 모집요강·전형 안내",
       "educationOfficeSourceUrl": "https://use.go.kr/jinhak",
       "note": "교육청 후기 자료집의 대학별 회고를 주제 중심으로 정리했습니다. 실제 질문·채점기준·합격을 보장하지 않습니다.",
-      "verifiedAt": "2026-09-14"
+      "verifiedAt": "2026-09-14",
+      "researchSources": []
+    }
+  ],
+  "researchSources": [
+    {
+      "kind": "education_office",
+      "title": "2026 대입 면접 후기 자료집 2",
+      "url": "https://use.go.kr/jinhak/user/bbs/BD_selectBbs.do?q_bbsDocNo=20260810142853413&q_bbsSn=1095",
+      "scope": "부산대~홍익대 대학별 수험생 회고",
+      "verifiedAt": "2026-09-13",
+      "usage": "후기 주제·답변 방향 참고"
+    },
+    {
+      "kind": "education_office_index",
+      "title": "울산진로진학지원센터 대입 자료실",
+      "url": "https://use.go.kr/jinhak/user/bbs/BD_selectBbsList.do?q_bbsSn=1095",
+      "scope": "2026 면접 후기 자료집 1·2 게시 목록",
+      "verifiedAt": "2026-09-13",
+      "usage": "자료집 발행·범위 확인"
+    },
+    {
+      "school": "상명대학교",
+      "kind": "official_admission_site",
+      "title": "상명대학교 입학처",
+      "url": "https://admission.smu.ac.kr/",
+      "scope": "학생부종합 면접 안내 경로",
+      "verifiedAt": "2026-09-13",
+      "usage": "최종 모집요강 확인 경로"
+    },
+    {
+      "school": "한국기술교육대학교",
+      "kind": "official_admission_site",
+      "title": "한국기술교육대학교 입학 안내",
+      "url": "https://www.koreatech.ac.kr/",
+      "scope": "2027 학생부종합 면접평가 안내 경로",
+      "verifiedAt": "2026-09-13",
+      "usage": "최종 면접평가 안내 확인 경로"
+    },
+    {
+      "school": "한양대학교",
+      "kind": "official_admission_site",
+      "title": "한양대학교 입학처",
+      "url": "https://go.hanyang.ac.kr/",
+      "scope": "학생부종합(면접형) 제시문 기반 면접 문항 게시 경로",
+      "verifiedAt": "2026-09-13",
+      "usage": "공식 문항·모집요강 확인 경로"
+    },
+    {
+      "school": "연세대학교(미래)",
+      "kind": "official_admission_site",
+      "title": "연세대학교 미래캠퍼스 입학 안내",
+      "url": "https://mirae.yonsei.ac.kr/",
+      "scope": "미래캠퍼스 면접·전형 공지 경로",
+      "verifiedAt": "2026-09-13",
+      "usage": "최종 모집요강 확인 경로"
     }
   ]
 }
