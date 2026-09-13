@@ -50,8 +50,13 @@ export async function renderPractice(root) {
   // 반드시 연습 목록에서 접근할 수 있도록 페이지 단위의 원문 확인 항목을 만든다.
   const generatedQuestions = resources.flatMap(resource => {
     const pages = Array.isArray(resource.questionPages) ? resource.questionPages.filter(page => Number.isFinite(Number(page))) : [];
-    if (!pages.length || readyQuestions.some(question => question.sourceId === resource.id)) return [];
-    return pages.map((page, index) => ({
+    if (!pages.length) return [];
+    const linked = readyQuestions.filter(question => question.sourceId === resource.id);
+    const linkedPages = new Set(linked.map(question => Number(question.questionPage)).filter(Number.isFinite));
+    // 연결된 문항이 전혀 없으면 모든 문제 쪽을, 일부만 연결됐으면 빠진 쪽만 보완한다.
+    // 연결 문항에 쪽수 정보가 없는 자료는 이미 본문이 연결된 것으로 보고 중복 생성하지 않는다.
+    const fallbackPages = linked.length && !linkedPages.size ? [] : pages.filter(page => !linkedPages.has(Number(page)));
+    return fallbackPages.map((page, index) => ({
       id: `resource-${resource.id}-page-${page}-${index + 1}`,
       sourceId: resource.id,
       universityId: resource.universityId,
