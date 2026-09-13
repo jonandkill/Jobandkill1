@@ -37,6 +37,7 @@ export async function renderPractice(root) {
   const resourceMap = new Map([...(bank.resources || []), ...(official.resources || [])].map(item => [item.id, item]));
   const resources = [...resourceMap.values()];
   const readyQuestions = [...(standards.questions || []), ...(official.questions || []), ...(authored.questions || [])].sort((a, b) => Number(!!b.sourceId) - Number(!!a.sourceId));
+  const catalogQuestions = [...(bank.questions || []), ...readyQuestions];
   const resourceFor = q => resources.find(r => r.id === q.sourceId);
   const schoolFor = q => q.universityName || resourceFor(q)?.universityName || '자체 제작 연습';
   const subjectFor = q => q.subject || resourceFor(q)?.subject || '통합';
@@ -51,7 +52,7 @@ export async function renderPractice(root) {
   const generatedQuestions = resources.flatMap(resource => {
     const pages = Array.isArray(resource.questionPages) ? resource.questionPages.filter(page => Number.isFinite(Number(page))) : [];
     if (!pages.length) return [];
-    const linked = readyQuestions.filter(question => question.sourceId === resource.id);
+    const linked = catalogQuestions.filter(question => question.sourceId === resource.id);
     const linkedPages = new Set(linked.map(question => Number(question.questionPage)).filter(Number.isFinite));
     // 연결된 문항이 전혀 없으면 모든 문제 쪽을, 일부만 연결됐으면 빠진 쪽만 보완한다.
     // 연결 문항에 쪽수 정보가 없는 자료는 이미 본문이 연결된 것으로 보고 중복 생성하지 않는다.
@@ -81,10 +82,11 @@ export async function renderPractice(root) {
       durationNote: resource.durationNote
     }));
   });
-  const questionRows = [...readyQuestions, ...generatedQuestions];
-  const combined = new Map((bank.questions || []).map(q => [q.id, q]));
-  questionRows.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
+  const combined = new Map();
+  catalogQuestions.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
+  generatedQuestions.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
   const questions = [...combined.values()];
+  const questionRows = questions;
   const schoolNames = [...new Set([...(roster.universities || []).map(r => r.name), ...resources.map(r => r.universityName), ...questionRows.map(schoolFor)])].sort((a, b) => a.localeCompare(b, 'ko'));
   let saved;
   try { saved = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch { saved = {}; }
