@@ -19,6 +19,73 @@ function coachingGuide(question = {}) {
   return `<section class="practice-coaching"><h3>점수를 높이는 풀이 공식</h3><p class="hint">${natural ? '인문·사회형 답안' : '수리·자연형 답안'}에 공통으로 적용해 보세요.</p><ol>${steps.map(step => `<li>${esc(step)}</li>`).join('')}</ol><p><strong>오늘의 꿀팁</strong> ${natural ? '제시문 내용을 그대로 옮기지 말고 “이 근거가 왜 내 판단을 뒷받침하는가”를 바로 이어 쓰면 논리 점검이 쉬워집니다.' : '답만 맞혀도 풀이 근거가 없으면 점수를 잃을 수 있습니다. 조건→식→중간값→검산을 줄마다 남겨 보세요.'}</p><p class="hint">${question.sourceKind === 'official_past' ? '공식 기출은 아래 PDF의 해설·채점기준 쪽을 최우선으로 대조하세요.' : '자체 제작 문항의 기준답안은 하나의 예시이며, 다른 논리적 답을 배제하지 않습니다.'}</p></section>`;
 }
 
+
+function sourceBackedCriteria(subject = '') {
+  const natural = /(수리|수학|자연|과학|통계|공학)/u.test(String(subject || ''));
+  return natural ? [
+    { id:'source-conditions', label:'조건·풀이 단계', conceptGroups:[['조건','가정','범위','주어진'],['식','풀이','계산','증명']], referenceEvidence:'주어진 조건을 기호·식·풀이 단계로 옮김', guidance:'주어진 조건과 사용한 식을 먼저 쓰고 중간 계산을 생략하지 마세요.', basis:'기존 공개 자연계열 문항의 풀이·증명 요구를 공통 요소로 정리함' },
+    { id:'source-evidence', label:'근거와 중간결과', conceptGroups:[['따라서','이므로','계산','=','증명'],['결과','값','구하면','얻는다']], referenceEvidence:'각 단계의 이유와 중간결과가 연결됨', guidance:'식만 나열하지 말고 왜 그 식을 쓰는지 한 문장으로 설명하세요.', basis:'기존 공개 해설에서 조건→식→중간결과 연결을 확인함' },
+    { id:'source-conclusion', label:'결론·검산', conceptGroups:[['결론','답','따라서','구한다'],['확인','검산','조건','범위']], referenceEvidence:'최종 답과 조건·단위의 일치 여부 확인', guidance:'최종값을 문제의 조건·단위와 대조하고 검산 결과를 덧붙이세요.', basis:'공식 해설의 최종값·조건 대조를 학습 기준으로 사용함' },
+    { id:'source-clarity', label:'표현의 정확성', conceptGroups:[['정의','기호','의미','설명'],['명확','정확','근거','논리']], referenceEvidence:'기호와 용어를 혼동하지 않고 논리를 읽을 수 있게 제시', guidance:'기호를 정의하고 한 문장에 한 단계만 담아 읽는 사람이 따라오게 하세요.', basis:'공개 풀이의 기호 정의와 서술 설명을 공통 요소로 정리함' }
+  ] : [
+    { id:'source-demand', label:'문제 요구 대응', conceptGroups:[['비교','분석','설명','제시','논하'],['조건','자료','제시문','문항','근거']], referenceEvidence:'문항의 동사와 조건을 빠짐없이 답함', guidance:'문제의 동사(비교·분석·평가·제시)를 체크리스트로 바꾸고 답안 문단마다 대응시키세요.', basis:'기존 공개 인문·사회 문항의 요구 동사를 공통 요소로 정리함' },
+    { id:'source-evidence', label:'제시문·자료 근거', conceptGroups:[['제시문','자료','표','그래프','수치','근거'],['사례','조건','내용','인용','자료']], referenceEvidence:'주장을 제시문·자료의 내용과 연결함', guidance:'주장 뒤에 자료의 핵심 내용과 그것이 주장을 뒷받침하는 이유를 함께 쓰세요.', basis:'기존 해설의 제시문·자료 근거 연결을 학습 기준으로 사용함' },
+    { id:'source-logic', label:'주장·근거·결론 연결', conceptGroups:[['주장','입장','판단','나는'],['이유','때문','따라서','그러나','반면','결론']], referenceEvidence:'주장과 근거 사이의 비교 기준과 결론이 연결됨', guidance:'주장→근거→해석→결론 순서로 문단을 정리하고 연결어를 의도적으로 사용하세요.', basis:'기존 기준답안의 주장→근거→해석 구조를 공통 요소로 정리함' },
+    { id:'source-counter', label:'반론·한계·검증', conceptGroups:[['반론','반대','우려','한계','위험'],['대안','보완','검증','평가','확인']], referenceEvidence:'반대 관점이나 한계를 인정하고 보완 방법을 제시함', guidance:'가장 강한 반론 하나를 공정하게 소개한 뒤 조건·검증 방법으로 답하세요.', basis:'기존 자체 100문항의 반론·한계·검증 요소를 학습 기준으로 사용함' }
+  ];
+}
+
+function makeGapPracticeQuestion(entry = {}, index = 0, authoredQuestions = []) {
+  const base = authoredQuestions[index % Math.max(1, authoredQuestions.length)] || {};
+  const subject = base.subject || '통합';
+  const school = entry.name || '선택 대학';
+  const sourceUrl = entry.rosterSourceUrl || entry.archiveUrl || '';
+  return {
+    id: 'school-gap-' + (entry.universityId || entry.id || index),
+    title: school + ' · 공식 원문 미확보 자체 연습',
+    universityName: school,
+    universityId: entry.universityId || (entry.universityIds || [])[0] || '',
+    year: entry.academicYear || 2027,
+    subject,
+    relatedMajors: Array.isArray(base.relatedMajors) ? base.relatedMajors : [],
+    topics: Array.isArray(base.topics) ? base.topics : ['근거','비교','논리'],
+    origin: 'school_gap_practice',
+    sourceKind: 'generated_school_practice',
+    officialPastPaper: false,
+    prompt: base.prompt || '공식 논술 원문이 아직 연결되지 않은 학교를 위한 통합 연습입니다. 하나의 사회·정책 쟁점을 선택해 두 관점을 비교하고, 근거와 한계가 드러나는 대안을 제시하세요.',
+    passages: Array.isArray(base.passages) ? base.passages : [],
+    sampleAnswer: base.sampleAnswer || '',
+    referenceAnswerLabel: '잡앤킬 자체 기준 예시답안 · 대학 공식 정답 아님',
+    criteria: sourceBackedCriteria(subject),
+    solutionSteps: Array.isArray(base.solutionSteps) && base.solutionSteps.length ? base.solutionSteps : [
+      '문항의 요구 동사와 조건을 먼저 표시합니다.',
+      '근거가 되는 자료·사례를 두 개 이상 골라 주장과 연결합니다.',
+      '반대 관점이나 한계를 인정한 뒤 보완·검증 방법을 제시합니다.',
+      '결론을 한 문장으로 정리하고 기준답안은 참고용으로만 비교합니다.'
+    ],
+    nextTasks: [
+      '답안에서 문제의 요구 동사에 대응하는 문장을 표시하세요.',
+      '결론 뒤에 근거와 판단 이유를 한 문장씩 덧붙이세요.',
+      '반론 또는 한계와 검증 방법을 다음 답안에 추가하세요.'
+    ],
+    practiceDurationMinutes: Number(base.practiceDurationMinutes) || 30,
+    durationVerified: false,
+    durationNote: '이 학교의 공식 논술 시험시간이 확인되지 않아 30분 자유 연습으로 제공합니다. 대학 시험시간이 아닙니다.',
+    difficulty: base.difficulty || '중',
+    contentStatus: 'school_source_gap_practice',
+    answerStatus: 'own_reference_answer',
+    feedbackStatus: 'source_backed_own_practice',
+    sourceEvidence: {
+      status: 'official_original_not_found',
+      sourceTitle: '2027학년도 공식 모집요강·전형 안내 경로',
+      sourceUrl,
+      reason: '대학 공식 논술 원문·해설을 아직 확보하지 못해 실제 기출로 표시하지 않았습니다.',
+      basis: '잡앤킬 자체 100문항과 공개 논술 해설에서 반복 확인한 조건·근거·논리·한계 기준을 재사용한 자체 연습입니다.'
+    },
+    generatedFrom: 'authored-question-bank'
+  };
+}
+
 export async function renderPractice(root) {
   root.innerHTML = '<h1>논술 연습실</h1><p role="status">문항과 공식 자료를 불러오고 있어요.</p>';
   const token = root.firstElementChild;
@@ -44,7 +111,7 @@ export async function renderPractice(root) {
   const subjectMatches = (selected, actual) => {
     if (!selected) return true;
     const value = String(actual || '').trim();
-    if (!value || /자료 내|계열별 확인|계열에서 선택|계열별 확인/u.test(value)) return true;
+    if (!value || /자료 내|계열별 확인|계열에서 선택|계열별 확인|통합|학교 공통/u.test(value)) return true;
     return value === selected || value.split(/[·,/]/u).map(token => token.trim()).includes(selected);
   };
   // 공식 PDF에 문제 쪽수는 확인됐지만 문항 객체가 아직 연결되지 않은 자료도
@@ -77,6 +144,32 @@ export async function renderPractice(root) {
       verification: 'resource_question_page_fallback',
       feedbackStatus: 'question_page_available_manual_solution_review',
       rubricComplete: false,
+      criteria: sourceBackedCriteria(resource.subject),
+      solutionSteps: /(수리|수학|자연|과학|통계|공학)/u.test(String(resource.subject || '')) ? [
+        '공식 PDF의 문제 쪽에서 주어진 조건과 기호를 옮겨 적습니다.',
+        '사용할 식·정리와 그 이유를 한 단계씩 설명합니다.',
+        '중간 결과를 연결해 최종값을 구하고 범위·단위를 검산합니다.',
+        'PDF 해설·채점기준 쪽과 풀이의 누락 단계를 대조합니다.'
+      ] : [
+        '공식 PDF의 문제 쪽에서 요구 동사와 답안 조건을 표시합니다.',
+        '제시문·자료에서 핵심 근거를 골라 주장과 연결합니다.',
+        '비교 기준과 반론·한계를 포함해 답안을 구성합니다.',
+        'PDF 해설·채점기준 쪽과 근거·논리·조건의 누락을 대조합니다.'
+      ],
+      nextTasks: [
+        '문항의 요구 동사에 대응하는 문장을 답안에 표시하세요.',
+        '공식 해설 쪽에서 빠진 조건·근거·검산 단계를 확인하세요.',
+        '다음 답안에는 이번에 빠진 요소를 한 문장 이상 보완하세요.'
+      ],
+      sourceEvidence: {
+        status: 'official_question_page_verified',
+        sourceTitle: resource.title,
+        sourceUrl: resource.url,
+        page: Number(page),
+        reason: '공식 PDF에서 문제 시작 쪽을 확인했지만 문항 본문·해설 연결이 완전하지 않아 원문을 직접 읽도록 안내합니다.',
+        basis: '공개 문제·해설의 공통 요구요소와 기존 잡앤킬 기준 루브릭을 적용한 학습용 연습입니다.'
+      },
+      practiceBasis: '공식 PDF 문제 쪽수 + 기존 공개 문항·해설 공통 기준',
       durationVerified: !!resource.durationVerified,
       examDurationMinutes: resource.examDurationMinutes,
       durationNote: resource.durationNote
