@@ -77,6 +77,10 @@
 .practice-timer{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 20px;background:#f0f1e8;border:1px solid var(--line);border-radius:12px;margin:18px 0}
 .practice-timer strong,.practice-timer time{font-size:28px;font-variant-numeric:tabular-nums;line-height:1.3}
 .practice-question-body{max-width:78ch;font-size:17px;line-height:1.95;color:#283c31}
+.practice-evidence{margin:18px 0;padding:16px 18px;border:1px solid #c8dad6;border-left:4px solid var(--teal);background:#edf7f4;border-radius:12px;overflow-wrap:anywhere}
+.practice-evidence h4{margin:0 0 6px;font-size:18px;line-height:1.4}
+.practice-evidence p{margin:5px 0 9px}
+.practice-evidence .button{display:inline-flex;align-items:center;max-width:100%;overflow-wrap:anywhere}
 .practice-question-body p{margin:0 0 1.15em;white-space:pre-wrap;overflow-wrap:anywhere}
 .practice-question-body li{margin-bottom:10px}
 .practice-answer-area textarea{min-height:300px;line-height:1.95;padding:18px;scroll-margin-top:150px}
