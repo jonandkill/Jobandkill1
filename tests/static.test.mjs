@@ -108,6 +108,9 @@ test("local server blocks external connections and frames", () => {
 test("experience diagnosis gives users a four-step, client-only worksheet", () => {
   assert.match(html, /href="\.\/experience-diagnosis\.html"/gu);
   assert.match(diagnosisHtml, /id="experience-form"/gu);
+  assert.match(diagnosisHtml, /JOB&amp;KILL.*커리어 랩/gu);
+  assert.match(diagnosisHtml, /assets\/experience-diagnosis-hero-v2\.webp/gu);
+  assert.match(diagnosisHtml, /1:1 상담 신청/gu);
   assert.match(diagnosisHtml, /data-step="1"/gu);
   assert.match(diagnosisHtml, /data-step="4"/gu);
   assert.match(diagnosisHtml, /name="role" required/gu);
@@ -125,10 +128,16 @@ test("experience diagnosis gives users a four-step, client-only worksheet", () =
   }
 });
 
+test("experience diagnosis build includes its local hero image", async () => {
+  const hero = await readFile(new URL("assets/experience-diagnosis-hero-v2.webp", root));
+  assert.ok(hero.byteLength > 10_000);
+  assert.match(await readFile(new URL("scripts/build-static.mjs", root), "utf-8"), /assets\/experience-diagnosis-hero-v2\.webp/gu);
+});
+
 test("experience diagnosis stays readable and touch-safe on mobile", () => {
   assert.match(diagnosisCss, /min-width:\s*320px/gu);
   assert.match(diagnosisCss, /min-height:\s*48px/gu);
   assert.match(diagnosisCss, /:focus-visible/gu);
-  assert.match(diagnosisCss, /@media \(max-width: 640px\)/gu);
+  assert.match(diagnosisCss, /@media \(max-width:\s*640px\)/gu);
   assert.match(diagnosisCss, /prefers-reduced-motion/gu);
 });
