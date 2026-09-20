@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light;
+  --ink: #101828;
+  --muted: #52606d;
+  --canvas: #f5f7fb;
+  --surface: #ffffff;
+  --line: #dce3ee;
+  --brand: #1c4b82;
+  --brand-strong: #103763;
+  --focus: #f5a524;
+  font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--canvas);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--ink);
+  background: var(--canvas);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
