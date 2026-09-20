@@ -10,13 +10,18 @@ const publicFiles = [
   "experience-diagnosis.html",
   "experience-diagnosis.css",
   "experience-diagnosis.mjs",
+  "assets/experience-diagnosis-hero-v2.webp",
 ];
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 
 await Promise.all(
-  publicFiles.map((file) => copyFile(new URL(file, root), new URL(file, output))),
+  publicFiles.map(async (file) => {
+    const destination = new URL(file, output);
+    await mkdir(new URL(".", destination), { recursive: true });
+    await copyFile(new URL(file, root), destination);
+  }),
 );
 
 console.log(`Prepared ${publicFiles.length} public files in dist/`);
