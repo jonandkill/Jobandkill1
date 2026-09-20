@@ -2,7 +2,15 @@ import { copyFile, mkdir, rm } from "node:fs/promises";
 
 const root = new URL("../", import.meta.url);
 const output = new URL("../dist/", import.meta.url);
-const publicFiles = ["index.html", "styles.css", "app.mjs", "core.mjs"];
+const publicFiles = [
+  "index.html",
+  "styles.css",
+  "app.mjs",
+  "core.mjs",
+  "experience-diagnosis.html",
+  "experience-diagnosis.css",
+  "experience-diagnosis.mjs",
+];
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });

@@ -3,12 +3,15 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 
 const root = new URL("../", import.meta.url);
-const [html, app, css, packageJson, server] = await Promise.all([
+const [html, app, css, packageJson, server, diagnosisHtml, diagnosisApp, diagnosisCss] = await Promise.all([
   readFile(new URL("index.html", root), "utf-8"),
   readFile(new URL("app.mjs", root), "utf-8"),
   readFile(new URL("styles.css", root), "utf-8"),
   readFile(new URL("package.json", root), "utf-8"),
   readFile(new URL("scripts/serve.mjs", root), "utf-8"),
+  readFile(new URL("experience-diagnosis.html", root), "utf-8"),
+  readFile(new URL("experience-diagnosis.mjs", root), "utf-8"),
+  readFile(new URL("experience-diagnosis.css", root), "utf-8"),
 ]);
 
 test("document has one instance of every id", () => {
@@ -100,4 +103,32 @@ test("local server blocks external connections and frames", () => {
   assert.match(server, /frame-src 'none'/gu);
   assert.match(server, /object-src 'none'/gu);
   assert.match(server, /listen\(port, "127\.0\.0\.1"/gu);
+});
+
+test("experience diagnosis gives users a four-step, client-only worksheet", () => {
+  assert.match(html, /href="\.\/experience-diagnosis\.html"/gu);
+  assert.match(diagnosisHtml, /id="experience-form"/gu);
+  assert.match(diagnosisHtml, /data-step="1"/gu);
+  assert.match(diagnosisHtml, /data-step="4"/gu);
+  assert.match(diagnosisHtml, /name="role" required/gu);
+  assert.match(diagnosisHtml, /name="experienceTitle" required/gu);
+  assert.match(diagnosisHtml, /name="situation" required/gu);
+  assert.match(diagnosisHtml, /name="action" required/gu);
+  assert.match(diagnosisHtml, /name="connection" required/gu);
+  assert.match(diagnosisHtml, /자동으로 전송하거나 저장하지 않습니다/gu);
+  assert.match(diagnosisApp, /requiredFieldsFor/gu);
+  assert.match(diagnosisApp, /answerDraft/gu);
+  assert.match(diagnosisApp, /navigator\.clipboard\.writeText/gu);
+  assert.match(diagnosisApp, /URL\.createObjectURL/gu);
+  for (const forbidden of ["localstorage", "fetch(", "xmlhttprequest", "formdata.append"]) {
+    assert.equal(diagnosisApp.toLocaleLowerCase("en-US").includes(forbidden), false, `found unexpected client data path: ${forbidden}`);
+  }
+});
+
+test("experience diagnosis stays readable and touch-safe on mobile", () => {
+  assert.match(diagnosisCss, /min-width:\s*320px/gu);
+  assert.match(diagnosisCss, /min-height:\s*48px/gu);
+  assert.match(diagnosisCss, /:focus-visible/gu);
+  assert.match(diagnosisCss, /@media \(max-width: 640px\)/gu);
+  assert.match(diagnosisCss, /prefers-reduced-motion/gu);
 });
