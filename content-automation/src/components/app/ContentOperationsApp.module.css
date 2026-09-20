@@ -1,0 +1,19 @@
+.app { min-height: 100vh; }
+.topbar { position: sticky; top: 0; z-index: 10; display: flex; min-height: 72px; align-items: center; gap: 32px; padding: 12px clamp(16px, 4vw, 64px); border-bottom: 1px solid #dfe6f0; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(12px); }
+.brand { display: flex; min-width: max-content; flex-direction: column; color: #101828; line-height: 1.05; text-decoration: none; }
+.brand span { color: #1c4b82; font-size: .75rem; font-weight: 800; letter-spacing: .1em; }
+.brand strong { font-size: 1.05rem; }
+.topbar nav { display: flex; gap: 6px; }
+.topbar button { min-height: 44px; padding: 0 14px; border: 0; border-radius: 8px; color: #52606d; background: transparent; cursor: pointer; font-size: .9rem; font-weight: 700; }
+.topbar button:hover, .topbar button.activeNav { color: #103763; background: #eaf2fc; }
+.status { margin-left: auto; padding: 7px 10px; border-radius: 999px; color: #155eef; background: #eff8ff; font-size: .78rem; font-weight: 700; }
+.notice { max-width: 1440px; margin: 18px auto 0; padding: 11px 20px; border: 1px solid #f5d496; border-radius: 10px; color: #6b4d10; background: #fff9ea; font-size: .88rem; }
+.approvalPage, .connections { max-width: 1440px; margin: 0 auto; padding: 28px 20px 64px; }
+.connections { max-width: 940px; margin-top: 24px; padding: clamp(24px, 5vw, 56px); border: 1px solid #dce3ee; border-radius: 18px; background: #fff; }
+.eyebrow { margin: 0 0 10px; color: #1c4b82; font-size: .84rem; font-weight: 800; letter-spacing: .03em; }
+.connections h1 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.4rem); }
+.connections > p:not(.eyebrow) { max-width: 720px; color: #52606d; line-height: 1.75; }
+.connections ul { display: grid; gap: 10px; margin: 28px 0 0; padding: 0; list-style: none; }
+.connections li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 18px; border: 1px solid #e3e8f0; border-radius: 10px; }
+.connections li span { color: #52606d; font-size: .9rem; }
+@media (max-width: 700px) { .topbar { flex-wrap: wrap; gap: 8px 20px; } .topbar nav { order: 3; width: 100%; overflow-x: auto; } .topbar button { padding: 0 10px; white-space: nowrap; } .status { margin-left: auto; } .notice { margin: 12px 16px 0; } }

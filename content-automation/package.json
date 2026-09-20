@@ -1,0 +1,29 @@
+{
+  "name": "jobkill-content-os",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test src/lib/analytics/service.test.ts src/lib/content-engine/content-engine.test.ts src/lib/trends/__tests__/connectors.test.ts"
+  },
+  "dependencies": {
+    "@types/node": "24.5.2",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "next": "15.5.25",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "typescript": "5.8.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "9.35.0",
+    "eslint": "9.35.0",
+    "eslint-config-next": "15.5.3",
+    "tsx": "4.20.5"
+  }
+}
