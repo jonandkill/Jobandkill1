@@ -193,12 +193,54 @@ export async function renderPractice(root) {
   const own = document.createElement('div');
   own.className = 'practice-workspace';
   root.replaceChildren(own);
-  own.innerHTML = `<p class="eyebrow">문제 선택 → 시간 설정 → 답안 작성 → 피드백</p><h1>문제를 읽고, 직접 풀어보세요</h1><p>문제와 풀이 기준을 함께 제공합니다. 대학 기출과 자체 제작 연습은 구분해 표시합니다.</p><div class="filters"><div><label for="practice-mode">자료 선택</label><select id="practice-mode"><option value="questions">바로 풀 수 있는 문항</option><option value="resources">대학 공식 PDF 자료</option></select></div><div><label for="practice-school">학교</label><select id="practice-school"><option value="">전체 학교</option>${schoolNames.map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-subject">계열</label><select id="practice-subject"><option value="">전체 계열</option>${[...new Set([...resources.map(r => r.subject), ...questionRows.map(subjectFor)].filter(Boolean))].sort().map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-hard"><input type="checkbox" id="practice-hard"> 어려운 문제·자료만</label></div></div><p class="hint">공식 PDF ${resources.length}건 · 원문에서 색인한 공식 문제 위치 ${official.questions?.length || 0}건 · 연결되지 않은 문제 쪽 자동 보완 ${generatedQuestions.length}건(본문은 PDF에서 확인) · 공식 원문 미확보 학교의 근거 표시 자체 연습 ${gapQuestions.length}건 · 자체 제작 기준 풀이 ${authored.questions?.length || 0}건 · 기존 연결 문항 ${standards.questions?.length || 0}건이 있습니다. 자료실 링크만 있는 항목은 공식 문제 확보 수에 포함하지 않습니다.</p><section id="practice-list" class="practice-library-list" tabindex="-1"></section><section id="practice-editor" class="panel" hidden></section>`;
-  const mode = own.querySelector('#practice-mode'), school = own.querySelector('#practice-school'), subject = own.querySelector('#practice-subject'), hard = own.querySelector('#practice-hard'), list = own.querySelector('#practice-list'), editor = own.querySelector('#practice-editor');
+  own.innerHTML = `<p class="eyebrow">문제 선택 → 시간 설정 → 답안 작성 → 피드백</p><h1>문제를 읽고, 직접 풀어보세요</h1><p>문제와 풀이 기준을 함께 제공합니다. 대학 기출과 자체 제작 연습은 구분해 표시합니다.</p><div class="filters"><div><label for="practice-mode">자료 선택</label><select id="practice-mode"><option value="questions">바로 풀 수 있는 문항</option><option value="resources">대학 공식 PDF 자료</option></select></div><div><label for="practice-school">학교</label><select id="practice-school"><option value="">전체 학교</option>${schoolNames.map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-subject">계열</label><select id="practice-subject"><option value="">전체 계열</option>${[...new Set([...resources.map(r => r.subject), ...questionRows.map(subjectFor)].filter(Boolean))].sort().map(name => `<option>${esc(name)}</option>`).join('')}</select></div><div><label for="practice-hard"><input type="checkbox" id="practice-hard"> 어려운 문제·자료만</label></div></div><p class="hint">공식 PDF ${resources.length}건 · 원문에서 색인한 공식 문제 위치 ${official.questions?.length || 0}건 · 연결되지 않은 문제 쪽 자동 보완 ${generatedQuestions.length}건(본문은 PDF에서 확인) · 공식 원문 미확보 학교의 근거 표시 자체 연습 ${gapQuestions.length}건 · 자체 제작 기준 풀이 ${authored.questions?.length || 0}건 · 기존 연결 문항 ${standards.questions?.length || 0}건이 있습니다. 자료실 링크만 있는 항목은 공식 문제 확보 수에 포함하지 않습니다.</p><section id="practice-school-guide" class="essay-prep-guide" aria-live="polite" hidden></section><section id="practice-list" class="practice-library-list" tabindex="-1"></section><section id="practice-editor" class="panel" hidden></section>`;
+  const mode = own.querySelector('#practice-mode'), school = own.querySelector('#practice-school'), subject = own.querySelector('#practice-subject'), hard = own.querySelector('#practice-hard'), list = own.querySelector('#practice-list'), editor = own.querySelector('#practice-editor'), guide = own.querySelector('#practice-school-guide');
   const alive = () => own.isConnected;
   function persist() { try { localStorage.setItem(storageKey, JSON.stringify(saved)); return true; } catch { return false; } }
   function keyFor(q) { return q.sourceId || `authored:${q.id}`; }
   function isHard(id, questionId) { return !!(questionId ? saved[id]?.drafts?.[questionId]?.hard : saved[id]?.hard || Object.values(saved[id]?.drafts || {}).some(d => d.hard)); }
+
+  function updateSchoolGuide() {
+    const entry = (roster.universities || []).find(row => row.name === school.value);
+    if (!entry) { guide.hidden = true; guide.innerHTML = ''; return; }
+    const scoped = questionRows.filter(q => schoolFor(q) === entry.name);
+    const pdfs = resources.filter(resource => resource.universityName === entry.name);
+    const indexed = scoped.filter(q => q.sourceKind === 'official_past' && q.contentStatus !== 'question_page_fallback');
+    const pageOnly = scoped.filter(q => q.contentStatus === 'question_page_fallback');
+    const mocks = scoped.filter(q => q.sourceKind === 'official_mock');
+    const ownPractice = scoped.filter(q => q.sourceKind === 'generated_school_practice');
+    const verifiedTime = [...scoped, ...pdfs].find(item => item.durationVerified && Number(item.examDurationMinutes) > 0);
+    const first = indexed[0] || mocks[0] || pageOnly[0] || scoped.find(q => q.sourceId) || ownPractice[0] || scoped[0];
+    const sourceUrl = /^https:\/\//i.test(entry.rosterSourceUrl || '') ? entry.rosterSourceUrl : /^https:\/\//i.test(entry.archiveUrl || '') ? entry.archiveUrl : '';
+    const evidence = indexed.length ? '공식 문제 위치·요구사항 색인 ' + indexed.length + '건' :
+      pageOnly.length ? '공식 PDF에서 문제 시작 쪽 확인 ' + pageOnly.length + '건 · 본문은 PDF에서 읽기' :
+      mocks.length ? '공식 모의논술 연결 ' + mocks.length + '건 · 본시험 기출과 구분' :
+      ownPractice.length ? '공식 기출 원문 미확보 · 근거 표시 자체 연습' : '연습 문항 연결 확인 필요';
+    const action = indexed.length ? '공식 PDF 문항으로 연습' :
+      pageOnly.length ? '공식 PDF 문제 쪽에서 시작' :
+      mocks.length ? '공식 모의논술로 연습' : ownPractice.length ? '자체 연습 시작 · 기출 아님' : '연습 문항 보기';
+    const lesson = indexed.length || pageOnly.length || mocks.length
+      ? '확인된 공식 PDF의 응시 계열 문항에서 요구조건을 표시하고, 제시문·풀이·해설의 누락을 대조하세요.'
+      : '대학 기출로 오해하지 않도록 자체 연습으로 답안 구조를 점검하고, 공식 원문 공개 여부를 다시 확인하세요.';
+    const timeText = verifiedTime
+      ? esc(verifiedTime.year || '해당') + '학년도 자료에서 ' + esc(verifiedTime.examDurationMinutes) + '분 확인 · 지원 연도는 재확인'
+      : '공식 시험시간 미확인 · 연습실의 자유 연습시간은 실제 고사시간이 아닙니다.';
+    guide.hidden = false;
+    guide.innerHTML = '<div class="essay-prep-head"><div><p class="eyebrow">선택 대학 논술 준비</p><h2>' + esc(entry.name) + ', 지금 이렇게 준비하세요</h2><p>확인된 자료의 범위에 맞춰 바로 시작할 수 있습니다. 지원 학과·계열에 따라 시험지가 다를 수 있습니다.</p></div><span class="tag">' + esc(entry.academicYear || '지원 연도') + '학년도 안내 경로 확인</span></div>' +
+      '<div class="essay-prep-facts"><p><strong>문항 확보</strong><span>' + esc(evidence) + '</span></p><p><strong>시험시간</strong><span>' + timeText + '</span></p><p><strong>공식 PDF</strong><span>' + pdfs.length + '건 연결 · 자료 연도와 응시 계열 확인 필요</span></p></div>' +
+      '<h3>지금 할 일</h3><ol><li>' + esc(entry.academicYear || 2027) + '학년도 최종 모집요강에서 지원 학과의 논술 실시·시험 계열·수능최저·고사일을 확인하세요.</li><li>' + esc(lesson) + '</li><li>연습 답안을 저장하고 근거·논리·검산 중 빠진 요소를 확인해 다시 작성하세요.</li></ol>' +
+      '<div class="essay-prep-actions">' + (first ? '<button type="button" class="primary" data-prep-start>' + esc(action) + ' →</button>' : '') +
+      (pdfs.length ? '<button type="button" data-prep-pdf>이 대학 공식 PDF 보기</button>' : '') +
+      (sourceUrl ? '<a class="button" href="' + esc(sourceUrl) + '" target="_blank" rel="noopener noreferrer">대학 공식 전형 안내 ↗</a>' : '') + '</div>' +
+      '<p class="hint">이 안내는 확보된 자료를 바탕으로 한 준비 순서이며, 올해 모집요강의 시험시간·유형·지원자격을 자동 확정하지 않습니다. 자체 연습 점수는 대학 점수가 아닙니다.</p>';
+    guide.querySelector('[data-prep-start]')?.addEventListener('click', () => {
+      mode.value = 'questions'; subject.value = ''; hard.checked = false; page = 0; drawList();
+      open(keyFor(first), first.id);
+    });
+    guide.querySelector('[data-prep-pdf]')?.addEventListener('click', () => {
+      mode.value = 'resources'; subject.value = ''; hard.checked = false; page = 0; drawList(true);
+    });
+  }
   function drawList(move = false) {
     const isQuestions = mode.value === 'questions';
     const rows = (isQuestions ? questionRows : resources).filter(item => {
@@ -345,7 +387,7 @@ export async function renderPractice(root) {
   [mode, school, subject, hard].forEach(control => control.onchange = () => { page = 0; drawList(); });
   school.onchange = () => {
     if (mode.value === 'questions' && school.value && !questionRows.some(q => schoolFor(q) === school.value) && resources.some(r => r.universityName === school.value)) mode.value = 'resources';
-    subject.value = ''; page = 0; drawList();
+    subject.value = ''; page = 0; drawList(); updateSchoolGuide();
   };
   const previous = saved._session;
   if (previous) {
@@ -353,6 +395,13 @@ export async function renderPractice(root) {
     if ([...school.options].some(o => o.value === previous.school)) school.value = previous.school;
     if ([...subject.options].some(o => o.value === previous.subject)) subject.value = previous.subject;
   }
-  drawList();
-  if (previous?.id) open(previous.id, previous.questionId);
+  const routeSchool = (() => {
+    const encoded = location.hash.slice(1).match(/^prepare\/essay\/(.+)$/)?.[1] || '';
+    try { return decodeURIComponent(encoded); } catch { return ''; }
+  })();
+  if (routeSchool && [...school.options].some(option => option.value === routeSchool)) {
+    school.value = routeSchool; subject.value = ''; mode.value = 'questions';
+  }
+  drawList(); updateSchoolGuide();
+  if (previous?.id && (!routeSchool || previous.school === routeSchool)) open(previous.id, previous.questionId);
 }
