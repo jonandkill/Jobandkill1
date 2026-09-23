@@ -620,3 +620,22 @@ body{
 @media(prefers-reduced-motion:reduce){
   .score-meter i{transition:none}
 }
+
+/* School-specific essay preparation: evidence before action. */
+.essay-prep-guide,.essay-prep-entry{margin:20px 0 24px;padding:clamp(18px,3vw,28px);border:1px solid #b8d2c9;border-radius:18px;background:#f2f8f5;color:#203d37;overflow-wrap:anywhere}
+.essay-prep-guide[hidden]{display:none}
+.essay-prep-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.essay-prep-head h2,.essay-prep-entry h2{margin:2px 0 8px;font-size:clamp(21px,2.5vw,27px);line-height:1.35}
+.essay-prep-head p,.essay-prep-entry p{margin:0 0 8px}
+.essay-prep-head .tag{flex-shrink:0;margin-top:5px}
+.essay-prep-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0}
+.essay-prep-facts p{display:flex;flex-direction:column;gap:5px;margin:0;padding:14px;background:#fff;border:1px solid #d3e1dc;border-radius:11px;line-height:1.5}
+.essay-prep-facts strong{font-size:14px;color:#44635a}
+.essay-prep-facts span{font-size:15px}
+.essay-prep-guide h3{margin:18px 0 8px;font-size:18px}
+.essay-prep-guide ol{margin:0 0 18px;padding-left:23px}
+.essay-prep-guide li{padding-left:3px;margin:5px 0}
+.essay-prep-actions{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}
+.essay-prep-actions button,.essay-prep-actions .button{min-height:44px;display:inline-flex;align-items:center;justify-content:center;max-width:100%;text-align:center}
+.essay-prep-guide>.hint,.essay-prep-entry>.hint{margin:14px 0 0;font-size:14px;color:#52665f}
+@media(max-width:760px){.essay-prep-head{display:block}.essay-prep-head .tag{margin:5px 0 2px}.essay-prep-facts{grid-template-columns:1fr}.essay-prep-actions{display:grid;grid-template-columns:1fr}.essay-prep-actions button,.essay-prep-actions .button{width:100%}}
