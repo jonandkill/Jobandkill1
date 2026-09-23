@@ -639,3 +639,7 @@ body{
 .essay-prep-actions button,.essay-prep-actions .button{min-height:44px;display:inline-flex;align-items:center;justify-content:center;max-width:100%;text-align:center}
 .essay-prep-guide>.hint,.essay-prep-entry>.hint{margin:14px 0 0;font-size:14px;color:#52665f}
 @media(max-width:760px){.essay-prep-head{display:block}.essay-prep-head .tag{margin:5px 0 2px}.essay-prep-facts{grid-template-columns:1fr}.essay-prep-actions{display:grid;grid-template-columns:1fr}.essay-prep-actions button,.essay-prep-actions .button{width:100%}}
+
+.practice-scope{margin:0 0 20px;padding:10px 14px;border:1px solid #d7e2dd;border-radius:10px;background:#fff;overflow-wrap:anywhere}
+.practice-scope summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.practice-scope .hint{margin:7px 0}
