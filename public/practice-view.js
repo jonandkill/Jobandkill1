@@ -35,11 +35,13 @@ function sourceBackedCriteria(subject = '') {
   ];
 }
 
-function makeGapPracticeQuestion(entry = {}, index = 0, authoredQuestions = []) {
+function makeGapPracticeQuestion(entry = {}, index = 0, authoredQuestions = [], schoolResources = []) {
   const base = authoredQuestions[index % Math.max(1, authoredQuestions.length)] || {};
   const subject = base.subject || '통합';
   const school = entry.name || '선택 대학';
   const sourceUrl = entry.rosterSourceUrl || entry.archiveUrl || '';
+  const knownTime = schoolResources.find(item => item.durationVerified && Number(item.examDurationMinutes) > 0);
+  const ownMinutes = Number(base.practiceDurationMinutes) || 30;
   return {
     id: 'school-gap-' + (entry.universityId || entry.id || index),
     title: school + ' · 공식 원문 미확보 자체 연습',
@@ -68,9 +70,9 @@ function makeGapPracticeQuestion(entry = {}, index = 0, authoredQuestions = []) 
       '결론 뒤에 근거와 판단 이유를 한 문장씩 덧붙이세요.',
       '반론 또는 한계와 검증 방법을 다음 답안에 추가하세요.'
     ],
-    practiceDurationMinutes: Number(base.practiceDurationMinutes) || 30,
+    practiceDurationMinutes: ownMinutes,
     durationVerified: false,
-    durationNote: '이 학교의 공식 논술 시험시간이 확인되지 않아 30분 자유 연습으로 제공합니다. 대학 시험시간이 아닙니다.',
+    durationNote: knownTime ? String(knownTime.year || '해당') + '학년도 공식 자료에서 시험 전체 ' + knownTime.examDurationMinutes + '분이 확인됐습니다. 이 자체 제작 1문항은 ' + ownMinutes + '분 자유 연습이며 해당 대학의 실제 문제·시간을 재현하지 않습니다.' : '이 학교의 공식 시험 전체 시간을 연결된 자료에서 확인하지 못했습니다. 자체 제작 1문항 ' + ownMinutes + '분 자유 연습이며 대학 시험시간이 아닙니다.',
     difficulty: base.difficulty || '중',
     contentStatus: 'school_source_gap_practice',
     answerStatus: 'own_reference_answer',
@@ -178,7 +180,7 @@ export async function renderPractice(root) {
   const indexedSchoolNames = new Set([...catalogQuestions, ...generatedQuestions].map(schoolFor));
   const gapQuestions = (roster.universities || [])
     .filter(entry => entry.name && !indexedSchoolNames.has(entry.name))
-    .map((entry, index) => makeGapPracticeQuestion(entry, index, authored.questions || []));
+    .map((entry, index) => makeGapPracticeQuestion(entry, index, authored.questions || [], resources.filter(resource => resource.universityName === entry.name)));
   const combined = new Map();
   catalogQuestions.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
   generatedQuestions.forEach(q => combined.set(q.id, { ...combined.get(q.id), ...q }));
