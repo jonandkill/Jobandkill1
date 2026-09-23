@@ -390,6 +390,11 @@ export async function renderPractice(root) {
   school.onchange = () => {
     if (mode.value === 'questions' && school.value && !questionRows.some(q => schoolFor(q) === school.value) && resources.some(r => r.universityName === school.value)) mode.value = 'resources';
     subject.value = ''; page = 0; drawList(); updateSchoolGuide();
+    if (!editor.hidden) { editor.hidden = true; clearInterval(clock); ++openVersion; try { Promise.resolve(reader?.destroy?.()).catch(() => undefined); } catch { /* Keep saved draft on cleanup errors. */ } reader = null; }
+    saved._session = { id: '', questionId: '', mode: mode.value, school: school.value, subject: '' }; persist();
+    const routeSchool = (roster.universities || []).some(entry => entry.name === school.value);
+    const nextHash = routeSchool ? '#prepare/essay/' + encodeURIComponent(school.value) : '#prepare/essay';
+    if (location.hash !== nextHash) history.replaceState(null, '', nextHash);
   };
   const previous = saved._session;
   if (previous) {
