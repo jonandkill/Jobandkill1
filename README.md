@@ -1,6 +1,6 @@
 # 잡앤킬 수시설계
 
-홈페이지 디자인 개선 및 PHP 8.0 / MariaDB 10 이관 준비: [설치 안내](hosting/php8/README.md). `npm run build:php-hosting`으로 서버 업로드용 파일을, `npm run build:design-preview`로 이미지와 글꼴이 내장된 홈페이지 검토 파일을 생성할 수 있습니다. 개선 화면은 현재 Render 주소에서 검토하며, 소유 서버 이관은 디자인 확정 후 진행합니다.
+홈페이지 디자인 개선 및 PHP 8.0 / MariaDB 10 이관 준비: [설치 안내](hosting/php8/README.md). `npm run build:php-hosting`으로 서버 업로드용 파일을, `npm run build:design-preview`로 이미지와 글꼴이 내장된 홈페이지 검토 파일을 생성할 수 있습니다. 개선 화면은 검토 파일로 확인하며, 현재 Render 주소 반영과 소유 서버 이관은 디자인 확정 후 진행합니다.
 
 ## 전국 자료 확장과 입결 비교
 
