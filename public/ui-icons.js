@@ -9,5 +9,7 @@ const shapes = {
   paper: '<path d="M6 3h9l4 4v14H6V3ZM15 3v5h4M9 12h7M9 16h5"/>',
   spark: '<path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/>',
   check: '<path d="m5 12 4 4L19 6"/>',
+  pause: '<path d="M9 5v14M15 5v14"/>',
+  play: '<path d="m8 4 12 8-12 8V4Z"/>',
 };
 export const icon = name => `<svg class="admission-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${shapes[name] || shapes.arrow}</svg>`;

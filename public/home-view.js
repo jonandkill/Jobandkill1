@@ -1,8 +1,20 @@
 import { icon } from './ui-icons.js';
 
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+const heroSlides = [
+  {src:'./assets/admissions-hero-counseling.webp',title:'함께 그리는 진학 계획',alt:'학생과 상담자가 진학 계획을 함께 살펴보는 연출 이미지'},
+  {src:'./assets/admissions-hero-campus.webp',title:'나에게 맞는 대학 탐색',alt:'두 학생이 대학 캠퍼스를 둘러보는 연출 이미지'},
+  {src:'./assets/admissions-hero-study.webp',title:'나의 답을 준비하는 시간',alt:'학생이 노트에 자신의 생각을 정리하며 입시를 준비하는 연출 이미지'},
+];
+const homeCleanups = new WeakMap();
+
+export function cleanupHome(root) {
+  homeCleanups.get(root)?.();
+  homeCleanups.delete(root);
+}
 
 export function renderHome(root, profile = {}, onStart, context = {}) {
+  cleanupHome(root);
   const average = Number(profile.average);
   const hasGrade = Number.isFinite(average) && average >= 1 && average <= Number(profile.scale || 9);
   const savedCount = Math.max(0, Number(context.savedCount) || 0);
@@ -10,25 +22,33 @@ export function renderHome(root, profile = {}, onStart, context = {}) {
   const count = Number.isInteger(universityCount) && universityCount > 0 ? universityCount.toLocaleString() : '';
   const regions = context.regions || [];
   root.innerHTML = `
-    <section class="admission-hero" aria-labelledby="home-title">
-      <div class="admission-hero-copy">
+    <section class="admission-hero" aria-roledescription="캐러셀" aria-labelledby="home-title">
+      <div class="admission-hero-media" tabindex="0" aria-label="입시 준비 이미지. 좌우 방향키로 넘길 수 있습니다.">
+        <div class="admission-hero-track">
+          ${heroSlides.map((slide,index)=>`<div class="admission-hero-slide" role="group" aria-roledescription="슬라이드" aria-label="${index+1} / ${heroSlides.length} · ${slide.title}" aria-hidden="${index!==0}"><img src="${slide.src}" alt="${slide.alt}" width="2048" height="768" fetchpriority="${index===0?'high':'low'}" decoding="async" draggable="false"></div>`).join('')}
+        </div>
+      </div>
+      <div class="admission-hero-content"><div class="admission-hero-copy">
         <p class="admission-kicker"><span></span> 나의 가능성을, 나의 대학으로.</p>
-        <h1 id="home-title">막막했던 대학 입시,<br><em>나에게 맞는 길</em>을<br>찾다.</h1>
+        <h1 id="home-title">막막했던 대학 입시,<br><em>나에게 맞는 길</em>을 찾다.</h1>
         <p class="admission-hero-lead">대학을 고르는 순간부터 면접을 준비하는 날까지.<br>잡앤킬과 함께, 나의 다음 선택을 준비하세요.</p>
         <div class="admission-hero-actions">
           ${hasGrade ? '<a class="admission-button is-orange" href="#recommend">내 성적으로 시작하기 '+icon('arrow')+'</a>' : '<button id="home-start" class="admission-button is-orange" type="button">내 성적으로 시작하기 '+icon('arrow')+'</button>'}
           <a class="admission-text-link" href="#find" data-home-browse>대학 먼저 둘러보기 ${icon('arrow')}</a>
         </div>
         <p class="admission-hero-helper">평균 내신만 있어도 시작할 수 있어요.</p>
+      </div></div>
+      <div class="admission-carousel-controls" aria-label="상단 이미지 슬라이드 제어">
+        <button class="admission-carousel-arrow is-prev" type="button" data-carousel-prev aria-label="이전 이미지">${icon('arrow')}</button>
+        <span class="admission-carousel-count" aria-hidden="true"><b data-carousel-number>01</b><span> / ${String(heroSlides.length).padStart(2,'0')}</span></span>
+        <div class="admission-carousel-dots">${heroSlides.map((slide,index)=>`<button type="button" data-carousel-go="${index}" aria-label="${index+1}번 이미지: ${slide.title}" aria-current="${index===0}"><span></span></button>`).join('')}</div>
+        <button class="admission-carousel-arrow" type="button" data-carousel-next aria-label="다음 이미지">${icon('arrow')}</button>
+        <button class="admission-carousel-toggle" type="button" data-carousel-toggle aria-label="자동 넘김 멈추기">${icon('pause')}</button>
       </div>
-      <div class="admission-hero-visual">
-        <div class="admission-photo"><img src="./assets/admissions-counseling.webp" alt="학생과 상담자가 진학 준비를 함께 살펴보는 연출 이미지" width="1200" height="900" fetchpriority="high"></div>
-        <div class="admission-photo-tag"><span class="admission-tag-icon">${icon('spark')}</span><span>혼자 고민하던 입시,<br><strong>함께 그리는 다음.</strong></span></div>
-        <div class="admission-photo-label"><span>YOUR NEXT CHAPTER</span><span aria-hidden="true">↗</span></div>
-        <span class="admission-photo-orbit" aria-hidden="true"></span>
-      </div>
+      <p class="sr-only" data-carousel-status role="status" aria-live="off" aria-atomic="true"></p>
     </section>
 
+    <div class="admission-home-content">
     <section class="admission-discovery" aria-label="대학 빠른 검색">
       <div class="admission-discovery-title"><span>어떤 대학을 찾고 있나요?</span><p>${count ? '현재 '+count+'개 대학·캠퍼스를 탐색할 수 있어요.' : '관심 대학과 지역으로 탐색을 시작하세요.'}</p></div>
       <form id="home-search-form" class="admission-search-form">
@@ -78,8 +98,10 @@ export function renderHome(root, profile = {}, onStart, context = {}) {
       <details><summary>작성한 답안과 지원 후보는 어디에 저장되나요?<span aria-hidden="true">+</span></summary><p>성적, 지원 후보와 연습 기록은 현재 사용하는 브라우저에 저장됩니다. 다른 기기와 자동으로 동기화되지 않으며, 브라우저 데이터를 삭제하면 기록도 사라질 수 있습니다.</p></details>
     </div></section>
 
-    <section class="admission-consult-banner" aria-labelledby="consult-title"><div><p class="admission-eyebrow">YOUR NEXT, TOGETHER</p><h2 id="consult-title">다음 선택이 고민된다면,<br>함께 방향을 정리해요.</h2><p>나의 성적, 경험, 목표 대학.<br>지금 가장 필요한 준비부터 이야기해 주세요.</p></div><a class="admission-button is-orange" href="#consult">진학 상담 신청 ${icon('arrow')}</a><span class="admission-consult-art" aria-hidden="true">↗</span></section>`;
+    <section class="admission-consult-banner" aria-labelledby="consult-title"><div><p class="admission-eyebrow">YOUR NEXT, TOGETHER</p><h2 id="consult-title">다음 선택이 고민된다면,<br>함께 방향을 정리해요.</h2><p>나의 성적, 경험, 목표 대학.<br>지금 가장 필요한 준비부터 이야기해 주세요.</p></div><a class="admission-button is-orange" href="#consult">진학 상담 신청 ${icon('arrow')}</a><span class="admission-consult-art" aria-hidden="true">↗</span></section>
+    </div>`;
 
+  homeCleanups.set(root, bindHeroCarousel(root));
   const start = root.querySelector('#home-start');
   if (start) start.onclick = onStart;
   root.querySelectorAll('[data-home-browse]').forEach(link => link.addEventListener('click', event => {
@@ -91,4 +113,87 @@ export function renderHome(root, profile = {}, onStart, context = {}) {
     event.preventDefault();
     context.onSearch?.({query:root.querySelector('#home-query').value.trim(),region:root.querySelector('#home-region').value});
   };
+}
+
+function bindHeroCarousel(root) {
+  const hero = root.querySelector('.admission-hero');
+  const media = hero.querySelector('.admission-hero-media');
+  const track = hero.querySelector('.admission-hero-track');
+  const slides = [...hero.querySelectorAll('.admission-hero-slide')];
+  const dots = [...hero.querySelectorAll('[data-carousel-go]')];
+  const toggle = hero.querySelector('[data-carousel-toggle]');
+  const status = hero.querySelector('[data-carousel-status]');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const hoverCapable = window.matchMedia('(hover: hover)');
+  const controller = new AbortController();
+  const listen = (element,type,handler) => element.addEventListener(type,handler,{signal:controller.signal});
+  let index = 0;
+  let automatic = !reducedMotion.matches;
+  let timer;
+  let gesture;
+
+  const updateRotation = () => {
+    toggle.setAttribute('aria-label',automatic ? '자동 넘김 멈추기' : '자동 넘김 시작하기');
+    toggle.innerHTML = icon(automatic ? 'pause' : 'play');
+    hero.dataset.autoplay = String(automatic);
+    status.setAttribute('aria-live',automatic ? 'off' : 'polite');
+  };
+  const schedule = () => {
+    window.clearTimeout(timer);
+    if (!automatic || document.hidden || controller.signal.aborted) return;
+    timer = window.setTimeout(() => {
+      if (!hero.isConnected) { cleanupHome(root); return; }
+      // Check actual hover state: replacing a control icon can omit a leave event.
+      if (hoverCapable.matches && hero.matches(':hover')) { schedule(); return; }
+      show(index+1);
+    },6000);
+  };
+  const show = (next,manual = false) => {
+    index = (next+slides.length)%slides.length;
+    if (manual) automatic = false;
+    track.style.transform = `translateX(-${index*100}%)`;
+    hero.dataset.slide = String(index);
+    slides.forEach((slide,i)=>slide.setAttribute('aria-hidden',String(i!==index)));
+    dots.forEach((dot,i)=>dot.setAttribute('aria-current',String(i===index)));
+    hero.querySelector('[data-carousel-number]').textContent = String(index+1).padStart(2,'0');
+    updateRotation();
+    if (manual) status.textContent = `${index+1} / ${slides.length} · ${heroSlides[index].title}`;
+    schedule();
+  };
+  listen(hero.querySelector('[data-carousel-prev]'),'click',()=>show(index-1,true));
+  listen(hero.querySelector('[data-carousel-next]'),'click',()=>show(index+1,true));
+  dots.forEach((dot,i)=>listen(dot,'click',()=>show(i,true)));
+  listen(toggle,'click',()=>{automatic=!automatic;updateRotation();schedule();});
+  listen(hero,'mouseenter',schedule);
+  listen(hero,'mouseleave',schedule);
+  listen(hero,'focusin',event=>{
+    if (event.target===toggle) return;
+    automatic=false;updateRotation();schedule();
+  });
+  listen(media,'keydown',event=>{
+    if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+    event.preventDefault();
+    show(event.key==='Home'?0:event.key==='End'?slides.length-1:index+(event.key==='ArrowLeft'?-1:1),true);
+  });
+  listen(media,'pointerdown',event=>{
+    if (event.pointerType==='mouse' || !event.isPrimary) return;
+    gesture={x:event.clientX,y:event.clientY,id:event.pointerId};
+    media.setPointerCapture(event.pointerId);
+  });
+  listen(media,'pointerup',event=>{
+    if (!gesture || gesture.id!==event.pointerId) return;
+    const dx=event.clientX-gesture.x,dy=event.clientY-gesture.y;
+    gesture=null;
+    if (Math.abs(dx)>40 && Math.abs(dx)>Math.abs(dy)*1.3) show(index+(dx<0?1:-1),true);
+  });
+  listen(media,'pointercancel',()=>{gesture=null;});
+  listen(document,'visibilitychange',schedule);
+  listen(reducedMotion,'change',()=>{
+    if(reducedMotion.matches){automatic=false;updateRotation();}
+    schedule();
+  });
+  hero.dataset.slide='0';
+  updateRotation();
+  schedule();
+  return () => {window.clearTimeout(timer);controller.abort();};
 }

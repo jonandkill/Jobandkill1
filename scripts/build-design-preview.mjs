@@ -15,9 +15,12 @@ for(const weight of ['Light','Medium','Bold']){
   const filename='assets/fonts/GmarketSans'+weight+'.woff';
   css=css.replace('./'+filename,await asset(filename,'font/woff'));
 }
-const photo=await asset('assets/admissions-counseling.webp','image/webp');
 const icons=(await read('public/ui-icons.js')).replace('export const icon','const icon');
-const home=(await read('public/home-view.js')).replace(/^import[^\n]*\n/,'').replace('export function renderHome','function renderHome').replace('./assets/admissions-counseling.webp',photo);
+let home=(await read('public/home-view.js')).replace(/^import[^\n]*\n/,'').replace(/^export /gm,'');
+for(const scene of ['counseling','campus','study']) {
+  const filename='assets/admissions-hero-'+scene+'.webp';
+  home=home.replaceAll('./'+filename,await asset(filename,'image/webp'));
+}
 const production='https://jobnkill-susi-planner.onrender.com/';
 const previewCss=`.design-review-note{padding:10px 20px;background:#fff4ee;text-align:center;color:#85462c;font:12px/1.7 'Gmarket Sans',sans-serif}.design-review-note b{font-weight:500}.design-review-dialog{border:1px solid #e5ddea;border-radius:18px;padding:28px;max-width:620px;width:calc(100% - 32px);max-height:80dvh;color:#28252e;box-sizing:border-box}.design-review-dialog::backdrop{background:#28252e55}.design-review-dialog h2{font-size:19px;margin:0 0 10px}.design-review-dialog p{font-size:12px;line-height:1.8;color:#726979}.design-review-dialog>button{float:right;border:0;background:#f2eef9;padding:8px 12px;border-radius:8px;min-height:44px}.design-review-results{display:grid;gap:10px;margin-top:20px}.design-review-results a{padding:14px;border:1px solid #eee6f0;border-radius:10px;text-decoration:none;font-size:13px}.design-review-results small{display:block;color:#74687e;font-size:11px;margin-top:7px}@media(max-width:650px){.design-review-note{font-size:10px;padding:8px 16px}}`;
 const reviewScript=`
