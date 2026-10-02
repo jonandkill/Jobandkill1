@@ -34,7 +34,7 @@ export function rankSchoolCandidates(universities, summaries, profile = {}) {
     .filter(u=>!profile.preferredRegion||u.region===profile.preferredRegion)
     .filter(u=>!profile.preferredType||u.institutionType===profile.preferredType)
     .map(u=>({...u,outcomeSummary:byId.get(u.id)}))
-    .sort((a,b)=>String(a.displayName||a.name).localeCompare(String(b.displayName||b.name),'ko'));
+    .sort((a,b)=>(b.outcomeSummary?.years?.length||0)-(a.outcomeSummary?.years?.length||0)||String(a.displayName||a.name).localeCompare(String(b.displayName||b.name),'ko'));
 }
 
 export function paginateItems(items, requestedPage = 1, pageSize = 12) {

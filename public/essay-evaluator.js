@@ -62,7 +62,7 @@ function findEvidence(criterion, sentences, text) {
   const groups = criterion.conceptGroups || [];
   const groupHits = groups.map(group => group.filter(word => contains(text, word)));
   const hitCount = groupHits.filter(hit => hit.length).length;
-  const sentenceMatch = groups.length ? sentences.find(sentence => groups.every(group => group.some(word => contains(sentence, word)))) : null;
+  const sentenceMatch = groups.length ? sentences.find(sentence => sentenceLike(sentence) && groups.every(group => group.some(word => contains(sentence, word)))) : null;
   const relations = criterion.relations || [];
   const relationHit = !relations.length || relations.some(word => contains(text, word));
   const concerning = sentences.find(sentence => (criterion.contradictionPatterns || []).some(pattern => { try { return new RegExp(pattern, 'iu').test(sentence); } catch { return false; } }));
@@ -71,7 +71,7 @@ function findEvidence(criterion, sentences, text) {
   if (!relationHit) ratio *= 0.75;
   if (concerning) ratio = Math.min(ratio, 0.3);
   const score = Math.max(0, Math.min(1, ratio));
-  const status = concerning ? 'needs_review' : score >= 0.8 ? 'observed' : score >= 0.4 ? 'partial' : 'not_observed';
+  const status = concerning ? 'needs_review' : sentenceMatch && score >= 0.8 ? 'observed' : score >= 0.4 ? 'partial' : 'not_observed';
   const missingConcepts = groups.filter((_, index) => !groupHits[index].length).map(group => group.slice(0, 3).join('·'));
   return { score, status, concerning, evidence: (concerning || sentenceMatch || sentences.find(sentence => sentenceLike(sentence) && sentence.length > 20) || '').slice(0, 360), missingConcepts };
 }
@@ -91,15 +91,13 @@ function structureChecks(text, sentences) {
 /** Local, deterministic coaching rubric. It observes answer evidence; it never certifies truth or an official university score. */
 export function evaluateEssay(answer, question = {}) {
   const text = normalise(answer), definitions = (question.criteria && question.criteria.length) ? question.criteria : defaultCriteria(question);
-  const base = { kind: 'evidence_feedback', score: null, scoreLabel: '학습용 기준 점수 · 공식 대학 점수 아님', criteria: [], nextActions: [], warnings: [] };
+  const base = { kind: 'evidence_feedback', score: null, scoreLabel: '근거·구조 점검 · 정답 점수 아님', criteria: [], nextActions: [], warnings: [] };
   if (!text) return { ...base, status: 'not_attempted', summary: '답안을 작성하면 기준답안·채점 요소와 내 문장의 근거를 비교합니다.' };
   const sentences = readableSentences(text), words = text.split(/[\s,;|]+/).filter(Boolean), uniqueRatio = words.length ? new Set(words).size / words.length : 1;
   const repetition = words.length >= 12 && uniqueRatio < 0.35;
   const referenceMatch = question.sampleAnswer && text.replace(/\s/g, '') === normalise(question.sampleAnswer).replace(/\s/g, '');
-  const pointsPerCriterion = 100 / definitions.length;
   const observations = definitions.map((criterion, index) => {
     const evidence = findEvidence(criterion, sentences, text);
-    const earnedPoints = Math.round(evidence.score * pointsPerCriterion);
     const feedback = evidence.concerning
       ? `기준과 충돌할 수 있는 표현이 있습니다. ${criterion.guidance || ''} 반대 관점을 소개한 문장일 수도 있으므로 원문 해설과 문맥을 대조하세요.`
       : evidence.status === 'observed'
@@ -114,18 +112,15 @@ export function evaluateEssay(answer, question = {}) {
       evidence: evidence.evidence,
       referenceEvidence: criterion.referenceEvidence || '',
       missingConcepts: evidence.missingConcepts,
-      earnedPoints,
-      maxPoints: Math.round(pointsPerCriterion),
+      earnedPoints: null,
+      maxPoints: null,
       feedback
     };
   });
   const checks = structureChecks(text, sentences);
   const structureEarned = checks.filter(item => item.ok).length;
-  const criterionScore = observations.reduce((sum, item) => sum + item.earnedPoints, 0);
-  const structureBonus = Math.round((structureEarned / checks.length) * 10);
-  const score = Math.max(0, Math.min(100, Math.round(criterionScore * 0.9 + structureBonus)));
   const warnings = ['키워드·문장 구조를 확인하는 로컬 규칙 기반 학습 피드백입니다. 새로운 논증의 타당성, 반어·부정, 동의어, 수학 증명의 정답 여부는 자동 확정하지 않습니다.'];
-  if (repetition) warnings.push('동일한 단어가 많이 반복되어 일부 기준의 점수를 보류했습니다. 키워드를 나열하지 말고 조건과 결론을 연결하세요.');
+  if (repetition) warnings.push('동일한 단어가 많이 반복되어 일부 기준의 근거 확인을 보류했습니다. 키워드를 나열하지 말고 조건과 결론을 연결하세요.');
   if (referenceMatch) warnings.push('기준답안과 문구가 동일합니다. 기준답안을 닫고 자신의 설명으로 다시 작성해 독립적인 풀이를 확인하세요.');
   if (question.minChars && text.length < question.minChars) warnings.push(`권장 최소 ${question.minChars}자보다 ${question.minChars - text.length}자 적습니다. 분량 자체는 정답 점수가 아닙니다.`);
   if (question.maxChars && text.length > question.maxChars) warnings.push(`권장 최대 ${question.maxChars}자를 ${text.length - question.maxChars}자 초과했습니다. 중복 문장을 줄여 보세요.`);
@@ -133,20 +128,20 @@ export function evaluateEssay(answer, question = {}) {
   const observed = observations.filter(c => c.status === 'observed').length;
   const nextActions = observations.filter(c => c.status !== 'observed').slice(0, 3).map(c => c.feedback);
   if (!nextActions.length) {
-    nextActions.push('기준의 핵심 요소는 드러납니다. 점수를 더 높이려면 가장 강한 근거의 출처·조건과 반론에 대한 검증 방법을 한 문장씩 구체화하세요.');
+    nextActions.push('기준의 핵심 요소는 드러납니다. 가장 강한 근거의 출처·조건과 반론에 대한 검증 방법을 한 문장씩 구체화하세요.');
   }
   return {
     ...base,
     status: repetition ? 'needs_review' : referenceMatch ? 'reference_match' : 'reviewed',
-    score,
-    scoreLabel: '학습용 기준 점수 · 공식 대학 점수 아님',
-    scoreBreakdown: { earned: score, max: 100, criterionEarned: criterionScore, criterionMax: 100, structureEarned, structureMax: checks.length, structureBonus, note: '기준 요소 90% + 답안 구조 점검 10%로 계산한 연습용 지표입니다.' },
+    score: null,
+    scoreLabel: '근거·구조 점검 · 정답 점수 아님',
+    scoreBreakdown: null,
     criteria: observations,
     structureChecks: checks,
     observedCount: observed,
     totalCriteria: definitions.length,
     warnings,
     nextActions,
-    summary: `학습용 기준 ${score}/100점입니다. ${definitions.length}개 평가 기준 중 ${observed}개에서 핵심 근거 표현이 충분히 확인됐습니다. 점수는 공식 대학 채점 결과나 합격 가능성이 아닙니다.`
+    summary: `${definitions.length}개 기준 중 ${observed}개에서 관련 근거 표현을 찾았습니다. 답안의 논증 타당성이나 대학의 실제 채점 결과를 확정한 것은 아닙니다.`
   };
 }

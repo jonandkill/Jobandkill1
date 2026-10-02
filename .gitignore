@@ -4,3 +4,5 @@ node_modules/
 npm-debug.log*
 __pycache__/
 *.pyc
+hosting/php8/private_app/config.php
+hosting/php8/private_app/storage/

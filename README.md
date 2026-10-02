@@ -1,5 +1,7 @@
 # 잡앤킬 수시설계
 
+홈페이지 디자인 개선 및 PHP 8.0 / MariaDB 10 이관 준비: [설치 안내](hosting/php8/README.md). `npm run build:php-hosting`으로 서버 업로드용 파일을, `npm run build:design-preview`로 이미지와 글꼴이 내장된 홈페이지 검토 파일을 생성할 수 있습니다. 개선 화면은 현재 Render 주소에서 검토하며, 소유 서버 이관은 디자인 확정 후 진행합니다.
+
 ## 전국 자료 확장과 입결 비교
 
 2026-09-09 개편은 대학 기본정보·지원현황, 논술 자료실·개별 원문, 연도별 입결을 각각 구분한다. `/api/catalog`는 대학 목록과 입결 보유 대학 요약을 제공하고, `/api/outcomes?universityId=0000158`는 선택한 대학의 입결만 반환한다. 최신 집계는 `data/coverage.json`에 기록한다. `completeUniversities`는 모든 전형별 필수 항목 검수 완료 수이므로 기본정보 수집 수와 다르다.

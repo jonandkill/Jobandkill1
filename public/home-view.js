@@ -1,3 +1,5 @@
+import { icon } from './ui-icons.js';
+
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 
 export function renderHome(root, profile = {}, onStart, context = {}) {
@@ -5,103 +7,88 @@ export function renderHome(root, profile = {}, onStart, context = {}) {
   const hasGrade = Number.isFinite(average) && average >= 1 && average <= Number(profile.scale || 9);
   const savedCount = Math.max(0, Number(context.savedCount) || 0);
   const universityCount = Number(context.universityCount);
-  const countLabel = Number.isInteger(universityCount) && universityCount > 0 ? `${universityCount.toLocaleString()}개 대학 탐색` : '전국 대학 탐색';
-  const gradeLabel = hasGrade ? `${escape(profile.average)}등급` : '평균 내신부터';
-  const nextTitle = hasGrade ? '입력한 성적과 대학을 함께 살펴보세요.' : '성적 한 줄로, 나에게 맞는 다음 단계.';
-  const nextDescription = hasGrade
-    ? `${escape(profile.scale || 9)}등급제 · 평균 ${gradeLabel}. 세부 성적을 더하면 대학별 반영 방식에 맞춰 비교할 수 있는 범위를 넓힐 수 있어요.`
-    : '예를 들어 2.3등급만 입력해도 시작할 수 있어요. 학교를 먼저 둘러보거나, 필요한 성적만 추가해도 괜찮아요.';
-
+  const count = Number.isInteger(universityCount) && universityCount > 0 ? universityCount.toLocaleString() : '';
+  const regions = context.regions || [];
   root.innerHTML = `
-    <section class="landing-hero lifecycle-hero" aria-labelledby="home-title">
-      <div class="hero-story">
-        <p class="eyebrow">잡앤킬 진학설계</p>
-        <h1 id="home-title">오늘의 준비가,<br>다음 선택이 되도록.</h1>
-        <p class="hero-lead">대학을 찾는 순간부터<br>논술과 면접을 준비하는 날까지.</p>
-        <div class="actions home-primary-actions">
-          ${hasGrade ? '<a class="button primary" href="#recommend">내 성적으로 대학 살펴보기 →</a>' : '<button id="home-start" class="primary">평균 내신 입력하고 시작 →</button>'}
-          <a class="button" href="#find">${countLabel}</a>
+    <section class="admission-hero" aria-labelledby="home-title">
+      <div class="admission-hero-copy">
+        <p class="admission-kicker"><span></span> 나의 가능성을, 나의 대학으로.</p>
+        <h1 id="home-title">막막했던 대학 입시,<br><em>나에게 맞는 길</em>을<br>찾다.</h1>
+        <p class="admission-hero-lead">대학을 고르는 순간부터 면접을 준비하는 날까지.<br>잡앤킬과 함께, 나의 다음 선택을 준비하세요.</p>
+        <div class="admission-hero-actions">
+          ${hasGrade ? '<a class="admission-button is-orange" href="#recommend">내 성적으로 시작하기 '+icon('arrow')+'</a>' : '<button id="home-start" class="admission-button is-orange" type="button">내 성적으로 시작하기 '+icon('arrow')+'</button>'}
+          <a class="admission-text-link" href="#find" data-home-browse>대학 먼저 둘러보기 ${icon('arrow')}</a>
         </div>
-        <p class="hint">소수점 내신 입력 · 세부 성적은 선택 · 과거 입결과 비교</p>
+        <p class="admission-hero-helper">평균 내신만 있어도 시작할 수 있어요.</p>
       </div>
-      <section id="home-slider" class="home-slider" aria-roledescription="carousel" aria-label="잡앤킬 진학설계 주요 안내">
-        <article class="home-slide is-active" data-slide aria-hidden="false">
-          <img src="https://tong.visitkorea.or.kr/cms/resource_etc/85/3302285_image2_1.jpg" alt="한국 대학생들이 국내 캠퍼스를 걸으며 진학 이야기를 나누는 모습" fetchpriority="high">
-          <div class="home-slide-copy"><p>성적부터 지원 전략까지</p><h2>내 성적을<br>비교의 근거로.</h2><a href="#recommend">입결 비교 시작 →</a></div>
-        </article>
-        <article class="home-slide" data-slide aria-hidden="true">
-          <img src="https://tong.visitkorea.or.kr/cms/resource_etc/81/3302281_image2_1.JPG" alt="한국 대학생들이 캠퍼스 활동에 참여하는 모습" loading="lazy">
-          <div class="home-slide-copy"><p>대학·학과·전형을 한곳에서</p><h2>지원 후보를<br>근거와 함께.</h2><a href="#find">${countLabel} →</a></div>
-        </article>
-        <article class="home-slide" data-slide aria-hidden="true">
-          <img src="https://tong.visitkorea.or.kr/cms/resource_etc/86/3302286_image2_1.jpg" alt="한국 대학생들이 대학 축제와 캠퍼스 문화를 즐기는 모습" loading="lazy">
-          <div class="home-slide-copy"><p>논술·면접까지 이어지는 준비</p><h2>찾은 뒤에는<br>직접 연습해요.</h2><a href="#prepare/essay">논술 문제 풀기 →</a></div>
-        </article>
-        <div class="home-slider-controls">
-          <div class="home-slider-dots" aria-label="슬라이드 선택"><button type="button" class="is-active" data-slide-to="0" aria-label="1번 슬라이드" aria-current="true"></button><button type="button" data-slide-to="1" aria-label="2번 슬라이드"></button><button type="button" data-slide-to="2" aria-label="3번 슬라이드"></button></div>
-          <div><button id="home-slide-prev" type="button" aria-label="이전 슬라이드">←</button><button id="home-slide-next" type="button" aria-label="다음 슬라이드">→</button><button id="home-slide-toggle" type="button" aria-pressed="false">자동 넘김 멈추기</button></div>
-        </div>
-      </section>
+      <div class="admission-hero-visual">
+        <div class="admission-photo"><img src="./assets/admissions-counseling.webp" alt="학생과 상담자가 진학 준비를 함께 살펴보는 연출 이미지" width="1200" height="900" fetchpriority="high"></div>
+        <div class="admission-photo-tag"><span class="admission-tag-icon">${icon('spark')}</span><span>혼자 고민하던 입시,<br><strong>함께 그리는 다음.</strong></span></div>
+        <div class="admission-photo-label"><span>YOUR NEXT CHAPTER</span><span aria-hidden="true">↗</span></div>
+        <span class="admission-photo-orbit" aria-hidden="true"></span>
+      </div>
     </section>
 
-    <section class="home-resume" aria-labelledby="home-next-title">
-      <div class="home-resume-copy"><p class="eyebrow">${hasGrade ? '이어서 준비하기' : '처음이라면 여기부터'}</p><h2 id="home-next-title">${nextTitle}</h2><p>${nextDescription}</p></div>
-      <div class="home-resume-actions"><a class="button primary" href="#recommend">${hasGrade ? '입결 비교·세부 성적 추가' : '성적 입력·평균 계산'}</a><a href="#saved">내 지원 후보 ${savedCount}개 보기 →</a></div>
+    <section class="admission-discovery" aria-label="대학 빠른 검색">
+      <div class="admission-discovery-title"><span>어떤 대학을 찾고 있나요?</span><p>${count ? '현재 '+count+'개 대학·캠퍼스를 탐색할 수 있어요.' : '관심 대학과 지역으로 탐색을 시작하세요.'}</p></div>
+      <form id="home-search-form" class="admission-search-form">
+        <div class="admission-search-field">${icon('search')}<label class="sr-only" for="home-query">대학명</label><input id="home-query" name="query" type="search" placeholder="관심 대학을 검색해 보세요" autocomplete="off" maxlength="100"></div>
+        <div class="admission-region-field"><label class="sr-only" for="home-region">희망 지역</label><select id="home-region" name="region"><option value="">전국 지역</option>${regions.map(region=>'<option value="'+escape(region)+'">'+escape(region)+'</option>').join('')}</select></div>
+        <button class="admission-search-submit" type="submit">대학 찾기 ${icon('arrow')}</button>
+      </form>
     </section>
 
-    <section class="home-section lifecycle-section" aria-labelledby="journey-title">
-      <div class="section-head"><div><p class="eyebrow">나의 입시 준비 순서</p><h2 id="journey-title">지금 필요한 단계로 바로 가세요.</h2></div><p class="muted">순서에 얽매이지 않고 언제든 돌아올 수 있어요.</p></div>
-      <ol class="lifecycle-list">
-        <li><a href="#find"><span class="lifecycle-number" aria-hidden="true">01</span><div><h3>대학·학과 탐색</h3><p>지역과 관심 학과로 찾아보고, 학교의 지원 정보를 읽어요.</p></div><span class="lifecycle-state">${countLabel} <b aria-hidden="true">↗</b></span></a></li>
-        <li><a href="#recommend"><span class="lifecycle-number" aria-hidden="true">02</span><div><h3>성적 정리·입결 비교</h3><p>평균을 계산하고, 같은 전형의 과거 입결을 비교해요.</p></div><span class="lifecycle-state">${hasGrade ? gradeLabel + ' 입력됨' : '성적 입력 가능'} <b aria-hidden="true">↗</b></span></a></li>
-        <li><a href="#saved"><span class="lifecycle-number" aria-hidden="true">03</span><div><h3>지원 후보 좁히기</h3><p>담아 둔 대학의 전형, 일정, 준비 조건을 나란히 살펴봐요.</p></div><span class="lifecycle-state">후보 ${savedCount}개 <b aria-hidden="true">↗</b></span></a></li>
-        <li><a href="#prepare/essay"><span class="lifecycle-number" aria-hidden="true">04</span><div><h3>논술·면접 실전 연습</h3><p>문제를 풀고 답변을 쓰면서, 보완할 근거를 찾아요.</p></div><span class="lifecycle-state">연습 시작 <b aria-hidden="true">↗</b></span></a></li>
-        <li><a href="#prepare/plan"><span class="lifecycle-number" aria-hidden="true">05</span><div><h3>지원 전 마지막 점검</h3><p>모집요강, 제출서류, 접수·고사 일정을 다시 확인해요.</p></div><span class="lifecycle-state">준비 목록 확인 <b aria-hidden="true">↗</b></span></a></li>
-      </ol>
+    <section class="admission-quick-links" aria-label="입시 준비 바로가기">
+      <a href="#find" data-home-browse><span class="admission-quick-icon is-peach">${icon('school')}</span><span><strong>대학·학과 찾기</strong><small>관심에서 시작하는 탐색</small></span>${icon('arrow')}</a>
+      <a href="#recommend"><span class="admission-quick-icon is-lilac">${icon('chart')}</span><span><strong>내 성적·입결 비교</strong><small>선택의 근거를 더하기</small></span>${icon('arrow')}</a>
+      <a href="#saved"><span class="admission-quick-icon is-yellow">${icon('bookmark')}</span><span><strong>내 지원 후보${savedCount ? ' <b>'+savedCount+'</b>' : ''}</strong><small>담아 두고 나란히 비교</small></span>${icon('arrow')}</a>
+      <a href="#prepare"><span class="admission-quick-icon is-pink">${icon('pencil')}</span><span><strong>논술·면접 준비</strong><small>읽기를 넘어 직접 연습</small></span>${icon('arrow')}</a>
     </section>
 
-    <section class="home-practice" aria-labelledby="practice-title">
-      <div><p class="eyebrow">반복할수록 구체적으로</p><h2 id="practice-title">오늘 연습할 한 가지를 골라보세요.</h2><p class="muted">읽기만 했던 문제를 직접 풀고,<br>생각해 둔 답변을 나의 말로 작성해 보세요.</p></div>
-      <div class="home-practice-links"><a href="#prepare/writing"><strong>자기소개서 작성</strong><span>내 경험 작성 → 글 보완 → 면접 질문으로 연결</span><b aria-hidden="true">↗</b></a><a href="#prepare/essay"><strong>논술 문제 풀기</strong><span>문제 선택 → 시간 확인 → 답안 작성 → 피드백</span><b aria-hidden="true">↗</b></a><a href="#prepare/interview"><strong>면접 답변 연습</strong><span>학교·학과 선택 → 질문 확인 → 답변 보완</span><b aria-hidden="true">↗</b></a><a href="#prepare/exams"><strong>공식 논술 자료 찾기</strong><span>학교·연도·계열별 자료와 원문 확인</span><b aria-hidden="true">↗</b></a><a href="#consult"><strong>상담 신청</strong><span>자기소개서·면접·논술 상담 접수</span><b aria-hidden="true">↗</b></a></div>
+    ${hasGrade || savedCount ? `<section class="admission-resume" aria-label="이어서 준비하기"><span>${icon('bookmark')} 나의 준비, 이어서</span><p>${hasGrade ? escape(profile.scale || 9)+'등급제 · 평균 '+escape(profile.average)+'등급' : '성적을 입력해 비교를 시작하세요.'} <span>지원 후보 ${savedCount}개</span></p><a href="${hasGrade ? '#recommend' : '#saved'}">이어서 보기 ${icon('arrow')}</a></section>` : ''}
+
+    <section class="admission-section admission-journey" aria-labelledby="journey-title">
+      <div class="admission-section-heading"><p class="admission-eyebrow">A CLEARER WAY FORWARD</p><h2 id="journey-title">찾고. 비교하고.<br>준비까지, <em>한 번에.</em></h2><p>정보가 많을수록 필요한 건, 나에게 맞는 순서.<br>지금 필요한 단계부터 차근차근 시작해 보세요.</p></div>
+      <div class="admission-journey-grid">
+        <article class="admission-journey-item"><div class="admission-journey-graphic is-peach"><span class="admission-step-label">STEP 01</span>${icon('school')}<span class="admission-graphic-caption">관심이 선택이 되도록</span></div><h3>나에게 맞는 대학 찾기</h3><p>희망 지역과 관심 학과를 살펴보고<br>대학별 전형과 공식 자료를 확인하세요.</p><a href="#find" data-home-browse>대학 탐색하기 ${icon('arrow')}</a></article>
+        <article class="admission-journey-item"><div class="admission-journey-graphic is-lilac"><span class="admission-step-label">STEP 02</span>${icon('chart')}<span class="admission-graphic-caption">숫자에 근거를 더하다</span></div><h3>내 성적과 입결 비교하기</h3><p>평균 내신을 정리하고, 학과·전형별<br>과거 입결을 같은 기준으로 살펴보세요.</p><a href="#recommend">성적 비교하기 ${icon('arrow')}</a></article>
+        <article class="admission-journey-item"><div class="admission-journey-graphic is-pink"><span class="admission-step-label">STEP 03</span>${icon('speech')}<span class="admission-graphic-caption">나의 언어로 준비하다</span></div><h3>논술과 면접 직접 연습하기</h3><p>학교와 전형에 필요한 준비를 확인하고<br>답안·답변을 작성하며 보완하세요.</p><a href="#prepare">실전 준비하기 ${icon('arrow')}</a></article>
+      </div>
     </section>
-    <section class="home-note"><h2>선택의 근거를 함께 확인하세요.</h2><p>과거 입결은 올해의 합격을 보장하지 않으며 실제 결과와 다를 수 있습니다. 대학별 성적 반영 방식과 전형 변경을 함께 확인하고, 공식 자료와 자체 연습 피드백을 구분해 안내합니다.</p><a href="#history">연도별 입결 자료 살펴보기 →</a></section>`;
+
+    <section class="admission-practice-section" aria-labelledby="practice-title">
+      <div class="admission-section-heading is-left"><p class="admission-eyebrow">MAKE IT YOUR OWN</p><h2 id="practice-title">생각했던 답을,<br><em>나의 답으로.</em></h2><p>무엇을 준비할지 알았다면, 이제 직접 해볼 차례.<br>나의 경험과 생각을 구체적인 답변으로 만들어 보세요.</p></div>
+      <div class="admission-practice-grid">
+        <a class="admission-practice-item" href="#prepare/writing"><span class="admission-practice-top"><span class="admission-mini-tag">경험 정리</span>${icon('pencil')}</span><h3>자기소개서·경험 정리</h3><p>나의 활동과 경험을 정리하고<br>면접 질문으로 연결해 보세요.</p><span class="admission-practice-link">작성 시작하기 ${icon('arrow')}</span></a>
+        <a class="admission-practice-item" href="#prepare/essay"><span class="admission-practice-top"><span class="admission-mini-tag">답안 연습</span>${icon('paper')}</span><h3>논술 실전 연습</h3><p>문제를 고르고 시간을 확인하며<br>답안을 작성하고 피드백을 살펴보세요.</p><span class="admission-practice-link">문제 풀어보기 ${icon('arrow')}</span></a>
+        <a class="admission-practice-item" href="#prepare/interview"><span class="admission-practice-top"><span class="admission-mini-tag">답변 연습</span>${icon('speech')}</span><h3>면접 답변 연습</h3><p>대학·학과별 질문을 확인하고<br>나만의 근거를 담아 답변을 보완하세요.</p><span class="admission-practice-link">질문 확인하기 ${icon('arrow')}</span></a>
+      </div>
+      <p class="admission-practice-footnote">대학별 제출서류와 평가요소는 해당 연도 모집요강을 기준으로 확인하세요.</p>
+    </section>
+
+    <section class="admission-section admission-evidence" aria-labelledby="evidence-title">
+      <div class="admission-evidence-copy"><p class="admission-eyebrow">INFORMATION WITH CONTEXT</p><h2 id="evidence-title">선택의 근거까지,<br><em>함께 확인하세요.</em></h2><p>같은 정보처럼 보여도, 쓰임은 다르니까.<br>자료의 출처와 비교 범위를 구분해 안내합니다.</p><a class="admission-text-link" href="#history">연도별 입결 자료 보기 ${icon('arrow')}</a></div>
+      <div class="admission-evidence-list"><article><span>01</span><div><h3>대학이 공개한 공식 자료</h3><p>모집요강과 공개 질문은 원문 출처를 확인할 수 있어요. 대학별 수집 범위도 함께 표시합니다.</p></div>${icon('check')}</article><article><span>02</span><div><h3>조건을 확인하는 입결 비교</h3><p>학년도·학과·전형·등급체계를 확인해 비교합니다. 과거 입결은 올해의 합격확률을 뜻하지 않습니다.</p></div>${icon('check')}</article><article><span>03</span><div><h3>출처가 구분된 자체 연습</h3><p>공식 질문과 자체 연습 문제를 구분합니다. 연습 피드백은 대학의 실제 채점 결과와 다릅니다.</p></div>${icon('check')}</article></div>
+    </section>
+
+    <section class="admission-section admission-faq" aria-labelledby="faq-title"><div class="admission-section-heading"><p class="admission-eyebrow">BEFORE YOU START</p><h2 id="faq-title">시작하기 전에,<br>궁금한 것들.</h2></div><div class="admission-faq-list">
+      <details><summary>성적을 모두 입력해야 시작할 수 있나요?<span aria-hidden="true">+</span></summary><p>평균 내신만 입력해도 시작할 수 있습니다. 세부 과목과 이수단위는 필요할 때 추가하세요. 대학 목록은 성적을 입력하지 않고도 둘러볼 수 있습니다.</p></details>
+      <details><summary>모든 대학의 상세 자료가 제공되나요?<span aria-hidden="true">+</span></summary><p>대학 목록과 상세 전형·입결·공식 질문의 제공 범위는 다릅니다. 각 대학 화면에서 수집 범위와 출처를 표시하며, 자료가 없는 경우 대학 공식 안내로 연결합니다.</p></details>
+      <details><summary>입결 비교로 합격 여부를 알 수 있나요?<span aria-hidden="true">+</span></summary><p>입결 비교는 지원 후보를 살펴보는 참고 자료입니다. 과거 결과가 올해 합격을 보장하지 않습니다. 대학별 성적 산출식과 전형 변경, 지원자격을 함께 확인하세요.</p></details>
+      <details><summary>작성한 답안과 지원 후보는 어디에 저장되나요?<span aria-hidden="true">+</span></summary><p>성적, 지원 후보와 연습 기록은 현재 사용하는 브라우저에 저장됩니다. 다른 기기와 자동으로 동기화되지 않으며, 브라우저 데이터를 삭제하면 기록도 사라질 수 있습니다.</p></details>
+    </div></section>
+
+    <section class="admission-consult-banner" aria-labelledby="consult-title"><div><p class="admission-eyebrow">YOUR NEXT, TOGETHER</p><h2 id="consult-title">다음 선택이 고민된다면,<br>함께 방향을 정리해요.</h2><p>나의 성적, 경험, 목표 대학.<br>지금 가장 필요한 준비부터 이야기해 주세요.</p></div><a class="admission-button is-orange" href="#consult">진학 상담 신청 ${icon('arrow')}</a><span class="admission-consult-art" aria-hidden="true">↗</span></section>`;
 
   const start = root.querySelector('#home-start');
   if (start) start.onclick = onStart;
-  const slider = root.querySelector('#home-slider');
-  const slides = [...root.querySelectorAll('[data-slide]')];
-  const dots = [...root.querySelectorAll('[data-slide-to]')];
-  const previous = root.querySelector('#home-slide-prev');
-  const next = root.querySelector('#home-slide-next');
-  const toggle = root.querySelector('#home-slide-toggle');
-  let index = 0;
-  let paused = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let interval = null;
-  const show = nextIndex => {
-    index = (nextIndex + slides.length) % slides.length;
-    slides.forEach((slide, slideIndex) => {
-      const active = slideIndex === index;
-      slide.classList.toggle('is-active', active);
-      slide.setAttribute('aria-hidden', String(!active));
-    });
-    dots.forEach((dot, dotIndex) => {
-      const active = dotIndex === index;
-      dot.classList.toggle('is-active', active);
-      dot.setAttribute('aria-current', active ? 'true' : 'false');
-    });
+  root.querySelectorAll('[data-home-browse]').forEach(link => link.addEventListener('click', event => {
+    if (!context.onSearch || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    context.onSearch({query:'',region:''});
+  }));
+  root.querySelector('#home-search-form').onsubmit = event => {
+    event.preventDefault();
+    context.onSearch?.({query:root.querySelector('#home-query').value.trim(),region:root.querySelector('#home-region').value});
   };
-  const schedule = () => {
-    if (interval) clearInterval(interval);
-    interval = paused ? null : setInterval(() => show(index + 1), 6500);
-    toggle.setAttribute('aria-pressed', String(paused));
-    toggle.textContent = paused ? '자동 넘김 재생' : '자동 넘김 멈추기';
-  };
-  previous.onclick = () => show(index - 1);
-  next.onclick = () => show(index + 1);
-  dots.forEach(dot => dot.onclick = () => show(Number(dot.dataset.slideTo)));
-  toggle.onclick = () => { paused = !paused; schedule(); };
-  slider.onmouseenter = () => { if (!paused && interval) clearInterval(interval); };
-  slider.onmouseleave = () => { if (!paused) schedule(); };
-  show(0);
-  schedule();
 }
