@@ -1,0 +1,47 @@
+# Paid production configuration. Creating this service incurs hosting charges.
+# Keep the existing main-branch services separate from this service.
+services:
+  - type: web
+    name: jobandkill-instagram-studio
+    runtime: python
+    repo: https://github.com/jonandkill/Jobandkill1
+    branch: jobkill-instagram-studio
+    rootDir: instagram-studio
+    region: singapore
+    plan: 0.5c-512mb
+    numInstances: 1
+    buildCommand: pip install -r requirements.txt
+    startCommand: python start.py
+    healthCheckPath: /health
+    autoDeployTrigger: "off"
+    disk:
+      name: instagram-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.12
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: DATA_DIR
+        value: /var/data
+      - key: REQUIRE_PERSISTENT_DATA
+        value: "true"
+      - key: TIMEZONE
+        value: Asia/Seoul
+      - key: RUN_WORKER
+        value: "true"
+      - key: ENABLE_LIVE_PUBLISH
+        value: "false"
+      - key: META_API_VERSION
+        value: v25.0
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ENCRYPTION_KEY
+        generateValue: true
+      - key: API_INGEST_KEY
+        generateValue: true
+      - key: API_WORKER_KEY
+        generateValue: true

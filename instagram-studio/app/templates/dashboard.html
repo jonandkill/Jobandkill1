@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#191b1b"><meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="잡앤킬 스튜디오">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/static/icon-192.png">
+<link rel="stylesheet" href="/static/studio.css"><script defer src="/static/mobile.js"></script>
+<title>잡앤킬 SNS Studio · 모바일 제작실</title>
+</head><body id="top">
+<header class="site-header">
+  <a href="/" class="mark" aria-label="잡앤킬 SNS Studio 홈">JOB<span class="mark-accent">&</span>KILL <span class="mark-tail">SNS STUDIO</span></a>
+  <div class="nav"><a href="/history">게시 기록</a><form action="/logout" method="post"><input type="hidden" name="csrf" value="{{ csrf }}"><button class="text-button" type="submit">로그아웃</button></form></div>
+</header>
+<main>
+<section id="home" class="hero">
+  <div class="hero-content"><div class="eyebrow">JOB&KILL / CONTENT STUDIO v{{version}}</div>
+  <h1>면접 콘텐츠,<br><em>예약부터 게시까지.</em></h1>
+  <p>휴대폰으로 6장 캐러셀을 등록하고, 게시 일정과 발행 상태를 한눈에 확인하세요.</p>
+  <a class="hero-link" href="#upload-panel">새 캐러셀 올리기 <span aria-hidden="true">↗</span></a></div>
+  <div class="hero-stat"><div><strong>02</strong><span>하루 게시 슬롯</span></div><div class="times">12:00 <b>·</b> 19:00</div></div>
+</section>
+{% if notice %}<div class="notice" role="status">{{notice}}</div>{% endif %}
+<section class="stats" aria-label="콘텐츠 현황">
+  <div class="stat"><strong>{{summary.draft}}</strong><span>등록 완료</span></div>
+  <div class="stat"><strong>{{summary.scheduled}}</strong><span>게시 예약</span></div>
+  <div class="stat"><strong>{{summary.published}}</strong><span>게시 완료</span></div>
+  <div class="stat stat-alert"><strong>{{summary.failed+summary.uncertain+summary.processing+summary.submitting}}</strong><span>확인 필요</span></div>
+</section>
+<section class="two-col">
+<article class="panel" id="upload-panel">
+  <div class="heading"><div><div class="eyebrow">01 / NEW CONTENT</div><h2>새 캐러셀 등록</h2></div><span class="pill lime">6장</span></div>
+  <p class="hint">휴대폰 사진첩에서 PNG 6장을 바로 선택하거나, 기존 ZIP 파일을 올릴 수 있습니다. 각 이미지 크기는 1080×1350px입니다.</p>
+  <form id="upload-form" method="post" action="/upload" enctype="multipart/form-data" class="stack">
+    <input type="hidden" name="csrf" value="{{csrf}}"><input type="hidden" name="media_order" id="media-order" value="">
+    <label for="post-title">콘텐츠 제목<input id="post-title" name="title" maxlength="180" placeholder="예: 스펙이 부족할 때 답변하는 법" required></label>
+    <label for="post-caption">인스타그램 게시글<textarea id="post-caption" name="caption" maxlength="2200" rows="4" placeholder="캐러셀과 함께 게시할 문구를 적어 주세요." required></textarea></label>
+    <div class="upload-picker" role="group" aria-label="이미지 업로드 방식">
+       <button type="button" class="upload-choice selected" data-upload-mode="photos" aria-pressed="true">사진 6장 선택</button>
+       <button type="button" class="upload-choice" data-upload-mode="zip" aria-pressed="false">ZIP 파일 선택</button>
+    </div>
+    <div id="photos-wrap" class="file-selection">
+      <label class="file-target" for="photos-input"><span class="file-symbol" aria-hidden="true">＋</span><b>사진첩에서 PNG 6장 고르기</b><span>선택 후 순서를 확인할 수 있습니다</span></label>
+      <input id="photos-input" class="visually-hidden-file" type="file" name="photos" accept=".png,image/png" multiple>
+      <div id="photo-message" class="file-help" role="status">선택한 사진 없음</div>
+      <ol id="photo-review" class="photo-review" aria-label="선택한 사진 순서"></ol>
+    </div>
+    <div id="zip-wrap" class="file-selection" hidden>
+      <label class="file-target" for="zip-input"><span class="file-symbol" aria-hidden="true">▣</span><b>PNG 6장이 들어 있는 ZIP</b><span>01.png ~ 06.png 파일을 포함하세요</span></label>
+      <input id="zip-input" class="visually-hidden-file" type="file" name="media" accept=".zip,application/zip">
+      <div id="zip-message" class="file-help" role="status">선택한 ZIP 없음</div>
+    </div>
+    <p class="fineprint">등록만으로 인스타그램에 게시되지 않습니다. 계정 연결과 발행 허용은 별도입니다.</p>
+    <button type="submit" id="upload-submit" class="wide-cta">캐러셀 보관함에 추가 <span aria-hidden="true">→</span></button>
+  </form>
+</article>
+<article class="panel" id="account-panel">
+  <div class="heading"><div><div class="eyebrow">02 / ACCOUNT</div><h2>인스타그램 연결</h2></div><span class="pill {{ 'lime' if ready else 'gray' }}">{{ '게시 가능' if ready else '연결 확인 필요' }}</span></div>
+  {% if connected %}
+  <p class="account-handle">@{{ username }}</p>
+  <p class="small">계정 확인: {{'완료' if confirmed else '필요'}} · 서버 게시 설정: {{'허용' if live_env else '꺼짐'}}</p>
+  {% if not confirmed %}<form action="/settings/activate" method="post" class="stack"><input type="hidden" name="csrf" value="{{csrf}}"><label for="account-handle">연결된 계정명 확인<input id="account-handle" name="handle" required placeholder="@jobandkill" autocomplete="off"></label><button type="submit" class="wide-cta">이 계정을 게시 대상으로 확인</button></form>
+  {% else %}<form action="/settings/deactivate" method="post"><input type="hidden" name="csrf" value="{{csrf}}"><button type="submit" class="secondary">자동 게시 승인 해제</button></form>{% endif %}
+  <form action="/settings/disconnect" method="post" onsubmit="return confirm('연결 토큰을 삭제할까요?')"><input type="hidden" name="csrf" value="{{csrf}}"><button type="submit" class="outline secondary-action">Instagram 연결 해제</button></form>
+  {% else %}
+  <p>Meta 공식 인증이 필요합니다. 비즈니스 또는 크리에이터 계정을 연결한 뒤 발행을 허용하세요.</p>
+  <a class="btn" href="/oauth/start">Instagram 공식 계정 연결 <span aria-hidden="true">↗</span></a>
+  {% endif %}
+  <div class="info"><strong>게시 안전장치</strong><p>연결·게시 권한 확인 전에는 이미지가 자동 게시되지 않습니다. 발행 결과가 불확실하면 같은 게시물을 다시 올리지 않습니다.</p></div>
+  <div class="mini-schedule"><div>자동 게시 기준</div><strong>매일 12:00 · 19:00</strong><span>한국시간 / 예약당 캐러셀 1편</span></div>
+</article>
+</section>
+<section id="queue" class="feed">
+  <div class="heading queue-heading"><div><div class="eyebrow">03 / CONTENT QUEUE</div><h2>캐러셀 보관함</h2><p class="hint">이미지를 누르면 6장을 넘겨 보며 확인할 수 있습니다.</p></div>
+    <form action="/fill" method="post"><input type="hidden" name="csrf" value="{{csrf}}"><button type="submit" class="secondary auto-fill">대기 원고 자동 예약</button></form>
+  </div>
+  <div class="filters" role="group" aria-label="게시물 상태 필터">
+    <button type="button" class="filter active" data-status="all" aria-pressed="true">전체</button>
+    <button type="button" class="filter" data-status="draft">미예약</button>
+    <button type="button" class="filter" data-status="scheduled">예약</button>
+    <button type="button" class="filter" data-status="published">완료</button>
+    <button type="button" class="filter" data-status="attention">확인 필요</button>
+  </div>
+  {% if not posts %}<div class="empty">아직 등록된 캐러셀이 없습니다.<br>위의 ‘새 캐러셀 등록’에서 시작해 주세요.</div>{% endif %}
+  <div class="post-grid" id="post-grid">
+  {% for p in posts %}<article class="post-card" data-status="{{p.status}}">
+    <button type="button" class="preview preview-open" data-post-id="{{p.id}}" data-title="{{p.title}}" aria-label="{{p.title}} 6장 미리보기 열기">
+      <img src="/preview/{{p.id}}/1" alt="{{p.title}} 첫 번째 장" loading="lazy">
+      <span class="status {{p.status}}">{{{'draft':'미예약','scheduled':'예약','processing':'준비 중','submitting':'게시 요청 중','published':'게시 완료','failed':'준비 실패','uncertain':'결과 확인 필요'}[p.status]}}</span>
+      <span class="preview-count">사진 6장 보기 <span aria-hidden="true">↗</span></span>
+    </button>
+    <div class="post-body"><div class="post-meta">#{{'%03d'|format(p.id)}} · 6장 캐러셀</div>
+      <h3>{{p.title}}</h3><div class="post-date">{{p.display_schedule if p.status!='draft' else '예약 전'}}</div>
+      <p class="caption-preview">{{p.caption[:90]}}{% if p.caption|length>90 %}…{% endif %}</p>
+      {% if p.error %}<p class="error">{{p.error}}</p>{% endif %}
+      {% if p.permalink %}<a href="{{p.permalink}}" target="_blank" rel="noopener noreferrer" class="posted-link">게시된 인스타그램 보기 ↗</a>{% endif %}
+      <div class="actions">
+        {% if p.status in ('draft','scheduled','failed') %}<form method="post" action="/schedule/{{p.id}}" class="schedule-form"><input type="hidden" name="csrf" value="{{csrf}}"><label class="sr-only" for="when-{{p.id}}">예약 날짜와 시간</label><input id="when-{{p.id}}" type="datetime-local" name="when" required><button class="mini">예약</button></form>{% endif %}
+        {% if p.status=='scheduled' %}<form action="/cancel/{{p.id}}" method="post"><input type="hidden" name="csrf" value="{{csrf}}"><button class="mini outline">취소</button></form>{% endif %}
+        {% if p.status=='uncertain' %}<form action="/reconcile/{{p.id}}" method="post" class="schedule-form"><input type="hidden" name="csrf" value="{{csrf}}"><label class="sr-only" for="remote-{{p.id}}">실제 게시물 ID</label><input id="remote-{{p.id}}" name="remote_id" placeholder="실제 게시물 ID" required><button class="mini">확인 기록</button></form>{% endif %}
+        <form action="/test/{{p.id}}" method="post"><input type="hidden" name="csrf" value="{{csrf}}"><button class="mini outline">모의 검수</button></form>
+      </div>
+    </div>
+  </article>{% endfor %}
+  </div>
+  <div id="filter-empty" class="empty" hidden>해당 상태의 게시물이 없습니다.</div>
+</section>
+<footer>JOB&KILL SNS STUDIO · 콘텐츠 제작·예약 관리<br>실제 게시에는 공식 Meta API 계정 연결이 필요합니다.</footer>
+</main>
+<nav class="mobile-dock" aria-label="모바일 빠른 메뉴">
+ <a href="#home" data-mobile-nav="home"><span aria-hidden="true">⌂</span>홈</a>
+ <a href="#upload-panel" data-mobile-nav="upload-panel"><span aria-hidden="true">＋</span>등록</a>
+ <a href="#queue" data-mobile-nav="queue"><span aria-hidden="true">▦</span>예약</a>
+ <a href="#account-panel" data-mobile-nav="account-panel"><span aria-hidden="true">◉</span>계정</a>
+ <a href="/history"><span aria-hidden="true">≡</span>기록</a>
+</nav>
+<dialog id="carousel-dialog" class="carousel-dialog" aria-labelledby="dialog-title">
+ <div class="dialog-top"><h2 id="dialog-title">캐러셀 미리보기</h2><button type="button" id="dialog-close" class="dialog-close" aria-label="닫기">×</button></div>
+ <div class="dialog-photo"><img id="dialog-img" alt="캐러셀 미리보기"><button type="button" id="dialog-prev" class="dialog-arrow prev" aria-label="이전 장">‹</button><button type="button" id="dialog-next" class="dialog-arrow next" aria-label="다음 장">›</button></div>
+ <div class="dialog-bottom"><div id="dialog-page" aria-live="polite">1 / 6</div><p>좌우로 넘겨서 6장을 확인하세요.</p></div>
+</dialog>
+</body></html>
