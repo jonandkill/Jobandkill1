@@ -1,5 +1,34 @@
 # JOB&KILL SNS Studio — 인스타그램 캐러셀 자동 게시 관리 프로그램
 
+## 2026-10-21 편집 개편과 제출 승인
+
+현재 운영 우선순위는 신입·취업준비생용 질문 풀과 품질 교정입니다. `outputs/`의 주제 데이터·근거·운영기준·검수 도구는 편집 후보입니다. 과거 150개 원본의 동일 사본이나 실제 인스타 반응을 검증한 데이터로 취급하지 마세요. 기존 Library 73건과 새 후보의 대조는 별도 감사 기록으로 보존합니다.
+
+`scripts/submit_carousel.py`는 이제 실제 네트워크 요청 전에 해당 ZIP의 사용자 승인 파일을 요구합니다. `/api/ingest`는 등록과 동시에 예약하므로 서버의 전역 발행 설정만으로 파일별 승인을 대신할 수 없습니다. `--dry-run`은 승인 없이 로컬 검사만 합니다. 전송하려면 사용자가 최종 이미지·제목·게시글을 확인하고 **그 서버로 업로드하고 자동 예약하는 행위**를 명시적으로 승인한 뒤, 저장소 밖에서 다음 형식의 승인 기록을 작성하고 `--approval`로 전달하세요.
+
+```json
+{
+  "approved": false,
+  "approved_by": "",
+  "scope": "studio_upload_and_schedule",
+  "content_id": "",
+  "bundle_sha256": "",
+  "studio_base_url": "",
+  "approved_at_utc": "",
+  "expires_at_utc": ""
+}
+```
+
+승인 유효기간은 24시간 이하입니다. ZIP 바이트·회차·목적지·기한이 달라지면 거부합니다. 이 파일은 사람 신원을 인증하는 전자서명이 아니며 자동화가 승인을 만들어 내면 안 됩니다. 승인 기록은 저장소·자동 생성 산출물에 넣지 마세요. 업로드·예약 승인과 실제 Instagram 발행 승인은 구분합니다. 서버 관리자 화면과 직접 HTTP API는 기존 경로이므로 이 CLI 검사만으로 서버 전체의 파일별 승인 인증이 구현됐다고 주장하지 않습니다. 현재 작업에서는 서버와 SNS를 호출하지 않습니다.
+
+승인 회귀 시험은 외부 라이브러리 없이 실행됩니다.
+
+```text
+python -m unittest discover -s instagram-studio/tests -p test_submission_approval.py -v
+```
+
+`.github/workflows/jobkill-editorial-validate.yml`은 편집 구조·원형 지문·로컬 승인 회귀 검사를 위한 변경안입니다. 원격 실행 성공과 배포는 별도 확인하며 정기 실행은 기본 비활성입니다.
+
 **자체 자동 게시 프로그램 v1.2**입니다. Metricool 서비스나 유료 구독에 의존하지 않고, Meta의 **Instagram API with Instagram Login**을 직접 사용합니다. 비공개 관리자 대시보드, 6장 콘텐츠 등록, 정기 예약, 실행 이력, 중복 게시·불확실한 결과 관리, Meta OAuth 흐름이 포함됩니다.
 
 > 현재 본 소스의 실제 Instagram 게시 시험은 수행하지 않았습니다. 기본값으로 게시 기능이 잠겨 있으며, Meta 앱 등록·인스타그램 전문가 계정 승인·공개 HTTPS 웹주소·안전한 이미지 저장소가 준비된 이후에만 게시됩니다. **프로그램이 있다고 해서 Meta 권한이나 게시 가능 계정이 자동 발급되는 것은 아닙니다.**
@@ -112,7 +141,7 @@ curl -X POST 'https://YOUR-DOMAIN/api/ingest' \
 # STUDIO_BASE_URL=https://실제-서버-주소
 # API_INGEST_KEY=<서버와 동일한 비밀값>
 python scripts/submit_carousel.py --bundle 한편.zip --content-id S01-E005 --dry-run
-python scripts/submit_carousel.py --bundle 한편.zip --content-id S01-E005
+python scripts/submit_carousel.py --bundle 한편.zip --content-id S01-E005 --approval 저장소밖_사용자승인.json
 ```
 
 제출 전에 같은 회차의 등록 여부를 조회합니다. 이미 등록됐으면 예약 번호만 반환합니다. 제출 요청의 응답이 끊기면 POST를 곧바로 반복하지 않으며, 다음 실행에서 같은 회차 ID로 다시 조회합니다. `registered`는 서버 등록, `scheduled`는 예약입니다. 실제 게시 완료를 뜻하지 않습니다.
@@ -151,3 +180,5 @@ python scripts/submit_carousel.py --bundle 한편.zip --content-id S01-E005
 출처: [컴퓨트 공식 가격 설명](https://render.com/articles/production-rails-hosting-guide), [영구 디스크 공식 가격 설명](https://render.com/articles/how-much-does-cloud-application-hosting-cost-for-small-businesses), [Blueprint 명세](https://render.com/docs/blueprint-spec).
 
 매시간 콘텐츠 제작과 매일 12시·19시 게시 일정은 별개입니다. 서버의 30초 간격 점검은 예약 시각 확인이며, 게시 빈도를 늘리지 않습니다. 실제 게시 완료 여부는 Meta가 반환한 게시물 ID와 게시 상태로 기록합니다.
+
+

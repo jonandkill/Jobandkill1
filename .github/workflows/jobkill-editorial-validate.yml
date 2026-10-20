@@ -1,0 +1,35 @@
+name: Jobkill editorial candidate checks
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['outputs/**', 'instagram-studio/scripts/**', 'instagram-studio/tests/**', '.github/workflows/jobkill-editorial-validate.yml']
+  push:
+    branches: ['codex/carousel-editorial-overhaul-20261021']
+    paths: ['outputs/**', 'instagram-studio/scripts/**', 'instagram-studio/tests/**', '.github/workflows/jobkill-editorial-validate.yml']
+# Scheduled review is deliberately not active. GitHub schedule runs the default
+# branch only and may be delayed. No credentials, ingestion, scheduling or SNS.
+permissions:
+  contents: read
+concurrency:
+  group: editorial-check-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assemble review data from category sources
+        run: python outputs/system_v2/assemble_topics.py
+      - name: Candidate and append-only ledger tests
+        run: python -m unittest discover -s outputs/system_v2 -p 'test_*.py' -v
+      - name: Upload approval denied before network
+        run: python -m unittest discover -s instagram-studio/tests -p test_submission_approval.py -v
+      - name: Candidate structure is not publication approval
+        run: python outputs/system_v2/jobkill_guard.py validate --topics outputs/topics_v2.json --sources outputs/research_sources.json --manifest outputs/system_v2/question_manifest.json
+      - name: Validate empty metrics template
+        run: python outputs/system_v2/jobkill_guard.py metrics outputs/system_v2/metrics_24h_7d_TEMPLATE.csv
+

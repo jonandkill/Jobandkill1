@@ -1,0 +1,372 @@
+{
+  "version": "1.0",
+  "as_of": "2026-10-21",
+  "method": "공개 원문 실제 열람. 질문별 근거 등급은 question_evidence_audit.json에 별도 기록. 빈도·대표성·인과 효과 미측정.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Harvard Mignone Center — Interviewing",
+      "url": "https://careerservices.fas.harvard.edu/resources/interviewing/",
+      "type": "대학 취업센터",
+      "categories": [
+        "자기소개",
+        "지원동기",
+        "직무이해",
+        "경험부족",
+        "협업",
+        "갈등",
+        "실패",
+        "문제해결",
+        "강점약점",
+        "회사선택"
+      ],
+      "evidence": "학교·동아리·봉사 경험도 구체적인 본인 행동과 결과로 답할 수 있다. 부정형 질문은 책임과 개선 행동을 설명한다.",
+      "limits": "미국 대학 맥락의 일반 원칙이며 한국 기업 전체 평가기준을 입증하지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S02",
+      "title": "National Careers Service — Interview tips",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "면접대응",
+        "전형준비",
+        "입사조건",
+        "회사선택"
+      ],
+      "evidence": "공고와 회사·지원서를 확인하고 사례를 연습한다. 질문 재확인, 후속 질문, 서면 제안·근무 형태·입사일 확인을 안내한다.",
+      "limits": "한국 채용 관행·법률로 일반화하지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S03",
+      "title": "National Careers Service — How to write a CV",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "자소서",
+        "경험부족",
+        "공백스펙"
+      ],
+      "evidence": "공고에 맞춰 역량을 선택하고 첫 취업에는 프로젝트·봉사·일경험을 사용할 수 있다.",
+      "limits": "영문 CV 구성은 한국 자소서 문항 형식과 다르다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S04",
+      "title": "National Careers Service — Explain a gap in employment",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/explain-gaps-in-work-history",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "공백스펙"
+      ],
+      "evidence": "공백 사실에 정직하게 답하고 그 기간의 학습·전이 가능한 역량을 설명한다.",
+      "limits": "공백이 불이익이 없다는 한국 채용 결과 보장으로 쓰지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S05",
+      "title": "National Careers Service — How to write a cover letter",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "자소서",
+        "지원동기",
+        "회사선택"
+      ],
+      "evidence": "회사 조사와 공고 요구에 맞는 사실 근거로 지원 적합성을 설명한다.",
+      "limits": "영국 cover letter 제출 규칙을 한국 모든 지원에 적용하지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S06",
+      "title": "National Careers Service — Video interview tips",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "전형준비",
+        "면접대응"
+      ],
+      "evidence": "실시간·녹화 면접 유형을 구분하고 회사·사례·장비와 안내문을 확인한다.",
+      "limits": "특정 AI면접 알고리즘·합격 신호에 관한 근거가 아니다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S07",
+      "title": "National Careers Service — Phone interview tips",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-telephone-interviews",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "전형준비",
+        "면접대응"
+      ],
+      "evidence": "전화 면접의 장소·연락·질문을 준비하고 못 들은 질문은 다시 묻는다.",
+      "limits": "전화 면접이 한국 신입 채용에 보편적이라는 통계가 아니다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S08",
+      "title": "온통청년 — 심층상담 분야 선택 가이드",
+      "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47",
+      "type": "한국 공공 청년지원",
+      "categories": [
+        "자기소개",
+        "직무이해",
+        "자소서",
+        "전형준비"
+      ],
+      "evidence": "직무 분석·선택, 직무별·기업별 자소서, 1분 자기소개·예상 질문·모의 면접이 상담 범주임을 확인했다.",
+      "limits": "상담 분야의 존재 근거이며 질문별 검색량·빈도 자료가 아니다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S09",
+      "title": "NCS — 청년구직자 온라인 1:1 취업솔루션",
+      "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136",
+      "type": "한국산업인력공단",
+      "categories": [
+        "직무이해",
+        "회사선택",
+        "자소서",
+        "전형준비"
+      ],
+      "evidence": "입사지원서·자소서·면접 답변 코칭과 직무기술서·평가샘플을 활용하는 공정채용 로드맵을 확인했다.",
+      "limits": "2023년 종료 모집 공고다. 현재 신청 가능 프로그램으로 홍보하지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S10",
+      "title": "링커리어 — 인턴/신입 면접 질문 리스트",
+      "url": "https://community.linkareer.com/jayuu/4432101",
+      "type": "익명 커뮤니티",
+      "categories": [
+        "자기소개",
+        "지원동기",
+        "직무이해",
+        "협업",
+        "갈등",
+        "실패",
+        "문제해결",
+        "강점약점",
+        "회사선택",
+        "면접대응"
+      ],
+      "evidence": "자기소개·회사 지원 이유·직무 역량·프로젝트·실패·팀 역할·갈등 등 질문이 실제 공개 게시물에 제시되어 있다.",
+      "limits": "게시자 합격 경험은 자기보고다. 질문 수요의 정성 신호로만 사용하고 무조건 합격 표현은 배제한다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S11",
+      "title": "링커리어 — 취준 준비 같이해요",
+      "url": "https://community.linkareer.com/jayuu/5907794",
+      "type": "익명 커뮤니티",
+      "categories": [
+        "자소서",
+        "직무이해",
+        "전형준비"
+      ],
+      "evidence": "SCM 신입 준비자가 공고 공유·자소서 피드백·프로젝트·직무·영어 면접 연습을 요청했다.",
+      "limits": "개인 1인의 사례다. 전체 취준생 수요·인기도 추정에 사용하지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S12",
+      "title": "링커리어 — 신입 1분 자기소개 자료",
+      "url": "https://community.linkareer.com/employment_data/6602292",
+      "type": "취업 플랫폼 편집자료",
+      "categories": [
+        "자기소개",
+        "경험부족",
+        "면접대응"
+      ],
+      "evidence": "인턴 없는 신입의 소재 선택, 30초로 줄이는 요청, 암기와 꼬리 질문 등 실제 FAQ 항목을 확인했다.",
+      "limits": "인용 조사 원문·표본 설계는 이번 조사에서 확인하지 않았다. 제시된 비율·합격·고정 글자 수·필수 수치 규칙은 채택하지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S13",
+      "title": "National Careers Service — Common interview questions",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "자기소개",
+        "지원동기",
+        "경험부족",
+        "실패",
+        "강점약점",
+        "회사선택",
+        "입사조건",
+        "문제해결"
+      ],
+      "evidence": "회사 이해·지원 이유·어려움·성취·주도성·실패·강점·약점·역질문 범주를 제시한다.",
+      "limits": "원문 예시는 교육 예시이며 실제 지원자의 성과로 전용하지 않는다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S14",
+      "title": "National Careers Service — STAR method",
+      "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/the-star-method",
+      "type": "영국 공공 취업기관",
+      "categories": [
+        "협업",
+        "갈등",
+        "실패",
+        "문제해결",
+        "자소서",
+        "경험부족"
+      ],
+      "evidence": "상황·과제·행동·결과와 배운 점을 짧고 대화체로 설명하며 후속 질문에 대비한다.",
+      "limits": "모든 질문에 STAR가 적합한 것은 아니다. 지원동기·조건 확인에는 별도 구조를 쓴다.",
+      "verification": "page_opened_and_read",
+      "accessed_at": "2026-10-21",
+      "demand_frequency": "not_measured"
+    },
+    {
+      "id": "S15",
+      "title": "링커리어 — 자소서 단점 소극적 성격",
+      "url": "https://community.linkareer.com/STEM_mentoring/2802611",
+      "type": "커뮤니티 질문",
+      "verification": "page_opened_and_read",
+      "evidence": "소극성/완벽주의를 단점 소재로 선택하는 고민",
+      "limits": "개인 질문 존재 증거; 멘토 답변 효과는 검증하지 않음"
+    },
+    {
+      "id": "S16",
+      "title": "가톨릭상지대학교 진로취업지원센터 우수사례집",
+      "url": "https://nurse.csj.ac.kr/skin/major02/job.pdf",
+      "type": "대학 취업센터",
+      "verification": "pdf_opened_and_relevant_sections_read",
+      "evidence": "PDF 인덱스126~130쪽: 구조화질문·학점/영어/자격 부족·직무와 회사 조사",
+      "limits": "과거 자료; 전형/블라인드 설명은 개별 최신 공고 재확인 필요. 효과 통계 채택 안 함"
+    },
+    {
+      "id": "S17",
+      "title": "신입 면접 희망연봉 실제 고민",
+      "url": "https://community.linkareer.com/mentoring/5694876",
+      "evidence": "희망연봉을 낮게 말한 신입의 질문",
+      "limits": "개인사례; 기업 연봉 내부정책 검증 아님",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S18",
+      "title": "자소서 소제목 FAQ",
+      "url": "https://community.linkareer.com/employment_data/5633636",
+      "evidence": "소제목 필수 여부 FAQ",
+      "limits": "홍보자료; 합격 효과·권장 글자수 채택 안 함",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S19",
+      "title": "AI 자소서 초안 제출 고민",
+      "url": "https://community.linkareer.com/job-materials/5893708",
+      "evidence": "AI 초안 그대로 제출하는 문제 제기",
+      "limits": "AI 감별률·대부분 기업 적발 주장은 배제",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S20",
+      "title": "직무 면접 질문 유형과 대처",
+      "url": "https://community.linkareer.com/employment_data/5838878",
+      "evidence": "서비스개선·동료성과·우선순위·모르는답·모의면접",
+      "limits": "인기도 순위와 조사수치 미검증; 유형 존재만",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S21",
+      "title": "자소서 글자수 FAQ",
+      "url": "https://community.weport.co.kr/best/4526985",
+      "evidence": "글자수 전부 채울지 실제 FAQ",
+      "limits": "강의기관 FAQ;90%규칙과 불이익 단정 채택 안 함",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S22",
+      "title": "자소서 첫문장 FAQ",
+      "url": "https://community.linkareer.com/employment_data/6079993",
+      "evidence": "첫문장 구성과 막막함 FAQ",
+      "limits": "홍보성 효과·5초·통과율 주장 배제",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S23",
+      "title": "마스터 자소서 FAQ",
+      "url": "https://community.linkareer.com/employment_data/5397703",
+      "evidence": "경험 재활용과 기업별 문서 질문",
+      "limits": "키워드자동탈락 등 내부필터 주장 배제",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S24",
+      "title": "인턴 면접 준비 실제 질문",
+      "url": "https://community.linkareer.com/mentor-qna/6544526",
+      "evidence": "실무경험 없는 자기소개·기업조사·역질문",
+      "limits": "개인질문 존재 증거; 멘토답변 보장 아님",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S25",
+      "title": "현대모비스 신입 면접 자기보고 후기",
+      "url": "https://community.weport.co.kr/best/4525678",
+      "evidence": "졸업지연·이전탈락·잘못된답수정 질문",
+      "limits": "2021개인자기보고; 회사 공식질문집 아님",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S26",
+      "title": "인적성 준비 FAQ",
+      "url": "https://community.linkareer.com/employment_data/5639843",
+      "evidence": "인성/적성구분과 준비 FAQ",
+      "limits": "현재 기업별 안내 재확인; 고정 공부시간 채택 안 함",
+      "verification": "page_opened_and_read"
+    },
+    {
+      "id": "S27",
+      "title": "KINX 공식 채용 FAQ",
+      "url": "https://recruit.kinx.net/applicant/question",
+      "verification": "page_opened_and_read",
+      "evidence": "우대조건 미해당 지원 FAQ",
+      "limits": "해당 기업 범위; 다른 기업 필수조건 예외 아님"
+    },
+    {
+      "id": "S28",
+      "title": "링커리어 대기업 질문 유형 목록",
+      "url": "https://community.linkareer.com/employment_data/3222276",
+      "verification": "page_opened_and_read",
+      "evidence": "지방근무 및 다른 직무 배치 질문",
+      "limits": "이용자 후기 편집목록; 기업 공식 질문집 아님"
+    }
+  ],
+  "failed_open_attempts": [
+    "https://community.linkareer.com/mentor-qna/2472556",
+    "https://www.reddit.com/r/jobs/comments/1m4bnqy",
+    "https://www.reddit.com/r/jobs/comments/k1bj94"
+  ]
+}
+

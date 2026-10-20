@@ -1,4 +1,4 @@
-import io,json,zipfile
+import io,json,zipfile,hashlib
 from datetime import datetime,timedelta,timezone
 import httpx,pytest
 from fastapi.testclient import TestClient
@@ -29,6 +29,21 @@ def bundle(tmp_path,cta=True):
         slides[-1]['body']='잡앤킬 팔로우' if cta else '끝'
         dest.writestr('문구.json',json.dumps({'decks':[{'title':'한글 제목','caption':'게시글입니다.','slides':slides}]},ensure_ascii=False))
     return p
+
+
+def test_approval_receipt(tmp_path, path):
+    """Synthetic local test fixture; never a production owner approval."""
+    receipt=tmp_path/'test-only-approval.json'
+    now=datetime.now(timezone.utc)
+    receipt.write_text(json.dumps({'approved':True,'approved_by':'synthetic test fixture',
+        'scope':'studio_upload_and_schedule','content_id':'deck-39',
+        'bundle_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
+        'studio_base_url':'https://studio.example',
+        'approved_at_utc':(now-timedelta(minutes=1)).isoformat(),
+        'expires_at_utc':(now+timedelta(minutes=5)).isoformat()}),encoding='utf-8')
+    return receipt
+
+test_approval_receipt.__test__ = False
 
 
 def test_ingest_retry_and_changed_revision_conflict(monkeypatch):
@@ -137,7 +152,7 @@ def test_submission_unknown_is_not_reposted(tmp_path):
         methods.append(r.method)
         if r.method=='GET':return httpx.Response(404)
         raise httpx.ReadTimeout('response lost',request=r)
-    result=submit('https://studio.example','test-key-abcdefghijklmnopqrstuvwxyz','deck-39',path,httpx.MockTransport(handler))
+    result=submit('https://studio.example','test-key-abcdefghijklmnopqrstuvwxyz','deck-39',path,httpx.MockTransport(handler),approval_path=test_approval_receipt(tmp_path,path))
     assert result['result']=='submission_uncertain' and methods==['GET','POST']
 
 
@@ -146,9 +161,11 @@ def test_submission_retry_reads_receipt_instead(tmp_path):
     def handler(r):
         methods.append(r.method)
         return httpx.Response(200,json={'post':{'ingest_fingerprint':fingerprint,'status':'scheduled','id':1}})
-    result=submit('https://studio.example','test-key-abcdefghijklmnopqrstuvwxyz','deck-39',path,httpx.MockTransport(handler))
+    result=submit('https://studio.example','test-key-abcdefghijklmnopqrstuvwxyz','deck-39',path,httpx.MockTransport(handler),approval_path=test_approval_receipt(tmp_path,path))
     assert result['result']=='already_registered' and methods==['GET']
 
 
 def test_missing_follow_cta_blocks_handoff(tmp_path):
     with pytest.raises(ValueError,match='팔로우'):read_bundle(bundle(tmp_path,False),'deck-39')
+
+

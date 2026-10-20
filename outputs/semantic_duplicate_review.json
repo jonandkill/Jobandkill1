@@ -1,0 +1,3048 @@
+{
+  "topic_snapshot_sha256": "b1ab35d0d63c23429d788d5a84caf0b94f21aedf727f17097e385e6d3bc65e77",
+  "pairs_reviewed": 66,
+  "counts": {
+    "merge_candidate": 8,
+    "maintain_distinct": 58
+  },
+  "scope": "문자유사도0.55이상66쌍만 검토. 나머지11,109쌍 의미중복을 배제하지 못함. 질문150개 완전중복0이 의미중복0을 뜻하지 않음.",
+  "publication_lock_design": "merge_candidate 연결성분마다 semantic_group_id를 부여한다. retained뿐 아니라 reserved/reviewing/approved/scheduled/published 상태에서 유효한 group lease가 있으면 다른행의 동시제작·발행승인을 거부한다. 동일상황+동일행동+동일학습결론이면 신규주제가 아닌 revision/통합안으로 처리한다. 삭제·병합은 자동실행하지 않고 원문id·질문·사용이력을 보존한다. Library version CAS/잠금과 함께 그룹예약을 원자적으로 기록한다.",
+  "items": [
+    {
+      "a": "JK2-004",
+      "b": "JK2-111",
+      "a_question": "자기소개 첫 문장을 어떻게 시작하나요?",
+      "b_question": "자소서 첫 문장은 어떻게 써야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "전달할 특징 하나 정하기"
+        },
+        {
+          "step": 2,
+          "action": "특징을 행동 언어로 바꾸기"
+        },
+        {
+          "step": 3,
+          "action": "바로 증명할 사례 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "입으로 읽고 긴 수식어 덜기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "문항이 묻는 내용 표시하기"
+        },
+        {
+          "step": 2,
+          "action": "답의 핵심 한 문장 쓰기"
+        },
+        {
+          "step": 3,
+          "action": "근거 경험 바로 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "추상적 수식어 삭제하기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "도입 문장의 핵심 주장·근거·수식어 삭제가 겹친다. 말하기/쓰기 차이를 부록으로 통합할 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-000"
+    },
+    {
+      "a": "JK2-002",
+      "b": "JK2-012",
+      "a_question": "자기소개와 지원동기는 어떻게 다르게 말하나요?",
+      "b_question": "직무 지원동기는 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "자기소개는 내 특징으로 시작하기"
+        },
+        {
+          "step": 2,
+          "action": "지원동기는 선택 이유로 시작하기"
+        },
+        {
+          "step": 3,
+          "action": "각 답에 다른 근거 배치하기"
+        },
+        {
+          "step": 4,
+          "action": "두 답의 연결 문장만 남기기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무의 실제 과업 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "흥미를 느낀 장면 떠올리기"
+        },
+        {
+          "step": 3,
+          "action": "직접 해 본 행동 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 역량과 준비 함께 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "자기소개와 동기의 경계 설명과 직무 선택 이유 작성은 산출물이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-012",
+      "b": "JK2-017",
+      "a_question": "직무 지원동기는 어떻게 말하나요?",
+      "b_question": "전공과 다른 직무에 지원한 이유는 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무의 실제 과업 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "흥미를 느낀 장면 떠올리기"
+        },
+        {
+          "step": 3,
+          "action": "직접 해 본 행동 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 역량과 준비 함께 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "변경 계기 한 장면 선택하기"
+        },
+        {
+          "step": 2,
+          "action": "새 직무를 알아본 과정 제시하기"
+        },
+        {
+          "step": 3,
+          "action": "전공에서 이어지는 역량 찾기"
+        },
+        {
+          "step": 4,
+          "action": "직무 준비 결과물 보여 주기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "일반 직무 동기와 전공 전환 설명의 출발 조건·보완 증거가 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-004",
+      "b": "JK2-010",
+      "a_question": "자기소개 첫 문장을 어떻게 시작하나요?",
+      "b_question": "자기소개 마지막 문장은 어떻게 끝내나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "전달할 특징 하나 정하기"
+        },
+        {
+          "step": 2,
+          "action": "특징을 행동 언어로 바꾸기"
+        },
+        {
+          "step": 3,
+          "action": "바로 증명할 사례 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "입으로 읽고 긴 수식어 덜기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "앞서 말한 강점 되짚기"
+        },
+        {
+          "step": 2,
+          "action": "공고 업무 한 가지 연결하기"
+        },
+        {
+          "step": 3,
+          "action": "입사 후 배울 범위 인정하기"
+        },
+        {
+          "step": 4,
+          "action": "실행할 습관으로 끝내기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "첫 문장 주목점과 마지막 문장 직무 적용·마무리의 기능이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-051",
+      "b": "JK2-060",
+      "a_question": "갈등 경험이 없으면 어떻게 답하나요?",
+      "b_question": "내 실수로 갈등이 생겼다면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "갈등을 업무상 차이로 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "실제 의견 불일치 장면 찾기"
+        },
+        {
+          "step": 3,
+          "action": "차이를 확인한 대화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 다툼을 만들지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "잘못한 사실 먼저 밝히기"
+        },
+        {
+          "step": 2,
+          "action": "영향받은 사람과 범위 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "복구 순서 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "재발 방지 행동으로 끝내기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "갈등 사례 탐색과 본인 실수 인정·복구 설명은 다른 문제다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-091",
+      "b": "JK2-094",
+      "a_question": "취업 공백기는 어떻게 설명하나요?",
+      "b_question": "비전공자라는 점을 어떻게 설명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "기간과 상황 사실 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "실제로 한 활동만 적기"
+        },
+        {
+          "step": 3,
+          "action": "현재 준비와 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 학습 이력 만들지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무 선택 계기 제시하기"
+        },
+        {
+          "step": 2,
+          "action": "필요한 기초 지식 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "학습과 결과물 보여 주기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 부분을 좁혀 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "공백 기간 사실 정리와 비전공 전이 역량 입증은 증거가 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-101",
+      "b": "JK2-141",
+      "a_question": "회사를 고르는 기준을 물으면 어떻게 답하나요?",
+      "b_question": "희망 연봉을 물으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 중요 조건 순위 정하기"
+        },
+        {
+          "step": 2,
+          "action": "업무와 환경 기준 나누기"
+        },
+        {
+          "step": 3,
+          "action": "회사 공개 정보와 대조하기"
+        },
+        {
+          "step": 4,
+          "action": "확인 못 한 조건은 질문하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 보상 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "비교할 보상 항목 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "조사 근거와 희망 범위 정리하기"
+        },
+        {
+          "step": 4,
+          "action": "회사 기준과 협의 가능 범위 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "회사 선택 가치와 연봉 조건 산정은 판단 대상이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-010",
+      "b": "JK2-111",
+      "a_question": "자기소개 마지막 문장은 어떻게 끝내나요?",
+      "b_question": "자소서 첫 문장은 어떻게 써야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "앞서 말한 강점 되짚기"
+        },
+        {
+          "step": 2,
+          "action": "공고 업무 한 가지 연결하기"
+        },
+        {
+          "step": 3,
+          "action": "입사 후 배울 범위 인정하기"
+        },
+        {
+          "step": 4,
+          "action": "실행할 습관으로 끝내기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "문항이 묻는 내용 표시하기"
+        },
+        {
+          "step": 2,
+          "action": "답의 핵심 한 문장 쓰기"
+        },
+        {
+          "step": 3,
+          "action": "근거 경험 바로 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "추상적 수식어 삭제하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "말하기 마무리와 서류 문항 첫 답의 기능이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-040",
+      "b": "JK2-069",
+      "a_question": "취미를 면접 경험으로 말해도 되나요?",
+      "b_question": "낮은 성적을 실패 경험으로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "질문이 요구하는 역량 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "취미 속 실제 행동 선택하기"
+        },
+        {
+          "step": 3,
+          "action": "검증 가능한 변화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "연결이 약하면 다른 경험 고르기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "부족했던 과목과 조건 구체화하기"
+        },
+        {
+          "step": 2,
+          "action": "학습 과정의 문제 찾기"
+        },
+        {
+          "step": 3,
+          "action": "공부 방식 변경하기"
+        },
+        {
+          "step": 4,
+          "action": "결과와 남은 한계 밝히기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "취미의 역량 연결과 낮은 성적의 실패 원인·개선은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-047",
+      "b": "JK2-070",
+      "a_question": "남을 도와준 경험은 어떻게 말하나요?",
+      "b_question": "실패 경험의 교훈은 어떻게 말해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "상대가 필요로 한 지원 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 업무 영향 고려하기"
+        },
+        {
+          "step": 3,
+          "action": "도움 범위를 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "상대가 이어서 할 수 있게 전달하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "추상적 교훈 먼저 덜기"
+        },
+        {
+          "step": 2,
+          "action": "다음 상황의 선택 찾기"
+        },
+        {
+          "step": 3,
+          "action": "이전과 달라진 행동 비교하기"
+        },
+        {
+          "step": 4,
+          "action": "현재도 쓰는 기준으로 정리하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "도움 제공 행동과 실패 후 바뀐 행동은 사건·목적이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-059",
+      "b": "JK2-084",
+      "a_question": "갈등을 피하는 성격은 어떻게 설명하나요?",
+      "b_question": "내향적인 성격을 어떻게 설명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "피할 때 생긴 문제 인정하기"
+        },
+        {
+          "step": 2,
+          "action": "필요한 의견을 고르는 기준 정하기"
+        },
+        {
+          "step": 3,
+          "action": "작게 의견을 전달한 사례 말하기"
+        },
+        {
+          "step": 4,
+          "action": "현재 연습 중인 습관 제시하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "성향과 업무 행동 구분하기"
+        },
+        {
+          "step": 2,
+          "action": "어려운 상황 구체화하기"
+        },
+        {
+          "step": 3,
+          "action": "필요한 소통 방법 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "할 수 있는 행동으로 마무리하기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "갈등회피와 내향성 모두 필요한 소통을 구체 행동으로 제시한다. 성향별 두 사례를 한 편으로 묶을 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-010"
+    },
+    {
+      "a": "JK2-085",
+      "b": "JK2-094",
+      "a_question": "꼼꼼하다는 강점을 어떻게 증명하나요?",
+      "b_question": "비전공자라는 점을 어떻게 설명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "오류 가능 항목 특정하기"
+        },
+        {
+          "step": 2,
+          "action": "확인 순서 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "발견하거나 예방한 사실 밝히기"
+        },
+        {
+          "step": 4,
+          "action": "속도와 균형을 잡는 기준 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무 선택 계기 제시하기"
+        },
+        {
+          "step": 2,
+          "action": "필요한 기초 지식 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "학습과 결과물 보여 주기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 부분을 좁혀 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "꼼꼼함의 오류 예방 증거와 비전공 준비 증거가 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-130",
+      "b": "JK2-132",
+      "a_question": "면접관에게 어떤 질문을 해야 하나요?",
+      "b_question": "면접 예상 질문을 몇 개나 준비해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공식 안내에서 답 찾기"
+        },
+        {
+          "step": 2,
+          "action": "입사 후 업무 이해에 필요한 질문 고르기"
+        },
+        {
+          "step": 3,
+          "action": "전제나 비난이 없는 문장 만들기"
+        },
+        {
+          "step": 4,
+          "action": "질문 수를 상황에 맞게 조절하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고와 서류에서 질문 뽑기"
+        },
+        {
+          "step": 2,
+          "action": "역량별 경험 묶기"
+        },
+        {
+          "step": 3,
+          "action": "같은 질문의 다른 표현 연습하기"
+        },
+        {
+          "step": 4,
+          "action": "추가 질문에 근거로 답하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "지원자가 할 역질문과 면접관이 할 예상 질문은 방향이 반대다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-133",
+      "b": "JK2-134",
+      "a_question": "모의면접은 어떻게 피드백받아야 하나요?",
+      "b_question": "면접 복장은 어떻게 정하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "질문에 답했는지 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "사실과 행동이 들리는지 묻기"
+        },
+        {
+          "step": 3,
+          "action": "길이와 이해 어려운 문장 기록하기"
+        },
+        {
+          "step": 4,
+          "action": "한 번에 한 항목 수정하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "초청 안내의 복장 규정 읽기"
+        },
+        {
+          "step": 2,
+          "action": "불명확하면 담당 창구 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "움직임과 장비 사용 점검하기"
+        },
+        {
+          "step": 4,
+          "action": "전날 준비해 당일 변수 줄이기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "모의면접 피드백 수집과 복장 선택은 행동이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-026",
+      "b": "JK2-027",
+      "a_question": "회사 서비스를 개선해 보라는 질문은 어떻게 답하나요?",
+      "b_question": "경쟁사와 비교하라는 질문은 어떻게 준비하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "사용 상황과 이용자 정하기"
+        },
+        {
+          "step": 2,
+          "action": "관찰한 문제 한 개 제시하기"
+        },
+        {
+          "step": 3,
+          "action": "작은 개선안 제안하기"
+        },
+        {
+          "step": 4,
+          "action": "효과를 확인할 지표와 한계 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "비교 대상을 같은 범주로 고르기"
+        },
+        {
+          "step": 2,
+          "action": "공개 확인 가능한 기준 정하기"
+        },
+        {
+          "step": 3,
+          "action": "동일 조건으로 관찰하기"
+        },
+        {
+          "step": 4,
+          "action": "장단점과 조사 한계 함께 적기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "서비스 개선안은 문제·해결 제안, 경쟁사 비교는 공통 기준·차이 분석이다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-044",
+      "b": "JK2-078",
+      "a_question": "의견이 다른 사람과 협업한 경험은 어떻게 말하나요?",
+      "b_question": "반복 업무를 개선한 경험은 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "서로의 주장 정확히 요약하기"
+        },
+        {
+          "step": 2,
+          "action": "공통 목표 찾기"
+        },
+        {
+          "step": 3,
+          "action": "비교 기준 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "기준으로 선택한 과정 설명하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "반복되는 불편 기록하기"
+        },
+        {
+          "step": 2,
+          "action": "오류 위험을 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "작은 변경안 적용하기"
+        },
+        {
+          "step": 4,
+          "action": "변경 전후를 같은 기준으로 살피기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "의견 조율과 반복 업무 절차 개선은 해결 대상이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-011",
+      "b": "JK2-012",
+      "a_question": "회사 지원동기가 막연할 때 어떻게 준비하나요?",
+      "b_question": "직무 지원동기는 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공식 채용 공고 읽기"
+        },
+        {
+          "step": 2,
+          "action": "관심 업무 한 가지 표시하기"
+        },
+        {
+          "step": 3,
+          "action": "내 경험과 연결점 찾기"
+        },
+        {
+          "step": 4,
+          "action": "그 회사에서 확인한 사실로 이유 쓰기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무의 실제 과업 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "흥미를 느낀 장면 떠올리기"
+        },
+        {
+          "step": 3,
+          "action": "직접 해 본 행동 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 역량과 준비 함께 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "회사를 택한 이유는 기업 고유 사실, 직무 동기는 과업 흥미·경험을 쓴다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-024",
+      "b": "JK2-085",
+      "a_question": "직무 역량이 있다는 걸 어떻게 증명하나요?",
+      "b_question": "꼼꼼하다는 강점을 어떻게 증명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고에서 필요한 행동 추출하기"
+        },
+        {
+          "step": 2,
+          "action": "그 행동을 한 경험 고르기"
+        },
+        {
+          "step": 3,
+          "action": "과정과 결과물 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "실무 수준으로 과장하지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "오류 가능 항목 특정하기"
+        },
+        {
+          "step": 2,
+          "action": "확인 순서 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "발견하거나 예방한 사실 밝히기"
+        },
+        {
+          "step": 4,
+          "action": "속도와 균형을 잡는 기준 말하기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "직무역량 입증 일반형과 꼼꼼함 입증 구체형이 동일한 사례 선택·행동·결과 구조다. 일반편에 구체예시를 넣어 통합할 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-017"
+    },
+    {
+      "a": "JK2-047",
+      "b": "JK2-078",
+      "a_question": "남을 도와준 경험은 어떻게 말하나요?",
+      "b_question": "반복 업무를 개선한 경험은 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "상대가 필요로 한 지원 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 업무 영향 고려하기"
+        },
+        {
+          "step": 3,
+          "action": "도움 범위를 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "상대가 이어서 할 수 있게 전달하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "반복되는 불편 기록하기"
+        },
+        {
+          "step": 2,
+          "action": "오류 위험을 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "작은 변경안 적용하기"
+        },
+        {
+          "step": 4,
+          "action": "변경 전후를 같은 기준으로 살피기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "다른 사람의 필요를 돕는 일과 업무 절차를 개선하는 일은 대상·결과가 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-051",
+      "b": "JK2-092",
+      "a_question": "갈등 경험이 없으면 어떻게 답하나요?",
+      "b_question": "학점이 낮은 이유를 물으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "갈등을 업무상 차이로 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "실제 의견 불일치 장면 찾기"
+        },
+        {
+          "step": 3,
+          "action": "차이를 확인한 대화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 다툼을 만들지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "학점 사실 인정하기"
+        },
+        {
+          "step": 2,
+          "action": "설명 가능한 원인 짧게 말하기"
+        },
+        {
+          "step": 3,
+          "action": "이후 바꾼 학습 행동 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "다른 직무 역량 근거 연결하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "갈등 사례 탐색과 낮은 학점 사유 설명은 독자 문제부터 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-066",
+      "b": "JK2-069",
+      "a_question": "탈락 경험을 실패 사례로 말해도 되나요?",
+      "b_question": "낮은 성적을 실패 경험으로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "확인된 결과만 밝히기"
+        },
+        {
+          "step": 2,
+          "action": "내 준비 과정 점검하기"
+        },
+        {
+          "step": 3,
+          "action": "피드백과 추정 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "바꾼 준비 방식 설명하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "부족했던 과목과 조건 구체화하기"
+        },
+        {
+          "step": 2,
+          "action": "학습 과정의 문제 찾기"
+        },
+        {
+          "step": 3,
+          "action": "공부 방식 변경하기"
+        },
+        {
+          "step": 4,
+          "action": "결과와 남은 한계 밝히기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "채용 탈락은 결과 해석·재지원, 성적 실패는 학습 행동 개선으로 분리한다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-092",
+      "b": "JK2-141",
+      "a_question": "학점이 낮은 이유를 물으면 어떻게 답하나요?",
+      "b_question": "희망 연봉을 물으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "학점 사실 인정하기"
+        },
+        {
+          "step": 2,
+          "action": "설명 가능한 원인 짧게 말하기"
+        },
+        {
+          "step": 3,
+          "action": "이후 바꾼 학습 행동 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "다른 직무 역량 근거 연결하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 보상 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "비교할 보상 항목 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "조사 근거와 희망 범위 정리하기"
+        },
+        {
+          "step": 4,
+          "action": "회사 기준과 협의 가능 범위 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "학점 약점 설명과 급여 조건 산정은 사실 확인 대상이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-040",
+      "b": "JK2-083",
+      "a_question": "취미를 면접 경험으로 말해도 되나요?",
+      "b_question": "완벽주의를 약점으로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "질문이 요구하는 역량 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "취미 속 실제 행동 선택하기"
+        },
+        {
+          "step": 3,
+          "action": "검증 가능한 변화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "연결이 약하면 다른 경험 고르기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "완벽주의의 실제 행동 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "일정에 끼친 영향 밝히기"
+        },
+        {
+          "step": 3,
+          "action": "필수와 추가 작업 나누기"
+        },
+        {
+          "step": 4,
+          "action": "멈출 기준을 정한 사례 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "취미 소재 적합성과 완벽주의의 일정 비용·중단 기준은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-051",
+      "b": "JK2-141",
+      "a_question": "갈등 경험이 없으면 어떻게 답하나요?",
+      "b_question": "희망 연봉을 물으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "갈등을 업무상 차이로 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "실제 의견 불일치 장면 찾기"
+        },
+        {
+          "step": 3,
+          "action": "차이를 확인한 대화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 다툼을 만들지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 보상 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "비교할 보상 항목 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "조사 근거와 희망 범위 정리하기"
+        },
+        {
+          "step": 4,
+          "action": "회사 기준과 협의 가능 범위 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "갈등 소재 탐색과 연봉 조건 산정은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-082",
+      "b": "JK2-108",
+      "a_question": "약점을 솔직하게 말해도 되나요?",
+      "b_question": "워라밸을 중요하게 본다고 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 업무상 약점 하나 고르기"
+        },
+        {
+          "step": 2,
+          "action": "영향이 있었던 장면 제시하기"
+        },
+        {
+          "step": 3,
+          "action": "보완하는 방법 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "현재 한계 인정하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "개인에게 중요한 조건 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "직무의 통상 일정 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "맡은 책임을 수행할 방식 말하기"
+        },
+        {
+          "step": 4,
+          "action": "실제 근무 제도는 질문으로 확인하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "약점의 비용·보완 설명과 선호 근무조건 전달은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-092",
+      "b": "JK2-101",
+      "a_question": "학점이 낮은 이유를 물으면 어떻게 답하나요?",
+      "b_question": "회사를 고르는 기준을 물으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "학점 사실 인정하기"
+        },
+        {
+          "step": 2,
+          "action": "설명 가능한 원인 짧게 말하기"
+        },
+        {
+          "step": 3,
+          "action": "이후 바꾼 학습 행동 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "다른 직무 역량 근거 연결하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 중요 조건 순위 정하기"
+        },
+        {
+          "step": 2,
+          "action": "업무와 환경 기준 나누기"
+        },
+        {
+          "step": 3,
+          "action": "회사 공개 정보와 대조하기"
+        },
+        {
+          "step": 4,
+          "action": "확인 못 한 조건은 질문하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "학점 설명과 회사 선택 가치 판단은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-081",
+      "b": "JK2-111",
+      "a_question": "강점은 어떻게 골라야 하나요?",
+      "b_question": "자소서 첫 문장은 어떻게 써야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "다른 상황에서 반복한 행동 모으기"
+        },
+        {
+          "step": 2,
+          "action": "직무에 필요한 강점 고르기"
+        },
+        {
+          "step": 3,
+          "action": "구체적 사례로 입증하기"
+        },
+        {
+          "step": 4,
+          "action": "적용 범위를 과장하지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "문항이 묻는 내용 표시하기"
+        },
+        {
+          "step": 2,
+          "action": "답의 핵심 한 문장 쓰기"
+        },
+        {
+          "step": 3,
+          "action": "근거 경험 바로 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "추상적 수식어 삭제하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "강점을 고르는 기준과 서류 첫 문장 작성은 준비 단계·산출물이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-111",
+      "b": "JK2-134",
+      "a_question": "자소서 첫 문장은 어떻게 써야 하나요?",
+      "b_question": "면접 복장은 어떻게 정하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "문항이 묻는 내용 표시하기"
+        },
+        {
+          "step": 2,
+          "action": "답의 핵심 한 문장 쓰기"
+        },
+        {
+          "step": 3,
+          "action": "근거 경험 바로 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "추상적 수식어 삭제하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "초청 안내의 복장 규정 읽기"
+        },
+        {
+          "step": 2,
+          "action": "불명확하면 담당 창구 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "움직임과 장비 사용 점검하기"
+        },
+        {
+          "step": 4,
+          "action": "전날 준비해 당일 변수 줄이기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "서류 첫 문장과 면접 복장은 다른 작업이다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-051",
+      "b": "JK2-096",
+      "a_question": "갈등 경험이 없으면 어떻게 답하나요?",
+      "b_question": "나이가 다른 신입보다 많으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "갈등을 업무상 차이로 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "실제 의견 불일치 장면 찾기"
+        },
+        {
+          "step": 3,
+          "action": "차이를 확인한 대화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 다툼을 만들지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "나이를 역량으로 단정하지 않기"
+        },
+        {
+          "step": 2,
+          "action": "현재 지원 직무 준비 제시하기"
+        },
+        {
+          "step": 3,
+          "action": "새로운 방식 배우는 태도 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "실제 협업 경험 연결하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "갈등 경험 탐색과 연령에 관한 사실·준비 설명은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-083",
+      "b": "JK2-086",
+      "a_question": "완벽주의를 약점으로 말해도 되나요?",
+      "b_question": "성격의 장단점을 같은 특성으로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "완벽주의의 실제 행동 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "일정에 끼친 영향 밝히기"
+        },
+        {
+          "step": 3,
+          "action": "필수와 추가 작업 나누기"
+        },
+        {
+          "step": 4,
+          "action": "멈출 기준을 정한 사례 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "상황별 다른 영향 구분하기"
+        },
+        {
+          "step": 2,
+          "action": "장점이 드러난 사례 고르기"
+        },
+        {
+          "step": 3,
+          "action": "단점의 실제 비용 인정하기"
+        },
+        {
+          "step": 4,
+          "action": "상황에 따라 조절하는 방법 제시하기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "완벽주의의 장단점 양면과 같은 특성의 장단점 설명이 겹친다. 일반 규칙과 완벽주의 예시를 한 편으로 묶을 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-029"
+    },
+    {
+      "a": "JK2-111",
+      "b": "JK2-116",
+      "a_question": "자소서 첫 문장은 어떻게 써야 하나요?",
+      "b_question": "자소서에 단점을 쓰라는 문항은 어떻게 푸나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "문항이 묻는 내용 표시하기"
+        },
+        {
+          "step": 2,
+          "action": "답의 핵심 한 문장 쓰기"
+        },
+        {
+          "step": 3,
+          "action": "근거 경험 바로 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "추상적 수식어 삭제하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "업무에 영향 준 실제 단점 고르기"
+        },
+        {
+          "step": 2,
+          "action": "영향을 짧게 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "보완 행동을 구체적으로 쓰기"
+        },
+        {
+          "step": 4,
+          "action": "완전히 고쳤다는 단정 피하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "첫 문장 구성과 약점 문항의 사실·보완 내용 선택은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-141",
+      "b": "JK2-143",
+      "a_question": "희망 연봉을 물으면 어떻게 답하나요?",
+      "b_question": "지방 근무가 가능한지 물으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 보상 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "비교할 보상 항목 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "조사 근거와 희망 범위 정리하기"
+        },
+        {
+          "step": 4,
+          "action": "회사 기준과 협의 가능 범위 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 근무지 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "이동과 주거 조건 검토하기"
+        },
+        {
+          "step": 3,
+          "action": "가능 여부와 제약 솔직히 말하기"
+        },
+        {
+          "step": 4,
+          "action": "미정 항목은 확인 후 답하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "급여 범위와 근무 지역 가능 범위는 별도 조건이다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-081",
+      "b": "JK2-134",
+      "a_question": "강점은 어떻게 골라야 하나요?",
+      "b_question": "면접 복장은 어떻게 정하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "다른 상황에서 반복한 행동 모으기"
+        },
+        {
+          "step": 2,
+          "action": "직무에 필요한 강점 고르기"
+        },
+        {
+          "step": 3,
+          "action": "구체적 사례로 입증하기"
+        },
+        {
+          "step": 4,
+          "action": "적용 범위를 과장하지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "초청 안내의 복장 규정 읽기"
+        },
+        {
+          "step": 2,
+          "action": "불명확하면 담당 창구 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "움직임과 장비 사용 점검하기"
+        },
+        {
+          "step": 4,
+          "action": "전날 준비해 당일 변수 줄이기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "강점 선정과 복장은 다른 과제다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-012",
+      "b": "JK2-024",
+      "a_question": "직무 지원동기는 어떻게 말하나요?",
+      "b_question": "직무 역량이 있다는 걸 어떻게 증명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무의 실제 과업 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "흥미를 느낀 장면 떠올리기"
+        },
+        {
+          "step": 3,
+          "action": "직접 해 본 행동 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 역량과 준비 함께 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고에서 필요한 행동 추출하기"
+        },
+        {
+          "step": 2,
+          "action": "그 행동을 한 경험 고르기"
+        },
+        {
+          "step": 3,
+          "action": "과정과 결과물 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "실무 수준으로 과장하지 않기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "직무를 택한 계기와 역량을 입증할 행동·결과는 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-040",
+      "b": "JK2-066",
+      "a_question": "취미를 면접 경험으로 말해도 되나요?",
+      "b_question": "탈락 경험을 실패 사례로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "질문이 요구하는 역량 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "취미 속 실제 행동 선택하기"
+        },
+        {
+          "step": 3,
+          "action": "검증 가능한 변화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "연결이 약하면 다른 경험 고르기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "확인된 결과만 밝히기"
+        },
+        {
+          "step": 2,
+          "action": "내 준비 과정 점검하기"
+        },
+        {
+          "step": 3,
+          "action": "피드백과 추정 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "바꾼 준비 방식 설명하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "취미 소재는 흥미의 직무 관련성, 탈락 소재는 원인·다음 행동이 핵심이다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-041",
+      "b": "JK2-150",
+      "a_question": "협업 경험에서는 무엇을 강조해야 하나요?",
+      "b_question": "입사 전 준비는 무엇을 해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공동 목표 제시하기"
+        },
+        {
+          "step": 2,
+          "action": "역할과 정보 공유 방식 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "조율한 행동 한 장면 고르기"
+        },
+        {
+          "step": 4,
+          "action": "팀 결과와 내 기여 구분하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공식 입사 안내 읽기"
+        },
+        {
+          "step": 2,
+          "action": "서류와 일정 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "필요 도구의 기초 익히기"
+        },
+        {
+          "step": 4,
+          "action": "미확인 업무는 질문 목록으로 남기기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "과거 협업 행동을 말하는 일과 입사 전 준비 실행은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-058",
+      "b": "JK2-066",
+      "a_question": "팀에서 소외된 경험을 말해도 되나요?",
+      "b_question": "탈락 경험을 실패 사례로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "정보가 빠진 구체적 장면 고르기"
+        },
+        {
+          "step": 2,
+          "action": "필요한 정보와 역할 요청하기"
+        },
+        {
+          "step": 3,
+          "action": "공유 방식 제안하기"
+        },
+        {
+          "step": 4,
+          "action": "바뀐 점과 한계 밝히기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "확인된 결과만 밝히기"
+        },
+        {
+          "step": 2,
+          "action": "내 준비 과정 점검하기"
+        },
+        {
+          "step": 3,
+          "action": "피드백과 추정 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "바꾼 준비 방식 설명하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "팀 내 소외는 관계·참여 행동, 채용 탈락은 전형 회고·개선이다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-059",
+      "b": "JK2-091",
+      "a_question": "갈등을 피하는 성격은 어떻게 설명하나요?",
+      "b_question": "취업 공백기는 어떻게 설명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "피할 때 생긴 문제 인정하기"
+        },
+        {
+          "step": 2,
+          "action": "필요한 의견을 고르는 기준 정하기"
+        },
+        {
+          "step": 3,
+          "action": "작게 의견을 전달한 사례 말하기"
+        },
+        {
+          "step": 4,
+          "action": "현재 연습 중인 습관 제시하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "기간과 상황 사실 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "실제로 한 활동만 적기"
+        },
+        {
+          "step": 3,
+          "action": "현재 준비와 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 학습 이력 만들지 않기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "성향 보완과 공백 기간 설명은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-084",
+      "b": "JK2-094",
+      "a_question": "내향적인 성격을 어떻게 설명하나요?",
+      "b_question": "비전공자라는 점을 어떻게 설명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "성향과 업무 행동 구분하기"
+        },
+        {
+          "step": 2,
+          "action": "어려운 상황 구체화하기"
+        },
+        {
+          "step": 3,
+          "action": "필요한 소통 방법 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "할 수 있는 행동으로 마무리하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무 선택 계기 제시하기"
+        },
+        {
+          "step": 2,
+          "action": "필요한 기초 지식 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "학습과 결과물 보여 주기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 부분을 좁혀 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "내향성의 소통 행동과 전공 전환 준비는 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-093",
+      "b": "JK2-144",
+      "a_question": "어학 점수가 없으면 뭐라고 말하나요?",
+      "b_question": "야근 가능 여부를 물으면 뭐라고 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 필수 점수 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "현재 가능한 언어 활동 밝히기"
+        },
+        {
+          "step": 3,
+          "action": "어려운 업무 범위 인정하기"
+        },
+        {
+          "step": 4,
+          "action": "필요 수준에 맞춘 준비 계획 제시하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "질문이 묻는 상황 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "예외적 업무와 상시 일정을 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "내 가능한 범위 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "근무 제도와 운영 방식 질문하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "어학 미보유 사실 확인과 야근 가능 범위 전달은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-124",
+      "b": "JK2-141",
+      "a_question": "압박 질문을 받으면 어떻게 대응하나요?",
+      "b_question": "희망 연봉을 물으면 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "감정과 질문 내용 분리하기"
+        },
+        {
+          "step": 2,
+          "action": "지적한 약점의 사실 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "근거와 보완 행동 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "모욕적 상황은 대응 범위 판단하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 보상 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "비교할 보상 항목 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "조사 근거와 희망 범위 정리하기"
+        },
+        {
+          "step": 4,
+          "action": "회사 기준과 협의 가능 범위 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "압박 질문 해석·대응과 급여 범위 조사·답변은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-053",
+      "b": "JK2-057",
+      "a_question": "상사와 의견이 다르면 어떻게 하겠냐고 하면요?",
+      "b_question": "부당한 지시를 받으면 어떻게 하겠냐고 하면요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "지시 목적과 제약 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "우려의 근거 정리하기"
+        },
+        {
+          "step": 3,
+          "action": "대안과 함께 의견 전하기"
+        },
+        {
+          "step": 4,
+          "action": "결정 뒤 실행하되 중대 문제는 절차 확인하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "사실과 요청 내용을 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "규정과 절차 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "우려와 대안을 차분히 전달하기"
+        },
+        {
+          "step": 4,
+          "action": "필요한 공식 상담 경로 활용하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "의견 차이는 업무대안 조율, 부당 지시는 사실·규정 확인과 공식 경로가 필요하다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-012",
+      "b": "JK2-091",
+      "a_question": "직무 지원동기는 어떻게 말하나요?",
+      "b_question": "취업 공백기는 어떻게 설명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무의 실제 과업 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "흥미를 느낀 장면 떠올리기"
+        },
+        {
+          "step": 3,
+          "action": "직접 해 본 행동 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "부족한 역량과 준비 함께 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "기간과 상황 사실 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "실제로 한 활동만 적기"
+        },
+        {
+          "step": 3,
+          "action": "현재 준비와 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 학습 이력 만들지 않기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "직무 흥미·행동 계기와 공백의 시간·준비 기록은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-026",
+      "b": "JK2-146",
+      "a_question": "회사 서비스를 개선해 보라는 질문은 어떻게 답하나요?",
+      "b_question": "다른 회사 전형을 묻는 질문에는 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "사용 상황과 이용자 정하기"
+        },
+        {
+          "step": 2,
+          "action": "관찰한 문제 한 개 제시하기"
+        },
+        {
+          "step": 3,
+          "action": "작은 개선안 제안하기"
+        },
+        {
+          "step": 4,
+          "action": "효과를 확인할 지표와 한계 말하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "현재 진행 상태 사실 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "공개할 범위 정하기"
+        },
+        {
+          "step": 3,
+          "action": "지원 직무의 공통 기준 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "합격이나 제안을 꾸며내지 않기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "서비스 개선안 제시와 타사 지원 현황 전달은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-027",
+      "b": "JK2-136",
+      "a_question": "경쟁사와 비교하라는 질문은 어떻게 준비하나요?",
+      "b_question": "인성검사는 어떻게 준비해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "비교 대상을 같은 범주로 고르기"
+        },
+        {
+          "step": 2,
+          "action": "공개 확인 가능한 기준 정하기"
+        },
+        {
+          "step": 3,
+          "action": "동일 조건으로 관찰하기"
+        },
+        {
+          "step": 4,
+          "action": "장단점과 조사 한계 함께 적기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "검사 안내와 시간 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "응답 기준을 이해하기"
+        },
+        {
+          "step": 3,
+          "action": "실제 평소 행동으로 답하기"
+        },
+        {
+          "step": 4,
+          "action": "도구별 세부 방식은 공식 안내 따르기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "경쟁사 비교 기준과 인성검사 안내 확인은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-041",
+      "b": "JK2-105",
+      "a_question": "협업 경험에서는 무엇을 강조해야 하나요?",
+      "b_question": "스타트업 지원 전에 무엇을 확인해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공동 목표 제시하기"
+        },
+        {
+          "step": 2,
+          "action": "역할과 정보 공유 방식 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "조율한 행동 한 장면 고르기"
+        },
+        {
+          "step": 4,
+          "action": "팀 결과와 내 기여 구분하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 역할 범위 읽기"
+        },
+        {
+          "step": 2,
+          "action": "조직과 서비스 공개 정보 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "업무 우선순위와 교육 질문 준비하기"
+        },
+        {
+          "step": 4,
+          "action": "불확실성을 감당할 조건 정하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "협업 역할 설명과 스타트업 회사 검증은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-047",
+      "b": "JK2-050",
+      "a_question": "남을 도와준 경험은 어떻게 말하나요?",
+      "b_question": "협업에서 피드백을 받은 경험은 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "상대가 필요로 한 지원 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 업무 영향 고려하기"
+        },
+        {
+          "step": 3,
+          "action": "도움 범위를 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "상대가 이어서 할 수 있게 전달하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "받은 지적을 구체적으로 밝히기"
+        },
+        {
+          "step": 2,
+          "action": "이해한 의미 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "수정한 부분 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "다음 작업에 적용한 습관 말하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "도움 제공과 피드백 수용은 행동 주체·방향이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-052",
+      "b": "JK2-056",
+      "a_question": "갈등 경험에서 상대의 잘못을 말해도 되나요?",
+      "b_question": "친구와의 갈등을 면접에서 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "관찰한 사실과 해석 나누기"
+        },
+        {
+          "step": 2,
+          "action": "내 행동의 영향도 돌아보기"
+        },
+        {
+          "step": 3,
+          "action": "해결을 위한 대화 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "상대 인격을 판단하는 표현 지우기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "질문이 업무 협업을 묻는지 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "사생활 노출이 적은 장면 선택하기"
+        },
+        {
+          "step": 3,
+          "action": "조율 방식에 집중하기"
+        },
+        {
+          "step": 4,
+          "action": "업무 사례가 있으면 우선 비교하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "상대 비난을 피하는 서술 원칙과 친구 소재의 직무 관련성 판단은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-054",
+      "b": "JK2-078",
+      "a_question": "고객이 화를 냈던 경험은 어떻게 답하나요?",
+      "b_question": "반복 업무를 개선한 경험은 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "고객 요청을 다시 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 권한과 정책 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "가능한 해결책 안내하기"
+        },
+        {
+          "step": 4,
+          "action": "권한 밖 문제는 담당자에게 인계하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "반복되는 불편 기록하기"
+        },
+        {
+          "step": 2,
+          "action": "오류 위험을 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "작은 변경안 적용하기"
+        },
+        {
+          "step": 4,
+          "action": "변경 전후를 같은 기준으로 살피기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "고객 감정 대응은 소통·조건 합의, 반복 업무는 절차 개선이다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-061",
+      "b": "JK2-070",
+      "a_question": "실패 경험은 어떤 크기의 일을 골라야 하나요?",
+      "b_question": "실패 경험의 교훈은 어떻게 말해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 목표가 있던 경험 찾기"
+        },
+        {
+          "step": 2,
+          "action": "목표와 결과의 차이 밝히기"
+        },
+        {
+          "step": 3,
+          "action": "내 선택의 원인 분석하기"
+        },
+        {
+          "step": 4,
+          "action": "이후 바꾼 행동 확인하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "추상적 교훈 먼저 덜기"
+        },
+        {
+          "step": 2,
+          "action": "다음 상황의 선택 찾기"
+        },
+        {
+          "step": 3,
+          "action": "이전과 달라진 행동 비교하기"
+        },
+        {
+          "step": 4,
+          "action": "현재도 쓰는 기준으로 정리하기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "실패 규모 선택과 교훈 구체화 모두 목표차이·바뀐 행동 검증으로 수렴한다. 소재 선택과 마무리를 한 편에서 다룰 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-049"
+    },
+    {
+      "a": "JK2-070",
+      "b": "JK2-078",
+      "a_question": "실패 경험의 교훈은 어떻게 말해야 하나요?",
+      "b_question": "반복 업무를 개선한 경험은 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "추상적 교훈 먼저 덜기"
+        },
+        {
+          "step": 2,
+          "action": "다음 상황의 선택 찾기"
+        },
+        {
+          "step": 3,
+          "action": "이전과 달라진 행동 비교하기"
+        },
+        {
+          "step": 4,
+          "action": "현재도 쓰는 기준으로 정리하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "반복되는 불편 기록하기"
+        },
+        {
+          "step": 2,
+          "action": "오류 위험을 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "작은 변경안 적용하기"
+        },
+        {
+          "step": 4,
+          "action": "변경 전후를 같은 기준으로 살피기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "실패 뒤 바뀐 행동과 평상시 반복 업무 개선은 시작 조건이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-081",
+      "b": "JK2-085",
+      "a_question": "강점은 어떻게 골라야 하나요?",
+      "b_question": "꼼꼼하다는 강점을 어떻게 증명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "다른 상황에서 반복한 행동 모으기"
+        },
+        {
+          "step": 2,
+          "action": "직무에 필요한 강점 고르기"
+        },
+        {
+          "step": 3,
+          "action": "구체적 사례로 입증하기"
+        },
+        {
+          "step": 4,
+          "action": "적용 범위를 과장하지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "오류 가능 항목 특정하기"
+        },
+        {
+          "step": 2,
+          "action": "확인 순서 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "발견하거나 예방한 사실 밝히기"
+        },
+        {
+          "step": 4,
+          "action": "속도와 균형을 잡는 기준 말하기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "강점 선정과 꼼꼼함 구체 예시가 상위/하위 관계다. 일반편의 사례로 통합할 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-051"
+    },
+    {
+      "a": "JK2-082",
+      "b": "JK2-083",
+      "a_question": "약점을 솔직하게 말해도 되나요?",
+      "b_question": "완벽주의를 약점으로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 업무상 약점 하나 고르기"
+        },
+        {
+          "step": 2,
+          "action": "영향이 있었던 장면 제시하기"
+        },
+        {
+          "step": 3,
+          "action": "보완하는 방법 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "현재 한계 인정하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "완벽주의의 실제 행동 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "일정에 끼친 영향 밝히기"
+        },
+        {
+          "step": 3,
+          "action": "필수와 추가 작업 나누기"
+        },
+        {
+          "step": 4,
+          "action": "멈출 기준을 정한 사례 말하기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "약점 일반형과 완벽주의 예시가 영향·보완 행동 설명으로 겹친다. 약점편 사례로 통합할 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-052"
+    },
+    {
+      "a": "JK2-134",
+      "b": "JK2-142",
+      "a_question": "면접 복장은 어떻게 정하나요?",
+      "b_question": "입사 가능일은 어떻게 정해서 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "초청 안내의 복장 규정 읽기"
+        },
+        {
+          "step": 2,
+          "action": "불명확하면 담당 창구 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "움직임과 장비 사용 점검하기"
+        },
+        {
+          "step": 4,
+          "action": "전날 준비해 당일 변수 줄이기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "졸업과 개인 일정 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "기존 약속의 마감 정리하기"
+        },
+        {
+          "step": 3,
+          "action": "가능한 날짜 범위 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "변경 필요 시 사전 협의하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "복장 선택과 입사 가능일은 판단 정보가 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-047",
+      "b": "JK2-054",
+      "a_question": "남을 도와준 경험은 어떻게 말하나요?",
+      "b_question": "고객이 화를 냈던 경험은 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "상대가 필요로 한 지원 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 업무 영향 고려하기"
+        },
+        {
+          "step": 3,
+          "action": "도움 범위를 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "상대가 이어서 할 수 있게 전달하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "고객 요청을 다시 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 권한과 정책 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "가능한 해결책 안내하기"
+        },
+        {
+          "step": 4,
+          "action": "권한 밖 문제는 담당자에게 인계하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "도움 제공과 화난 고객 응대는 상대 필요·제약이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-051",
+      "b": "JK2-054",
+      "a_question": "갈등 경험이 없으면 어떻게 답하나요?",
+      "b_question": "고객이 화를 냈던 경험은 어떻게 답하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "갈등을 업무상 차이로 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "실제 의견 불일치 장면 찾기"
+        },
+        {
+          "step": 3,
+          "action": "차이를 확인한 대화 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 다툼을 만들지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "고객 요청을 다시 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 권한과 정책 구분하기"
+        },
+        {
+          "step": 3,
+          "action": "가능한 해결책 안내하기"
+        },
+        {
+          "step": 4,
+          "action": "권한 밖 문제는 담당자에게 인계하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "갈등 소재가 없다는 고민과 고객 대응 사례의 서술은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-105",
+      "b": "JK2-150",
+      "a_question": "스타트업 지원 전에 무엇을 확인해야 하나요?",
+      "b_question": "입사 전 준비는 무엇을 해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 역할 범위 읽기"
+        },
+        {
+          "step": 2,
+          "action": "조직과 서비스 공개 정보 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "업무 우선순위와 교육 질문 준비하기"
+        },
+        {
+          "step": 4,
+          "action": "불확실성을 감당할 조건 정하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공식 입사 안내 읽기"
+        },
+        {
+          "step": 2,
+          "action": "서류와 일정 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "필요 도구의 기초 익히기"
+        },
+        {
+          "step": 4,
+          "action": "미확인 업무는 질문 목록으로 남기기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "지원 전 회사 확인과 입사 확정 후 준비는 시점·권한·산출물이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-001",
+      "b": "JK2-003",
+      "a_question": "1분 자기소개에는 무엇을 넣어야 하나요?",
+      "b_question": "자기소개에서 학교와 전공을 꼭 말해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "지원 직무 한 가지 정하기"
+        },
+        {
+          "step": 2,
+          "action": "직무와 닿는 경험 하나 고르기"
+        },
+        {
+          "step": 3,
+          "action": "내 행동과 배운 점 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "지원 직무에서 쓸 방법으로 마무리하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 블라인드 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "학교 정보의 직무 관련성 판단하기"
+        },
+        {
+          "step": 3,
+          "action": "학교명 대신 배운 내용 선택하기"
+        },
+        {
+          "step": 4,
+          "action": "역량을 보여 주는 행동 붙이기"
+        }
+      ],
+      "disposition": "merge_candidate",
+      "reason": "자기소개 구성 일반편의 공고 확인 단계에 학교·전공 언급 조건을 넣을 수 있다. 정보설계상 통합 후보다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": "SEM-057"
+    },
+    {
+      "a": "JK2-002",
+      "b": "JK2-004",
+      "a_question": "자기소개와 지원동기는 어떻게 다르게 말하나요?",
+      "b_question": "자기소개 첫 문장을 어떻게 시작하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "자기소개는 내 특징으로 시작하기"
+        },
+        {
+          "step": 2,
+          "action": "지원동기는 선택 이유로 시작하기"
+        },
+        {
+          "step": 3,
+          "action": "각 답에 다른 근거 배치하기"
+        },
+        {
+          "step": 4,
+          "action": "두 답의 연결 문장만 남기기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "전달할 특징 하나 정하기"
+        },
+        {
+          "step": 2,
+          "action": "특징을 행동 언어로 바꾸기"
+        },
+        {
+          "step": 3,
+          "action": "바로 증명할 사례 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "입으로 읽고 긴 수식어 덜기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "문장 기능 구분과 첫 문장 실제 작성은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-031",
+      "b": "JK2-041",
+      "a_question": "인턴 경험이 없으면 면접에서 무엇을 말하나요?",
+      "b_question": "협업 경험에서는 무엇을 강조해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "직무와 닿는 행동 찾기"
+        },
+        {
+          "step": 2,
+          "action": "수업이나 아르바이트에서 사례 고르기"
+        },
+        {
+          "step": 3,
+          "action": "내 역할과 범위 밝히기"
+        },
+        {
+          "step": 4,
+          "action": "업무에 옮길 습관 설명하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공동 목표 제시하기"
+        },
+        {
+          "step": 2,
+          "action": "역할과 정보 공유 방식 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "조율한 행동 한 장면 고르기"
+        },
+        {
+          "step": 4,
+          "action": "팀 결과와 내 기여 구분하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "경험 부족의 대체 소재 탐색과 협업의 본인 기여 표현은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-044",
+      "b": "JK2-047",
+      "a_question": "의견이 다른 사람과 협업한 경험은 어떻게 말하나요?",
+      "b_question": "남을 도와준 경험은 어떻게 말하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "서로의 주장 정확히 요약하기"
+        },
+        {
+          "step": 2,
+          "action": "공통 목표 찾기"
+        },
+        {
+          "step": 3,
+          "action": "비교 기준 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "기준으로 선택한 과정 설명하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "상대가 필요로 한 지원 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "내 업무 영향 고려하기"
+        },
+        {
+          "step": 3,
+          "action": "도움 범위를 합의하기"
+        },
+        {
+          "step": 4,
+          "action": "상대가 이어서 할 수 있게 전달하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "의견 차이 조율과 일방 도움 제공은 상호 협의 여부가 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-069",
+      "b": "JK2-086",
+      "a_question": "낮은 성적을 실패 경험으로 말해도 되나요?",
+      "b_question": "성격의 장단점을 같은 특성으로 말해도 되나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "부족했던 과목과 조건 구체화하기"
+        },
+        {
+          "step": 2,
+          "action": "학습 과정의 문제 찾기"
+        },
+        {
+          "step": 3,
+          "action": "공부 방식 변경하기"
+        },
+        {
+          "step": 4,
+          "action": "결과와 남은 한계 밝히기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "상황별 다른 영향 구분하기"
+        },
+        {
+          "step": 2,
+          "action": "장점이 드러난 사례 고르기"
+        },
+        {
+          "step": 3,
+          "action": "단점의 실제 비용 인정하기"
+        },
+        {
+          "step": 4,
+          "action": "상황에 따라 조절하는 방법 제시하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "실패 소재 선택과 성격 양면 설명은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-070",
+      "b": "JK2-081",
+      "a_question": "실패 경험의 교훈은 어떻게 말해야 하나요?",
+      "b_question": "강점은 어떻게 골라야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "추상적 교훈 먼저 덜기"
+        },
+        {
+          "step": 2,
+          "action": "다음 상황의 선택 찾기"
+        },
+        {
+          "step": 3,
+          "action": "이전과 달라진 행동 비교하기"
+        },
+        {
+          "step": 4,
+          "action": "현재도 쓰는 기준으로 정리하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "다른 상황에서 반복한 행동 모으기"
+        },
+        {
+          "step": 2,
+          "action": "직무에 필요한 강점 고르기"
+        },
+        {
+          "step": 3,
+          "action": "구체적 사례로 입증하기"
+        },
+        {
+          "step": 4,
+          "action": "적용 범위를 과장하지 않기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "실패 교훈과 강점 선정은 사용 증거·결론이 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-081",
+      "b": "JK2-133",
+      "a_question": "강점은 어떻게 골라야 하나요?",
+      "b_question": "모의면접은 어떻게 피드백받아야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "다른 상황에서 반복한 행동 모으기"
+        },
+        {
+          "step": 2,
+          "action": "직무에 필요한 강점 고르기"
+        },
+        {
+          "step": 3,
+          "action": "구체적 사례로 입증하기"
+        },
+        {
+          "step": 4,
+          "action": "적용 범위를 과장하지 않기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "질문에 답했는지 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "사실과 행동이 들리는지 묻기"
+        },
+        {
+          "step": 3,
+          "action": "길이와 이해 어려운 문장 기록하기"
+        },
+        {
+          "step": 4,
+          "action": "한 번에 한 항목 수정하기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "강점 선택과 모의면접 피드백은 자기분석과 외부 관찰 절차가 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-084",
+      "b": "JK2-091",
+      "a_question": "내향적인 성격을 어떻게 설명하나요?",
+      "b_question": "취업 공백기는 어떻게 설명하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "성향과 업무 행동 구분하기"
+        },
+        {
+          "step": 2,
+          "action": "어려운 상황 구체화하기"
+        },
+        {
+          "step": 3,
+          "action": "필요한 소통 방법 제시하기"
+        },
+        {
+          "step": 4,
+          "action": "할 수 있는 행동으로 마무리하기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "기간과 상황 사실 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "실제로 한 활동만 적기"
+        },
+        {
+          "step": 3,
+          "action": "현재 준비와 연결하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 학습 이력 만들지 않기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "내향성 행동 설명과 공백의 기간·활동 설명은 다르다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    },
+    {
+      "a": "JK2-136",
+      "b": "JK2-150",
+      "a_question": "인성검사는 어떻게 준비해야 하나요?",
+      "b_question": "입사 전 준비는 무엇을 해야 하나요?",
+      "a_answer_structure": [
+        {
+          "step": 1,
+          "action": "검사 안내와 시간 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "응답 기준을 이해하기"
+        },
+        {
+          "step": 3,
+          "action": "실제 평소 행동으로 답하기"
+        },
+        {
+          "step": 4,
+          "action": "도구별 세부 방식은 공식 안내 따르기"
+        }
+      ],
+      "b_answer_structure": [
+        {
+          "step": 1,
+          "action": "공식 입사 안내 읽기"
+        },
+        {
+          "step": 2,
+          "action": "서류와 일정 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "필요 도구의 기초 익히기"
+        },
+        {
+          "step": 4,
+          "action": "미확인 업무는 질문 목록으로 남기기"
+        }
+      ],
+      "disposition": "maintain_distinct",
+      "reason": "인성검사는 전형 안내·솔직한 응답 준비, 입사 전 준비는 업무·생활 확인이다.",
+      "review_method": "AI가 질문 목적과4단계 행동구조를 수동대조; 사람검수/독립32명검수 아님",
+      "publication_lock_group": null
+    }
+  ]
+}

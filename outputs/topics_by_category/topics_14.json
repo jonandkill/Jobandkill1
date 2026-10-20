@@ -1,0 +1,2238 @@
+{
+  "schema_version": "2.0-candidate",
+  "category": "전형준비",
+  "status": "150개 연구·편집 후보; 기존 원본150 미확인; 실제 수요 빈도 미측정; 게시 승인 없음",
+  "items": [
+    {
+      "id": "JK2-131",
+      "category": "전형준비",
+      "original_question": "면접 준비는 어디서부터 시작하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "면접 준비 첫날, 예상 질문 목록보다 먼저 볼 것",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'면접 준비 첫날, 예상 질문 목록보다 먼저 볼 것'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접 준비 첫날, 예상 질문 목록보다 먼저 볼 것'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 준비는 어디서부터 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "예상 질문만 모으다 제출 서류를 놓치고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'예상 질문만 모으다 제출 서류를 놓치고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'예상 질문만 모으다 제출 서류를 놓치고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '면접 준비는 어디서부터 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "면접 준비의 첫 자료는 내가 낸 지원서입니다",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'면접 준비의 첫 자료는 내가 낸 지원서입니다'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접 준비의 첫 자료는 내가 낸 지원서입니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 준비는 어디서부터 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "공고 과업과 내 경험을 한 줄씩 연결하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'공고 과업과 내 경험을 한 줄씩 연결하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'공고 과업과 내 경험을 한 줄씩 연결하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 준비는 어디서부터 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "답변을 외우기 전에 날짜와 역할부터 확인하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'답변을 외우기 전에 날짜와 역할부터 확인하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'답변을 외우기 전에 날짜와 역할부터 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 준비는 어디서부터 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "답변을 외우기 전에 날짜와 역할부터 확인하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "공고와 제출 서류 모으기"
+        },
+        {
+          "step": 2,
+          "action": "핵심 과업과 경험 연결하기"
+        },
+        {
+          "step": 3,
+          "action": "사실 확인이 필요한 항목 점검하기"
+        },
+        {
+          "step": 4,
+          "action": "질문별 짧은 답을 말로 연습하기"
+        }
+      ],
+      "answer_example": "가상 연습: 먼저 제가 제출한 날짜와 역할을 확인하고 직무와 연결되는 경험 세 개를 골라 말해 보겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "답변을 외우기 전에 날짜와 역할부터 확인하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 면접 준비는 어디서부터 시작하나요? 약한 연습 답: ‘예상 질문부터 최대한 많이 모으겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "제출한 사실과 공고 과업을 확인하지 않으면 답변 근거가 어긋날 수 있습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 공고와 제출 서류 모으기 → 핵심 과업과 경험 연결하기 → 사실 확인이 필요한 항목 점검하기 → 질문별 짧은 답을 말로 연습하기. 시작 문장도 ‘예상 질문부터 최대한 많이 모으겠습니다.’에서 ‘먼저 제가 제출한 날짜와 역할을 확인하고 직무와 연결되는 경험 세 개를 골라 말해 보겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 먼저 제가 제출한 날짜와 역할을 확인하고 직무와 연결되는 경험 세 개를 골라 말해 보겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 제출 서류의 역할 ___을 공고 과업 ___과 연결합니다. 서류를 소리 내어 설명하세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11",
+        "S24"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        },
+        {
+          "id": "S24",
+          "url": "https://community.linkareer.com/mentor-qna/6544526"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 5,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-131",
+        "question": "면접 준비는 어디서부터 시작하나요?",
+        "priority": 1,
+        "evidence_level": "direct_question",
+        "source_id": "S24",
+        "url": "https://community.linkareer.com/mentor-qna/6544526",
+        "paraphrase": "처음 면접 준비 실제 질문",
+        "scope": "개인질문 존재 증거; 멘토답변 보장 아님; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-132",
+      "category": "전형준비",
+      "original_question": "면접 예상 질문을 몇 개나 준비해야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "예상 질문 수를 늘리기 전에 답의 재료를 정리하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'예상 질문 수를 늘리기 전에 답의 재료를 정리하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'예상 질문 수를 늘리기 전에 답의 재료를 정리하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 예상 질문을 몇 개나 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "예상 질문을 백 개 외우면 새로운 질문은 어떡하나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'예상 질문을 백 개 외우면 새로운 질문은 어떡하나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'예상 질문을 백 개 외우면 새로운 질문은 어떡하나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '면접 예상 질문을 몇 개나 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "질문 수보다 재사용할 경험의 장면을 정리하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'질문 수보다 재사용할 경험의 장면을 정리하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'질문 수보다 재사용할 경험의 장면을 정리하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '면접 예상 질문을 몇 개나 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "표현이 바뀌어도 답할 수 있는 준비를 하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'표현이 바뀌어도 답할 수 있는 준비를 하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'표현이 바뀌어도 답할 수 있는 준비를 하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '면접 예상 질문을 몇 개나 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "한 질문의 꼬리 질문에 근거로 답해 보는 연습",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'한 질문의 꼬리 질문에 근거로 답해 보는 연습'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'한 질문의 꼬리 질문에 근거로 답해 보는 연습'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 예상 질문을 몇 개나 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "예상 질문 수를 늘리기 전에 답의 재료를 정리하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "공고와 서류에서 질문 뽑기"
+        },
+        {
+          "step": 2,
+          "action": "역량별 경험 묶기"
+        },
+        {
+          "step": 3,
+          "action": "같은 질문의 다른 표현 연습하기"
+        },
+        {
+          "step": 4,
+          "action": "추가 질문에 근거로 답하기"
+        }
+      ],
+      "answer_example": "가상 연습: 질문을 무작정 외우기보다 협업과 실패, 직무 관심 경험을 정리하고 표현이 달라져도 답해 보겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "예상 질문 수를 늘리기 전에 답의 재료를 정리하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 면접 예상 질문을 몇 개나 준비해야 하나요? 약한 연습 답: ‘예상 질문은 많을수록 좋습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "문장 암기만 늘리고 경험의 근거와 꼬리 질문을 준비하지 못할 수 있습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 공고와 서류에서 질문 뽑기 → 역량별 경험 묶기 → 같은 질문의 다른 표현 연습하기 → 추가 질문에 근거로 답하기. 시작 문장도 ‘예상 질문은 많을수록 좋습니다.’에서 ‘질문을 무작정 외우기보다 협업과 실패, 직무 관심 경험을 정리하고 표현이 달라져도 답해 보겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 질문을 무작정 외우기보다 협업과 실패, 직무 관심 경험을 정리하고 표현이 달라져도 답해 보겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 핵심 경험 ___에서 질문을 세 가지로 바꿉니다. 답의 사실이 유지되는지 확인하세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11",
+        "S16"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        },
+        {
+          "id": "S16",
+          "url": "https://nurse.csj.ac.kr/skin/major02/job.pdf"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-132",
+        "question": "면접 예상 질문을 몇 개나 준비해야 하나요?",
+        "priority": 1,
+        "evidence_level": "principle_only",
+        "source_id": "S16",
+        "url": "https://nurse.csj.ac.kr/skin/major02/job.pdf",
+        "paraphrase": "서류 약점·후속 질문·답변 요약 안내",
+        "scope": "낮은 학점/영어점수/자격 부족 유형은 있으나 해당 질문 원형의 직접 증거 아님",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-133",
+      "category": "전형준비",
+      "original_question": "모의면접은 어떻게 피드백받아야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "모의면접 피드백, 좋았다는 말 대신 항목을 정하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'모의면접 피드백, 좋았다는 말 대신 항목을 정하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'모의면접 피드백, 좋았다는 말 대신 항목을 정하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '모의면접은 어떻게 피드백받아야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "모의면접 뒤 잘했다는 말만 듣고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'모의면접 뒤 잘했다는 말만 듣고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'모의면접 뒤 잘했다는 말만 듣고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '모의면접은 어떻게 피드백받아야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "제 역할이 들렸나요처럼 확인할 항목을 주세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'제 역할이 들렸나요처럼 확인할 항목을 주세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'제 역할이 들렸나요처럼 확인할 항목을 주세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '모의면접은 어떻게 피드백받아야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "한 번에 모든 답을 고치기보다 한 항목씩",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'한 번에 모든 답을 고치기보다 한 항목씩'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'한 번에 모든 답을 고치기보다 한 항목씩'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '모의면접은 어떻게 피드백받아야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "길이보다 질문에 답했는지 먼저 피드백받으세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'길이보다 질문에 답했는지 먼저 피드백받으세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'길이보다 질문에 답했는지 먼저 피드백받으세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '모의면접은 어떻게 피드백받아야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "모의면접 뒤 잘했다는 말만 듣고 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "질문에 답했는지 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "사실과 행동이 들리는지 묻기"
+        },
+        {
+          "step": 3,
+          "action": "길이와 이해 어려운 문장 기록하기"
+        },
+        {
+          "step": 4,
+          "action": "한 번에 한 항목 수정하기"
+        }
+      ],
+      "answer_example": "가상 연습: 제 역할이 구분됐는지와 결론이 먼저 들렸는지를 확인받고 다음 연습에서는 그 부분을 고치겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "모의면접 뒤 잘했다는 말만 듣고 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 모의면접은 어떻게 피드백받아야 하나요? 약한 연습 답: ‘면접이 어땠는지 전체적으로 평가해 주세요.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "기준 없는 총평은 수정할 행동을 정하기 어렵습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 질문에 답했는지 확인하기 → 사실과 행동이 들리는지 묻기 → 길이와 이해 어려운 문장 기록하기 → 한 번에 한 항목 수정하기. 시작 문장도 ‘면접이 어땠는지 전체적으로 평가해 주세요.’에서 ‘제 역할이 구분됐는지와 결론이 먼저 들렸는지를 확인받고 다음 연습에서는 그 부분을 고치겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 제 역할이 구분됐는지와 결론이 먼저 들렸는지를 확인받고 다음 연습에서는 그 부분을 고치겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 제 역할 ___이 들렸는지 물어보겠습니다. 한 항목만 고쳐 다시 녹음하세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11",
+        "S20"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        },
+        {
+          "id": "S20",
+          "url": "https://community.linkareer.com/employment_data/5838878"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-133",
+        "question": "모의면접은 어떻게 피드백받아야 하나요?",
+        "priority": 1,
+        "evidence_level": "close_variant",
+        "source_id": "S20",
+        "url": "https://community.linkareer.com/employment_data/5838878",
+        "paraphrase": "면접연습 방법 FAQ",
+        "scope": "인기도 순위와 조사수치 미검증; 유형 존재만; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-134",
+      "category": "전형준비",
+      "original_question": "면접 복장은 어떻게 정하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "면접 복장 고민, 회사 안내부터 확인하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'면접 복장 고민, 회사 안내부터 확인하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접 복장 고민, 회사 안내부터 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 복장은 어떻게 정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "면접 복장을 후기만 보고 정하고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'면접 복장을 후기만 보고 정하고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접 복장을 후기만 보고 정하고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 복장은 어떻게 정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "단정함을 고민하기 전에 초청 안내부터 보세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'단정함을 고민하기 전에 초청 안내부터 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'단정함을 고민하기 전에 초청 안내부터 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '면접 복장은 어떻게 정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "복장이 자유롭다는 안내의 범위를 확인하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'복장이 자유롭다는 안내의 범위를 확인하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'복장이 자유롭다는 안내의 범위를 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 복장은 어떻게 정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "전날 옷과 이동을 점검해 당일 변수를 줄이세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'전날 옷과 이동을 점검해 당일 변수를 줄이세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'전날 옷과 이동을 점검해 당일 변수를 줄이세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접 복장은 어떻게 정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "면접 복장을 후기만 보고 정하고 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "초청 안내의 복장 규정 읽기"
+        },
+        {
+          "step": 2,
+          "action": "불명확하면 담당 창구 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "움직임과 장비 사용 점검하기"
+        },
+        {
+          "step": 4,
+          "action": "전날 준비해 당일 변수 줄이기"
+        }
+      ],
+      "answer_example": "가상 연습: 안내된 기준을 우선 따르고 별도 규정이 없으면 단정하고 활동에 불편하지 않은 옷을 준비하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "면접 복장을 후기만 보고 정하고 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 면접 복장은 어떻게 정하나요? 약한 연습 답: ‘다들 정장이라던데 저도 그렇게 가겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "실제 회사의 초청 안내나 해당 전형의 복장 조건을 확인하지 않았습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 초청 안내의 복장 규정 읽기 → 불명확하면 담당 창구 확인하기 → 움직임과 장비 사용 점검하기 → 전날 준비해 당일 변수 줄이기. 시작 문장도 ‘다들 정장이라던데 저도 그렇게 가겠습니다.’에서 ‘안내된 기준을 우선 따르고 별도 규정이 없으면 단정하고 활동에 불편하지 않은 옷을 준비하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 안내된 기준을 우선 따르고 별도 규정이 없으면 단정하고 활동에 불편하지 않은 옷을 준비하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 이번 안내의 복장 기준은 ___입니다. 전날 착용해 이동과 자세를 확인하세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11",
+        "S10"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        },
+        {
+          "id": "S10",
+          "url": "https://community.linkareer.com/jayuu/4432101"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-134",
+        "question": "면접 복장은 어떻게 정하나요?",
+        "priority": 2,
+        "evidence_level": "principle_only",
+        "source_id": "S10",
+        "url": "https://community.linkareer.com/jayuu/4432101",
+        "paraphrase": "단정한 면접 복장 안내",
+        "scope": "게시자 합격 경험은 자기보고다. 질문 수요의 정성 신호로만 사용하고 무조건 합격 표현은 배제한다.; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-135",
+      "category": "전형준비",
+      "original_question": "온라인 면접은 무엇을 미리 확인하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "온라인 면접, 답변 연습 전에 장비 점검도 필요합니다",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'온라인 면접, 답변 연습 전에 장비 점검도 필요합니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'온라인 면접, 답변 연습 전에 장비 점검도 필요합니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '온라인 면접은 무엇을 미리 확인하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "온라인 면접 첫 접속이 실전이 되지 않게",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'온라인 면접 첫 접속이 실전이 되지 않게'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'온라인 면접 첫 접속이 실전이 되지 않게'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '온라인 면접은 무엇을 미리 확인하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "카메라보다 먼저 소리도 함께 시험하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'카메라보다 먼저 소리도 함께 시험하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'카메라보다 먼저 소리도 함께 시험하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '온라인 면접은 무엇을 미리 확인하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "연결이 끊기면 연락할 경로를 적어 두세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'연결이 끊기면 연락할 경로를 적어 두세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'연결이 끊기면 연락할 경로를 적어 두세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '온라인 면접은 무엇을 미리 확인하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "같은 장비로 접속 연습해 숨은 문제를 찾으세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'같은 장비로 접속 연습해 숨은 문제를 찾으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'같은 장비로 접속 연습해 숨은 문제를 찾으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '온라인 면접은 무엇을 미리 확인하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "카메라보다 먼저 소리도 함께 시험하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "접속 도구와 계정 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "카메라와 소리 시험하기"
+        },
+        {
+          "step": 3,
+          "action": "배경과 연결 상태 점검하기"
+        },
+        {
+          "step": 4,
+          "action": "문제 발생 시 연락 경로 확보하기"
+        }
+      ],
+      "answer_example": "가상 연습: 같은 장비로 미리 접속해 소리를 확인하고 접속이 끊길 때 연락할 안내 창구를 적어 두겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "카메라보다 먼저 소리도 함께 시험하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 온라인 면접은 무엇을 미리 확인하나요? 약한 연습 답: ‘카메라만 켜지면 온라인 면접은 됩니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "소리와 접속 계정, 끊김 때 연락 수단이 준비되지 않았습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 접속 도구와 계정 확인하기 → 카메라와 소리 시험하기 → 배경과 연결 상태 점검하기 → 문제 발생 시 연락 경로 확보하기. 시작 문장도 ‘카메라만 켜지면 온라인 면접은 됩니다.’에서 ‘같은 장비로 미리 접속해 소리를 확인하고 접속이 끊길 때 연락할 안내 창구를 적어 두겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 같은 장비로 미리 접속해 소리를 확인하고 접속이 끊길 때 연락할 안내 창구를 적어 두겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 같은 장비로 ___을 시험하고 연락 창구 ___을 적습니다. 실제 접속을 한 번 해 보세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 3,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-135",
+        "question": "온라인 면접은 무엇을 미리 확인하나요?",
+        "priority": 2,
+        "evidence_level": "principle_only",
+        "source_id": "S06",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews",
+        "paraphrase": "영상 면접 사전 준비 안내",
+        "scope": "장비와 장소 확인 원칙; 질문 수요 자체는 미측정",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-136",
+      "category": "전형준비",
+      "original_question": "인성검사는 어떻게 준비해야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "인성검사, 정답 성격을 꾸미기 전에 안내를 읽으세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'인성검사, 정답 성격을 꾸미기 전에 안내를 읽으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'인성검사, 정답 성격을 꾸미기 전에 안내를 읽으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '인성검사는 어떻게 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "인성검사의 이상적인 성격을 외우고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'인성검사의 이상적인 성격을 외우고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'인성검사의 이상적인 성격을 외우고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '인성검사는 어떻게 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "좋아 보이는 답보다 내 평소 행동을 기준으로",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'좋아 보이는 답보다 내 평소 행동을 기준으로'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'좋아 보이는 답보다 내 평소 행동을 기준으로'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '인성검사는 어떻게 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "검사 준비는 안내와 응답 기준 확인부터",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'검사 준비는 안내와 응답 기준 확인부터'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'검사 준비는 안내와 응답 기준 확인부터'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '인성검사는 어떻게 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "사람들이 고른 답을 따라가며 나를 바꾸고 있나요?",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'사람들이 고른 답을 따라가며 나를 바꾸고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'사람들이 고른 답을 따라가며 나를 바꾸고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '인성검사는 어떻게 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "검사 준비는 안내와 응답 기준 확인부터",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "검사 안내와 시간 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "응답 기준을 이해하기"
+        },
+        {
+          "step": 3,
+          "action": "실제 평소 행동으로 답하기"
+        },
+        {
+          "step": 4,
+          "action": "도구별 세부 방식은 공식 안내 따르기"
+        }
+      ],
+      "answer_example": "가상 연습: 좋아 보이는 성격을 맞추기보다 질문이 묻는 상황을 읽고 제 평소 행동을 기준으로 답하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "검사 준비는 안내와 응답 기준 확인부터"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 인성검사는 어떻게 준비해야 하나요? 약한 연습 답: ‘정답처럼 보이는 성격을 골라 답하겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "평소 행동보다 원하는 인상을 맞추려 해 자기 응답의 근거가 흐려집니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 검사 안내와 시간 확인하기 → 응답 기준을 이해하기 → 실제 평소 행동으로 답하기 → 도구별 세부 방식은 공식 안내 따르기. 시작 문장도 ‘정답처럼 보이는 성격을 골라 답하겠습니다.’에서 ‘좋아 보이는 성격을 맞추기보다 질문이 묻는 상황을 읽고 제 평소 행동을 기준으로 답하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 좋아 보이는 성격을 맞추기보다 질문이 묻는 상황을 읽고 제 평소 행동을 기준으로 답하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 상황 ___에서 평소 제 행동은 ___입니다. 공식 안내의 응답 기준을 먼저 읽으세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11",
+        "S26"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        },
+        {
+          "id": "S26",
+          "url": "https://community.linkareer.com/employment_data/5639843"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-136",
+        "question": "인성검사는 어떻게 준비해야 하나요?",
+        "priority": 2,
+        "evidence_level": "close_variant",
+        "source_id": "S26",
+        "url": "https://community.linkareer.com/employment_data/5639843",
+        "paraphrase": "인성·적성 준비 구분",
+        "scope": "현재 기업별 안내 재확인; 고정 공부시간 채택 안 함; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-137",
+      "category": "전형준비",
+      "original_question": "직무 필기와 면접 준비를 어떻게 나누나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "필기와 면접이 겹치면 일정과 약점으로 나누세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'필기와 면접이 겹치면 일정과 약점으로 나누세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'필기와 면접이 겹치면 일정과 약점으로 나누세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '직무 필기와 면접 준비를 어떻게 나누나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "필기와 면접이 겹치면 똑같이 시간을 나누나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'필기와 면접이 겹치면 똑같이 시간을 나누나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'필기와 면접이 겹치면 똑같이 시간을 나누나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '직무 필기와 면접 준비를 어떻게 나누나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "전형 날짜와 취약 영역으로 준비 순서를 정하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'전형 날짜와 취약 영역으로 준비 순서를 정하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'전형 날짜와 취약 영역으로 준비 순서를 정하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '직무 필기와 면접 준비를 어떻게 나누나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "계획표를 짠 뒤 실제 실행 시간도 확인하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'계획표를 짠 뒤 실제 실행 시간도 확인하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'계획표를 짠 뒤 실제 실행 시간도 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '직무 필기와 면접 준비를 어떻게 나누나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "먼저 오는 전형을 준비하며 면접 감각을 남기는 법",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'먼저 오는 전형을 준비하며 면접 감각을 남기는 법'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'먼저 오는 전형을 준비하며 면접 감각을 남기는 법'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '직무 필기와 면접 준비를 어떻게 나누나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "필기와 면접이 겹치면 일정과 약점으로 나누세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "전형 날짜와 배점 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "현재 준비 상태 점검하기"
+        },
+        {
+          "step": 3,
+          "action": "취약 영역에 시간 배정하기"
+        },
+        {
+          "step": 4,
+          "action": "주간 실행 결과로 계획 조정하기"
+        }
+      ],
+      "answer_example": "가상 연습: 필기 일정이 먼저이고 취약 영역이 있어 해당 시간을 확보하되 매일 짧게 제출 서류를 소리 내어 설명하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "필기와 면접이 겹치면 일정과 약점으로 나누세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 직무 필기와 면접 준비를 어떻게 나누나요? 약한 연습 답: ‘필기와 면접 준비를 무조건 반씩 나누겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "전형 날짜와 취약 영역이 달라도 동일하게 배분하는 계획입니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 전형 날짜와 배점 안내 확인하기 → 현재 준비 상태 점검하기 → 취약 영역에 시간 배정하기 → 주간 실행 결과로 계획 조정하기. 시작 문장도 ‘필기와 면접 준비를 무조건 반씩 나누겠습니다.’에서 ‘필기 일정이 먼저이고 취약 영역이 있어 해당 시간을 확보하되 매일 짧게 제출 서류를 소리 내어 설명하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 필기 일정이 먼저이고 취약 영역이 있어 해당 시간을 확보하되 매일 짧게 제출 서류를 소리 내어 설명하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 먼저 오는 전형 ___과 취약 영역 ___에 시간을 정합니다. 일주일 뒤 실행을 점검하세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11",
+        "S26"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        },
+        {
+          "id": "S26",
+          "url": "https://community.linkareer.com/employment_data/5639843"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-137",
+        "question": "직무 필기와 면접 준비를 어떻게 나누나요?",
+        "priority": 2,
+        "evidence_level": "principle_only",
+        "source_id": "S26",
+        "url": "https://community.linkareer.com/employment_data/5639843",
+        "paraphrase": "전형 순서와 공부 준비 안내",
+        "scope": "현재 기업별 안내 재확인; 고정 공부시간 채택 안 함; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-138",
+      "category": "전형준비",
+      "original_question": "포트폴리오는 신입도 만들어야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "신입 포트폴리오, 필요 여부와 보여 줄 과업부터",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'신입 포트폴리오, 필요 여부와 보여 줄 과업부터'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'신입 포트폴리오, 필요 여부와 보여 줄 과업부터'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '포트폴리오는 신입도 만들어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "신입도 포트폴리오가 있어야 한다고 단정했나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'신입도 포트폴리오가 있어야 한다고 단정했나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'신입도 포트폴리오가 있어야 한다고 단정했나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '포트폴리오는 신입도 만들어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "제출 요구부터 확인하고 결과물을 고르세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'제출 요구부터 확인하고 결과물을 고르세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'제출 요구부터 확인하고 결과물을 고르세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '포트폴리오는 신입도 만들어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "화려한 표지보다 내 역할과 판단이 보이는 작업",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'화려한 표지보다 내 역할과 판단이 보이는 작업'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'화려한 표지보다 내 역할과 판단이 보이는 작업'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '포트폴리오는 신입도 만들어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "팀 결과물이라면 내 담당 범위를 표시하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'팀 결과물이라면 내 담당 범위를 표시하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'팀 결과물이라면 내 담당 범위를 표시하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '포트폴리오는 신입도 만들어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "신입도 포트폴리오가 있어야 한다고 단정했나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "제출 필수 여부 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "직무가 요구하는 결과물 파악하기"
+        },
+        {
+          "step": 3,
+          "action": "제작 과정과 내 역할 기록하기"
+        },
+        {
+          "step": 4,
+          "action": "양보다 설명 가능한 작업 선택하기"
+        }
+      ],
+      "answer_example": "가상 연습: 공고가 요구하는 경우 과제 결과와 판단 이유를 정리하겠습니다. 팀 작업은 제 담당 부분을 따로 표시하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "신입도 포트폴리오가 있어야 한다고 단정했나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 포트폴리오는 신입도 만들어야 하나요? 약한 연습 답: ‘다들 만드니 저도 멋진 포트폴리오부터 만들겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "제출 필요 여부와 보여 줄 과업보다 형식을 먼저 정하고 있습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 제출 필수 여부 확인하기 → 직무가 요구하는 결과물 파악하기 → 제작 과정과 내 역할 기록하기 → 양보다 설명 가능한 작업 선택하기. 시작 문장도 ‘다들 만드니 저도 멋진 포트폴리오부터 만들겠습니다.’에서 ‘공고가 요구하는 경우 과제 결과와 판단 이유를 정리하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 공고가 요구하는 경우 과제 결과와 판단 이유를 정리하겠습니다. 팀 작업은 제 담당 부분을 따로 표시하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 요구 결과물 ___에서 내 담당 ___을 보여 줍니다. 설명 가능한 작업 하나를 고르세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "unverified; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-138",
+        "question": "포트폴리오는 신입도 만들어야 하나요?",
+        "priority": 3,
+        "evidence_level": "unverified",
+        "source_id": null,
+        "url": null,
+        "paraphrase": "질문별 근거 미확보",
+        "scope": "주제 범주 자료만으로 세부 질문을 검증했다고 볼 수 없어 보류",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-139",
+      "category": "전형준비",
+      "original_question": "채용 공고의 자격요건은 어떻게 읽나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "공고를 읽을 때 필수와 우대를 섞고 있지는 않나요?",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'공고를 읽을 때 필수와 우대를 섞고 있지는 않나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'공고를 읽을 때 필수와 우대를 섞고 있지는 않나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '채용 공고의 자격요건은 어떻게 읽나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "공고의 우대를 필수로 읽고 포기하고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'공고의 우대를 필수로 읽고 포기하고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'공고의 우대를 필수로 읽고 포기하고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '채용 공고의 자격요건은 어떻게 읽나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자격요건과 제출 마감은 따로 표시하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'자격요건과 제출 마감은 따로 표시하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자격요건과 제출 마감은 따로 표시하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '채용 공고의 자격요건은 어떻게 읽나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "모호한 지원 조건을 추측 대신 문의로 확인하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'모호한 지원 조건을 추측 대신 문의로 확인하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'모호한 지원 조건을 추측 대신 문의로 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '채용 공고의 자격요건은 어떻게 읽나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "내가 지원 가능한 근거를 공고 옆에 적어 보세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'내가 지원 가능한 근거를 공고 옆에 적어 보세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'내가 지원 가능한 근거를 공고 옆에 적어 보세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '채용 공고의 자격요건은 어떻게 읽나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "공고의 우대를 필수로 읽고 포기하고 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "지원 자격과 우대 항목 표시하기"
+        },
+        {
+          "step": 2,
+          "action": "기간과 제출물 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "모호한 조건은 공식 창구에 문의하기"
+        },
+        {
+          "step": 4,
+          "action": "지원 가능한 근거 기록하기"
+        }
+      ],
+      "answer_example": "가상 연습: 졸업 조건과 필수 자격을 먼저 확인하고 우대 도구 경험은 실제 수준을 구분해 적겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "공고의 우대를 필수로 읽고 포기하고 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 채용 공고의 자격요건은 어떻게 읽나요? 약한 연습 답: ‘공고에 적힌 걸 다 갖춰야 지원할 수 있습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "지원 자격과 우대사항을 섞어 판단하고 있습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 지원 자격과 우대 항목 표시하기 → 기간과 제출물 확인하기 → 모호한 조건은 공식 창구에 문의하기 → 지원 가능한 근거 기록하기. 시작 문장도 ‘공고에 적힌 걸 다 갖춰야 지원할 수 있습니다.’에서 ‘졸업 조건과 필수 자격을 먼저 확인하고 우대 도구 경험은 실제 수준을 구분해 적겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 졸업 조건과 필수 자격을 먼저 확인하고 우대 도구 경험은 실제 수준을 구분해 적겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 필수 ___, 우대 ___, 제출물 ___을 세 칸에 쓰세요. 모호한 조건은 문의하세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-139",
+        "question": "채용 공고의 자격요건은 어떻게 읽나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S02",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/",
+        "paraphrase": "공고 요구사항 확인 원칙",
+        "scope": "한국 채용 관행·법률로 일반화하지 않는다.; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-140",
+      "category": "전형준비",
+      "original_question": "면접이 끝난 뒤 무엇을 기록해야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "면접 복기, 합격 신호 추측보다 다음 준비에 쓸 기록",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'면접 복기, 합격 신호 추측보다 다음 준비에 쓸 기록'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접 복기, 합격 신호 추측보다 다음 준비에 쓸 기록'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접이 끝난 뒤 무엇을 기록해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "면접관 표정만 복기하면 다음 준비가 남지 않습니다",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'면접관 표정만 복기하면 다음 준비가 남지 않습니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접관 표정만 복기하면 다음 준비가 남지 않습니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접이 끝난 뒤 무엇을 기록해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "끝난 면접에서 실제 질문과 막힌 지점을 적으세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'끝난 면접에서 실제 질문과 막힌 지점을 적으세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'끝난 면접에서 실제 질문과 막힌 지점을 적으세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접이 끝난 뒤 무엇을 기록해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "합격 신호 추측 대신 고칠 답 하나를 고르세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'합격 신호 추측 대신 고칠 답 하나를 고르세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'합격 신호 추측 대신 고칠 답 하나를 고르세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '면접이 끝난 뒤 무엇을 기록해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "기억이 흐려지기 전에 답변의 사실 오류를 점검하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'기억이 흐려지기 전에 답변의 사실 오류를 점검하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'기억이 흐려지기 전에 답변의 사실 오류를 점검하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '면접이 끝난 뒤 무엇을 기록해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "끝난 면접에서 실제 질문과 막힌 지점을 적으세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 질문을 기억나는 범위에서 적기"
+        },
+        {
+          "step": 2,
+          "action": "내 답변의 사실 오류 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "막힌 지식과 사례 표시하기"
+        },
+        {
+          "step": 4,
+          "action": "다음 연습 행동 하나 정하기"
+        }
+      ],
+      "answer_example": "가상 연습: 면접관 표정으로 결과를 추정하기보다 설명이 길었던 질문을 적고 다음에는 핵심부터 말해 보겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "끝난 면접에서 실제 질문과 막힌 지점을 적으세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 면접이 끝난 뒤 무엇을 기록해야 하나요? 약한 연습 답: ‘면접관이 웃었으니 좋은 결과일 것 같습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "표정 해석은 다음 준비에 활용할 답변 근거가 아닙니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 실제 질문을 기억나는 범위에서 적기 → 내 답변의 사실 오류 확인하기 → 막힌 지식과 사례 표시하기 → 다음 연습 행동 하나 정하기. 시작 문장도 ‘면접관이 웃었으니 좋은 결과일 것 같습니다.’에서 ‘면접관 표정으로 결과를 추정하기보다 설명이 길었던 질문을 적고 다음에는 핵심부터 말해 보겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 면접관 표정으로 결과를 추정하기보다 설명이 길었던 질문을 적고 다음에는 핵심부터 말해 보겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 실제 질문 ___에서 막힌 부분 ___을 적습니다. 다음 연습 행동 하나를 정하세요. 지원 단계마다 확인할 준비를 함께 점검하려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S02",
+        "S06",
+        "S09",
+        "S11"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S06",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/how-to-do-well-in-video-interviews"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S11",
+          "url": "https://community.linkareer.com/jayuu/5907794"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 3,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-140",
+        "question": "면접이 끝난 뒤 무엇을 기록해야 하나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S02",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/",
+        "paraphrase": "질문 재확인·준비·회고·제안 확인",
+        "scope": "실행 원칙은 있으나 후보 질문이 실제 이용자 고민으로 확인된 것은 아님",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    }
+  ]
+}
+

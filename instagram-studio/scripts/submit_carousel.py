@@ -4,6 +4,10 @@ import argparse, hashlib, io, json, os, re, sys, zipfile
 from pathlib import Path
 from urllib.parse import urlparse
 import httpx
+try:
+    from .approval_guard import require_submission_approval
+except ImportError:
+    from approval_guard import require_submission_approval
 
 def read_bundle(path:Path, content_id:str):
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{2,79}',content_id):
@@ -29,12 +33,14 @@ def read_bundle(path:Path, content_id:str):
     fingerprint=hashlib.sha256(payload+json.dumps([title[:180],caption],ensure_ascii=False).encode()).hexdigest()
     return payload,title,caption,fingerprint
 
-def submit(base,key,content_id,bundle,transport=None):
+def submit(base,key,content_id,bundle,transport=None,approval_path=None):
     parsed=urlparse(base)
     if parsed.scheme!='https' or not parsed.netloc or parsed.username or parsed.password or parsed.query or parsed.fragment:
         raise ValueError('서버 주소는 인증정보가 없는 HTTPS 주소여야 합니다.')
     if len(key)<24:raise ValueError('API_INGEST_KEY 설정이 필요합니다.')
     payload,title,caption,fingerprint=read_bundle(Path(bundle),content_id)
+    # /api/ingest also schedules; account-wide live flags are not per-file consent.
+    require_submission_approval(payload,content_id,base,approval_path)
     with httpx.Client(timeout=60,follow_redirects=False,transport=transport,headers={'X-Jobkill-Api-Key':key}) as client:
         # Always resolve an earlier accepted/uncertain submission before POST.
         check=client.get(base.rstrip('/')+'/api/posts',params={'content_id':content_id})
@@ -57,12 +63,13 @@ def main():
     parser.add_argument('--bundle',type=Path,required=True)
     parser.add_argument('--content-id',required=True)
     parser.add_argument('--dry-run',action='store_true')
+    parser.add_argument('--approval',type=Path,help='Owner-approved final ZIP receipt; required for upload and scheduling')
     args=parser.parse_args()
     try:
         if args.dry_run:
             blob,title,caption,fingerprint=read_bundle(args.bundle,args.content_id)
             result={'result':'validated_only','content_id':args.content_id,'title':title,'caption_characters':len(caption),'bytes':len(blob),'fingerprint':fingerprint,'sent':False}
-        else:result=submit(os.getenv('STUDIO_BASE_URL',''),os.getenv('API_INGEST_KEY',''),args.content_id,args.bundle)
+        else:result=submit(os.getenv('STUDIO_BASE_URL',''),os.getenv('API_INGEST_KEY',''),args.content_id,args.bundle,approval_path=args.approval)
         print(json.dumps(result,ensure_ascii=False,indent=2))
     except (ValueError,RuntimeError,KeyError,zipfile.BadZipFile,httpx.HTTPError) as exc:
         # Network exception strings may contain a credential-bearing URL.
@@ -71,3 +78,5 @@ def main():
     return 0
 
 if __name__=='__main__':sys.exit(main())
+
+

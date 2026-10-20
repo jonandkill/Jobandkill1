@@ -1,0 +1,2258 @@
+{
+  "schema_version": "2.0-candidate",
+  "category": "회사선택",
+  "status": "150개 연구·편집 후보; 기존 원본150 미확인; 실제 수요 빈도 미측정; 게시 승인 없음",
+  "items": [
+    {
+      "id": "JK2-101",
+      "category": "회사선택",
+      "original_question": "회사를 고르는 기준을 물으면 어떻게 답하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "회사 선택 기준, 연봉 말고 억지 이유를 만들 필요는 없습니다",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'회사 선택 기준, 연봉 말고 억지 이유를 만들 필요는 없습니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'회사 선택 기준, 연봉 말고 억지 이유를 만들 필요는 없습니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '회사를 고르는 기준을 물으면 어떻게 답하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "연봉도 중요하다면 선택 기준에서 숨길 필요는 없습니다",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'연봉도 중요하다면 선택 기준에서 숨길 필요는 없습니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'연봉도 중요하다면 선택 기준에서 숨길 필요는 없습니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '회사를 고르는 기준을 물으면 어떻게 답하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "좋은 회사의 기준을 내 언어로 정리해 보세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'좋은 회사의 기준을 내 언어로 정리해 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'좋은 회사의 기준을 내 언어로 정리해 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '회사를 고르는 기준을 물으면 어떻게 답하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "업무와 근무 조건의 우선순위가 정해져 있나요?",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'업무와 근무 조건의 우선순위가 정해져 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'업무와 근무 조건의 우선순위가 정해져 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '회사를 고르는 기준을 물으면 어떻게 답하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "회사 선택 기준을 면접용 이상론으로 만들고 있나요?",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'회사 선택 기준을 면접용 이상론으로 만들고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'회사 선택 기준을 면접용 이상론으로 만들고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '회사를 고르는 기준을 물으면 어떻게 답하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "업무와 근무 조건의 우선순위가 정해져 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 중요 조건 순위 정하기"
+        },
+        {
+          "step": 2,
+          "action": "업무와 환경 기준 나누기"
+        },
+        {
+          "step": 3,
+          "action": "회사 공개 정보와 대조하기"
+        },
+        {
+          "step": 4,
+          "action": "확인 못 한 조건은 질문하기"
+        }
+      ],
+      "answer_example": "가상 연습: 맡을 업무와 피드백 환경을 우선 보고 보상도 함께 확인합니다. 공고만으로 알 수 없는 교육 방식은 질문하고 싶습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "업무와 근무 조건의 우선순위가 정해져 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 회사를 고르는 기준을 물으면 어떻게 답하나요? 약한 연습 답: ‘성장할 수 있는 좋은 회사면 됩니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "성장과 좋은 환경의 의미가 모호해 회사별 조건을 비교하기 어렵습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 실제 중요 조건 순위 정하기 → 업무와 환경 기준 나누기 → 회사 공개 정보와 대조하기 → 확인 못 한 조건은 질문하기. 시작 문장도 ‘성장할 수 있는 좋은 회사면 됩니다.’에서 ‘맡을 업무와 피드백 환경을 우선 보고 보상도 함께 확인합니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 맡을 업무와 피드백 환경을 우선 보고 보상도 함께 확인합니다. 공고만으로 알 수 없는 교육 방식은 질문하고 싶습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 중요한 업무 기준 ___과 환경 기준 ___을 정합니다. 우선순위 1·2를 적으세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S10"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S10",
+          "url": "https://community.linkareer.com/jayuu/4432101"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-101",
+        "question": "회사를 고르는 기준을 물으면 어떻게 답하나요?",
+        "priority": 1,
+        "evidence_level": "close_variant",
+        "source_id": "S10",
+        "url": "https://community.linkareer.com/jayuu/4432101",
+        "paraphrase": "관련 면접 질문 유형 수록",
+        "scope": "질문 유형 존재 확인; 후보의 구체 조건/답변 고민까지 동일한 직접 질문은 아님",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-102",
+      "category": "회사선택",
+      "original_question": "중소기업과 대기업 중 어디를 준비해야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "기업 규모보다 먼저 비교할 취업 기준",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'기업 규모보다 먼저 비교할 취업 기준'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'기업 규모보다 먼저 비교할 취업 기준'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '중소기업과 대기업 중 어디를 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "큰 회사면 배울 수 있다는 기대를 확인했나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'큰 회사면 배울 수 있다는 기대를 확인했나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'큰 회사면 배울 수 있다는 기대를 확인했나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '중소기업과 대기업 중 어디를 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "회사 규모보다 실제 역할을 비교하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'회사 규모보다 실제 역할을 비교하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'회사 규모보다 실제 역할을 비교하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '중소기업과 대기업 중 어디를 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "대기업과 중소기업을 같은 항목으로 살펴보는 법",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'대기업과 중소기업을 같은 항목으로 살펴보는 법'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'대기업과 중소기업을 같은 항목으로 살펴보는 법'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '중소기업과 대기업 중 어디를 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "규모를 고르기 전에 원하는 과업부터 정하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'규모를 고르기 전에 원하는 과업부터 정하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'규모를 고르기 전에 원하는 과업부터 정하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '중소기업과 대기업 중 어디를 준비해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "회사 규모보다 실제 역할을 비교하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "희망 과업과 성장 방식 정하기"
+        },
+        {
+          "step": 2,
+          "action": "규모별 차이를 가설로만 두기"
+        },
+        {
+          "step": 3,
+          "action": "회사별 공고와 제도 확인하기"
+        },
+        {
+          "step": 4,
+          "action": "지원 자원과 우선순위 배분하기"
+        }
+      ],
+      "answer_example": "가상 연습: 규모만으로 업무를 예상하지 않고 공고의 역할과 교육 안내를 비교해 지원 순서를 정하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "회사 규모보다 실제 역할을 비교하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 중소기업과 대기업 중 어디를 준비해야 하나요? 약한 연습 답: ‘대기업은 체계적이고 작은 회사는 많이 배울 수 있습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "회사 규모만으로 역할과 교육을 일반화해 실제 조건을 놓칩니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 희망 과업과 성장 방식 정하기 → 규모별 차이를 가설로만 두기 → 회사별 공고와 제도 확인하기 → 지원 자원과 우선순위 배분하기. 시작 문장도 ‘대기업은 체계적이고 작은 회사는 많이 배울 수 있습니다.’에서 ‘규모만으로 업무를 예상하지 않고 공고의 역할과 교육 안내를 비교해 지원 순서를 정하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 규모만으로 업무를 예상하지 않고 공고의 역할과 교육 안내를 비교해 지원 순서를 정하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 회사별 과업 ___과 교육 안내 ___을 비교합니다. 실제 공고 두 개를 같은 표에 넣으세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 3,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-102",
+        "question": "중소기업과 대기업 중 어디를 준비해야 하나요?",
+        "priority": 1,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-103",
+      "category": "회사선택",
+      "original_question": "원하지 않는 직무로 먼저 입사해도 될까요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "다른 직무 입사, 나중에 옮기면 된다는 기대부터 확인하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'다른 직무 입사, 나중에 옮기면 된다는 기대부터 확인하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'다른 직무 입사, 나중에 옮기면 된다는 기대부터 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '원하지 않는 직무로 먼저 입사해도 될까요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "일단 들어가면 직무를 바꿀 수 있다고 믿고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'일단 들어가면 직무를 바꿀 수 있다고 믿고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'일단 들어가면 직무를 바꿀 수 있다고 믿고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '원하지 않는 직무로 먼저 입사해도 될까요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "다른 직무 입사 후 전환은 확인된 조건인가요?",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'다른 직무 입사 후 전환은 확인된 조건인가요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'다른 직무 입사 후 전환은 확인된 조건인가요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '원하지 않는 직무로 먼저 입사해도 될까요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "원치 않는 업무를 지속할 수 있는지도 따져 보세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'원치 않는 업무를 지속할 수 있는지도 따져 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'원치 않는 업무를 지속할 수 있는지도 따져 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '원하지 않는 직무로 먼저 입사해도 될까요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "입사와 재지원의 비용을 같은 표로 비교하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'입사와 재지원의 비용을 같은 표로 비교하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'입사와 재지원의 비용을 같은 표로 비교하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '원하지 않는 직무로 먼저 입사해도 될까요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "다른 직무 입사 후 전환은 확인된 조건인가요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "현재 제안된 업무 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "희망 직무와 연결되는 부분 찾기"
+        },
+        {
+          "step": 3,
+          "action": "전환 가능성을 사실로 확인하기"
+        },
+        {
+          "step": 4,
+          "action": "대안의 비용과 기간 비교하기"
+        }
+      ],
+      "answer_example": "가상 연습: 직무 전환을 보장받은 것은 아닙니다. 현재 업무를 지속할 수 있는지와 별도 지원 계획을 함께 검토하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "다른 직무 입사 후 전환은 확인된 조건인가요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 원하지 않는 직무로 먼저 입사해도 될까요? 약한 연습 답: ‘다른 직무라도 일단 들어가면 옮기면 됩니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "직무 전환 가능성이 확인된 조건인지와 현재 업무 지속 가능성이 빠집니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 현재 제안된 업무 확인하기 → 희망 직무와 연결되는 부분 찾기 → 전환 가능성을 사실로 확인하기 → 대안의 비용과 기간 비교하기. 시작 문장도 ‘다른 직무라도 일단 들어가면 옮기면 됩니다.’에서 ‘직무 전환을 보장받은 것은 아닙니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 직무 전환을 보장받은 것은 아닙니다. 현재 업무를 지속할 수 있는지와 별도 지원 계획을 함께 검토하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 전환은 ___까지 확인했고 현재 업무는 ___입니다. 미전환일 때 선택도 적으세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S10"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S10",
+          "url": "https://community.linkareer.com/jayuu/4432101"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 3,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-103",
+        "question": "원하지 않는 직무로 먼저 입사해도 될까요?",
+        "priority": 1,
+        "evidence_level": "close_variant",
+        "source_id": "S10",
+        "url": "https://community.linkareer.com/jayuu/4432101",
+        "paraphrase": "관련 면접 질문 유형 수록",
+        "scope": "질문 유형 존재 확인; 후보의 구체 조건/답변 고민까지 동일한 직접 질문은 아님",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-104",
+      "category": "회사선택",
+      "original_question": "계약직 경험은 신입 지원에 어떻게 설명하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "계약직 경험, 고용 형태보다 실제 맡은 일을 설명하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'계약직 경험, 고용 형태보다 실제 맡은 일을 설명하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'계약직 경험, 고용 형태보다 실제 맡은 일을 설명하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '계약직 경험은 신입 지원에 어떻게 설명하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "계약직이라 주도성이 없었다고 설명할 필요는 없습니다",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'계약직이라 주도성이 없었다고 설명할 필요는 없습니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'계약직이라 주도성이 없었다고 설명할 필요는 없습니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '계약직 경험은 신입 지원에 어떻게 설명하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "고용 형태보다 담당한 과업과 권한을 나누세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'고용 형태보다 담당한 과업과 권한을 나누세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'고용 형태보다 담당한 과업과 권한을 나누세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '계약직 경험은 신입 지원에 어떻게 설명하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "최종 결정은 담당자가 했다면 그 사실을 말하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'최종 결정은 담당자가 했다면 그 사실을 말하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'최종 결정은 담당자가 했다면 그 사실을 말하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '계약직 경험은 신입 지원에 어떻게 설명하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "계약직 경험도 내가 확인하고 전달한 일로 설명하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'계약직 경험도 내가 확인하고 전달한 일로 설명하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'계약직 경험도 내가 확인하고 전달한 일로 설명하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '계약직 경험은 신입 지원에 어떻게 설명하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "계약직이라 주도성이 없었다고 설명할 필요는 없습니다",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "계약 기간과 역할 사실 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "직접 수행한 과업 고르기"
+        },
+        {
+          "step": 3,
+          "action": "권한과 결정 범위 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "지원 직무에 이어질 행동 설명하기"
+        }
+      ],
+      "answer_example": "가상 연습: 계약 기간 동안 자료 확인을 맡았습니다. 최종 결정은 담당자가 했고 저는 누락 항목을 정리해 전달했습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "계약직이라 주도성이 없었다고 설명할 필요는 없습니다"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 계약직 경험은 신입 지원에 어떻게 설명하나요? 약한 연습 답: ‘계약직이라 결정한 일은 없고 주어진 일만 했습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "결정권이 적어도 담당한 확인과 전달 행동까지 없었던 것은 아닐 수 있습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 계약 기간과 역할 사실 확인하기 → 직접 수행한 과업 고르기 → 권한과 결정 범위 구분하기 → 지원 직무에 이어질 행동 설명하기. 시작 문장도 ‘계약직이라 결정한 일은 없고 주어진 일만 했습니다.’에서 ‘계약 기간 동안 자료 확인을 맡았습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 계약 기간 동안 자료 확인을 맡았습니다. 최종 결정은 담당자가 했고 저는 누락 항목을 정리해 전달했습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 결정은 ___이 했고 저는 ___을 확인해 전달했습니다. 역할 경계를 두 문장으로 쓰세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S03"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-104",
+        "question": "계약직 경험은 신입 지원에 어떻게 설명하나요?",
+        "priority": 2,
+        "evidence_level": "principle_only",
+        "source_id": "S03",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections",
+        "paraphrase": "일경험 부족 시 소재 선택 원칙",
+        "scope": "프로젝트/봉사 등 소재 원칙 확인; 후보의 세부 조건은 편집 확장",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-105",
+      "category": "회사선택",
+      "original_question": "스타트업 지원 전에 무엇을 확인해야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "스타트업 지원, 막연한 성장 기대를 질문으로 바꾸세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'스타트업 지원, 막연한 성장 기대를 질문으로 바꾸세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'스타트업 지원, 막연한 성장 기대를 질문으로 바꾸세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '스타트업 지원 전에 무엇을 확인해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "스타트업의 다양한 일이 어떤 일인지 물어봤나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'스타트업의 다양한 일이 어떤 일인지 물어봤나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'스타트업의 다양한 일이 어떤 일인지 물어봤나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '스타트업 지원 전에 무엇을 확인해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "성장 기대보다 신입의 첫 과업을 확인하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'성장 기대보다 신입의 첫 과업을 확인하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'성장 기대보다 신입의 첫 과업을 확인하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '스타트업 지원 전에 무엇을 확인해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "누가 피드백하는지 모른 채 입사를 정하고 있나요?",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'누가 피드백하는지 모른 채 입사를 정하고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'누가 피드백하는지 모른 채 입사를 정하고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '스타트업 지원 전에 무엇을 확인해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "역할이 넓은 회사에서 먼저 확인할 경계",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'역할이 넓은 회사에서 먼저 확인할 경계'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'역할이 넓은 회사에서 먼저 확인할 경계'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '스타트업 지원 전에 무엇을 확인해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "누가 피드백하는지 모른 채 입사를 정하고 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 역할 범위 읽기"
+        },
+        {
+          "step": 2,
+          "action": "조직과 서비스 공개 정보 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "업무 우선순위와 교육 질문 준비하기"
+        },
+        {
+          "step": 4,
+          "action": "불확실성을 감당할 조건 정하기"
+        }
+      ],
+      "answer_example": "가상 연습: 다양한 일을 한다는 설명만으로 판단하지 않고 신입의 첫 과업과 피드백 담당자가 누구인지 확인하고 싶습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "누가 피드백하는지 모른 채 입사를 정하고 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 스타트업 지원 전에 무엇을 확인해야 하나요? 약한 연습 답: ‘스타트업은 성장할 수 있어 좋습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "실제 역할과 교육 방식 대신 막연한 기대만 남아 있습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 공고의 역할 범위 읽기 → 조직과 서비스 공개 정보 확인하기 → 업무 우선순위와 교육 질문 준비하기 → 불확실성을 감당할 조건 정하기. 시작 문장도 ‘스타트업은 성장할 수 있어 좋습니다.’에서 ‘다양한 일을 한다는 설명만으로 판단하지 않고 신입의 첫 과업과 피드백 담당자가 누구인지 확인하고 싶습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 다양한 일을 한다는 설명만으로 판단하지 않고 신입의 첫 과업과 피드백 담당자가 누구인지 확인하고 싶습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 신입의 첫 과업 ___과 피드백 담당 ___을 확인하고 싶습니다. 면접 질문 두 개를 준비하세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-105",
+        "question": "스타트업 지원 전에 무엇을 확인해야 하나요?",
+        "priority": 2,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-106",
+      "category": "회사선택",
+      "original_question": "인턴 후 전환 가능성은 어떻게 물어보나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "전환형 인턴, 가능성이라는 말에서 더 확인할 것",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'전환형 인턴, 가능성이라는 말에서 더 확인할 것'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'전환형 인턴, 가능성이라는 말에서 더 확인할 것'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '인턴 후 전환 가능성은 어떻게 물어보나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "전환 가능이라는 말이 전환 보장은 아닙니다",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'전환 가능이라는 말이 전환 보장은 아닙니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'전환 가능이라는 말이 전환 보장은 아닙니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '인턴 후 전환 가능성은 어떻게 물어보나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "인턴 전환 평가, 항목과 시기를 물어보세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'인턴 전환 평가, 항목과 시기를 물어보세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'인턴 전환 평가, 항목과 시기를 물어보세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '인턴 후 전환 가능성은 어떻게 물어보나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "전환율 추측보다 내 평가 기준을 확인하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'전환율 추측보다 내 평가 기준을 확인하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'전환율 추측보다 내 평가 기준을 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '인턴 후 전환 가능성은 어떻게 물어보나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "인턴 지원 전에 미전환 이후의 계획도 생각하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'인턴 지원 전에 미전환 이후의 계획도 생각하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'인턴 지원 전에 미전환 이후의 계획도 생각하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '인턴 후 전환 가능성은 어떻게 물어보나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "전환율 추측보다 내 평가 기준을 확인하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 전환 문구 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "평가 기준과 일정 질문하기"
+        },
+        {
+          "step": 3,
+          "action": "전환이 보장되는지 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "미전환 시 계획도 세우기"
+        }
+      ],
+      "answer_example": "가상 연습: 전환 평가가 있다면 평가 항목과 시기를 여쭤보고 싶습니다. 전환 보장으로 이해하지는 않겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "전환율 추측보다 내 평가 기준을 확인하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 인턴 후 전환 가능성은 어떻게 물어보나요? 약한 연습 답: ‘전환형이라 인턴 뒤에는 입사할 수 있습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "전환 가능성과 전환 보장은 다르며 평가 기준을 확인해야 합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 공고의 전환 문구 확인하기 → 평가 기준과 일정 질문하기 → 전환이 보장되는지 구분하기 → 미전환 시 계획도 세우기. 시작 문장도 ‘전환형이라 인턴 뒤에는 입사할 수 있습니다.’에서 ‘전환 평가가 있다면 평가 항목과 시기를 여쭤보고 싶습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 전환 평가가 있다면 평가 항목과 시기를 여쭤보고 싶습니다. 전환 보장으로 이해하지는 않겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 전환 평가 항목 ___과 일정 ___을 질문하겠습니다. 공고에 없는 항목을 표시하세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-106",
+        "question": "인턴 후 전환 가능성은 어떻게 물어보나요?",
+        "priority": 2,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-107",
+      "category": "회사선택",
+      "original_question": "관심 없는 회사 면접도 경험 삼아 봐야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "면접 연습을 위한 지원, 시간과 선택 기준을 보세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'면접 연습을 위한 지원, 시간과 선택 기준을 보세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접 연습을 위한 지원, 시간과 선택 기준을 보세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '관심 없는 회사 면접도 경험 삼아 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "갈 생각 없는 회사에 면접 연습으로 지원하고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'갈 생각 없는 회사에 면접 연습으로 지원하고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'갈 생각 없는 회사에 면접 연습으로 지원하고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '관심 없는 회사 면접도 경험 삼아 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "면접 경험을 얻는 데 드는 시간도 계산하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'면접 경험을 얻는 데 드는 시간도 계산하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접 경험을 얻는 데 드는 시간도 계산하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '관심 없는 회사 면접도 경험 삼아 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "연습 목표가 없는 지원을 반복하고 있다면",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'연습 목표가 없는 지원을 반복하고 있다면'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'연습 목표가 없는 지원을 반복하고 있다면'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '관심 없는 회사 면접도 경험 삼아 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "실제로 입사 검토할 공고에서 면접 목표를 정하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'실제로 입사 검토할 공고에서 면접 목표를 정하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'실제로 입사 검토할 공고에서 면접 목표를 정하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '관심 없는 회사 면접도 경험 삼아 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "연습 목표가 없는 지원을 반복하고 있다면",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "입사 고려 가능성 점검하기"
+        },
+        {
+          "step": 2,
+          "action": "준비에 필요한 시간 계산하기"
+        },
+        {
+          "step": 3,
+          "action": "얻고 싶은 연습 목표 정하기"
+        },
+        {
+          "step": 4,
+          "action": "지원과 면접 약속 책임 있게 지키기"
+        }
+      ],
+      "answer_example": "가상 연습: 입사 가능성이 전혀 없는 곳보다 실제로 검토할 수 있는 공고에 지원하고 답변 연습 목표를 정하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "연습 목표가 없는 지원을 반복하고 있다면"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 관심 없는 회사 면접도 경험 삼아 봐야 하나요? 약한 연습 답: ‘입사할 생각은 없지만 면접 경험을 쌓고 싶습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "지원 의사와 준비에 드는 자원, 약속의 책임을 함께 검토하지 않았습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 입사 고려 가능성 점검하기 → 준비에 필요한 시간 계산하기 → 얻고 싶은 연습 목표 정하기 → 지원과 면접 약속 책임 있게 지키기. 시작 문장도 ‘입사할 생각은 없지만 면접 경험을 쌓고 싶습니다.’에서 ‘입사 가능성이 전혀 없는 곳보다 실제로 검토할 수 있는 공고에 지원하고 답변 연습 목표를 정하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 입사 가능성이 전혀 없는 곳보다 실제로 검토할 수 있는 공고에 지원하고 답변 연습 목표를 정하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 입사 검토 가능한 조건 ___과 연습 목표 ___을 정합니다. 준비 시간을 계산하세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-107",
+        "question": "관심 없는 회사 면접도 경험 삼아 봐야 하나요?",
+        "priority": 2,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-108",
+      "category": "회사선택",
+      "original_question": "워라밸을 중요하게 본다고 말해도 되나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "워라밸 질문, 원하는 근무 조건을 구체적으로",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'워라밸 질문, 원하는 근무 조건을 구체적으로'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'워라밸 질문, 원하는 근무 조건을 구체적으로'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '워라밸을 중요하게 본다고 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "워라밸이라는 한 단어로 원하는 조건이 전달될까요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'워라밸이라는 한 단어로 원하는 조건이 전달될까요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'워라밸이라는 한 단어로 원하는 조건이 전달될까요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '워라밸을 중요하게 본다고 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "예측 가능한 일정이 중요한 이유를 구체적으로",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'예측 가능한 일정이 중요한 이유를 구체적으로'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'예측 가능한 일정이 중요한 이유를 구체적으로'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '워라밸을 중요하게 본다고 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "근무 조건을 묻기 전에 내 가능한 범위를 정하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'근무 조건을 묻기 전에 내 가능한 범위를 정하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'근무 조건을 묻기 전에 내 가능한 범위를 정하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '워라밸을 중요하게 본다고 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "책임을 지는 방식과 필요한 환경을 함께 말하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'책임을 지는 방식과 필요한 환경을 함께 말하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'책임을 지는 방식과 필요한 환경을 함께 말하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '워라밸을 중요하게 본다고 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "근무 조건을 묻기 전에 내 가능한 범위를 정하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "개인에게 중요한 조건 정의하기"
+        },
+        {
+          "step": 2,
+          "action": "직무의 통상 일정 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "맡은 책임을 수행할 방식 말하기"
+        },
+        {
+          "step": 4,
+          "action": "실제 근무 제도는 질문으로 확인하기"
+        }
+      ],
+      "answer_example": "가상 연습: 예측 가능한 일정이 중요합니다. 맡은 마감을 지키되 긴급 업무가 생기는 방식과 빈도를 확인하고 싶습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "근무 조건을 묻기 전에 내 가능한 범위를 정하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 워라밸을 중요하게 본다고 말해도 되나요? 약한 연습 답: ‘워라밸이 좋은 곳을 원합니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "어떤 근무 조건이 필요한지와 맡은 책임을 수행할 방식이 구체적이지 않습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 개인에게 중요한 조건 정의하기 → 직무의 통상 일정 확인하기 → 맡은 책임을 수행할 방식 말하기 → 실제 근무 제도는 질문으로 확인하기. 시작 문장도 ‘워라밸이 좋은 곳을 원합니다.’에서 ‘예측 가능한 일정이 중요합니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 예측 가능한 일정이 중요합니다. 맡은 마감을 지키되 긴급 업무가 생기는 방식과 빈도를 확인하고 싶습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 제게 중요한 일정 조건은 ___이고 마감은 ___ 방식으로 관리합니다. 조건을 좁혀 쓰세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-108",
+        "question": "워라밸을 중요하게 본다고 말해도 되나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-109",
+      "category": "회사선택",
+      "original_question": "회사의 평판이 좋지 않으면 어떻게 판단하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "회사 후기 한 개로 결정하기 전에 교차 확인하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'회사 후기 한 개로 결정하기 전에 교차 확인하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'회사 후기 한 개로 결정하기 전에 교차 확인하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '회사의 평판이 좋지 않으면 어떻게 판단하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "후기 한 개가 회사의 전부라고 판단하고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'후기 한 개가 회사의 전부라고 판단하고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'후기 한 개가 회사의 전부라고 판단하고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '회사의 평판이 좋지 않으면 어떻게 판단하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "익명 후기의 날짜와 상황부터 확인하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'익명 후기의 날짜와 상황부터 확인하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'익명 후기의 날짜와 상황부터 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '회사의 평판이 좋지 않으면 어떻게 판단하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "반복되는 평판 쟁점을 면접 질문으로 바꾸세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'반복되는 평판 쟁점을 면접 질문으로 바꾸세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'반복되는 평판 쟁점을 면접 질문으로 바꾸세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '회사의 평판이 좋지 않으면 어떻게 판단하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "좋고 나쁨의 느낌보다 검증할 조건을 적으세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'좋고 나쁨의 느낌보다 검증할 조건을 적으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'좋고 나쁨의 느낌보다 검증할 조건을 적으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '회사의 평판이 좋지 않으면 어떻게 판단하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "후기 한 개가 회사의 전부라고 판단하고 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "후기의 날짜와 상황 보기"
+        },
+        {
+          "step": 2,
+          "action": "반복되는 구체적 쟁점 찾기"
+        },
+        {
+          "step": 3,
+          "action": "공개 자료와 면접 질문으로 확인하기"
+        },
+        {
+          "step": 4,
+          "action": "확인 못 한 위험은 별도로 기록하기"
+        }
+      ],
+      "answer_example": "가상 연습: 익명 후기만으로 단정하지 않고 교육 담당과 업무 배분 방식을 면접에서 구체적으로 묻겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "후기 한 개가 회사의 전부라고 판단하고 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 회사의 평판이 좋지 않으면 어떻게 판단하나요? 약한 연습 답: ‘후기에 나쁜 이야기가 있어 안 좋은 회사입니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "후기 하나의 시점과 상황을 전체 회사의 사실로 일반화합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 후기의 날짜와 상황 보기 → 반복되는 구체적 쟁점 찾기 → 공개 자료와 면접 질문으로 확인하기 → 확인 못 한 위험은 별도로 기록하기. 시작 문장도 ‘후기에 나쁜 이야기가 있어 안 좋은 회사입니다.’에서 ‘익명 후기만으로 단정하지 않고 교육 담당과 업무 배분 방식을 면접에서 구체적으로 묻겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 익명 후기만으로 단정하지 않고 교육 담당과 업무 배분 방식을 면접에서 구체적으로 묻겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 반복 쟁점 ___을 ___ 질문으로 확인하겠습니다. 다른 자료와 교차 확인하세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-109",
+        "question": "회사의 평판이 좋지 않으면 어떻게 판단하나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-110",
+      "category": "회사선택",
+      "original_question": "동시에 여러 회사에 합격하면 무엇으로 결정하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "여러 제안을 받았다면 같은 표로 조건을 비교하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'여러 제안을 받았다면 같은 표로 조건을 비교하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'여러 제안을 받았다면 같은 표로 조건을 비교하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '동시에 여러 회사에 합격하면 무엇으로 결정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "여러 합격을 받았다고 조건 비교를 미뤄도 될까요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'여러 합격을 받았다고 조건 비교를 미뤄도 될까요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'여러 합격을 받았다고 조건 비교를 미뤄도 될까요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '동시에 여러 회사에 합격하면 무엇으로 결정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "제안 조건을 기억이 아닌 문서로 나란히 두세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'제안 조건을 기억이 아닌 문서로 나란히 두세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'제안 조건을 기억이 아닌 문서로 나란히 두세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '동시에 여러 회사에 합격하면 무엇으로 결정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "회사가 달라도 내 선택 기준은 같게 적용하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'회사가 달라도 내 선택 기준은 같게 적용하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'회사가 달라도 내 선택 기준은 같게 적용하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '동시에 여러 회사에 합격하면 무엇으로 결정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "답변 기한 전에 불확실한 조건부터 확인하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'답변 기한 전에 불확실한 조건부터 확인하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'답변 기한 전에 불확실한 조건부터 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '동시에 여러 회사에 합격하면 무엇으로 결정하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "답변 기한 전에 불확실한 조건부터 확인하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "제안 조건을 문서로 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "업무와 보상 기준에 우선순위 두기"
+        },
+        {
+          "step": 3,
+          "action": "불확실한 항목 질문하기"
+        },
+        {
+          "step": 4,
+          "action": "기한 안에 결정과 회신하기"
+        }
+      ],
+      "answer_example": "가상 연습: 가상의 두 제안이라면 직무 범위와 교육, 보상, 출퇴근을 같은 기준으로 비교하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "답변 기한 전에 불확실한 조건부터 확인하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 동시에 여러 회사에 합격하면 무엇으로 결정하나요? 약한 연습 답: ‘더 유명한 회사로 가겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "직무와 보상 등 실제 제안 조건을 비교하지 않고 이름으로 결정합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 제안 조건을 문서로 확인하기 → 업무와 보상 기준에 우선순위 두기 → 불확실한 항목 질문하기 → 기한 안에 결정과 회신하기. 시작 문장도 ‘더 유명한 회사로 가겠습니다.’에서 ‘가상의 두 제안이라면 직무 범위와 교육, 보상, 출퇴근을 같은 기준으로 비교하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 가상의 두 제안이라면 직무 범위와 교육, 보상, 출퇴근을 같은 기준으로 비교하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 우선 기준 ___에 따라 확인된 조건 ___을 비교합니다. 미확인 항목은 질문으로 남기세요. 공고와 근무 조건을 내 기준으로 확인하는 연습은 잡앤킬에서 이어 갑니다."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S09",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S02",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/interview-advice/"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 5,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-110",
+        "question": "동시에 여러 회사에 합격하면 무엇으로 결정하나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    }
+  ]
+}
+

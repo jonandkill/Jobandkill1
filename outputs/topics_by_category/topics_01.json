@@ -1,0 +1,2238 @@
+{
+  "schema_version": "2.0-candidate",
+  "category": "자기소개",
+  "status": "150개 연구·편집 후보; 기존 원본150 미확인; 실제 수요 빈도 미측정; 게시 승인 없음",
+  "items": [
+    {
+      "id": "JK2-001",
+      "category": "자기소개",
+      "original_question": "1분 자기소개에는 무엇을 넣어야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자기소개 1분, 경험을 전부 말하면 핵심이 흐려집니다",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개 1분, 경험을 전부 말하면 핵심이 흐려집니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개 1분, 경험을 전부 말하면 핵심이 흐려집니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '1분 자기소개에는 무엇을 넣어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "경험을 다 말한 1분, 정작 나를 설명했나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'경험을 다 말한 1분, 정작 나를 설명했나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'경험을 다 말한 1분, 정작 나를 설명했나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '1분 자기소개에는 무엇을 넣어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자기소개 한 편에 남길 경험은 하나부터",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'자기소개 한 편에 남길 경험은 하나부터'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개 한 편에 남길 경험은 하나부터'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '1분 자기소개에는 무엇을 넣어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "첫 면접 자기소개, 경력 대신 행동을 꺼내세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'첫 면접 자기소개, 경력 대신 행동을 꺼내세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'첫 면접 자기소개, 경력 대신 행동을 꺼내세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '1분 자기소개에는 무엇을 넣어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "1분이 짧다면 배경을 줄이고 내 행동을 남기세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'1분이 짧다면 배경을 줄이고 내 행동을 남기세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'1분이 짧다면 배경을 줄이고 내 행동을 남기세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '1분 자기소개에는 무엇을 넣어야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "경험을 다 말한 1분, 정작 나를 설명했나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "지원 직무 한 가지 정하기"
+        },
+        {
+          "step": 2,
+          "action": "직무와 닿는 경험 하나 고르기"
+        },
+        {
+          "step": 3,
+          "action": "내 행동과 배운 점 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "지원 직무에서 쓸 방법으로 마무리하기"
+        }
+      ],
+      "answer_example": "가상 연습: 자료 조사 과제에서 출처별 차이를 정리했습니다. 이 습관을 리서치 업무에 적용하고 싶습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "경험을 다 말한 1분, 정작 나를 설명했나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 1분 자기소개에는 무엇을 넣어야 하나요? 약한 연습 답: ‘저는 여러 활동을 하며 다양한 역량을 키웠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "활동 이름만 이어지면 지원 직무와 연결되는 내 행동을 알기 어렵습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 지원 직무 한 가지 정하기 → 직무와 닿는 경험 하나 고르기 → 내 행동과 배운 점 붙이기 → 지원 직무에서 쓸 방법으로 마무리하기. 시작 문장도 ‘저는 여러 활동을 하며 다양한 역량을 키웠습니다.’에서 ‘자료 조사 과제에서 출처별 차이를 정리했습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 자료 조사 과제에서 출처별 차이를 정리했습니다. 이 습관을 리서치 업무에 적용하고 싶습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 내가 강조할 행동은 ___, 그 근거는 ___입니다. 경험 하나로 1분 답을 녹음하세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-001",
+        "question": "1분 자기소개에는 무엇을 넣어야 하나요?",
+        "priority": 1,
+        "evidence_level": "direct_question",
+        "source_id": "S12",
+        "url": "https://community.linkareer.com/employment_data/6602292",
+        "paraphrase": "자기소개 구성·축약·암기·무인턴 FAQ",
+        "scope": "원문 FAQ가 같은 고민을 직접 다룸; 편집자료이며 이용자 수요량 미측정",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": "SEM-001",
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-002",
+      "category": "자기소개",
+      "original_question": "자기소개와 지원동기는 어떻게 다르게 말하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자기소개와 지원동기, 같은 답을 반복하고 있나요?",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개와 지원동기, 같은 답을 반복하고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개와 지원동기, 같은 답을 반복하고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개와 지원동기는 어떻게 다르게 말하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자기소개를 했는데 지원동기가 또 나온다면",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'자기소개를 했는데 지원동기가 또 나온다면'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개를 했는데 지원동기가 또 나온다면'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개와 지원동기는 어떻게 다르게 말하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "나를 소개하는 답과 회사를 고른 답은 다릅니다",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'나를 소개하는 답과 회사를 고른 답은 다릅니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'나를 소개하는 답과 회사를 고른 답은 다릅니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자기소개와 지원동기는 어떻게 다르게 말하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "같은 경험도 자기소개와 지원동기에서 나눠 쓰는 법",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'같은 경험도 자기소개와 지원동기에서 나눠 쓰는 법'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'같은 경험도 자기소개와 지원동기에서 나눠 쓰는 법'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개와 지원동기는 어떻게 다르게 말하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "두 질문에 같은 답을 준비했다면 먼저 나눌 기준",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'두 질문에 같은 답을 준비했다면 먼저 나눌 기준'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'두 질문에 같은 답을 준비했다면 먼저 나눌 기준'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자기소개와 지원동기는 어떻게 다르게 말하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자기소개와 지원동기, 같은 답을 반복하고 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "자기소개는 내 특징으로 시작하기"
+        },
+        {
+          "step": 2,
+          "action": "지원동기는 선택 이유로 시작하기"
+        },
+        {
+          "step": 3,
+          "action": "각 답에 다른 근거 배치하기"
+        },
+        {
+          "step": 4,
+          "action": "두 답의 연결 문장만 남기기"
+        }
+      ],
+      "answer_example": "가상 연습: 자기소개에서는 기록 습관을, 지원동기에서는 공고의 운영 업무를 선택한 이유를 설명하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자기소개와 지원동기, 같은 답을 반복하고 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자기소개와 지원동기는 어떻게 다르게 말하나요? 약한 연습 답: ‘저는 성실해서 이 회사에 지원했습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "나의 특징과 회사 선택 이유가 섞여 두 질문 모두 근거가 부족해집니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 자기소개는 내 특징으로 시작하기 → 지원동기는 선택 이유로 시작하기 → 각 답에 다른 근거 배치하기 → 두 답의 연결 문장만 남기기. 시작 문장도 ‘저는 성실해서 이 회사에 지원했습니다.’에서 ‘자기소개에서는 기록 습관을, 지원동기에서는 공고의 운영 업무를 선택한 이유를 설명하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 자기소개에서는 기록 습관을, 지원동기에서는 공고의 운영 업무를 선택한 이유를 설명하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 자기소개 근거는 ___, 이 회사 선택 근거는 ___입니다. 답 두 개를 나란히 쓰세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13",
+        "S05"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-002",
+        "question": "자기소개와 지원동기는 어떻게 다르게 말하나요?",
+        "priority": 1,
+        "evidence_level": "principle_only",
+        "source_id": "S05",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter",
+        "paraphrase": "회사 조사와 적합성 원칙",
+        "scope": "회사 조사 원칙만 뒷받침; 선택 딜레마 자체의 직접 수요 증거 미확보",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-003",
+      "category": "자기소개",
+      "original_question": "자기소개에서 학교와 전공을 꼭 말해야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "학교 소개로 자기소개 시간이 끝나고 있다면",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'학교 소개로 자기소개 시간이 끝나고 있다면'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'학교 소개로 자기소개 시간이 끝나고 있다면'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에서 학교와 전공을 꼭 말해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "학교 이름 다음에 할 말이 막히는 자기소개",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'학교 이름 다음에 할 말이 막히는 자기소개'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'학교 이름 다음에 할 말이 막히는 자기소개'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에서 학교와 전공을 꼭 말해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "전공 소개가 길어질 때 남겨야 할 행동 한 가지",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'전공 소개가 길어질 때 남겨야 할 행동 한 가지'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'전공 소개가 길어질 때 남겨야 할 행동 한 가지'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에서 학교와 전공을 꼭 말해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "학교 설명을 줄이고 배운 것을 보여 주는 자기소개",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'학교 설명을 줄이고 배운 것을 보여 주는 자기소개'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'학교 설명을 줄이고 배운 것을 보여 주는 자기소개'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에서 학교와 전공을 꼭 말해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "블라인드 자기소개, 학교명 대신 꺼낼 경험",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'블라인드 자기소개, 학교명 대신 꺼낼 경험'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'블라인드 자기소개, 학교명 대신 꺼낼 경험'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에서 학교와 전공을 꼭 말해야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "학교 소개로 자기소개 시간이 끝나고 있다면",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "공고의 블라인드 안내 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "학교 정보의 직무 관련성 판단하기"
+        },
+        {
+          "step": 3,
+          "action": "학교명 대신 배운 내용 선택하기"
+        },
+        {
+          "step": 4,
+          "action": "역량을 보여 주는 행동 붙이기"
+        }
+      ],
+      "answer_example": "가상 연습: 전공 수업에서 수요 데이터를 정리하며 표의 오류를 확인하는 습관을 익혔습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "학교 소개로 자기소개 시간이 끝나고 있다면"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자기소개에서 학교와 전공을 꼭 말해야 하나요? 약한 연습 답: ‘저는 어느 학교의 어느 전공을 졸업했습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "학력만 소개하면 지원 업무에서 보여 줄 행동이 남지 않습니다. 블라인드 안내도 먼저 확인해야 합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 공고의 블라인드 안내 확인하기 → 학교 정보의 직무 관련성 판단하기 → 학교명 대신 배운 내용 선택하기 → 역량을 보여 주는 행동 붙이기. 시작 문장도 ‘저는 어느 학교의 어느 전공을 졸업했습니다.’에서 ‘전공 수업에서 수요 데이터를 정리하며 표의 오류를 확인하는 습관을 익혔습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 전공 수업에서 수요 데이터를 정리하며 표의 오류를 확인하는 습관을 익혔습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 전공에서 배운 ___을 ___에 써 봤습니다. 학교명 없는 소개를 한 번 말해 보세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13",
+        "S16"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S16",
+          "url": "https://nurse.csj.ac.kr/skin/major02/job.pdf"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-003",
+        "question": "자기소개에서 학교와 전공을 꼭 말해야 하나요?",
+        "priority": 1,
+        "evidence_level": "principle_only",
+        "source_id": "S16",
+        "url": "https://nurse.csj.ac.kr/skin/major02/job.pdf",
+        "paraphrase": "서류 약점·후속 질문·답변 요약 안내",
+        "scope": "낮은 학점/영어점수/자격 부족 유형은 있으나 해당 질문 원형의 직접 증거 아님",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": "SEM-001",
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-004",
+      "category": "자기소개",
+      "original_question": "자기소개 첫 문장을 어떻게 시작하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자기소개 첫 문장, 거창한 별명 없이 시작하는 법",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개 첫 문장, 거창한 별명 없이 시작하는 법'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개 첫 문장, 거창한 별명 없이 시작하는 법'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 첫 문장을 어떻게 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "저는 열정적인 사람입니다, 다음 문장이 막힌다면",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'저는 열정적인 사람입니다, 다음 문장이 막힌다면'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'저는 열정적인 사람입니다, 다음 문장이 막힌다면'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자기소개 첫 문장을 어떻게 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "별명 없이도 나를 설명하는 자기소개 첫 문장",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'별명 없이도 나를 설명하는 자기소개 첫 문장'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'별명 없이도 나를 설명하는 자기소개 첫 문장'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 첫 문장을 어떻게 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "첫마디가 거창해질수록 경험과 멀어지고 있나요?",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'첫마디가 거창해질수록 경험과 멀어지고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'첫마디가 거창해질수록 경험과 멀어지고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자기소개 첫 문장을 어떻게 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자기소개 시작, 성격보다 실제 습관을 말해 보세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개 시작, 성격보다 실제 습관을 말해 보세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개 시작, 성격보다 실제 습관을 말해 보세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 첫 문장을 어떻게 시작하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "별명 없이도 나를 설명하는 자기소개 첫 문장",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "전달할 특징 하나 정하기"
+        },
+        {
+          "step": 2,
+          "action": "특징을 행동 언어로 바꾸기"
+        },
+        {
+          "step": 3,
+          "action": "바로 증명할 사례 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "입으로 읽고 긴 수식어 덜기"
+        }
+      ],
+      "answer_example": "가상 연습: 저는 작업을 시작하기 전에 확인할 항목을 적는 편입니다. 행사 준비에서도 준비물 목록을 먼저 만들었습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "별명 없이도 나를 설명하는 자기소개 첫 문장"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자기소개 첫 문장을 어떻게 시작하나요? 약한 연습 답: ‘저는 불가능을 가능으로 만드는 사람입니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "큰 선언에 맞는 실제 행동이 뒤따르지 않으면 나를 설명하기 어렵습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 전달할 특징 하나 정하기 → 특징을 행동 언어로 바꾸기 → 바로 증명할 사례 붙이기 → 입으로 읽고 긴 수식어 덜기. 시작 문장도 ‘저는 불가능을 가능으로 만드는 사람입니다.’에서 ‘저는 작업을 시작하기 전에 확인할 항목을 적는 편입니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 저는 작업을 시작하기 전에 확인할 항목을 적는 편입니다. 행사 준비에서도 준비물 목록을 먼저 만들었습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 저는 ___할 때 먼저 ___합니다. 이 습관의 실제 장면 하나를 적으세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 3,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-004",
+        "question": "자기소개 첫 문장을 어떻게 시작하나요?",
+        "priority": 2,
+        "evidence_level": "direct_question",
+        "source_id": "S12",
+        "url": "https://community.linkareer.com/employment_data/6602292",
+        "paraphrase": "자기소개 구성·축약·암기·무인턴 FAQ",
+        "scope": "원문 FAQ가 같은 고민을 직접 다룸; 편집자료이며 이용자 수요량 미측정",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": "SEM-002",
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-005",
+      "category": "자기소개",
+      "original_question": "30초 자기소개를 요청하면 무엇을 줄이나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "30초 자기소개, 줄일 문장과 남길 문장",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'30초 자기소개, 줄일 문장과 남길 문장'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'30초 자기소개, 줄일 문장과 남길 문장'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '30초 자기소개를 요청하면 무엇을 줄이나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "30초를 달라는데 1분 원고를 빨리 읽고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'30초를 달라는데 1분 원고를 빨리 읽고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'30초를 달라는데 1분 원고를 빨리 읽고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '30초 자기소개를 요청하면 무엇을 줄이나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "짧은 자기소개에도 내 행동은 남겨야 합니다",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'짧은 자기소개에도 내 행동은 남겨야 합니다'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'짧은 자기소개에도 내 행동은 남겨야 합니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '30초 자기소개를 요청하면 무엇을 줄이나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "30초 자기소개를 만들 때 먼저 지울 배경 설명",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'30초 자기소개를 만들 때 먼저 지울 배경 설명'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'30초 자기소개를 만들 때 먼저 지울 배경 설명'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '30초 자기소개를 요청하면 무엇을 줄이나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자기소개 시간이 반으로 줄어도 남길 세 문장",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'자기소개 시간이 반으로 줄어도 남길 세 문장'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개 시간이 반으로 줄어도 남길 세 문장'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '30초 자기소개를 요청하면 무엇을 줄이나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "30초를 달라는데 1분 원고를 빨리 읽고 있나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "역량 한 가지 남기기"
+        },
+        {
+          "step": 2,
+          "action": "배경 설명 한 문장으로 줄이기"
+        },
+        {
+          "step": 3,
+          "action": "내 행동 한 문장 보존하기"
+        },
+        {
+          "step": 4,
+          "action": "직무 연결 한 문장으로 닫기"
+        }
+      ],
+      "answer_example": "가상 연습: 설문 과제에서 응답 누락을 확인하고 다시 정리했습니다. 꼼꼼한 확인이 필요한 운영 업무를 배우고 싶습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "30초를 달라는데 1분 원고를 빨리 읽고 있나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 30초 자기소개를 요청하면 무엇을 줄이나요? 약한 연습 답: ‘짧게 말씀드리면 여러 경험이 있는데 먼저 첫 번째는요.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "30초 안에 경험을 늘리면 내 역할과 직무 연결이 빠지기 쉽습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 역량 한 가지 남기기 → 배경 설명 한 문장으로 줄이기 → 내 행동 한 문장 보존하기 → 직무 연결 한 문장으로 닫기. 시작 문장도 ‘짧게 말씀드리면 여러 경험이 있는데 먼저 첫 번째는요.’에서 ‘설문 과제에서 응답 누락을 확인하고 다시 정리했습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 설문 과제에서 응답 누락을 확인하고 다시 정리했습니다. 꼼꼼한 확인이 필요한 운영 업무를 배우고 싶습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 내 특징 ___, 행동 ___, 업무 연결 ___을 세 문장으로 읽으며 시간을 재세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-005",
+        "question": "30초 자기소개를 요청하면 무엇을 줄이나요?",
+        "priority": 2,
+        "evidence_level": "direct_question",
+        "source_id": "S12",
+        "url": "https://community.linkareer.com/employment_data/6602292",
+        "paraphrase": "자기소개 구성·축약·암기·무인턴 FAQ",
+        "scope": "원문 FAQ가 같은 고민을 직접 다룸; 편집자료이며 이용자 수요량 미측정",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-006",
+      "category": "자기소개",
+      "original_question": "자기소개에 숫자로 된 성과가 없으면 어떡하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "성과 숫자가 없는 자기소개에도 쓸 근거는 있습니다",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'성과 숫자가 없는 자기소개에도 쓸 근거는 있습니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'성과 숫자가 없는 자기소개에도 쓸 근거는 있습니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에 숫자로 된 성과가 없으면 어떡하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자기소개에 쓸 숫자가 없어 막혔다면",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개에 쓸 숫자가 없어 막혔다면'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개에 쓸 숫자가 없어 막혔다면'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에 숫자로 된 성과가 없으면 어떡하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "수치 없이도 설명할 수 있는 경험의 전후 차이",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'수치 없이도 설명할 수 있는 경험의 전후 차이'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'수치 없이도 설명할 수 있는 경험의 전후 차이'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에 숫자로 된 성과가 없으면 어떡하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "없는 성과 숫자를 붙이기 전에 확인할 기록",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'없는 성과 숫자를 붙이기 전에 확인할 기록'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'없는 성과 숫자를 붙이기 전에 확인할 기록'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개에 숫자로 된 성과가 없으면 어떡하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "대단한 숫자 대신 내가 바꾼 상태를 말하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'대단한 숫자 대신 내가 바꾼 상태를 말하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'대단한 숫자 대신 내가 바꾼 상태를 말하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자기소개에 숫자로 된 성과가 없으면 어떡하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자기소개에 쓸 숫자가 없어 막혔다면",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "실제 바뀐 상태 찾기"
+        },
+        {
+          "step": 2,
+          "action": "확인 가능한 전후 차이 적기"
+        },
+        {
+          "step": 3,
+          "action": "내가 한 부분만 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "없는 수치를 붙이지 않기"
+        }
+      ],
+      "answer_example": "가상 연습: 팀 자료의 파일명이 달라 찾기 어려웠습니다. 이름 규칙을 정해 필요한 자료를 구분할 수 있게 했습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자기소개에 쓸 숫자가 없어 막혔다면"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자기소개에 숫자로 된 성과가 없으면 어떡하나요? 약한 연습 답: ‘정확한 수치는 없지만 성과가 아주 좋았습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "정도만 강조하면 무엇이 달라졌는지 확인할 수 없습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 실제 바뀐 상태 찾기 → 확인 가능한 전후 차이 적기 → 내가 한 부분만 구분하기 → 없는 수치를 붙이지 않기. 시작 문장도 ‘정확한 수치는 없지만 성과가 아주 좋았습니다.’에서 ‘팀 자료의 파일명이 달라 찾기 어려웠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 팀 자료의 파일명이 달라 찾기 어려웠습니다. 이름 규칙을 정해 필요한 자료를 구분할 수 있게 했습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 이전에는 ___, 이후에는 ___ 상태였습니다. 기록으로 확인 가능한 차이 하나를 고르세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13",
+        "S24"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S24",
+          "url": "https://community.linkareer.com/mentor-qna/6544526"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-006",
+        "question": "자기소개에 숫자로 된 성과가 없으면 어떡하나요?",
+        "priority": 2,
+        "evidence_level": "close_variant",
+        "source_id": "S24",
+        "url": "https://community.linkareer.com/mentor-qna/6544526",
+        "paraphrase": "수치 강조 조언을 따르기 어려운 자기소개 고민",
+        "scope": "개인질문 존재 증거; 멘토답변 보장 아님; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-007",
+      "category": "자기소개",
+      "original_question": "자기소개를 외운 티가 나지 않게 하려면요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자기소개를 잊을까 걱정된다면 문장보다 이것부터",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개를 잊을까 걱정된다면 문장보다 이것부터'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개를 잊을까 걱정된다면 문장보다 이것부터'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개를 외운 티가 나지 않게 하려면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "외운 첫 문장을 잊으면 자기소개 전체가 막히나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'외운 첫 문장을 잊으면 자기소개 전체가 막히나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'외운 첫 문장을 잊으면 자기소개 전체가 막히나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개를 외운 티가 나지 않게 하려면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "원고를 통째로 외우기 전에 세 단어만 남겨 보세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'원고를 통째로 외우기 전에 세 단어만 남겨 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'원고를 통째로 외우기 전에 세 단어만 남겨 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자기소개를 외운 티가 나지 않게 하려면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "말투가 딱딱한 자기소개, 녹음으로 찾을 부분",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'말투가 딱딱한 자기소개, 녹음으로 찾을 부분'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'말투가 딱딱한 자기소개, 녹음으로 찾을 부분'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개를 외운 티가 나지 않게 하려면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자기소개를 다시 말할 때마다 표현이 달라도 됩니다",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'자기소개를 다시 말할 때마다 표현이 달라도 됩니다'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개를 다시 말할 때마다 표현이 달라도 됩니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개를 외운 티가 나지 않게 하려면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자기소개를 잊을까 걱정된다면 문장보다 이것부터",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "핵심 단어 세 개 정하기"
+        },
+        {
+          "step": 2,
+          "action": "단어 사이 연결을 말로 연습하기"
+        },
+        {
+          "step": 3,
+          "action": "매번 문장을 조금 달리 말하기"
+        },
+        {
+          "step": 4,
+          "action": "녹음해 부자연스러운 표현 고치기"
+        }
+      ],
+      "answer_example": "가상 연습: 기록, 누락 확인, 운영 업무라는 세 단어를 기억하고 제 말로 연결해 보겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자기소개를 잊을까 걱정된다면 문장보다 이것부터"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자기소개를 외운 티가 나지 않게 하려면요? 약한 연습 답: ‘자기소개 원고는 완벽하게 외웠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "문장이 끊기면 다음 내용을 떠올릴 단서가 없을 수 있습니다. 내용을 이해한 말하기 연습이 필요합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 핵심 단어 세 개 정하기 → 단어 사이 연결을 말로 연습하기 → 매번 문장을 조금 달리 말하기 → 녹음해 부자연스러운 표현 고치기. 시작 문장도 ‘자기소개 원고는 완벽하게 외웠습니다.’에서 ‘기록, 누락 확인, 운영 업무라는 세 단어를 기억하고 제 말로 연결해 보겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 기록, 누락 확인, 운영 업무라는 세 단어를 기억하고 제 말로 연결해 보겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 내 소개의 단서는 ___, ___, ___입니다. 원고를 덮고 세 단어로 다시 말하세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-007",
+        "question": "자기소개를 외운 티가 나지 않게 하려면요?",
+        "priority": 2,
+        "evidence_level": "direct_question",
+        "source_id": "S12",
+        "url": "https://community.linkareer.com/employment_data/6602292",
+        "paraphrase": "자기소개 구성·축약·암기·무인턴 FAQ",
+        "scope": "원문 FAQ가 같은 고민을 직접 다룸; 편집자료이며 이용자 수요량 미측정",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-008",
+      "category": "자기소개",
+      "original_question": "이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "이력서 경험을 다시 말할 때 추가해야 할 한 가지",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'이력서 경험을 다시 말할 때 추가해야 할 한 가지'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'이력서 경험을 다시 말할 때 추가해야 할 한 가지'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "이력서에 있으니 말하지 말아야 할까요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'이력서에 있으니 말하지 말아야 할까요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'이력서에 있으니 말하지 말아야 할까요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "같은 경험을 다시 말할 때는 판단 이유를 더하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'같은 경험을 다시 말할 때는 판단 이유를 더하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'같은 경험을 다시 말할 때는 판단 이유를 더하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "읽은 내용을 반복하는 자기소개에서 벗어나는 법",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'읽은 내용을 반복하는 자기소개에서 벗어나는 법'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'읽은 내용을 반복하는 자기소개에서 벗어나는 법'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "문서에 쓴 사실 뒤에 내가 선택한 이유를 붙이세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'문서에 쓴 사실 뒤에 내가 선택한 이유를 붙이세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'문서에 쓴 사실 뒤에 내가 선택한 이유를 붙이세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "이력서에 있으니 말하지 말아야 할까요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "이력서의 사실 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "문서에 없는 판단 이유 찾기"
+        },
+        {
+          "step": 3,
+          "action": "내 행동을 짧게 설명하기"
+        },
+        {
+          "step": 4,
+          "action": "더 물어볼 수 있는 지점 남기기"
+        }
+      ],
+      "answer_example": "가상 연습: 이력서에는 설문 정리라고 썼지만, 면접에서는 왜 중복 응답부터 확인했는지 설명하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "이력서에 있으니 말하지 말아야 할까요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요? 약한 연습 답: ‘이력서에 적힌 그대로입니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "서류에 없는 판단 이유를 설명할 기회를 놓칩니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 이력서의 사실 확인하기 → 문서에 없는 판단 이유 찾기 → 내 행동을 짧게 설명하기 → 더 물어볼 수 있는 지점 남기기. 시작 문장도 ‘이력서에 적힌 그대로입니다.’에서 ‘이력서에는 설문 정리라고 썼지만, 면접에서는 왜 중복 응답부터 확인했는지 설명하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 이력서에는 설문 정리라고 썼지만, 면접에서는 왜 중복 응답부터 확인했는지 설명하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 제가 ___을 먼저 한 이유는 ___입니다. 이력서 경험에 이유 한 줄을 덧붙이세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13",
+        "S03"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-008",
+        "question": "이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S03",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections",
+        "paraphrase": "일경험 부족 시 소재 선택 원칙",
+        "scope": "프로젝트/봉사 등 소재 원칙 확인; 후보의 세부 조건은 편집 확장",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-009",
+      "category": "자기소개",
+      "original_question": "평범한 경험으로 자기소개를 차별화할 수 있나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "특별한 경험이 없어도 자기소개가 구체적일 수 있습니다",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'특별한 경험이 없어도 자기소개가 구체적일 수 있습니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'특별한 경험이 없어도 자기소개가 구체적일 수 있습니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '평범한 경험으로 자기소개를 차별화할 수 있나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "누구나 해 본 과제라 자기소개에서 뺐나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'누구나 해 본 과제라 자기소개에서 뺐나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'누구나 해 본 과제라 자기소개에서 뺐나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '평범한 경험으로 자기소개를 차별화할 수 있나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "흔한 아르바이트에서도 다른 선택을 찾을 수 있습니다",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'흔한 아르바이트에서도 다른 선택을 찾을 수 있습니다'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'흔한 아르바이트에서도 다른 선택을 찾을 수 있습니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '평범한 경험으로 자기소개를 차별화할 수 있나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "특별한 경험 대신 구체적인 선택을 소개하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'특별한 경험 대신 구체적인 선택을 소개하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'특별한 경험 대신 구체적인 선택을 소개하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '평범한 경험으로 자기소개를 차별화할 수 있나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "평범한 경험을 부풀리지 않고 자세히 말하는 법",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'평범한 경험을 부풀리지 않고 자세히 말하는 법'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'평범한 경험을 부풀리지 않고 자세히 말하는 법'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '평범한 경험으로 자기소개를 차별화할 수 있나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "누구나 해 본 과제라 자기소개에서 뺐나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "흔한 경험 속 선택 찾기"
+        },
+        {
+          "step": 2,
+          "action": "선택 당시 기준 밝히기"
+        },
+        {
+          "step": 3,
+          "action": "행동 뒤 확인한 결과 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "대단하다는 평가 대신 사실 남기기"
+        }
+      ],
+      "answer_example": "가상 연습: 카페 아르바이트에서 주문을 다시 읽어 확인했습니다. 실수를 줄이려 선택한 방법이었다고 설명하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "누구나 해 본 과제라 자기소개에서 뺐나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 평범한 경험으로 자기소개를 차별화할 수 있나요? 약한 연습 답: ‘남들과 달리 특별한 경험을 많이 했습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "특별하다는 평가보다 경험 속 선택과 행동을 설명해야 합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 흔한 경험 속 선택 찾기 → 선택 당시 기준 밝히기 → 행동 뒤 확인한 결과 붙이기 → 대단하다는 평가 대신 사실 남기기. 시작 문장도 ‘남들과 달리 특별한 경험을 많이 했습니다.’에서 ‘카페 아르바이트에서 주문을 다시 읽어 확인했습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 카페 아르바이트에서 주문을 다시 읽어 확인했습니다. 실수를 줄이려 선택한 방법이었다고 설명하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 같은 상황에서 저는 ___을 기준으로 ___했습니다. 평범한 경험의 선택 장면을 찾으세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13",
+        "S03"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-009",
+        "question": "평범한 경험으로 자기소개를 차별화할 수 있나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S03",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections",
+        "paraphrase": "일경험 부족 시 소재 선택 원칙",
+        "scope": "프로젝트/봉사 등 소재 원칙 확인; 후보의 세부 조건은 편집 확장",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-010",
+      "category": "자기소개",
+      "original_question": "자기소개 마지막 문장은 어떻게 끝내나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자기소개 끝의 열심히 하겠습니다를 바꾸는 방법",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개 끝의 열심히 하겠습니다를 바꾸는 방법'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개 끝의 열심히 하겠습니다를 바꾸는 방법'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 마지막 문장은 어떻게 끝내나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "열심히 하겠습니다로 끝나는 자기소개를 고쳐 보세요",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'열심히 하겠습니다로 끝나는 자기소개를 고쳐 보세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'열심히 하겠습니다로 끝나는 자기소개를 고쳐 보세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 마지막 문장은 어떻게 끝내나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자기소개 마지막에 새 강점을 또 넣고 있나요?",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자기소개 마지막에 새 강점을 또 넣고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자기소개 마지막에 새 강점을 또 넣고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 마지막 문장은 어떻게 끝내나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "처음 말한 강점을 업무 습관으로 연결하는 끝맺음",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'처음 말한 강점을 업무 습관으로 연결하는 끝맺음'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'처음 말한 강점을 업무 습관으로 연결하는 끝맺음'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 마지막 문장은 어떻게 끝내나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "끝인사 전에 남길 것은 직무에서 해 볼 행동입니다",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'끝인사 전에 남길 것은 직무에서 해 볼 행동입니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'끝인사 전에 남길 것은 직무에서 해 볼 행동입니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자기소개 마지막 문장은 어떻게 끝내나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자기소개 끝의 열심히 하겠습니다를 바꾸는 방법",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "앞서 말한 강점 되짚기"
+        },
+        {
+          "step": 2,
+          "action": "공고 업무 한 가지 연결하기"
+        },
+        {
+          "step": 3,
+          "action": "입사 후 배울 범위 인정하기"
+        },
+        {
+          "step": 4,
+          "action": "실행할 습관으로 끝내기"
+        }
+      ],
+      "answer_example": "가상 연습: 업무를 익힐 때도 확인 목록을 만들고 모르는 기준은 질문하며 배우겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자기소개 끝의 열심히 하겠습니다를 바꾸는 방법"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자기소개 마지막 문장은 어떻게 끝내나요? 약한 연습 답: ‘입사하면 누구보다 열심히 하겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "어떤 업무에서 어떤 행동을 이어 갈지 구체적으로 알 수 없습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 앞서 말한 강점 되짚기 → 공고 업무 한 가지 연결하기 → 입사 후 배울 범위 인정하기 → 실행할 습관으로 끝내기. 시작 문장도 ‘입사하면 누구보다 열심히 하겠습니다.’에서 ‘업무를 익힐 때도 확인 목록을 만들고 모르는 기준은 질문하며 배우겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 업무를 익힐 때도 확인 목록을 만들고 모르는 기준은 질문하며 배우겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 앞서 말한 ___ 습관을 ___ 업무에 적용하겠습니다. 마지막 문장을 실제 행동으로 고치세요. 자기소개를 내 경험으로 바꾸는 연습을 이어 가려면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S13",
+        "S03"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S01",
+          "url": "https://careerservices.fas.harvard.edu/resources/interviewing/"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S12",
+          "url": "https://community.linkareer.com/employment_data/6602292"
+        },
+        {
+          "id": "S13",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/top-10-interview-questions"
+        },
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-010",
+        "question": "자기소개 마지막 문장은 어떻게 끝내나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S03",
+        "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections",
+        "paraphrase": "일경험 부족 시 소재 선택 원칙",
+        "scope": "프로젝트/봉사 등 소재 원칙 확인; 후보의 세부 조건은 편집 확장",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    }
+  ]
+}
+

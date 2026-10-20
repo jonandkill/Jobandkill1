@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.0-candidate",
+  "status": "150개 연구·편집 후보; 기존 원본150 미확인; 실제 수요 빈도 미측정; 게시 승인 없음",
+  "total": 150,
+  "categories": {
+    "자기소개": 10,
+    "지원동기": 10,
+    "직무이해": 10,
+    "경험부족": 10,
+    "협업": 10,
+    "갈등": 10,
+    "실패": 10,
+    "문제해결": 10,
+    "강점약점": 10,
+    "공백스펙": 10,
+    "회사선택": 10,
+    "자소서": 10,
+    "면접대응": 10,
+    "전형준비": 10,
+    "입사조건": 10
+  },
+  "question_evidence_counts": {
+    "direct_question": 12,
+    "principle_only": 71,
+    "close_variant": 49,
+    "unverified": 18
+  },
+  "legacy_comparison": "Library revision128의73개 기존기록과 별도 legacy_usage_audit.json에서 비교; 기존150 원본과의 동일성 미확인"
+}
+
