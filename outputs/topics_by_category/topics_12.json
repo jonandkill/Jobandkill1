@@ -1,0 +1,2248 @@
+{
+  "schema_version": "2.0-candidate",
+  "category": "자소서",
+  "status": "150개 연구·편집 후보; 기존 원본150 미확인; 실제 수요 빈도 미측정; 게시 승인 없음",
+  "items": [
+    {
+      "id": "JK2-111",
+      "category": "자소서",
+      "original_question": "자소서 첫 문장은 어떻게 써야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자소서 첫 문장, 멋진 선언보다 질문에 답하세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 첫 문장, 멋진 선언보다 질문에 답하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 첫 문장, 멋진 선언보다 질문에 답하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 첫 문장은 어떻게 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자소서 첫 줄이 성격 선언으로만 시작하나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 첫 줄이 성격 선언으로만 시작하나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 첫 줄이 성격 선언으로만 시작하나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 첫 문장은 어떻게 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "문항의 질문에 한 문장으로 먼저 답해 보세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'문항의 질문에 한 문장으로 먼저 답해 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'문항의 질문에 한 문장으로 먼저 답해 보세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서 첫 문장은 어떻게 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "화려한 첫마디를 지우면 내 행동이 보이나요?",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'화려한 첫마디를 지우면 내 행동이 보이나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'화려한 첫마디를 지우면 내 행동이 보이나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서 첫 문장은 어떻게 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자소서 시작을 멋진 문구보다 경험의 핵심으로",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 시작을 멋진 문구보다 경험의 핵심으로'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 시작을 멋진 문구보다 경험의 핵심으로'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 첫 문장은 어떻게 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자소서 첫 줄이 성격 선언으로만 시작하나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "문항이 묻는 내용 표시하기"
+        },
+        {
+          "step": 2,
+          "action": "답의 핵심 한 문장 쓰기"
+        },
+        {
+          "step": 3,
+          "action": "근거 경험 바로 붙이기"
+        },
+        {
+          "step": 4,
+          "action": "추상적 수식어 삭제하기"
+        }
+      ],
+      "answer_example": "가상 연습: 저는 성실합니다 대신 제출 전 원자료와 표를 대조하는 습관이 있습니다로 시작해 보겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자소서 첫 줄이 성격 선언으로만 시작하나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서 첫 문장은 어떻게 써야 하나요? 약한 연습 답: ‘저는 성실하고 열정적인 인재입니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "문항에 대한 답과 이를 뒷받침하는 행동이 첫 줄에 없습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 문항이 묻는 내용 표시하기 → 답의 핵심 한 문장 쓰기 → 근거 경험 바로 붙이기 → 추상적 수식어 삭제하기. 시작 문장도 ‘저는 성실하고 열정적인 인재입니다.’에서 ‘저는 성실합니다 대신 제출 전 원자료와 표를 대조하는 습관이 있습니다로 시작해 보겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 저는 성실합니다 대신 제출 전 원자료와 표를 대조하는 습관이 있습니다로 시작해 보겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 이 문항의 답은 ___이고 근거 경험은 ___입니다. 첫 문장을 먼저 써 보세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S22"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S22",
+          "url": "https://community.linkareer.com/employment_data/6079993"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-111",
+        "question": "자소서 첫 문장은 어떻게 써야 하나요?",
+        "priority": 1,
+        "evidence_level": "direct_question",
+        "source_id": "S22",
+        "url": "https://community.linkareer.com/employment_data/6079993",
+        "paraphrase": "첫문장 작성 FAQ",
+        "scope": "홍보성 효과·5초·통과율 주장 배제; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": "SEM-002",
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-112",
+      "category": "자소서",
+      "original_question": "자소서에 경험을 얼마나 자세히 써야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자소서 경험, 배경이 길어지면 내 행동이 묻힙니다",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 경험, 배경이 길어지면 내 행동이 묻힙니다'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 경험, 배경이 길어지면 내 행동이 묻힙니다'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서에 경험을 얼마나 자세히 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "프로젝트 배경 설명이 내 행동보다 길어졌나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'프로젝트 배경 설명이 내 행동보다 길어졌나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'프로젝트 배경 설명이 내 행동보다 길어졌나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서에 경험을 얼마나 자세히 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자소서에서 독자가 알아야 할 상황만 남기세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'자소서에서 독자가 알아야 할 상황만 남기세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서에서 독자가 알아야 할 상황만 남기세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서에 경험을 얼마나 자세히 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "경험을 자세히 쓰려면 내가 한 일을 확대하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'경험을 자세히 쓰려면 내가 한 일을 확대하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'경험을 자세히 쓰려면 내가 한 일을 확대하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서에 경험을 얼마나 자세히 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "결과보다 과정이 비어 있는 경험 문단을 점검하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'결과보다 과정이 비어 있는 경험 문단을 점검하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'결과보다 과정이 비어 있는 경험 문단을 점검하세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서에 경험을 얼마나 자세히 써야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자소서 경험, 배경이 길어지면 내 행동이 묻힙니다",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "상황을 이해할 최소 정보 적기"
+        },
+        {
+          "step": 2,
+          "action": "내 과제와 역할 명시하기"
+        },
+        {
+          "step": 3,
+          "action": "행동에 가장 많은 분량 쓰기"
+        },
+        {
+          "step": 4,
+          "action": "결과와 배운 점 짧게 붙이기"
+        }
+      ],
+      "answer_example": "가상 연습: 행사 소개는 한 문장으로 줄이고 제가 안내 문구를 어떻게 확인했는지 자세히 쓰겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자소서 경험, 배경이 길어지면 내 행동이 묻힙니다"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서에 경험을 얼마나 자세히 써야 하나요? 약한 연습 답: ‘프로젝트를 소개하면 처음부터 이런 배경이 있습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "배경 분량이 늘어 내가 맡은 역할과 판단 과정이 묻힙니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 상황을 이해할 최소 정보 적기 → 내 과제와 역할 명시하기 → 행동에 가장 많은 분량 쓰기 → 결과와 배운 점 짧게 붙이기. 시작 문장도 ‘프로젝트를 소개하면 처음부터 이런 배경이 있습니다.’에서 ‘행사 소개는 한 문장으로 줄이고 제가 안내 문구를 어떻게 확인했는지 자세히 쓰겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 행사 소개는 한 문장으로 줄이고 제가 안내 문구를 어떻게 확인했는지 자세히 쓰겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 상황 한 줄 ___, 내 행동 두 줄 ___을 씁니다. 배경 설명의 절반을 지워 보세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S23"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S23",
+          "url": "https://community.linkareer.com/employment_data/5397703"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-112",
+        "question": "자소서에 경험을 얼마나 자세히 써야 하나요?",
+        "priority": 1,
+        "evidence_level": "principle_only",
+        "source_id": "S23",
+        "url": "https://community.linkareer.com/employment_data/5397703",
+        "paraphrase": "경험 정리 구조 안내",
+        "scope": "키워드자동탈락 등 내부필터 주장 배제; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-113",
+      "category": "자소서",
+      "original_question": "같은 자소서를 여러 회사에 써도 되나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 1,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자소서 재사용, 회사 이름만 바꾸기 전에 볼 것",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 재사용, 회사 이름만 바꾸기 전에 볼 것'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 재사용, 회사 이름만 바꾸기 전에 볼 것'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '같은 자소서를 여러 회사에 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "회사 이름만 바꾼 자소서가 문항에도 맞을까요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'회사 이름만 바꾼 자소서가 문항에도 맞을까요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'회사 이름만 바꾼 자소서가 문항에도 맞을까요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '같은 자소서를 여러 회사에 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "경험은 재사용해도 지원 이유는 다시 확인하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'경험은 재사용해도 지원 이유는 다시 확인하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'경험은 재사용해도 지원 이유는 다시 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '같은 자소서를 여러 회사에 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "복사한 자소서의 직무 연결을 공고와 대조하세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'복사한 자소서의 직무 연결을 공고와 대조하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'복사한 자소서의 직무 연결을 공고와 대조하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '같은 자소서를 여러 회사에 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "제출 전에 남의 회사명이 남았는지 확인하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'제출 전에 남의 회사명이 남았는지 확인하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'제출 전에 남의 회사명이 남았는지 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '같은 자소서를 여러 회사에 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "제출 전에 남의 회사명이 남았는지 확인하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "재사용할 경험 사실 보존하기"
+        },
+        {
+          "step": 2,
+          "action": "회사별 문항 요구 비교하기"
+        },
+        {
+          "step": 3,
+          "action": "직무 연결과 선택 이유 다시 쓰기"
+        },
+        {
+          "step": 4,
+          "action": "회사명과 제품명 최종 확인하기"
+        }
+      ],
+      "answer_example": "가상 연습: 자료 정리 경험 자체는 유지하되 어떤 업무 역량을 보여 주는지는 공고에 맞춰 다시 설명하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "제출 전에 남의 회사명이 남았는지 확인하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 같은 자소서를 여러 회사에 써도 되나요? 약한 연습 답: ‘회사명만 바꾸면 같은 자소서를 내도 됩니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "문항의 요구와 직무 연결이 회사별로 다를 수 있습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 재사용할 경험 사실 보존하기 → 회사별 문항 요구 비교하기 → 직무 연결과 선택 이유 다시 쓰기 → 회사명과 제품명 최종 확인하기. 시작 문장도 ‘회사명만 바꾸면 같은 자소서를 내도 됩니다.’에서 ‘자료 정리 경험 자체는 유지하되 어떤 업무 역량을 보여 주는지는 공고에 맞춰 다시 설명하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 자료 정리 경험 자체는 유지하되 어떤 업무 역량을 보여 주는지는 공고에 맞춰 다시 설명하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 재사용할 사실 ___, 다시 쓸 선택 이유 ___을 나눕니다. 공고와 문항을 대조하세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S23"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S23",
+          "url": "https://community.linkareer.com/employment_data/5397703"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 5,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-113",
+        "question": "같은 자소서를 여러 회사에 써도 되나요?",
+        "priority": 1,
+        "evidence_level": "close_variant",
+        "source_id": "S23",
+        "url": "https://community.linkareer.com/employment_data/5397703",
+        "paraphrase": "기업별 원본 재활용 FAQ",
+        "scope": "키워드자동탈락 등 내부필터 주장 배제; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-114",
+      "category": "자소서",
+      "original_question": "자소서 글자 수가 남으면 채워야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자소서 글자 수, 남은 칸보다 빠진 근거를 보세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 글자 수, 남은 칸보다 빠진 근거를 보세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 글자 수, 남은 칸보다 빠진 근거를 보세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 글자 수가 남으면 채워야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자소서 글자 수가 남으면 반복 문장을 더하나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 글자 수가 남으면 반복 문장을 더하나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 글자 수가 남으면 반복 문장을 더하나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 글자 수가 남으면 채워야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "남은 칸보다 빠진 역할과 근거를 확인하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'남은 칸보다 빠진 역할과 근거를 확인하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'남은 칸보다 빠진 역할과 근거를 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 글자 수가 남으면 채워야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "짧아도 질문에 답했다면 억지로 늘리지 마세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'짧아도 질문에 답했다면 억지로 늘리지 마세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'짧아도 질문에 답했다면 억지로 늘리지 마세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서 글자 수가 남으면 채워야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "분량을 채우기 전에 내 행동이 충분히 보이는지",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'분량을 채우기 전에 내 행동이 충분히 보이는지'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'분량을 채우기 전에 내 행동이 충분히 보이는지'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서 글자 수가 남으면 채워야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "남은 칸보다 빠진 역할과 근거를 확인하세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "문항의 필수 요구 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "행동과 결과 근거 점검하기"
+        },
+        {
+          "step": 3,
+          "action": "빠진 설명만 보완하기"
+        },
+        {
+          "step": 4,
+          "action": "반복 문장으로 채우지 않기"
+        }
+      ],
+      "answer_example": "가상 연습: 분량을 늘리기보다 제가 맡은 범위와 확인한 결과가 충분히 설명됐는지 먼저 보겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "남은 칸보다 빠진 역할과 근거를 확인하세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서 글자 수가 남으면 채워야 하나요? 약한 연습 답: ‘글자 수가 남아 비슷한 말을 더 썼습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "분량은 늘어도 빠진 역할과 결과 근거는 보완되지 않습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 문항의 필수 요구 확인하기 → 행동과 결과 근거 점검하기 → 빠진 설명만 보완하기 → 반복 문장으로 채우지 않기. 시작 문장도 ‘글자 수가 남아 비슷한 말을 더 썼습니다.’에서 ‘분량을 늘리기보다 제가 맡은 범위와 확인한 결과가 충분히 설명됐는지 먼저 보겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 분량을 늘리기보다 제가 맡은 범위와 확인한 결과가 충분히 설명됐는지 먼저 보겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 아직 설명 안 된 역할 ___ 또는 근거 ___을 확인합니다. 중복 문장은 지우세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S21"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S21",
+          "url": "https://community.weport.co.kr/best/4526985"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 3,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-114",
+        "question": "자소서 글자 수가 남으면 채워야 하나요?",
+        "priority": 2,
+        "evidence_level": "direct_question",
+        "source_id": "S21",
+        "url": "https://community.weport.co.kr/best/4526985",
+        "paraphrase": "남은 글자수 채움 FAQ",
+        "scope": "강의기관 FAQ;90%규칙과 불이익 단정 채택 안 함; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-115",
+      "category": "자소서",
+      "original_question": "자소서 소제목은 꼭 필요하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자소서 소제목, 읽는 사람에게 무엇을 알려 주나요?",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 소제목, 읽는 사람에게 무엇을 알려 주나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 소제목, 읽는 사람에게 무엇을 알려 주나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 소제목은 꼭 필요하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "소제목이 본문보다 더 큰 성과를 주장하고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'소제목이 본문보다 더 큰 성과를 주장하고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'소제목이 본문보다 더 큰 성과를 주장하고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 소제목은 꼭 필요하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "혁신이라는 제목보다 실제 바꾼 내용을 쓰세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'혁신이라는 제목보다 실제 바꾼 내용을 쓰세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'혁신이라는 제목보다 실제 바꾼 내용을 쓰세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서 소제목은 꼭 필요하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자소서 소제목을 지워도 내용이 이해되나요?",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 소제목을 지워도 내용이 이해되나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 소제목을 지워도 내용이 이해되나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서 소제목은 꼭 필요하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "읽는 사람에게 경험의 핵심을 안내하는 소제목",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'읽는 사람에게 경험의 핵심을 안내하는 소제목'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'읽는 사람에게 경험의 핵심을 안내하는 소제목'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서 소제목은 꼭 필요하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자소서 소제목을 지워도 내용이 이해되나요?",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "입력 양식의 형식 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "소제목의 요약 기능 판단하기"
+        },
+        {
+          "step": 3,
+          "action": "본문 근거와 맞는 표현 쓰기"
+        },
+        {
+          "step": 4,
+          "action": "과장된 성과 문구 빼기"
+        }
+      ],
+      "answer_example": "가상 연습: 일을 바꾼 혁신가 대신 자료 버전 규칙을 정한 경험처럼 본문 내용을 요약하겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자소서 소제목을 지워도 내용이 이해되나요?"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서 소제목은 꼭 필요하나요? 약한 연습 답: ‘세상을 바꾼 혁신 경험이라는 소제목을 쓰겠습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "소제목이 본문의 실제 행동보다 큰 효과를 주장합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 입력 양식의 형식 확인하기 → 소제목의 요약 기능 판단하기 → 본문 근거와 맞는 표현 쓰기 → 과장된 성과 문구 빼기. 시작 문장도 ‘세상을 바꾼 혁신 경험이라는 소제목을 쓰겠습니다.’에서 ‘일을 바꾼 혁신가 대신 자료 버전 규칙을 정한 경험처럼 본문 내용을 요약하겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 일을 바꾼 혁신가 대신 자료 버전 규칙을 정한 경험처럼 본문 내용을 요약하겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 본문에서 직접 바꾼 것은 ___입니다. 그 사실을 요약하는 소제목 하나를 쓰세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "direct_question; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S18"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S18",
+          "url": "https://community.linkareer.com/employment_data/5633636"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-115",
+        "question": "자소서 소제목은 꼭 필요하나요?",
+        "priority": 2,
+        "evidence_level": "direct_question",
+        "source_id": "S18",
+        "url": "https://community.linkareer.com/employment_data/5633636",
+        "paraphrase": "소제목 필수 여부 FAQ",
+        "scope": "홍보자료; 합격 효과·권장 글자수 채택 안 함; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-116",
+      "category": "자소서",
+      "original_question": "자소서에 단점을 쓰라는 문항은 어떻게 푸나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "단점 문항, 장점을 약점처럼 바꾸지 않아도 됩니다",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'단점 문항, 장점을 약점처럼 바꾸지 않아도 됩니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'단점 문항, 장점을 약점처럼 바꾸지 않아도 됩니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서에 단점을 쓰라는 문항은 어떻게 푸나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "약점 문항에 장점처럼 들리는 단점만 찾고 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'약점 문항에 장점처럼 들리는 단점만 찾고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'약점 문항에 장점처럼 들리는 단점만 찾고 있나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서에 단점을 쓰라는 문항은 어떻게 푸나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "부족했던 행동과 지금의 보완을 함께 쓰세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'부족했던 행동과 지금의 보완을 함께 쓰세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'부족했던 행동과 지금의 보완을 함께 쓰세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서에 단점을 쓰라는 문항은 어떻게 푸나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "단점을 썼다면 업무 영향도 구체적으로 보세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'단점을 썼다면 업무 영향도 구체적으로 보세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'단점을 썼다면 업무 영향도 구체적으로 보세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서에 단점을 쓰라는 문항은 어떻게 푸나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "다 고쳤다는 결론 대신 관리 중인 방법을 남기세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'다 고쳤다는 결론 대신 관리 중인 방법을 남기세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'다 고쳤다는 결론 대신 관리 중인 방법을 남기세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서에 단점을 쓰라는 문항은 어떻게 푸나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "단점을 썼다면 업무 영향도 구체적으로 보세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "업무에 영향 준 실제 단점 고르기"
+        },
+        {
+          "step": 2,
+          "action": "영향을 짧게 설명하기"
+        },
+        {
+          "step": 3,
+          "action": "보완 행동을 구체적으로 쓰기"
+        },
+        {
+          "step": 4,
+          "action": "완전히 고쳤다는 단정 피하기"
+        }
+      ],
+      "answer_example": "가상 연습: 확인 질문을 늦게 했던 점과 작업 시작 전에 질문 목록을 만드는 현재 습관을 함께 쓰겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "단점을 썼다면 업무 영향도 구체적으로 보세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서에 단점을 쓰라는 문항은 어떻게 푸나요? 약한 연습 답: ‘단점은 완벽을 추구하는 점입니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "장점으로 들리게 포장해 실제 업무 영향과 보완을 설명하지 못합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 업무에 영향 준 실제 단점 고르기 → 영향을 짧게 설명하기 → 보완 행동을 구체적으로 쓰기 → 완전히 고쳤다는 단정 피하기. 시작 문장도 ‘단점은 완벽을 추구하는 점입니다.’에서 ‘확인 질문을 늦게 했던 점과 작업 시작 전에 질문 목록을 만드는 현재 습관을 함께 쓰겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 확인 질문을 늦게 했던 점과 작업 시작 전에 질문 목록을 만드는 현재 습관을 함께 쓰겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 실제 단점 ___이 ___에 영향을 줘 ___을 시도했습니다. 현재 한계도 덧붙이세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S15"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S15",
+          "url": "https://community.linkareer.com/STEM_mentoring/2802611"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 4,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-116",
+        "question": "자소서에 단점을 쓰라는 문항은 어떻게 푸나요?",
+        "priority": 2,
+        "evidence_level": "close_variant",
+        "source_id": "S15",
+        "url": "https://community.linkareer.com/STEM_mentoring/2802611",
+        "paraphrase": "단점 소재 선택 고민",
+        "scope": "원문 자소서 질문을 면접/윤문 상황으로 확장",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-117",
+      "category": "자소서",
+      "original_question": "자소서의 숫자는 어디까지 써도 되나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 2,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자소서 성과 숫자, 계산 근거를 설명할 수 있나요?",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 성과 숫자, 계산 근거를 설명할 수 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 성과 숫자, 계산 근거를 설명할 수 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서의 숫자는 어디까지 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "성과 숫자를 물어보면 계산 근거를 설명할 수 있나요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'성과 숫자를 물어보면 계산 근거를 설명할 수 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'성과 숫자를 물어보면 계산 근거를 설명할 수 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서의 숫자는 어디까지 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "팀 전체 수치를 내 성과로 적기 전에 확인하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'팀 전체 수치를 내 성과로 적기 전에 확인하세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'팀 전체 수치를 내 성과로 적기 전에 확인하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서의 숫자는 어디까지 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "증가율을 쓰려면 비교 기준이 같아야 합니다",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'증가율을 쓰려면 비교 기준이 같아야 합니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'증가율을 쓰려면 비교 기준이 같아야 합니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서의 숫자는 어디까지 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "기록이 없는 수치는 자소서에서 덜어내세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'기록이 없는 수치는 자소서에서 덜어내세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'기록이 없는 수치는 자소서에서 덜어내세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서의 숫자는 어디까지 써도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "기록이 없는 수치는 자소서에서 덜어내세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "원기록 존재 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "비교 기간과 기준 맞추기"
+        },
+        {
+          "step": 3,
+          "action": "팀과 개인 기여 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "불확실한 수치 삭제하거나 한계 밝히기"
+        }
+      ],
+      "answer_example": "가상 연습: 시간 기록이 없어 감소율은 쓰지 않고 파일을 같은 규칙으로 찾을 수 있게 바꾼 사실을 적겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "기록이 없는 수치는 자소서에서 덜어내세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서의 숫자는 어디까지 써도 되나요? 약한 연습 답: ‘정확하진 않지만 성과가 50퍼센트 좋아졌습니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "원기록과 비교 기준이 없는 수치는 검증 가능한 성과가 아닙니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 원기록 존재 확인하기 → 비교 기간과 기준 맞추기 → 팀과 개인 기여 구분하기 → 불확실한 수치 삭제하거나 한계 밝히기. 시작 문장도 ‘정확하진 않지만 성과가 50퍼센트 좋아졌습니다.’에서 ‘시간 기록이 없어 감소율은 쓰지 않고 파일을 같은 규칙으로 찾을 수 있게 바꾼 사실을 적겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 시간 기록이 없어 감소율은 쓰지 않고 파일을 같은 규칙으로 찾을 수 있게 바꾼 사실을 적겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 수치의 원자료 ___과 비교 기간 ___을 확인합니다. 없으면 정성 결과로 바꾸세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "unverified; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 5,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-117",
+        "question": "자소서의 숫자는 어디까지 써도 되나요?",
+        "priority": 2,
+        "evidence_level": "unverified",
+        "source_id": null,
+        "url": null,
+        "paraphrase": "질문별 근거 미확보",
+        "scope": "주제 범주 자료만으로 세부 질문을 검증했다고 볼 수 없어 보류",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-118",
+      "category": "자소서",
+      "original_question": "AI로 쓴 자소서를 그대로 내도 되나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "AI 자소서, 제출 전에 내 사실로 검증할 항목",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'AI 자소서, 제출 전에 내 사실로 검증할 항목'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'AI 자소서, 제출 전에 내 사실로 검증할 항목'가 질문의 소재를 명시한다.",
+            "relevance": "원형 'AI로 쓴 자소서를 그대로 내도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "AI가 써 준 주도했습니다, 정말 내가 한 일인가요?",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'AI가 써 준 주도했습니다, 정말 내가 한 일인가요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'AI가 써 준 주도했습니다, 정말 내가 한 일인가요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 'AI로 쓴 자소서를 그대로 내도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "자소서 초안의 모든 경험을 내 사실과 대조하세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'자소서 초안의 모든 경험을 내 사실과 대조하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 초안의 모든 경험을 내 사실과 대조하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 'AI로 쓴 자소서를 그대로 내도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "면접에서 설명 못 할 AI 문장을 그대로 내고 있나요?",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'면접에서 설명 못 할 AI 문장을 그대로 내고 있나요?'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'면접에서 설명 못 할 AI 문장을 그대로 내고 있나요?'가 질문의 소재를 명시한다.",
+            "relevance": "원형 'AI로 쓴 자소서를 그대로 내도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "도구 사용 규정부터 확인한 뒤 초안을 검증하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'도구 사용 규정부터 확인한 뒤 초안을 검증하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'도구 사용 규정부터 확인한 뒤 초안을 검증하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 'AI로 쓴 자소서를 그대로 내도 되나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "AI 자소서, 제출 전에 내 사실로 검증할 항목",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "채용 안내의 도구 사용 기준 확인하기"
+        },
+        {
+          "step": 2,
+          "action": "경험과 수치 모두 대조하기"
+        },
+        {
+          "step": 3,
+          "action": "말로 설명 못 하는 문장 고치기"
+        },
+        {
+          "step": 4,
+          "action": "개인정보와 외부 입력 범위 점검하기"
+        }
+      ],
+      "answer_example": "가상 연습: 초안의 주도했다는 표현을 보고 실제로는 자료 정리를 맡았다는 사실에 맞게 바꾸겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "AI 자소서, 제출 전에 내 사실로 검증할 항목"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: AI로 쓴 자소서를 그대로 내도 되나요? 약한 연습 답: ‘AI가 써 줘서 더 전문적인 경험처럼 보입니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "문장이 실제 역할을 넘어가면 내 사실로 설명할 수 없습니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 채용 안내의 도구 사용 기준 확인하기 → 경험과 수치 모두 대조하기 → 말로 설명 못 하는 문장 고치기 → 개인정보와 외부 입력 범위 점검하기. 시작 문장도 ‘AI가 써 줘서 더 전문적인 경험처럼 보입니다.’에서 ‘초안의 주도했다는 표현을 보고 실제로는 자료 정리를 맡았다는 사실에 맞게 바꾸겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 초안의 주도했다는 표현을 보고 실제로는 자료 정리를 맡았다는 사실에 맞게 바꾸겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 초안의 ___ 표현을 실제 역할 ___로 고칩니다. 수치와 책임 문장에 표시하세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "close_variant; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S19"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S19",
+          "url": "https://community.linkareer.com/job-materials/5893708"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-118",
+        "question": "AI로 쓴 자소서를 그대로 내도 되나요?",
+        "priority": 3,
+        "evidence_level": "close_variant",
+        "source_id": "S19",
+        "url": "https://community.linkareer.com/job-materials/5893708",
+        "paraphrase": "AI 초안 제출 고민",
+        "scope": "AI 감별률·대부분 기업 적발 주장은 배제; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-119",
+      "category": "자소서",
+      "original_question": "자소서와 이력서의 내용이 조금 다르면요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "이력서와 자소서, 날짜와 역할이 다르면 먼저 맞추세요",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'이력서와 자소서, 날짜와 역할이 다르면 먼저 맞추세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'이력서와 자소서, 날짜와 역할이 다르면 먼저 맞추세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서와 이력서의 내용이 조금 다르면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "두 서류의 기간이 다르면 표현 문제로 넘기지 마세요",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'두 서류의 기간이 다르면 표현 문제로 넘기지 마세요'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'두 서류의 기간이 다르면 표현 문제로 넘기지 마세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서와 이력서의 내용이 조금 다르면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "팀 활동 기간과 내 참여 기간을 구분했나요?",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'팀 활동 기간과 내 참여 기간을 구분했나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'팀 활동 기간과 내 참여 기간을 구분했나요?'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서와 이력서의 내용이 조금 다르면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "이력서와 자소서의 역할 이름부터 맞추세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'이력서와 자소서의 역할 이름부터 맞추세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'이력서와 자소서의 역할 이름부터 맞추세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서와 이력서의 내용이 조금 다르면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "지원 직전 하나의 사실 목록으로 문서를 대조하세요",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'지원 직전 하나의 사실 목록으로 문서를 대조하세요'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'지원 직전 하나의 사실 목록으로 문서를 대조하세요'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서와 이력서의 내용이 조금 다르면요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "두 서류의 기간이 다르면 표현 문제로 넘기지 마세요",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "기간과 직책을 원자료와 대조하기"
+        },
+        {
+          "step": 2,
+          "action": "성과의 측정 기준 맞추기"
+        },
+        {
+          "step": 3,
+          "action": "표현 차이와 사실 충돌 구분하기"
+        },
+        {
+          "step": 4,
+          "action": "지원 전 버전 하나로 정리하기"
+        }
+      ],
+      "answer_example": "가상 연습: 팀 전체 활동 기간과 제가 참여한 기간을 구분해 두 문서에 같은 기준으로 적겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "두 서류의 기간이 다르면 표현 문제로 넘기지 마세요"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서와 이력서의 내용이 조금 다르면요? 약한 연습 답: ‘비슷한 경험이니 서류마다 날짜가 조금 달라도 됩니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "날짜와 역할의 충돌은 표현 차이가 아니라 사실 확인 문제입니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 기간과 직책을 원자료와 대조하기 → 성과의 측정 기준 맞추기 → 표현 차이와 사실 충돌 구분하기 → 지원 전 버전 하나로 정리하기. 시작 문장도 ‘비슷한 경험이니 서류마다 날짜가 조금 달라도 됩니다.’에서 ‘팀 전체 활동 기간과 제가 참여한 기간을 구분해 두 문서에 같은 기준으로 적겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 팀 전체 활동 기간과 제가 참여한 기간을 구분해 두 문서에 같은 기준으로 적겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 원자료상 기간 ___과 역할 ___로 두 서류를 맞춥니다. 최종 버전 하나를 정하세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "unverified; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 2,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-119",
+        "question": "자소서와 이력서의 내용이 조금 다르면요?",
+        "priority": 3,
+        "evidence_level": "unverified",
+        "source_id": null,
+        "url": null,
+        "paraphrase": "질문별 근거 미확보",
+        "scope": "주제 범주 자료만으로 세부 질문을 검증했다고 볼 수 없어 보류",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    },
+    {
+      "id": "JK2-120",
+      "category": "자소서",
+      "original_question": "자소서를 고칠 때 무엇부터 봐야 하나요?",
+      "question_provenance": "이번 개편에서 새로 정리한 편집 질문 원형; 기존 150개 원본과 동일성 미확인; 실제 질문의 직접 인용 아님",
+      "target": "신입 지원자·취업준비생",
+      "priority": 3,
+      "priority_rationale": "범용성·준비 선행성에 따른 편집 가설; 질문 빈도나 실제 성과 순위 아님",
+      "hook_candidates": [
+        {
+          "text": "자소서 퇴고, 맞춤법보다 먼저 확인할 내용",
+          "angle": "상황 진단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 2,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 10,
+          "rationale": "'자소서 퇴고, 맞춤법보다 먼저 확인할 내용'가 질문의 소재를 명시한다. 놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'자소서 퇴고, 맞춤법보다 먼저 확인할 내용'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서를 고칠 때 무엇부터 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "놓치기 쉬운 문제나 답의 빈칸을 드러낸다. 실제 클릭을 예측한 값은 아니다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "맞춤법을 고쳤는데 자소서가 여전히 모호하다면",
+          "angle": "놓치기 쉬운 판단",
+          "evaluation": {
+            "specificity": 2,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 9,
+          "rationale": "'맞춤법을 고쳤는데 자소서가 여전히 모호하다면'가 질문의 소재를 명시한다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'맞춤법을 고쳤는데 자소서가 여전히 모호하다면'가 질문의 소재를 명시한다.",
+            "relevance": "원형 '자소서를 고칠 때 무엇부터 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "질문에 답했는지 확인한 뒤 문장을 다듬으세요",
+          "angle": "경험·근거 확보",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'질문에 답했는지 확인한 뒤 문장을 다듬으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'질문에 답했는지 확인한 뒤 문장을 다듬으세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서를 고칠 때 무엇부터 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "열심히 했다는 말을 실제 확인 행동으로 바꾸세요",
+          "angle": "답변 방향 전환",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'열심히 했다는 말을 실제 확인 행동으로 바꾸세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'열심히 했다는 말을 실제 확인 행동으로 바꾸세요'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서를 고칠 때 무엇부터 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        },
+        {
+          "text": "퇴고 첫 순서는 오탈자보다 빠진 근거입니다",
+          "angle": "즉시 적용할 준비",
+          "evaluation": {
+            "specificity": 1,
+            "relevance": 2,
+            "curiosity": 1,
+            "honesty": 2,
+            "clarity": 2
+          },
+          "total": 8,
+          "rationale": "'퇴고 첫 순서는 오탈자보다 빠진 근거입니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다. 실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다. 한 문장으로 읽을 수 있고 40자 이하이다.",
+          "criterion_rationales": {
+            "specificity": "'퇴고 첫 순서는 오탈자보다 빠진 근거입니다'가 질문의 소재를 간접적으로 가리켜 본문의 맥락 보완이 필요하다.",
+            "relevance": "원형 '자소서를 고칠 때 무엇부터 봐야 하나요?'의 답변 준비 범위에 대응한다. 질문별 본문과 함께 편집 검토한 점수다.",
+            "curiosity": "실행 방향은 전달하지만 긴장이나 정보 간극은 비교적 약하다.",
+            "honesty": "합격·조회·채용담당자 심리의 보장이나 확인되지 않은 수치를 넣지 않는다.",
+            "clarity": "한 문장으로 읽을 수 있고 40자 이하이다."
+          },
+          "evaluation_type": "질문별 문장 편집 + 공개된 텍스트 기준에 따른 사전 휴리스틱 점수; 독립 평가·반응 시험 아님"
+        }
+      ],
+      "final_title": "자소서 퇴고, 맞춤법보다 먼저 확인할 내용",
+      "final_title_status": "5개 편집 후크의 사전 점수·동점 시 간결성으로 고른 우선 후보; 게시 승인·성과 검증 아님",
+      "answer_structure": [
+        {
+          "step": 1,
+          "action": "문항에 직접 답했는지 보기"
+        },
+        {
+          "step": 2,
+          "action": "내 행동과 근거 확인하기"
+        },
+        {
+          "step": 3,
+          "action": "중복과 모호한 표현 줄이기"
+        },
+        {
+          "step": 4,
+          "action": "마지막으로 표기와 띄어쓰기 점검하기"
+        }
+      ],
+      "answer_example": "가상 연습: 열심히 했다는 문장을 실제 확인 행동으로 바꾼 뒤 문장 길이와 맞춤법을 보겠습니다.",
+      "six_slides": [
+        {
+          "slide": 1,
+          "role": "질문별 표지 후크",
+          "summary": "자소서 퇴고, 맞춤법보다 먼저 확인할 내용"
+        },
+        {
+          "slide": 2,
+          "role": "질문과 약한 답변의 대비",
+          "summary": "질문: 자소서를 고칠 때 무엇부터 봐야 하나요? 약한 연습 답: ‘맞춤법 검사만 끝내면 자소서는 완성입니다.’",
+          "note": "약한 답은 편집자가 만든 가상 예시이며 실제 독자의 인용이 아님"
+        },
+        {
+          "slide": 3,
+          "role": "이 답변에서 빠진 근거",
+          "summary": "질문에 답했는지와 행동 근거가 충분한지를 먼저 검토해야 합니다."
+        },
+        {
+          "slide": 4,
+          "role": "약한 답을 근거 있는 답으로 바꾸는 과정",
+          "summary": "답을 만들 때 확인할 순서: 문항에 직접 답했는지 보기 → 내 행동과 근거 확인하기 → 중복과 모호한 표현 줄이기 → 마지막으로 표기와 띄어쓰기 점검하기. 시작 문장도 ‘맞춤법 검사만 끝내면 자소서는 완성입니다.’에서 ‘열심히 했다는 문장을 실제 확인 행동으로 바꾼 뒤 문장 길이와 맞춤법을 보겠습니다.’처럼 구체화합니다.",
+          "note": "4단계는 준비 순서이며 모든 면접에서 그대로 읽을 고정 대본이 아님"
+        },
+        {
+          "slide": 5,
+          "role": "신입이 바꿔 써 볼 가상 연습 답변",
+          "summary": "가상 연습: 열심히 했다는 문장을 실제 확인 행동으로 바꾼 뒤 문장 길이와 맞춤법을 보겠습니다. 실제로 한 경험과 확인된 사실로 바꿔 사용하세요."
+        },
+        {
+          "slide": 6,
+          "role": "질문별 빈칸 실천과 다음 학습 안내",
+          "summary": "빈칸 연습: 문항 답 ___, 내 행동 ___, 근거 ___을 표시합니다. 없는 항목부터 보완하세요. 자소서를 내 사실로 고치는 연습이 필요하면 잡앤킬을 팔로우하세요."
+        }
+      ],
+      "evidence_status": "principle_only; 질문 존재와 실제 수요량·답변 효과는 구분; 게시 승인 없음",
+      "source_ids": [
+        "S03",
+        "S05",
+        "S08",
+        "S09",
+        "S23"
+      ],
+      "review_status": "연구·편집 후보; 게시 보류",
+      "approval_required": true,
+      "evidence_type": "editorial_expansion",
+      "source_relationship": "source_ids는 범주와 일반 준비 원칙을 뒷받침한다. 각 문장의 직접 증명 또는 질문별 수요 조사로 해석하지 않는다.",
+      "source_links": [
+        {
+          "id": "S03",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"
+        },
+        {
+          "id": "S05",
+          "url": "https://nationalcareers.service.gov.uk/careers-advice/covering-letter"
+        },
+        {
+          "id": "S08",
+          "url": "https://www.youthcenter.go.kr/youthApply/ythApplyCounsel/deepCounselMain/ythacDcReservation/ythacDcrStep02/47"
+        },
+        {
+          "id": "S09",
+          "url": "https://www.ncs.go.kr/blind/bl12/FairDetail.do?fairNo=00000000000000136"
+        },
+        {
+          "id": "S23",
+          "url": "https://community.linkareer.com/employment_data/5397703"
+        }
+      ],
+      "final_title_selection": {
+        "index_1based": 1,
+        "rule": "총점 우선, 동점이면 글자 수가 짧은 안; 독자 반응 데이터 없음",
+        "editorial_limit": "텍스트 기준 점수는 독립 심사나 의미를 완전히 판정하는 모델이 아니다. 본문·브랜드·레이아웃을 대조해 최종 승인해야 한다."
+      },
+      "slide_plan_status": "질문별 약한 예·이유·답변 변환·빈칸 실천 보강한 기획 후보; 실제 이미지 제작·줄바꿈·독자검증 미실시",
+      "question_evidence": {
+        "id": "JK2-120",
+        "question": "자소서를 고칠 때 무엇부터 봐야 하나요?",
+        "priority": 3,
+        "evidence_level": "principle_only",
+        "source_id": "S23",
+        "url": "https://community.linkareer.com/employment_data/5397703",
+        "paraphrase": "경험별 점검표",
+        "scope": "키워드자동탈락 등 내부필터 주장 배제; 후보의 구체 조건은 편집 변형일 수 있음",
+        "direct_quote": false
+      },
+      "semantic_overlap_group": null,
+      "publication_approved": false,
+      "editorial_gate": "HOLD: 최종 편집·사실대조·이미지 검수·사용자 승인 전"
+    }
+  ]
+}
+
