@@ -12,13 +12,22 @@ BASE = Path(__file__).resolve().parents[1]
 class CarouselCopyGuardTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data = json.loads((BASE / "compact_batches" / "batch_01_JK2-001-JK2-010.json").read_text(encoding="utf-8"))
+        cls.batch_paths = sorted((BASE / "compact_batches").glob("batch_*.json"))
+        cls.data = json.loads(cls.batch_paths[0].read_text(encoding="utf-8"))
 
     def check(self, mutate=None):
         data = copy.deepcopy(self.data)
         if mutate:
             mutate(data)
         return validate(data)
+
+    def test_every_compact_batch_passes_density_gate(self):
+        self.assertGreaterEqual(len(self.batch_paths), 2)
+        for path in self.batch_paths:
+            with self.subTest(path=path.name):
+                result = validate(json.loads(path.read_text(encoding="utf-8")))
+                self.assertEqual(result["errors"], [])
+                self.assertFalse(result["publication_approved"])
 
     def test_valid_batch_is_not_publication_approval(self):
         result = self.check()
