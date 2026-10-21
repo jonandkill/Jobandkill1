@@ -26,6 +26,11 @@ jobs:
         run: python outputs/system_v2/assemble_topics.py
       - name: Candidate and append-only ledger tests
         run: python -m unittest discover -s outputs/system_v2 -p 'test_*.py' -v
+      - name: Compact carousel copy density gate
+        run: |
+          for batch in outputs/compact_batches/batch_*.json; do
+            python outputs/system_v2/carousel_copy_guard.py "$batch"
+          done
       - name: Upload approval denied before network
         run: python -m unittest discover -s instagram-studio/tests -p test_submission_approval.py -v
       - name: Candidate structure is not publication approval

@@ -1,0 +1,155 @@
+{
+  "version": 2,
+  "source_commit": "08ed8647da0b27f8f72c29d7559d668b4b63cebb",
+  "status": "compact_editorial_candidate",
+  "publication_approved": false,
+  "rendered": false,
+  "caption_disclosure": "교육용 가상 연습 예시이며 실제 지원자 실적이나 면접관 반응이 아닙니다.",
+  "limits": {
+    "visible_characters_by_slide": {"1": 28, "2": 72, "3": 60, "4": 80, "5": 86, "6": 72},
+    "counting": "Unicode code points excluding whitespace; authored line limits are checked separately",
+    "limitation": "This does not prove rendered mobile readability. Font, line wrapping, crop and image-text balance still require render QA."
+  },
+  "items": [
+    {
+      "id": "JK2-001",
+      "original_question": "1분 자기소개에는 무엇을 넣어야 하나요?",
+      "original_question_sha256": "412ea9bb3c247800e502413da40a8b03b38016eb50383a243e796c6ecdf0e74c",
+      "source_title": "경험을 다 말한 1분, 정작 나를 설명했나요?",
+      "slides": [
+        {"slide": 1, "headline": "1분 자기소개, 경험을 다 말하면 흐려집니다"},
+        {"slide": 2, "headline": "면접 질문", "body": "1분 자기소개에는 무엇을 넣나요?\n약한 답: 여러 활동으로 역량을 키웠습니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "활동 이름만 나열하면 직무와 연결되는 내 행동이 보이지 않습니다."},
+        {"slide": 4, "headline": "이 순서로 줄이세요", "steps": ["직무 하나 고르기", "경험 하나 고르기", "내 행동 붙이기", "업무 연결로 닫기"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "자료 조사 과제에서 출처별 차이를 정리했습니다. 이 확인 습관을 리서치 업무에 적용하고 싶습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "경험 하나를 골라 행동 한 줄로 녹음하세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-002",
+      "original_question": "자기소개와 지원동기는 어떻게 다르게 말하나요?",
+      "original_question_sha256": "cf926d0dee17c2634b84a31e2e360282540552d80bf2f2dad7ea9a926543ade0",
+      "source_title": "자기소개와 지원동기, 같은 답을 반복하고 있나요?",
+      "slides": [
+        {"slide": 1, "headline": "자기소개와 지원동기, 같은 답이면 안 됩니다"},
+        {"slide": 2, "headline": "면접 질문", "body": "두 답은 어떻게 달라야 하나요?\n약한 답: 저는 성실해서 지원했습니다."},
+        {"slide": 3, "headline": "둘의 역할이 다릅니다", "body": "자기소개는 나의 특징, 지원동기는 이 직무를 고른 이유를 답합니다."},
+        {"slide": 4, "headline": "근거를 나누세요", "steps": ["내 특징 정하기", "직무 선택 이유 찾기", "근거를 따로 배치", "연결 문장만 남기기"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "자기소개에서는 기록 습관을 말하겠습니다. 지원동기에서는 운영 업무를 고른 이유를 설명하겠습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "내 특징과 직무 선택 이유를 한 줄씩 쓰세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-003",
+      "original_question": "자기소개에서 학교와 전공을 꼭 말해야 하나요?",
+      "original_question_sha256": "8f14a929d8716c87aeee21f3b89e9237cb86dfccd72a7060009c588ca257efab",
+      "source_title": "학교 소개로 자기소개 시간이 끝나고 있다면",
+      "slides": [
+        {"slide": 1, "headline": "학교 소개보다 직무에 쓸 행동을 남기세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "학교와 전공을 꼭 말해야 하나요?\n약한 답: 저는 어느 학교 전공자입니다."},
+        {"slide": 3, "headline": "먼저 공고를 확인하세요", "body": "블라인드 안내를 보고, 학교명 대신 직무와 닿는 배움과 행동을 고릅니다."},
+        {"slide": 4, "headline": "이렇게 바꾸세요", "steps": ["블라인드 안내 확인", "직무 관련성 판단", "배운 내용 선택", "행동 근거 붙이기"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "전공 수업에서 수요 데이터를 정리하며 표의 오류를 확인하는 습관을 익혔습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "학교명 없이 배움과 행동만 한 문장으로 말하세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-004",
+      "original_question": "자기소개 첫 문장을 어떻게 시작하나요?",
+      "original_question_sha256": "e86ce541aa7c51dd1a9aa2996acaa31501f93983f77b655a8745097056d15ac3",
+      "source_title": "별명 없이도 나를 설명하는 자기소개 첫 문장",
+      "slides": [
+        {"slide": 1, "headline": "자기소개 첫 문장, 별명보다 행동입니다"},
+        {"slide": 2, "headline": "면접 질문", "body": "첫 문장을 어떻게 시작하나요?\n약한 답: 불가능을 가능으로 만듭니다."},
+        {"slide": 3, "headline": "큰 선언은 근거가 약합니다", "body": "뒤에서 바로 증명할 수 있는 습관이나 행동으로 시작하세요."},
+        {"slide": 4, "headline": "첫 문장 만드는 순서", "steps": ["특징 하나 정하기", "행동 언어로 바꾸기", "짧은 사례 붙이기", "긴 수식어 덜기"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "저는 작업 전 확인 항목을 적습니다. 행사 준비에서도 준비물 목록을 먼저 만들었습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "나는 언제 무엇을 먼저 하는지 한 문장으로 쓰세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-005",
+      "original_question": "30초 자기소개를 요청하면 무엇을 줄이나요?",
+      "original_question_sha256": "79348f9dfcf1a7ffc4aa6ddc182f32b6d92eb9af83b5bc2404036759e1456de6",
+      "source_title": "30초를 달라는데 1분 원고를 빨리 읽고 있나요?",
+      "slides": [
+        {"slide": 1, "headline": "30초 자기소개는 빨리 읽는 1분이 아닙니다"},
+        {"slide": 2, "headline": "면접 질문", "body": "30초라면 무엇을 줄여야 하나요?\n약한 답: 먼저 여러 경험을 말씀드리면요."},
+        {"slide": 3, "headline": "경험 수부터 줄이세요", "body": "경험을 늘리면 내 행동과 직무 연결이 먼저 사라집니다."},
+        {"slide": 4, "headline": "세 문장만 남기세요", "steps": ["역량 하나", "배경 한 문장", "내 행동 한 문장", "직무 연결 한 문장"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "설문 과제에서 응답 누락을 찾아 다시 정리했습니다. 이 확인 습관을 운영 업무에 쓰고 싶습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "세 문장으로 줄인 뒤 30초를 재보세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-006",
+      "original_question": "자기소개에 숫자로 된 성과가 없으면 어떡하나요?",
+      "original_question_sha256": "c31a2482ceefd68c361323ac05bc271ad3b98379b6ca6aa2b3090fd318fad9c6",
+      "source_title": "자기소개에 쓸 숫자가 없어 막혔다면",
+      "slides": [
+        {"slide": 1, "headline": "숫자가 없어도 바뀐 상태는 말할 수 있습니다"},
+        {"slide": 2, "headline": "면접 질문", "body": "숫자로 된 성과가 없으면 어떡하나요?\n약한 답: 수치는 없지만 성과가 좋았습니다."},
+        {"slide": 3, "headline": "평가 대신 변화를 말하세요", "body": "숫자를 만들지 말고, 전후에 무엇이 달라졌는지 확인합니다."},
+        {"slide": 4, "headline": "근거 찾는 순서", "steps": ["바뀐 상태 찾기", "전후 차이 적기", "내 행동 구분", "없는 수치 빼기"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "팀 자료의 파일명이 제각각이었습니다. 이름 규칙을 정해 필요한 자료를 구분했습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "이전과 이후 상태를 한 줄씩 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-007",
+      "original_question": "자기소개를 외운 티가 나지 않게 하려면요?",
+      "original_question_sha256": "a426a245376a0c1fd771cec4c769af44ba4067feadec38ac9522b78b7ad5890a",
+      "source_title": "자기소개를 잊을까 걱정된다면 문장보다 이것부터",
+      "slides": [
+        {"slide": 1, "headline": "원고 대신 핵심 단어 세 개를 기억하세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "외운 티를 줄이려면 어떻게 하나요?\n약한 답: 원고를 완벽하게 외웠습니다."},
+        {"slide": 3, "headline": "문장이 끊기면 내용도 멈춥니다", "body": "통째로 외우기보다 핵심 단어 사이를 내 말로 연결하세요."},
+        {"slide": 4, "headline": "연습 순서", "steps": ["단어 세 개 선택", "말로 연결하기", "문장을 조금 바꾸기", "녹음 듣고 고치기"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "기록, 누락 확인, 운영 업무. 이 세 단어를 기억하고 제 말로 연결해 보겠습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "원고를 덮고 단어 세 개만 보고 말하세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-008",
+      "original_question": "이력서에 쓴 경험을 자기소개에서 다시 말해도 되나요?",
+      "original_question_sha256": "b7dd93511521cb092450e1ce31b21d6971ecce91fbc5ae828beeafcaa68baa93",
+      "source_title": "이력서에 있으니 말하지 말아야 할까요?",
+      "slides": [
+        {"slide": 1, "headline": "이력서 경험, 판단 이유를 더해 말하세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "이력서 경험을 다시 말해도 되나요?\n약한 답: 이력서에 적힌 그대로입니다."},
+        {"slide": 3, "headline": "반복보다 이유를 보태세요", "body": "서류에 없는 선택 기준과 행동 이유가 면접의 새 정보입니다."},
+        {"slide": 4, "headline": "덧붙이는 순서", "steps": ["사실 확인", "판단 이유 찾기", "내 행동 설명", "질문거리 남기기"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "이력서에는 설문 정리라고 썼습니다. 면접에서는 왜 중복 응답부터 확인했는지 설명하겠습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "이력서 경험 하나에 선택 이유 한 줄을 더하세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-009",
+      "original_question": "평범한 경험으로 자기소개를 차별화할 수 있나요?",
+      "original_question_sha256": "83a57a00fe695874c39cfc16578d454467ec8936efc1dad74ef7ead53f274c7e",
+      "source_title": "누구나 해 본 과제라 자기소개에서 뺐나요?",
+      "slides": [
+        {"slide": 1, "headline": "평범한 경험도 선택 기준은 다릅니다"},
+        {"slide": 2, "headline": "면접 질문", "body": "평범한 경험도 차별화할 수 있나요?\n약한 답: 특별한 경험을 많이 했습니다."},
+        {"slide": 3, "headline": "특별함을 주장하지 마세요", "body": "같은 상황에서 무엇을 보고 어떻게 선택했는지 보여 주세요."},
+        {"slide": 4, "headline": "장면 찾는 순서", "steps": ["선택 장면 찾기", "판단 기준 적기", "행동 결과 확인", "평가 대신 사실"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "카페 아르바이트에서 주문을 다시 읽어 확인했습니다. 실수를 줄이려고 고른 방법이었습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "평범한 경험에서 선택한 순간 하나를 찾으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-010",
+      "original_question": "자기소개 마지막 문장은 어떻게 끝내나요?",
+      "original_question_sha256": "eedbb79aa0d115a1c489024476a4dc04f69e138cbe9d792a4248051929545aab",
+      "source_title": "자기소개 끝의 열심히 하겠습니다를 바꾸는 방법",
+      "slides": [
+        {"slide": 1, "headline": "열심히보다 이어 갈 행동으로 끝내세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "마지막 문장은 어떻게 끝내나요?\n약한 답: 누구보다 열심히 하겠습니다."},
+        {"slide": 3, "headline": "의지보다 행동이 남습니다", "body": "앞에서 말한 강점을 입사 후 어떤 업무에 쓸지 연결하세요."},
+        {"slide": 4, "headline": "마무리 순서", "steps": ["강점 되짚기", "업무 하나 연결", "배울 범위 인정", "실행 습관 제시"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "업무를 익힐 때도 확인 목록을 만들고, 모르는 기준은 질문하며 배우겠습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "마지막 문장을 의지가 아닌 행동으로 고치세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    }
+  ]
+}

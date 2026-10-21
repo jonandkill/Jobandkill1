@@ -1,0 +1,162 @@
+{
+  "version": 2,
+  "source_commit": "4deb3736e37d70e9d814f408efb91160e1effc70",
+  "status": "compact_editorial_candidate",
+  "publication_approved": false,
+  "rendered": false,
+  "caption_disclosure": "교육용 가상 연습 예시이며 실제 지원자 실적이나 면접관 반응이 아닙니다.",
+  "limits": {
+    "visible_characters_by_slide": {
+      "1": 28,
+      "2": 72,
+      "3": 60,
+      "4": 80,
+      "5": 86,
+      "6": 72
+    },
+    "counting": "Unicode code points excluding whitespace; authored line limits are checked separately",
+    "limitation": "This does not prove rendered mobile readability. Font, line wrapping, crop and image-text balance still require render QA."
+  },
+  "items": [
+    {
+      "id": "JK2-071",
+      "original_question": "문제 해결 경험은 꼭 큰 성과가 있어야 하나요?",
+      "original_question_sha256": "9b2603c2f2d8cab61cb3d6fb6218e23418bc8e59928a3106babf3255ab80d56b",
+      "source_title": "문제 해결 경험에 큰 프로젝트만 찾고 있나요?",
+      "slides": [
+        {"slide": 1, "headline": "큰 성과보다 바꾼 행동을 말하세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "큰 성과가 있어야 문제 해결인가요?\n약한 답: 작은 일만 해서 경험이 없습니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "문제의 규모보다 불편을 확인하고 바꾼 과정이 중요합니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["불편 구체화", "영향·우선순위 확인", "바꾼 행동 설명", "결과·한계 확인"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "자료 위치를 자주 물어봐야 했습니다. 폴더 안내를 만들고 팀원이 찾을 수 있는지 확인했습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "줄인 불편과 바꾼 행동을 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-072",
+      "original_question": "문제의 원인을 찾은 과정은 어떻게 말하나요?",
+      "original_question_sha256": "30f168ab4d83257c79bc0a10fc2bd77762d24e4fdf5d78fc003910eef44252ee",
+      "source_title": "증상과 원인을 섞으면 해결 답변도 흐려집니다",
+      "slides": [
+        {"slide": 1, "headline": "증상과 원인 가설을 나눠 보세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "원인을 찾은 과정을 어떻게 말하나요?\n약한 답: 보자마자 바로 알았습니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "가설과 기록을 비교한 과정이 없어 판단 근거를 알 수 없습니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["증상·가설 구분", "기록·사람 확인", "근거 비교", "확인·추정 구분"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "응답이 적어 홍보와 링크 접근 문제를 가설로 세우고 두 요인을 나눠 확인했습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "첫 가설과 확인한 자료를 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-073",
+      "original_question": "데이터를 활용한 경험이 없으면 분석력을 못 말하나요?",
+      "original_question_sha256": "ce779ddfa3be66ffc04381ddb0d0c72ea2709523f7cc959e57aa87a208fe66be",
+      "source_title": "데이터 경험을 부풀리지 않고 비교 기준을 말하세요",
+      "slides": [
+        {"slide": 1, "headline": "분석력은 비교 기준으로 보여 주세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "데이터 경험이 없으면 분석력을 못 말하나요?\n약한 답: 도구를 안 써 경험이 없습니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "도구 사용과 정보를 비교해 판단한 경험을 같은 것으로 보고 있습니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["정보 목록 적기", "비교 기준 밝히기", "선택 영향 설명", "통계 경험 과장 금지"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "행사 장소의 거리·수용 인원·비용을 표로 비교했습니다. 전문 통계 분석은 아닙니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "비교한 정보와 선택 기준을 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-074",
+      "original_question": "창의적으로 해결한 경험이 떠오르지 않으면요?",
+      "original_question_sha256": "9669a86b30f1f8a3e61ce8f8737b3121e38c2babf78091dab23ee498d5274045",
+      "source_title": "새 도구 없이도 바꿔 본 순서나 양식이 있나요?",
+      "slides": [
+        {"slide": 1, "headline": "창의성은 순서와 양식의 변화도 봅니다"},
+        {"slide": 2, "headline": "면접 질문", "body": "창의적 해결이 떠오르지 않나요?\n약한 답: 새 아이디어를 낸 적이 없습니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "발명만 찾으면 기존 자원과 순서를 바꾼 경험을 놓칩니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["기존 제약 찾기", "쓸 자원 정리", "조합·순서 변경", "유용성 확인"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "새 도구 대신 기존 양식을 체크리스트로 바꿔 준비 물품을 한눈에 보게 했습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "기존 방식에서 바꾼 순서를 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-075",
+      "original_question": "정보가 부족할 때 어떻게 결정하나요?",
+      "original_question_sha256": "f331c7db30da4ecdd10f7e92f6151eb71bf963650e0cd7cdc2269ab0de456bac",
+      "source_title": "큰 결정 전에 작게 시험할 수 있는 것은?",
+      "slides": [
+        {"slide": 1, "headline": "정보가 부족하면 작게 시험하세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "정보가 부족할 때 어떻게 결정하나요?\n약한 답: 일단 감으로 정합니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "가정을 표시하거나 작은 실행으로 확인하는 과정이 없습니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["필요 정보 구분", "지금 정보 수집", "위험 가정 표시", "작게 실행·확인"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "인원이 확정되지 않아 최소 수량부터 준비하고 추가 가능한 마감 시간을 확인했습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "정보·가정·작은 시험을 나눠 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-076",
+      "original_question": "여러 일이 겹치면 우선순위를 어떻게 정하나요?",
+      "original_question_sha256": "b7e1bd98881b9ac743cbd32d6055cdb1a406cb85d7fc4a92ed5df482ee3300d1",
+      "source_title": "바쁠수록 급한 일만 고르고 있지는 않나요?",
+      "slides": [
+        {"slide": 1, "headline": "우선순위는 마감과 영향을 함께 보세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "여러 일이 겹치면 무엇부터 하나요?\n약한 답: 급한 것부터 합니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "영향과 의존 작업, 관계자 합의 기준이 보이지 않습니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["마감·영향 적기", "의존 작업 확인", "순서 합의", "변경 일정 공유"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "다른 팀원이 기다리는 자료를 먼저 보내고 혼자 할 수 있는 정리는 뒤로 미뤘습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "마감·영향·기다리는 사람을 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-077",
+      "original_question": "일정을 지키기 어려울 때 어떻게 하나요?",
+      "original_question_sha256": "3c714fc5bcb4db2ead4647a6a36e92517940be002296b0caa920c14447d7bc7c",
+      "source_title": "완성본만 공유하다 지연 신호를 놓치고 있나요?",
+      "slides": [
+        {"slide": 1, "headline": "지연 신호는 마감 전에 공유하세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "일정을 지키기 어려우면 어떻게 하나요?\n약한 답: 직전에 못 한다고 말합니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "조정할 시간이 줄어 다른 사람의 작업까지 밀릴 수 있습니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["남은 일·시간 계산", "지연 영향 공유", "조정안 제시", "합의 시점 재공유"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "검토 시간이 부족해질 것을 먼저 알리고 필수 표부터 전달하는 안을 제안했습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "남은 일과 조정안을 함께 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-078",
+      "original_question": "반복 업무를 개선한 경험은 어떻게 말하나요?",
+      "original_question_sha256": "c39e0519968203c912f4371f0d81b0eddc1c3478d0d6e2a034cd9c562af2663b",
+      "source_title": "양식을 바꾸기 전 오류 위험부터 확인하세요",
+      "slides": [
+        {"slide": 1, "headline": "업무 개선은 전후 기준으로 확인하세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "반복 업무 개선을 어떻게 말하나요?\n약한 답: 제 방식이 더 편했습니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "다른 사람의 영향과 오류 위험, 바뀐 결과를 확인하지 않았습니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["반복 불편 기록", "오류 위험 확인", "작은 변경 적용", "같은 기준 비교"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "공통 양식을 만들고 누락 항목을 찾기 쉬워졌는지 팀원에게 확인했습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "변경 전후를 같은 기준으로 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-079",
+      "original_question": "문제 해결 답변에서 숫자가 기억나지 않으면요?",
+      "original_question_sha256": "ced17fc8838abf5e2d4213025ccdf32886991bdee7cc0a21341e26c1737c9752",
+      "source_title": "기억 안 나는 개선 수치를 대략 붙이고 있나요?",
+      "slides": [
+        {"slide": 1, "headline": "기억 안 나는 성과 수치는 빼세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "숫자가 기억나지 않으면 어떻게 하나요?\n약한 답: 아마 절반쯤 줄었습니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "측정 기록이 없다면 감소율은 확인된 성과가 아닙니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["원기록 찾기", "불확실성 인정", "정성 결과 제시", "대략 수치 금지"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "시간 감소는 기록하지 않았습니다. 대신 안내표로 같은 위치를 찾을 수 있게 됐습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "확인된 전후 상태만 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    },
+    {
+      "id": "JK2-080",
+      "original_question": "내 해결책보다 더 좋은 방법이 있었다고 하면요?",
+      "original_question_sha256": "e353e67c16783acc8a719ad3b05c645e68808e16119c8f067fc945aca2a5433b",
+      "source_title": "더 나은 방법이 있다는 지적에 답하는 순서",
+      "slides": [
+        {"slide": 1, "headline": "더 나은 대안은 비교 기준으로 답하세요"},
+        {"slide": 2, "headline": "면접 질문", "body": "더 좋은 방법이 있었다고 하면요?\n약한 답: 제 방법이 최선입니다."},
+        {"slide": 3, "headline": "왜 약할까요?", "body": "대안의 장점과 당시 제약을 나누어 비교하지 않습니다."},
+        {"slide": 4, "headline": "이 순서로 바꾸세요", "steps": ["지적 전제 확인", "당시 제약 설명", "대안 장점 인정", "다음 기준 제시"]},
+        {"slide": 5, "headline": "말하기 예시", "body": "익숙한 도구를 썼지만 자동화도 반복 업무에 유리합니다. 준비 비용과 오류 위험을 비교하겠습니다."},
+        {"slide": 6, "headline": "지금 할 일", "action": "당시 제약과 대안의 장점을 적으세요.", "cta": "취업·면접 준비가 더 필요하면 잡앤킬을 팔로우하세요."}
+      ]
+    }
+  ]
+}
